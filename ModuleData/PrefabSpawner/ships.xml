@@ -1,0 +1,6 @@
+<SpawnItems>
+    <SpawnItem>
+        <ItemId>pe_ship_packed</ItemId>
+        <PrefabName>pe_testship1</PrefabName>
+    </SpawnItem>
+</SpawnItems>

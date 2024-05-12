@@ -1,0 +1,46 @@
+<prefabs>
+	<game_entity name="rp_artisan_join" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="17.868, 3.522, 1.115" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_ChangeClass">
+				<variables>
+					<variable name="ChangingDurationAsSeconds" value="10"/>
+					<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+					<variable name="ClassId" value="rndm_artisan"/>
+					<variable name="CastleId" value="0"/>
+					<variable name="DinarCost" value="50000"/>
+					<variable name="JoinCastleFaction" value="true"/>
+					<variable name="FactionId" value="0"/>
+					<variable name="Mercenary" value="false"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="shop_prop_merchantcarpenter_d" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="shop_prop"/>
+					<tag name="d"/>
+				</tags>
+				<transform position="0.056, -0.254, 0.056" rotation_euler="0.000, 0.000, 3.141" scale="0.728, 0.728, 0.728"/>
+				<components>
+					<meta_mesh_component name="shop_prop_merchantcarpenter_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="shop_prop_merchanthorse_f" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="shop_prop"/>
+					<tag name="f"/>
+				</tags>
+				<transform position="0.200, 0.079, 0.035" rotation_euler="0.000, 0.000, 3.141" scale="0.725, 0.725, 0.725"/>
+				<components>
+					<meta_mesh_component name="shop_prop_merchanthorse_f"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

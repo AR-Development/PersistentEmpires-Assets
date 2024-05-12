@@ -1,0 +1,109 @@
+<prefabs>
+	<game_entity name="pe_siege_tower_5m_ghost" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+			<flag name="hide_in_prefab_editors" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics>
+			<body_flags>
+				<body_flag name="exclude_path_snap"/>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<children>
+			<game_entity name="clean" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<physics>
+					<body_flags>
+						<body_flag name="exclude_path_snap"/>
+						<body_flag name="moveable"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="siege_tower_5m_spawner_ghost"/>
+				</components>
+				<children>
+					<game_entity name="ramp" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="0.000, -2.262, 5.065" rotation_euler="0.349, 0.000, 0.000"/>
+						<physics>
+							<body_flags>
+								<body_flag name="moveable"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="siege_tower_5m_door_spawner_ghost"/>
+						</components>
+						<children>
+							<game_entity name="ai_barrier_l" old_prefab_name="">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="1.000, 1.000, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="1.750, 1.000, 2.500"/>
+								<physics>
+									<body_flags>
+										<body_flag name="ai_limiter"/>
+									</body_flags>
+								</physics>
+								<components>
+									<meta_mesh_component name="barrier_spawner_ghost"/>
+								</components>
+							</game_entity>
+							<game_entity name="ai_barrier_r" old_prefab_name="">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="-1.000, 1.000, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.750, 1.000, 2.500"/>
+								<physics>
+									<body_flags>
+										<body_flag name="ai_limiter"/>
+									</body_flags>
+								</physics>
+								<components>
+									<meta_mesh_component name="barrier_spawner_ghost"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="wait_pos_ground" old_prefab_name="">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.182, 8.501, 0.000" rotation_euler="0.000, 0.000, 3.135"/>
+						<components>
+							<meta_mesh_component name="icon_man_spawner_ghost"/>
+						</components>
+					</game_entity>
+					<game_entity name="wheel_front" old_prefab_name="">
+						<tags>
+							<tag name="wheel"/>
+						</tags>
+						<transform position="0.000, -1.542, 0.350"/>
+						<physics>
+							<body_flags>
+								<body_flag name="moveable"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="wheel_back" old_prefab_name="">
+						<tags>
+							<tag name="wheel"/>
+						</tags>
+						<transform position="0.000, 1.599, 0.354"/>
+						<physics>
+							<body_flags>
+								<body_flag name="moveable"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

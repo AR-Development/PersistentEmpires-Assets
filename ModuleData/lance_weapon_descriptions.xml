@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<WeaponDescriptions>
+  
+  <WeaponDescription id="LanceOneHandedPolearm"
+                     weapon_class="OneHandedPolearm"
+                     item_usage_features="onehanded_polearm:block:long:rshield:thrust">
+    <WeaponFlags>
+      <WeaponFlag value="MeleeWeapon"/>
+      <WeaponFlag value="WideGrip"/>
+    </WeaponFlags>
+    <AvailablePieces>
+      <AvailablePiece id="jousting_lance_handle_small1"/>
+      <AvailablePiece id="jousting_lance_handle_small_x"/>
+      <AvailablePiece id="lance_iron_handle"/>
+      <AvailablePiece id="jousting_lance_guard_long_x"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_bluewhite"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_blueyellow"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_blackwhite"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_blackred"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_redyellow"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_redwhite"/>
+      <AvailablePiece id="lance_iron_guard"/>
+      <AvailablePiece id="jousting_lance_pommel"/>
+      <AvailablePiece id="jousting_lance_pommel_x"/>
+      <AvailablePiece id="lance_iron_pommel"/>
+      <AvailablePiece id="lance_blade_9"/>
+      <AvailablePiece id="lance_iron_blade"/>
+      <AvailablePiece id="lance_blade_34"/>
+      <AvailablePiece id="lance_blade_1"/>
+      <AvailablePiece id="lance_blade_10"/>
+      <AvailablePiece id="lance_blade_15"/>
+      <AvailablePiece id="lance_blade_3"/>
+      <AvailablePiece id="lance_blade_14"/>
+      <AvailablePiece id="lance_blade_2"/>
+      <AvailablePiece id="lance_blade_20"/>
+      <AvailablePiece id="lance_blade_23"/>
+      <AvailablePiece id="lance_blade_35"/>
+      <AvailablePiece id="lance_blade_37"/>
+      <AvailablePiece id="lance_blade_40"/>
+      <AvailablePiece id="lance_blade_8"/>
+      <AvailablePiece id="lance_blade_11"/>
+      <AvailablePiece id="lance_blade_36"/>
+      <AvailablePiece id="lance_blade_38"/>
+      <AvailablePiece id="lance_blade_39"/>
+      <AvailablePiece id="lance_blade_4"/>
+      <AvailablePiece id="lance_blade_41"/>
+      <AvailablePiece id="lance_blade_42"/>
+      <AvailablePiece id="lance_blade_7"/>
+      <AvailablePiece id="lance_blade_13"/>
+      <AvailablePiece id="lance_blade_18"/>
+      <AvailablePiece id="lance_blade_27"/>
+      <AvailablePiece id="lance_blade_5"/>
+      <AvailablePiece id="lance_blade_6"/>
+    </AvailablePieces>
+  </WeaponDescription>
+  <WeaponDescription id="LanceTwoHandedPolearm_Couchable" 
+                    weapon_class="TwoHandedPolearm" 
+                    item_usage_features="polearm:couch">
+    <WeaponFlags>
+      <WeaponFlag value="MeleeWeapon"/>
+      <WeaponFlag value="WideGrip"/>
+    </WeaponFlags>
+    <AvailablePieces>
+      <AvailablePiece id="jousting_lance_handle_small1"/>
+      <AvailablePiece id="jousting_lance_handle_small_x"/>
+      <AvailablePiece id="lance_iron_handle"/>
+      <AvailablePiece id="jousting_lance_guard_long_x"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_bluewhite"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_blueyellow"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_blackwhite"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_blackred"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_redyellow"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_redwhite"/>
+      <AvailablePiece id="lance_iron_guard"/>
+      <AvailablePiece id="jousting_lance_pommel"/>
+      <AvailablePiece id="jousting_lance_pommel_x"/>
+      <AvailablePiece id="lance_iron_pommel"/>
+      <AvailablePiece id="lance_blade_9"/>
+      <AvailablePiece id="lance_iron_blade"/>
+      <AvailablePiece id="lance_blade_34"/>
+      <AvailablePiece id="lance_blade_1"/>
+      <AvailablePiece id="lance_blade_10"/>
+      <AvailablePiece id="lance_blade_15"/>
+      <AvailablePiece id="lance_blade_3"/>
+      <AvailablePiece id="lance_blade_14"/>
+      <AvailablePiece id="lance_blade_2"/>
+      <AvailablePiece id="lance_blade_20"/>
+      <AvailablePiece id="lance_blade_23"/>
+      <AvailablePiece id="lance_blade_35"/>
+      <AvailablePiece id="lance_blade_37"/>
+      <AvailablePiece id="lance_blade_40"/>
+      <AvailablePiece id="lance_blade_8"/>
+      <AvailablePiece id="lance_blade_11"/>
+      <AvailablePiece id="lance_blade_36"/>
+      <AvailablePiece id="lance_blade_38"/>
+      <AvailablePiece id="lance_blade_39"/>
+      <AvailablePiece id="lance_blade_4"/>
+      <AvailablePiece id="lance_blade_41"/>
+      <AvailablePiece id="lance_blade_42"/>
+      <AvailablePiece id="lance_blade_7"/>
+      <AvailablePiece id="lance_blade_13"/>
+      <AvailablePiece id="lance_blade_18"/>
+      <AvailablePiece id="lance_blade_27"/>
+      <AvailablePiece id="lance_blade_5"/>
+      <AvailablePiece id="lance_blade_6"/>
+    </AvailablePieces>
+  </WeaponDescription>
+  
+  <WeaponDescription id="LanceTwoHandedPolearm" 
+                    weapon_class="TwoHandedPolearm" 
+                    item_usage_features="polearm:block:long:shield:swing:thrust">
+    <WeaponFlags>
+      <WeaponFlag value="MeleeWeapon"/>
+      <WeaponFlag value="NotUsableWithOneHand"/>
+      <WeaponFlag value="WideGrip"/>
+      <WeaponFlag value="TwoHandIdleOnMount"/>
+    </WeaponFlags>
+    <AvailablePieces>
+      <AvailablePiece id="jousting_lance_handle_small1"/>
+      <AvailablePiece id="jousting_lance_handle_small_x"/>
+      <AvailablePiece id="lance_iron_handle"/>
+      <AvailablePiece id="jousting_lance_guard_long_x"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_bluewhite"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_blueyellow"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_blackwhite"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_blackred"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_redyellow"/>
+      <AvailablePiece id="jousting_lance_guard_long_colored_redwhite"/>
+      <AvailablePiece id="lance_iron_guard"/>
+      <AvailablePiece id="jousting_lance_pommel"/>
+      <AvailablePiece id="jousting_lance_pommel_x"/>
+      <AvailablePiece id="lance_iron_pommel"/>
+      <AvailablePiece id="lance_blade_9"/>
+      <AvailablePiece id="lance_iron_blade"/>
+      <AvailablePiece id="lance_blade_34"/>
+      <AvailablePiece id="lance_blade_1"/>
+      <AvailablePiece id="lance_blade_10"/>
+      <AvailablePiece id="lance_blade_15"/>
+      <AvailablePiece id="lance_blade_3"/>
+      <AvailablePiece id="lance_blade_14"/>
+      <AvailablePiece id="lance_blade_2"/>
+      <AvailablePiece id="lance_blade_20"/>
+      <AvailablePiece id="lance_blade_23"/>
+      <AvailablePiece id="lance_blade_35"/>
+      <AvailablePiece id="lance_blade_37"/>
+      <AvailablePiece id="lance_blade_40"/>
+      <AvailablePiece id="lance_blade_8"/>
+      <AvailablePiece id="lance_blade_11"/>
+      <AvailablePiece id="lance_blade_36"/>
+      <AvailablePiece id="lance_blade_38"/>
+      <AvailablePiece id="lance_blade_39"/>
+      <AvailablePiece id="lance_blade_4"/>
+      <AvailablePiece id="lance_blade_41"/>
+      <AvailablePiece id="lance_blade_42"/>
+      <AvailablePiece id="lance_blade_7"/>
+      <AvailablePiece id="lance_blade_13"/>
+      <AvailablePiece id="lance_blade_18"/>
+      <AvailablePiece id="lance_blade_27"/>
+      <AvailablePiece id="lance_blade_5"/>
+      <AvailablePiece id="lance_blade_6"/>
+    </AvailablePieces>
+  </WeaponDescription>
+</WeaponDescriptions>

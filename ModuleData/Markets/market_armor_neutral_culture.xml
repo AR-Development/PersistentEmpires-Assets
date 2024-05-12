@@ -1,0 +1,17 @@
+<Market>
+	<Tier1Items>
+		PE_merchants_hat*2470*3458|PE_half_apron*950*1330|PE_leather_apron*3425*4795|PE_ladys_shoe*450*630|PE_leather_shoes*1460*2043|PE_leather_gloves*2620*3667|PE_padded_vambrace*1050*1470|PE_female_hood*700*979|PE_scarf*700*979|PE_wrapped_scarf*700*979|PE_female_scarf*850*1190
+	</Tier1Items>
+	<Tier2Items>
+		PE_cloth_apron*2275*3185|PE_merchants_fur_coat*5450*7629|PE_ragged_boots*1100*1540|PE_strapped_shoes*1100*1540|PE_empire_cape_a*1550*2170
+	</Tier2Items>
+	<Tier3Items>
+
+	</Tier3Items>
+	<Tier4Items>
+
+	</Tier4Items>
+	<CraftingBoxes>
+		pe_armor_crate_t1*1*1|pe_armor_crate_t2*2*2|pe_armor_crate_t3*3*3
+	</CraftingBoxes>
+</Market>

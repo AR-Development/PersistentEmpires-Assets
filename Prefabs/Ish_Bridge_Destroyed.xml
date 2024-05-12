@@ -1,0 +1,206 @@
+<prefabs>
+	<game_entity name="Ish_Bridge_Destruction" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="stone_bridge_wide" old_prefab_name="">
+				<transform position="-36.966, 24.431, -6.720" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_stone_bridge_wide"/>
+				<components>
+					<meta_mesh_component name="stone_bridge_wide"/>
+				</components>
+			</game_entity>
+			<game_entity name="stone_bridge_wide" old_prefab_name="">
+				<transform position="22.323, -24.647, -6.820" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_stone_bridge_wide"/>
+				<components>
+					<meta_mesh_component name="stone_bridge_wide"/>
+				</components>
+			</game_entity>
+			<game_entity name="sturgia_grandbazaar_stone_fence_c" old_prefab_name="" occlusion_body_name="bo_occ_sturgia_grandbazaar_stone_fence_c">
+				<transform position="0.469, -5.429, -6.394" rotation_euler="0.000, 0.000, 0.888" scale="2.386, 2.386, 2.386"/>
+				<physics shape="bo_sturgia_grandbazaar_stone_fence_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="sturgia_grandbazaar_stone_fence_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="sturgia_grandbazaar_stone_fence_c" old_prefab_name="" occlusion_body_name="bo_occ_sturgia_grandbazaar_stone_fence_c">
+				<transform position="-14.165, 7.280, -6.388" rotation_euler="0.000, 0.000, 0.888" scale="2.386, 2.386, 2.386"/>
+				<physics shape="bo_sturgia_grandbazaar_stone_fence_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="sturgia_grandbazaar_stone_fence_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_battania_castle_stone_heap_b" old_prefab_name="">
+				<transform position="-1.033, 1.155, -13.218" rotation_euler="0.000, 0.000, 0.888" scale="1.629, 1.629, 1.629"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="ruinous_battania_castle_stone_heap_b">
+						<mesh name="ruinous_battania_castle_stone_heap_b.23" factor="4290824894"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_battania_castle_stone_heap_b" old_prefab_name="">
+				<transform position="-28.983, 17.327, -13.423" rotation_euler="0.000, 0.000, 0.888" scale="1.629, 1.629, 1.629"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="ruinous_battania_castle_stone_heap_b">
+						<mesh name="ruinous_battania_castle_stone_heap_b.23" factor="4290824894"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_a" old_prefab_name="">
+				<transform position="-31.708, 14.642, -0.072" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_ruinous_castle_stone_heap_a"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_a" old_prefab_name="">
+				<transform position="-26.485, 20.864, -0.072" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_ruinous_castle_stone_heap_a"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_a" old_prefab_name="">
+				<transform position="16.113, -15.727, -0.171" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_ruinous_castle_stone_heap_a"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_a" old_prefab_name="">
+				<transform position="6.446, -16.573, -13.218" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_ruinous_castle_stone_heap_a"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_a" old_prefab_name="">
+				<transform position="8.208, -7.392, -12.648" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_ruinous_castle_stone_heap_a"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_a" old_prefab_name="">
+				<transform position="2.393, -1.961, -3.112" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_wooden_platform_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_a" old_prefab_name="">
+				<transform position="-0.444, -7.011, -3.112" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_wooden_platform_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_a" old_prefab_name="">
+				<transform position="-16.342, 5.554, -3.106" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_wooden_platform_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_d" old_prefab_name="">
+				<transform position="-11.659, 9.577, -3.106" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_c" old_prefab_name="">
+				<transform position="-29.185, 16.434, -0.681" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_c" old_prefab_name="">
+				<transform position="-26.077, 20.298, -0.909" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_c" old_prefab_name="">
+				<transform position="-29.948, 15.486, -0.668" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_c" old_prefab_name="">
+				<transform position="16.059, -14.746, -0.795" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_c" old_prefab_name="">
+				<transform position="13.981, -17.329, -0.917" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_c" old_prefab_name="">
+				<transform position="11.586, -20.306, -0.959" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_c" old_prefab_name="">
+				<transform position="12.794, -18.805, -0.546" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="sidewalk_stone_a" old_prefab_name="">
+				<transform position="12.727, -18.566, -0.726" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_sidewalk_stone_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="sidewalk_stone_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="sidewalk_stone_a" old_prefab_name="">
+				<transform position="13.955, -17.265, -1.098" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_sidewalk_stone_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="sidewalk_stone_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="stone_pile_green_a" old_prefab_name="">
+				<transform position="13.470, -18.910, -0.171" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_stone_pile_green_a"/>
+				<components>
+					<meta_mesh_component name="stone_pile_green_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="sturgia_stone_b" old_prefab_name="">
+				<transform position="10.784, -12.576, -10.408" rotation_euler="0.000, 0.000, 0.888"/>
+				<physics shape="bo_sturgia_stone_a"/>
+				<components>
+					<meta_mesh_component name="sturgia_stone_b"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

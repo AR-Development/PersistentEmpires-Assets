@@ -1,0 +1,30 @@
+<SpawnItems>
+    <SpawnItem>
+        <ItemId>pe_ship_packed</ItemId>
+        <PrefabName>pe_testship1</PrefabName>
+    </SpawnItem>
+	    <SpawnItem>
+        <ItemId>pe_ship2_packed</ItemId>
+        <PrefabName>pe_shipwc</PrefabName>
+    </SpawnItem>
+	    <SpawnItem>
+        <ItemId>pe_boat_packed</ItemId>
+        <PrefabName>pe_ship_e</PrefabName>
+    </SpawnItem>
+	<SpawnItem>
+        <ItemId>pe_heli_packed</ItemId>
+        <PrefabName>pe_heli</PrefabName>
+    </SpawnItem>
+	<SpawnItem>
+        <ItemId>pe_bigship_packed</ItemId>
+        <PrefabName>pe_bigship_t</PrefabName>
+    </SpawnItem>
+	<SpawnItem>
+        <ItemId>pe_bigship_fly_packed</ItemId>
+        <PrefabName>pe_starwars</PrefabName>
+    </SpawnItem>
+	<SpawnItem>
+        <ItemId>pe_xwing_packed</ItemId>
+        <PrefabName>pe_xwing</PrefabName>
+    </SpawnItem>
+</SpawnItems>

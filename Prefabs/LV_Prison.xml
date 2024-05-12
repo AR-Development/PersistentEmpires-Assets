@@ -1,0 +1,86 @@
+<prefabs>
+	<game_entity name="LV_Prison" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="aserai_dungeon_cell_bars_opened" old_prefab_name="">
+				<transform position="1.378, -1.520, 0.000" rotation_euler="0.000, 0.000, 0.644"/>
+				<physics shape="bo_aserai_dungeon_cell_bars_opened"/>
+				<components>
+					<meta_mesh_component name="aserai_dungeon_cell_bars_opened"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_dungeon_cell_bars_closed" old_prefab_name="">
+				<transform position="-2.117, -0.918, 0.000" rotation_euler="0.000, 0.000, 2.199"/>
+				<physics shape="bo_aserai_dungeon_cell_bars_closed"/>
+				<components>
+					<meta_mesh_component name="aserai_dungeon_cell_bars_closed"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_dungeon_cell_bars_closed" old_prefab_name="">
+				<transform position="1.910, 2.060, 0.000" rotation_euler="0.000, 0.000, 2.199"/>
+				<physics shape="bo_aserai_dungeon_cell_bars_closed"/>
+				<components>
+					<meta_mesh_component name="aserai_dungeon_cell_bars_closed"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_dungeon_cell_bars_closed" old_prefab_name="">
+				<transform position="-1.536, 2.544, 0.000" rotation_euler="0.000, 0.000, 0.628"/>
+				<physics shape="bo_aserai_dungeon_cell_bars_closed"/>
+				<components>
+					<meta_mesh_component name="aserai_dungeon_cell_bars_closed"/>
+				</components>
+			</game_entity>
+			<game_entity name="pe_door_oc_9" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="0.786, -1.845, 0.000" rotation_euler="0.000, 0.000, -2.522"/>
+				<scripts>
+					<script name="PE_RepairableDestructableComponent">
+						<variables>
+							<variable name="DestructionState" value=""/>
+							<variable name="ReferenceEntityTag" value="door"/>
+							<variable name="RepairItem" value="pe_buildhammer"/>
+							<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+							<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+							<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="AlwaysEffectOnDestroy" value="false"/>
+							<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+							<variable name="RepairDamage" value="20"/>
+							<variable name="IsBroken" value="false"/>
+							<variable name="MaxHitPoint" value="1500.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_Gate">
+						<variables>
+							<variable name="Duration" value="1.000"/>
+							<variable name="Axis" value="0.000, 0.000, 1.000, -1.000"/>
+							<variable name="Angle" value="90.000"/>
+							<variable name="Delay" value="500.000"/>
+							<variable name="CastleId" value="4"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="aserai_dungeon_cell_bars_door" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="door"/>
+						</tags>
+						<transform position="-0.009, 0.139, 0.000" rotation_euler="0.000, 0.000, -3.141"/>
+						<physics shape="bo_aserai_dungeon_cell_bars_door"/>
+						<components>
+							<meta_mesh_component name="aserai_dungeon_cell_bars_door"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

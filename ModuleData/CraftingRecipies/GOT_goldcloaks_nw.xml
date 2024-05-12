@@ -1,0 +1,11 @@
+<Recipies>
+    <Tier1Craftings>
+2*PE_leather_cap*1=pe_linen*3|2*PE_arming_coif*1=pe_linen*3|2*PE_battania_civil_hood*1=pe_linen*3|2*PE_thinhide_coif*1=pe_linen*3|2*PE_cervelliere_over_arming_coif*1=pe_linen*3|2*PE_scarf*1=pe_linen*4|2*PE_wrapped_scarf*1=pe_linen*4|2*PE_battania_woodland_cloak*1=pe_linen*4|2*PE_a_battania_cloak_a*1=pe_linen*4|2*PE_desert_leather_shoulderpad*1=pe_linen*4|2*PE_padded_leather_shoulders*1=pe_linen*4|2*PE_sackcloth_tunic*1=pe_linen*5|2*PE_monk_robe*1=pe_linen*5|2*PE_nordic_sloven_leather*1=pe_linen*5|2*PE_nordic_sloven*1=pe_linen*5|2*dragonstone_gambeson*1=pe_linen*5|2*PE_ragged_boots*1=pe_linen*3|2*PE_steppe_leather_boots*1=pe_linen*3|2*PE_turndown_leather_boots*1=pe_linen*3|2*PE_leather_cavalier_boots*1=pe_linen*3|2*PE_empire_horseman_boots*1=pe_linen*3|2*PE_highland_gloves*1=pe_linen*2|2*PE_armwraps*1=pe_linen*2|2*PE_buttoned_leather_bracers*1=pe_linen*2|2*PE_padded_mitten*1=pe_linen*2|2*PE_padded_vambrace*1=pe_linen*2
+    </Tier1Craftings>
+    <Tier2Craftings>
+2*PE_roundkettle_over_laced_cloth*1=pe_cloth*1,pe_iron_ingot*3|2*nightswatch_hood*1=pe_cloth*1,pe_iron_ingot*3|2*PE_open_mail_coif*1=pe_cloth*1,pe_iron_ingot*3|2*karstark_coif*1=pe_cloth*1,pe_iron_ingot*3|2*PE_battania_cloak_furr*1=pe_cloth*1,pe_iron_ingot*4|2*baratheon_cloak*1=pe_cloth*1,pe_iron_ingot*4|2*PE_wolf_shoulder*1=pe_cloth*1,pe_iron_ingot*4|2*PE_bearskin*1=pe_cloth*1,pe_iron_ingot*4|2*PE_rough_bearskin*1=pe_cloth*1,pe_iron_ingot*4|2*nw_cloak*1=pe_cloth*1,pe_iron_ingot*4|2*nightswatch_armor2*1=pe_cloth*4,pe_iron_ingot*5|2*nightswatch_boots*1=pe_cloth*1,pe_iron_ingot*3|2*karstark_gloves*1=pe_cloth*1,pe_iron_ingot*2
+    </Tier2Craftings>
+    <Tier3Craftings>
+2*goldcloak_helmet*1=pe_cloth*1,pe_steel_ingot*3|2*gold_cloak*1=pe_cloth*1,pe_steel_ingot*4|2*gold_cloak_pauldrons*1=pe_cloth*1,pe_steel_ingot*4|2*gold_cloak_pauldrons_with_cape*1=pe_cloth*1,pe_steel_ingot*4|2*goldcloak_mail*1=pe_cloth*1,pe_steel_ingot*5|2*gold_cloak_armor*1=pe_cloth*1,pe_steel_ingot*5|2*PE_mail_chausses*1=pe_cloth*1,pe_steel_ingot*3|2*stark_boots_2*1=pe_cloth*1,pe_steel_ingot*3|2*gold_cloak_boots*1=pe_cloth*1,pe_steel_ingot*3|2*kingsguard_gloves*1=pe_cloth*1,pe_steel_ingot*2|2*lord_gloves*1=pe_cloth*1,pe_steel_ingot*2
+    </Tier3Craftings>
+</Recipies>

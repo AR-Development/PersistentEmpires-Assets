@@ -1,0 +1,1467 @@
+<prefabs>
+	<game_entity name="LV_Iron_Gold_Core" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="Inner_Iron" old_prefab_name="" mobility="1">
+				<transform position="-0.247, -0.187, -0.418" rotation_euler="0.000, 0.000, 0.000" scale="0.953, 0.728, 0.953"/>
+				<physics shape="bo_cave_rock_b"/>
+				<components>
+					<meta_mesh_component name="cave_rock_b">
+						<mesh name="cave_rock_b" factor="4285011456"/>
+						<mesh name="cave_rock_b.lod2" factor="4285011456"/>
+						<mesh name="cave_rock_b.lod5" factor="4285011456"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_ironore,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="600.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="Stone_Core" old_prefab_name="" mobility="1">
+				<transform position="-0.129, -0.148, -0.577" rotation_euler="0.000, 0.000, 0.000" scale="2.028, 2.251, 2.028"/>
+				<physics shape="bo_cave_desert_rock_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_b">
+						<mesh name="cave_desert_rock_b" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod2" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod5" material="stone_white_a"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_stone,20,1,100"/>
+							<variable name="RespawnAsSeconds" value="1000"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="150.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.318, -0.172, 0.634" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.455, 0.314, 0.699" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.367, 0.263, 0.459" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.255, -0.258, 0.650" rotation_euler="0.000, 0.000, 2.803" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.872, 0.132, 0.677" rotation_euler="0.000, 0.000, -1.838" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-1.050, 0.123, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.860, -0.361, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.091, -0.390, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.055, 0.250, 0.435" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="Gold_Core" old_prefab_name="" mobility="1">
+				<transform position="-0.671, -0.474, -0.252" rotation_euler="-1.558, 0.000, 0.000" scale="0.406, 0.406, 0.391"/>
+				<physics shape="bo_cave_rock_a"/>
+				<components>
+					<meta_mesh_component name="cave_rock_a">
+						<mesh name="cave_rock_a" factor="4294967095"/>
+						<mesh name="cave_rock_a.lod2" factor="4294967040"/>
+						<mesh name="cave_rock_a.lod4" factor="4294967040"/>
+						<mesh name="cave_rock_a.lod5" factor="4294967040"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_goldore,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="3601"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="LV_Coal_Gold_Core" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="Inner_Coal" old_prefab_name="" mobility="1">
+				<transform position="-0.247, 0.086, -0.655" rotation_euler="0.000, 0.000, 0.000" scale="0.953, 0.953, 0.953"/>
+				<physics shape="bo_cave_rock_b"/>
+				<components>
+					<meta_mesh_component name="cave_rock_b">
+						<mesh name="cave_rock_b" factor="4278190080"/>
+						<mesh name="cave_rock_b.lod2" factor="4278190080"/>
+						<mesh name="cave_rock_b.lod5" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_charcoal,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="600.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="Outer_Stone" old_prefab_name="" mobility="1">
+				<transform position="-0.129, 0.040, -0.577" rotation_euler="0.000, 0.000, 0.000" scale="2.028, 2.534, 2.028"/>
+				<physics shape="bo_cave_desert_rock_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_b">
+						<mesh name="cave_desert_rock_b" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod2" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod5" material="stone_white_a"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_stone,20,1,100"/>
+							<variable name="RespawnAsSeconds" value="1000"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="150.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.318, -0.172, 0.634" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.455, 0.314, 0.699" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.367, 0.263, 0.459" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.255, -0.258, 0.650" rotation_euler="0.000, 0.000, 2.803" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.872, 0.132, 0.677" rotation_euler="0.000, 0.000, -1.838" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-1.050, 0.123, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.860, -0.361, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.091, -0.390, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.055, 0.250, 0.435" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="Gold_Core" old_prefab_name="" mobility="1">
+				<transform position="-0.119, -0.065, -0.034" rotation_euler="-1.475, 0.000, 0.000" scale="0.369, 0.369, 0.323"/>
+				<physics shape="bo_cave_rock_a"/>
+				<components>
+					<meta_mesh_component name="cave_rock_a">
+						<mesh name="cave_rock_a" factor="4294967095"/>
+						<mesh name="cave_rock_a.lod2" factor="4294967040"/>
+						<mesh name="cave_rock_a.lod4" factor="4294967040"/>
+						<mesh name="cave_rock_a.lod5" factor="4294967040"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_goldore,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="3601"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="LV_Clay_Gold_Core" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="Inner_Clay" old_prefab_name="" mobility="1">
+				<transform position="-0.247, 0.131, -0.486" rotation_euler="0.000, 0.000, 0.000" scale="0.953, 0.953, 0.953"/>
+				<physics shape="bo_cave_rock_b"/>
+				<components>
+					<meta_mesh_component name="cave_rock_b">
+						<mesh name="cave_rock_b" material="terrain_ground_soil_a" factor="4294928439"/>
+						<mesh name="cave_rock_b.lod2" material="terrain_ground_soil_a" factor="4294928439"/>
+						<mesh name="cave_rock_b.lod5" material="terrain_ground_soil_a" factor="4294928439"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_clay,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="600.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="Outer_Stone" old_prefab_name="" mobility="1">
+				<transform position="-0.129, 0.026, -0.577" rotation_euler="0.000, 0.000, 0.000" scale="2.028, 2.534, 2.028"/>
+				<physics shape="bo_cave_desert_rock_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_b">
+						<mesh name="cave_desert_rock_b" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod2" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod5" material="stone_white_a"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_stone,20,1,100"/>
+							<variable name="RespawnAsSeconds" value="1000"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="150.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.318, -0.172, 0.634" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.455, 0.314, 0.699" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.367, 0.263, 0.459" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.255, -0.258, 0.650" rotation_euler="0.000, 0.000, 2.803" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.872, 0.132, 0.677" rotation_euler="0.000, 0.000, -1.838" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-1.050, 0.123, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.860, -0.361, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.091, -0.390, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.055, 0.250, 0.435" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="Gold_Core" old_prefab_name="" mobility="1">
+				<transform position="-0.404, -0.076, -0.245" rotation_euler="-1.459, 3.141, -3.141" scale="0.298, 0.298, 0.298"/>
+				<physics shape="bo_cave_rock_a"/>
+				<components>
+					<meta_mesh_component name="cave_rock_a">
+						<mesh name="cave_rock_a" factor="4294967095"/>
+						<mesh name="cave_rock_a.lod2" factor="4294967040"/>
+						<mesh name="cave_rock_a.lod4" factor="4294967040"/>
+						<mesh name="cave_rock_a.lod5" factor="4294967040"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_goldore,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="3601"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="LV_Clay_Silver_Core" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="Inner_Clay" old_prefab_name="" mobility="1">
+				<transform position="-0.247, 0.131, -0.524" rotation_euler="0.000, 0.000, 0.000" scale="0.953, 1.099, 0.953"/>
+				<physics shape="bo_cave_rock_b"/>
+				<components>
+					<meta_mesh_component name="cave_rock_b">
+						<mesh name="cave_rock_b" material="terrain_ground_soil_a" factor="4294928439"/>
+						<mesh name="cave_rock_b.lod2" material="terrain_ground_soil_a" factor="4294928439"/>
+						<mesh name="cave_rock_b.lod5" material="terrain_ground_soil_a" factor="4294928439"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_clay,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="600.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="Outer_Stone" old_prefab_name="" mobility="1">
+				<transform position="-0.129, 0.030, -0.577" rotation_euler="0.000, 0.000, 0.000" scale="1.916, 2.710, 1.889"/>
+				<physics shape="bo_cave_desert_rock_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_b">
+						<mesh name="cave_desert_rock_b" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod2" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod5" material="stone_white_a"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_stone,20,1,100"/>
+							<variable name="RespawnAsSeconds" value="1000"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="150.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.318, -0.172, 0.634" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.455, 0.314, 0.699" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.367, 0.263, 0.459" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.255, -0.258, 0.650" rotation_euler="0.000, 0.000, 2.803" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.872, 0.132, 0.677" rotation_euler="0.000, 0.000, -1.838" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-1.050, 0.123, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.860, -0.361, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.091, -0.390, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.055, 0.250, 0.435" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="Silver_Core" old_prefab_name="" mobility="1">
+				<transform position="-0.656, -0.278, -0.244" rotation_euler="-1.490, 3.141, -3.141" scale="0.540, 0.540, 0.540"/>
+				<physics shape="bo_cave_rock_a"/>
+				<components>
+					<meta_mesh_component name="cave_rock_a">
+						<mesh name="cave_rock_a" factor="4287203721"/>
+						<mesh name="cave_rock_a.lod2" factor="4287203721"/>
+						<mesh name="cave_rock_a.lod4" factor="4287203721"/>
+						<mesh name="cave_rock_a.lod5" factor="4287203721"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_silverore,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="2401"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="500.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="LV_Coal_Silver_Core" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="Inner_Coal" old_prefab_name="" mobility="1">
+				<transform position="-0.247, -0.037, -0.507" rotation_euler="0.000, 0.000, 0.000" scale="0.953, 0.953, 0.953"/>
+				<physics shape="bo_cave_rock_b"/>
+				<components>
+					<meta_mesh_component name="cave_rock_b">
+						<mesh name="cave_rock_b" factor="4278190080"/>
+						<mesh name="cave_rock_b.lod2" factor="4278190080"/>
+						<mesh name="cave_rock_b.lod5" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_charcoal,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="600.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="Outer_Stone" old_prefab_name="" mobility="1">
+				<transform position="-0.129, 0.044, -0.577" rotation_euler="0.000, 0.000, 0.000" scale="2.028, 2.534, 2.028"/>
+				<physics shape="bo_cave_desert_rock_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_b">
+						<mesh name="cave_desert_rock_b" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod2" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod5" material="stone_white_a"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_stone,20,1,100"/>
+							<variable name="RespawnAsSeconds" value="1000"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="150.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.318, -0.172, 0.634" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.455, 0.314, 0.699" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.367, 0.263, 0.459" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.255, -0.258, 0.650" rotation_euler="0.000, 0.000, 2.803" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.872, 0.132, 0.677" rotation_euler="0.000, 0.000, -1.838" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-1.050, 0.123, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.860, -0.361, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.091, -0.390, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.055, 0.250, 0.435" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="Silver_Core" old_prefab_name="" mobility="1">
+				<transform position="-0.655, -0.297, -0.211" rotation_euler="-1.446, 0.000, 0.000" scale="0.425, 0.425, 0.425"/>
+				<physics shape="bo_cave_rock_a"/>
+				<components>
+					<meta_mesh_component name="cave_rock_a">
+						<mesh name="cave_rock_a" factor="4287203721"/>
+						<mesh name="cave_rock_a.lod2" factor="4287203721"/>
+						<mesh name="cave_rock_a.lod4" factor="4287203721"/>
+						<mesh name="cave_rock_a.lod5" factor="4287203721"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_silverore,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="2401"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="500.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="LV_Iron_Silver_Core" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="Inner_Iron" old_prefab_name="" mobility="1">
+				<transform position="-0.247, 0.131, -0.410" rotation_euler="0.000, 0.000, 0.000" scale="0.953, 0.953, 0.953"/>
+				<physics shape="bo_cave_rock_b"/>
+				<components>
+					<meta_mesh_component name="cave_rock_b">
+						<mesh name="cave_rock_b" factor="4285011456"/>
+						<mesh name="cave_rock_b.lod2" factor="4285011456"/>
+						<mesh name="cave_rock_b.lod5" factor="4285011456"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_ironore,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="600.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="Stone_Core" old_prefab_name="" mobility="1">
+				<transform position="-0.129, -0.024, -0.577" rotation_euler="0.000, 0.000, 0.000" scale="2.028, 2.534, 2.028"/>
+				<physics shape="bo_cave_desert_rock_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_b">
+						<mesh name="cave_desert_rock_b" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod2" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod5" material="stone_white_a"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_stone,20,1,100"/>
+							<variable name="RespawnAsSeconds" value="1000"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="150.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.318, -0.172, 0.634" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.455, 0.314, 0.699" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.367, 0.263, 0.459" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.255, -0.258, 0.650" rotation_euler="0.000, 0.000, 2.803" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.872, 0.132, 0.677" rotation_euler="0.000, 0.000, -1.838" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-1.050, 0.123, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.860, -0.361, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.091, -0.390, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.055, 0.250, 0.435" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="Silver_Core" old_prefab_name="" mobility="1">
+				<transform position="-0.388, -0.131, -0.185" rotation_euler="-1.463, 0.000, 0.000" scale="0.388, 0.388, 0.388"/>
+				<physics shape="bo_cave_rock_a"/>
+				<components>
+					<meta_mesh_component name="cave_rock_a">
+						<mesh name="cave_rock_a" factor="4287203721"/>
+						<mesh name="cave_rock_a.lod2" factor="4287203721"/>
+						<mesh name="cave_rock_a.lod4" factor="4287203721"/>
+						<mesh name="cave_rock_a.lod5" factor="4287203721"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_silverore,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="2401"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="500.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="LV_Iron_No_Core" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="Inner_Iron" old_prefab_name="" mobility="1">
+				<transform position="-0.247, 0.105, -0.360" rotation_euler="0.000, 0.000, 0.000" scale="0.953, 0.953, 0.953"/>
+				<physics shape="bo_cave_rock_b"/>
+				<components>
+					<meta_mesh_component name="cave_rock_b">
+						<mesh name="cave_rock_b" factor="4285011456"/>
+						<mesh name="cave_rock_b.lod2" factor="4285011456"/>
+						<mesh name="cave_rock_b.lod5" factor="4285011456"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_ironore,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="600.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="Stone_Core" old_prefab_name="" mobility="1">
+				<transform position="-0.129, 0.040, -0.577" rotation_euler="0.000, 0.000, 0.000" scale="2.028, 2.534, 2.028"/>
+				<physics shape="bo_cave_desert_rock_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_b">
+						<mesh name="cave_desert_rock_b" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod2" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod5" material="stone_white_a"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_stone,20,1,100"/>
+							<variable name="RespawnAsSeconds" value="1000"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="150.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.318, -0.172, 0.634" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.455, 0.314, 0.699" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.367, 0.263, 0.459" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.255, -0.258, 0.650" rotation_euler="0.000, 0.000, 2.803" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.872, 0.132, 0.677" rotation_euler="0.000, 0.000, -1.838" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-1.050, 0.123, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.860, -0.361, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.091, -0.390, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.055, 0.250, 0.435" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4285011456"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="LV_Clay_No_Core" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="Inner_Clay" old_prefab_name="" mobility="1">
+				<transform position="-0.247, -0.070, -0.477" rotation_euler="0.000, 0.000, 0.000" scale="0.953, 0.953, 0.953"/>
+				<physics shape="bo_cave_rock_b"/>
+				<components>
+					<meta_mesh_component name="cave_rock_b">
+						<mesh name="cave_rock_b" material="terrain_ground_soil_a" factor="4294928384"/>
+						<mesh name="cave_rock_b.lod2" material="terrain_ground_soil_a" factor="4294928384"/>
+						<mesh name="cave_rock_b.lod5" material="terrain_ground_soil_a" factor="4294928384"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_clay,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="600.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="Outer_Stone" old_prefab_name="" mobility="1">
+				<transform position="-0.129, -0.006, -0.577" rotation_euler="0.000, 0.000, 0.000" scale="2.028, 2.534, 2.028"/>
+				<physics shape="bo_cave_desert_rock_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_b">
+						<mesh name="cave_desert_rock_b" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod2" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod5" material="stone_white_a"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_stone,20,1,100"/>
+							<variable name="RespawnAsSeconds" value="1000"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="150.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.318, -0.172, 0.634" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.455, 0.314, 0.699" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.367, 0.263, 0.459" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.255, -0.258, 0.650" rotation_euler="0.000, 0.000, 2.803" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.872, 0.132, 0.677" rotation_euler="0.000, 0.000, -1.838" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-1.050, 0.123, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.860, -0.361, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.091, -0.390, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.055, 0.250, 0.435" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4294928384"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="LV_Coal_No_Core" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="Inner_Coal" old_prefab_name="" mobility="1">
+				<transform position="-0.247, 0.064, -0.384" rotation_euler="0.000, 0.000, 0.000" scale="0.953, 0.953, 0.953"/>
+				<physics shape="bo_cave_rock_b"/>
+				<components>
+					<meta_mesh_component name="cave_rock_b">
+						<mesh name="cave_rock_b" factor="4278190080"/>
+						<mesh name="cave_rock_b.lod2" factor="4278190080"/>
+						<mesh name="cave_rock_b.lod5" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_charcoal,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="600.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="Outer_Stone" old_prefab_name="" mobility="1">
+				<transform position="-0.129, 0.040, -0.577" rotation_euler="0.000, 0.000, 0.000" scale="2.028, 2.534, 2.028"/>
+				<physics shape="bo_cave_desert_rock_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_b">
+						<mesh name="cave_desert_rock_b" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod2" material="stone_white_a"/>
+						<mesh name="cave_desert_rock_b.lod5" material="stone_white_a"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_stone,20,1,100"/>
+							<variable name="RespawnAsSeconds" value="1000"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="150.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.318, -0.172, 0.634" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.455, 0.314, 0.699" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.367, 0.263, 0.459" rotation_euler="0.000, 0.000, 0.000" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.255, -0.258, 0.650" rotation_euler="0.000, 0.000, 2.803" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="0.872, 0.132, 0.677" rotation_euler="0.000, 0.000, -1.838" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-1.050, 0.123, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="-0.860, -0.361, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.091, -0.390, 0.459" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_small_e" old_prefab_name="" mobility="1">
+						<transform position="1.055, 0.250, 0.435" rotation_euler="0.000, 0.000, 0.985" scale="0.788, 0.788, 0.788"/>
+						<components>
+							<meta_mesh_component name="cave_rock_small_e">
+								<mesh name="cave_rock_small_e" factor="4278190080"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

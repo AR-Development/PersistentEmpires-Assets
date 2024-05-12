@@ -1,0 +1,88 @@
+<prefabs>
+	<game_entity name="lv_jail_cell" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pe_door_oc_8" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="1.632, 1.821, 0.000" rotation_euler="0.000, 0.000, -0.024"/>
+				<scripts>
+					<script name="PE_RepairableDestructableComponent">
+						<variables>
+							<variable name="DestructionState" value=""/>
+							<variable name="ReferenceEntityTag" value="door"/>
+							<variable name="RepairItem" value="pe_buildhammer"/>
+							<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+							<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+							<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="AlwaysEffectOnDestroy" value="false"/>
+							<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+							<variable name="RepairDamage" value="20"/>
+							<variable name="IsBroken" value="false"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_Gate">
+						<variables>
+							<variable name="Duration" value="1.000"/>
+							<variable name="Axis" value="0.000, 0.000, 1.000, -1.000"/>
+							<variable name="Angle" value="90.000"/>
+							<variable name="Delay" value="500.000"/>
+							<variable name="CastleId" value="1"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="sturgia_dungeon_cell_door_closed" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="door"/>
+						</tags>
+						<transform position="-0.054, 0.071, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<physics shape="bo_sturgia_dungeon_cell_door_closed"/>
+						<components>
+							<meta_mesh_component name="sturgia_dungeon_cell_door_closed">
+								<mesh name="sturgia_dungeon_cell_door_closed.0" material="crude_iron"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="aserai_dungeon_cell_bars_door" old_prefab_name="">
+				<transform position="0.260, 1.938, 0.000" rotation_euler="0.000, 0.000, 1.601"/>
+				<physics shape="bo_aserai_dungeon_cell_bars_door"/>
+				<components>
+					<meta_mesh_component name="aserai_dungeon_cell_bars_door">
+						<mesh name="aserai_dungeon_cell_bars_door.11" material="crude_iron"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_dungeon_cell_door_a_closed" old_prefab_name="">
+				<transform position="1.073, 3.221, 0.000" rotation_euler="0.000, 0.000, 3.102"/>
+				<physics shape="bo_empire_dungeon_cell_door_a_closed"/>
+				<components>
+					<meta_mesh_component name="empire_dungeon_cell_door_a_closed">
+						<mesh name="empire_dungeon_cell_door_a_closed.1" material="crude_iron"/>
+						<mesh name="empire_dungeon_cell_door_a_closed.lod2.1" material="crude_iron"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_dungeon_cell_bars_door" old_prefab_name="">
+				<transform position="1.772, 3.099, 0.000" rotation_euler="0.000, 0.000, -1.714"/>
+				<physics shape="bo_aserai_dungeon_cell_bars_door"/>
+				<components>
+					<meta_mesh_component name="aserai_dungeon_cell_bars_door">
+						<mesh name="aserai_dungeon_cell_bars_door.11" material="crude_iron"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

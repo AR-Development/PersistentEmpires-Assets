@@ -1,0 +1,37 @@
+<prefabs>
+	<game_entity name="pe_loot" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_InventoryEntity">
+				<variables>
+					<variable name="InventoryName" value="Loot"/>
+					<variable name="InventoryId" value="playerdeath"/>
+					<variable name="CastleId" value="-1"/>
+					<variable name="Slot" value="32"/>
+					<variable name="StackCount" value="10"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="pe_lootbag" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform rotation_euler="0.000, 0.000, 0.000" scale="0.497, 0.667, 0.431"/>
+				<physics shape="bo_bd_sack_b" override_material="straw">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

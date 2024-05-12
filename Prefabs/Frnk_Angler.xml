@@ -1,0 +1,89 @@
+<prefabs>
+	<game_entity name="Angler" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_ChangeClass">
+				<variables>
+					<variable name="ChangingDurationAsSeconds" value="10"/>
+					<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+					<variable name="ClassId" value="rndm_angler"/>
+					<variable name="CastleId" value="0"/>
+					<variable name="DinarCost" value="0"/>
+					<variable name="JoinCastleFaction" value="true"/>
+					<variable name="FactionId" value="0"/>
+					<variable name="Mercenary" value="false"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="merchandise_fish_barrel_a" old_prefab_name="" mobility="1">
+				<transform position="0.154, 0.268, 0.000"/>
+				<physics shape="bo_bd_barrel_b" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_b"/>
+				</components>
+				<children>
+					<game_entity name="merchandise_fish_b" old_prefab_name="" mobility="1">
+						<transform position="-0.124, -0.204, 1.059" rotation_euler="-0.265, -3.030, 2.669"/>
+						<components>
+							<meta_mesh_component name="merchandise_fish_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_fish_b" old_prefab_name="" mobility="1">
+						<transform position="0.205, 0.028, 1.084" rotation_euler="-0.301, -3.056, -1.507"/>
+						<components>
+							<meta_mesh_component name="merchandise_fish_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_fish_b" old_prefab_name="" mobility="1">
+						<transform position="0.137, 0.132, 1.095" rotation_euler="-0.241, 0.143, -0.654"/>
+						<components>
+							<meta_mesh_component name="merchandise_fish_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_fish_b" old_prefab_name="" mobility="1">
+						<transform position="-0.036, 0.110, 1.106" rotation_euler="0.000, 0.000, 2.308"/>
+						<components>
+							<meta_mesh_component name="merchandise_fish_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_fish_b" old_prefab_name="" mobility="1">
+						<transform position="-0.213, 0.005, 1.090" rotation_euler="0.000, 0.000, 1.723"/>
+						<components>
+							<meta_mesh_component name="merchandise_fish_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_fish_a" old_prefab_name="" mobility="1">
+						<transform position="-0.049, 0.141, 1.055" rotation_euler="0.064, 0.000, -2.444"/>
+						<components>
+							<meta_mesh_component name="merchandise_fish_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_fish_a" old_prefab_name="" mobility="1">
+						<transform position="0.120, -0.032, 1.009" rotation_euler="0.000, 0.000, 2.002"/>
+						<components>
+							<meta_mesh_component name="merchandise_fish_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_fish_a" old_prefab_name="" mobility="1">
+						<transform position="-0.074, -0.127, 1.015" rotation_euler="0.000, 0.000, -0.124"/>
+						<components>
+							<meta_mesh_component name="merchandise_fish_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_fish_b" old_prefab_name="" mobility="1">
+						<transform position="0.256, -0.051, 1.041" rotation_euler="-0.364, 3.141, -1.820"/>
+						<components>
+							<meta_mesh_component name="merchandise_fish_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

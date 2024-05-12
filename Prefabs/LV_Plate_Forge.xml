@@ -1,0 +1,126 @@
+<prefabs>
+	<game_entity name="LV_Plate_Forge" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_UpgradeableBuildings">
+				<variables>
+					<variable name="CastleIndex" value="-1"/>
+					<variable name="BuildingName" value="Plate Forge"/>
+					<variable name="Tier0Tag" value="tier0"/>
+					<variable name="Tier1Tag" value="tier1"/>
+					<variable name="Tier2Tag" value=""/>
+					<variable name="Tier3Tag" value=""/>
+					<variable name="BuildingInteractiveTag" value="chest"/>
+					<variable name="Tier1RequiredEngineering" value="140"/>
+					<variable name="Tier2RequiredEngineering" value="140"/>
+					<variable name="Tier3RequiredEngineering" value="140"/>
+					<variable name="Tier1MaxHit" value="200"/>
+					<variable name="Tier2MaxHit" value="300"/>
+					<variable name="Tier3MaxHit" value="400"/>
+					<variable name="Tier1UpgradeReceipts" value="pe_hardwood*400,pe_stone*500,pe_wooden_stick*120,pe_iron_ingot*250,pe_steel_ingot*250,pe_thamaskene_steel*200,pe_goldore*150,pe_clay*500,pe_wooden_plank*900,pe_linen*800,pe_velvet*500,pe_book*50,pe_scroll*100"/>
+					<variable name="Tier2UpgradeReceipts" value="pe_hardwood*1"/>
+					<variable name="Tier3UpgradeReceipts" value="pe_hardwood*1"/>
+					<variable name="ParticleEffectOnUpgrade" value="dust_fall_a"/>
+					<variable name="SoundEffectOnUpgrade" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="BuildItem" value="pe_buildhammer"/>
+					<variable name="Tier1CraftingEngineering" value="140"/>
+					<variable name="Tier2CraftingEngineering" value="140"/>
+					<variable name="Tier3CraftingEngineering" value="140"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="tier0" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier0"/>
+				</tags>
+				<transform position="0.000, 0.000, 0.834"/>
+				<children>
+					<game_entity name="bd_wood_heap_e" old_prefab_name="" mobility="1">
+						<transform position="2.598, 0.411, -0.791" rotation_euler="0.000, 0.000, 0.909"/>
+						<physics shape="bo_bd_wood_heap_e"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_e" old_prefab_name="" mobility="1">
+						<transform position="-2.703, -2.366, -1.236" rotation_euler="0.000, 0.000, -2.672"/>
+						<physics shape="bo_bd_wood_heap_e"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_e"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier1" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier1"/>
+				</tags>
+				<transform position="0.000, 0.000, 0.834"/>
+				<children>
+					<game_entity name="mp_shop_prop_merchantsmithing_a_unused" old_prefab_name="" mobility="1">
+						<transform position="0.070, -0.990, -0.868"/>
+						<physics shape="bo_shop_prop_merchantsmithing_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantsmithing_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Plate Forge"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="LV_PlateCrafting"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pe_chest_1" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="chest"/>
+				</tags>
+				<transform position="-0.692, 0.995, -0.076"/>
+				<scripts>
+					<script name="PE_InventoryEntity">
+						<variables>
+							<variable name="InventoryName" value="Chest"/>
+							<variable name="InventoryId" value="WZ8XQL"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="Slot" value="900"/>
+							<variable name="StackCount" value="50"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="bd_chest_c" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="anan"/>
+						</tags>
+						<transform position="0.268, 0.166, 0.000" rotation_euler="0.000, 0.000, -3.129"/>
+						<physics shape="bo_bd_chest_c" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_chest_c"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

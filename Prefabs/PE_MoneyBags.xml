@@ -1,0 +1,37 @@
+<prefabs>
+	<game_entity name="pe_moneybag" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_MoneyBag">
+				<variables>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="pe_moneyb" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform rotation_euler="0.000, 0.000, 0.000" scale="0.229, 0.308, 0.199"/>
+				<physics shape="bo_bd_sack_b" override_material="straw">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="bd_sack_b">
+						<mesh name="bd_sack_b" factor="4294944540"/>
+						<mesh name="bd_sack_b.lod2" factor="4294944540"/>
+						<mesh name="bd_sack_b.lod3" factor="4294944540"/>
+						<mesh name="bd_sack_b.lod4" factor="4294944540"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

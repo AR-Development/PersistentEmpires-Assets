@@ -1,0 +1,948 @@
+<prefabs>
+	<game_entity name="LV_Merc_Camp" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pe_factionbanners_set" old_prefab_name="">
+				<transform position="1.918, 2.728, 0.365" rotation_euler="0.000, 0.000, 0.000" scale="0.667, 0.667, 0.667"/>
+				<children>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="8.701, 10.678, -1.237" rotation_euler="-0.022, -0.028, 0.685"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="4"/>
+									<variable name="FactionName" value="Unqid"/>
+									<variable name="BannerKey" value="11.7.4.1836.1836.768.788.1.0.-30.411.148.148.130.130.764.564.1.0.0.222.148.148.130.130.764.964.1.0.0.425.148.148.330.330.764.764.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="4"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="10.023, 11.849, -1.257" rotation_euler="0.000, 0.000, 1.106"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="18"/>
+									<variable name="FactionName" value="Adram"/>
+									<variable name="BannerKey" value="29.91.117.1836.1836.768.788.1.0.-30.431.135.125.360.360.767.528.1.0.0.428.136.0.530.530.760.851.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="18"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="9.481, 14.469, -1.257" rotation_euler="0.000, 0.000, 1.679"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="3"/>
+									<variable name="FactionName" value="Qaraz"/>
+									<variable name="BannerKey" value="11.126.150.1836.1836.768.788.1.0.-30.411.143.116.330.330.764.764.1.0.0.222.143.116.598.598.764.764.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="3"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="8.874, 16.884, -1.257" rotation_euler="0.000, 0.000, 2.440"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="17"/>
+									<variable name="FactionName" value="Suruq"/>
+									<variable name="BannerKey" value="13.129.2.1617.1295.768.788.1.0.-1.208.127.149.360.360.764.784.1.0.0.427.128.128.430.330.764.564.1.0.180"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="17"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="7.088, 17.795, -1.257" rotation_euler="0.000, 0.000, 3.036"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="5"/>
+									<variable name="FactionName" value="Sarran"/>
+									<variable name="BannerKey" value="11.89.89.1836.1836.768.788.1.0.-30.446.128.116.680.680.764.764.1.0.0.309.128.116.480.480.564.764.1.0.320.309.127.116.480.480.964.764.1.0.150"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="5"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-12.207, 6.740, -1.227" rotation_euler="0.000, 0.000, -0.253"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="7"/>
+									<variable name="FactionName" value="Raganvaders"/>
+									<variable name="BannerKey" value="17.72.73.1836.1836.768.788.1.0.-30.332.33.72.494.384.785.604.1.0.0.111.33.72.362.362.771.957.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="7"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-14.044, 7.416, -1.257" rotation_euler="0.000, 0.000, -0.812"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="21"/>
+									<variable name="FactionName" value="Rolaners"/>
+									<variable name="BannerKey" value="20.143.146.1836.1836.783.789.1.0.-30.414.33.146.584.584.764.764.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_peasant"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="21"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-15.081, 9.490, -1.227" rotation_euler="0.000, 0.000, -1.310"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="8"/>
+									<variable name="FactionName" value="Kostoroving"/>
+									<variable name="BannerKey" value="16.154.139.1836.1836.768.788.1.0.-30.138.22.154.578.578.764.764.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="8"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-15.163, 12.249, -1.257" rotation_euler="0.000, 0.000, -1.995"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="22"/>
+									<variable name="FactionName" value="Krasners"/>
+									<variable name="BannerKey" value="20.142.150.1836.1836.783.789.1.0.-30.433.127.142.584.584.764.764.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="22"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-13.857, 13.938, -1.227" rotation_euler="0.000, 0.000, -2.500"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="6"/>
+									<variable name="FactionName" value="Ormidoving"/>
+									<variable name="BannerKey" value="11.12.116.1836.1836.768.788.1.0.-30.439.33.146.650.650.764.764.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="6"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="10.065, -10.867, -1.167" rotation_euler="0.000, 0.000, -3.103"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="12"/>
+									<variable name="FactionName" value="Penraic"/>
+									<variable name="BannerKey" value="16.129.116.1836.1836.768.788.1.0.-30.133.150.116.581.645.764.741.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="12"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="11.896, -10.914, -1.257" rotation_euler="0.000, 0.000, 2.480"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="15"/>
+									<variable name="FactionName" value="Gruffendoc"/>
+									<variable name="BannerKey" value="17.104.89.1836.1836.783.766.1.0.-30.459.127.134.443.443.764.791.1.0.0.200.127.134.-227.227.569.581.1.0.1.200.127.134.227.227.960.581.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="15"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="12.826, -13.020, -1.167" rotation_euler="0.000, 0.000, 2.292"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="2"/>
+									<variable name="FactionName" value="Town Guards"/>
+									<variable name="BannerKey" value="4.140.119.1536.1536.764.764.1.0.0.302.34.116.531.531.866.723.1.1.318.302.34.116.531.531.663.725.1.0.41.316.119.116.509.509.758.870.1.0.-1.326.34.116.298.298.758.870.1.0.-1"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="2"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="13.566, -15.057, -1.139" rotation_euler="-0.026, 0.000, 1.803"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="13"/>
+									<variable name="FactionName" value="Ergeon"/>
+									<variable name="BannerKey" value="17.120.116.1836.1836.768.788.1.0.-30.407.131.116.443.443.764.764.1.0.0.136.131.116.227.227.568.498.1.1.0.136.131.116.227.227.959.498.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="13"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="13.146, -17.579, -1.257" rotation_euler="0.000, 0.000, 1.123"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="16"/>
+									<variable name="FactionName" value="Maireas"/>
+									<variable name="BannerKey" value="17.18.120.1836.1836.768.788.1.0.-30.406.129.116.570.570.767.767.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="16"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="11.365, -18.730, -1.137" rotation_euler="0.000, 0.000, 0.232"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="14"/>
+									<variable name="FactionName" value="Uvain"/>
+									<variable name="BannerKey" value="9.2.150.1836.1836.768.788.1.0.-30.347.111.116.672.672.767.743.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="14"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-7.079, -21.729, -1.314" rotation_euler="0.000, 0.000, -0.519"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="11"/>
+									<variable name="FactionName" value="Serapides"/>
+									<variable name="BannerKey" value="15.116.127.1833.1833.777.791.1.0.-1.100.84.116.623.623.773.767.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="11"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-8.480, -20.351, -1.257" rotation_euler="0.000, 0.000, -0.812"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="19"/>
+									<variable name="FactionName" value="Alision"/>
+									<variable name="BannerKey" value="11.78.78.1836.1836.768.788.1.0.-30.323.143.149.580.580.764.764.1.0.0.201.143.149.280.310.764.784.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="19"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-9.722, -18.449, -1.398" rotation_euler="0.003, -0.025, -1.285"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="10"/>
+									<variable name="FactionName" value="Varros"/>
+									<variable name="BannerKey" value="11.83.83.1836.1836.768.788.1.0.-30.419.84.116.492.492.775.893.1.0.0.106.84.116.412.412.776.527.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="10"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-9.329, -15.774, -1.257" rotation_euler="0.000, 0.000, -1.995"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="20"/>
+									<variable name="FactionName" value="Syratos"/>
+									<variable name="BannerKey" value="17.8.4.1889.1731.764.538.1.0.0.443.143.149.580.580.632.764.1.0.0.443.143.149.580.580.895.762.1.1.0.423.143.149.202.202.763.686.1.1.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="20"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-7.490, -14.667, -1.450" rotation_euler="0.000, 0.000, -2.870"/>
+						<physics shape="bo_banner_pole"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_tier_3_banner"/>
+							</cloth_simulator>
+						</components>
+						<scripts>
+							<script name="PEFactionBanner">
+								<variables>
+									<variable name="FactionIndex" value="9"/>
+									<variable name="FactionName" value="Argoros"/>
+									<variable name="BannerKey" value="11.6.4.1836.1836.768.788.1.0.-30.100.84.116.450.450.764.764.1.0.0"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+							<script name="PE_ChangeClass">
+								<variables>
+									<variable name="ChangingDurationAsSeconds" value="10"/>
+									<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+									<variable name="ClassId" value="pe_mercenary"/>
+									<variable name="CastleId" value="-1"/>
+									<variable name="DinarCost" value="2000"/>
+									<variable name="JoinCastleFaction" value="false"/>
+									<variable name="FactionId" value="9"/>
+									<variable name="Mercenary" value="true"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tent_vlandia_a" old_prefab_name="">
+				<transform position="-2.512, -9.337, 0.241" rotation_euler="0.000, 0.000, 1.770"/>
+				<physics shape="bo_tent_vlandia_a"/>
+				<components>
+					<meta_mesh_component name="tent_vlandia_a"/>
+				</components>
+				<children>
+					<game_entity name="ambient_sound_emitter" old_prefab_name="">
+						<transform rotation_euler="0.000, 0.000, 0.000" scale="3.710, 0.987, 0.408"/>
+						<scripts>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/area/interior/generic"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Sphere"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tent_vlandia_a" old_prefab_name="">
+				<transform position="-5.910, 10.355, -0.483" rotation_euler="0.000, 0.000, 1.770"/>
+				<physics shape="bo_tent_vlandia_a"/>
+				<components>
+					<meta_mesh_component name="tent_vlandia_a"/>
+				</components>
+				<children>
+					<game_entity name="ambient_sound_emitter" old_prefab_name="">
+						<transform rotation_euler="0.000, 0.000, 0.000" scale="3.710, 0.987, 0.408"/>
+						<scripts>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/area/interior/generic"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Sphere"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tent_vlandia_a" old_prefab_name="">
+				<transform position="8.266, -7.905, -0.401" rotation_euler="0.000, 0.000, -1.403"/>
+				<physics shape="bo_tent_vlandia_a"/>
+				<components>
+					<meta_mesh_component name="tent_vlandia_a"/>
+				</components>
+				<children>
+					<game_entity name="ambient_sound_emitter" old_prefab_name="">
+						<transform rotation_euler="0.000, 0.000, 0.000" scale="3.710, 0.987, 0.408"/>
+						<scripts>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/area/interior/generic"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Sphere"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tent_vlandia_a" old_prefab_name="">
+				<transform position="5.341, 12.124, 0.323" rotation_euler="0.000, 0.000, -1.403"/>
+				<physics shape="bo_tent_vlandia_a"/>
+				<components>
+					<meta_mesh_component name="tent_vlandia_a"/>
+				</components>
+				<children>
+					<game_entity name="ambient_sound_emitter" old_prefab_name="">
+						<transform rotation_euler="0.000, 0.000, 0.000" scale="3.710, 0.987, 0.408"/>
+						<scripts>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/area/interior/generic"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Sphere"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="castle_plank_wall_c" old_prefab_name="">
+				<transform position="-10.312, -12.562, -5.035" rotation_euler="0.000, 0.000, 1.753"/>
+				<physics shape="bo_castle_plank_wall_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="castle_plank_wall_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="castle_plank_wall_c" old_prefab_name="">
+				<transform position="-5.071, -17.811, -5.101" rotation_euler="0.000, 0.000, 2.905"/>
+				<physics shape="bo_castle_plank_wall_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="castle_plank_wall_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="castle_plank_wall_c" old_prefab_name="">
+				<transform position="3.215, -17.262, -5.077" rotation_euler="0.000, 0.000, -2.790"/>
+				<physics shape="bo_castle_plank_wall_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="castle_plank_wall_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="castle_plank_wall_c" old_prefab_name="">
+				<transform position="10.709, -13.126, -4.950" rotation_euler="0.000, 0.000, -2.483"/>
+				<physics shape="bo_castle_plank_wall_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="castle_plank_wall_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="castle_plank_wall_c" old_prefab_name="">
+				<transform position="14.754, -6.156, -5.036" rotation_euler="0.000, 0.000, -1.742"/>
+				<physics shape="bo_castle_plank_wall_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="castle_plank_wall_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="castle_plank_wall_c" old_prefab_name="">
+				<transform position="14.628, 2.356, -5.130" rotation_euler="0.000, 0.000, -1.385"/>
+				<physics shape="bo_castle_plank_wall_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="castle_plank_wall_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="castle_plank_wall_c" old_prefab_name="">
+				<transform position="13.101, 10.801, -5.005" rotation_euler="0.000, 0.000, -1.385"/>
+				<physics shape="bo_castle_plank_wall_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="castle_plank_wall_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="castle_plank_wall_c" old_prefab_name="">
+				<transform position="9.100, 18.022, -5.000" rotation_euler="0.000, 0.000, -0.772"/>
+				<physics shape="bo_castle_plank_wall_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="castle_plank_wall_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="castle_plank_wall_c" old_prefab_name="">
+				<transform position="1.737, 20.192, -5.023" rotation_euler="0.000, 0.000, 0.150"/>
+				<physics shape="bo_castle_plank_wall_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="castle_plank_wall_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="castle_plank_wall_c" old_prefab_name="">
+				<transform position="-6.723, 18.831, -5.045" rotation_euler="0.000, 0.000, 0.150"/>
+				<physics shape="bo_castle_plank_wall_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="castle_plank_wall_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="castle_plank_wall_c" old_prefab_name="">
+				<transform position="-12.265, 13.824, -5.176" rotation_euler="0.000, 0.000, 1.256"/>
+				<physics shape="bo_castle_plank_wall_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="castle_plank_wall_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="castle_plank_wall_c" old_prefab_name="">
+				<transform position="-13.234, 5.435, -5.159" rotation_euler="0.000, 0.000, 1.649"/>
+				<physics shape="bo_castle_plank_wall_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="castle_plank_wall_c"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

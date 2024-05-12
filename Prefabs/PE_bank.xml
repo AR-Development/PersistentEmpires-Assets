@@ -1,0 +1,1335 @@
+<prefabs>
+	<game_entity name="bank_small" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="3.062, -1.369, -0.364" rotation_euler="0.000, 0.000, 2.914"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="3.254, 1.526, -0.364" rotation_euler="0.000, 0.000, 2.914"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="3.057, -1.450, 0.159" rotation_euler="0.000, 0.000, 2.502"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="3.271, -2.079, 0.159" rotation_euler="0.000, 0.000, 0.225"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_closed_a" old_prefab_name="">
+				<transform position="3.168, -1.314, 0.690" rotation_euler="0.000, 0.000, -1.518" scale="1.341, 1.341, 1.341"/>
+				<components>
+					<meta_mesh_component name="lib_book_closed_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="cupboard_empire_a" old_prefab_name="">
+				<transform position="3.126, -1.726, -1.133" rotation_euler="0.000, 0.000, -1.618" scale="1.093, 1.093, 1.093"/>
+				<physics shape="bo_cupboard_empire_a" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="cupboard_empire_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_closed_c" old_prefab_name="">
+				<transform position="3.056, -1.815, 0.690" rotation_euler="0.000, 0.000, 2.190" scale="1.338, 1.338, 1.338"/>
+				<components>
+					<meta_mesh_component name="lib_book_closed_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="cupboard_empire_a" old_prefab_name="">
+				<transform position="3.227, 1.782, -1.133" rotation_euler="0.000, 0.000, -1.584" scale="1.093, 1.093, 1.093"/>
+				<physics shape="bo_cupboard_empire_a" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="cupboard_empire_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="mat_carpet_e" old_prefab_name="">
+				<transform position="0.404, -1.814, -1.127" rotation_euler="0.000, 0.000, -0.036"/>
+				<physics override_material="straw"/>
+				<components>
+					<meta_mesh_component name="mat_carpet_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_closed_a" old_prefab_name="">
+				<transform position="2.980, -2.239, 0.690" rotation_euler="0.000, 0.000, 0.267"/>
+				<components>
+					<meta_mesh_component name="lib_book_closed_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="shop_sign_base_c2" old_prefab_name="">
+				<transform position="-4.046, 0.369, 3.979" rotation_euler="0.000, 0.000, -1.561"/>
+				<physics shape="bo_shop_sign_base_c2"/>
+				<components>
+					<meta_mesh_component name="shop_sign_base_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_closed_b" old_prefab_name="">
+				<transform position="3.065, -1.981, -0.364" rotation_euler="0.000, 0.000, 1.191" scale="1.369, 1.369, 1.369"/>
+				<components>
+					<meta_mesh_component name="lib_book_closed_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="shop_sign_merchantempty" old_prefab_name="">
+				<transform position="-5.865, 0.405, 4.057" rotation_euler="0.000, 0.000, -3.130" scale="1.233, 1.233, 1.233"/>
+				<components>
+					<meta_mesh_component name="shop_sign_merchantempty"/>
+				</components>
+			</game_entity>
+			<game_entity name="torch_table_b" old_prefab_name="">
+				<transform position="3.051, 1.286, 1.945"/>
+				<components>
+					<meta_mesh_component name="torch_table_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="torch_table_b" old_prefab_name="">
+				<transform position="-1.253, 2.463, 0.000"/>
+				<components>
+					<meta_mesh_component name="torch_table_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="tavern_khuzait_table_b" old_prefab_name="">
+				<transform position="-0.008, 1.661, -1.150" rotation_euler="0.000, 0.000, -0.026"/>
+				<physics shape="bo_tavern_khuzait_table_b"/>
+				<components>
+					<meta_mesh_component name="tavern_khuzait_table_b">
+						<mesh name="tavern_khuzait_table_b" material="khuzait_brick_a"/>
+						<mesh name="tavern_khuzait_table_b.lod2" material="khuzait_brick_a"/>
+						<mesh name="tavern_khuzait_table_b.lod3" material="khuzait_brick_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="mat_carpet_d" old_prefab_name="">
+				<transform position="0.716, 2.124, -1.112" rotation_euler="0.000, 0.000, -0.048"/>
+				<physics override_material="straw"/>
+				<components>
+					<meta_mesh_component name="mat_carpet_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_grandbazaar_shop_c" old_prefab_name="">
+				<transform position="0.076, 0.221, -1.062" rotation_euler="0.000, 0.000, -1.590"/>
+				<physics shape="bo_vlandia_grandbazaar_shop_c"/>
+				<components>
+					<meta_mesh_component name="vlandia_grandbazaar_shop_c">
+						<mesh name="vlandia_grandbazaar_shop_c.0" material="stone_wall_12"/>
+						<mesh name="vlandia_grandbazaar_shop_c.1" material="stone_wall_12"/>
+						<mesh name="vlandia_grandbazaar_shop_c.2" material="plank_fine_a"/>
+						<mesh name="vlandia_grandbazaar_shop_c.4" material="roof_normal_np"/>
+						<mesh name="vlandia_grandbazaar_shop_c.5" material="plank_fine_b"/>
+						<mesh name="vlandia_grandbazaar_shop_c.6" material="empire_wall_c"/>
+						<mesh name="vlandia_grandbazaar_shop_c.lod3.0" material="stone_wall_12"/>
+						<mesh name="vlandia_grandbazaar_shop_c.lod3.1" material="stone_wall_12"/>
+						<mesh name="vlandia_grandbazaar_shop_c.lod3.2" material="plank_fine_a"/>
+						<mesh name="vlandia_grandbazaar_shop_c.lod3.4" material="roof_normal_np"/>
+						<mesh name="vlandia_grandbazaar_shop_c.lod3.5" material="plank_fine_b"/>
+						<mesh name="vlandia_grandbazaar_shop_c.lod3.6" material="empire_wall_c"/>
+						<mesh name="vlandia_grandbazaar_shop_c.lod5.0" material="stone_wall_12"/>
+						<mesh name="vlandia_grandbazaar_shop_c.lod5.1" material="stone_wall_12"/>
+						<mesh name="vlandia_grandbazaar_shop_c.lod5.2" material="plank_fine_a"/>
+						<mesh name="vlandia_grandbazaar_shop_c.lod5.4" material="roof_normal_np"/>
+						<mesh name="vlandia_grandbazaar_shop_c.lod5.5" material="plank_fine_b"/>
+						<mesh name="vlandia_grandbazaar_shop_c.lod5.6" material="empire_wall_c"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_floor_b" old_prefab_name="">
+				<transform position="0.150, 0.337, -1.220" rotation_euler="0.000, 0.000, -0.016" scale="1.035, 1.035, 1.035"/>
+				<physics shape="bo_aserai_grandbazaar_floor_b"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_floor_b">
+						<mesh name="aserai_grandbazaar_floor_b" material="empire_road_plaza_a_center"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="chest_empire_a" old_prefab_name="">
+				<transform position="1.121, 3.280, -1.133" rotation_euler="0.000, 0.000, -0.025"/>
+				<physics shape="bo_chest_empire_a" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="chest_empire_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="chest_empire_c" old_prefab_name="">
+				<transform position="1.041, 3.231, -0.226" rotation_euler="0.000, 0.000, -0.020" scale="1.722, 1.722, 1.722"/>
+				<physics shape="bo_chest_empire_c" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="chest_empire_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="chest_empire_b" old_prefab_name="" mobility="1">
+				<transform position="-1.772, 0.265, 0.000" rotation_euler="0.000, 0.000, -1.559" scale="1.137, 1.137, 1.137"/>
+				<physics shape="bo_chest_empire_b" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="chest_empire_b"/>
+				</components>
+				<scripts>
+					<script name="PE_Bank">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="">
+				<transform position="3.148, 1.291, -0.918" rotation_euler="0.935, 0.000, 0.448" scale="0.428, 0.428, 0.428"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="">
+				<transform position="2.983, -1.229, -0.918" rotation_euler="0.935, 0.000, 1.376" scale="0.428, 0.428, 0.428"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="">
+				<transform position="3.082, -2.165, -0.918" rotation_euler="0.935, 0.000, 0.442" scale="0.428, 0.428, 0.428"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="">
+				<transform position="3.062, -1.659, -0.918" rotation_euler="0.935, 0.000, 2.238" scale="0.428, 0.428, 0.428"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="shop_sign_merchantempty" old_prefab_name="">
+				<transform position="-5.754, 0.323, 4.027" rotation_euler="0.000, 0.000, -0.002" scale="1.233, 1.233, 1.233"/>
+				<components>
+					<meta_mesh_component name="shop_sign_merchantempty"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="3.214, 2.052, -0.364" rotation_euler="0.000, 0.000, 2.593"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="mat_carpet_i" old_prefab_name="">
+				<transform position="-2.913, 0.545, -1.122" rotation_euler="0.000, 0.000, 1.560" scale="0.699, 0.699, 0.699"/>
+				<components>
+					<meta_mesh_component name="mat_carpet_i"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_5m" old_prefab_name="">
+				<transform position="-1.796, 0.252, 1.873" rotation_euler="0.000, 0.000, -1.568" scale="1.557, 1.557, 1.557"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_5m"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_2" old_prefab_name="">
+				<transform position="-1.814, -2.506, -0.970" rotation_euler="0.000, 0.000, 1.574" scale="0.766, 0.766, 0.766"/>
+				<physics shape="bo_bd_cloth_2"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_2"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_carpet_khuzait_c" old_prefab_name="">
+				<transform position="3.462, 0.026, 1.761" rotation_euler="0.000, 0.000, -0.073"/>
+				<components>
+					<meta_mesh_component name="bd_carpet_khuzait_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_carpet_khuzait_d" old_prefab_name="">
+				<transform position="1.015, 3.700, 1.458" rotation_euler="0.000, 0.000, 1.535"/>
+				<components>
+					<meta_mesh_component name="bd_carpet_khuzait_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_open_a" old_prefab_name="">
+				<transform position="-1.304, 1.443, 0.000" rotation_euler="0.000, 0.000, -1.629" scale="1.211, 1.211, 1.211"/>
+				<components>
+					<meta_mesh_component name="lib_book_open_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_inkwell" old_prefab_name="">
+				<transform position="-1.091, 1.950, 0.000"/>
+				<components>
+					<meta_mesh_component name="lib_inkwell"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_decoration_cloth_b1" old_prefab_name="">
+				<transform position="-1.827, 0.003, 1.577" rotation_euler="0.000, 0.000, 1.619" scale="0.769, 0.769, 0.769"/>
+				<physics shape="bo_vlandia_arena_decoration_cloth_a1"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_decoration_cloth_b1"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_decoration_cloth_b1" old_prefab_name="">
+				<transform position="-1.931, 2.152, 1.577" rotation_euler="0.000, 0.000, 1.619" scale="0.769, 0.769, 0.769"/>
+				<physics shape="bo_vlandia_arena_decoration_cloth_a1"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_decoration_cloth_b1"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_quill_pen" old_prefab_name="">
+				<transform position="-1.100, 1.919, 0.048"/>
+				<components>
+					<meta_mesh_component name="lib_quill_pen"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_closed_a" old_prefab_name="">
+				<transform position="3.230, 1.783, 0.690" rotation_euler="0.000, 0.000, -1.187" scale="1.278, 1.278, 1.278"/>
+				<components>
+					<meta_mesh_component name="lib_book_closed_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_closed_a" old_prefab_name="">
+				<transform position="3.150, 2.220, 0.690" rotation_euler="0.000, 0.000, -1.506" scale="1.278, 1.278, 1.278"/>
+				<components>
+					<meta_mesh_component name="lib_book_closed_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_closed_b" old_prefab_name="">
+				<transform position="3.139, 1.245, 0.690" rotation_euler="0.000, 0.000, -2.105" scale="1.358, 1.358, 1.358"/>
+				<components>
+					<meta_mesh_component name="lib_book_closed_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_open_b" old_prefab_name="">
+				<transform position="3.206, 2.273, 0.159"/>
+				<components>
+					<meta_mesh_component name="lib_book_open_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="3.269, 1.698, 0.159"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="3.106, 1.353, 0.159" rotation_euler="0.000, 0.000, 0.565"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="bank_big" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="bd_sack_b" old_prefab_name="">
+				<transform position="0.537, -10.694, 0.277" rotation_euler="0.597, 0.000, 0.078" scale="0.499, 0.499, 0.499"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_corner" old_prefab_name="">
+				<transform position="1.848, 0.087, -0.072"/>
+				<physics shape="bo_aserai_grandbazaar_corner"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_corner">
+						<mesh name="aserai_grandbazaar_corner.0" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_corner.1" material="empire_wall_c"/>
+						<mesh name="aserai_grandbazaar_corner.2" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_corner.lod4.0" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_corner.lod4.1" material="empire_wall_c"/>
+						<mesh name="aserai_grandbazaar_corner.lod4.2" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_corner.lod5.0" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_corner.lod5.1" material="empire_wall_c"/>
+						<mesh name="aserai_grandbazaar_corner.lod5.2" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_corner.lod6.0" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_corner.lod6.1" material="empire_wall_c"/>
+						<mesh name="aserai_grandbazaar_corner.lod6.2" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_entry" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_entry">
+				<transform position="1.858, -7.738, -0.072"/>
+				<physics shape="bo_aserai_grandbazaar_entry"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_entry">
+						<mesh name="aserai_grandbazaar_entry.0" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.1" material="empire_wall_c"/>
+						<mesh name="aserai_grandbazaar_entry.2" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod4.0" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod4.1" material="empire_wall_c"/>
+						<mesh name="aserai_grandbazaar_entry.lod4.2" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod5.0" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod5.1" material="empire_wall_c"/>
+						<mesh name="aserai_grandbazaar_entry.lod5.2" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod6.0" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod6.1" material="empire_wall_c"/>
+						<mesh name="aserai_grandbazaar_entry.lod6.2" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_entry" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_entry">
+				<transform position="1.841, 7.983, -0.072" rotation_euler="0.000, 0.000, -3.141"/>
+				<physics shape="bo_aserai_grandbazaar_entry"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_entry">
+						<mesh name="aserai_grandbazaar_entry.0" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.1" material="empire_wall_c"/>
+						<mesh name="aserai_grandbazaar_entry.2" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod4.0" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod4.1" material="empire_wall_c"/>
+						<mesh name="aserai_grandbazaar_entry.lod4.2" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod5.0" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod5.1" material="empire_wall_c"/>
+						<mesh name="aserai_grandbazaar_entry.lod5.2" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod6.0" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod6.1" material="empire_wall_c"/>
+						<mesh name="aserai_grandbazaar_entry.lod6.2" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_entry" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_entry">
+				<transform position="-6.012, 0.079, -0.072" rotation_euler="0.000, 0.000, -1.567"/>
+				<physics shape="bo_aserai_grandbazaar_entry"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_entry">
+						<mesh name="aserai_grandbazaar_entry.0" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.1" material="empire_wall_c"/>
+						<mesh name="aserai_grandbazaar_entry.2" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod4.0" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod4.1" material="empire_wall_c"/>
+						<mesh name="aserai_grandbazaar_entry.lod4.2" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod5.0" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod5.1" material="empire_wall_c"/>
+						<mesh name="aserai_grandbazaar_entry.lod5.2" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod6.0" material="stone_wall_12"/>
+						<mesh name="aserai_grandbazaar_entry.lod6.1" material="empire_wall_c"/>
+						<mesh name="aserai_grandbazaar_entry.lod6.2" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_floor_b" old_prefab_name="">
+				<transform position="1.824, 7.901, -0.072" rotation_euler="0.000, 0.000, 0.000" scale="1.023, 1.023, 1.023"/>
+				<physics shape="bo_aserai_grandbazaar_floor_b"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_floor_b">
+						<mesh name="aserai_grandbazaar_floor_b" material="empire_road_plaza_a_side_1"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_floor_b" old_prefab_name="">
+				<transform position="-6.064, 0.074, -0.072" rotation_euler="0.000, 0.000, 0.000" scale="1.064, 1.064, 1.064"/>
+				<physics shape="bo_aserai_grandbazaar_floor_b"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_floor_b">
+						<mesh name="aserai_grandbazaar_floor_b" material="empire_road_plaza_a_side_1"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_floor_b" old_prefab_name="">
+				<transform position="1.650, 0.450, -0.089" rotation_euler="0.000, 0.000, 0.000" scale="1.064, 1.064, 1.064"/>
+				<physics shape="bo_aserai_grandbazaar_floor_b"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_floor_b">
+						<mesh name="aserai_grandbazaar_floor_b" material="empire_road_plaza_a_center"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_floor_b" old_prefab_name="">
+				<transform position="1.924, -7.604, -0.081" rotation_euler="0.000, 0.000, 0.000" scale="1.064, 1.064, 1.064"/>
+				<physics shape="bo_aserai_grandbazaar_floor_b"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_floor_b">
+						<mesh name="aserai_grandbazaar_floor_b" material="empire_road_plaza_a_side_1"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="-1.803, 8.182, 0.014"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall">
+						<mesh name="aserai_grandbazaar_wall" material="roman_aqueduct_bricks_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="-1.771, -7.365, 0.007"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall">
+						<mesh name="aserai_grandbazaar_wall" material="roman_aqueduct_bricks_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="5.621, -8.287, 0.007"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall">
+						<mesh name="aserai_grandbazaar_wall" material="roman_aqueduct_bricks_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="5.620, -0.187, 0.007"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall">
+						<mesh name="aserai_grandbazaar_wall" material="roman_aqueduct_bricks_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="5.496, 8.697, 0.014" rotation_euler="0.000, 0.000, -3.135"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall">
+						<mesh name="aserai_grandbazaar_wall" material="roman_aqueduct_bricks_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="1.959, -11.383, 0.007" rotation_euler="0.000, 0.000, 1.570"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall">
+						<mesh name="aserai_grandbazaar_wall" material="roman_aqueduct_bricks_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="1.873, 11.694, 0.014" rotation_euler="0.000, 0.000, 1.570"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall">
+						<mesh name="aserai_grandbazaar_wall" material="roman_aqueduct_bricks_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_gate" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_gate">
+				<transform position="-9.977, 0.091, 0.017" rotation_euler="0.000, 0.000, -1.565"/>
+				<physics shape="bo_empire_grandbazaar_gate"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_gate">
+						<mesh name="empire_grandbazaar_gate" material="roman_aqueduct_bricks_b"/>
+						<mesh name="empire_grandbazaar_gate.6" material="roman_aqueduct_bricks_b"/>
+						<mesh name="empire_grandbazaar_gate.lod3" material="roman_aqueduct_bricks_b"/>
+						<mesh name="empire_grandbazaar_gate.lod3.6" material="roman_aqueduct_bricks_b"/>
+						<mesh name="empire_grandbazaar_gate.lod5.6" material="roman_aqueduct_bricks_b"/>
+						<mesh name="empire_grandbazaar_gate.lod6.6" material="roman_aqueduct_bricks_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_gate" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_gate">
+				<transform position="-5.995, 3.938, 0.017" rotation_euler="0.000, 0.000, -3.135" scale="0.785, 0.785, 0.785"/>
+				<physics shape="bo_empire_grandbazaar_gate"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_gate">
+						<mesh name="empire_grandbazaar_gate" material="roman_aqueduct_bricks_b"/>
+						<mesh name="empire_grandbazaar_gate.6" material="roman_aqueduct_bricks_b"/>
+						<mesh name="empire_grandbazaar_gate.lod3" material="roman_aqueduct_bricks_b"/>
+						<mesh name="empire_grandbazaar_gate.lod3.6" material="roman_aqueduct_bricks_b"/>
+						<mesh name="empire_grandbazaar_gate.lod5.6" material="roman_aqueduct_bricks_b"/>
+						<mesh name="empire_grandbazaar_gate.lod6.6" material="roman_aqueduct_bricks_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_gate" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_gate">
+				<transform position="-5.964, -3.759, 0.017" rotation_euler="0.000, 0.000, 0.006" scale="0.785, 0.785, 0.785"/>
+				<physics shape="bo_empire_grandbazaar_gate"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_gate">
+						<mesh name="empire_grandbazaar_gate" material="roman_aqueduct_bricks_b"/>
+						<mesh name="empire_grandbazaar_gate.6" material="roman_aqueduct_bricks_b"/>
+						<mesh name="empire_grandbazaar_gate.lod3" material="roman_aqueduct_bricks_b"/>
+						<mesh name="empire_grandbazaar_gate.lod3.6" material="roman_aqueduct_bricks_b"/>
+						<mesh name="empire_grandbazaar_gate.lod5.6" material="roman_aqueduct_bricks_b"/>
+						<mesh name="empire_grandbazaar_gate.lod6.6" material="roman_aqueduct_bricks_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_column_a" old_prefab_name="">
+				<transform position="-10.282, 2.538, -0.331" rotation_euler="0.000, 0.000, -0.034"/>
+				<physics shape="bo_empire_hippodrome_column_a"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_column_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_column_a" old_prefab_name="">
+				<transform position="-10.254, -2.351, -0.348" rotation_euler="0.000, 0.000, -0.034"/>
+				<physics shape="bo_empire_hippodrome_column_a"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_column_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_statue_bust_a" old_prefab_name="">
+				<transform position="-9.788, 0.085, 5.197" rotation_euler="0.000, 0.000, -1.535"/>
+				<physics shape="bo_empire_statue_bust_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_statue_bust_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="shop_sign_merchantempty" old_prefab_name="">
+				<transform position="-10.351, 0.044, 5.233" rotation_euler="0.000, 0.000, -1.560" scale="1.495, 1.495, 1.495"/>
+				<components>
+					<meta_mesh_component name="shop_sign_merchantempty"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_fountain_a" old_prefab_name="">
+				<transform position="-6.039, -0.092, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.359, 0.359, 0.421"/>
+				<physics shape="bo_aserai_courtyard_fountain_a"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_fountain_a">
+						<mesh name="aserai_courtyard_fountain_a.21" material="empire_wall_c"/>
+						<mesh name="aserai_courtyard_fountain_a.lod5.21" material="empire_wall_c"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_chair_khuzait_lord_b_unsittable" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-3.385, 2.939, 0.017" rotation_euler="0.000, 0.000, -0.006"/>
+				<physics shape="bo_bd_chair_khuzait_lord_b" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="bd_chair_khuzait_lord_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_chair_khuzait_lord_b_unsittable" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-3.405, -2.718, 0.017" rotation_euler="0.000, 0.000, 3.133"/>
+				<physics shape="bo_bd_chair_khuzait_lord_b" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="bd_chair_khuzait_lord_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_flowerpot_b" old_prefab_name="">
+				<transform position="-6.034, -0.074, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.598, 0.598, 0.598"/>
+				<physics shape="bo_empire_garden_flowerpot_b"/>
+				<components>
+					<meta_mesh_component name="empire_garden_flowerpot_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_flowerpot_c" old_prefab_name="">
+				<transform position="-8.712, 2.607, 0.017" rotation_euler="0.000, 0.000, 0.000" scale="0.684, 0.684, 0.684"/>
+				<physics shape="bo_empire_garden_flowerpot_c"/>
+				<components>
+					<meta_mesh_component name="empire_garden_flowerpot_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_flowerpot_c" old_prefab_name="">
+				<transform position="-8.531, -2.503, 0.017" rotation_euler="0.000, 0.000, 0.000" scale="0.684, 0.684, 0.684"/>
+				<physics shape="bo_empire_garden_flowerpot_c"/>
+				<components>
+					<meta_mesh_component name="empire_garden_flowerpot_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_flowerpot_d" old_prefab_name="">
+				<transform position="4.657, 2.937, 0.000" rotation_euler="0.000, 0.000, -0.746" scale="0.675, 0.675, 0.675"/>
+				<physics shape="bo_empire_garden_flowerpot_d"/>
+				<components>
+					<meta_mesh_component name="empire_garden_flowerpot_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_flowerpot_d" old_prefab_name="">
+				<transform position="4.769, -2.735, 0.000" rotation_euler="0.000, 0.000, -0.746" scale="0.675, 0.675, 0.675"/>
+				<physics shape="bo_empire_garden_flowerpot_d"/>
+				<components>
+					<meta_mesh_component name="empire_garden_flowerpot_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_shop_door_a" old_prefab_name="">
+				<transform position="-5.924, -3.801, 0.017" rotation_euler="0.000, 0.000, -1.542" scale="0.703, 0.703, 0.703"/>
+				<physics shape="bo_aserai_grandbazaar_shop_door_a"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_shop_door_a"/>
+				</components>
+				<children>
+					<game_entity name="aserai_grandbazaar_shop_door_b" old_prefab_name="">
+						<transform position="-0.158, -0.878, 0.000" rotation_euler="0.000, 0.000, -2.605"/>
+						<physics shape="bo_aserai_grandbazaar_shop_door_b"/>
+						<components>
+							<meta_mesh_component name="aserai_grandbazaar_shop_door_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_shop_door_a" old_prefab_name="">
+				<transform position="-6.018, 3.870, 0.017" rotation_euler="0.000, 0.000, -1.542" scale="0.703, 0.703, 0.703"/>
+				<physics shape="bo_aserai_grandbazaar_shop_door_a"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_shop_door_a"/>
+				</components>
+				<children>
+					<game_entity name="aserai_grandbazaar_shop_door_b" old_prefab_name="">
+						<transform position="-0.158, -0.878, 0.000" rotation_euler="0.000, 0.000, -0.002"/>
+						<physics shape="bo_aserai_grandbazaar_shop_door_b"/>
+						<components>
+							<meta_mesh_component name="aserai_grandbazaar_shop_door_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_shop_door_a" old_prefab_name="">
+				<transform position="-10.093, 0.086, 0.017" rotation_euler="0.000, 0.000, 0.025" scale="0.973, 0.973, 0.973"/>
+				<physics shape="bo_aserai_grandbazaar_shop_door_a"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_shop_door_a"/>
+				</components>
+				<children>
+					<game_entity name="aserai_grandbazaar_shop_door_b" old_prefab_name="">
+						<transform position="-0.158, -0.878, 0.000" rotation_euler="0.000, 0.000, 2.321"/>
+						<physics shape="bo_aserai_grandbazaar_shop_door_b"/>
+						<components>
+							<meta_mesh_component name="aserai_grandbazaar_shop_door_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="arabian_carpet_c" old_prefab_name="">
+				<transform position="1.686, 6.341, 0.014" rotation_euler="0.000, 0.000, 0.025"/>
+				<physics override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="arabian_carpet_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="arabian_carpet_c" old_prefab_name="">
+				<transform position="2.024, -6.315, 0.007" rotation_euler="0.000, 0.000, -0.017"/>
+				<physics override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="arabian_carpet_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="tavern_khuzait_table_b" old_prefab_name="">
+				<transform position="0.405, 7.780, 0.014" rotation_euler="0.000, 0.000, 1.607"/>
+				<physics shape="bo_tavern_khuzait_table_b"/>
+				<components>
+					<meta_mesh_component name="tavern_khuzait_table_b">
+						<mesh name="tavern_khuzait_table_b" material="stone_wall_12"/>
+						<mesh name="tavern_khuzait_table_b.lod2" material="stone_wall_12"/>
+						<mesh name="tavern_khuzait_table_b.lod3" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="tavern_khuzait_table_b" old_prefab_name="">
+				<transform position="0.415, -7.654, 0.007" rotation_euler="0.000, 0.000, 3.108"/>
+				<physics shape="bo_tavern_khuzait_table_b"/>
+				<components>
+					<meta_mesh_component name="tavern_khuzait_table_b">
+						<mesh name="tavern_khuzait_table_b" material="stone_wall_12"/>
+						<mesh name="tavern_khuzait_table_b.lod2" material="stone_wall_12"/>
+						<mesh name="tavern_khuzait_table_b.lod3" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="tavern_vlandia_table_a" old_prefab_name="">
+				<transform position="4.729, 0.061, 0.000" rotation_euler="0.000, 0.000, 1.576"/>
+				<physics shape="bo_tavern_vlandia_table_a"/>
+				<components>
+					<meta_mesh_component name="tavern_vlandia_table_a">
+						<mesh name="tavern_vlandia_table_a.38" material="stone_wall_12"/>
+						<mesh name="tavern_vlandia_table_a.lod2.38" material="stone_wall_12"/>
+						<mesh name="tavern_vlandia_table_a.lod3.38" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="tavern_vlandia_table_a" old_prefab_name="">
+				<transform position="4.729, 0.061, 1.118" rotation_euler="0.000, 0.000, 1.576"/>
+				<physics shape="bo_tavern_vlandia_table_a"/>
+				<components>
+					<meta_mesh_component name="tavern_vlandia_table_a">
+						<mesh name="tavern_vlandia_table_a.38" material="stone_wall_12"/>
+						<mesh name="tavern_vlandia_table_a.lod2.38" material="stone_wall_12"/>
+						<mesh name="tavern_vlandia_table_a.lod3.38" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="tavern_vlandia_table_a" old_prefab_name="">
+				<transform position="4.729, 0.061, 2.242" rotation_euler="0.000, 0.000, 1.576"/>
+				<physics shape="bo_tavern_vlandia_table_a"/>
+				<components>
+					<meta_mesh_component name="tavern_vlandia_table_a">
+						<mesh name="tavern_vlandia_table_a.38" material="stone_wall_12"/>
+						<mesh name="tavern_vlandia_table_a.lod2.38" material="stone_wall_12"/>
+						<mesh name="tavern_vlandia_table_a.lod3.38" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="tavern_vlandia_table_a" old_prefab_name="">
+				<transform position="4.729, 0.061, 3.351" rotation_euler="0.000, 0.000, 1.576"/>
+				<physics shape="bo_tavern_vlandia_table_a"/>
+				<components>
+					<meta_mesh_component name="tavern_vlandia_table_a">
+						<mesh name="tavern_vlandia_table_a.38" material="stone_wall_12"/>
+						<mesh name="tavern_vlandia_table_a.lod2.38" material="stone_wall_12"/>
+						<mesh name="tavern_vlandia_table_a.lod3.38" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cupboard_a" old_prefab_name="">
+				<transform position="-0.040, 11.139, 0.014" rotation_euler="0.000, 0.000, -0.012"/>
+				<physics shape="bo_bd_cupboard_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_cupboard_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cupboard_a" old_prefab_name="">
+				<transform position="3.563, 11.094, 0.014" rotation_euler="0.000, 0.000, -0.012"/>
+				<physics shape="bo_bd_cupboard_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_cupboard_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cupboard_a" old_prefab_name="">
+				<transform position="0.269, -10.780, 0.007" rotation_euler="0.000, 0.000, -3.139"/>
+				<physics shape="bo_bd_cupboard_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_cupboard_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_5m" old_prefab_name="">
+				<transform position="1.031, -3.463, 3.595" rotation_euler="0.000, 0.000, -0.009" scale="1.415, 1.415, 1.415"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_5m"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_5m" old_prefab_name="">
+				<transform position="1.686, 3.748, 3.587" rotation_euler="0.000, 0.000, -0.009" scale="1.415, 1.415, 1.415"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_5m"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_3" old_prefab_name="">
+				<transform position="3.874, 3.711, -0.084" rotation_euler="0.000, 0.000, 0.009"/>
+				<physics shape="bo_bd_cloth_3"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_3"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_3" old_prefab_name="">
+				<transform position="-0.263, 3.742, -0.113" rotation_euler="0.000, 0.000, 0.009"/>
+				<physics shape="bo_bd_cloth_3"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_3"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_3" old_prefab_name="">
+				<transform position="-0.226, -3.418, -0.106" rotation_euler="0.000, 0.000, -3.133"/>
+				<physics shape="bo_bd_cloth_3"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_3"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_3" old_prefab_name="">
+				<transform position="3.749, -3.488, -0.078" rotation_euler="0.000, 0.000, -3.076"/>
+				<physics shape="bo_bd_cloth_3"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_3"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_open_b" old_prefab_name="">
+				<transform position="0.670, 6.720, 1.164" rotation_euler="0.000, 0.000, 0.034"/>
+				<components>
+					<meta_mesh_component name="lib_book_open_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_closed_a" old_prefab_name="">
+				<transform position="-0.985, 6.522, 1.164"/>
+				<components>
+					<meta_mesh_component name="lib_book_closed_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_closed_a" old_prefab_name="">
+				<transform position="-1.047, 6.568, 1.237" rotation_euler="0.000, 0.000, -0.575"/>
+				<components>
+					<meta_mesh_component name="lib_book_closed_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_chest_a" old_prefab_name="">
+				<transform position="4.880, -7.784, 0.007" rotation_euler="0.000, 0.000, -1.559"/>
+				<physics shape="bo_bd_chest_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_chest_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_chest_a" old_prefab_name="">
+				<transform position="4.819, 7.899, 0.014" rotation_euler="0.000, 0.000, -1.559"/>
+				<physics shape="bo_bd_chest_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_chest_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="chest_empire_b" old_prefab_name="" mobility="1">
+				<transform position="1.910, 6.184, 1.164" rotation_euler="0.000, 0.000, 0.043" scale="1.434, 1.434, 1.434"/>
+				<physics shape="bo_chest_empire_b" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="chest_empire_b"/>
+				</components>
+				<scripts>
+					<script name="PE_Bank">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="chest_empire_b" old_prefab_name="" mobility="1">
+				<transform position="1.783, -6.090, 1.157" rotation_euler="0.000, 0.000, 3.100" scale="1.434, 1.434, 1.434"/>
+				<physics shape="bo_chest_empire_b" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="chest_empire_b"/>
+				</components>
+				<scripts>
+					<script name="PE_Bank">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="bd_chair_empire_b_04_unsittable" old_prefab_name="">
+				<transform position="-1.247, 4.951, 0.014" rotation_euler="0.000, 0.000, -1.535"/>
+				<physics shape="bo_bd_chair_empire_b" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_chair_empire_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_chair_empire_b_04_unsittable" old_prefab_name="">
+				<transform position="-1.069, -4.727, 0.007" rotation_euler="0.000, 0.000, -1.599"/>
+				<physics shape="bo_bd_chair_empire_b" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_chair_empire_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="4.611, 0.684, 0.621" rotation_euler="0.000, 0.000, -0.588"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="4.687, -0.266, 0.621" rotation_euler="0.000, 0.000, -2.235" scale="1.066, 1.066, 1.066"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="4.686, -0.485, 0.621" rotation_euler="0.000, 0.000, -1.836" scale="1.066, 1.066, 1.066"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="4.694, -0.760, 0.621" rotation_euler="0.000, 0.000, -1.520" scale="1.066, 1.066, 1.066"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_c" old_prefab_name="">
+				<transform position="4.516, 0.932, 0.621" rotation_euler="0.000, 0.000, 0.209" scale="1.516, 1.516, 1.516"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_c" old_prefab_name="">
+				<transform position="4.543, 1.012, 0.138" rotation_euler="0.000, 0.000, 0.817" scale="1.516, 1.516, 1.516"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_closed_a" old_prefab_name="">
+				<transform position="4.545, 0.608, 0.138" rotation_euler="0.000, 0.000, -1.520"/>
+				<components>
+					<meta_mesh_component name="lib_book_closed_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_closed_a" old_prefab_name="">
+				<transform position="4.583, -0.113, 0.138" rotation_euler="0.000, 0.000, -1.577" scale="1.089, 1.089, 1.089"/>
+				<components>
+					<meta_mesh_component name="lib_book_closed_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_closed_b" old_prefab_name="">
+				<transform position="4.565, -0.584, 0.138" rotation_euler="0.000, 0.000, 1.560" scale="1.541, 1.541, 1.541"/>
+				<components>
+					<meta_mesh_component name="lib_book_closed_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="4.686, -0.485, 1.250" rotation_euler="0.000, 0.000, -1.836" scale="1.066, 1.066, 1.066"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="4.694, -0.760, 1.250" rotation_euler="0.000, 0.000, -1.520" scale="1.066, 1.066, 1.066"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="4.611, 0.684, 1.250" rotation_euler="0.000, 0.000, -0.588"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_c" old_prefab_name="">
+				<transform position="4.516, 0.931, 1.250" rotation_euler="0.000, 0.000, 0.209" scale="1.516, 1.516, 1.516"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_c" old_prefab_name="">
+				<transform position="4.543, 1.012, 1.782" rotation_euler="0.000, 0.000, 0.817" scale="1.516, 1.516, 1.516"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_closed_a" old_prefab_name="">
+				<transform position="4.545, 0.608, 1.782" rotation_euler="0.000, 0.000, -1.520"/>
+				<components>
+					<meta_mesh_component name="lib_book_closed_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_closed_b" old_prefab_name="">
+				<transform position="4.565, -0.584, 1.782" rotation_euler="0.000, 0.000, 1.560" scale="1.541, 1.541, 1.541"/>
+				<components>
+					<meta_mesh_component name="lib_book_closed_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="4.686, -0.485, 2.382" rotation_euler="0.000, 0.000, -1.836" scale="1.066, 1.066, 1.066"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_c" old_prefab_name="">
+				<transform position="4.516, 0.931, 2.382" rotation_euler="0.000, 0.000, 0.209" scale="1.516, 1.516, 1.516"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="4.611, 0.684, 2.382" rotation_euler="0.000, 0.000, -0.588"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_inkwell" old_prefab_name="">
+				<transform position="1.042, 6.961, 1.164"/>
+				<components>
+					<meta_mesh_component name="lib_inkwell"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_quill_pen" old_prefab_name="">
+				<transform position="1.037, 6.945, 1.235"/>
+				<components>
+					<meta_mesh_component name="lib_quill_pen"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_inkwell" old_prefab_name="">
+				<transform position="0.911, -6.559, 1.157"/>
+				<components>
+					<meta_mesh_component name="lib_inkwell"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_quill_pen" old_prefab_name="">
+				<transform position="0.907, -6.598, 1.223"/>
+				<components>
+					<meta_mesh_component name="lib_quill_pen"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_open_a" old_prefab_name="">
+				<transform position="0.323, -6.473, 1.157" rotation_euler="0.000, 0.000, 3.107" scale="1.512, 1.512, 1.512"/>
+				<components>
+					<meta_mesh_component name="lib_book_open_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_open_a" old_prefab_name="">
+				<transform position="1.630, 7.257, 1.164" rotation_euler="0.000, 0.000, -1.540" scale="1.512, 1.512, 1.512"/>
+				<components>
+					<meta_mesh_component name="lib_book_open_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="1.699, 8.275, 1.164" rotation_euler="0.000, 0.000, 1.610"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="1.701, 8.454, 1.164" rotation_euler="0.000, 0.000, 1.610"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="1.696, 8.629, 1.164" rotation_euler="0.000, 0.000, 1.610"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_b" old_prefab_name="">
+				<transform position="2.175, 8.755, 1.164" rotation_euler="0.000, 0.000, 0.090"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_b" old_prefab_name="">
+				<transform position="1.254, -6.361, 1.157" rotation_euler="0.000, 0.000, 0.476"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_c" old_prefab_name="">
+				<transform position="1.347, -6.092, 1.157"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_scroll_c" old_prefab_name="">
+				<transform position="-0.476, -6.042, 1.157" rotation_euler="0.000, 0.000, -0.566"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_chair_khuzait_lord_a_unsittable" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-0.701, -2.643, 0.000" rotation_euler="0.000, 0.000, 3.118"/>
+				<physics shape="bo_bd_chair_khuzait_lord_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_chair_khuzait_lord_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_chair_khuzait_lord_a_unsittable" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-0.731, 2.828, 0.000" rotation_euler="0.000, 0.000, 0.006"/>
+				<physics shape="bo_bd_chair_khuzait_lord_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_chair_khuzait_lord_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="">
+				<transform position="-0.434, 11.034, 1.010" rotation_euler="-0.481, 0.000, 1.332" scale="0.519, 0.519, 0.519"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="">
+				<transform position="-0.069, 11.152, 1.010" rotation_euler="-0.481, 0.000, 0.062" scale="0.519, 0.519, 0.519"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="">
+				<transform position="0.370, 11.084, 1.010" rotation_euler="-0.481, 0.000, -0.766" scale="0.519, 0.519, 0.519"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="">
+				<transform position="0.383, 11.079, 1.652" rotation_euler="-0.481, 0.000, -0.766" scale="0.519, 0.519, 0.519"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_empty_sack" old_prefab_name="">
+				<transform position="0.046, 11.192, 1.733" rotation_euler="0.000, 0.000, -0.563" scale="0.544, 0.544, 0.544"/>
+				<physics shape="bo_bd_empty_sack"/>
+				<components>
+					<meta_mesh_component name="bd_empty_sack"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_table_d" old_prefab_name="">
+				<transform position="2.650, 0.186, 0.000" rotation_euler="0.000, 0.000, -1.534"/>
+				<physics shape="bo_bd_table_d" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_table_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_chair_empire_f_unsittable" old_prefab_name="">
+				<transform position="3.452, 0.406, 0.000" rotation_euler="0.000, 0.000, -1.523"/>
+				<physics shape="bo_bd_chair_empire_f" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="bd_chair_empire_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_open_d" old_prefab_name="">
+				<transform position="2.795, 0.399, 0.796" rotation_euler="0.000, 0.000, 1.611" scale="1.113, 1.113, 1.113"/>
+				<components>
+					<meta_mesh_component name="lib_book_open_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_inkwell" old_prefab_name="">
+				<transform position="2.883, -0.164, 0.797"/>
+				<components>
+					<meta_mesh_component name="lib_inkwell"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_quill_pen" old_prefab_name="">
+				<transform position="2.891, -0.185, 0.797"/>
+				<components>
+					<meta_mesh_component name="lib_quill_pen"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_dungeon_cell_bars_opened" old_prefab_name="">
+				<transform position="-1.838, 0.118, 0.017" rotation_euler="0.000, 0.000, -1.580" scale="1.247, 1.247, 1.247"/>
+				<physics shape="bo_aserai_dungeon_cell_bars_opened"/>
+				<components>
+					<meta_mesh_component name="aserai_dungeon_cell_bars_opened">
+						<mesh name="aserai_dungeon_cell_bars_opened.5" factor="4287921782"/>
+						<mesh name="aserai_dungeon_cell_bars_opened.11" factor="4287921782"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_dungeon_cell_bars_door" old_prefab_name="">
+				<transform position="-1.871, 0.910, 0.017" rotation_euler="0.000, 0.000, 1.767" scale="1.119, 1.119, 1.119"/>
+				<physics shape="bo_aserai_dungeon_cell_bars_door"/>
+				<components>
+					<meta_mesh_component name="aserai_dungeon_cell_bars_door">
+						<mesh name="aserai_dungeon_cell_bars_door.5" factor="4287921782"/>
+						<mesh name="aserai_dungeon_cell_bars_door.11" factor="4287921782"/>
+						<mesh name="aserai_dungeon_cell_bars_door.14" factor="4287921782"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="">
+				<transform position="3.992, 10.956, 0.906" rotation_euler="-0.481, 0.000, -0.766" scale="0.519, 0.519, 0.519"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="">
+				<transform position="3.979, 10.962, 0.264" rotation_euler="-0.481, 0.000, -0.766" scale="0.519, 0.519, 0.519"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="">
+				<transform position="3.540, 11.029, 0.264" rotation_euler="-0.481, 0.000, 0.062" scale="0.519, 0.519, 0.519"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="arabian_carpet_b" old_prefab_name="">
+				<transform position="1.341, 0.012, 0.000" rotation_euler="0.000, 0.000, 1.585" scale="0.774, 0.774, 0.774"/>
+				<physics override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="arabian_carpet_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="torch_table_b" old_prefab_name="">
+				<transform position="0.000, 6.455, 1.156" rotation_euler="0.000, 0.000, 0.000" scale="1.014, 1.014, 1.014"/>
+				<components>
+					<meta_mesh_component name="torch_table_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="torch_table_b" old_prefab_name="">
+				<transform position="-0.937, -6.228, 1.150" rotation_euler="0.000, 0.000, 0.000" scale="1.014, 1.014, 1.014"/>
+				<components>
+					<meta_mesh_component name="torch_table_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="chest_empire_a" old_prefab_name="">
+				<transform position="4.589, -10.437, 0.007" rotation_euler="0.000, 0.000, -2.150" scale="0.838, 0.838, 0.838"/>
+				<physics shape="bo_chest_empire_a" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="chest_empire_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="chest_empire_c" old_prefab_name="" mobility="1">
+				<transform position="2.465, -0.937, 0.798" rotation_euler="0.000, 0.000, 1.557"/>
+				<physics shape="bo_chest_empire_c" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="chest_empire_c"/>
+				</components>
+				<scripts>
+					<script name="PE_Bank">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="chest_empire_c" old_prefab_name="" mobility="1">
+				<transform position="2.413, 1.261, 0.797" rotation_euler="0.000, 0.000, 1.635"/>
+				<physics shape="bo_chest_empire_c" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="chest_empire_c"/>
+				</components>
+				<scripts>
+					<script name="PE_Bank">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="chest_empire_c" old_prefab_name="" mobility="1">
+				<transform position="1.740, -7.518, 1.157" rotation_euler="0.000, 0.000, -1.610"/>
+				<physics shape="bo_chest_empire_c" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="chest_empire_c"/>
+				</components>
+				<scripts>
+					<script name="PE_Bank">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="chest_empire_c" old_prefab_name="" mobility="1">
+				<transform position="1.843, 9.136, 1.164" rotation_euler="0.000, 0.000, -1.610"/>
+				<physics shape="bo_chest_empire_c" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="chest_empire_c"/>
+				</components>
+				<scripts>
+					<script name="PE_Bank">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="">
+				<transform position="-0.151, -10.763, 1.003" rotation_euler="0.597, 0.000, -0.540" scale="0.499, 0.499, 0.499"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

@@ -1,0 +1,3172 @@
+<prefabs>
+	<game_entity name="plo_castle_1" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="vlandia_dungeon_cells_a_bars_door" old_prefab_name="">
+				<transform position="131.149, 29.077, 0.596" rotation_euler="0.000, 0.000, 2.612" scale="1.300, 1.000, 1.300"/>
+				<physics shape="bo_vlandia_dungeon_cells_a_bars_door"/>
+				<components>
+					<meta_mesh_component name="vlandia_dungeon_cells_a_bars_door"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_dungeon_cells_a_bars_door" old_prefab_name="">
+				<transform position="173.678, 41.704, 0.466" rotation_euler="0.000, 0.000, 1.779" scale="1.300, 1.000, 1.300"/>
+				<physics shape="bo_vlandia_dungeon_cells_a_bars_door"/>
+				<components>
+					<meta_mesh_component name="vlandia_dungeon_cells_a_bars_door"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cart_heap_b" old_prefab_name="">
+				<transform position="205.813, 131.510, 1.634" rotation_euler="0.000, 0.000, -0.561"/>
+				<physics shape="bo_bd_cart_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_cart_a"/>
+				</components>
+				<children>
+					<game_entity name="bd_sack_a" old_prefab_name="">
+						<transform position="-1.329, -0.358, 0.910" rotation_euler="1.290, 0.575, 1.624"/>
+						<physics shape="bo_bd_sack_a" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_a" old_prefab_name="">
+						<transform position="0.212, -0.583, 1.328" rotation_euler="1.285, 1.682, 1.437"/>
+						<physics shape="bo_bd_sack_a" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_a" old_prefab_name="">
+						<transform position="-0.227, 0.222, 1.615" rotation_euler="1.245, 0.941, 0.636"/>
+						<physics shape="bo_bd_sack_a" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_b" old_prefab_name="">
+						<transform position="-0.560, -0.230, 1.217" rotation_euler="0.338, 0.496, 0.108"/>
+						<physics shape="bo_bd_sack_b" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_b" old_prefab_name="">
+						<transform position="-0.842, 0.182, 1.198" rotation_euler="0.429, -0.162, 3.042"/>
+						<physics shape="bo_bd_sack_b" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="archery_practice_target" old_prefab_name="">
+				<transform position="278.295, 114.807, 0.132" rotation_euler="0.000, 0.000, -1.075"/>
+				<physics shape="bo_bd_target_board"/>
+				<components>
+					<meta_mesh_component name="bd_target_board"/>
+				</components>
+				<children>
+					<game_entity name="bullseye" old_prefab_name="">
+						<transform position="0.061, -0.258, 1.417" rotation_euler="0.209, 0.000, 3.141"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="archery_practice_target" old_prefab_name="">
+				<transform position="277.032, 117.185, 0.156" rotation_euler="0.000, 0.000, -1.075"/>
+				<physics shape="bo_bd_target_board"/>
+				<components>
+					<meta_mesh_component name="bd_target_board"/>
+				</components>
+				<children>
+					<game_entity name="bullseye" old_prefab_name="">
+						<transform position="0.061, -0.258, 1.417" rotation_euler="0.209, 0.000, 3.141"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_l3_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_old">
+				<transform position="195.664, 146.237, 4.324" rotation_euler="0.003, 0.000, 3.108" scale="1.400, 1.000, 1.000"/>
+				<physics shape="bo_european_castle_wall_a_l3_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_dungeon_cells_a_bars_door" old_prefab_name="">
+				<transform position="145.783, 20.511, 0.596" rotation_euler="0.000, 0.000, 2.612" scale="1.300, 1.000, 1.300"/>
+				<physics shape="bo_vlandia_dungeon_cells_a_bars_door"/>
+				<components>
+					<meta_mesh_component name="vlandia_dungeon_cells_a_bars_door"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_dungeon_cells_a_bars_door" old_prefab_name="">
+				<transform position="170.155, 58.341, 0.466" rotation_euler="0.000, 0.000, 1.779" scale="1.300, 1.000, 1.300"/>
+				<physics shape="bo_vlandia_dungeon_cells_a_bars_door"/>
+				<components>
+					<meta_mesh_component name="vlandia_dungeon_cells_a_bars_door"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_l3_2_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_damaged_l3_old">
+				<transform position="121.087, 29.200, 0.000" rotation_euler="0.000, 0.000, -1.587" scale="0.900, 1.000, 1.000"/>
+				<physics shape="bo_european_castle_wall_a_damaged_l3_2_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_l3_2_old">
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.11" material="planks_5" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.20" material="plank_b" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.27" material="plank_floor_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.28" material="dirty_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.29" material="roof_normal" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.30" material="plank_d" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.33" material="wall_castle_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.38" material="rock_1_plain" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.40" material="castle_floor_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.41" material="wall_castle_a_detail" argument2="-12.248, 9.823, -1.213, -0.425"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="-10.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="vlandia_grandbazaar_gate_door_a" old_prefab_name="">
+				<transform position="216.383, 103.518, -0.282" rotation_euler="0.000, 0.000, 1.401" scale="1.785, 1.785, 1.785"/>
+				<physics shape="bo_vlandia_grandbazaar_gate_door_a"/>
+				<components>
+					<meta_mesh_component name="vlandia_grandbazaar_gate_door_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_l3_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_old">
+				<transform position="175.962, 66.358, -0.035" rotation_euler="0.000, 0.000, -1.961" scale="0.500, 1.000, 1.000"/>
+				<physics shape="bo_european_castle_wall_a_l3_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_old">
+						<mesh name="european_castle_wall_a_l3_old.11" material="planks_5" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.20" material="plank_b" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.27" material="plank_floor_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.28" material="dirty_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.29" material="roof_normal" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.30" material="plank_d" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.33" material="wall_castle_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.38" material="rock_1_plain" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.40" material="castle_floor_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.41" material="wall_castle_a_detail" argument2="-12.248, 9.823, -1.213, -0.425"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="30.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="sturgia_dungeon_cell_door_closed" old_prefab_name="">
+				<transform position="187.442, 41.497, 1.038"/>
+				<physics shape="bo_sturgia_dungeon_cell_door_closed"/>
+				<components>
+					<meta_mesh_component name="sturgia_dungeon_cell_door_closed"/>
+				</components>
+			</game_entity>
+			<game_entity name="border_soft" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="walk_area_vertex"/>
+				</tags>
+				<transform position="298.173, 120.781, 0.000"/>
+				<components>
+					<meta_mesh_component name="soft_border_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_grandbazaar_gate_door_a" old_prefab_name="">
+				<transform position="211.073, 105.777, -0.278" rotation_euler="0.000, 0.000, 0.907" scale="1.785, 1.785, 1.785"/>
+				<physics shape="bo_vlandia_grandbazaar_gate_door_a"/>
+				<components>
+					<meta_mesh_component name="vlandia_grandbazaar_gate_door_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="prop_merchantweapons_shield_c" old_prefab_name="">
+				<tags>
+					<tag name="shop_prop"/>
+					<tag name="c"/>
+				</tags>
+				<transform position="280.743, 106.905, 0.000" rotation_euler="0.000, 0.000, -3.007"/>
+				<physics shape="bo_shop_prop_merchantweapons_melee_c"/>
+				<components>
+					<meta_mesh_component name="shop_prop_merchantweapons_shield_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_gatehouse_b_l3" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_gatehouse_b_l3">
+				<transform position="133.482, 18.444, -0.079" rotation_euler="0.000, 0.000, -0.512"/>
+				<physics shape="bo_european_castle_gatehouse_b_l3"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="european_castle_gatehouse_b_l3"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_l3_2_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_damaged_l3_old">
+				<transform position="156.869, 25.996, 0.000" rotation_euler="0.000, 0.000, 0.748" scale="1.500, 1.000, 1.000"/>
+				<physics shape="bo_european_castle_wall_a_damaged_l3_2_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_l3_2_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_l3_2_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_damaged_l3_old">
+				<transform position="133.970, 59.572, 0.000" rotation_euler="0.000, 0.000, -2.545"/>
+				<physics shape="bo_european_castle_wall_a_damaged_l3_2_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_l3_2_old">
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.11" material="planks_5" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.20" material="plank_b" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.27" material="plank_floor_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.28" material="dirty_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.29" material="roof_normal" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.30" material="plank_d" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.33" material="wall_castle_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.38" material="rock_1_plain" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.40" material="castle_floor_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.41" material="wall_castle_a_detail" argument2="-12.248, 9.823, -1.213, -0.425"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="-10.010000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_l3_2_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_damaged_l3_old">
+				<transform position="151.785, 65.593, 0.000" rotation_euler="0.000, 0.000, 3.093" scale="0.800, 1.000, 1.000"/>
+				<physics shape="bo_european_castle_wall_a_damaged_l3_2_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_l3_2_old">
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.11" material="planks_5" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.20" material="plank_b" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.27" material="plank_floor_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.28" material="dirty_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.29" material="roof_normal" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.30" material="plank_d" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.33" material="wall_castle_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.38" material="rock_1_plain" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.40" material="castle_floor_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.41" material="wall_castle_a_detail" argument2="-12.248, 9.823, -1.213, -0.425"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="-10.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="european_castle_barn_b" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_barn_b_l3">
+				<transform position="256.983, 117.044, 0.171" rotation_euler="0.000, 0.000, -3.136"/>
+				<physics shape="bo_european_castle_barn_b_l3" override_material="wood"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="european_castle_barn_b_l3"/>
+				</components>
+				<children>
+					<game_entity name="ambient_sound_emitter" old_prefab_name="">
+						<transform position="3.759, 3.968, 1.997" rotation_euler="0.000, 0.000, -0.024" scale="9.370, 3.820, 2.817"/>
+						<scripts>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/reverb/stone_interior"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Box"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="log_pine_j" old_prefab_name="">
+				<transform position="238.862, 131.314, 0.234" rotation_euler="-1.060, -0.016, -2.889"/>
+				<physics shape="bo_log_pine_j"/>
+				<components>
+					<meta_mesh_component name="log_pine_j"/>
+				</components>
+			</game_entity>
+			<game_entity name="Fresian_horse" old_prefab_name="">
+				<transform position="259.685, 111.924, 0.194" rotation_euler="0.000, 0.000, -3.125"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="horse_brown">
+							<mesh name="horse_brown" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.4" factor="4278585096" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.0" factor="4278585096" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.1" factor="4278585096" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.2" factor="4278585096" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.3" factor="4278585096" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod1" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod1.1" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod2" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod2.1" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod3" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod3.1" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod4" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod4.1" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod5" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod5.1" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+						</meta_mesh_component>
+					</cloth_simulator>
+					<cloth_simulator>
+						<meta_mesh_component name="horse_mane_2" _index_="1"/>
+					</cloth_simulator>
+					<cloth_simulator>
+						<meta_mesh_component name="horse_trotter" _index_="2">
+							<mesh name="horse_trotter.2" factor="4278782475"/>
+							<mesh name="horse_trotter.1.2" factor="4278782475"/>
+							<mesh name="horse_trotter.2.2" factor="4278782475"/>
+							<mesh name="horse_trotter.3.2" factor="4278782475"/>
+						</meta_mesh_component>
+					</cloth_simulator>
+				</components>
+			</game_entity>
+			<game_entity name="horse_critter" old_prefab_name="">
+				<transform position="257.403, 112.051, 0.215" rotation_euler="0.000, 0.000, 3.121"/>
+				<components>
+					<meta_mesh_component name="horse_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="Fresian_horse" old_prefab_name="">
+				<transform position="246.750, 111.593, 0.169" rotation_euler="0.000, 0.000, 1.574"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="horse_brown">
+							<mesh name="horse_brown" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.4" factor="4278585096" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.0" factor="4278585096" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.1" factor="4278585096" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.2" factor="4278585096" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.3" factor="4278585096" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod1" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod1.1" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod2" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod2.1" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod3" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod3.1" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod4" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod4.1" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod5" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+							<mesh name="horse_brown.lod5.1" material="dales_pony_mat" argument="2.000, 2.000, 2.000, 1.000"/>
+						</meta_mesh_component>
+					</cloth_simulator>
+					<cloth_simulator>
+						<meta_mesh_component name="horse_mane_2" _index_="1"/>
+					</cloth_simulator>
+					<cloth_simulator>
+						<meta_mesh_component name="horse_trotter" _index_="2">
+							<mesh name="horse_trotter.2" factor="4278782475"/>
+							<mesh name="horse_trotter.1.2" factor="4278782475"/>
+							<mesh name="horse_trotter.2.2" factor="4278782475"/>
+							<mesh name="horse_trotter.3.2" factor="4278782475"/>
+						</meta_mesh_component>
+					</cloth_simulator>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_ironware_horseshoe" old_prefab_name="">
+				<transform position="264.192, 109.956, 0.677"/>
+				<components>
+					<meta_mesh_component name="merchandise_ironware_horseshoe"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_fence_a" old_prefab_name="">
+				<transform position="259.184, 111.197, 0.201" rotation_euler="0.000, 0.000, -1.596" scale="0.812, 0.812, 0.812"/>
+				<physics shape="bo_wooden_platform_2_fence_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_grandstand_barrier_b" old_prefab_name="">
+				<transform position="237.548, 112.707, 0.712" rotation_euler="0.000, 0.000, 0.544"/>
+				<physics shape="bo_vlandia_arena_grandstand_barrier_b"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_grandstand_barrier_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_l3_2_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_damaged_l3_old">
+				<transform position="207.454, 39.813, 3.846" rotation_euler="0.000, 0.000, 0.039"/>
+				<physics shape="bo_european_castle_wall_a_damaged_l3_2_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_l3_2_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_l3_2_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_damaged_l3_old">
+				<transform position="290.278, 49.249, 4.004" rotation_euler="0.000, 0.000, 1.089"/>
+				<physics shape="bo_european_castle_wall_a_damaged_l3_2_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_l3_2_old">
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.11" material="planks_5" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.20" material="plank_b" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.27" material="plank_floor_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.28" material="dirty_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.29" material="roof_normal" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.30" material="plank_d" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.33" material="wall_castle_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.38" material="rock_1_plain" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.40" material="castle_floor_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_damaged_l3_2_old.41" material="wall_castle_a_detail" argument2="-12.248, 9.823, -1.213, -0.425"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="-30.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_l3_2_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_damaged_l3_old">
+				<transform position="177.440, 36.518, 0.000" rotation_euler="0.000, 0.000, 0.092"/>
+				<physics shape="bo_european_castle_wall_a_damaged_l3_2_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_l3_2_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_l3_2_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_damaged_l3_old">
+				<transform position="228.852, 40.648, 3.879" rotation_euler="0.000, 0.000, 0.039"/>
+				<physics shape="bo_european_castle_wall_a_damaged_l3_2_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_l3_2_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_corner_c_l3_old" old_prefab_name="">
+				<transform position="190.903, 38.291, 0.976" rotation_euler="0.000, 0.000, 0.041"/>
+				<physics shape="bo_european_castle_corner_c_l3_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_corner_c_l3_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_l3_2_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_damaged_l3_old">
+				<transform position="272.094, 42.336, 3.896" rotation_euler="0.000, 0.000, 0.039"/>
+				<physics shape="bo_european_castle_wall_a_damaged_l3_2_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_l3_2_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_l3_2_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_damaged_l3_old">
+				<transform position="250.412, 41.490, 3.893" rotation_euler="0.000, 0.000, 0.039"/>
+				<physics shape="bo_european_castle_wall_a_damaged_l3_2_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_l3_2_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_city_house_f" old_prefab_name="" occlusion_body_name="bo_occ_house_f">
+				<transform position="192.436, 76.609, 0.273" rotation_euler="0.000, 0.000, 1.130" scale="1.000, 0.780, 1.000"/>
+				<physics shape="bo_house_f"/>
+				<components>
+					<meta_mesh_component name="house_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_l3_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_old">
+				<transform position="176.690, 129.146, -0.074" rotation_euler="0.000, 0.000, -1.653" scale="1.300, 1.000, 1.000"/>
+				<physics shape="bo_european_castle_wall_a_l3_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_l3_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_old">
+				<transform position="174.682, 104.735, -0.074" rotation_euler="0.000, 0.000, -1.653"/>
+				<physics shape="bo_european_castle_wall_a_l3_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="border_soft" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="walk_area_vertex"/>
+				</tags>
+				<transform position="270.026, 150.595, 0.000"/>
+				<components>
+					<meta_mesh_component name="soft_border_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="border_soft" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="walk_area_vertex"/>
+				</tags>
+				<transform position="307.209, 54.667, 0.000"/>
+				<components>
+					<meta_mesh_component name="soft_border_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_l3_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_old">
+				<transform position="265.469, 143.910, 4.324" rotation_euler="0.000, 0.000, 3.108"/>
+				<physics shape="bo_european_castle_wall_a_l3_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="prop_merchantweapons_melee_c" old_prefab_name="">
+				<tags>
+					<tag name="shop_prop"/>
+					<tag name="c"/>
+				</tags>
+				<transform position="274.310, 107.754, 0.000"/>
+				<physics shape="bo_shop_prop_merchantweapons_melee_c"/>
+				<components>
+					<meta_mesh_component name="shop_prop_merchantweapons_melee_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_barrel_heap_b" old_prefab_name="">
+				<transform position="225.819, 108.073, 0.000" rotation_euler="0.000, 0.000, -0.704"/>
+				<physics shape="bo_rock_001" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_001"/>
+				</components>
+				<children>
+					<game_entity name="bd_barrel_a" old_prefab_name="">
+						<transform position="1.358, 0.512, 0.387" rotation_euler="1.560, 3.077, 3.136"/>
+						<physics shape="bo_bd_barrel_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_barrel_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_barrel_a" old_prefab_name="">
+						<transform position="0.889, 0.658, 1.051" rotation_euler="1.512, -1.475, 1.441"/>
+						<physics shape="bo_bd_barrel_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_barrel_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_barrel_a" old_prefab_name="">
+						<transform position="0.427, 0.628, 0.377" rotation_euler="1.527, -1.066, 1.071"/>
+						<physics shape="bo_bd_barrel_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_barrel_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="rock_001" old_prefab_name="">
+						<transform position="1.776, -0.005, 0.000" rotation_euler="0.000, 0.000, 1.677"/>
+						<physics shape="bo_rock_001" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="rock_001"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="battleground_fire_smoke_vertical" old_prefab_name="">
+				<transform position="238.881, 131.254, 0.054" rotation_euler="0.000, 0.000, -0.162"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{4107079C-E7CC-41BF-89F4-5FDDA5F7202A}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="fire_light" old_prefab_name="">
+				<transform position="238.720, 131.660, 0.876" rotation_euler="0.000, 0.000, 0.004"/>
+				<components>
+					<light_component color="1.000, 0.596, 0.133" intensity="300.000" radius="15.000" flicker_interval="0.400" flicker_magnitude="1.100" local_frame_rot="15.000000, 0.000000, 0.000000, 0.000000, 15.000000, 0.000000, 0.000000, 0.000000, 15.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow_size_multiplier="1" shadow_radius="9.600"/>
+				</components>
+				<scripts>
+					<script name="LightCycle">
+						<variables>
+							<variable name="alwaysBurn" value="false"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="fire_stones_battania" old_prefab_name="">
+				<transform position="238.783, 131.447, -0.007" rotation_euler="0.003, -0.001, -0.580" scale="1.084, 1.084, 1.084"/>
+				<physics shape="bo_fire_stones_battania" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="fire_stones_battania">
+						<mesh name="fire_stones_battania" factor="4292072403"/>
+						<mesh name="fire_stones_battania.1" factor="4292072403"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="log_pine_j" old_prefab_name="">
+				<transform position="238.762, 131.329, 0.025" rotation_euler="-0.237, 0.111, 1.988" scale="0.711, 0.711, 0.711"/>
+				<physics shape="bo_log_pine_j"/>
+				<components>
+					<meta_mesh_component name="log_pine_j">
+						<mesh name="log_pine_j.3" factor="4292072403"/>
+						<mesh name="log_pine_j.7" factor="4292072403"/>
+						<mesh name="log_pine_j.lod3.3" factor="4292072403"/>
+						<mesh name="log_pine_j.lod3.7" factor="4292072403"/>
+						<mesh name="log_pine_j.lod5.3" factor="4292072403"/>
+						<mesh name="log_pine_j.lod5.7" factor="4292072403"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_barrel_heap_a" old_prefab_name="">
+				<transform position="221.060, 87.056, 0.000" rotation_euler="0.000, 0.000, 1.165"/>
+				<physics shape="bo_bd_barrel_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_a"/>
+				</components>
+				<children>
+					<game_entity name="bd_barrel_a" old_prefab_name="">
+						<transform position="1.000, 0.100, 0.000" rotation_euler="0.000, 0.000, -1.405"/>
+						<physics shape="bo_bd_barrel_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_barrel_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_barrel_a" old_prefab_name="">
+						<transform position="0.500, 0.000, 1.150" rotation_euler="0.000, 0.000, -1.230"/>
+						<physics shape="bo_bd_barrel_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_barrel_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="log_pine_j" old_prefab_name="">
+				<transform position="238.644, 131.481, 0.291" rotation_euler="-0.915, 0.856, 1.149"/>
+				<physics shape="bo_log_pine_j"/>
+				<components>
+					<meta_mesh_component name="log_pine_j"/>
+				</components>
+			</game_entity>
+			<game_entity name="log_pine_j" old_prefab_name="">
+				<transform position="239.141, 131.515, 0.044" rotation_euler="-1.024, -0.274, -0.861"/>
+				<physics shape="bo_log_pine_j"/>
+				<components>
+					<meta_mesh_component name="log_pine_j"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_barn_a_l3" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_barn_a_l3">
+				<transform position="183.352, 94.892, 0.126" rotation_euler="0.000, 0.000, 1.486"/>
+				<physics shape="bo_european_castle_barn_a_l3"/>
+				<components>
+					<meta_mesh_component name="european_castle_barn_a_l3"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_corner_c_l3_old" old_prefab_name="">
+				<transform position="178.210, 149.584, 3.934"/>
+				<physics shape="bo_european_castle_corner_c_l3_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_corner_c_l3_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_main_building" old_prefab_name="" occlusion_body_name="bo_occ_vlandia_arena_main_building">
+				<transform position="228.924, 135.396, 0.124" rotation_euler="0.000, 0.000, -0.047"/>
+				<physics shape="bo_vlandia_arena_main_building"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_main_building"/>
+				</components>
+				<children>
+					<game_entity name="ambient_sound_emitter" old_prefab_name="">
+						<transform position="0.000, -2.361, 8.856" rotation_euler="0.000, 0.000, 0.000" scale="5.049, 3.902, 2.090"/>
+						<scripts>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/reverb/wood_interior"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Box"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="burning_campfire" old_prefab_name="">
+				<transform position="238.823, 131.353, 0.195" rotation_euler="0.000, -3.141, -1.728"/>
+				<physics shape="bo_burned_wood_a"/>
+				<components>
+					<meta_mesh_component name="burned_wood_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cart_a" old_prefab_name="">
+				<transform position="205.895, 122.029, 0.080" rotation_euler="0.000, 0.000, -0.087"/>
+				<physics shape="bo_bd_cart_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_cart_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_l3_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_old">
+				<transform position="284.857, 141.420, 4.240" rotation_euler="0.000, 0.000, 2.581"/>
+				<physics shape="bo_european_castle_wall_a_l3_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_old">
+						<mesh name="european_castle_wall_a_l3_old.11" material="planks_5" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.20" material="plank_b" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.27" material="plank_floor_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.28" material="dirty_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.29" material="roof_normal" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.30" material="plank_d" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.33" material="wall_castle_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.38" material="rock_1_plain" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.40" material="castle_floor_a" argument2="-12.248, 9.823, -1.213, -0.425"/>
+						<mesh name="european_castle_wall_a_l3_old.41" material="wall_castle_a_detail" argument2="-12.248, 9.823, -1.213, -0.425"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="-20.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="vlandia_arena_tower" old_prefab_name="" occlusion_body_name="bo_occ_vlandia_arena_tower">
+				<transform position="208.281, 117.440, 0.000" rotation_euler="0.000, 0.000, 2.551"/>
+				<physics shape="bo_vlandia_arena_tower"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_tower"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_l3_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_old">
+				<transform position="244.218, 144.618, 4.324" rotation_euler="0.000, 0.000, 3.108"/>
+				<physics shape="bo_european_castle_wall_a_l3_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_wall_b" old_prefab_name="" occlusion_body_name="bo_occ_vlandia_arena_wall_b">
+				<transform position="198.968, 131.172, 0.139" rotation_euler="0.000, 0.000, -1.588"/>
+				<physics shape="bo_vlandia_arena_wall_b"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_wall_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_wall_b" old_prefab_name="" occlusion_body_name="bo_occ_vlandia_arena_wall_b">
+				<transform position="200.094, 138.265, -0.136" rotation_euler="0.000, 0.000, -1.588"/>
+				<physics shape="bo_vlandia_arena_wall_b"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_wall_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_city_gatehouse_a" old_prefab_name="">
+				<transform position="216.206, 110.505, -0.103" rotation_euler="0.000, 0.000, 2.738"/>
+				<physics shape="bo_european_city_gatehouse_a"/>
+				<components>
+					<meta_mesh_component name="european_city_gatehouse_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_wall_c" old_prefab_name="" occlusion_body_name="bo_occ_vlandia_arena_wall_c">
+				<transform position="205.185, 114.460, 0.000" rotation_euler="0.000, 0.000, 2.275"/>
+				<physics shape="bo_vlandia_arena_wall_c"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_wall_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_tower_round_a_l3" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_tower_round_a_l3">
+				<transform position="124.255, 45.791, 0.048" rotation_euler="0.000, 0.000, -1.925"/>
+				<physics shape="bo_european_castle_tower_round_a_l3"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="european_castle_tower_round_a_l3"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="european_castle_tower_round_a_l3_stairs" old_prefab_name="">
+						<physics shape="bo_european_castle_tower_round_a_l3_stairs">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="european_castle_tower_round_a_l3_stairs"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_13" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_tower_round_a_l3_05"/>
+						<components>
+							<meta_mesh_component name="european_castle_tower_round_a_l3_05"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="merlon_12" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_tower_round_a_l3_06"/>
+						<components>
+							<meta_mesh_component name="european_castle_tower_round_a_l3_06"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="merlon_11" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_tower_round_a_l3_07"/>
+						<components>
+							<meta_mesh_component name="european_castle_tower_round_a_l3_07"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="merlon_10" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_tower_round_a_l3_08"/>
+						<components>
+							<meta_mesh_component name="european_castle_tower_round_a_l3_08"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="merlon_9" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_tower_round_a_l3_09"/>
+						<components>
+							<meta_mesh_component name="european_castle_tower_round_a_l3_09"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="merlon_8" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_tower_round_a_l3_10"/>
+						<components>
+							<meta_mesh_component name="european_castle_tower_round_a_l3_10"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="merlon_7" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_tower_round_a_l3_11"/>
+						<components>
+							<meta_mesh_component name="european_castle_tower_round_a_l3_11"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="merlon_6" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_tower_round_a_l3_12"/>
+						<components>
+							<meta_mesh_component name="european_castle_tower_round_a_l3_12"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="merlon_5" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_tower_round_a_l3_13"/>
+						<components>
+							<meta_mesh_component name="european_castle_tower_round_a_l3_13"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="merlon_4" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_tower_round_a_l3_01"/>
+						<components>
+							<meta_mesh_component name="european_castle_tower_round_a_l3_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_tower_round_a_l3_02"/>
+						<components>
+							<meta_mesh_component name="european_castle_tower_round_a_l3_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_tower_round_a_l3_03"/>
+						<components>
+							<meta_mesh_component name="european_castle_tower_round_a_l3_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="merlon_1" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_tower_round_a_l3_04"/>
+						<components>
+							<meta_mesh_component name="european_castle_tower_round_a_l3_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_roasting_spit_a" old_prefab_name="">
+				<transform position="239.033, 131.306, 0.000" rotation_euler="0.000, 0.000, 0.727" scale="1.597, 1.597, 1.597"/>
+				<physics shape="bo_bd_roasting_spit_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_roasting_spit_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_rope_b" old_prefab_name="">
+				<transform position="217.386, 94.690, 0.000"/>
+				<physics shape="bo_bd_rope_b"/>
+				<components>
+					<meta_mesh_component name="bd_rope_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="117.329, 44.557, 23.005" rotation_euler="0.000, 0.000, -1.400"/>
+			</game_entity>
+			<game_entity name="bd_chair_d_tavern_unsittable" old_prefab_name="">
+				<transform position="215.555, 72.157, 0.000" rotation_euler="0.000, 0.000, 3.003"/>
+				<physics shape="bo_bd_chair_d" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_chair_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="118.580, 41.564, 23.074" rotation_euler="0.000, 0.000, -0.965"/>
+			</game_entity>
+			<game_entity name="bd_chair_d_tavern_unsittable" old_prefab_name="">
+				<transform position="223.799, 96.972, 0.000" rotation_euler="0.000, 0.000, 1.280"/>
+				<physics shape="bo_bd_chair_d" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_chair_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="121.203, 39.353, 23.125" rotation_euler="0.000, 0.000, 2.648"/>
+			</game_entity>
+			<game_entity name="battleground_smoke_mid" old_prefab_name="">
+				<transform position="249.348, 107.409, 54.958"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{3B549438-9A1E-4ECF-A72A-B3AD3B348A6C}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="124.515, 38.559, 23.119" rotation_euler="0.000, 0.000, -3.125"/>
+			</game_entity>
+			<game_entity name="battleground_smoke_mid" old_prefab_name="">
+				<transform position="193.329, 141.507, 7.854"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{3B549438-9A1E-4ECF-A72A-B3AD3B348A6C}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="127.839, 39.538, 23.078" rotation_euler="0.000, 0.000, -2.639"/>
+			</game_entity>
+			<game_entity name="battleground_smoke_mid" old_prefab_name="">
+				<transform position="220.049, 66.369, 12.349"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{3B549438-9A1E-4ECF-A72A-B3AD3B348A6C}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="130.256, 41.767, 23.141" rotation_euler="0.000, 0.000, -2.141"/>
+			</game_entity>
+			<game_entity name="battleground_smoke_mid" old_prefab_name="">
+				<transform position="228.488, 129.354, 16.719"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{3B549438-9A1E-4ECF-A72A-B3AD3B348A6C}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="131.246, 45.023, 23.069" rotation_euler="0.000, 0.000, -1.628"/>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="130.720, 48.267, 23.049" rotation_euler="0.000, 0.000, -1.202"/>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="128.711, 51.039, 23.136" rotation_euler="0.000, 0.000, 2.477"/>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="125.699, 52.492, 23.202" rotation_euler="0.000, 0.000, 2.921"/>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="122.504, 52.594, 23.036" rotation_euler="0.000, 0.000, -2.906"/>
+			</game_entity>
+			<game_entity name="bd_cart_heap_l" old_prefab_name="">
+				<transform position="208.708, 123.042, 0.007" rotation_euler="0.000, 0.000, -2.899"/>
+				<physics shape="bo_bd_hay_cart_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_hay_cart_a"/>
+				</components>
+				<children>
+					<game_entity name="log_pine_group_a" old_prefab_name="">
+						<transform position="-0.135, 0.050, 1.056" rotation_euler="0.000, 0.000, 0.000" scale="0.537, 0.537, 0.537"/>
+						<physics shape="bo_log_pine_group_a"/>
+						<components>
+							<meta_mesh_component name="log_pine_group_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_pine_group_i" old_prefab_name="">
+						<transform position="0.119, 0.147, 1.485" rotation_euler="0.016, 2.528, 0.010" scale="0.566, 0.566, 0.566"/>
+						<physics shape="bo_log_pine_group_i"/>
+						<components>
+							<meta_mesh_component name="log_pine_group_i"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_pine_group_l" old_prefab_name="">
+						<transform position="-0.091, -0.071, 1.400" rotation_euler="0.000, 0.704, 0.000" scale="0.682, 0.682, 0.682"/>
+						<physics shape="bo_log_pine_group_l"/>
+						<components>
+							<meta_mesh_component name="log_pine_group_l"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_pine_h" old_prefab_name="">
+						<transform position="0.083, 0.391, 1.752" rotation_euler="0.139, 0.000, -0.497" scale="0.666, 0.666, 0.666"/>
+						<physics shape="bo_log_pine_h"/>
+						<components>
+							<meta_mesh_component name="log_pine_h"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="119.676, 50.908, 23.162" rotation_euler="0.000, 0.000, -2.402"/>
+			</game_entity>
+			<game_entity name="bd_bucket_a" old_prefab_name="">
+				<transform position="218.218, 97.807, 0.000"/>
+				<physics shape="bo_bd_bucket_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_bucket_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="117.590, 47.913, 23.145" rotation_euler="0.000, 0.000, -1.877"/>
+			</game_entity>
+			<game_entity name="sound" old_prefab_name="">
+				<transform position="124.255, 45.791, 0.048" rotation_euler="0.000, 0.000, -1.925"/>
+				<children>
+					<game_entity name="sound_reverb" old_prefab_name="">
+						<transform position="0.000, 0.000, 14.262" rotation_euler="0.000, 0.000, 0.000" scale="7.582, 1.000, 1.000"/>
+						<scripts>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/reverb/stone_interior"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Sphere"/>
+								</variables>
+							</script>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/area/interior/generic"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Sphere"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="sound_reverb" old_prefab_name="">
+						<transform position="0.000, 0.000, 6.837" rotation_euler="0.000, 0.000, 0.000" scale="7.582, 1.000, 1.000"/>
+						<scripts>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/reverb/stone_interior"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Sphere"/>
+								</variables>
+							</script>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/area/interior/generic"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Sphere"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_bucket_a" old_prefab_name="">
+				<transform position="218.684, 95.430, 0.000"/>
+				<physics shape="bo_bd_bucket_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_bucket_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_bucket_a" old_prefab_name="">
+				<transform position="218.109, 95.044, 0.000"/>
+				<physics shape="bo_bd_bucket_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_bucket_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="hut_c_fishing" old_prefab_name="">
+				<transform position="148.413, 11.012, -0.011" rotation_euler="0.000, 0.000, 0.507"/>
+				<physics shape="bo_hut_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="hut_c"/>
+				</components>
+				<children>
+					<game_entity name="bd_barrel_heap_a" old_prefab_name="">
+						<transform position="-1.573, 1.479, 0.294" rotation_euler="0.000, 0.000, 0.839"/>
+						<physics shape="bo_bd_barrel_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_barrel_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_fish_c" old_prefab_name="">
+						<transform position="0.498, -0.605, 0.294" rotation_euler="0.000, 0.000, -0.346"/>
+						<physics shape="bo_merchandise_fish_c"/>
+						<components>
+							<meta_mesh_component name="merchandise_fish_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="kitchen_bowl_fish" old_prefab_name="">
+						<transform position="-0.124, -0.922, 0.294" rotation_euler="0.000, 0.000, -1.012"/>
+						<components>
+							<meta_mesh_component name="kitchen_bowl_fish"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_heap_a" old_prefab_name="">
+						<transform position="-0.474, 1.100, 0.294" rotation_euler="0.000, 0.000, 0.616"/>
+						<physics shape="bo_bd_sack_c" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="fishnet_b" old_prefab_name="">
+						<transform position="-0.721, -0.424, 0.294" rotation_euler="0.000, 0.000, -0.425"/>
+						<physics shape="bo_fishnet_b"/>
+						<components>
+							<meta_mesh_component name="fishnet_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="fishnet_a" old_prefab_name="">
+						<transform position="-1.764, -0.529, 0.470" rotation_euler="-0.061, -3.139, 0.395"/>
+						<physics shape="bo_fishnet_a"/>
+						<components>
+							<meta_mesh_component name="fishnet_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="fishnet_a" old_prefab_name="">
+						<transform position="1.544, 1.115, 0.294" rotation_euler="0.000, 0.000, -0.133"/>
+						<physics shape="bo_fishnet_a"/>
+						<components>
+							<meta_mesh_component name="fishnet_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="fishnet_e" old_prefab_name="">
+						<transform position="2.296, -1.424, -0.054" rotation_euler="0.000, 0.000, 0.115"/>
+						<physics shape="bo_fishnet_e"/>
+						<components>
+							<meta_mesh_component name="fishnet_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="wooden_platform_a" old_prefab_name="">
+						<transform position="0.207, 0.713, -0.025" rotation_euler="0.000, 0.000, -1.582" scale="0.866, 0.866, 0.866"/>
+						<physics shape="bo_wooden_platform_a"/>
+						<components>
+							<meta_mesh_component name="wooden_platform_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_bucket_b" old_prefab_name="">
+				<transform position="216.877, 95.134, 0.000"/>
+				<physics shape="bo_bd_bucket_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_bucket_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_barrel_a" old_prefab_name="">
+				<transform position="146.431, 12.029, 1.433" rotation_euler="0.000, 0.000, 0.116"/>
+				<physics shape="bo_bd_barrel_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_barrel_a" old_prefab_name="">
+				<transform position="146.445, 12.539, 0.283" rotation_euler="0.000, 0.000, -0.059"/>
+				<physics shape="bo_bd_barrel_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_arena_wall_patch_a" old_prefab_name="">
+				<transform position="217.397, 95.448, 0.007" rotation_euler="0.041, -0.019, 2.678" scale="0.693, 0.693, 0.693"/>
+				<physics shape="bo_battania_arena_wall_patch_a"/>
+				<components>
+					<meta_mesh_component name="battania_arena_wall_patch_a">
+						<mesh name="battania_arena_wall_patch_a" material="stone_wall_2a" argument2="-2.345, 2.274, -0.035, 0.021"/>
+						<mesh name="battania_arena_wall_patch_a.lod3" material="stone_wall_2a_normal" argument2="-2.345, 2.274, -0.035, 0.021"/>
+						<mesh name="battania_arena_wall_patch_a.lod4" material="stone_wall_2a_normal" argument2="-2.345, 2.274, -0.035, 0.021"/>
+						<mesh name="battania_arena_wall_patch_a.lod5" material="stone_wall_2a_normal" argument2="-2.345, 2.274, -0.035, 0.021"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="30.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="battania_arena_wall_patch_a" old_prefab_name="">
+				<transform position="218.869, 96.814, -0.015" rotation_euler="0.000, 0.000, -1.217" scale="0.619, 0.619, 0.619"/>
+				<physics shape="bo_battania_arena_wall_patch_a"/>
+				<components>
+					<meta_mesh_component name="battania_arena_wall_patch_a">
+						<mesh name="battania_arena_wall_patch_a" material="stone_wall_2a" argument2="-2.345, 2.274, -0.035, 0.021"/>
+						<mesh name="battania_arena_wall_patch_a.lod3" material="stone_wall_2a_normal" argument2="-2.345, 2.274, -0.035, 0.021"/>
+						<mesh name="battania_arena_wall_patch_a.lod4" material="stone_wall_2a_normal" argument2="-2.345, 2.274, -0.035, 0.021"/>
+						<mesh name="battania_arena_wall_patch_a.lod5" material="stone_wall_2a_normal" argument2="-2.345, 2.274, -0.035, 0.021"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="20.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="battania_arena_wall_patch_a" old_prefab_name="">
+				<transform position="216.955, 97.449, -0.033" rotation_euler="0.000, 0.045, 0.691" scale="0.693, 0.693, 0.693"/>
+				<physics shape="bo_battania_arena_wall_patch_a"/>
+				<components>
+					<meta_mesh_component name="battania_arena_wall_patch_a">
+						<mesh name="battania_arena_wall_patch_a" material="stone_wall_2a" argument2="-2.345, 2.274, -0.035, 0.021"/>
+						<mesh name="battania_arena_wall_patch_a.lod3" material="stone_wall_2a_normal" argument2="-2.345, 2.274, -0.035, 0.021"/>
+						<mesh name="battania_arena_wall_patch_a.lod4" material="stone_wall_2a_normal" argument2="-2.345, 2.274, -0.035, 0.021"/>
+						<mesh name="battania_arena_wall_patch_a.lod5" material="stone_wall_2a_normal" argument2="-2.345, 2.274, -0.035, 0.021"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="30.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="bd_sack_c" old_prefab_name="">
+				<transform position="148.308, 11.508, 0.264" rotation_euler="0.000, 0.000, -2.055"/>
+				<physics shape="bo_bd_sack_c" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_c" old_prefab_name="">
+				<transform position="147.949, 11.596, 0.710" rotation_euler="-0.005, 0.004, 2.885"/>
+				<physics shape="bo_bd_sack_c" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_waterwell_a" old_prefab_name="">
+				<transform position="217.722, 96.454, -0.083" rotation_euler="0.000, 0.000, -1.751"/>
+				<physics shape="bo_bd_waterwell_a"/>
+				<components>
+					<meta_mesh_component name="bd_waterwell_a">
+						<mesh name="bd_waterwell_a.4" material="straw_a_dark"/>
+						<mesh name="bd_waterwell_a.lod2.4" material="straw_a_dark"/>
+						<mesh name="bd_waterwell_a.lod3.4" material="straw_a_dark"/>
+						<mesh name="bd_waterwell_a.lod4.4" material="straw_a_dark"/>
+						<mesh name="bd_waterwell_a.lod5.4" material="straw_a_dark"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable name="Event Path" value="event:/mission/ambient/detail/well"/>
+							<variable name="Play On Startup" value="true"/>
+							<variable name="Is Static" value="false"/>
+							<variable name="Override Sound" value="false"/>
+							<variable name="Overrided Max Distance" value="20.000000"/>
+							<variable name="Overrided Min Distance" value="1.000000"/>
+							<variable name="Sound Preset" value="Speakers"/>
+							<variable name="Is Master Sound" value="false"/>
+							<variable name="Is Master Supressor" value="false"/>
+							<variable name="Is Triggered" value="false"/>
+							<variable name="Trigger Shape" value="Sphere"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="battania_arena_wall_patch_a" old_prefab_name="">
+				<transform position="216.389, 96.109, 0.024" rotation_euler="0.042, 0.017, 1.864" scale="0.693, 0.693, 0.693"/>
+				<physics shape="bo_battania_arena_wall_patch_a"/>
+				<components>
+					<meta_mesh_component name="battania_arena_wall_patch_a">
+						<mesh name="battania_arena_wall_patch_a" material="stone_wall_2a" argument2="-2.345, 2.274, -0.035, 0.021"/>
+						<mesh name="battania_arena_wall_patch_a.lod3" material="stone_wall_2a_normal" argument2="-2.345, 2.274, -0.035, 0.021"/>
+						<mesh name="battania_arena_wall_patch_a.lod4" material="stone_wall_2a_normal" argument2="-2.345, 2.274, -0.035, 0.021"/>
+						<mesh name="battania_arena_wall_patch_a.lod5" material="stone_wall_2a_normal" argument2="-2.345, 2.274, -0.035, 0.021"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="30.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="archery_practice_target" old_prefab_name="">
+				<transform position="275.526, 119.465, 0.145" rotation_euler="0.000, 0.000, -1.075"/>
+				<physics shape="bo_bd_target_board"/>
+				<components>
+					<meta_mesh_component name="bd_target_board"/>
+				</components>
+				<children>
+					<game_entity name="bullseye" old_prefab_name="">
+						<transform position="0.061, -0.258, 1.417" rotation_euler="0.209, 0.000, 3.141"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_l3_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_old">
+				<transform position="222.455, 145.343, 4.324" rotation_euler="0.000, 0.000, 3.108"/>
+				<physics shape="bo_european_castle_wall_a_l3_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="torture_tool_chain_a" old_prefab_name="">
+				<transform position="129.244, 15.218, 2.939" rotation_euler="0.000, 0.000, -0.560"/>
+				<components>
+					<meta_mesh_component name="torture_tool_chain_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="torture_tool_chain_a" old_prefab_name="">
+				<transform position="133.380, 12.627, 2.939" rotation_euler="0.000, 0.000, -0.560"/>
+				<components>
+					<meta_mesh_component name="torture_tool_chain_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="torture_tools_a" old_prefab_name="">
+				<transform position="131.110, 36.752, 0.000" rotation_euler="0.000, 0.000, -1.667"/>
+				<physics shape="bo_torture_tools_a"/>
+				<components>
+					<meta_mesh_component name="torture_tools_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="torture_tool_chain_c" old_prefab_name="">
+				<transform position="131.516, 35.520, 0.000" rotation_euler="0.000, 0.000, 0.482"/>
+				<components>
+					<meta_mesh_component name="torture_tool_chain_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="torture_tool_chain_d" old_prefab_name="">
+				<transform position="130.530, 35.835, 0.000" rotation_euler="0.000, 0.000, 3.011"/>
+				<components>
+					<meta_mesh_component name="torture_tool_chain_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="torture_tools_c" old_prefab_name="">
+				<transform position="132.041, 35.052, 0.000" rotation_euler="0.000, 0.000, 0.549"/>
+				<physics shape="bo_torture_tools_c"/>
+				<components>
+					<meta_mesh_component name="torture_tools_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="torture_tools_b" old_prefab_name="">
+				<transform position="130.382, 34.126, 0.000" rotation_euler="0.000, 0.000, 1.277"/>
+				<physics shape="bo_torture_tools_b"/>
+				<components>
+					<meta_mesh_component name="torture_tools_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="sound" old_prefab_name="">
+				<transform position="163.732, 49.590, -0.340" rotation_euler="0.000, 0.000, -1.362"/>
+				<children>
+					<game_entity name="sound_reverb" old_prefab_name="">
+						<transform position="-7.000, -3.000, 4.000" rotation_euler="0.000, 0.000, 0.000" scale="4.000, 1.000, 1.000"/>
+					</game_entity>
+					<game_entity name="sound_reverb" old_prefab_name="">
+						<transform position="-7.000, -3.000, 8.000" rotation_euler="0.000, 0.000, 0.000" scale="4.000, 1.000, 1.000"/>
+					</game_entity>
+					<game_entity name="sound_reverb" old_prefab_name="">
+						<transform position="-7.000, -3.000, 14.000" rotation_euler="0.000, 0.000, 0.000" scale="4.000, 1.000, 1.000"/>
+					</game_entity>
+					<game_entity name="sound_reverb" old_prefab_name="">
+						<transform position="7.600, -3.000, 14.000" rotation_euler="0.000, 0.000, 0.000" scale="4.000, 1.000, 1.000"/>
+					</game_entity>
+					<game_entity name="sound_reverb" old_prefab_name="">
+						<transform position="7.600, -3.000, 8.000" rotation_euler="0.000, 0.000, 0.000" scale="4.000, 1.000, 1.000"/>
+					</game_entity>
+					<game_entity name="sound_reverb" old_prefab_name="">
+						<transform position="7.600, -3.000, 4.000" rotation_euler="0.000, 0.000, 0.000" scale="4.000, 1.000, 1.000"/>
+					</game_entity>
+					<game_entity name="sound_reverb" old_prefab_name="">
+						<transform position="0.400, 1.400, 14.800" rotation_euler="0.000, 0.000, 0.000" scale="11.000, 6.300, 3.400"/>
+					</game_entity>
+					<game_entity name="sound_reverb" old_prefab_name="">
+						<transform position="-7.000, 3.000, 5.500" rotation_euler="0.000, 0.000, 0.000" scale="3.200, 4.000, 6.000"/>
+					</game_entity>
+					<game_entity name="sound_reverb" old_prefab_name="">
+						<transform position="7.600, 3.000, 5.500" rotation_euler="0.000, 0.000, 0.000" scale="3.200, 4.000, 6.000"/>
+					</game_entity>
+					<game_entity name="sound_reverb" old_prefab_name="">
+						<transform position="0.400, 1.000, 3.500" rotation_euler="0.000, 0.000, 0.000" scale="2.550, 5.500, 7.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_l3_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_old">
+				<transform position="290.497, 79.923, 3.981" rotation_euler="0.000, 0.000, 1.543"/>
+				<physics shape="bo_european_castle_wall_a_l3_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_grandstand_roof_cloth_b2" old_prefab_name="">
+				<transform position="209.430, 128.911, 0.545" rotation_euler="0.000, 0.000, 0.402"/>
+				<physics shape="bo_vlandia_arena_grandstand_roof_cloth_b1"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_grandstand_roof_cloth_b2"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_village_barn_b" old_prefab_name="" occlusion_body_name="bo_occ_european_village_barn_b">
+				<transform position="228.040, 90.534, 0.200" rotation_euler="0.000, 0.000, -1.831"/>
+				<physics shape="bo_european_village_barn_b"/>
+				<components>
+					<meta_mesh_component name="european_village_barn_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_l3_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_old">
+				<transform position="291.692, 123.286, 4.055" rotation_euler="0.000, 0.000, 1.543"/>
+				<physics shape="bo_european_castle_wall_a_l3_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_l3_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_old">
+				<transform position="291.097, 101.669, 4.012" rotation_euler="0.000, 0.000, 1.543"/>
+				<physics shape="bo_european_castle_wall_a_l3_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_corner_e_l3_old" old_prefab_name="">
+				<transform position="290.270, 63.746, 3.538" rotation_euler="0.000, 0.000, 1.677"/>
+				<physics shape="bo_european_castle_corner_e_l3_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_corner_e_l3_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_sidewalk_a_corner1" old_prefab_name="">
+				<transform position="221.847, 83.992, 0.000" rotation_euler="0.000, 0.000, 2.832"/>
+				<physics shape="bo_empire_garden_sidewalk_a_corner1" override_material="default"/>
+				<components>
+					<meta_mesh_component name="empire_garden_sidewalk_a_corner1"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_sidewalk_a1" old_prefab_name="">
+				<transform position="224.091, 83.383, 0.000" rotation_euler="0.000, 0.000, 2.860"/>
+				<physics shape="bo_empire_garden_sidewalk_a1" override_material="default"/>
+				<components>
+					<meta_mesh_component name="empire_garden_sidewalk_a1"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_sidewalk_a1" old_prefab_name="">
+				<transform position="227.101, 82.522, 0.000" rotation_euler="0.000, 0.000, 2.888"/>
+				<physics shape="bo_empire_garden_sidewalk_a1" override_material="default"/>
+				<components>
+					<meta_mesh_component name="empire_garden_sidewalk_a1"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_sidewalk_a_corner1" old_prefab_name="">
+				<transform position="229.594, 82.181, 0.045" rotation_euler="0.000, 0.000, -1.892"/>
+				<physics shape="bo_empire_garden_sidewalk_a_corner1" override_material="default"/>
+				<components>
+					<meta_mesh_component name="empire_garden_sidewalk_a_corner1"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_gatehouse_a_l3" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_gatehouse_a_l3">
+				<transform position="163.732, 49.590, -0.340" rotation_euler="0.000, 0.000, -1.362"/>
+				<physics shape="bo_european_castle_gatehouse_a_l3"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="european_castle_gatehouse_a_l3"/>
+				</components>
+				<children>
+					<game_entity name="european_castle_gatehouse_a_l3_stairs" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_stairs">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_stairs"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_22" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_21"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_21"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_21" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_02"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_02"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_20" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_22"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_22"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_19" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_01"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_01"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_18" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_03"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_03"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_17" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_04"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_04"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_16" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_05"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_05"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_15" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_06"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_06"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_14" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_07"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_07"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_13" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_08"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_08"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_12" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_09"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_09"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_11" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_11"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_11"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_10" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_10"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_10"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_9" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_12"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_12"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_8" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_13"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_13"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_7" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_16"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_16"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_6" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_14"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_14"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_5" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_15"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_15"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_4" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_17"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_17"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_3" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_18"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_18"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_2" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_19"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_19"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_1" old_prefab_name="">
+						<physics shape="bo_european_castle_gatehouse_a_l3_20"/>
+						<components>
+							<meta_mesh_component name="european_castle_gatehouse_a_l3_20"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="archery_practice_target" old_prefab_name="">
+				<transform position="279.997, 112.450, 0.000" rotation_euler="0.000, 0.000, -1.075"/>
+				<physics shape="bo_bd_target_board"/>
+				<components>
+					<meta_mesh_component name="bd_target_board"/>
+				</components>
+				<children>
+					<game_entity name="bullseye" old_prefab_name="">
+						<transform position="0.061, -0.258, 1.417" rotation_euler="0.209, 0.000, 3.141"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="155.418, 54.631, 18.671" rotation_euler="0.000, 0.000, -1.362"/>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_l3_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_old">
+				<transform position="165.291, 64.021, -0.041" rotation_euler="0.000, 0.000, -2.926" scale="0.500, 1.000, 1.000"/>
+				<physics shape="bo_european_castle_wall_a_l3_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="158.778, 46.698, 18.599" rotation_euler="0.000, 0.000, -1.362"/>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_l3_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_old">
+				<transform position="172.914, 83.069, -0.074" rotation_euler="0.000, 0.000, -1.653"/>
+				<physics shape="bo_european_castle_wall_a_l3_old"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_old"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="156.820, 51.990, 18.668" rotation_euler="0.000, 0.000, -0.801"/>
+			</game_entity>
+			<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+				<transform position="278.421, 108.169, 0.352" rotation_euler="0.412, 0.543, -0.172" scale="1.300, 1.300, 1.300"/>
+				<components>
+					<meta_mesh_component name="spear_new_f_1-9m"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="158.126, 49.510, 18.617" rotation_euler="0.000, 0.000, -1.362"/>
+			</game_entity>
+			<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+				<transform position="278.554, 108.248, 0.354" rotation_euler="0.651, 0.204, 0.542" scale="1.300, 1.300, 1.300"/>
+				<components>
+					<meta_mesh_component name="spear_new_f_1-9m"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="158.608, 43.919, 18.704" rotation_euler="0.000, 0.000, -1.944"/>
+			</game_entity>
+			<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+				<transform position="278.826, 108.416, 0.349" rotation_euler="0.335, 0.583, -0.352" scale="1.300, 1.300, 1.300"/>
+				<components>
+					<meta_mesh_component name="spear_new_f_1-9m"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="158.267, 40.789, 18.655" rotation_euler="0.000, 0.000, -1.362"/>
+			</game_entity>
+			<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+				<transform position="278.920, 108.474, 0.347" rotation_euler="0.651, 0.078, 0.542" scale="1.300, 1.300, 1.300"/>
+				<components>
+					<meta_mesh_component name="spear_new_f_1-9m"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="160.220, 38.067, 18.632" rotation_euler="0.000, 0.000, -0.618"/>
+			</game_entity>
+			<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+				<transform position="279.253, 108.680, 0.341" rotation_euler="0.651, 0.039, 0.542" scale="1.300, 1.300, 1.300"/>
+				<components>
+					<meta_mesh_component name="spear_new_f_1-9m"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="163.389, 37.158, 18.737" rotation_euler="0.000, 0.000, 0.099"/>
+			</game_entity>
+			<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+				<transform position="279.349, 108.740, 0.339" rotation_euler="0.574, 0.327, -0.040" scale="1.300, 1.300, 1.300"/>
+				<components>
+					<meta_mesh_component name="spear_new_f_1-9m"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="166.533, 37.898, 18.663" rotation_euler="0.000, 0.000, 0.315"/>
+			</game_entity>
+			<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+				<transform position="279.479, 108.820, 0.337" rotation_euler="0.098, -0.657, 2.205" scale="1.300, 1.300, 1.300"/>
+				<components>
+					<meta_mesh_component name="spear_new_f_1-9m"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="169.687, 38.570, 18.604" rotation_euler="0.000, 0.000, 0.198"/>
+			</game_entity>
+			<game_entity name="weapon_rack_a" old_prefab_name="">
+				<transform position="279.444, 108.136, -0.328" rotation_euler="0.000, 0.000, 0.574"/>
+				<physics shape="bo_weapon_rack_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="weapon_rack_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="172.919, 40.198, 18.656" rotation_euler="0.000, 0.000, -2.160"/>
+			</game_entity>
+			<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+				<transform position="279.699, 108.957, 0.333" rotation_euler="0.094, -0.646, 1.952" scale="1.300, 1.300, 1.300"/>
+				<components>
+					<meta_mesh_component name="spear_new_f_1-9m"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="172.505, 46.392, 18.557" rotation_euler="0.000, 0.000, -1.362"/>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="173.149, 43.432, 18.649" rotation_euler="0.000, 0.000, -1.362"/>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="171.805, 49.230, 18.599" rotation_euler="0.000, 0.000, -1.362"/>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="171.178, 52.186, 18.620" rotation_euler="0.000, 0.000, -1.362"/>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="168.479, 61.349, 18.633" rotation_euler="0.000, 0.000, -0.396"/>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="170.603, 55.359, 18.576" rotation_euler="0.000, 0.000, -1.362"/>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="169.969, 58.239, 18.665" rotation_euler="0.000, 0.000, -1.362"/>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="164.922, 61.150, 18.679" rotation_euler="0.000, 0.000, -2.925"/>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="161.808, 60.558, 18.707" rotation_euler="0.000, 0.000, -2.988"/>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="158.456, 60.032, 18.731" rotation_euler="0.000, 0.000, -2.868"/>
+			</game_entity>
+			<game_entity name="debris_holder" old_prefab_name="">
+				<tags>
+					<tag name="reference"/>
+				</tags>
+				<transform position="156.098, 57.923, 18.713" rotation_euler="0.000, 0.000, -2.046"/>
+			</game_entity>
+			<game_entity name="vlandia_arena_wall_c" old_prefab_name="" occlusion_body_name="bo_occ_vlandia_arena_wall_c">
+				<transform position="200.529, 122.495, 0.000" rotation_euler="0.000, 0.000, 1.898"/>
+				<physics shape="bo_vlandia_arena_wall_c"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_wall_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_wall_b" old_prefab_name="" occlusion_body_name="bo_occ_vlandia_arena_wall_b">
+				<transform position="230.050, 109.854, -1.003" rotation_euler="0.000, 0.000, 2.846" scale="1.250, 1.000, 1.000"/>
+				<physics shape="bo_vlandia_arena_wall_b"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_wall_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_gatehouse_door_closed" old_prefab_name="">
+				<transform position="131.581, 14.305, 0.000" rotation_euler="0.000, 0.000, -0.520" scale="0.785, 0.785, 0.785"/>
+				<physics shape="bo_european_castle_gatehouse_door_closed" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="european_castle_gatehouse_door_closed"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_flag_2" old_prefab_name="">
+				<transform position="125.302, -4.639, 0.000" rotation_euler="0.000, 0.000, -3.141" scale="0.500, 0.500, 1.000"/>
+				<physics shape="bo_bd_pole_6m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_6m"/>
+				</components>
+				<children>
+					<game_entity name="__empty_object" old_prefab_name="">
+						<transform position="-0.069, 0.096, 5.121" rotation_euler="0.000, 0.000, 0.000" scale="1.200, 1.200, 0.600"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_1"/>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="european_castle_keep_b" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_keep">
+				<transform position="267.497, 87.267, 0.883" rotation_euler="0.000, 0.000, -1.607"/>
+				<physics shape="bo_european_castle_keep"/>
+				<components>
+					<meta_mesh_component name="european_castle_keep_b"/>
+				</components>
+				<children>
+					<game_entity name="empire_keep_a_door_top" old_prefab_name="">
+						<transform position="-9.454, 11.841, 52.540"/>
+						<physics shape="bo_empire_keep_a_door_top"/>
+						<components>
+							<meta_mesh_component name="empire_keep_a_door_top"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_front" old_prefab_name="">
+						<physics shape="bo_european_castle_keep_front"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_front"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_top" old_prefab_name="">
+						<physics shape="bo_european_castle_keep_top"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_top"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_front_top" old_prefab_name="">
+						<transform rotation_euler="0.000, 0.000, 0.000" scale="-1.000, 1.000, 1.000"/>
+						<physics shape="bo_european_castle_keep_front_top"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_front_top"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_side" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_keep_side">
+						<transform position="-15.912, 17.215, 0.000" rotation_euler="0.000, 0.000, -1.571"/>
+						<physics shape="bo_european_castle_keep_side"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_side"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_side" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_keep_side">
+						<transform position="0.003, 17.210, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+						<physics shape="bo_european_castle_keep_side"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_side"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_side" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_keep_side">
+						<transform position="16.112, 17.215, 0.000"/>
+						<physics shape="bo_european_castle_keep_side"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_side"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_front_top" old_prefab_name="">
+						<physics shape="bo_european_castle_keep_front_top"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_front_top"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_side" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_keep_side">
+						<transform position="16.214, 5.213, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+						<physics shape="bo_european_castle_keep_side"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_side"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_side" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_keep_side">
+						<transform position="-16.079, 5.213, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+						<physics shape="bo_european_castle_keep_side"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_side"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="flag_b" old_prefab_name="">
+				<transform position="158.178, 48.110, 12.027" rotation_euler="0.000, 0.000, -1.363"/>
+				<components>
+					<meta_mesh_component name="flag_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="flagpole_intro" old_prefab_name="">
+				<transform position="253.587, 74.187, 55.488" rotation_euler="0.000, 0.000, 0.000" scale="1.561, 1.561, 1.561"/>
+				<physics shape="bo_flagpole_a"/>
+				<components>
+					<meta_mesh_component name="flagpole_intro"/>
+				</components>
+			</game_entity>
+			<game_entity name="flag_rope_cloth" old_prefab_name="">
+				<transform position="213.312, 105.906, 6.402" rotation_euler="0.000, 0.000, 1.207"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+				<children>
+					<game_entity name="flag_4" old_prefab_name="">
+						<transform position="0.000, -4.536, 0.467" rotation_euler="0.000, -1.675, -1.571" scale="0.235, 0.235, 0.235"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_4">
+									<mesh name="flag_4" factor="4285013518"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_4" old_prefab_name="">
+						<transform position="0.000, -3.516, 0.376" rotation_euler="0.000, -1.675, -1.571" scale="0.235, 0.235, 0.235"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_4">
+									<mesh name="flag_4" factor="4279972933"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_4" old_prefab_name="">
+						<transform position="0.000, -2.188, 0.264" rotation_euler="0.000, -1.618, -1.571" scale="0.235, 0.235, 0.235"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_4">
+									<mesh name="flag_4" factor="4285013518"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_4" old_prefab_name="">
+						<transform position="0.000, -0.850, 0.221" rotation_euler="0.000, -1.578, -1.571" scale="0.235, 0.235, 0.235"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_4">
+									<mesh name="flag_4" factor="4279972933"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_4" old_prefab_name="">
+						<transform position="0.000, 0.512, 0.195" rotation_euler="0.000, -1.534, -1.571" scale="0.235, 0.235, 0.235"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_4">
+									<mesh name="flag_4" factor="4285013518"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_4" old_prefab_name="">
+						<transform position="0.000, 1.666, 0.234" rotation_euler="0.000, -1.505, -1.571" scale="0.235, 0.235, 0.235"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_4">
+									<mesh name="flag_4" factor="4279972933"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_4" old_prefab_name="">
+						<transform position="0.000, 2.749, 0.305" rotation_euler="0.000, -1.505, -1.571" scale="0.235, 0.235, 0.235"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_4">
+									<mesh name="flag_4" factor="4285013518"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="vlandia_dungeon_cells_a_bars_door" old_prefab_name="">
+				<transform position="130.945, 42.273, 0.098" rotation_euler="0.000, 0.000, 1.207" scale="1.300, 1.000, 1.300"/>
+				<physics shape="bo_vlandia_dungeon_cells_a_bars_door"/>
+				<components>
+					<meta_mesh_component name="vlandia_dungeon_cells_a_bars_door"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_wall_b" old_prefab_name="" occlusion_body_name="bo_occ_vlandia_arena_wall_b">
+				<transform position="241.643, 108.420, -1.003" rotation_euler="0.000, 0.000, -3.099" scale="1.200, 1.000, 1.000"/>
+				<physics shape="bo_vlandia_arena_wall_b"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_wall_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_city_house_g" old_prefab_name="" occlusion_body_name="bo_occ_house_g">
+				<transform position="189.939, 135.281, 0.817" rotation_euler="0.000, 0.000, -0.056" scale="1.100, 1.000, 1.000"/>
+				<physics shape="bo_house_g"/>
+				<components>
+					<meta_mesh_component name="house_g"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_city_house_d" old_prefab_name="" occlusion_body_name="bo_occ_house_d">
+				<transform position="221.383, 71.166, 0.000" rotation_euler="0.000, 0.000, 3.013" scale="0.790, 0.790, 0.790"/>
+				<physics shape="bo_house_d"/>
+				<components>
+					<meta_mesh_component name="house_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_bridge_a" old_prefab_name="">
+				<transform position="127.190, 5.553, -0.058" rotation_euler="0.000, 0.000, -0.515"/>
+				<physics shape="bo_european_castle_bridge_a"/>
+				<components>
+					<meta_mesh_component name="european_castle_bridge_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="archery_practice_target" old_prefab_name="">
+				<transform position="274.296, 122.106, 0.158" rotation_euler="0.000, 0.000, -0.906"/>
+				<physics shape="bo_bd_target_board"/>
+				<components>
+					<meta_mesh_component name="bd_target_board"/>
+				</components>
+				<children>
+					<game_entity name="bullseye" old_prefab_name="">
+						<transform position="0.061, -0.258, 1.417" rotation_euler="0.209, 0.000, 3.141"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="flag_rope_cloth_02" old_prefab_name="">
+				<transform position="256.816, 117.180, 3.110" rotation_euler="0.000, 0.000, -1.469" scale="0.421, 0.421, 0.421"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+				<children>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="0.000, 2.930, 0.284" rotation_euler="-0.015, -1.452, -1.564" scale="0.280, 0.357, 0.280"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4279972933"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="-0.003, 1.783, 0.221" rotation_euler="-0.016, -1.515, -1.571" scale="0.316, 0.316, 0.316"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4285013261"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="0.004, 0.709, 0.185" rotation_euler="-0.015, -1.547, -1.561" scale="0.280, 0.357, 0.280"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4279972933"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="-0.005, -0.466, 0.198" rotation_euler="-0.016, -1.580, -1.571" scale="0.248, 0.286, 0.248"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4285013261"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="0.005, -1.635, 0.221" rotation_euler="-0.015, -1.629, -1.564" scale="0.280, 0.357, 0.280"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4279972933"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="-0.005, -2.953, 0.295" rotation_euler="-0.016, -1.627, -1.571" scale="0.316, 0.316, 0.316"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4285013261"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="-0.003, -4.105, 0.419" rotation_euler="-0.014, -1.685, -1.581" scale="0.280, 0.357, 0.280"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4279972933"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="-0.012, 3.968, 0.399" rotation_euler="-0.054, -1.464, -1.571" scale="0.316, 0.316, 0.316"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4285013261"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="border_soft" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="walk_area_vertex"/>
+				</tags>
+				<transform position="183.207, 146.177, 0.000"/>
+				<components>
+					<meta_mesh_component name="soft_border_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="border_soft" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="walk_area_vertex"/>
+				</tags>
+				<transform position="307.209, 54.667, 0.000"/>
+				<components>
+					<meta_mesh_component name="soft_border_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_barrel_heap_a" old_prefab_name="">
+				<transform position="224.179, 108.541, 0.000" rotation_euler="0.000, 0.000, -0.081"/>
+				<physics shape="bo_bd_barrel_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_a"/>
+				</components>
+				<children>
+					<game_entity name="bd_barrel_a" old_prefab_name="">
+						<transform position="1.000, 0.100, 0.000" rotation_euler="0.000, 0.000, -1.405"/>
+						<physics shape="bo_bd_barrel_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_barrel_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_barrel_a" old_prefab_name="">
+						<transform position="0.500, 0.000, 1.150" rotation_euler="0.000, 0.000, -1.230"/>
+						<physics shape="bo_bd_barrel_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_barrel_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="prop_merchanthorse_b" old_prefab_name="">
+				<tags>
+					<tag name="shop_prop"/>
+					<tag name="b"/>
+				</tags>
+				<transform position="271.559, 108.854, 0.000"/>
+				<physics shape="bo_shop_prop_merchanthorse_b"/>
+				<components>
+					<meta_mesh_component name="shop_prop_merchanthorse_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="prop_merchanthorse_a" old_prefab_name="">
+				<tags>
+					<tag name="shop_prop"/>
+					<tag name="a"/>
+				</tags>
+				<transform position="263.655, 111.996, 0.000" rotation_euler="0.000, 0.000, 1.559"/>
+				<physics shape="bo_shop_prop_merchanthorse_a"/>
+				<components>
+					<meta_mesh_component name="shop_prop_merchanthorse_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="prop_merchanthorse_c" old_prefab_name="">
+				<tags>
+					<tag name="shop_prop"/>
+					<tag name="c"/>
+				</tags>
+				<transform position="267.216, 106.842, 0.000" rotation_euler="0.000, 0.000, 0.022"/>
+				<physics shape="bo_shop_prop_merchanthorse_c"/>
+				<components>
+					<meta_mesh_component name="shop_prop_merchanthorse_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_d_interior_flag" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="247.208, 95.537, 10.098" rotation_euler="0.000, 0.000, -1.666"/>
+				<physics shape="bo_empire_keep_d_interior_flag"/>
+				<components>
+					<meta_mesh_component name="empire_keep_d_interior_flag"/>
+				</components>
+			</game_entity>
+			<game_entity name="flag_1" old_prefab_name="">
+				<transform position="253.549, 74.215, 59.491" rotation_euler="0.000, 0.000, 0.000" scale="1.275, 1.275, 1.275"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="flag_1"/>
+					</cloth_simulator>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_d_interior_flag" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="246.654, 80.504, 10.098" rotation_euler="0.000, 0.000, -1.666"/>
+				<physics shape="bo_empire_keep_d_interior_flag"/>
+				<components>
+					<meta_mesh_component name="empire_keep_d_interior_flag"/>
+				</components>
+			</game_entity>
+			<game_entity name="cloth_flag_b" old_prefab_name="">
+				<transform position="207.927, 116.978, 30.452"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="cloth_flag_b"/>
+					</cloth_simulator>
+				</components>
+			</game_entity>
+			<game_entity name="cloth_flag_b" old_prefab_name="">
+				<transform position="126.437, 19.574, 34.449" rotation_euler="0.000, 0.000, 1.658"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="cloth_flag_b"/>
+					</cloth_simulator>
+				</components>
+			</game_entity>
+			<game_entity name="cloth_flag_b" old_prefab_name="">
+				<transform position="138.681, 12.628, 34.588"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="cloth_flag_b"/>
+					</cloth_simulator>
+				</components>
+			</game_entity>
+			<game_entity name="flagpole_intro" old_prefab_name="">
+				<transform position="126.474, 19.589, 31.037"/>
+				<physics shape="bo_flagpole_a"/>
+				<components>
+					<meta_mesh_component name="flagpole_intro"/>
+				</components>
+			</game_entity>
+			<game_entity name="flagpole_intro" old_prefab_name="">
+				<transform position="138.752, 12.651, 31.037"/>
+				<physics shape="bo_flagpole_a"/>
+				<components>
+					<meta_mesh_component name="flagpole_intro"/>
+				</components>
+			</game_entity>
+			<game_entity name="flag_rope_cloth_02" old_prefab_name="">
+				<transform position="131.405, 13.817, 6.741" rotation_euler="0.000, 0.000, 1.062" scale="0.421, 0.421, 0.421"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+				<children>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="0.000, 2.930, 0.284" rotation_euler="-0.015, -1.452, -1.564" scale="0.280, 0.357, 0.280"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4279972933"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="-0.003, 1.783, 0.221" rotation_euler="-0.016, -1.515, -1.571" scale="0.316, 0.316, 0.316"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4285013261"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="0.004, 0.709, 0.185" rotation_euler="-0.015, -1.547, -1.561" scale="0.280, 0.357, 0.280"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4279972933"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="-0.005, -0.466, 0.198" rotation_euler="-0.016, -1.580, -1.571" scale="0.248, 0.286, 0.248"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4285013261"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="0.005, -1.635, 0.221" rotation_euler="-0.015, -1.629, -1.564" scale="0.280, 0.357, 0.280"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4279972933"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="-0.005, -2.953, 0.295" rotation_euler="-0.016, -1.627, -1.571" scale="0.316, 0.316, 0.316"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4285013261"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="-0.003, -4.105, 0.419" rotation_euler="-0.014, -1.685, -1.581" scale="0.280, 0.357, 0.280"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4279972933"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="-0.012, 3.968, 0.399" rotation_euler="-0.054, -1.464, -1.571" scale="0.316, 0.316, 0.316"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4285013261"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="european_city_house_a" old_prefab_name="" occlusion_body_name="bo_occ_house_a">
+				<transform position="196.355, 92.888, 0.000" rotation_euler="0.000, 0.000, -0.102" scale="0.818, 0.818, 0.818"/>
+				<physics shape="bo_house_a"/>
+				<components>
+					<meta_mesh_component name="house_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="prop_merchantwinery_c" old_prefab_name="">
+				<tags>
+					<tag name="shop_prop"/>
+					<tag name="c"/>
+				</tags>
+				<transform position="263.485, 107.499, 0.000"/>
+				<physics shape="bo_shop_prop_merchantwinery_c"/>
+				<components>
+					<meta_mesh_component name="shop_prop_merchantwinery_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="prop_merchantweapons_ranged_c" old_prefab_name="">
+				<tags>
+					<tag name="shop_prop"/>
+					<tag name="c"/>
+				</tags>
+				<transform position="277.511, 106.626, 0.000"/>
+				<physics shape="bo_shop_prop_merchantweapons_melee_c"/>
+				<components>
+					<meta_mesh_component name="shop_prop_merchantweapons_ranged_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_barrel_a" old_prefab_name="">
+				<transform position="158.951, 8.049, -0.093" rotation_euler="0.000, 0.000, 0.785"/>
+				<physics shape="bo_bd_barrel_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_barrel_a" old_prefab_name="">
+				<transform position="159.323, 7.700, 1.057" rotation_euler="0.000, 0.000, 0.960"/>
+				<physics shape="bo_bd_barrel_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="animated_flag_a" old_prefab_name="">
+				<transform position="160.063, 39.771, 17.733" rotation_euler="0.000, 0.000, -1.348" scale="1.478, 1.478, 1.478"/>
+				<components>
+					<meta_mesh_component name="flagpole_intro"/>
+				</components>
+				<children>
+					<game_entity name="animated_flag_01" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="banner"/>
+						</tags>
+						<transform position="0.959, -1.088, 2.478" rotation_euler="0.247, -0.093, -0.274" scale="0.910, 0.910, 0.910"/>
+						<components>
+							<meta_mesh_component name="intro_flag">
+								<mesh name="intro_flag" material="animated_flag" argument="0.650, 0.350, 0.245, 0.325"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="VertexAnimator">
+								<variables>
+									<variable name="Speed" value="20.000"/>
+									<variable name="BeginKey" value="0"/>
+									<variable name="EndKey" value="250"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="hawk_with_mask" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="208.507, 121.463, 2.213" rotation_euler="-0.001, 0.055, 1.437"/>
+				<skeleton skeleton_model="bird_skeleton">
+					<components>
+						<meta_mesh_component name="hawk_with_mask_mesh"/>
+					</components>
+					<bones>
+						<bone frame="0.109188, -0.658819, 0.744336, 0.000000, -0.103540, 0.737201, 0.667693, 0.000000, -0.988614, -0.149973, 0.012279, 0.000000, -0.000000, 0.096099, 0.142053, 1.000000"/>
+						<bone frame="-0.258667, -0.059866, 0.964110, 0.000000, 0.678893, 0.698741, 0.225532, 0.000000, -0.687165, 0.712865, -0.140099, 0.000000, -0.000000, 0.018227, 0.038616, 1.000000" _index_="2"/>
+						<bone frame="-0.386691, 0.767087, -0.511906, 0.000000, 0.913698, 0.243437, -0.325414, 0.000000, -0.125003, -0.593562, -0.795021, 0.000000, 0.048111, 0.000000, 0.000000, 1.000000" _index_="3"/>
+						<bone frame="-0.260375, -0.947542, -0.185388, 0.000000, -0.935600, 0.295036, -0.193927, 0.000000, 0.238450, 0.122956, -0.963340, 0.000000, -0.048007, 0.015167, 0.034035, 1.000000" _index_="4"/>
+						<bone frame="-0.999698, -0.000381, -0.024584, 0.000000, -0.000372, 1.000000, -0.000381, 0.000000, 0.024584, -0.000372, -0.999698, 0.000000, 0.000000, 0.000000, 0.044112, 1.000000" _index_="5"/>
+						<bone frame="-0.840016, -0.002319, 0.542557, 0.000000, 0.124588, 0.972445, 0.197051, 0.000000, -0.528064, 0.233122, -0.816580, 0.000000, 0.000000, 0.000000, 0.070889, 1.000000" _index_="6"/>
+						<bone frame="0.905235, -0.130988, 0.404218, 0.000000, 0.016055, 0.961163, 0.275514, 0.000000, -0.424609, -0.242916, 0.872181, 0.000000, 0.000000, -0.000000, 0.095645, 1.000000" _index_="7"/>
+						<bone frame="0.469363, 0.238431, 0.850205, 0.000000, -0.277294, 0.953945, -0.114440, 0.000000, -0.838335, -0.182043, 0.513862, 0.000000, 0.001110, 0.000633, 0.039837, 1.000000" _index_="8"/>
+						<bone frame="-0.503252, 0.038928, 0.863262, 0.000000, 0.026921, 0.999206, -0.029364, 0.000000, -0.863720, 0.008463, -0.503901, 0.000000, -0.024104, -0.000158, -0.004355, 1.000000" _index_="9"/>
+						<bone frame="0.028488, 0.366730, 0.929891, 0.000000, -0.696280, 0.674744, -0.244774, 0.000000, -0.717205, -0.640491, 0.274569, 0.000000, -0.019745, -0.000370, 0.044614, 1.000000" _index_="10"/>
+						<bone frame="-0.485901, 0.022751, -0.873718, 0.000000, 0.005900, 0.999724, 0.022751, 0.000000, 0.873994, 0.005900, -0.485901, 0.000000, -0.021754, -0.001190, -0.020680, 1.000000" _index_="11"/>
+						<bone frame="-0.143503, 0.002950, -0.989646, 0.000000, 0.000213, 0.999996, 0.002950, 0.000000, 0.989650, 0.000213, -0.143503, 0.000000, -0.025211, -0.000840, 0.024614, 1.000000" _index_="12"/>
+						<bone frame="-0.245627, 0.949663, 0.194445, 0.000000, -0.935879, -0.284589, 0.207700, 0.000000, 0.252582, -0.130960, 0.958672, 0.000000, 0.048007, 0.015167, 0.034035, 1.000000" _index_="13"/>
+						<bone frame="-0.999688, 0.000182, -0.024978, 0.000000, 0.000177, 1.000000, 0.000182, 0.000000, 0.024978, 0.000177, -0.999688, 0.000000, -0.000000, 0.000000, -0.044112, 1.000000" _index_="14"/>
+						<bone frame="-0.840241, -0.002869, 0.542206, 0.000000, 0.123962, 0.972485, 0.197247, 0.000000, -0.527853, 0.232948, -0.816766, 0.000000, -0.000000, 0.000000, -0.070889, 1.000000" _index_="15"/>
+						<bone frame="0.905228, -0.131288, 0.404137, 0.000000, 0.016242, 0.961068, 0.275833, 0.000000, -0.424617, -0.243127, 0.872118, 0.000000, 0.000000, 0.000000, -0.095644, 1.000000" _index_="16"/>
+						<bone frame="0.454071, 0.237708, 0.858670, 0.000000, -0.274155, 0.954270, -0.119198, 0.000000, -0.847737, -0.181284, 0.498475, 0.000000, -0.001110, -0.000634, -0.039838, 1.000000" _index_="17"/>
+						<bone frame="-0.770376, 0.001471, 0.637587, 0.000000, 0.003126, 0.999994, 0.001471, 0.000000, -0.637581, 0.003126, -0.770376, 0.000000, 0.024104, 0.000157, 0.004355, 1.000000" _index_="18"/>
+						<bone frame="-0.485902, 0.022751, -0.873717, 0.000000, 0.005900, 0.999724, 0.022751, 0.000000, 0.873994, 0.005900, -0.485902, 0.000000, 0.021754, 0.001190, 0.020680, 1.000000" _index_="20"/>
+						<bone frame="-0.143181, 0.000466, -0.989696, 0.000000, 0.000034, 1.000000, 0.000466, 0.000000, 0.989697, 0.000034, -0.143181, 0.000000, 0.025211, 0.000840, -0.024614, 1.000000" _index_="21"/>
+						<bone frame="0.002345, -0.020710, -0.999783, 0.000000, 0.257369, 0.966118, -0.019409, 0.000000, 0.966310, -0.257268, 0.007595, 0.000000, -0.047688, 0.009943, -0.000000, 1.000000" _index_="22"/>
+						<bone frame="0.117869, -0.290046, -0.949726, 0.000000, -0.830295, -0.553406, 0.065963, 0.000000, -0.544717, 0.780778, -0.306053, 0.000000, 0.053806, -0.034031, 0.026306, 1.000000" _index_="23"/>
+						<bone frame="0.973611, 0.158132, -0.164547, 0.000000, 0.081455, 0.432738, 0.897832, 0.000000, 0.213182, -0.887543, 0.408438, 0.000000, -0.002737, 0.079557, 0.005605, 1.000000" _index_="24"/>
+						<bone frame="0.950415, 0.028671, 0.309660, 0.000000, 0.282408, 0.337385, -0.898007, 0.000000, -0.130221, 0.940930, 0.312559, 0.000000, 0.005736, 0.008046, -0.045848, 1.000000" _index_="25"/>
+						<bone frame="-0.047775, 0.005347, -0.998844, 0.000000, -0.839563, -0.541984, 0.037256, 0.000000, -0.541158, 0.840372, 0.030382, 0.000000, 0.053806, -0.034031, -0.026306, 1.000000" _index_="27"/>
+						<bone frame="0.972309, -0.147760, 0.181057, 0.000000, -0.044844, 0.642384, 0.765070, 0.000000, -0.229355, -0.752004, 0.617969, 0.000000, 0.002686, 0.079623, 0.004517, 1.000000" _index_="28"/>
+						<bone frame="0.972351, -0.101830, -0.210151, 0.000000, -0.124385, 0.535787, -0.835141, 0.000000, 0.197639, 0.838190, 0.508307, 0.000000, -0.005688, 0.009767, -0.045521, 1.000000" _index_="29"/>
+						<bone frame="0.989357, -0.002247, -0.145492, 0.000000, -0.002602, -0.999994, -0.002247, 0.000000, -0.145486, 0.002602, -0.989357, 0.000000, 0.000420, 0.006840, -0.024160, 1.000000" _index_="30"/>
+					</bones>
+				</skeleton>
+				<scripts>
+					<script name="Bird">
+						<variables>
+							<variable name="CanFly" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="hut_b_fishing" old_prefab_name="">
+				<transform position="157.854, 10.641, -0.089" rotation_euler="0.000, 0.000, -0.312"/>
+				<physics shape="bo_hut_b" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="hut_b"/>
+				</components>
+				<children>
+					<game_entity name="merchandise_ironware_pitchfork" old_prefab_name="">
+						<transform position="-0.688, -0.601, 4.950" rotation_euler="-1.218, 2.310, -0.088"/>
+						<physics shape="bo_merchandise_ironware_pitchfork"/>
+						<components>
+							<meta_mesh_component name="merchandise_ironware_pitchfork"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_straw_a" old_prefab_name="">
+						<transform position="1.084, -0.258, 4.901" rotation_euler="-0.175, -0.125, 2.456" scale="0.511, 0.511, 0.441"/>
+						<physics shape="bo_bd_straw_a" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_straw_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_straw_a" old_prefab_name="">
+						<transform position="-0.140, 0.623, 5.110" rotation_euler="-0.004, -0.215, 1.530" scale="1.000, 1.000, 0.640"/>
+						<physics shape="bo_bd_straw_a" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_straw_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_straw_a" old_prefab_name="">
+						<transform position="-1.556, 0.723, 5.097" rotation_euler="-0.175, -0.125, 2.456" scale="0.902, 0.511, 0.441"/>
+						<physics shape="bo_bd_straw_a" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_straw_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_heap_c" old_prefab_name="">
+						<transform position="0.362, -0.258, 1.151" rotation_euler="0.000, 0.000, -0.064"/>
+						<physics shape="bo_bd_barrel_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_barrel_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_a" old_prefab_name="">
+						<transform position="-1.590, 0.170, 1.139" rotation_euler="-0.704, 0.155, 1.299"/>
+						<physics shape="bo_bd_sack_a" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_heap_a" old_prefab_name="">
+						<transform position="-2.749, 0.337, 1.154" rotation_euler="0.000, 0.000, 2.468"/>
+						<physics shape="bo_bd_sack_c" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_bucket_b" old_prefab_name="">
+						<transform position="-2.452, -2.535, -0.004" rotation_euler="0.000, 0.000, 2.998"/>
+						<physics shape="bo_bd_bucket_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_bucket_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wall_bucket" old_prefab_name="">
+						<transform position="-2.010, -1.408, 2.327" rotation_euler="0.000, 0.000, -0.096"/>
+						<components>
+							<meta_mesh_component name="bd_wall_bucket"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_b" old_prefab_name="">
+						<transform position="1.767, -3.055, 0.612" rotation_euler="-0.632, 0.219, 1.005"/>
+						<physics shape="bo_bd_sack_b" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_c" old_prefab_name="">
+						<transform position="1.763, -3.402, 0.277" rotation_euler="0.067, 0.515, 1.233"/>
+						<physics shape="bo_bd_sack_c" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_barrel_f" old_prefab_name="">
+						<transform position="-2.972, -0.232, -0.003" rotation_euler="0.000, 0.000, 2.541"/>
+						<physics shape="bo_bd_barrel_f"/>
+						<components>
+							<meta_mesh_component name="bd_barrel_f"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_c" old_prefab_name="">
+						<transform position="-2.569, -1.561, -0.004" rotation_euler="0.000, 0.000, -2.156"/>
+						<physics override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_wood_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_b" old_prefab_name="">
+						<transform position="-4.880, 0.011, 0.002" rotation_euler="0.000, 0.000, 1.554"/>
+						<physics shape="bo_bd_wood_heap_b" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="wooden_platform_heap_a" old_prefab_name="">
+						<transform position="6.006, 1.553, 0.003" rotation_euler="0.000, 0.000, 1.992"/>
+						<physics shape="bo_wooden_platform_heap_a"/>
+						<components>
+							<meta_mesh_component name="wooden_platform_heap_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_wooden_stick" old_prefab_name="">
+						<transform position="6.869, 1.235, 0.061" rotation_euler="-0.125, 0.047, 0.059"/>
+						<physics shape="bo_merchandise_wooden_stick"/>
+						<components>
+							<meta_mesh_component name="merchandise_wooden_stick"/>
+						</components>
+					</game_entity>
+					<game_entity name="wooden_platform_fence_b" old_prefab_name="">
+						<transform position="5.229, 0.991, 0.846" rotation_euler="-0.588, -0.410, 1.850"/>
+						<physics shape="bo_wooden_platform_fence_b"/>
+						<components>
+							<meta_mesh_component name="wooden_platform_fence_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="fishnet_a" old_prefab_name="">
+						<transform position="2.104, -3.383, -0.004" rotation_euler="0.000, 0.000, 1.576"/>
+						<physics shape="bo_fishnet_a"/>
+						<components>
+							<meta_mesh_component name="fishnet_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="fishnet_b" old_prefab_name="">
+						<transform position="0.977, -2.675, -0.004" rotation_euler="0.000, 0.000, 2.483"/>
+						<physics shape="bo_fishnet_b"/>
+						<components>
+							<meta_mesh_component name="fishnet_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="fish axe" old_prefab_name="">
+						<transform position="2.836, -2.774, 1.158" rotation_euler="1.535, 1.923, 0.896"/>
+						<components>
+							<meta_mesh_component name="fish_axe"/>
+						</components>
+					</game_entity>
+					<game_entity name="fishnet_d" old_prefab_name="">
+						<transform position="1.921, -1.623, 1.792" rotation_euler="0.000, 0.000, 0.007"/>
+						<physics shape="bo_fishnet_d"/>
+						<components>
+							<meta_mesh_component name="fishnet_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="fishnet_e" old_prefab_name="">
+						<transform position="3.754, -1.086, 1.160" rotation_euler="0.000, 0.000, 1.416"/>
+						<physics shape="bo_fishnet_e"/>
+						<components>
+							<meta_mesh_component name="fishnet_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fishnet_a" old_prefab_name="">
+						<transform position="5.265, -0.862, -0.004" rotation_euler="-0.023, 0.062, -1.920"/>
+						<physics shape="bo_fishnet_a"/>
+						<components>
+							<meta_mesh_component name="fishnet_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_straw_d" old_prefab_name="">
+						<transform position="5.316, 1.072, 0.137" rotation_euler="0.000, 0.000, 2.131" scale="0.716, 0.716, 0.716"/>
+						<physics override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_straw_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_straw_a" old_prefab_name="">
+						<transform position="5.390, 1.034, 0.001" rotation_euler="-0.019, -0.008, -2.116" scale="0.833, 0.833, 0.717"/>
+						<physics shape="bo_bd_straw_a" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_straw_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_straw_a" old_prefab_name="">
+						<transform position="4.614, 2.305, 0.001" rotation_euler="0.011, -0.018, 2.413" scale="0.921, 1.000, 0.928"/>
+						<physics shape="bo_bd_straw_a" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_straw_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_barrel_heap_a" old_prefab_name="">
+						<transform position="2.702, -2.647, -0.004" rotation_euler="0.000, 0.000, 2.502"/>
+						<physics shape="bo_bd_barrel_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_barrel_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_wood_c" old_prefab_name="">
+				<transform position="158.399, 9.577, 1.063" rotation_euler="0.069, -0.001, -0.431" scale="0.721, 0.721, 0.721"/>
+				<physics override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_wood_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_c" old_prefab_name="">
+				<transform position="158.958, 10.494, 1.059" rotation_euler="-0.047, 0.006, -1.069" scale="0.719, 0.719, 0.719"/>
+				<physics override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_wood_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_bucket_a" old_prefab_name="">
+				<transform position="159.483, 9.622, 1.112" rotation_euler="0.000, 0.000, 0.551"/>
+				<physics shape="bo_bd_bucket_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_bucket_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_c" old_prefab_name="">
+				<transform position="159.040, 10.682, 1.578" rotation_euler="0.016, 1.224, 1.228"/>
+				<physics shape="bo_bd_sack_c" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_c" old_prefab_name="">
+				<transform position="157.564, 10.941, 1.032" rotation_euler="0.000, 0.000, 0.713"/>
+				<physics shape="bo_bd_sack_c" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_c" old_prefab_name="">
+				<transform position="158.325, 11.326, 1.209" rotation_euler="0.264, 0.384, 1.316"/>
+				<physics shape="bo_bd_sack_c" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="">
+				<transform position="159.921, 10.477, 1.058" rotation_euler="0.415, 0.051, -1.399"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="">
+				<transform position="159.327, 11.635, 1.046" rotation_euler="-0.333, -0.077, 2.169"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_barrel_b" old_prefab_name="">
+				<transform position="159.146, 10.505, 1.608" rotation_euler="-0.001, 1.507, -1.982"/>
+				<physics shape="bo_bd_barrel_b" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_c" old_prefab_name="">
+				<transform position="155.976, 12.410, 1.046" rotation_euler="0.000, 0.000, -1.022"/>
+				<physics shape="bo_bd_sack_c" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_c" old_prefab_name="">
+				<transform position="155.716, 12.147, 1.492" rotation_euler="-0.005, 0.004, -2.365"/>
+				<physics shape="bo_bd_sack_c" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_c"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

@@ -1,0 +1,577 @@
+<prefabs>
+	<game_entity name="pe_pon_weaponmarket" old_prefab_name="">
+		<transform position="10.690, 5.470, 0.010" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.000, 0.800"/>
+		<physics shape="bo_awning_arbor_a_b"/>
+		<components>
+			<meta_mesh_component name="awning_arbor_b"/>
+		</components>
+		<children>
+			<game_entity name="tier0" old_prefab_name="">
+				<transform position="-0.006, 1.869, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.800, 1.250"/>
+				<physics shape="bo_bd_table_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_table_a"/>
+				</components>
+				<children>
+					<game_entity name="bd_table_d" old_prefab_name="">
+						<transform position="2.908, -2.517, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.250, 1.667, 1.000"/>
+						<physics shape="bo_bd_table_d" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_table_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_table_d" old_prefab_name="">
+						<transform position="-2.667, -2.517, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.250, 1.667, 1.000"/>
+						<physics shape="bo_bd_table_d" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_table_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="pavise_shield" old_prefab_name="">
+						<transform position="-3.395, -1.407, 0.696" non_orthogonal_rotation_mat="0.044979, 0.998988, 0.000000, -0.510487, 0.012929, -0.859788, -0.977562, 0.024758, 0.209187" scale="1.251, 1.096, 1.605"/>
+						<components>
+							<meta_mesh_component name="kite_shield_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="viking_round_shield" old_prefab_name="">
+						<transform position="-2.445, 0.904, 0.390" non_orthogonal_rotation_mat="1.000000, 0.000000, 0.000000, 0.000000, 0.438474, -0.898744, 0.000000, 0.954551, 0.298048" scale="1.667, 1.037, 1.220"/>
+						<components>
+							<meta_mesh_component name="shield_sturgia_infantary_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_large_shield_b" old_prefab_name="">
+						<transform position="-3.442, -3.601, 0.523" non_orthogonal_rotation_mat="-0.000000, -1.000000, 0.000000, 0.293995, -0.000000, 0.955807, -0.993925, 0.000000, 0.110059" scale="1.250, 1.029, 1.649"/>
+						<components>
+							<meta_mesh_component name="battania_large_shield_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="oval_shield" old_prefab_name="">
+						<transform position="1.685, 0.793, 0.600" non_orthogonal_rotation_mat="1.000000, 0.000000, 0.000000, 0.000000, 0.757556, -0.652770, 0.000000, 0.802791, 0.596261" scale="1.667, 1.123, 1.141"/>
+						<components>
+							<meta_mesh_component name="aserai_shields_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="noyans_shield" old_prefab_name="">
+						<transform position="3.861, -3.805, 0.229" non_orthogonal_rotation_mat="0.018075, 0.999539, 0.024403, -0.673293, -0.021344, 0.739068, 0.950101, -0.021535, 0.311198" scale="1.250, 1.187, 1.539"/>
+						<components>
+							<meta_mesh_component name="shield_khuzait_cavalary_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="decorated_steppe_shield" old_prefab_name="">
+						<transform position="3.107, -3.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<components>
+							<meta_mesh_component name="shield_khuzait_cavalary_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="heavy_round_shield" old_prefab_name="">
+						<transform position="-1.530, 0.323, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<components>
+							<meta_mesh_component name="sturgia_shield_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="wide_heater_shield" old_prefab_name="">
+						<transform position="-3.168, -0.831, -0.055" non_orthogonal_rotation_mat="0.658912, 0.752220, 0.000000, -0.897022, 0.441987, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.389, 1.553, 1.000"/>
+						<components>
+							<meta_mesh_component name="heater_shield_i"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_shield_targe_a" old_prefab_name="">
+						<transform position="-2.834, -3.262, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<components>
+							<meta_mesh_component name="battania_shield_targe_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_shields_f" old_prefab_name="">
+						<transform position="3.295, -0.968, 0.000" non_orthogonal_rotation_mat="0.897882, -0.440236, 0.000000, 0.657074, 0.753826, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.554, 1.388, 1.000"/>
+						<components>
+							<meta_mesh_component name="aserai_shields_f"/>
+						</components>
+					</game_entity>
+					<game_entity name="light_horsemans_kite_shield" old_prefab_name="">
+						<transform position="0.965, 0.090, 0.000" non_orthogonal_rotation_mat="0.895692, 0.444675, 0.000000, -0.661723, 0.749748, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.552, 1.390, 1.000"/>
+						<components>
+							<meta_mesh_component name="kite_shield_l"/>
+						</components>
+					</game_entity>
+					<game_entity name="southern_oval_shield" old_prefab_name="">
+						<transform position="4.137, -1.361, 0.316" non_orthogonal_rotation_mat="-0.083030, 0.996547, 0.000000, -0.799542, -0.037471, 0.599440, 0.900000, 0.042179, 0.433844" scale="1.252, 1.301, 1.442"/>
+						<components>
+							<meta_mesh_component name="shield_aserai_infantary_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="sword_arabian_d" old_prefab_name="">
+						<transform position="3.889, -1.743, 0.068" non_orthogonal_rotation_mat="0.781032, 0.624491, 0.000000, -0.810609, 0.570266, -0.133079, -0.232574, 0.163616, 0.958717" scale="1.460, 1.471, 1.023"/>
+						<components>
+							<meta_mesh_component name="sword_arabian_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="">
+						<transform position="-3.886, -0.880, 0.095" non_orthogonal_rotation_mat="0.254081, 0.949089, -0.186206, -0.959853, 0.203669, 0.192878, 0.529341, 0.174792, 0.830208" scale="1.255, 1.590, 1.111"/>
+						<components>
+							<meta_mesh_component name="vlandia_onehanded_sword_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="axe_i" old_prefab_name="">
+						<transform position="-3.221, 1.195, 0.161" non_orthogonal_rotation_mat="0.958298, 0.285772, 0.000000, -0.394870, 0.744834, 0.537866, 0.346974, -0.654488, 0.671754" scale="1.616, 1.195, 1.141"/>
+						<components>
+							<meta_mesh_component name="axe_i"/>
+						</components>
+					</game_entity>
+					<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="">
+						<transform position="0.886, 1.165, 0.165" non_orthogonal_rotation_mat="0.372703, 0.900783, 0.222895, -0.949265, 0.106531, 0.295883, 0.549110, -0.409485, 0.728561" scale="1.271, 1.544, 1.157"/>
+						<components>
+							<meta_mesh_component name="vlandia_twohanded_sword_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="spear_rack" old_prefab_name="">
+						<transform position="-1.332, -4.984, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<children>
+							<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+								<transform position="0.660, 0.399, 0.333" rotation_euler="0.094, -0.646, 1.378" scale="1.300, 1.300, 1.300"/>
+								<components>
+									<meta_mesh_component name="spear_new_f_1-9m"/>
+								</components>
+							</game_entity>
+							<game_entity name="weapon_rack_a" old_prefab_name="">
+								<transform position="0.000, -0.152, -0.328"/>
+								<physics shape="bo_weapon_rack_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="weapon_rack_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+								<transform position="0.401, 0.404, 0.337" rotation_euler="0.098, -0.657, 1.631" scale="1.300, 1.300, 1.300"/>
+								<components>
+									<meta_mesh_component name="spear_new_f_1-9m"/>
+								</components>
+							</game_entity>
+							<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+								<transform position="0.248, 0.407, 0.339" rotation_euler="0.574, 0.327, -0.614" scale="1.300, 1.300, 1.300"/>
+								<components>
+									<meta_mesh_component name="spear_new_f_1-9m"/>
+								</components>
+							</game_entity>
+							<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+								<transform position="0.135, 0.409, 0.341" rotation_euler="0.651, 0.039, -0.032" scale="1.300, 1.300, 1.300"/>
+								<components>
+									<meta_mesh_component name="spear_new_f_1-9m"/>
+								</components>
+							</game_entity>
+							<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+								<transform position="-0.257, 0.417, 0.347" rotation_euler="0.651, 0.078, -0.032" scale="1.300, 1.300, 1.300"/>
+								<components>
+									<meta_mesh_component name="spear_new_f_1-9m"/>
+								</components>
+							</game_entity>
+							<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+								<transform position="-0.367, 0.419, 0.349" rotation_euler="0.335, 0.583, -0.926" scale="1.300, 1.300, 1.300"/>
+								<components>
+									<meta_mesh_component name="spear_new_f_1-9m"/>
+								</components>
+							</game_entity>
+							<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+								<transform position="-0.687, 0.426, 0.354" rotation_euler="0.651, 0.204, -0.032" scale="1.300, 1.300, 1.300"/>
+								<components>
+									<meta_mesh_component name="spear_new_f_1-9m"/>
+								</components>
+							</game_entity>
+							<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+								<transform position="-0.841, 0.432, 0.352" rotation_euler="0.412, 0.543, -0.746" scale="1.300, 1.300, 1.300"/>
+								<components>
+									<meta_mesh_component name="spear_new_f_1-9m"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="weapon_rack_aserai_a" old_prefab_name="">
+						<transform position="1.730, -4.880, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_weapon_rack_a"/>
+						<components>
+							<meta_mesh_component name="weapon_rack_aserai_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_a" old_prefab_name="">
+						<transform position="0.432, 1.808, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="2.333, 1.250, 1.000"/>
+						<physics shape="bo_fence_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_a" old_prefab_name="">
+						<transform position="-5.329, -2.374, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.500, 1.667, 1.000"/>
+						<physics shape="bo_fence_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_a" old_prefab_name="">
+						<transform position="0.432, -6.577, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="2.333, 1.250, 1.000"/>
+						<physics shape="bo_fence_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_a" old_prefab_name="">
+						<transform position="5.601, -2.374, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.500, 1.667, 1.000"/>
+						<physics shape="bo_fence_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_chest_sturgia_a" old_prefab_name="">
+				<transform position="-2.565, 4.375, 0.000" rotation_euler="0.000, 0.000, -1.574" scale="1.000, 1.000, 1.250"/>
+				<physics shape="bo_bd_chest_sturgia_a"/>
+				<components>
+					<meta_mesh_component name="bd_chest_sturgia_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="tier1" old_prefab_name="">
+				<transform position="-0.006, 1.869, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.800, 1.250"/>
+				<physics shape="bo_bd_table_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_table_a"/>
+				</components>
+				<children>
+					<game_entity name="bd_table_d" old_prefab_name="">
+						<transform position="2.908, -2.517, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.250, 1.667, 1.000"/>
+						<physics shape="bo_bd_table_d" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_table_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_table_d" old_prefab_name="">
+						<transform position="-2.667, -2.517, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.250, 1.667, 1.000"/>
+						<physics shape="bo_bd_table_d" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_table_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="pavise_shield" old_prefab_name="">
+						<transform position="-3.395, -1.407, 0.696" non_orthogonal_rotation_mat="0.044979, 0.998988, 0.000000, -0.510487, 0.012929, -0.859788, -0.977562, 0.024758, 0.209187" scale="1.251, 1.096, 1.605"/>
+						<components>
+							<meta_mesh_component name="kite_shield_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="viking_round_shield" old_prefab_name="">
+						<transform position="-2.445, 0.904, 0.390" non_orthogonal_rotation_mat="1.000000, 0.000000, 0.000000, 0.000000, 0.438474, -0.898744, 0.000000, 0.954551, 0.298048" scale="1.667, 1.037, 1.220"/>
+						<components>
+							<meta_mesh_component name="shield_sturgia_infantary_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_large_shield_b" old_prefab_name="">
+						<transform position="-3.442, -3.601, 0.523" non_orthogonal_rotation_mat="-0.000000, -1.000000, 0.000000, 0.293995, -0.000000, 0.955807, -0.993925, 0.000000, 0.110059" scale="1.250, 1.029, 1.649"/>
+						<components>
+							<meta_mesh_component name="battania_large_shield_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="oval_shield" old_prefab_name="">
+						<transform position="1.685, 0.793, 0.600" non_orthogonal_rotation_mat="1.000000, 0.000000, 0.000000, 0.000000, 0.757556, -0.652770, 0.000000, 0.802791, 0.596261" scale="1.667, 1.123, 1.141"/>
+						<components>
+							<meta_mesh_component name="aserai_shields_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="noyans_shield" old_prefab_name="">
+						<transform position="3.861, -3.805, 0.229" non_orthogonal_rotation_mat="0.018075, 0.999539, 0.024403, -0.673293, -0.021344, 0.739068, 0.950101, -0.021535, 0.311198" scale="1.250, 1.187, 1.539"/>
+						<components>
+							<meta_mesh_component name="shield_khuzait_cavalary_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="decorated_steppe_shield" old_prefab_name="">
+						<transform position="3.107, -3.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<components>
+							<meta_mesh_component name="shield_khuzait_cavalary_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="heavy_round_shield" old_prefab_name="">
+						<transform position="-1.530, 0.323, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<components>
+							<meta_mesh_component name="sturgia_shield_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="wide_heater_shield" old_prefab_name="">
+						<transform position="-3.168, -0.831, -0.055" non_orthogonal_rotation_mat="0.658912, 0.752220, 0.000000, -0.897022, 0.441987, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.389, 1.553, 1.000"/>
+						<components>
+							<meta_mesh_component name="heater_shield_i"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_shield_targe_a" old_prefab_name="">
+						<transform position="-2.834, -3.262, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<components>
+							<meta_mesh_component name="battania_shield_targe_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_shields_f" old_prefab_name="">
+						<transform position="3.295, -0.968, 0.000" non_orthogonal_rotation_mat="0.897882, -0.440236, 0.000000, 0.657074, 0.753826, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.554, 1.388, 1.000"/>
+						<components>
+							<meta_mesh_component name="aserai_shields_f"/>
+						</components>
+					</game_entity>
+					<game_entity name="light_horsemans_kite_shield" old_prefab_name="">
+						<transform position="0.965, 0.090, 0.000" non_orthogonal_rotation_mat="0.895692, 0.444675, 0.000000, -0.661723, 0.749748, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.552, 1.390, 1.000"/>
+						<components>
+							<meta_mesh_component name="kite_shield_l"/>
+						</components>
+					</game_entity>
+					<game_entity name="southern_oval_shield" old_prefab_name="">
+						<transform position="4.137, -1.361, 0.316" non_orthogonal_rotation_mat="-0.083030, 0.996547, 0.000000, -0.799542, -0.037471, 0.599440, 0.900000, 0.042179, 0.433844" scale="1.252, 1.301, 1.442"/>
+						<components>
+							<meta_mesh_component name="shield_aserai_infantary_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="sword_arabian_d" old_prefab_name="">
+						<transform position="3.889, -1.743, 0.068" non_orthogonal_rotation_mat="0.781032, 0.624491, 0.000000, -0.810609, 0.570266, -0.133079, -0.232574, 0.163616, 0.958717" scale="1.460, 1.471, 1.023"/>
+						<components>
+							<meta_mesh_component name="sword_arabian_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="">
+						<transform position="-3.886, -0.880, 0.095" non_orthogonal_rotation_mat="0.254081, 0.949089, -0.186206, -0.959853, 0.203669, 0.192878, 0.529341, 0.174792, 0.830208" scale="1.255, 1.590, 1.111"/>
+						<components>
+							<meta_mesh_component name="vlandia_onehanded_sword_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="axe_i" old_prefab_name="">
+						<transform position="-3.221, 1.195, 0.161" non_orthogonal_rotation_mat="0.958298, 0.285772, 0.000000, -0.394870, 0.744834, 0.537866, 0.346974, -0.654488, 0.671754" scale="1.616, 1.195, 1.141"/>
+						<components>
+							<meta_mesh_component name="axe_i"/>
+						</components>
+					</game_entity>
+					<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="">
+						<transform position="0.886, 1.165, 0.165" non_orthogonal_rotation_mat="0.372703, 0.900783, 0.222895, -0.949265, 0.106531, 0.295883, 0.549110, -0.409485, 0.728561" scale="1.271, 1.544, 1.157"/>
+						<components>
+							<meta_mesh_component name="vlandia_twohanded_sword_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="spear_rack" old_prefab_name="">
+						<transform position="-1.332, -4.984, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<children>
+							<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+								<transform position="0.660, 0.399, 0.333" rotation_euler="0.094, -0.646, 1.378" scale="1.300, 1.300, 1.300"/>
+								<components>
+									<meta_mesh_component name="spear_new_f_1-9m"/>
+								</components>
+							</game_entity>
+							<game_entity name="weapon_rack_a" old_prefab_name="">
+								<transform position="0.000, -0.152, -0.328"/>
+								<physics shape="bo_weapon_rack_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="weapon_rack_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+								<transform position="0.401, 0.404, 0.337" rotation_euler="0.098, -0.657, 1.631" scale="1.300, 1.300, 1.300"/>
+								<components>
+									<meta_mesh_component name="spear_new_f_1-9m"/>
+								</components>
+							</game_entity>
+							<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+								<transform position="0.248, 0.407, 0.339" rotation_euler="0.574, 0.327, -0.614" scale="1.300, 1.300, 1.300"/>
+								<components>
+									<meta_mesh_component name="spear_new_f_1-9m"/>
+								</components>
+							</game_entity>
+							<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+								<transform position="0.135, 0.409, 0.341" rotation_euler="0.651, 0.039, -0.032" scale="1.300, 1.300, 1.300"/>
+								<components>
+									<meta_mesh_component name="spear_new_f_1-9m"/>
+								</components>
+							</game_entity>
+							<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+								<transform position="-0.257, 0.417, 0.347" rotation_euler="0.651, 0.078, -0.032" scale="1.300, 1.300, 1.300"/>
+								<components>
+									<meta_mesh_component name="spear_new_f_1-9m"/>
+								</components>
+							</game_entity>
+							<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+								<transform position="-0.367, 0.419, 0.349" rotation_euler="0.335, 0.583, -0.926" scale="1.300, 1.300, 1.300"/>
+								<components>
+									<meta_mesh_component name="spear_new_f_1-9m"/>
+								</components>
+							</game_entity>
+							<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+								<transform position="-0.687, 0.426, 0.354" rotation_euler="0.651, 0.204, -0.032" scale="1.300, 1.300, 1.300"/>
+								<components>
+									<meta_mesh_component name="spear_new_f_1-9m"/>
+								</components>
+							</game_entity>
+							<game_entity name="spear_new_f_1-9m" old_prefab_name="">
+								<transform position="-0.841, 0.432, 0.352" rotation_euler="0.412, 0.543, -0.746" scale="1.300, 1.300, 1.300"/>
+								<components>
+									<meta_mesh_component name="spear_new_f_1-9m"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="weapon_rack_aserai_a" old_prefab_name="">
+						<transform position="1.730, -4.880, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_weapon_rack_a"/>
+						<components>
+							<meta_mesh_component name="weapon_rack_aserai_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_a" old_prefab_name="">
+						<transform position="1.641, -0.013, 0.799" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_a" old_prefab_name="">
+						<transform position="-1.496, -0.013, 0.799" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_a" old_prefab_name="">
+						<transform position="-2.687, -1.407, 0.799" rotation_euler="0.000, 0.000, 1.571" scale="1.250, 1.667, 1.000"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_a" old_prefab_name="">
+						<transform position="-2.687, -3.468, 0.799" rotation_euler="0.000, 0.000, 1.571" scale="1.250, 1.667, 1.000"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_a" old_prefab_name="">
+						<transform position="2.812, -3.468, 0.799" rotation_euler="0.000, 0.000, -1.571" scale="1.250, 1.667, 1.000"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_a" old_prefab_name="">
+						<transform position="2.812, -1.407, 0.799" rotation_euler="0.000, 0.000, -1.571" scale="1.250, 1.667, 1.000"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_merchantweapons_melee" old_prefab_name="">
+						<transform position="3.869, 2.298, 2.787" rotation_euler="0.000, 0.000, 1.571" scale="1.250, 1.667, 1.000"/>
+						<components>
+							<meta_mesh_component name="shop_sign_merchantweapons_melee"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_base_c2" old_prefab_name="">
+						<transform position="3.768, 0.135, 2.716" rotation_euler="0.000, 0.000, 3.141" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_shop_sign_base_c2"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_c2"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_merchantweapons_melee" old_prefab_name="">
+						<transform position="3.707, 2.297, 2.790" rotation_euler="0.000, 0.000, -1.571" scale="1.250, 1.667, 1.000"/>
+						<components>
+							<meta_mesh_component name="shop_sign_merchantweapons_melee"/>
+						</components>
+					</game_entity>
+					<game_entity name="flagpole_intro" old_prefab_name="">
+						<transform position="-1.936, -1.436, -0.977" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_flagpole_a"/>
+						<components>
+							<meta_mesh_component name="flagpole_intro"/>
+						</components>
+					</game_entity>
+					<game_entity name="flagpole_intro" old_prefab_name="">
+						<transform position="-1.936, -3.486, -0.977" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_flagpole_a"/>
+						<components>
+							<meta_mesh_component name="flagpole_intro"/>
+						</components>
+					</game_entity>
+					<game_entity name="flagpole_intro" old_prefab_name="">
+						<transform position="2.001, -1.436, -0.977" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_flagpole_a"/>
+						<components>
+							<meta_mesh_component name="flagpole_intro"/>
+						</components>
+					</game_entity>
+					<game_entity name="flagpole_intro" old_prefab_name="">
+						<transform position="2.001, -3.486, -0.977" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_flagpole_a"/>
+						<components>
+							<meta_mesh_component name="flagpole_intro"/>
+						</components>
+					</game_entity>
+					<game_entity name="flagpole_intro" old_prefab_name="">
+						<transform position="1.507, -0.807, -0.977" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_flagpole_a"/>
+						<components>
+							<meta_mesh_component name="flagpole_intro">
+								<mesh name="flagpole_intro.lod3.15" argument="1.000, 0.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="flagpole_intro" old_prefab_name="">
+						<transform position="-1.483, -0.807, -0.977" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_flagpole_a"/>
+						<components>
+							<meta_mesh_component name="flagpole_intro"/>
+						</components>
+					</game_entity>
+					<game_entity name="pe_signs" old_prefab_name="">
+						<transform position="-6.530, -2.390, 1.515" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<children>
+							<game_entity name="signs" old_prefab_name="">
+								<transform position="4.836, 1.309, 0.493" rotation_euler="1.558, 3.141, 0.000"/>
+								<components>
+									<meta_mesh_component name="editor_plane_low">
+										<mesh name="editor_plane_low" material="empire_sign"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="signs" old_prefab_name="">
+								<transform position="5.168, 0.761, 0.466" rotation_euler="1.558, 3.141, 1.571"/>
+								<components>
+									<meta_mesh_component name="editor_plane_low">
+										<mesh name="editor_plane_low" material="aserai_sign"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="signs" old_prefab_name="">
+								<transform position="3.027, 1.320, 0.525" rotation_euler="1.558, 3.141, 0.000"/>
+								<components>
+									<meta_mesh_component name="editor_plane_low">
+										<mesh name="editor_plane_low" material="sturgia_sign"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="signs" old_prefab_name="">
+								<transform position="2.707, -0.850, 0.533" rotation_euler="1.558, 3.141, 1.571"/>
+								<components>
+									<meta_mesh_component name="editor_plane_low">
+										<mesh name="editor_plane_low" material="battania_sign"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="signs" old_prefab_name="">
+								<transform position="5.167, -0.899, 0.467" rotation_euler="1.558, 3.141, 1.571"/>
+								<components>
+									<meta_mesh_component name="editor_plane_low">
+										<mesh name="editor_plane_low" material="khuzait_sign"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="signs" old_prefab_name="">
+								<transform position="2.703, 0.784, 0.533" rotation_euler="1.558, -3.141, 1.571"/>
+								<components>
+									<meta_mesh_component name="editor_plane_low">
+										<mesh name="editor_plane_low" material="vlandia_sign"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

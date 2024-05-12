@@ -1,0 +1,221 @@
+<prefabs>
+	<game_entity name="pe_testship1" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_ship_a" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="ship_a"/>
+		</components>
+		<scripts>
+			<script name="PE_BlocShip">
+				<variables>
+					<variable name="isPlayerUsing" value="false"/>
+					<variable name="Animation" value="act_sit_1"/>
+					<variable name="StrayDurationSeconds" value="7200"/>
+					<variable name="RidingSkillId" value=""/>
+					<variable name="RidingSkillRequired" value="0"/>
+					<variable name="RepairingSkillId" value="Engineering"/>
+					<variable name="RepairingSkillRequired" value="0"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="MaxHitPoint" value="200.000"/>
+					<variable name="AdvanceSpeed" value="5.000"/>
+					<variable name="RotationalSpeed" value="0.500"/>
+					<variable name="ElevationSpeed" value="5.000"/>
+					<variable name="CanAdvance" value="true"/>
+					<variable name="CanRotate" value="true"/>
+					<variable name="CanElevate" value="false"/>
+					<variable name="AlwaysAlignToTerritory" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="icon_man" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Pilot"/>
+				</tags>
+				<transform position="0.062, -5.243, 0.707" rotation_euler="0.000, 0.000, -0.048"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_shipwc" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_shipwc"/>
+		<components>
+			<cloth_simulator>
+				<meta_mesh_component name="shipwc"/>
+			</cloth_simulator>
+		</components>
+		<scripts>
+			<script name="PE_BlocShip">
+				<variables>
+					<variable name="isPlayerUsing" value="false"/>
+					<variable name="Animation" value="act_sit_1"/>
+					<variable name="StrayDurationSeconds" value="7200"/>
+					<variable name="RidingSkillId" value=""/>
+					<variable name="RidingSkillRequired" value="0"/>
+					<variable name="RepairingSkillId" value="Engineering"/>
+					<variable name="RepairingSkillRequired" value="0"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="200"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="MaxHitPoint" value="1000.000"/>
+					<variable name="AdvanceSpeed" value="7.000"/>
+					<variable name="RotationalSpeed" value="0.500"/>
+					<variable name="ElevationSpeed" value="5.000"/>
+					<variable name="CanAdvance" value="true"/>
+					<variable name="CanRotate" value="true"/>
+					<variable name="CanElevate" value="false"/>
+					<variable name="AlwaysAlignToTerritory" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="icon_man" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Pilot"/>
+				</tags>
+				<transform position="-0.011, -8.058, 1.464" rotation_euler="0.005, 0.011, -0.096"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_ship_e" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_ship_e"/>
+		<components>
+			<meta_mesh_component name="ship_e"/>
+		</components>
+		<scripts>
+			<script name="PE_BlocShip">
+				<variables>
+					<variable name="isPlayerUsing" value="false"/>
+					<variable name="Animation" value="act_sit_1"/>
+					<variable name="StrayDurationSeconds" value="7200"/>
+					<variable name="RidingSkillId" value=""/>
+					<variable name="RidingSkillRequired" value="0"/>
+					<variable name="RepairingSkillId" value="Engineering"/>
+					<variable name="RepairingSkillRequired" value="0"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="AdvanceSpeed" value="6.000"/>
+					<variable name="RotationalSpeed" value="0.500"/>
+					<variable name="ElevationSpeed" value="5.000"/>
+					<variable name="CanAdvance" value="true"/>
+					<variable name="CanRotate" value="true"/>
+					<variable name="CanElevate" value="false"/>
+					<variable name="AlwaysAlignToTerritory" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="icon_man" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Pilot"/>
+				</tags>
+				<transform position="-0.062, -3.199, 0.563" rotation_euler="0.000, 0.000, 0.028"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

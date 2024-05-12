@@ -1,0 +1,62 @@
+<prefabs>
+	<game_entity name="lv_door_tp_4" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_TeleportDoor">
+				<variables>
+					<variable name="LinkText" value="jelk_flag"/>
+					<variable name="CastleId" value="-1"/>
+					<variable name="Distance" value="3.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="PE_RepairableDestructableComponent">
+				<variables>
+					<variable name="DestructionState" value=""/>
+					<variable name="ReferenceEntityTag" value="door"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="AlwaysEffectOnDestroy" value="false"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="IsBroken" value="false"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="empire_keep_a_door_top" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="door"/>
+				</tags>
+				<transform position="-0.104, 0.504, -0.003" rotation_euler="0.005, 0.014, -3.022"/>
+				<physics shape="bo_empire_keep_a_door_top"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_door_top"/>
+				</components>
+			</game_entity>
+			<game_entity name="arrow_new_icon" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="position"/>
+				</tags>
+				<transform position="0.021, -0.929, 0.007" rotation_euler="0.019, 0.010, -3.009"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

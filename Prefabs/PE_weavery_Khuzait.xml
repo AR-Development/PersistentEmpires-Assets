@@ -1,0 +1,477 @@
+<prefabs>
+	<game_entity name="PE_weavery_Khuzait" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="18.935, 42.122, 0.143" rotation_euler="0.000, 0.000, -0.361"/>
+		<scripts>
+			<script name="PE_UpgradeableBuildings">
+				<variables>
+					<variable name="CastleIndex" value="-1"/>
+					<variable name="BuildingName" value="Weavery"/>
+					<variable name="Tier0Tag" value="tier0"/>
+					<variable name="Tier1Tag" value="tier1"/>
+					<variable name="Tier2Tag" value="tier2"/>
+					<variable name="Tier3Tag" value="tier3"/>
+					<variable name="BuildingInteractiveTag" value="chest"/>
+					<variable name="Tier1RequiredEngineering" value="10"/>
+					<variable name="Tier2RequiredEngineering" value="20"/>
+					<variable name="Tier3RequiredEngineering" value="30"/>
+					<variable name="Tier1MaxHit" value="300"/>
+					<variable name="Tier2MaxHit" value="600"/>
+					<variable name="Tier3MaxHit" value="1200"/>
+					<variable name="Tier1UpgradeReceipts" value="pe_hardwood*10,pe_wooden_stick*20,pe_stone*5"/>
+					<variable name="Tier2UpgradeReceipts" value="pe_hardwood*30,pe_wooden_plank*40,pe_stone*50,pe_scroll*5,pe_clay*10"/>
+					<variable name="Tier3UpgradeReceipts" value="pe_hardwood*30,pe_wooden_plank*50,pe_stone*100,pe_book*5,pe_clay*50,pe_goldore*10"/>
+					<variable name="ParticleEffectOnUpgrade" value="dust_fall_a"/>
+					<variable name="SoundEffectOnUpgrade" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="BuildItem" value="pe_buildhammer"/>
+					<variable name="Tier1CraftingEngineering" value="10"/>
+					<variable name="Tier2CraftingEngineering" value="10"/>
+					<variable name="Tier3CraftingEngineering" value="10"/>
+					<variable name="MaxHitPoint" value="200.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="tier0" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier0"/>
+				</tags>
+				<transform position="2.756, 1.009, 0.000"/>
+				<children>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-0.193, -4.532, -0.058" rotation_euler="0.000, 0.000, 3.121" scale="1.238, 1.112, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-5.885, 0.840, -0.061" rotation_euler="0.000, 0.000, 1.573" scale="1.356, 1.112, 1.166"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="5.253, 1.019, -0.064" rotation_euler="0.000, 0.000, -1.601" scale="1.364, 1.112, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-0.809, 6.109, -0.057" rotation_euler="0.000, 0.000, 0.025" scale="1.341, 1.112, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_e" old_prefab_name="" mobility="1">
+						<transform position="4.225, 5.547, -0.186" rotation_euler="0.000, 0.000, 0.647" scale="1.048, 1.048, 1.048"/>
+						<physics shape="bo_bd_wood_heap_e"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_e" old_prefab_name="" mobility="1">
+						<transform position="-4.426, -3.369, -0.069" rotation_euler="0.000, 0.000, -2.250" scale="1.048, 1.048, 1.048"/>
+						<physics shape="bo_bd_wood_heap_e"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_d" old_prefab_name="" mobility="1">
+						<transform position="-4.987, 5.018, -0.069" rotation_euler="0.000, 0.000, 2.229"/>
+						<physics shape="bo_bd_wood_heap_d"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_d" old_prefab_name="" mobility="1">
+						<transform position="4.370, -3.709, -0.069" rotation_euler="0.000, 0.000, -0.997" scale="1.093, 1.093, 1.093"/>
+						<physics shape="bo_bd_wood_heap_d"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_d"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier1" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier1"/>
+				</tags>
+				<transform position="3.366, -3.528, -0.186"/>
+				<children>
+					<game_entity name="shop_prop_merchantleather_a" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="a"/>
+						</tags>
+						<transform position="-0.082, 5.432, 0.000" rotation_euler="0.000, 0.000, -1.649"/>
+						<physics shape="bo_shop_prop_merchantleather_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantleather_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Tannery"/>
+									<variable name="Animation" value="act_pe_npc_villager_working_while_stand"/>
+									<variable name="CraftingRecieptTag" value="tannery"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="bd_weavery_spinning_wheel" old_prefab_name="" mobility="1">
+						<transform position="-2.442, 7.599, 0.069" rotation_euler="-0.007, 0.002, 1.380"/>
+						<physics shape="bo_weavery_spinning_wheel" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="weavery_spinning_wheel"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Spinning Wheel"/>
+									<variable name="Animation" value="act_pe_npc_villager_working_while_stand"/>
+									<variable name="CraftingRecieptTag" value="spinning_wheel"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="mp_prop_merchantweavery_wool_a" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="a"/>
+						</tags>
+						<transform position="-1.861, 3.628, 0.000" rotation_euler="0.000, 0.000, 2.908"/>
+						<physics shape="bo_shop_prop_merchantweavery_wool_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantweavery_wool_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Carpenter Bench"/>
+									<variable name="Animation" value="act_pe_npc_villager_working_while_stand"/>
+									<variable name="CraftingRecieptTag" value="weavery"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="prop_merchantweavery_wool_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="b"/>
+						</tags>
+						<transform position="-5.161, 4.719, 0.000" rotation_euler="0.000, 0.000, 1.993"/>
+						<physics shape="bo_shop_prop_merchantweavery_velvet_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantweavery_wool_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="khuzait_tent_interior_a" old_prefab_name="" mobility="1">
+						<transform position="-1.827, 5.644, 0.095" rotation_euler="0.000, 0.000, 1.442" scale="0.700, 0.700, 1.000"/>
+						<physics shape="bo_khuzait_tent_interior_a"/>
+						<components>
+							<meta_mesh_component name="khuzait_tent_interior_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_merchantweaverylinen" old_prefab_name="" mobility="1">
+						<transform position="-5.379, 6.043, 3.214" rotation_euler="0.000, 0.000, -1.724"/>
+						<components>
+							<meta_mesh_component name="shop_sign_merchantweaverylinen"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_base_a3" old_prefab_name="" mobility="1">
+						<transform position="-5.249, 6.026, 3.286" rotation_euler="0.000, 0.000, -1.711"/>
+						<physics shape="bo_shop_sign_base_a3"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_a3"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_chest_sturgia_a" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="chest"/>
+				</tags>
+				<transform position="-4.364, -2.341, -0.083" rotation_euler="0.000, -0.002, -0.060"/>
+				<physics shape="bo_bd_chest_sturgia_a"/>
+				<components>
+					<meta_mesh_component name="bd_chest_sturgia_a"/>
+				</components>
+				<scripts>
+					<script name="PE_InventoryEntity">
+						<variables>
+							<variable name="InventoryName" value="Chest"/>
+							<variable name="InventoryId" value="l268cmveu"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="Slot" value="30"/>
+							<variable name="StackCount" value="10"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="tier2" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier1"/>
+				</tags>
+				<transform position="3.366, -3.528, -0.186"/>
+				<children>
+					<game_entity name="shop_prop_merchantleather_a" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="a"/>
+						</tags>
+						<transform position="-0.082, 5.432, 0.281" rotation_euler="0.000, 0.000, -1.649"/>
+						<physics shape="bo_shop_prop_merchantleather_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantleather_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Tannery"/>
+									<variable name="Animation" value="act_pe_npc_villager_working_while_stand"/>
+									<variable name="CraftingRecieptTag" value="tannery"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="bd_weavery_spinning_wheel" old_prefab_name="" mobility="1">
+						<transform position="-2.444, 7.600, 0.326" rotation_euler="-0.007, 0.002, 1.380"/>
+						<physics shape="bo_weavery_spinning_wheel" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="weavery_spinning_wheel"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Spinning Wheel"/>
+									<variable name="Animation" value="act_pe_npc_villager_working_while_stand"/>
+									<variable name="CraftingRecieptTag" value="spinning_wheel"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="mp_prop_merchantweavery_wool_a" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="a"/>
+						</tags>
+						<transform position="-2.059, 3.675, 0.359" rotation_euler="0.000, 0.000, 2.908"/>
+						<physics shape="bo_shop_prop_merchantweavery_wool_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantweavery_wool_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Carpenter Bench"/>
+									<variable name="Animation" value="act_pe_npc_villager_working_while_stand"/>
+									<variable name="CraftingRecieptTag" value="weavery"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="prop_merchantweavery_wool_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="b"/>
+						</tags>
+						<transform position="-5.161, 4.719, 0.000" rotation_euler="0.000, 0.000, 1.993"/>
+						<physics shape="bo_shop_prop_merchantweavery_velvet_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantweavery_wool_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="khuzait_tent_interior_a" old_prefab_name="" mobility="1">
+						<transform position="-1.827, 5.644, 0.095" rotation_euler="0.000, 0.000, 1.442" scale="0.700, 0.700, 1.000"/>
+						<physics shape="bo_khuzait_tent_interior_a"/>
+						<components>
+							<meta_mesh_component name="khuzait_tent_interior_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="stairs_short_a" old_prefab_name="" mobility="1">
+						<transform position="-6.397, 6.097, -0.777" rotation_euler="0.000, 0.000, -1.654"/>
+						<physics shape="bo_stairs_short_a" override_material="wood">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="stairs_short_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_base_a3" old_prefab_name="" mobility="1">
+						<transform position="-5.249, 6.026, 3.286" rotation_euler="0.000, 0.000, -1.711"/>
+						<physics shape="bo_shop_sign_base_a3"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_a3"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_merchantweaverylinen" old_prefab_name="" mobility="1">
+						<transform position="-5.379, 6.043, 3.214" rotation_euler="0.000, 0.000, -1.724"/>
+						<components>
+							<meta_mesh_component name="shop_sign_merchantweaverylinen"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_carpet_khuzait_round_a" old_prefab_name="" mobility="1">
+						<transform position="-1.841, 5.641, 0.273" rotation_euler="0.000, 0.000, 0.361" scale="2.200, 2.200, 1.000"/>
+						<physics shape="bo_bd_carpet_khuzait_round_a"/>
+						<components>
+							<meta_mesh_component name="bd_carpet_khuzait_round_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier3" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier1"/>
+				</tags>
+				<transform position="3.366, -3.528, -0.186"/>
+				<children>
+					<game_entity name="shop_prop_merchantleather_a" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="a"/>
+						</tags>
+						<transform position="-0.082, 5.432, 0.281" rotation_euler="0.000, 0.000, -1.649"/>
+						<physics shape="bo_shop_prop_merchantleather_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantleather_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Tannery"/>
+									<variable name="Animation" value="act_pe_npc_villager_working_while_stand"/>
+									<variable name="CraftingRecieptTag" value="tannery"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="bd_weavery_spinning_wheel" old_prefab_name="" mobility="1">
+						<transform position="-2.511, 7.254, 0.326" rotation_euler="-0.007, 0.002, 1.380"/>
+						<physics shape="bo_weavery_spinning_wheel" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="weavery_spinning_wheel"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Spinning Wheel"/>
+									<variable name="Animation" value="act_pe_npc_villager_working_while_stand"/>
+									<variable name="CraftingRecieptTag" value="spinning_wheel"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="mp_prop_merchantweavery_wool_a" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="a"/>
+						</tags>
+						<transform position="-2.059, 3.675, 0.359" rotation_euler="0.000, 0.000, 2.908"/>
+						<physics shape="bo_shop_prop_merchantweavery_wool_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantweavery_wool_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Carpenter Bench"/>
+									<variable name="Animation" value="act_pe_npc_villager_working_while_stand"/>
+									<variable name="CraftingRecieptTag" value="weavery"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="prop_merchantweavery_wool_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="b"/>
+						</tags>
+						<transform position="-4.734, 4.098, 0.000" rotation_euler="0.000, 0.000, 1.993"/>
+						<physics shape="bo_shop_prop_merchantweavery_velvet_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantweavery_wool_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="stairs_short_a" old_prefab_name="" mobility="1">
+						<transform position="-6.303, 6.085, -0.563" rotation_euler="0.000, 0.000, -1.691"/>
+						<physics shape="bo_stairs_short_a" override_material="wood">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="stairs_short_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_base_a3" old_prefab_name="" mobility="1">
+						<transform position="-5.385, 6.096, 4.791" rotation_euler="0.000, 0.000, -1.711"/>
+						<physics shape="bo_shop_sign_base_a3"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_a3"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_merchantweaverylinen" old_prefab_name="" mobility="1">
+						<transform position="-5.514, 6.114, 4.718" rotation_euler="0.000, 0.000, -1.724"/>
+						<components>
+							<meta_mesh_component name="shop_sign_merchantweaverylinen"/>
+						</components>
+					</game_entity>
+					<game_entity name="mat_carpet_h" old_prefab_name="" mobility="1">
+						<transform position="-2.379, 5.474, 0.327" rotation_euler="0.000, 0.000, -0.151" scale="1.200, 1.400, 1.000"/>
+						<components>
+							<meta_mesh_component name="mat_carpet_h"/>
+						</components>
+					</game_entity>
+					<game_entity name="khuzait_castle_keep_l1_interior_room_right" old_prefab_name="" mobility="1">
+						<transform position="-7.302, -1.852, -0.187" rotation_euler="0.000, 0.000, -0.125" scale="0.700, 0.700, 1.000"/>
+						<physics shape="bo_khuzait_castle_keep_l1_interior_room_right"/>
+						<components>
+							<meta_mesh_component name="khuzait_castle_keep_l1_interior_room_right"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

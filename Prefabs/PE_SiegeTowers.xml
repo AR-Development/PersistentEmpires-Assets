@@ -1,0 +1,159 @@
+<prefabs>
+	<game_entity name="PE_SiegeTower" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_BlocShip">
+				<variables>
+					<variable name="isPlayerUsing" value="false"/>
+					<variable name="Animation" value=""/>
+					<variable name="AdvanceSpeed" value="4.000"/>
+					<variable name="RotationalSpeed" value="1.000"/>
+					<variable name="ElevationSpeed" value="4.000"/>
+					<variable name="CanAdvance" value="true"/>
+					<variable name="CanRotate" value="true"/>
+					<variable name="CanElevate" value="false"/>
+					<variable name="IsMovingForward" value="false"/>
+					<variable name="IsMovingBackward" value="false"/>
+					<variable name="IsTurningRight" value="false"/>
+					<variable name="IsTurningLeft" value="false"/>
+					<variable name="IsMovingUp" value="false"/>
+					<variable name="IsMovingDown" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="siegetower_a_wheels" old_prefab_name="" mobility="1">
+				<transform position="0.311, 1.032, 0.619"/>
+				<physics shape="bo_siegetower_a_wheels"/>
+				<components>
+					<meta_mesh_component name="siegetower_a_wheels"/>
+				</components>
+			</game_entity>
+			<game_entity name="siegetower_a_01" old_prefab_name="" mobility="1">
+				<transform position="0.241, -1.434, -0.074"/>
+				<physics shape="bo_siegetower_a_01">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="siegetower_a_01"/>
+				</components>
+			</game_entity>
+			<game_entity name="siegetower_a_04" old_prefab_name="" mobility="1">
+				<transform position="0.279, -2.219, 14.724"/>
+				<physics shape="bo_siegetower_a_04"/>
+				<components>
+					<meta_mesh_component name="siegetower_a_04"/>
+				</components>
+			</game_entity>
+			<game_entity name="siegetower_a_03" old_prefab_name="" mobility="1">
+				<transform position="0.282, -1.491, 9.116"/>
+				<physics shape="bo_siegetower_a_03"/>
+				<components>
+					<meta_mesh_component name="siegetower_a_03"/>
+				</components>
+			</game_entity>
+			<game_entity name="siegetower_a_wheels" old_prefab_name="" mobility="1">
+				<transform position="0.311, -1.778, 0.619"/>
+				<physics shape="bo_siegetower_a_wheels"/>
+				<components>
+					<meta_mesh_component name="siegetower_a_wheels"/>
+				</components>
+			</game_entity>
+			<game_entity name="siegetower_a_02" old_prefab_name="" mobility="1">
+				<transform position="0.200, -1.025, 4.995" rotation_euler="0.000, 0.028, -0.003"/>
+				<physics shape="bo_siegetower_a_02">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="siegetower_a_02"/>
+				</components>
+			</game_entity>
+			<game_entity name="siegetower_a_wheels" old_prefab_name="" mobility="1">
+				<transform position="0.311, -4.478, 0.619"/>
+				<physics shape="bo_siegetower_a_wheels"/>
+				<components>
+					<meta_mesh_component name="siegetower_a_wheels"/>
+				</components>
+			</game_entity>
+			<game_entity name="siegetower_a_pelts_01" old_prefab_name="" mobility="1">
+				<transform position="0.259, -1.471, -0.008"/>
+				<components>
+					<meta_mesh_component name="siegetower_a_pelts_01"/>
+				</components>
+			</game_entity>
+			<game_entity name="siegetower_a_wheels" old_prefab_name="" mobility="1">
+				<transform position="0.309, 3.950, 0.619"/>
+				<physics shape="bo_siegetower_a_wheels"/>
+				<components>
+					<meta_mesh_component name="siegetower_a_wheels"/>
+				</components>
+			</game_entity>
+			<game_entity name="siegetower_a_pelts_02" old_prefab_name="" mobility="1">
+				<transform position="0.234, -1.015, 5.044"/>
+				<components>
+					<meta_mesh_component name="siegetower_a_pelts_02"/>
+				</components>
+			</game_entity>
+			<game_entity name="siegetower_a_door" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="0.335, -6.141, 9.324"/>
+				<physics shape="bo_siegetower_a_door_base"/>
+				<components>
+					<meta_mesh_component name="siegetower_a_door"/>
+				</components>
+				<scripts>
+					<script name="PE_Gate">
+						<variables>
+							<variable name="Duration" value="1.000"/>
+							<variable name="Axis" value="1.000, 0.000, 1.000, 340282346638528859811704183484516925440.000"/>
+							<variable name="Angle" value="90.000"/>
+							<variable name="Delay" value="500.000"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="siegetower_ladder_a" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="do_not_optimize"/>
+				</tags>
+				<transform position="-0.106, -0.457, 9.541" rotation_euler="-0.153, 0.000, 1.571"/>
+				<physics shape="bo_siegetower_ladder_a">
+					<body_flags>
+						<body_flag name="ladder"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="siegetower_ladder_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="icon_man" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Pilot"/>
+				</tags>
+				<transform position="3.820, 2.674, 0.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

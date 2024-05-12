@@ -1,0 +1,292 @@
+<prefabs>
+	<game_entity name="Persian_masjid_small" old_prefab_name="" occlusion_body_name="bo_occ_arabian_ground_new_b">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_arabian_ground_new_b" override_material="stone"/>
+		<components>
+			<meta_mesh_component name="arabian_ground_new_b">
+				<mesh name="arabian_ground_new_b.0" material="adobe_wall_4"/>
+				<mesh name="arabian_ground_new_b.1" material="adobe_wall_1"/>
+				<mesh name="arabian_ground_new_b.lod5.0" material="adobe_wall_4"/>
+				<mesh name="arabian_ground_new_b.lod5.1" material="adobe_wall_1"/>
+			</meta_mesh_component>
+		</components>
+		<children>
+			<game_entity name="aserai_grandbazaar_shop_a" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_shop_a">
+				<transform position="1.649, 6.029, 0.676" rotation_euler="0.000, 0.000, -0.005" scale="0.785, 0.909, 0.864"/>
+				<physics shape="bo_aserai_grandbazaar_shop_a"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_shop_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_barrel_a" old_prefab_name="">
+				<transform position="-5.123, -10.350, 13.215" non_orthogonal_rotation_mat="0.996336, 0.085526, 0.000000, -0.063895, 0.997957, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.412, 1.633, 1.552"/>
+				<physics shape="bo_bd_barrel_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_a">
+						<mesh name="bd_barrel_a" material="adobe_wall_1"/>
+						<mesh name="bd_barrel_a.lod2" material="adobe_wall_1"/>
+						<mesh name="bd_barrel_a.lod3" material="adobe_wall_1"/>
+						<mesh name="bd_barrel_a.lod4" material="adobe_wall_1"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="editor_sphere" old_prefab_name="">
+				<transform position="-5.123, -10.350, 14.253" non_orthogonal_rotation_mat="0.996336, 0.085526, 0.000000, -0.063895, 0.997957, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.702, 0.812, 1.587"/>
+				<components>
+					<meta_mesh_component name="editor_sphere_uv">
+						<mesh name="editor_sphere_uv" material="adobe_wall_1"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="hawk_cage_a" old_prefab_name="">
+				<transform position="-5.123, -10.350, 15.124" non_orthogonal_rotation_mat="0.600087, 0.799935, -0.000597, 0.705070, -0.709137, 0.000000, -0.000353, -0.000471, -1.000000" scale="3.109, 3.046, 3.129"/>
+				<physics override_material="wood"/>
+				<components>
+					<meta_mesh_component name="hawk_cage_a">
+						<mesh name="hawk_cage_a" material="crude_iron"/>
+						<mesh name="hawk_cage_a.1" material="crude_iron"/>
+						<mesh name="hawk_cage_a.2" material="crude_iron"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="editor_torus" old_prefab_name="">
+				<transform position="-5.118, -10.344, 12.407" rotation_euler="0.000, 0.000, -0.005" scale="1.591, 1.842, 3.740"/>
+				<components>
+					<meta_mesh_component name="editor_torus">
+						<mesh name="editor_torus" material="khuzait_brick_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_shop_a" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_shop_a">
+				<transform position="-2.051, 6.054, 0.676" rotation_euler="0.000, 0.000, -0.005" scale="0.785, 0.909, 0.864"/>
+				<physics shape="bo_aserai_grandbazaar_shop_a"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_shop_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_dungeon_door_a_closed" old_prefab_name="">
+				<transform position="-0.049, -9.319, 0.737" rotation_euler="0.000, 0.000, 3.140" scale="0.909, 1.053, 1.000"/>
+				<physics shape="bo_aserai_dungeon_door_a_closed"/>
+				<components>
+					<meta_mesh_component name="aserai_dungeon_door_a_closed">
+						<mesh name="aserai_dungeon_door_a_closed.7" material="adobe_wall_1"/>
+						<mesh name="aserai_dungeon_door_a_closed.lod3.7" material="adobe_wall_1"/>
+						<mesh name="aserai_dungeon_door_a_closed.lod4.7" material="adobe_wall_1"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="khuzait_castle_keep_l3_interior_column" old_prefab_name="">
+				<transform position="-5.118, -10.344, -7.695" non_orthogonal_rotation_mat="0.929972, -0.367631, 0.000000, 0.282815, 0.959175, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.628, 1.828, 1.257"/>
+				<physics shape="bo_khuzait_castle_keep_l3_interior_column"/>
+				<components>
+					<meta_mesh_component name="khuzait_castle_keep_l3_interior_column">
+						<mesh name="khuzait_castle_keep_l3_interior_column.1" material="loam_wall"/>
+						<mesh name="khuzait_castle_keep_l3_interior_column.14" material="adobe_wall_4"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="editor_sphere" old_prefab_name="">
+				<transform position="0.629, -4.407, 7.855" non_orthogonal_rotation_mat="0.934428, -0.356153, 0.000000, 0.273449, 0.961886, 0.000000, 0.000000, 0.000000, 1.000000" scale="4.179, 4.700, 4.522"/>
+				<components>
+					<meta_mesh_component name="editor_sphere_uv">
+						<mesh name="editor_sphere_uv" material="roman_brick_b" factor="4282861383"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="editor_sphere" old_prefab_name="">
+				<transform position="0.629, -4.407, 6.685" non_orthogonal_rotation_mat="0.934428, -0.356153, 0.000000, 0.273449, 0.961886, 0.000000, 0.000000, 0.000000, 1.000000" scale="5.171, 5.817, 5.597"/>
+				<components>
+					<meta_mesh_component name="editor_sphere_uv">
+						<mesh name="editor_sphere_uv" material="roman_brick_b" factor="4282861383"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_tower_round_a_l2" old_prefab_name="" occlusion_body_name="bo_occ_aserai_castle_tower_round_a_l2">
+				<transform position="0.629, -4.407, 1.016" rotation_euler="0.000, 0.000, -0.005" scale="0.382, 0.442, 0.420"/>
+				<physics shape="bo_aserai_castle_tower_round_a_l2"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="aserai_castle_tower_round_a_l2"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="flagpole_intro" old_prefab_name="">
+				<transform position="-5.123, -10.350, 12.695" rotation_euler="0.000, 0.000, -0.005" scale="0.909, 1.053, 1.000"/>
+				<physics shape="bo_flagpole_a"/>
+				<components>
+					<meta_mesh_component name="flagpole_intro"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="-5.150, -6.198, 0.749" rotation_euler="0.000, 0.000, -0.005" scale="0.909, 1.053, 1.000"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="-5.117, 0.021, 0.749" rotation_euler="0.000, 0.000, -0.005" scale="0.909, 1.053, 1.000"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="-5.083, 6.576, 0.749" rotation_euler="0.000, 0.000, -0.005" scale="0.909, 1.158, 1.000"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_dungeon_door_a_empty" old_prefab_name="">
+				<transform position="-5.157, 0.553, 0.674" rotation_euler="0.000, 0.000, -1.570" scale="1.486, 1.284, 1.412"/>
+				<physics shape="bo_aserai_dungeon_door_a_empty"/>
+				<components>
+					<meta_mesh_component name="aserai_dungeon_door_a_empty"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_dungeon_door_a_empty" old_prefab_name="">
+				<transform position="-5.164, 7.170, 0.672" rotation_euler="0.000, 0.000, -1.570" scale="1.274, 1.282, 1.410"/>
+				<physics shape="bo_aserai_dungeon_door_a_empty"/>
+				<components>
+					<meta_mesh_component name="aserai_dungeon_door_a_empty">
+						<mesh name="aserai_dungeon_door_a_empty.7" material="adobe_wall_1"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_dungeon_door_a_empty" old_prefab_name="">
+				<transform position="-5.150, -6.246, 0.673" rotation_euler="0.000, 0.000, -1.570" scale="1.274, 1.282, 1.410"/>
+				<physics shape="bo_aserai_dungeon_door_a_empty"/>
+				<components>
+					<meta_mesh_component name="aserai_dungeon_door_a_empty"/>
+				</components>
+			</game_entity>
+			<game_entity name="editor_sphere" old_prefab_name="">
+				<transform position="0.629, -4.407, 5.575" non_orthogonal_rotation_mat="0.271572, -0.962418, 0.000000, 0.935304, 0.353844, 0.000000, 0.000000, 0.000000, 1.000000" scale="6.894, 6.126, 6.631"/>
+				<components>
+					<meta_mesh_component name="editor_sphere_uv">
+						<mesh name="editor_sphere_uv" material="roman_brick_b" factor="4282861383"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="sound" old_prefab_name="">
+				<transform position="0.629, -4.407, 1.016" rotation_euler="0.000, 0.000, -0.005" scale="0.382, 0.442, 0.420"/>
+			</game_entity>
+			<game_entity name="sound_reverb" old_prefab_name="">
+				<transform position="0.629, -4.407, 5.216" rotation_euler="0.000, 0.000, -0.005" scale="2.865, 0.442, 0.420"/>
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable name="Event Path" value="event:/mission/ambient/area/interior/generic"/>
+							<variable name="Play On Startup" value="true"/>
+							<variable name="Is Static" value="false"/>
+							<variable name="Override Sound" value="false"/>
+							<variable name="Overrided Max Distance" value="20.000000"/>
+							<variable name="Overrided Min Distance" value="1.000000"/>
+							<variable name="Sound Preset" value="Speakers"/>
+							<variable name="Is Master Sound" value="false"/>
+							<variable name="Is Master Supressor" value="false"/>
+							<variable name="Is Triggered" value="true"/>
+							<variable name="Trigger Shape" value="Sphere"/>
+						</variables>
+					</script>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable name="Event Path" value="event:/mission/ambient/reverb/stone_interior"/>
+							<variable name="Play On Startup" value="true"/>
+							<variable name="Is Static" value="false"/>
+							<variable name="Override Sound" value="false"/>
+							<variable name="Overrided Max Distance" value="20.000000"/>
+							<variable name="Overrided Min Distance" value="1.000000"/>
+							<variable name="Sound Preset" value="Speakers"/>
+							<variable name="Is Master Sound" value="false"/>
+							<variable name="Is Master Supressor" value="false"/>
+							<variable name="Is Triggered" value="true"/>
+							<variable name="Trigger Shape" value="Sphere"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="arabian_small_wall_a" old_prefab_name="">
+				<transform position="11.085, 6.122, 0.749" rotation_euler="0.000, 0.000, 1.556" scale="1.053, 0.909, 1.000"/>
+				<physics shape="bo_arabian_small_wall_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="arabian_small_wall_a">
+						<mesh name="arabian_small_wall_a" material="adobe_wall_1"/>
+						<mesh name="arabian_small_wall_a.lod3" material="adobe_wall_1"/>
+						<mesh name="arabian_small_wall_a.lod4" material="adobe_wall_1"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_stairs_c_l3" old_prefab_name="">
+				<transform position="-0.079, -11.059, -0.533" rotation_euler="0.000, 0.000, -0.008" scale="0.909, 1.053, 1.000"/>
+				<physics shape="bo_aserai_castle_stairs_c_l3">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="aserai_castle_stairs_c_l3"/>
+				</components>
+			</game_entity>
+			<game_entity name="arabian_small_wall_a" old_prefab_name="">
+				<transform position="7.780, 9.919, 0.749" rotation_euler="0.000, 0.000, -3.132" scale="0.909, 1.053, 1.000"/>
+				<physics shape="bo_arabian_small_wall_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="arabian_small_wall_a">
+						<mesh name="arabian_small_wall_a" material="adobe_wall_1"/>
+						<mesh name="arabian_small_wall_a.lod3" material="adobe_wall_1"/>
+						<mesh name="arabian_small_wall_a.lod4" material="adobe_wall_1"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="arabian_small_wall_a" old_prefab_name="">
+				<transform position="7.500, -9.271, 0.749" rotation_euler="0.000, 0.000, -3.132" scale="0.909, 1.053, 1.000"/>
+				<physics shape="bo_arabian_small_wall_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="arabian_small_wall_a">
+						<mesh name="arabian_small_wall_a" material="adobe_wall_1"/>
+						<mesh name="arabian_small_wall_a.lod3" material="adobe_wall_1"/>
+						<mesh name="arabian_small_wall_a.lod4" material="adobe_wall_1"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="arabian_small_wall_a" old_prefab_name="">
+				<transform position="10.959, -5.281, 0.749" rotation_euler="0.000, 0.000, 1.556" scale="1.053, 0.909, 1.000"/>
+				<physics shape="bo_arabian_small_wall_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="arabian_small_wall_a">
+						<mesh name="arabian_small_wall_a" material="adobe_wall_1"/>
+						<mesh name="arabian_small_wall_a.lod3" material="adobe_wall_1"/>
+						<mesh name="arabian_small_wall_a.lod4" material="adobe_wall_1"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

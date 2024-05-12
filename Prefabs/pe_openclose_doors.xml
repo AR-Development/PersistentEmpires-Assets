@@ -1,0 +1,441 @@
+<prefabs>
+	<game_entity name="pe_door_oc_1" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_RepairableDestructableComponent">
+				<variables>
+					<variable name="DestructionState" value=""/>
+					<variable name="ReferenceEntityTag" value="door"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="IsBroken" value="false"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="PE_Gate">
+				<variables>
+					<variable name="Duration" value="1.000"/>
+					<variable name="Axis" value="0.000, 0.000, 1.000, -1.000"/>
+					<variable name="Angle" value="90.000"/>
+					<variable name="Delay" value="500.000"/>
+					<variable name="CastleId" value="-1"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="vlandia_keep_door_a" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="door"/>
+				</tags>
+				<physics shape="bo_vlandia_keep_door_a"/>
+				<components>
+					<meta_mesh_component name="vlandia_keep_door_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_door_oc_2" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_RepairableDestructableComponent">
+				<variables>
+					<variable name="DestructionState" value=""/>
+					<variable name="ReferenceEntityTag" value="door"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="IsBroken" value="false"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="PE_Gate">
+				<variables>
+					<variable name="Duration" value="1.000"/>
+					<variable name="Axis" value="0.000, 0.000, 1.000, -1.000"/>
+					<variable name="Angle" value="90.000"/>
+					<variable name="Delay" value="500.000"/>
+					<variable name="CastleId" value="-1"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="aserai_grandbazaar_gate_door_b" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="door"/>
+				</tags>
+				<transform position="0.048, -0.057, 0.000" rotation_euler="0.000, 0.000, 3.142"/>
+				<physics shape="bo_aserai_grandbazaar_gate_door_b"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_gate_door_b"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_door_oc_3" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_RepairableDestructableComponent">
+				<variables>
+					<variable name="DestructionState" value=""/>
+					<variable name="ReferenceEntityTag" value="door"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="IsBroken" value="false"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="PE_Gate">
+				<variables>
+					<variable name="Duration" value="1.000"/>
+					<variable name="Axis" value="0.000, 0.000, 1.000, -1.000"/>
+					<variable name="Angle" value="90.000"/>
+					<variable name="Delay" value="500.000"/>
+					<variable name="CastleId" value="-1"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="battania_grandbazaar_gate_door_b" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="door"/>
+				</tags>
+				<transform position="0.155, -0.159, 0.000" rotation_euler="0.000, 0.000, 3.142"/>
+				<physics shape="bo_battania_grandbazaar_gate_door_b"/>
+				<components>
+					<meta_mesh_component name="battania_grandbazaar_gate_door_b"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_door_oc_4" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_RepairableDestructableComponent">
+				<variables>
+					<variable name="DestructionState" value=""/>
+					<variable name="ReferenceEntityTag" value="door"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="IsBroken" value="false"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="PE_Gate">
+				<variables>
+					<variable name="Duration" value="1.000"/>
+					<variable name="Axis" value="0.000, 0.000, 1.000, -1.000"/>
+					<variable name="Angle" value="90.000"/>
+					<variable name="Delay" value="500.000"/>
+					<variable name="CastleId" value="-1"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="aserai_grandbazaar_shop_door_b" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="door"/>
+				</tags>
+				<transform position="0.135, -0.081, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+				<physics shape="bo_aserai_grandbazaar_shop_door_b"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_shop_door_b"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_door_oc_5" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_RepairableDestructableComponent">
+				<variables>
+					<variable name="DestructionState" value=""/>
+					<variable name="ReferenceEntityTag" value="door"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="AlwaysEffectOnDestroy" value="false"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="IsBroken" value="false"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="PE_Gate">
+				<variables>
+					<variable name="Duration" value="1.000"/>
+					<variable name="Axis" value="0.000, 0.000, 1.000, -1.000"/>
+					<variable name="Angle" value="90.000"/>
+					<variable name="Delay" value="500.000"/>
+					<variable name="CastleId" value="-1"/>
+					<variable name="Distance" value="3.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="battania_grandbazaar_shop_door_b" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="door"/>
+				</tags>
+				<transform position="0.141, -0.052, 0.000" rotation_euler="0.000, 0.000, -3.141"/>
+				<physics shape="bo_battania_grandbazaar_shop_door_b"/>
+				<components>
+					<meta_mesh_component name="battania_grandbazaar_shop_door_b"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_door_oc_6" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_RepairableDestructableComponent">
+				<variables>
+					<variable name="DestructionState" value=""/>
+					<variable name="ReferenceEntityTag" value="door"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="AlwaysEffectOnDestroy" value="false"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="100"/>
+					<variable name="IsBroken" value="false"/>
+					<variable name="MaxHitPoint" value="2000.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="PE_Gate">
+				<variables>
+					<variable name="Duration" value="1.000"/>
+					<variable name="Axis" value="0.000, 0.000, 1.000, -1.000"/>
+					<variable name="Angle" value="90.000"/>
+					<variable name="Delay" value="500.000"/>
+					<variable name="CastleId" value="-1"/>
+					<variable name="Distance" value="3.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="european_castle_gatehouse_door_a" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="door"/>
+				</tags>
+				<transform position="-1.158, -0.903, 0.000"/>
+				<physics shape="bo_european_castle_gatehouse_door_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="european_castle_gatehouse_door_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_door_oc_7" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_RepairableDestructableComponent">
+				<variables>
+					<variable name="DestructionState" value=""/>
+					<variable name="ReferenceEntityTag" value="door"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="IsBroken" value="false"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="PE_Gate">
+				<variables>
+					<variable name="Duration" value="1.000"/>
+					<variable name="Axis" value="0.000, 0.000, 1.000, -1.000"/>
+					<variable name="Angle" value="90.000"/>
+					<variable name="Delay" value="500.000"/>
+					<variable name="CastleId" value="-1"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="vlandia_keep_door_b" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="door"/>
+				</tags>
+				<transform position="-0.034, 0.034, 0.000"/>
+				<physics shape="bo_vlandia_keep_door_b"/>
+				<components>
+					<meta_mesh_component name="vlandia_keep_door_b"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_door_oc_8" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_RepairableDestructableComponent">
+				<variables>
+					<variable name="DestructionState" value=""/>
+					<variable name="ReferenceEntityTag" value="door"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="IsBroken" value="false"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="PE_Gate">
+				<variables>
+					<variable name="Duration" value="1.000"/>
+					<variable name="Axis" value="0.000, 0.000, 1.000, -1.000"/>
+					<variable name="Angle" value="90.000"/>
+					<variable name="Delay" value="500.000"/>
+					<variable name="CastleId" value="-1"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="sturgia_dungeon_cell_door_closed" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="door"/>
+				</tags>
+				<transform position="-0.054, 0.071, 0.000" rotation_euler="0.000, 0.000, -3.142"/>
+				<physics shape="bo_sturgia_dungeon_cell_door_closed"/>
+				<components>
+					<meta_mesh_component name="sturgia_dungeon_cell_door_closed"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_door_oc_9" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_RepairableDestructableComponent">
+				<variables>
+					<variable name="DestructionState" value=""/>
+					<variable name="ReferenceEntityTag" value="door"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="IsBroken" value="false"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="PE_Gate">
+				<variables>
+					<variable name="Duration" value="1.000"/>
+					<variable name="Axis" value="0.000, 0.000, 1.000, -1.000"/>
+					<variable name="Angle" value="90.000"/>
+					<variable name="Delay" value="500.000"/>
+					<variable name="CastleId" value="-1"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="aserai_dungeon_cell_bars_door" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="door"/>
+				</tags>
+				<transform position="-0.009, 0.139, 0.000" rotation_euler="0.000, 0.000, 3.142"/>
+				<physics shape="bo_aserai_dungeon_cell_bars_door"/>
+				<components>
+					<meta_mesh_component name="aserai_dungeon_cell_bars_door"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

@@ -1,0 +1,561 @@
+<prefabs>
+	<game_entity name="pe_european_castle_wall_a_l3_broken_HG" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="european_castle_wall_a_l3_broken" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_broken">
+				<physics shape="bo_european_castle_wall_a_l3_broken"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_broken">
+						<mesh name="european_castle_wall_a_l3_broken.0" material="adobe_wall_white"/>
+						<mesh name="european_castle_wall_a_l3_broken.lod4.0" material="adobe_wall_white"/>
+						<mesh name="european_castle_wall_a_l3_broken.lod5.0" material="adobe_wall_white"/>
+						<mesh name="european_castle_wall_a_l3_broken.lod6.0" material="adobe_wall_white"/>
+						<mesh name="european_castle_wall_a_l3_broken.lod6.2" material="wall_castle_a_detail"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="merlon_1" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_wall_a_l3_01"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_a_l3_01">
+								<mesh name="european_castle_wall_a_l3_01.14" material="adobe_wall_white"/>
+								<mesh name="european_castle_wall_a_l3_01.17" material="adobe_wall_relief"/>
+								<mesh name="european_castle_wall_a_l3_01.lod3.14" material="adobe_wall_white"/>
+								<mesh name="european_castle_wall_a_l3_01.lod3.17" material="adobe_wall_relief"/>
+								<mesh name="european_castle_wall_a_l3_01.lod5.14" material="adobe_wall_white"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-10.298, -1.297, 12.059"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_wall_a_l3_06"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_a_l3_06">
+								<mesh name="european_castle_wall_a_l3_06.14" material="adobe_wall_white"/>
+								<mesh name="european_castle_wall_a_l3_06.17" material="adobe_wall_relief"/>
+								<mesh name="european_castle_wall_a_l3_06.lod3.14" material="adobe_wall_white"/>
+								<mesh name="european_castle_wall_a_l3_06.lod3.17" material="adobe_wall_relief"/>
+								<mesh name="european_castle_wall_a_l3_06.lod5.14" material="adobe_wall_white"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.572, -1.288, 12.254"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_wall_a_l3_07"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_a_l3_07">
+								<mesh name="european_castle_wall_a_l3_07.14" material="adobe_wall_white"/>
+								<mesh name="european_castle_wall_a_l3_07.17" material="adobe_wall_relief"/>
+								<mesh name="european_castle_wall_a_l3_07.lod3.14" material="adobe_wall_white"/>
+								<mesh name="european_castle_wall_a_l3_07.lod3.17" material="adobe_wall_relief"/>
+								<mesh name="european_castle_wall_a_l3_07.lod5.14" material="adobe_wall_white"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="8.368, -1.294, 12.197"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="ivy_02" old_prefab_name="">
+				<transform position="-7.769, 0.416, 7.091" rotation_euler="-0.030, 0.011, -3.031"/>
+				<children>
+					<game_entity name="ivy_european_03" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-1.894, 2.683, -0.586" rotation_euler="0.000, 0.000, -0.152"/>
+						<components>
+							<meta_mesh_component name="ivy_european_03"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_02" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="2.631, 1.981, -0.389" rotation_euler="0.000, 0.000, -0.152"/>
+						<components>
+							<meta_mesh_component name="ivy_european_02"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_02" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-0.249, 2.422, -0.257" rotation_euler="0.000, 0.000, -0.152"/>
+						<components>
+							<meta_mesh_component name="ivy_european_02"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_02" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="1.472, 2.072, 1.083" rotation_euler="0.000, 0.000, -0.152"/>
+						<components>
+							<meta_mesh_component name="ivy_european_02"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_02" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-0.964, 2.550, 0.429" rotation_euler="0.000, 0.000, -0.152"/>
+						<components>
+							<meta_mesh_component name="ivy_european_02"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_03" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="0.703, 2.286, 0.327" rotation_euler="0.000, 0.000, -0.152"/>
+						<components>
+							<meta_mesh_component name="ivy_european_03"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_03" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-0.993, 2.546, 1.246" rotation_euler="0.000, 0.000, -0.152"/>
+						<components>
+							<meta_mesh_component name="ivy_european_03"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_06" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="0.910, 2.195, 0.760" rotation_euler="0.000, 0.000, -0.155"/>
+						<components>
+							<meta_mesh_component name="ivy_european_06"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_04" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-1.987, 2.645, 1.073" rotation_euler="0.106, 0.804, -0.092"/>
+						<components>
+							<meta_mesh_component name="ivy_european_04"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_03" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-1.626, 2.642, 2.414" rotation_euler="0.000, 0.000, -0.152"/>
+						<components>
+							<meta_mesh_component name="ivy_european_03"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_01" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="2.017, 2.153, -0.484" rotation_euler="0.033, 0.000, -0.113"/>
+						<components>
+							<meta_mesh_component name="ivy_european_01"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="ivy_02" old_prefab_name="">
+				<transform position="0.550, 0.567, 8.026" rotation_euler="-0.015, 0.002, -3.049"/>
+				<children>
+					<game_entity name="ivy_european_03" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-1.894, 2.683, -0.586" rotation_euler="0.000, 0.000, -0.152"/>
+						<components>
+							<meta_mesh_component name="ivy_european_03"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_03" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-3.427, 2.918, -1.323" rotation_euler="0.000, 0.000, -0.152"/>
+						<components>
+							<meta_mesh_component name="ivy_european_03"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_06" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-1.590, 2.623, 0.760" rotation_euler="0.000, 0.000, -0.155"/>
+						<components>
+							<meta_mesh_component name="ivy_european_06"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_02" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-2.842, 2.768, 2.477" rotation_euler="0.000, 0.000, -0.152"/>
+						<components>
+							<meta_mesh_component name="ivy_european_02"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_02" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-0.964, 2.550, 0.429" rotation_euler="0.000, 0.000, -0.152"/>
+						<components>
+							<meta_mesh_component name="ivy_european_02"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_02" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-5.213, 3.207, -0.468" rotation_euler="0.000, 0.000, -0.152"/>
+						<components>
+							<meta_mesh_component name="ivy_european_02"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_03" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-3.963, 3.000, -0.235" rotation_euler="0.000, 0.000, -0.152"/>
+						<components>
+							<meta_mesh_component name="ivy_european_03"/>
+						</components>
+					</game_entity>
+					<game_entity name="ivy_european_03" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-2.525, 2.781, 1.246" rotation_euler="0.000, 0.000, -0.152"/>
+						<components>
+							<meta_mesh_component name="ivy_european_03"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_european_castle_bridge_a_destroyed_lower" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.700, 0.400, 0.343"/>
+		<physics shape="bo_european_castle_bridge_a_destroyed_lower"/>
+		<components>
+			<meta_mesh_component name="european_castle_bridge_a_destroyed_lower"/>
+		</components>
+	</game_entity>
+	<game_entity name="pe_european_castle_wall_a_l3_b_torrentine" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_european_castle_wall_a_l3_broken">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_european_castle_wall_a_l3_broken"/>
+		<components>
+			<meta_mesh_component name="european_castle_wall_a_l3_broken"/>
+		</components>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+				<physics shape="bo_european_castle_wall_a_l3_07"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_07"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l3"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="8.368, -1.294, 12.197"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+				<physics shape="bo_european_castle_wall_a_l3_06"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_06"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l3"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="5.572, -1.288, 12.254"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="merlon_1" old_prefab_name="" mobility="1">
+				<physics shape="bo_european_castle_wall_a_l3_01"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_01"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l3"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-10.298, -1.297, 12.059"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="" mobility="1">
+				<transform position="-4.103, 5.108, 3.899" rotation_euler="0.000, 0.000, 3.131"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_b" old_prefab_name="" mobility="1">
+				<transform position="0.443, 4.325, 4.045" rotation_euler="0.000, 0.000, 1.670"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_b" old_prefab_name="" mobility="1">
+				<transform position="-2.966, 0.298, 3.681" rotation_euler="0.000, 0.000, 1.670"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_b" old_prefab_name="" mobility="1">
+				<transform position="-0.151, 0.231, 3.677" rotation_euler="0.000, 0.000, 1.670"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_c" old_prefab_name="" mobility="1">
+				<transform position="-1.796, 0.616, 3.535" rotation_euler="0.000, 0.000, 1.670"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_c" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="" mobility="1">
+				<transform position="-1.829, 0.612, 3.255" rotation_euler="0.000, 0.000, 1.670"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_a" old_prefab_name="" mobility="1">
+				<transform position="-1.083, -0.130, 2.732" rotation_euler="0.000, -0.288, 1.670" scale="0.900, 1.300, 0.700"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="" mobility="1">
+				<transform position="-1.349, 9.387, 3.963" rotation_euler="0.000, 0.000, 1.670"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_c" old_prefab_name="" mobility="1">
+				<transform position="1.361, 8.750, 3.981" rotation_euler="0.000, 0.000, 1.670"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_c" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_c"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

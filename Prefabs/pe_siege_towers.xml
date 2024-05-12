@@ -1,0 +1,3248 @@
+<prefabs>
+	<game_entity name="pe_siege_tower_9m" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+			<flag name="hide_in_prefab_editors" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics>
+			<body_flags>
+				<body_flag name="exclude_path_snap"/>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<scripts>
+			<script name="PE_SiegeTower">
+				<variables>
+					<variable name="GateTag" value="gate"/>
+					<variable name="GateOpenTag" value="gateOpen"/>
+					<variable name="HandleTag" value="handle"/>
+					<variable name="GateHandleIdleAnimation" value="siegetower_l2_door_idle"/>
+					<variable name="GateTrembleAnimation" value="siegetower_l2_door_stop"/>
+					<variable name="BattlementDestroyedParticle" value="psys_adobe_battlement_destroyed"/>
+					<variable name="GhostEntityMove" value="true"/>
+					<variable name="GhostEntitySpeedMultiplier" value="1.000"/>
+					<variable name="WheelDiameter" value="0.860"/>
+					<variable name="MinSpeed" value="0.500"/>
+					<variable name="MaxSpeed" value="1.000"/>
+					<variable name="GateNavMeshId" value="601"/>
+					<variable name="NavMeshIdToDisableOnDestination" value="-1"/>
+					<variable name="BarrierTagToRemove" value="barrier"/>
+					<variable name="RemoveOnDeployTag" value=""/>
+					<variable name="AddOnDeployTag" value=""/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value="siege_tower_9m_dnm"/>
+				</variables>
+			</script>
+			<script name="DestructableComponent">
+				<variables>
+					<variable name="DestructionStates" value="destroyed"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="CanBeDestroyedInitially" value="false"/>
+					<variable name="MaxHitPoint" value="10000.000"/>
+					<variable name="DestroyOnAnyHit" value="false"/>
+					<variable name="PassHitOnToParent" value="false"/>
+					<variable name="ReferenceEntityTag" value=""/>
+					<variable name="HeavyHitParticlesTag" value=""/>
+					<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+					<variable name="ParticleEffectOnDestroy" value=""/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/siegetower/break"/>
+					<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+					<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+					<variable name="BattleSide" value="None"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="clean" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="body"/>
+					<tag name="operational"/>
+				</tags>
+				<physics shape="bo_siege_tower_l2_body" override_material="wood_nonstick"/>
+				<components>
+					<meta_mesh_component name="siege_tower_l2_body"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="targeting_volume" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="targeting_entity"/>
+						</tags>
+						<transform position="0.000, -0.396, 5.691" rotation_euler="0.000, 0.000, 0.000" scale="10.000, 10.000, 10.000"/>
+						<components>
+							<meta_mesh_component name="barrier_sphere">
+								<mesh name="barrier_sphere" material="ghost"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="inner_physical_barrier" old_prefab_name="" mobility="1">
+						<physics shape="bo_siege_tower_l2_body_barrier">
+							<body_flags>
+								<body_flag name="barrier"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="ladder_right" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="ladder"/>
+						</tags>
+						<transform position="-1.028, 2.420, 0.700" rotation_euler="-0.297, 0.000, -3.141"/>
+						<physics shape="bo_siege_tower_l2_ladder" override_material="wood_nonstick">
+							<body_flags>
+								<body_flag name="moveable"/>
+								<body_flag name="ladder"/>
+							</body_flags>
+						</physics>
+						<scripts>
+							<script name="LadderQueueManager">
+								<variables>
+									<variable name="ManagedNavigationFaceId" value="7"/>
+									<variable name="ManagedNavigationFaceAlternateID1" value="0"/>
+									<variable name="ManagedNavigationFaceAlternateID2" value="0"/>
+									<variable name="CostAddition" value="0.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="particles" old_prefab_name="" mobility="1"/>
+					<game_entity name="ladder_left" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="ladder"/>
+						</tags>
+						<transform position="1.084, 2.418, 0.698" rotation_euler="-0.297, 0.000, -3.138"/>
+						<physics shape="bo_siege_tower_l2_ladder" override_material="wood_nonstick">
+							<body_flags>
+								<body_flag name="moveable"/>
+								<body_flag name="ladder"/>
+							</body_flags>
+						</physics>
+						<scripts>
+							<script name="LadderQueueManager">
+								<variables>
+									<variable name="ManagedNavigationFaceId" value="7"/>
+									<variable name="ManagedNavigationFaceAlternateID1" value="0"/>
+									<variable name="ManagedNavigationFaceAlternateID2" value="0"/>
+									<variable name="CostAddition" value="0.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="wait_pos_ground" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="wait"/>
+						</tags>
+						<transform position="0.182, 8.501, 0.000" rotation_euler="0.000, 0.000, 3.135"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+					</game_entity>
+					<game_entity name="push_pos_r_back" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="move"/>
+						</tags>
+						<transform position="-2.651, 1.280, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPoint">
+								<variables>
+									<variable name="AutoSheathWeapons" value="true"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="push_pos_l_back" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="move"/>
+						</tags>
+						<transform position="2.693, 1.280, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPoint">
+								<variables>
+									<variable name="AutoSheathWeapons" value="true"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="push_pos_l_front" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="move"/>
+						</tags>
+						<transform position="2.663, -0.070, 0.000" rotation_euler="0.000, 0.000, -3.141"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPoint">
+								<variables>
+									<variable name="AutoSheathWeapons" value="true"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="push_pos_r_front" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="move"/>
+						</tags>
+						<transform position="-2.681, -0.070, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPoint">
+								<variables>
+									<variable name="AutoSheathWeapons" value="true"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="wait_pos_tower" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="wait"/>
+						</tags>
+						<transform position="-0.028, -0.608, 8.666" rotation_euler="0.000, 0.000, -3.136"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+					</game_entity>
+					<game_entity name="use_pos_handle" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="-0.084, -1.575, 8.680" rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPoint">
+								<variables>
+									<variable name="AutoSheathWeapons" value="true"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="ramp" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="gate"/>
+						</tags>
+						<transform position="0.021, -2.413, 8.485" rotation_euler="0.349, 0.000, 0.000"/>
+						<physics shape="bo_siege_tower_l2_door" override_material="wood_nonstick"/>
+						<skeleton skeleton_model="siege_tower_l2_door_skeleton">
+							<components>
+								<meta_mesh_component name="siege_tower_l2_door"/>
+							</components>
+						</skeleton>
+						<scripts>
+							<script name="SynchedMissionObject">
+								<variables>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="ai_barrier_l" old_prefab_name="" mobility="1">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="1.300, 1.000, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="1.750, 1.000, 4.250"/>
+								<physics shape="bo_siege_tower_gate_barrier">
+									<body_flags>
+										<body_flag name="ai_limiter"/>
+									</body_flags>
+								</physics>
+							</game_entity>
+							<game_entity name="ai_barrier_r" old_prefab_name="" mobility="1">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="-1.300, 1.000, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.750, 1.000, 4.250"/>
+								<physics shape="bo_siege_tower_gate_barrier">
+									<body_flags>
+										<body_flag name="ai_limiter"/>
+									</body_flags>
+								</physics>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="wheel_back" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="wheel"/>
+						</tags>
+						<transform position="0.000, 2.395, 0.410"/>
+						<physics shape="bo_siege_tower_l2_wheel" override_material="wood_nonstick">
+							<body_flags>
+								<body_flag name="moveable"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="siege_tower_l2_wheel"/>
+						</components>
+					</game_entity>
+					<game_entity name="wheel_front" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="wheel"/>
+						</tags>
+						<transform position="0.000, -1.778, 0.415"/>
+						<physics shape="bo_siege_tower_l2_wheel" override_material="wood_nonstick">
+							<body_flags>
+								<body_flag name="moveable"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="siege_tower_l2_wheel"/>
+						</components>
+					</game_entity>
+					<game_entity name="ladder_middle" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="ladder"/>
+						</tags>
+						<transform position="0.020, 2.420, 0.700" rotation_euler="-0.297, 0.000, -3.141"/>
+						<physics shape="bo_siege_tower_l2_ladder" override_material="wood_nonstick">
+							<body_flags>
+								<body_flag name="moveable"/>
+								<body_flag name="ladder"/>
+							</body_flags>
+						</physics>
+						<scripts>
+							<script name="LadderQueueManager">
+								<variables>
+									<variable name="ManagedNavigationFaceId" value="7"/>
+									<variable name="ManagedNavigationFaceAlternateID1" value="0"/>
+									<variable name="ManagedNavigationFaceAlternateID2" value="0"/>
+									<variable name="CostAddition" value="0.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="ground_ramp" old_prefab_name="" mobility="1">
+						<physics shape="bo_siege_tower_l2_ground_ramp">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="destroyed" old_prefab_name="" visible="false" mobility="1">
+				<physics shape="bo_siege_tower_l2_body_destroyed"/>
+				<components>
+					<meta_mesh_component name="siege_tower_l2_body_destroyed"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value="siege_tower_9m_destroyed_blocker_dnm"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="part13" old_prefab_name="" mobility="1">
+						<transform position="-1.673, -2.304, 5.409" rotation_euler="0.000, 0.000, -0.969"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part12" old_prefab_name="" mobility="1">
+						<transform position="2.138, -0.410, 8.977" rotation_euler="-0.173, -0.107, 0.000"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part11" old_prefab_name="" mobility="1">
+						<transform position="1.380, -0.933, 9.518" rotation_euler="0.025, -1.095, -0.202"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part10" old_prefab_name="" mobility="1">
+						<transform position="1.482, -1.635, 12.315" rotation_euler="0.000, -1.017, 0.000"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part9" old_prefab_name="" mobility="1">
+						<transform position="-0.021, -1.442, 10.129"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part8" old_prefab_name="" mobility="1">
+						<transform position="1.898, 1.835, 7.678" rotation_euler="-0.713, -1.237, -2.841"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part7" old_prefab_name="" mobility="1">
+						<transform position="-0.759, -2.281, 9.267" rotation_euler="0.466, -0.214, -1.530"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part5" old_prefab_name="" mobility="1">
+						<transform position="0.139, -1.834, 9.263"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part4" old_prefab_name="" mobility="1">
+						<transform position="-1.066, -0.863, 10.086" rotation_euler="-0.398, 1.411, -0.062"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part3" old_prefab_name="" mobility="1">
+						<transform position="2.097, -1.594, 6.430" rotation_euler="0.000, -0.610, 0.000"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part2" old_prefab_name="" mobility="1">
+						<transform position="-0.338, -2.210, 7.099" rotation_euler="1.557, 0.000, 0.000"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part1" old_prefab_name="" mobility="1">
+						<transform position="-1.759, -0.522, 11.271" rotation_euler="0.000, -0.086, 0.000"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part14" old_prefab_name="" mobility="1">
+						<transform position="-1.325, 0.526, 10.470" rotation_euler="0.000, 0.303, 0.000"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="particles" old_prefab_name="" mobility="1">
+						<transform position="0.000, -1.661, 3.085"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{2FCB396E-9D74-4B21-A327-494B43CE3482}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+					<game_entity name="particles" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.813, 7.796"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{2FCB396E-9D74-4B21-A327-494B43CE3482}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+					<game_entity name="particles" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.980, 1.250"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{2FCB396E-9D74-4B21-A327-494B43CE3482}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_siege_tower_9m_ghost" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+			<flag name="hide_in_prefab_editors" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics>
+			<body_flags>
+				<body_flag name="exclude_path_snap"/>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<children>
+			<game_entity name="clean" old_prefab_name="">
+				<components>
+					<meta_mesh_component name="siege_tower_9m_spawner_ghost"/>
+				</components>
+				<children>
+					<game_entity name="ramp" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="0.021, -2.413, 8.485" rotation_euler="0.349, 0.000, 0.000"/>
+						<components>
+							<meta_mesh_component name="siege_tower_9m_door_spawner_ghost"/>
+						</components>
+						<children>
+							<game_entity name="ai_barrier_l" old_prefab_name="">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="1.300, 1.000, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="1.750, 1.000, 4.250"/>
+								<physics>
+									<body_flags>
+										<body_flag name="ai_limiter"/>
+									</body_flags>
+								</physics>
+								<components>
+									<meta_mesh_component name="barrier_spawner_ghost"/>
+								</components>
+							</game_entity>
+							<game_entity name="ai_barrier_r" old_prefab_name="">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="-1.300, 1.000, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.750, 1.000, 4.250"/>
+								<physics>
+									<body_flags>
+										<body_flag name="ai_limiter"/>
+									</body_flags>
+								</physics>
+								<components>
+									<meta_mesh_component name="barrier_spawner_ghost"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="wait_pos_ground" old_prefab_name="">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.182, 8.501, 0.000" rotation_euler="0.000, 0.000, 3.135"/>
+						<components>
+							<meta_mesh_component name="icon_man_spawner_ghost"/>
+						</components>
+					</game_entity>
+					<game_entity name="wheel_back" old_prefab_name="">
+						<tags>
+							<tag name="wheel"/>
+						</tags>
+						<transform position="0.000, 2.651, 0.410"/>
+						<physics>
+							<body_flags>
+								<body_flag name="moveable"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="wheel_front" old_prefab_name="">
+						<tags>
+							<tag name="wheel"/>
+						</tags>
+						<transform position="0.000, -1.706, 0.415"/>
+						<physics>
+							<body_flags>
+								<body_flag name="moveable"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_siege_tower_9m_spawner" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="prefab_cannot_be_broken" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="SiegeTowerSpawner">
+				<variables>
+					<variable name="wait_pos_ground" value="-0.999978, 0.006593, 0.000000, 0.000000, -0.006593, -0.999978, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.182000, 8.501000, 0.000000, 1.000000"/>
+					<variable name="SideTag" value=""/>
+					<variable name="TargetWallSegmentTag" value=""/>
+					<variable name="PathEntityName" value="Path"/>
+					<variable name="SoilNavMeshID1" value="-1"/>
+					<variable name="SoilNavMeshID2" value="-1"/>
+					<variable name="DitchNavMeshID1" value="-1"/>
+					<variable name="DitchNavMeshID2" value="-1"/>
+					<variable name="GroundToSoilNavMeshID1" value="-1"/>
+					<variable name="GroundToSoilNavMeshID2" value="-1"/>
+					<variable name="SoilGenericNavMeshID" value="-1"/>
+					<variable name="GroundGenericNavMeshID" value="-1"/>
+					<variable name="AddOnDeployTag" value=""/>
+					<variable name="RemoveOnDeployTag" value=""/>
+					<variable name="RampRotationDegree" value="80.000"/>
+					<variable name="BarrierLength" value="4.000"/>
+					<variable name="SpeedModifierFactor" value="1.000"/>
+					<variable name="EnableAutoGhostMovement" value="false"/>
+					<variable name="ai_barrier_l" value="-0.000356, -1.750000, -0.000000, 0.000000, 1.000000, -0.000204, 0.000000, 0.000000, 0.000000, 0.000000, 4.000000, 0.000000, 1.300000, 1.000000, 0.000000, 1.000000"/>
+					<variable name="ai_barrier_r" value="-0.000356, 1.750000, 0.000000, 0.000000, -1.000000, -0.000204, 0.000000, 0.000000, 0.000000, 0.000000, 4.000000, 0.000000, -1.300000, 1.000000, 0.000000, 1.000000"/>
+					<variable name="BarrierTagToRemove" value=""/>
+					<variable name="ToBeSpawnedOverrideName" value=""/>
+					<variable name="ToBeSpawnedOverrideNameForFireVersion" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="pe_siege_tower_12m" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+			<flag name="hide_in_prefab_editors" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics>
+			<body_flags>
+				<body_flag name="exclude_path_snap"/>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<scripts>
+			<script name="PE_SiegeTower">
+				<variables>
+					<variable name="GateTag" value="gate"/>
+					<variable name="GateOpenTag" value="gateOpen"/>
+					<variable name="HandleTag" value="handle"/>
+					<variable name="GateHandleIdleAnimation" value="siegetower_l3_door_idle"/>
+					<variable name="GateTrembleAnimation" value="siegetower_l3_door_stop"/>
+					<variable name="BattlementDestroyedParticle" value="psys_adobe_battlement_destroyed"/>
+					<variable name="GhostEntityMove" value="true"/>
+					<variable name="GhostEntitySpeedMultiplier" value="1.000"/>
+					<variable name="WheelDiameter" value="0.860"/>
+					<variable name="MinSpeed" value="0.500"/>
+					<variable name="MaxSpeed" value="1.000"/>
+					<variable name="GateNavMeshId" value="601"/>
+					<variable name="NavMeshIdToDisableOnDestination" value="-1"/>
+					<variable name="BarrierTagToRemove" value="barrier"/>
+					<variable name="RemoveOnDeployTag" value=""/>
+					<variable name="AddOnDeployTag" value=""/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value="siege_tower_12m_dnm"/>
+				</variables>
+			</script>
+			<script name="DestructableComponent">
+				<variables>
+					<variable name="DestructionStates" value="destroyed"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="CanBeDestroyedInitially" value="false"/>
+					<variable name="MaxHitPoint" value="10000.000"/>
+					<variable name="DestroyOnAnyHit" value="false"/>
+					<variable name="PassHitOnToParent" value="false"/>
+					<variable name="ReferenceEntityTag" value=""/>
+					<variable name="HeavyHitParticlesTag" value=""/>
+					<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+					<variable name="ParticleEffectOnDestroy" value=""/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/siegetower/break"/>
+					<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+					<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+					<variable name="BattleSide" value="None"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="clean" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="body"/>
+					<tag name="operational"/>
+				</tags>
+				<physics shape="bo_siege_tower_l3_body" override_material="wood_nonstick"/>
+				<components>
+					<meta_mesh_component name="siege_tower_l3_body"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="ladder_left" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="ladder"/>
+						</tags>
+						<transform position="1.063, 3.290, 0.670" rotation_euler="-0.297, 0.000, -3.141"/>
+						<physics shape="bo_siege_tower_l3_ladder" override_material="wood_nonstick">
+							<body_flags>
+								<body_flag name="moveable"/>
+								<body_flag name="ladder"/>
+							</body_flags>
+						</physics>
+						<scripts>
+							<script name="LadderQueueManager">
+								<variables>
+									<variable name="ManagedNavigationFaceId" value="6"/>
+									<variable name="ManagedNavigationFaceAlternateID1" value="0"/>
+									<variable name="ManagedNavigationFaceAlternateID2" value="0"/>
+									<variable name="CostAddition" value="0.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="ladder_right" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="ladder"/>
+						</tags>
+						<transform position="-1.075, 3.290, 0.670" rotation_euler="-0.297, 0.000, -3.141"/>
+						<physics shape="bo_siege_tower_l3_ladder" override_material="wood_nonstick">
+							<body_flags>
+								<body_flag name="moveable"/>
+								<body_flag name="ladder"/>
+							</body_flags>
+						</physics>
+						<scripts>
+							<script name="LadderQueueManager">
+								<variables>
+									<variable name="ManagedNavigationFaceId" value="7"/>
+									<variable name="ManagedNavigationFaceAlternateID1" value="0"/>
+									<variable name="ManagedNavigationFaceAlternateID2" value="0"/>
+									<variable name="CostAddition" value="0.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="wheel_front" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="wheel"/>
+						</tags>
+						<transform position="0.000, -1.875, 0.415"/>
+						<physics shape="bo_siege_tower_l3_wheel" override_material="wood_nonstick">
+							<body_flags>
+								<body_flag name="moveable"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="siege_tower_l3_wheel"/>
+						</components>
+					</game_entity>
+					<game_entity name="wheel_back" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="wheel"/>
+						</tags>
+						<transform position="0.000, 3.441, 0.410"/>
+						<physics shape="bo_siege_tower_l3_wheel" override_material="wood_nonstick">
+							<body_flags>
+								<body_flag name="moveable"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="siege_tower_l3_wheel"/>
+						</components>
+					</game_entity>
+					<game_entity name="ramp" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="gate"/>
+						</tags>
+						<transform position="0.000, -2.400, 11.900" rotation_euler="0.349, 0.000, 0.000"/>
+						<physics shape="bo_siege_tower_l3_door" override_material="wood_nonstick"/>
+						<skeleton skeleton_model="siege_tower_l3_door_skeleton">
+							<components>
+								<meta_mesh_component name="siege_tower_l3_door"/>
+							</components>
+						</skeleton>
+						<scripts>
+							<script name="SynchedMissionObject">
+								<variables>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="ai_barrier_r" old_prefab_name="" mobility="1">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="-1.600, 1.000, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.750, 1.000, 4.250"/>
+								<physics shape="bo_siege_tower_gate_barrier">
+									<body_flags>
+										<body_flag name="ai_limiter"/>
+									</body_flags>
+								</physics>
+							</game_entity>
+							<game_entity name="ai_barrier_l" old_prefab_name="" mobility="1">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="1.600, 1.000, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="1.750, 1.500, 4.250"/>
+								<physics shape="bo_siege_tower_gate_barrier">
+									<body_flags>
+										<body_flag name="ai_limiter"/>
+									</body_flags>
+								</physics>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="use_pos_handle" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="-0.084, -1.575, 12.080" rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPoint">
+								<variables>
+									<variable name="AutoSheathWeapons" value="true"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="wait_pos_tower" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="wait"/>
+						</tags>
+						<transform position="-0.028, -0.608, 12.066" rotation_euler="0.000, 0.000, -3.136"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+					</game_entity>
+					<game_entity name="push_pos_r_front" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="move"/>
+						</tags>
+						<transform position="-3.157, -0.220, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPoint">
+								<variables>
+									<variable name="AutoSheathWeapons" value="true"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="push_pos_l_front" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="move"/>
+						</tags>
+						<transform position="2.975, -0.220, 0.000" rotation_euler="0.000, 0.000, -3.141"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPoint">
+								<variables>
+									<variable name="AutoSheathWeapons" value="true"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="push_pos_r_middle" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="move"/>
+						</tags>
+						<transform position="-2.960, 1.130, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPoint">
+								<variables>
+									<variable name="AutoSheathWeapons" value="true"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="wait_pos_ground" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="wait"/>
+						</tags>
+						<transform position="0.182, 8.501, 0.000" rotation_euler="0.000, 0.000, 3.135"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+					</game_entity>
+					<game_entity name="push_pos_l_middle" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="move"/>
+						</tags>
+						<transform position="3.091, 1.130, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPoint">
+								<variables>
+									<variable name="AutoSheathWeapons" value="true"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="particles" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="fireParticles"/>
+						</tags>
+						<transform position="0.101, -0.555, 7.679" rotation_euler="0.000, 0.000, -2.704"/>
+					</game_entity>
+					<game_entity name="push_pos_r_back" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="move"/>
+						</tags>
+						<transform position="-3.096, 2.480, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPoint">
+								<variables>
+									<variable name="AutoSheathWeapons" value="true"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="push_pos_l_back" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="move"/>
+						</tags>
+						<transform position="2.967, 2.480, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPoint">
+								<variables>
+									<variable name="AutoSheathWeapons" value="true"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="targeting_sphere" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="targeting_entity"/>
+						</tags>
+						<transform position="0.000, -0.396, 7.421" rotation_euler="0.000, 0.000, 0.000" scale="10.000, 10.000, 10.000"/>
+						<components>
+							<meta_mesh_component name="barrier_sphere">
+								<mesh name="barrier_sphere" material="ghost"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="inner_physical_barrier" old_prefab_name="" mobility="1">
+						<physics shape="bo_siege_tower_l3_barrier">
+							<body_flags>
+								<body_flag name="barrier"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="ladder_middle" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="ladder"/>
+						</tags>
+						<transform position="0.000, 3.290, 0.670" rotation_euler="-0.297, 0.000, -3.141"/>
+						<physics shape="bo_siege_tower_l3_ladder" override_material="wood_nonstick">
+							<body_flags>
+								<body_flag name="moveable"/>
+								<body_flag name="ladder"/>
+							</body_flags>
+						</physics>
+						<scripts>
+							<script name="LadderQueueManager">
+								<variables>
+									<variable name="ManagedNavigationFaceId" value="7"/>
+									<variable name="ManagedNavigationFaceAlternateID1" value="0"/>
+									<variable name="ManagedNavigationFaceAlternateID2" value="0"/>
+									<variable name="CostAddition" value="0.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="ground_ramp" old_prefab_name="" mobility="1">
+						<physics shape="bo_siege_tower_l3_ground_ramp">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="destroyed" old_prefab_name="" visible="false" mobility="1">
+				<physics shape="bo_siege_tower_l3_body_destroyed"/>
+				<components>
+					<meta_mesh_component name="siege_tower_l3_body_destroyed"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value="siege_tower_12m_destroyed_blocker_dnm"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="particles" old_prefab_name="" mobility="1">
+						<transform position="0.324, 1.131, 1.250"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{2FCB396E-9D74-4B21-A327-494B43CE3482}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+					<game_entity name="part12" old_prefab_name="" mobility="1">
+						<transform position="2.138, -0.410, 8.977" rotation_euler="-0.173, -0.107, 0.000"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part11" old_prefab_name="" mobility="1">
+						<transform position="1.380, -0.933, 9.518" rotation_euler="0.025, -1.095, -0.202"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part10" old_prefab_name="" mobility="1">
+						<transform position="1.482, -1.635, 12.315" rotation_euler="0.000, -1.017, 0.000"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part9" old_prefab_name="" mobility="1">
+						<transform position="-0.021, -1.442, 10.129"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part8" old_prefab_name="" mobility="1">
+						<transform position="1.898, 1.835, 7.678" rotation_euler="-0.713, -1.237, -2.841"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part7" old_prefab_name="" mobility="1">
+						<transform position="-0.759, -2.281, 9.267" rotation_euler="0.466, -0.214, -1.530"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part5" old_prefab_name="" mobility="1">
+						<transform position="0.139, -1.834, 9.263"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part4" old_prefab_name="" mobility="1">
+						<transform position="-1.066, -0.863, 10.086" rotation_euler="-0.398, 1.411, -0.062"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part3" old_prefab_name="" mobility="1">
+						<transform position="2.097, -1.594, 6.430" rotation_euler="0.000, -0.610, 0.000"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part2" old_prefab_name="" mobility="1">
+						<transform position="-0.338, -2.210, 7.099" rotation_euler="1.557, 0.000, 0.000"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part1" old_prefab_name="" mobility="1">
+						<transform position="-1.759, -0.522, 11.271" rotation_euler="0.000, -0.086, 0.000"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part14" old_prefab_name="" mobility="1">
+						<transform position="-1.325, 0.526, 10.470" rotation_euler="0.000, 0.303, 0.000"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="part13" old_prefab_name="" mobility="1">
+						<transform position="-1.673, -2.304, 5.409" rotation_euler="0.000, 0.000, -0.969"/>
+						<physics mass="20.000">
+							<body_flags>
+								<body_flag name="dynamic"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="particles" old_prefab_name="" mobility="1">
+						<transform position="0.324, -1.419, 4.254"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{2FCB396E-9D74-4B21-A327-494B43CE3482}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+					<game_entity name="particles" old_prefab_name="" mobility="1">
+						<transform position="0.324, -0.508, 9.406"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{2FCB396E-9D74-4B21-A327-494B43CE3482}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_siege_tower_12m_ghost" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+			<flag name="hide_in_prefab_editors" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics>
+			<body_flags>
+				<body_flag name="exclude_path_snap"/>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<children>
+			<game_entity name="clean" old_prefab_name="">
+				<components>
+					<meta_mesh_component name="siege_tower_12m_spawner_ghost"/>
+				</components>
+				<children>
+					<game_entity name="ramp" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="0.000, -2.400, 11.900" rotation_euler="0.349, 0.000, 0.000"/>
+						<components>
+							<meta_mesh_component name="siege_tower_12m_door_spawner_ghost"/>
+						</components>
+						<children>
+							<game_entity name="ai_barrier_r" old_prefab_name="">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="-1.600, 1.000, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.750, 1.000, 4.250"/>
+								<physics>
+									<body_flags>
+										<body_flag name="ai_limiter"/>
+									</body_flags>
+								</physics>
+								<components>
+									<meta_mesh_component name="barrier_spawner_ghost"/>
+								</components>
+							</game_entity>
+							<game_entity name="ai_barrier_l" old_prefab_name="">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="1.600, 1.000, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="1.750, 1.500, 4.250"/>
+								<physics>
+									<body_flags>
+										<body_flag name="ai_limiter"/>
+									</body_flags>
+								</physics>
+								<components>
+									<meta_mesh_component name="barrier_spawner_ghost"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="wait_pos_ground" old_prefab_name="">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.217, 10.000, 0.000" rotation_euler="0.000, 0.000, 3.135"/>
+						<components>
+							<meta_mesh_component name="icon_man_spawner_ghost"/>
+						</components>
+					</game_entity>
+					<game_entity name="wheel_front" old_prefab_name="">
+						<tags>
+							<tag name="wheel"/>
+						</tags>
+						<transform position="0.000, -1.831, 0.415"/>
+						<physics>
+							<body_flags>
+								<body_flag name="moveable"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="wheel_back" old_prefab_name="">
+						<tags>
+							<tag name="wheel"/>
+						</tags>
+						<transform position="0.000, 3.514, 0.410"/>
+						<physics>
+							<body_flags>
+								<body_flag name="moveable"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_siege_tower_12m_spawner" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="prefab_cannot_be_broken" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="SiegeTowerSpawner">
+				<variables>
+					<variable name="wait_pos_ground" value="-0.999978, 0.006593, 0.000000, 0.000000, -0.006593, -0.999978, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.217000, 10.000000, 0.000000, 1.000000"/>
+					<variable name="SideTag" value=""/>
+					<variable name="TargetWallSegmentTag" value=""/>
+					<variable name="PathEntityName" value="Path"/>
+					<variable name="SoilNavMeshID1" value="-1"/>
+					<variable name="SoilNavMeshID2" value="-1"/>
+					<variable name="DitchNavMeshID1" value="-1"/>
+					<variable name="DitchNavMeshID2" value="-1"/>
+					<variable name="GroundToSoilNavMeshID1" value="-1"/>
+					<variable name="GroundToSoilNavMeshID2" value="-1"/>
+					<variable name="SoilGenericNavMeshID" value="-1"/>
+					<variable name="GroundGenericNavMeshID" value="-1"/>
+					<variable name="AddOnDeployTag" value=""/>
+					<variable name="RemoveOnDeployTag" value=""/>
+					<variable name="RampRotationDegree" value="80.000"/>
+					<variable name="BarrierLength" value="4.000"/>
+					<variable name="SpeedModifierFactor" value="1.000"/>
+					<variable name="EnableAutoGhostMovement" value="false"/>
+					<variable name="ai_barrier_l" value="-0.000356, -1.750000, -0.000000, 0.000000, 1.500000, -0.000306, 0.000000, 0.000000, 0.000000, 0.000000, 4.000000, 0.000000, 1.600000, 1.000000, 0.000000, 1.000000"/>
+					<variable name="ai_barrier_r" value="-0.000356, 1.750000, 0.000000, 0.000000, -1.000000, -0.000204, 0.000000, 0.000000, 0.000000, 0.000000, 4.000000, 0.000000, -1.600000, 1.000000, 0.000000, 1.000000"/>
+					<variable name="BarrierTagToRemove" value=""/>
+					<variable name="ToBeSpawnedOverrideName" value=""/>
+					<variable name="ToBeSpawnedOverrideNameForFireVersion" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="pe_buildable_siege_tower_9m" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pe_towerspawner" old_prefab_name="" mobility="1">
+				<transform position="-3.647, -7.176, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.500, 1.500, 1.500"/>
+				<physics shape="bo_chest_empire_a" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="chest_empire_a">
+						<mesh name="chest_empire_a.3" material="planks_skinned"/>
+						<mesh name="chest_empire_a.4" material="planks_skinned"/>
+						<mesh name="chest_empire_a.lod2.3" material="planks_skinned"/>
+						<mesh name="chest_empire_a.lod2.4" material="planks_skinned"/>
+						<mesh name="chest_empire_a.lod3.3" material="planks_skinned"/>
+						<mesh name="chest_empire_a.lod3.4" material="planks_skinned"/>
+						<mesh name="chest_empire_a.lod4.4" material="planks_skinned"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_SiegeTowerBuilder">
+						<variables>
+							<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+							<variable name="RepairItemRecipies" value="pe_hardwood*5,pe_steel_ingot*1"/>
+							<variable name="RepairItem" value="pe_buildhammer"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_siege_sturgia_wall_destruction"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/stone_destroy"/>
+							<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+							<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+							<variable name="RepairDamage" value="500"/>
+							<variable name="MaxHitPoint" value="5000.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="siegeequipmentchest" old_prefab_name="" mobility="1">
+						<transform position="-0.752, 0.073, 0.099" rotation_euler="0.000, 0.000, 3.141" scale="-0.200, 0.200, 0.153"/>
+						<physics shape="bo_wooden_platform_2_plank_f_column"/>
+						<components>
+							<meta_mesh_component name="wooden_platform_2_plank_f_column">
+								<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+								<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+								<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+							</meta_mesh_component>
+						</components>
+						<children>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.080, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.000, 0.855, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.000, 0.935, 0.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.000, -1.658, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.000, 2.370, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.522, 2.386, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.522, 0.935, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.522, 0.855, 0.000" rotation_euler="0.000, 0.000, -3.141"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.522, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.522, -1.565, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.522, -0.080, 0.000" rotation_euler="0.000, 0.000, -3.141"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.531, -1.639, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.461, -1.639, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="5.319, -1.650, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="5.249, -1.650, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="3.797, -1.650, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="3.726, -1.650, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="2.199, -1.650, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="2.129, -1.650, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.005, -1.656, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.065, -1.656, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="2.135, -1.679, 5.211" rotation_euler="0.000, 1.571, 1.571" scale="1.304, 1.000, 0.833"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.009, -1.676, 5.203" rotation_euler="0.000, 1.571, 1.571" scale="1.304, 1.000, 0.833"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="3.735, -1.679, 5.192" rotation_euler="0.000, 1.571, 1.571" scale="1.304, 1.000, 0.833"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="5.260, -1.679, 5.195" rotation_euler="0.000, 1.571, 1.571" scale="1.304, 1.000, 0.833"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.477, -1.679, 5.195" rotation_euler="0.000, 1.571, 1.571" scale="1.304, 1.000, 0.833"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.172, 2.487, 5.216" rotation_euler="0.000, 1.571, 0.000" scale="1.304, 1.000, 1.600"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.172, 0.930, 5.216" rotation_euler="0.000, 1.571, 0.000" scale="1.304, 1.000, 1.600"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.172, -0.025, 5.216" rotation_euler="0.000, 1.571, 0.000" scale="1.304, 1.000, 1.600"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.172, -1.657, 5.216" rotation_euler="0.000, 1.571, 0.000" scale="1.304, 1.000, 1.600"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="5.319, 2.370, 0.000" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="2.199, 2.370, 0.000" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="3.797, 2.370, 0.000" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="2.129, 2.370, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.065, 2.364, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="5.249, 2.370, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="3.726, 2.370, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.461, 2.381, 0.000" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.080, 2.370, 0.076" rotation_euler="0.000, 0.000, 1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.151, 2.370, 0.080" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.393, -1.661, 3.618" rotation_euler="-1.571, 1.571, 3.142" scale="1.000, 1.304, 1.467"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.393, -1.661, 2.249" rotation_euler="-1.571, 1.571, 3.142" scale="1.000, 1.304, 1.467"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.393, -1.661, 0.704" rotation_euler="-1.571, 1.571, 3.142" scale="1.000, 1.304, 1.467"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.393, 2.378, 0.824" rotation_euler="1.571, -1.571, 0.000" scale="1.000, 1.304, 1.467"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.393, 2.372, 3.737" rotation_euler="1.571, -1.571, 0.000" scale="1.000, 1.304, 1.467"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.393, 2.378, 2.369" rotation_euler="1.571, -1.571, 0.000" scale="1.000, 1.304, 1.467"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.024, 2.344, 3.740" rotation_euler="1.571, 1.571, -1.571" scale="1.000, 1.304, 0.800"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.024, 2.344, 2.377" rotation_euler="1.571, 1.571, -1.571" scale="1.000, 1.304, 0.800"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.024, 2.344, 0.836" rotation_euler="1.571, 1.571, -1.571" scale="1.000, 1.304, 0.800"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.526, 2.344, 3.646" rotation_euler="-1.571, -1.571, 1.571" scale="1.000, 1.304, 0.800"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.526, 2.344, 2.306" rotation_euler="-1.571, -1.571, 1.571" scale="1.000, 1.304, 0.800"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.526, 2.344, 0.783" rotation_euler="-1.571, -1.571, 1.571" scale="1.000, 1.304, 0.800"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="7.940, 0.573, 2.716" rotation_euler="0.000, -1.571, 1.571" scale="-1.087, 0.833, 0.500"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="7.491, 1.393, 2.941" non_orthogonal_rotation_mat="0.308463, -0.000000, 0.951236, 0.000000, -1.000000, 0.000000, 0.875588, 0.000000, -0.483059" scale="0.631, 0.500, 0.175"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="7.491, -0.807, 2.941" non_orthogonal_rotation_mat="0.308463, -0.000000, 0.951236, 0.000000, -1.000000, 0.000000, 0.875588, 0.000000, -0.483059" scale="0.631, 0.500, 0.175"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="-0.035, 1.393, 2.941" non_orthogonal_rotation_mat="0.308506, -0.000000, -0.951222, 0.000000, -1.000000, 0.000000, -0.875556, 0.000000, -0.483117" scale="0.631, 0.500, 0.175"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="-0.035, -0.807, 2.941" non_orthogonal_rotation_mat="0.308506, -0.000000, -0.951222, 0.000000, -1.000000, 0.000000, -0.875556, 0.000000, -0.483117" scale="0.631, 0.500, 0.175"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="-0.454, 0.573, 2.716" rotation_euler="0.000, -1.571, 1.571" scale="-1.087, 0.833, 0.500"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="3.449, 2.892, 2.716" rotation_euler="0.000, -1.571, -3.136" scale="-1.087, 0.833, 0.500"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="4.832, 2.450, 2.941" non_orthogonal_rotation_mat="-0.001724, 0.308458, 0.951236, 0.999984, 0.005589, 0.000000, -0.004894, 0.875574, -0.483059" scale="0.631, 0.500, 0.175"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="2.631, 2.438, 2.941" non_orthogonal_rotation_mat="-0.001724, 0.308458, 0.951236, 0.999984, 0.005589, 0.000000, -0.004894, 0.875574, -0.483059" scale="0.631, 0.500, 0.175"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="dismantledsiegetower" old_prefab_name="" mobility="1">
+						<transform position="-0.270, 1.146, -0.220" rotation_euler="0.000, 0.000, 0.000" scale="0.667, 0.667, 0.667"/>
+						<physics shape="bo_wooden_platform_a"/>
+						<components>
+							<meta_mesh_component name="wooden_platform_a"/>
+						</components>
+						<children>
+							<game_entity name="wooden_platform_a" old_prefab_name="" mobility="1">
+								<transform position="3.176, 0.202, -0.023"/>
+								<physics shape="bo_wooden_platform_a"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_a" old_prefab_name="" mobility="1">
+								<transform position="-3.827, -1.426, -0.022" rotation_euler="0.000, 0.000, 0.476"/>
+								<physics shape="bo_wooden_platform_a"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="siegetower_a_wheels" old_prefab_name="" mobility="1">
+								<transform position="-4.226, 1.598, 0.938" rotation_euler="0.000, 0.000, 0.500"/>
+								<physics shape="bo_siegetower_a_wheels"/>
+								<components>
+									<meta_mesh_component name="siegetower_a_wheels"/>
+								</components>
+							</game_entity>
+							<game_entity name="siegetower_a_wheels" old_prefab_name="" mobility="1">
+								<transform position="-4.553, 1.076, 1.091" rotation_euler="0.071, 0.062, 0.817"/>
+								<physics shape="bo_siegetower_a_wheels"/>
+								<components>
+									<meta_mesh_component name="siegetower_a_wheels"/>
+								</components>
+							</game_entity>
+							<game_entity name="civilian_ladder_4m" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="do_not_optimize"/>
+								</tags>
+								<transform position="2.234, 1.470, 0.869" rotation_euler="-1.455, -0.157, 1.644"/>
+								<physics shape="bo_civilian_ladder_4m">
+									<body_flags>
+										<body_flag name="ladder"/>
+									</body_flags>
+								</physics>
+								<components>
+									<meta_mesh_component name="civilian_ladder_4m"/>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_heap_a" old_prefab_name="" mobility="1">
+								<transform position="2.340, 0.295, 0.319"/>
+								<physics shape="bo_wooden_platform_2_heap_a"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_heap_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_heap_a" old_prefab_name="" mobility="1">
+								<transform position="2.166, -0.453, 0.319" rotation_euler="0.000, 0.000, -0.219"/>
+								<physics shape="bo_wooden_platform_2_heap_a"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_heap_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_heap_a" old_prefab_name="" mobility="1">
+								<transform position="2.337, 0.937, 0.319" rotation_euler="0.000, 0.000, 0.062"/>
+								<physics shape="bo_wooden_platform_2_heap_a"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_heap_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_heap_a" old_prefab_name="" mobility="1">
+								<transform position="-0.058, 0.357, 0.363" rotation_euler="0.000, -0.073, 0.000"/>
+								<physics shape="bo_wooden_platform_heap_a"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_heap_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_heap_a" old_prefab_name="" mobility="1">
+								<transform position="0.048, -0.419, 0.363" rotation_euler="0.000, -0.073, 0.119"/>
+								<physics shape="bo_wooden_platform_heap_a"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_heap_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="european_castle_wall_a_damaged_l1_heap_a" old_prefab_name="" mobility="1">
+								<transform position="0.923, 0.241, 0.710"/>
+								<physics shape="bo_european_castle_wall_a_damaged_l1_heap_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="european_castle_wall_a_damaged_l1_heap_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="european_castle_wall_a_damaged_l1_heap_b" old_prefab_name="" mobility="1">
+								<transform position="-0.435, 1.147, 0.319" rotation_euler="0.000, 0.000, 0.324"/>
+								<physics shape="bo_european_castle_wall_a_damaged_l1_heap_b" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="european_castle_wall_a_damaged_l1_heap_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="european_castle_wall_a_damaged_l1_heap_b" old_prefab_name="" mobility="1">
+								<transform position="2.757, 1.883, 0.319" rotation_euler="0.000, 0.000, -0.248"/>
+								<physics shape="bo_european_castle_wall_a_damaged_l1_heap_b" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="european_castle_wall_a_damaged_l1_heap_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_wood_heap_a" old_prefab_name="" mobility="1">
+								<transform position="4.664, -0.266, 0.319" rotation_euler="0.000, 0.000, 1.452"/>
+								<physics shape="bo_bd_wood_heap_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="bd_wood_heap_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_wood_heap_c" old_prefab_name="" mobility="1">
+								<transform position="-0.041, 1.351, 0.132" rotation_euler="0.000, 0.000, 0.226"/>
+								<physics shape="bo_bd_wood_heap_c"/>
+								<components>
+									<meta_mesh_component name="bd_wood_heap_c"/>
+								</components>
+							</game_entity>
+							<game_entity name="log_pine_group_h" old_prefab_name="" mobility="1">
+								<transform position="-3.821, -1.632, 0.319" rotation_euler="0.000, 0.000, -0.872"/>
+								<physics shape="bo_log_pine_group_h"/>
+								<components>
+									<meta_mesh_component name="log_pine_group_h"/>
+								</components>
+							</game_entity>
+							<game_entity name="log_pine_group_j" old_prefab_name="" mobility="1">
+								<transform position="3.574, 0.865, 0.385" rotation_euler="-0.043, 0.000, -0.647"/>
+								<physics shape="bo_log_pine_group_j"/>
+								<components>
+									<meta_mesh_component name="log_pine_group_j"/>
+								</components>
+							</game_entity>
+							<game_entity name="log_tree_high_group_b" old_prefab_name="" mobility="1">
+								<transform position="-3.558, 0.915, 0.319" rotation_euler="0.000, 0.000, -1.039"/>
+								<physics shape="bo_log_tree_high_group_b"/>
+								<components>
+									<meta_mesh_component name="log_tree_high_group_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="log_tree_high_group_b" old_prefab_name="" mobility="1">
+								<transform position="2.540, 2.627, 0.319" rotation_euler="0.000, 0.000, -1.554"/>
+								<physics shape="bo_log_tree_high_group_b"/>
+								<components>
+									<meta_mesh_component name="log_tree_high_group_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="log_tree_high_group_d" old_prefab_name="" mobility="1">
+								<transform position="5.737, 0.569, 0.319" rotation_euler="0.000, 0.000, 0.064"/>
+								<physics shape="bo_log_tree_high_group_d"/>
+								<components>
+									<meta_mesh_component name="log_tree_high_group_d"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pe_siege_tower_9m_spawner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="prefab_cannot_be_broken" value="true"/>
+				</flags>
+				<transform position="-2.712, 4.782, 0.000" rotation_euler="0.000, 0.000, -1.572"/>
+				<scripts>
+					<script name="SiegeTowerSpawner">
+						<variables>
+							<variable name="wait_pos_ground" value="-0.999978, 0.006593, 0.000000, 0.000000, -0.006593, -0.999978, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.182000, 8.501000, 0.000000, 1.000000"/>
+							<variable name="SideTag" value=""/>
+							<variable name="TargetWallSegmentTag" value=""/>
+							<variable name="PathEntityName" value="Path"/>
+							<variable name="SoilNavMeshID1" value="-1"/>
+							<variable name="SoilNavMeshID2" value="-1"/>
+							<variable name="DitchNavMeshID1" value="-1"/>
+							<variable name="DitchNavMeshID2" value="-1"/>
+							<variable name="GroundToSoilNavMeshID1" value="-1"/>
+							<variable name="GroundToSoilNavMeshID2" value="-1"/>
+							<variable name="SoilGenericNavMeshID" value="-1"/>
+							<variable name="GroundGenericNavMeshID" value="-1"/>
+							<variable name="AddOnDeployTag" value=""/>
+							<variable name="RemoveOnDeployTag" value=""/>
+							<variable name="RampRotationDegree" value="80.000"/>
+							<variable name="BarrierLength" value="4.000"/>
+							<variable name="SpeedModifierFactor" value="1.000"/>
+							<variable name="EnableAutoGhostMovement" value="false"/>
+							<variable name="ai_barrier_l" value="-0.000356, -1.750000, -0.000000, 0.000000, 1.000000, -0.000204, 0.000000, 0.000000, 0.000000, 0.000000, 4.000000, 0.000000, 1.300000, 1.000000, 0.000000, 1.000000"/>
+							<variable name="ai_barrier_r" value="-0.000356, 1.750000, 0.000000, 0.000000, -1.000000, -0.000204, 0.000000, 0.000000, 0.000000, 0.000000, 4.000000, 0.000000, -1.300000, 1.000000, 0.000000, 1.000000"/>
+							<variable name="BarrierTagToRemove" value=""/>
+							<variable name="ToBeSpawnedOverrideName" value=""/>
+							<variable name="ToBeSpawnedOverrideNameForFireVersion" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_buildable_siege_tower_12m" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pe_towerspawner" old_prefab_name="" mobility="1">
+				<transform position="-3.647, -7.176, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.500, 1.500, 1.500"/>
+				<physics shape="bo_chest_empire_a" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="chest_empire_a">
+						<mesh name="chest_empire_a.3" material="planks_skinned"/>
+						<mesh name="chest_empire_a.4" material="planks_skinned"/>
+						<mesh name="chest_empire_a.lod2.3" material="planks_skinned"/>
+						<mesh name="chest_empire_a.lod2.4" material="planks_skinned"/>
+						<mesh name="chest_empire_a.lod3.3" material="planks_skinned"/>
+						<mesh name="chest_empire_a.lod3.4" material="planks_skinned"/>
+						<mesh name="chest_empire_a.lod4.4" material="planks_skinned"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_SiegeTowerBuilder">
+						<variables>
+							<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+							<variable name="RepairItemRecipies" value="pe_hardwood*5,pe_steel_ingot*1"/>
+							<variable name="RepairItem" value="pe_buildhammer"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_siege_sturgia_wall_destruction"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/stone_destroy"/>
+							<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+							<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+							<variable name="RepairDamage" value="500"/>
+							<variable name="MaxHitPoint" value="5000.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="siegeequipmentchest" old_prefab_name="" mobility="1">
+						<transform position="-0.752, 0.073, 0.099" rotation_euler="0.000, 0.000, 3.141" scale="-0.200, 0.200, 0.153"/>
+						<physics shape="bo_wooden_platform_2_plank_f_column"/>
+						<components>
+							<meta_mesh_component name="wooden_platform_2_plank_f_column">
+								<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+								<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+								<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+							</meta_mesh_component>
+						</components>
+						<children>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.080, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.000, 0.855, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.000, 0.935, 0.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.000, -1.658, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.000, 2.370, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.522, 2.386, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.522, 0.935, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.522, 0.855, 0.000" rotation_euler="0.000, 0.000, -3.141"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.522, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.522, -1.565, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.522, -0.080, 0.000" rotation_euler="0.000, 0.000, -3.141"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.531, -1.639, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.461, -1.639, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="5.319, -1.650, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="5.249, -1.650, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="3.797, -1.650, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="3.726, -1.650, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="2.199, -1.650, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="2.129, -1.650, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.005, -1.656, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.065, -1.656, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="2.135, -1.679, 5.211" rotation_euler="0.000, 1.571, 1.571" scale="1.304, 1.000, 0.833"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.009, -1.676, 5.203" rotation_euler="0.000, 1.571, 1.571" scale="1.304, 1.000, 0.833"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="3.735, -1.679, 5.192" rotation_euler="0.000, 1.571, 1.571" scale="1.304, 1.000, 0.833"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="5.260, -1.679, 5.195" rotation_euler="0.000, 1.571, 1.571" scale="1.304, 1.000, 0.833"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.477, -1.679, 5.195" rotation_euler="0.000, 1.571, 1.571" scale="1.304, 1.000, 0.833"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.172, 2.487, 5.216" rotation_euler="0.000, 1.571, 0.000" scale="1.304, 1.000, 1.600"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.172, 0.930, 5.216" rotation_euler="0.000, 1.571, 0.000" scale="1.304, 1.000, 1.600"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.172, -0.025, 5.216" rotation_euler="0.000, 1.571, 0.000" scale="1.304, 1.000, 1.600"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.172, -1.657, 5.216" rotation_euler="0.000, 1.571, 0.000" scale="1.304, 1.000, 1.600"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="5.319, 2.370, 0.000" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="2.199, 2.370, 0.000" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="3.797, 2.370, 0.000" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="2.129, 2.370, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.065, 2.364, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="5.249, 2.370, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="3.726, 2.370, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.461, 2.381, 0.000" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.080, 2.370, 0.076" rotation_euler="0.000, 0.000, 1.571" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="0.151, 2.370, 0.080" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.393, -1.661, 3.618" rotation_euler="-1.571, 1.571, 3.142" scale="1.000, 1.304, 1.467"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.393, -1.661, 2.249" rotation_euler="-1.571, 1.571, 3.142" scale="1.000, 1.304, 1.467"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.393, -1.661, 0.704" rotation_euler="-1.571, 1.571, 3.142" scale="1.000, 1.304, 1.467"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.393, 2.378, 0.824" rotation_euler="1.571, -1.571, 0.000" scale="1.000, 1.304, 1.467"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.393, 2.372, 3.737" rotation_euler="1.571, -1.571, 0.000" scale="1.000, 1.304, 1.467"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.393, 2.378, 2.369" rotation_euler="1.571, -1.571, 0.000" scale="1.000, 1.304, 1.467"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.024, 2.344, 3.740" rotation_euler="1.571, 1.571, -1.571" scale="1.000, 1.304, 0.800"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.024, 2.344, 2.377" rotation_euler="1.571, 1.571, -1.571" scale="1.000, 1.304, 0.800"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="-0.024, 2.344, 0.836" rotation_euler="1.571, 1.571, -1.571" scale="1.000, 1.304, 0.800"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.526, 2.344, 3.646" rotation_euler="-1.571, -1.571, 1.571" scale="1.000, 1.304, 0.800"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.526, 2.344, 2.306" rotation_euler="-1.571, -1.571, 1.571" scale="1.000, 1.304, 0.800"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="" mobility="1">
+								<transform position="7.526, 2.344, 0.783" rotation_euler="-1.571, -1.571, 1.571" scale="1.000, 1.304, 0.800"/>
+								<physics shape="bo_wooden_platform_2_plank_f_column"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_plank_f_column">
+										<mesh name="wooden_platform_2_plank_f_column.0" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.1" material="lights_a"/>
+										<mesh name="wooden_platform_2_plank_f_column.lod3" material="lights_a"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="7.940, 0.573, 2.716" rotation_euler="0.000, -1.571, 1.571" scale="-1.087, 0.833, 0.500"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="7.491, 1.393, 2.941" non_orthogonal_rotation_mat="0.308463, -0.000000, 0.951236, 0.000000, -1.000000, 0.000000, 0.875588, 0.000000, -0.483059" scale="0.631, 0.500, 0.175"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="7.491, -0.807, 2.941" non_orthogonal_rotation_mat="0.308463, -0.000000, 0.951236, 0.000000, -1.000000, 0.000000, 0.875588, 0.000000, -0.483059" scale="0.631, 0.500, 0.175"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="-0.035, 1.393, 2.941" non_orthogonal_rotation_mat="0.308506, -0.000000, -0.951222, 0.000000, -1.000000, 0.000000, -0.875556, 0.000000, -0.483117" scale="0.631, 0.500, 0.175"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="-0.035, -0.807, 2.941" non_orthogonal_rotation_mat="0.308506, -0.000000, -0.951222, 0.000000, -1.000000, 0.000000, -0.875556, 0.000000, -0.483117" scale="0.631, 0.500, 0.175"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="-0.454, 0.573, 2.716" rotation_euler="0.000, -1.571, 1.571" scale="-1.087, 0.833, 0.500"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="3.449, 2.892, 2.716" rotation_euler="0.000, -1.571, -3.136" scale="-1.087, 0.833, 0.500"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="4.832, 2.450, 2.941" non_orthogonal_rotation_mat="-0.001724, 0.308458, 0.951236, 0.999984, 0.005589, 0.000000, -0.004894, 0.875574, -0.483059" scale="0.631, 0.500, 0.175"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+								<transform position="2.631, 2.438, 2.941" non_orthogonal_rotation_mat="-0.001724, 0.308458, 0.951236, 0.999984, 0.005589, 0.000000, -0.004894, 0.875574, -0.483059" scale="0.631, 0.500, 0.175"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m">
+										<mesh name="bd_pole_3m.14" material="crude_iron"/>
+										<mesh name="bd_pole_3m.lod3.14" material="crude_iron"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="dismantledsiegetower" old_prefab_name="" mobility="1">
+						<transform position="-0.270, 1.146, -0.220" rotation_euler="0.000, 0.000, 0.000" scale="0.667, 0.667, 0.667"/>
+						<physics shape="bo_wooden_platform_a"/>
+						<components>
+							<meta_mesh_component name="wooden_platform_a"/>
+						</components>
+						<children>
+							<game_entity name="wooden_platform_a" old_prefab_name="" mobility="1">
+								<transform position="3.176, 0.202, -0.023"/>
+								<physics shape="bo_wooden_platform_a"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_a" old_prefab_name="" mobility="1">
+								<transform position="-3.827, -1.426, -0.022" rotation_euler="0.000, 0.000, 0.476"/>
+								<physics shape="bo_wooden_platform_a"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="siegetower_a_wheels" old_prefab_name="" mobility="1">
+								<transform position="-4.226, 1.598, 0.938" rotation_euler="0.000, 0.000, 0.500"/>
+								<physics shape="bo_siegetower_a_wheels"/>
+								<components>
+									<meta_mesh_component name="siegetower_a_wheels"/>
+								</components>
+							</game_entity>
+							<game_entity name="siegetower_a_wheels" old_prefab_name="" mobility="1">
+								<transform position="-4.553, 1.076, 1.091" rotation_euler="0.071, 0.062, 0.817"/>
+								<physics shape="bo_siegetower_a_wheels"/>
+								<components>
+									<meta_mesh_component name="siegetower_a_wheels"/>
+								</components>
+							</game_entity>
+							<game_entity name="civilian_ladder_4m" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="do_not_optimize"/>
+								</tags>
+								<transform position="2.234, 1.470, 0.869" rotation_euler="-1.455, -0.157, 1.644"/>
+								<physics shape="bo_civilian_ladder_4m">
+									<body_flags>
+										<body_flag name="ladder"/>
+									</body_flags>
+								</physics>
+								<components>
+									<meta_mesh_component name="civilian_ladder_4m"/>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_heap_a" old_prefab_name="" mobility="1">
+								<transform position="2.340, 0.295, 0.319"/>
+								<physics shape="bo_wooden_platform_2_heap_a"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_heap_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_heap_a" old_prefab_name="" mobility="1">
+								<transform position="2.166, -0.453, 0.319" rotation_euler="0.000, 0.000, -0.219"/>
+								<physics shape="bo_wooden_platform_2_heap_a"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_heap_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_2_heap_a" old_prefab_name="" mobility="1">
+								<transform position="2.337, 0.937, 0.319" rotation_euler="0.000, 0.000, 0.062"/>
+								<physics shape="bo_wooden_platform_2_heap_a"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_2_heap_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_heap_a" old_prefab_name="" mobility="1">
+								<transform position="-0.058, 0.357, 0.363" rotation_euler="0.000, -0.073, 0.000"/>
+								<physics shape="bo_wooden_platform_heap_a"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_heap_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_heap_a" old_prefab_name="" mobility="1">
+								<transform position="0.048, -0.419, 0.363" rotation_euler="0.000, -0.073, 0.119"/>
+								<physics shape="bo_wooden_platform_heap_a"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_heap_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="european_castle_wall_a_damaged_l1_heap_a" old_prefab_name="" mobility="1">
+								<transform position="0.923, 0.241, 0.710"/>
+								<physics shape="bo_european_castle_wall_a_damaged_l1_heap_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="european_castle_wall_a_damaged_l1_heap_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="european_castle_wall_a_damaged_l1_heap_b" old_prefab_name="" mobility="1">
+								<transform position="-0.435, 1.147, 0.319" rotation_euler="0.000, 0.000, 0.324"/>
+								<physics shape="bo_european_castle_wall_a_damaged_l1_heap_b" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="european_castle_wall_a_damaged_l1_heap_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="european_castle_wall_a_damaged_l1_heap_b" old_prefab_name="" mobility="1">
+								<transform position="2.757, 1.883, 0.319" rotation_euler="0.000, 0.000, -0.248"/>
+								<physics shape="bo_european_castle_wall_a_damaged_l1_heap_b" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="european_castle_wall_a_damaged_l1_heap_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_wood_heap_a" old_prefab_name="" mobility="1">
+								<transform position="4.664, -0.266, 0.319" rotation_euler="0.000, 0.000, 1.452"/>
+								<physics shape="bo_bd_wood_heap_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="bd_wood_heap_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_wood_heap_c" old_prefab_name="" mobility="1">
+								<transform position="-0.041, 1.351, 0.132" rotation_euler="0.000, 0.000, 0.226"/>
+								<physics shape="bo_bd_wood_heap_c"/>
+								<components>
+									<meta_mesh_component name="bd_wood_heap_c"/>
+								</components>
+							</game_entity>
+							<game_entity name="log_pine_group_h" old_prefab_name="" mobility="1">
+								<transform position="-3.821, -1.632, 0.319" rotation_euler="0.000, 0.000, -0.872"/>
+								<physics shape="bo_log_pine_group_h"/>
+								<components>
+									<meta_mesh_component name="log_pine_group_h"/>
+								</components>
+							</game_entity>
+							<game_entity name="log_pine_group_j" old_prefab_name="" mobility="1">
+								<transform position="3.574, 0.865, 0.385" rotation_euler="-0.043, 0.000, -0.647"/>
+								<physics shape="bo_log_pine_group_j"/>
+								<components>
+									<meta_mesh_component name="log_pine_group_j"/>
+								</components>
+							</game_entity>
+							<game_entity name="log_tree_high_group_b" old_prefab_name="" mobility="1">
+								<transform position="-3.558, 0.915, 0.319" rotation_euler="0.000, 0.000, -1.039"/>
+								<physics shape="bo_log_tree_high_group_b"/>
+								<components>
+									<meta_mesh_component name="log_tree_high_group_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="log_tree_high_group_b" old_prefab_name="" mobility="1">
+								<transform position="2.540, 2.627, 0.319" rotation_euler="0.000, 0.000, -1.554"/>
+								<physics shape="bo_log_tree_high_group_b"/>
+								<components>
+									<meta_mesh_component name="log_tree_high_group_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="log_tree_high_group_d" old_prefab_name="" mobility="1">
+								<transform position="5.737, 0.569, 0.319" rotation_euler="0.000, 0.000, 0.064"/>
+								<physics shape="bo_log_tree_high_group_d"/>
+								<components>
+									<meta_mesh_component name="log_tree_high_group_d"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pe_siege_tower_12m_spawner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="prefab_cannot_be_broken" value="true"/>
+				</flags>
+				<transform position="-2.978, 4.628, 0.000" rotation_euler="0.000, 0.000, -1.590"/>
+				<scripts>
+					<script name="SiegeTowerSpawner">
+						<variables>
+							<variable name="wait_pos_ground" value="-0.999978, 0.006593, 0.000000, 0.000000, -0.006593, -0.999978, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.217000, 10.000000, 0.000000, 1.000000"/>
+							<variable name="SideTag" value=""/>
+							<variable name="TargetWallSegmentTag" value=""/>
+							<variable name="PathEntityName" value="Path"/>
+							<variable name="SoilNavMeshID1" value="-1"/>
+							<variable name="SoilNavMeshID2" value="-1"/>
+							<variable name="DitchNavMeshID1" value="-1"/>
+							<variable name="DitchNavMeshID2" value="-1"/>
+							<variable name="GroundToSoilNavMeshID1" value="-1"/>
+							<variable name="GroundToSoilNavMeshID2" value="-1"/>
+							<variable name="SoilGenericNavMeshID" value="-1"/>
+							<variable name="GroundGenericNavMeshID" value="-1"/>
+							<variable name="AddOnDeployTag" value=""/>
+							<variable name="RemoveOnDeployTag" value=""/>
+							<variable name="RampRotationDegree" value="80.000"/>
+							<variable name="BarrierLength" value="4.000"/>
+							<variable name="SpeedModifierFactor" value="1.000"/>
+							<variable name="EnableAutoGhostMovement" value="false"/>
+							<variable name="ai_barrier_l" value="-0.000356, -1.750000, -0.000000, 0.000000, 1.500000, -0.000306, 0.000000, 0.000000, 0.000000, 0.000000, 4.000000, 0.000000, 1.600000, 1.000000, 0.000000, 1.000000"/>
+							<variable name="ai_barrier_r" value="-0.000356, 1.750000, 0.000000, 0.000000, -1.000000, -0.000204, 0.000000, 0.000000, 0.000000, 0.000000, 4.000000, 0.000000, -1.600000, 1.000000, 0.000000, 1.000000"/>
+							<variable name="BarrierTagToRemove" value=""/>
+							<variable name="ToBeSpawnedOverrideName" value=""/>
+							<variable name="ToBeSpawnedOverrideNameForFireVersion" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

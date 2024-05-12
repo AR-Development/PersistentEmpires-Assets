@@ -1,0 +1,760 @@
+<prefabs>
+	<game_entity name="pe_pon_armormarket" old_prefab_name="">
+		<transform position="10.690, 16.060, 0.010" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.000, 0.800"/>
+		<physics shape="bo_awning_arbor_a_b"/>
+		<components>
+			<meta_mesh_component name="awning_arbor_b"/>
+		</components>
+		<children>
+			<game_entity name="tier0" old_prefab_name="">
+				<transform position="-0.006, 1.869, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.800, 1.250"/>
+				<physics shape="bo_bd_table_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_table_a"/>
+				</components>
+				<children>
+					<game_entity name="bd_table_d" old_prefab_name="">
+						<transform position="2.908, -2.517, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.250, 1.667, 1.000"/>
+						<physics shape="bo_bd_table_d" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_table_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_table_d" old_prefab_name="">
+						<transform position="-2.667, -2.517, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.250, 1.667, 1.000"/>
+						<physics shape="bo_bd_table_d" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_table_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_a" old_prefab_name="">
+						<transform position="0.432, 1.808, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="2.333, 1.250, 1.000"/>
+						<physics shape="bo_fence_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_a" old_prefab_name="">
+						<transform position="-5.329, -2.374, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.500, 1.667, 1.000"/>
+						<physics shape="bo_fence_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_a" old_prefab_name="">
+						<transform position="0.432, -6.577, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="2.333, 1.250, 1.000"/>
+						<physics shape="bo_fence_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_a" old_prefab_name="">
+						<transform position="5.601, -2.374, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.500, 1.667, 1.000"/>
+						<physics shape="bo_fence_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_chest_sturgia_a" old_prefab_name="">
+				<transform position="-2.565, 4.375, 0.000" rotation_euler="0.000, 0.000, -1.574" scale="1.000, 1.000, 1.250"/>
+				<physics shape="bo_bd_chest_sturgia_a"/>
+				<components>
+					<meta_mesh_component name="bd_chest_sturgia_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="tier1" old_prefab_name="">
+				<transform position="-0.006, 1.869, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.800, 1.250"/>
+				<physics shape="bo_bd_table_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_table_a"/>
+				</components>
+				<children>
+					<game_entity name="bd_table_d" old_prefab_name="">
+						<transform position="2.908, -2.517, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.250, 1.667, 1.000"/>
+						<physics shape="bo_bd_table_d" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_table_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_table_d" old_prefab_name="">
+						<transform position="-2.667, -2.517, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="1.250, 1.667, 1.000"/>
+						<physics shape="bo_bd_table_d" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_table_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_a" old_prefab_name="">
+						<transform position="1.641, -0.013, 0.799" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_a" old_prefab_name="">
+						<transform position="-1.496, -0.013, 0.799" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_a" old_prefab_name="">
+						<transform position="-2.687, -1.407, 0.799" rotation_euler="0.000, 0.000, 1.571" scale="1.250, 1.667, 1.000"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_a" old_prefab_name="">
+						<transform position="-2.687, -3.468, 0.799" rotation_euler="0.000, 0.000, 1.571" scale="1.250, 1.667, 1.000"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_a" old_prefab_name="">
+						<transform position="2.812, -3.468, 0.799" rotation_euler="0.000, 0.000, -1.571" scale="1.250, 1.667, 1.000"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_a" old_prefab_name="">
+						<transform position="2.812, -1.407, 0.799" rotation_euler="0.000, 0.000, -1.571" scale="1.250, 1.667, 1.000"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_base_c2" old_prefab_name="">
+						<transform position="3.768, 0.135, 2.716" rotation_euler="0.000, 0.000, 3.141" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_shop_sign_base_c2"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_c2"/>
+						</components>
+					</game_entity>
+					<game_entity name="flagpole_intro" old_prefab_name="">
+						<transform position="-1.936, -1.436, -0.977" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_flagpole_a"/>
+						<components>
+							<meta_mesh_component name="flagpole_intro"/>
+						</components>
+					</game_entity>
+					<game_entity name="flagpole_intro" old_prefab_name="">
+						<transform position="-1.936, -3.486, -0.977" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_flagpole_a"/>
+						<components>
+							<meta_mesh_component name="flagpole_intro"/>
+						</components>
+					</game_entity>
+					<game_entity name="flagpole_intro" old_prefab_name="">
+						<transform position="2.001, -1.436, -0.977" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_flagpole_a"/>
+						<components>
+							<meta_mesh_component name="flagpole_intro"/>
+						</components>
+					</game_entity>
+					<game_entity name="flagpole_intro" old_prefab_name="">
+						<transform position="2.001, -3.486, -0.977" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_flagpole_a"/>
+						<components>
+							<meta_mesh_component name="flagpole_intro"/>
+						</components>
+					</game_entity>
+					<game_entity name="flagpole_intro" old_prefab_name="">
+						<transform position="1.507, -0.807, -0.977" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_flagpole_a"/>
+						<components>
+							<meta_mesh_component name="flagpole_intro">
+								<mesh name="flagpole_intro.lod3.15" argument="1.000, 0.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="flagpole_intro" old_prefab_name="">
+						<transform position="-1.483, -0.807, -0.977" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_flagpole_a"/>
+						<components>
+							<meta_mesh_component name="flagpole_intro"/>
+						</components>
+					</game_entity>
+					<game_entity name="pe_signs" old_prefab_name="">
+						<transform position="-6.530, -2.390, 1.515" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<children>
+							<game_entity name="signs" old_prefab_name="">
+								<transform position="4.836, 1.309, 0.493" rotation_euler="1.558, 3.141, 0.000"/>
+								<components>
+									<meta_mesh_component name="editor_plane_low">
+										<mesh name="editor_plane_low" material="empire_sign"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="signs" old_prefab_name="">
+								<transform position="5.168, 0.761, 0.466" rotation_euler="1.558, 3.141, 1.571"/>
+								<components>
+									<meta_mesh_component name="editor_plane_low">
+										<mesh name="editor_plane_low" material="aserai_sign"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="signs" old_prefab_name="">
+								<transform position="3.027, 1.320, 0.525" rotation_euler="1.558, 3.141, 0.000"/>
+								<components>
+									<meta_mesh_component name="editor_plane_low">
+										<mesh name="editor_plane_low" material="sturgia_sign"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="signs" old_prefab_name="">
+								<transform position="2.707, -0.850, 0.533" rotation_euler="1.558, 3.141, 1.571"/>
+								<components>
+									<meta_mesh_component name="editor_plane_low">
+										<mesh name="editor_plane_low" material="battania_sign"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="signs" old_prefab_name="">
+								<transform position="5.167, -0.899, 0.467" rotation_euler="1.558, 3.141, 1.571"/>
+								<components>
+									<meta_mesh_component name="editor_plane_low">
+										<mesh name="editor_plane_low" material="khuzait_sign"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="signs" old_prefab_name="">
+								<transform position="2.703, 0.784, 0.533" rotation_euler="1.558, -3.141, 1.571"/>
+								<components>
+									<meta_mesh_component name="editor_plane_low">
+										<mesh name="editor_plane_low" material="vlandia_sign"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="shop_sign_merchantarmor_heavy" old_prefab_name="">
+						<transform position="3.859, 2.313, 2.675" rotation_euler="0.000, 0.000, 1.569" scale="1.250, 1.667, 1.000"/>
+						<components>
+							<meta_mesh_component name="shop_sign_merchantarmor_heavy"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_merchantarmor_heavy" old_prefab_name="">
+						<transform position="3.725, 2.313, 2.675" rotation_euler="0.000, 0.000, -1.571" scale="1.250, 1.667, 1.000"/>
+						<components>
+							<meta_mesh_component name="shop_sign_merchantarmor_heavy"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_prop_merchantarmory_medium_c" old_prefab_name="">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="c"/>
+						</tags>
+						<transform position="-0.060, -4.884, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<physics shape="bo_shop_prop_merchantarmory_medium_c"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantarmory_medium_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="brass_aserai_helmet_b_leather" old_prefab_name="">
+						<transform position="2.495, -1.040, -0.073" rotation_euler="0.000, 0.000, -1.575" scale="1.250, 1.667, 1.000"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="brass_aserai_helmet_b_leather"/>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="brass_aserai_helmet_b_closed" old_prefab_name="">
+						<transform position="2.867, -0.505, -0.727" non_orthogonal_rotation_mat="-0.539724, -0.841842, -0.000000, 0.940698, -0.339245, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.338, 1.597, 1.000"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="brass_aserai_helmet_b_closed"/>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="vlandian_faceguard_helmet_a" old_prefab_name="">
+						<transform position="-3.048, -0.560, -0.738" non_orthogonal_rotation_mat="-0.243614, 0.969872, 0.000000, -0.990166, -0.139900, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.267, 1.654, 1.000"/>
+						<components>
+							<meta_mesh_component name="vlandian_faceguard_helmet_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="khuzait_noble_helmet_with_feathers" old_prefab_name="">
+						<transform position="2.640, -3.695, -0.018" non_orthogonal_rotation_mat="0.305082, -0.952326, 0.000000, 0.984149, 0.177343, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.276, 1.647, 1.000"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="khuzait_lord_helmet_a"/>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="sturgian_lord_helmet_b" old_prefab_name="">
+						<transform position="-2.732, 0.201, -0.764" rotation_euler="0.000, 0.000, 0.000" scale="1.667, 1.250, 1.000"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="sturgian_lord_helmet_b"/>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="empire_helmet_with_metal_strips" old_prefab_name="">
+						<transform position="0.462, 0.356, -0.750" non_orthogonal_rotation_mat="0.915844, -0.401534, 0.000000, 0.614122, 0.787909, 0.045326, -0.052029, -0.066752, 0.996412" scale="1.571, 1.367, 1.002"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_lord_helmet_c_2"/>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="khuzait_noble_helmet_with_fur" old_prefab_name="">
+						<transform position="3.302, -2.649, -0.700" non_orthogonal_rotation_mat="-0.674083, -0.738655, -0.000000, 0.884827, -0.454206, 0.103822, -0.215355, 0.110547, 0.970258" scale="1.396, 1.535, 1.017"/>
+						<components>
+							<meta_mesh_component name="khuzait_lord_helmet_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="sturgian_helmet_closed" old_prefab_name="">
+						<transform position="-3.110, 0.403, -0.733" non_orthogonal_rotation_mat="0.946935, 0.321425, 0.000000, -0.516662, 0.856189, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.603, 1.330, 1.000"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="sturgian_helmet_closed"/>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="sturgian_helmet_b_close" old_prefab_name="">
+						<transform position="-0.345, 0.256, -0.753" non_orthogonal_rotation_mat="0.961519, 0.274737, 0.000000, -0.452888, 0.891567, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.620, 1.310, 1.000"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="sturgian_helmet_b_close"/>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="kettle_helmet_over_padded_cloth" old_prefab_name="">
+						<transform position="-3.047, -2.362, -0.752" non_orthogonal_rotation_mat="0.427466, 0.904031, 0.000000, -0.966401, 0.257038, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.303, 1.625, 1.000"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="vlandia_helmet_h_y"/>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="battania_earmuff_helmet_a_brnz" old_prefab_name="">
+						<transform position="-2.970, -3.990, -0.092" non_orthogonal_rotation_mat="-0.558106, 0.829769, 0.000000, -0.935298, -0.353861, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.345, 1.591, 1.000"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="battania_earmuff_helmet_a_brnz"/>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="battanian_noble_helmet_with_feather" old_prefab_name="">
+						<transform position="-2.290, -3.255, -0.058" rotation_euler="0.000, 0.000, 1.569" scale="1.250, 1.667, 1.000"/>
+						<components>
+							<meta_mesh_component name="battania_lord_helmet_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_guarded_lord_helmet" old_prefab_name="">
+						<transform position="3.037, 0.310, -0.732" non_orthogonal_rotation_mat="0.964089, 0.265580, 0.000000, -0.436584, 0.891482, 0.121053, 0.089633, -0.183025, 0.979014" scale="1.623, 1.300, 1.009"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="empire_lord_helmet_b"/>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="turban" old_prefab_name="">
+						<transform position="2.483, -1.864, -0.007" non_orthogonal_rotation_mat="-0.040251, -0.999190, -0.000000, 0.999743, -0.022654, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.250, 1.666, 1.000"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="aserai_helmet_i"/>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="pon_sturgianarmorstand" old_prefab_name="">
+						<transform position="-3.952, 0.830, 0.000" non_orthogonal_rotation_mat="-0.948334, 0.317273, 0.000000, -0.511187, -0.859470, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.161, 0.664, 0.500"/>
+						<physics shape="bo_wooden_platform_2_plank_e"/>
+						<components>
+							<meta_mesh_component name="wooden_platform_2_plank_e"/>
+						</components>
+						<children>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="1.711, -0.029, 1.084" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.660"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-1.819, -0.029, 1.084" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.660"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.536, -0.029, 2.461" rotation_euler="0.000, 1.571, 0.000" scale="0.400, 0.400, 0.700"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.582, -0.029, 3.079" rotation_euler="0.000, 1.571, 0.000" scale="0.400, 0.400, 1.000"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.033, -0.029, 3.377" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.100"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="sturgian_lamellar_base" old_prefab_name="">
+								<transform position="0.067, -0.096, 0.228" rotation_euler="0.000, 0.000, -3.141" scale="10.000, 2.000, 2.000"/>
+								<components>
+									<cloth_simulator>
+										<meta_mesh_component name="sturgian_lamellar_base"/>
+									</cloth_simulator>
+								</components>
+							</game_entity>
+							<game_entity name="sturgia_boots_a" old_prefab_name="">
+								<transform position="-0.052, -0.085, 0.228" rotation_euler="0.000, 0.000, 3.141" scale="10.000, 2.000, 2.000"/>
+								<components>
+									<meta_mesh_component name="sturgia_boots_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="sturgian_lord_helmet_a" old_prefab_name="">
+								<transform position="0.041, -0.029, 0.228" rotation_euler="0.000, 0.000, 3.141" scale="10.000, 2.000, 2.000"/>
+								<components>
+									<meta_mesh_component name="sturgian_lord_helmet_a"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="pon_khuzaitarmorstand" old_prefab_name="">
+						<transform position="4.117, -4.815, 0.000" non_orthogonal_rotation_mat="-0.505992, 0.862538, 0.000000, -0.949634, -0.313361, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.133, 0.803, 0.500"/>
+						<physics shape="bo_wooden_platform_2_plank_e"/>
+						<components>
+							<meta_mesh_component name="wooden_platform_2_plank_e"/>
+						</components>
+						<children>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="1.711, -0.029, 1.084" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.660"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-1.819, -0.029, 1.084" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.660"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.536, -0.029, 2.461" rotation_euler="0.000, 1.571, 0.000" scale="0.400, 0.400, 0.700"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.582, -0.029, 3.079" rotation_euler="0.000, 1.571, 0.000" scale="0.400, 0.400, 1.000"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.033, -0.029, 3.322" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.140"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="khuzait_curved_boots" old_prefab_name="">
+								<transform position="-0.019, -0.040, 0.240" rotation_euler="0.000, 0.000, 3.141" scale="10.000, 2.000, 2.000"/>
+								<components>
+									<meta_mesh_component name="khuzait_leather_boots"/>
+								</components>
+							</game_entity>
+							<game_entity name="khuzait_noble_helmet_with_neckguard" old_prefab_name="">
+								<transform position="-0.019, -0.040, 0.240" rotation_euler="0.000, 0.000, 3.141" scale="10.000, 2.000, 2.000"/>
+								<components>
+									<cloth_simulator>
+										<meta_mesh_component name="khuzait_lord_helmet_b"/>
+									</cloth_simulator>
+								</components>
+							</game_entity>
+							<game_entity name="khuzait_heavy_armor" old_prefab_name="">
+								<transform position="-0.019, -0.040, 0.240" rotation_euler="0.000, 0.000, 3.141" scale="10.000, 2.000, 2.000"/>
+								<components>
+									<cloth_simulator>
+										<meta_mesh_component name="khuzait_heavy_armor"/>
+									</cloth_simulator>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="pon_aseraiarmorstand" old_prefab_name="">
+						<transform position="4.251, 0.029, 0.000" non_orthogonal_rotation_mat="0.815995, 0.578059, 0.000000, -0.783143, 0.621841, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.149, 0.731, 0.500"/>
+						<physics shape="bo_wooden_platform_2_plank_e"/>
+						<components>
+							<meta_mesh_component name="wooden_platform_2_plank_e"/>
+						</components>
+						<children>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="1.711, -0.029, 1.084" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.660"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-1.819, -0.029, 1.084" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.660"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.536, -0.029, 2.461" rotation_euler="0.000, 1.571, 0.000" scale="0.400, 0.400, 0.700"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.582, -0.029, 3.079" rotation_euler="0.000, 1.571, 0.000" scale="0.400, 0.400, 1.000"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.109, -0.029, 3.276" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.100"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="eastern_leather_boots" old_prefab_name="">
+								<transform position="-0.038, -0.049, 0.170" rotation_euler="0.000, 0.000, 3.141" scale="10.000, 2.000, 2.000"/>
+								<components>
+									<meta_mesh_component name="plated_leather_armor_boot"/>
+								</components>
+							</game_entity>
+							<game_entity name="aserai_scale_armor_on_chain" old_prefab_name="">
+								<transform position="-0.033, -0.009, 0.157" non_orthogonal_rotation_mat="-0.999840, 0.017890, 0.000000, -0.408322, -0.912838, 0.000000, 0.000000, 0.000000, 1.000000" scale="9.962, 2.182, 2.000"/>
+								<components>
+									<cloth_simulator>
+										<meta_mesh_component name="aserai_scale_armor_on_chain"/>
+									</cloth_simulator>
+								</components>
+							</game_entity>
+							<game_entity name="trailed_desert_helmet" old_prefab_name="">
+								<transform position="0.007, -0.041, 0.139" non_orthogonal_rotation_mat="-0.999829, 0.018515, 0.000000, -0.420113, -0.907472, 0.000000, 0.000000, 0.000000, 1.000000" scale="9.959, 2.195, 2.000"/>
+								<components>
+									<cloth_simulator>
+										<meta_mesh_component name="aserai_helmet_g"/>
+									</cloth_simulator>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="pon_empirearmorstand" old_prefab_name="">
+						<transform position="3.629, 0.809, 0.000" non_orthogonal_rotation_mat="-0.896569, -0.442904, -0.000000, 0.659874, -0.751376, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.155, 0.695, 0.500"/>
+						<physics shape="bo_wooden_platform_2_plank_e"/>
+						<components>
+							<meta_mesh_component name="wooden_platform_2_plank_e"/>
+						</components>
+						<children>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="1.711, -0.029, 1.084" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.660"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-1.819, -0.029, 1.084" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.660"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.536, -0.029, 2.461" rotation_euler="0.000, 1.571, 0.000" scale="0.400, 0.400, 0.700"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.582, -0.029, 3.079" rotation_euler="0.000, 1.571, 0.000" scale="0.400, 0.400, 1.000"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.033, -0.029, 3.334" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.140"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="lamellar_plate_boots" old_prefab_name="">
+								<transform position="-0.051, -0.062, 0.225" rotation_euler="0.000, 0.000, 3.141" scale="10.000, 2.000, 2.000"/>
+								<components>
+									<meta_mesh_component name="imperial_boots"/>
+								</components>
+							</game_entity>
+							<game_entity name="lamellar_with_scale_skirt" old_prefab_name="">
+								<transform position="-0.142, -0.047, 0.208" rotation_euler="0.000, 0.000, 3.141" scale="10.000, 2.000, 2.000"/>
+								<components>
+									<cloth_simulator>
+										<meta_mesh_component name="imperial_lamellar_c"/>
+									</cloth_simulator>
+								</components>
+							</game_entity>
+							<game_entity name="imperial_goggled_helmet" old_prefab_name="">
+								<transform position="-0.128, -0.027, 0.225" rotation_euler="0.000, 0.000, 3.141" scale="10.000, 2.000, 2.000"/>
+								<components>
+									<cloth_simulator>
+										<meta_mesh_component name="imperial_helmet"/>
+									</cloth_simulator>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="pon_vlandiaarmorstand" old_prefab_name="">
+						<transform position="-4.407, 0.228, 0.000" non_orthogonal_rotation_mat="0.894244, -0.447580, 0.000000, 0.664744, 0.747071, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.155, 0.696, 0.500"/>
+						<physics shape="bo_wooden_platform_2_plank_e"/>
+						<components>
+							<meta_mesh_component name="wooden_platform_2_plank_e"/>
+						</components>
+						<children>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="1.711, -0.029, 1.084" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.660"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-1.819, -0.029, 1.084" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.660"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.536, -0.029, 2.461" rotation_euler="0.000, 1.571, 0.000" scale="0.400, 0.400, 0.700"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.582, -0.029, 3.079" rotation_euler="0.000, 1.571, 0.000" scale="0.400, 0.400, 1.000"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.033, -0.029, 3.322" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.140"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="coat_of_plates_over_mail" old_prefab_name="">
+								<transform position="-0.010, -0.069, 0.223" rotation_euler="0.000, 0.000, 3.141" scale="10.000, 2.000, 2.000"/>
+								<components>
+									<meta_mesh_component name="tunic_ironplate_armor"/>
+								</components>
+							</game_entity>
+							<game_entity name="mail_cavalier_boots" old_prefab_name="">
+								<transform position="-0.072, -0.064, 0.211" rotation_euler="0.000, 0.000, 3.141" scale="10.000, 2.000, 2.000"/>
+								<components>
+									<meta_mesh_component name="cav_boots_reinforced"/>
+								</components>
+							</game_entity>
+							<game_entity name="nasal_helmet_over_mail" old_prefab_name="">
+								<transform position="-0.043, -0.046, 0.231" rotation_euler="0.000, 0.000, -3.141" scale="10.000, 2.000, 2.000"/>
+								<components>
+									<cloth_simulator>
+										<meta_mesh_component name="vlandia_helmet_p_v"/>
+									</cloth_simulator>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="pon_battaniaarmorstand" old_prefab_name="">
+						<transform position="-4.242, -4.624, 0.000" non_orthogonal_rotation_mat="-0.862848, -0.505463, -0.000000, 0.721310, -0.692612, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.152, 0.711, 0.500"/>
+						<physics shape="bo_wooden_platform_2_plank_e"/>
+						<components>
+							<meta_mesh_component name="wooden_platform_2_plank_e"/>
+						</components>
+						<children>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="1.711, -0.029, 1.084" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.660"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-1.819, -0.029, 1.084" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.660"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.536, -0.029, 2.461" rotation_euler="0.000, 1.571, 0.000" scale="0.400, 0.400, 0.700"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.582, -0.029, 3.079" rotation_euler="0.000, 1.571, 0.000" scale="0.400, 0.400, 1.000"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_pole_3m" old_prefab_name="">
+								<transform position="-0.033, -0.029, 3.367" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 0.400, 0.100"/>
+								<physics shape="bo_bd_pole_3m" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="bd_pole_3m"/>
+								</components>
+							</game_entity>
+							<game_entity name="battanian_chainmail_armor_d" old_prefab_name="">
+								<transform position="-0.111, -0.078, 0.207" non_orthogonal_rotation_mat="-0.999976, 0.006991, 0.000000, -0.172160, -0.985069, 0.000000, 0.000000, 0.000000, 1.000000" scale="9.994, 2.029, 2.000"/>
+								<components>
+									<cloth_simulator>
+										<meta_mesh_component name="battanian_chainmail_armor_d"/>
+									</cloth_simulator>
+								</components>
+							</game_entity>
+							<game_entity name="battania_earmuff_helmet_a_brnz" old_prefab_name="">
+								<transform position="-0.052, -0.105, 0.207" non_orthogonal_rotation_mat="-0.999936, -0.011325, -0.000000, 0.272439, -0.962173, 0.000000, 0.000000, 0.000000, 1.000000" scale="9.985, 2.075, 2.000"/>
+								<components>
+									<cloth_simulator>
+										<meta_mesh_component name="battania_earmuff_helmet_a_brnz"/>
+									</cloth_simulator>
+								</components>
+							</game_entity>
+							<game_entity name="battania_leather_boots" old_prefab_name="">
+								<transform position="-0.118, -0.082, 0.207" rotation_euler="0.000, 0.000, 3.141" scale="10.000, 2.000, 2.000"/>
+								<components>
+									<meta_mesh_component name="battania_leather_boots_a"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

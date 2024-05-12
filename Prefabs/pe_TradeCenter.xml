@@ -1,0 +1,214 @@
+<prefabs>
+	<game_entity name="pe_TradeCenter" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_TradeCenter">
+				<variables>
+					<variable name="XmlFile" value="exampletradecenter"/>
+					<variable name="RandomizeDelayMinutes" value="60"/>
+					<variable name="Distance" value="5.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="shop_prop_merchantarmory_b" old_prefab_name="" mobility="1">
+				<transform position="2.008, 1.084, -0.027" rotation_euler="0.000, 0.000, 2.608"/>
+				<physics shape="bo_shop_prop_merchantarmory_b"/>
+				<components>
+					<meta_mesh_component name="shop_prop_merchantarmory_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="hung_fur_b" old_prefab_name="" mobility="1">
+				<transform position="-2.492, -1.447, 2.938" rotation_euler="0.000, 0.000, -1.894"/>
+				<components>
+					<meta_mesh_component name="hung_fur_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="hung_fur_a" old_prefab_name="" mobility="1">
+				<transform position="-1.946, 2.296, 1.827" rotation_euler="0.141, 0.054, -0.550"/>
+				<components>
+					<meta_mesh_component name="hung_fur_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wall_pouches" old_prefab_name="" mobility="1">
+				<transform position="2.685, -1.751, 1.728" rotation_euler="0.000, 0.000, 2.380"/>
+				<components>
+					<meta_mesh_component name="bd_wall_pouches"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+				<transform position="2.150, 3.052, 0.252" rotation_euler="-1.484, 2.826, -0.248"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_chest_c" old_prefab_name="" mobility="1">
+				<transform position="-2.047, -0.574, 0.266" rotation_euler="0.083, 0.000, 1.479"/>
+				<physics shape="bo_bd_chest_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_chest_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_stones" old_prefab_name="" mobility="1">
+				<transform position="0.590, -1.782, 0.000" rotation_euler="-0.037, 0.126, -0.108"/>
+				<physics shape="bo_merchandise_stones"/>
+				<components>
+					<meta_mesh_component name="merchandise_stones"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_raw_silk" old_prefab_name="" mobility="1">
+				<transform position="-1.905, 1.716, 0.276" rotation_euler="0.000, 0.000, 0.885"/>
+				<physics shape="bo_merchandise_raw_silk"/>
+				<components>
+					<meta_mesh_component name="merchandise_raw_silk"/>
+				</components>
+			</game_entity>
+			<game_entity name="crate_b_lid" old_prefab_name="" mobility="1">
+				<transform position="0.334, 2.717, 0.965" rotation_euler="0.000, 0.000, -0.097"/>
+				<physics shape="bo_crate_a_lid"/>
+				<components>
+					<meta_mesh_component name="crate_b_lid"/>
+				</components>
+			</game_entity>
+			<game_entity name="crate_a" old_prefab_name="" mobility="1">
+				<transform position="1.725, -1.888, 0.629" rotation_euler="0.000, 0.000, -0.170"/>
+				<physics shape="bo_crate_a"/>
+				<components>
+					<meta_mesh_component name="crate_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="crate_a" old_prefab_name="" mobility="1">
+				<transform position="1.754, -1.890, -0.073" rotation_euler="0.000, 0.000, 0.010"/>
+				<physics shape="bo_crate_a"/>
+				<components>
+					<meta_mesh_component name="crate_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_iron_a" old_prefab_name="" mobility="1">
+				<transform position="-1.972, 2.887, 0.283" rotation_euler="0.000, 0.000, 0.249"/>
+				<physics shape="bo_merchandise_gold"/>
+				<components>
+					<meta_mesh_component name="merchandise_iron_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_wool" old_prefab_name="" mobility="1">
+				<transform position="-2.754, 2.172, 0.333" rotation_euler="0.000, 0.000, -1.888"/>
+				<physics shape="bo_merchandise_wool"/>
+				<components>
+					<meta_mesh_component name="merchandise_wool"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_velvet" old_prefab_name="" mobility="1">
+				<transform position="1.533, 2.604, 1.104" rotation_euler="0.000, 0.000, 1.533"/>
+				<physics shape="bo_merchandise_velvet"/>
+				<components>
+					<meta_mesh_component name="merchandise_velvet"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_pottery" old_prefab_name="" mobility="1">
+				<transform position="3.542, 1.648, 0.698" rotation_euler="0.000, 0.000, 1.707"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="merchandise_pottery"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_cloth_b" old_prefab_name="" mobility="1">
+				<transform position="1.218, 2.609, 0.965" rotation_euler="0.000, 0.000, -0.437"/>
+				<physics shape="bo_merchandise_cloth_b"/>
+				<components>
+					<meta_mesh_component name="merchandise_cloth_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_cloth_a" old_prefab_name="" mobility="1">
+				<transform position="1.859, 2.656, 0.965" rotation_euler="0.000, 0.000, -0.480"/>
+				<physics shape="bo_merchandise_cloth_a"/>
+				<components>
+					<meta_mesh_component name="merchandise_cloth_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_table_d" old_prefab_name="" mobility="1">
+				<transform position="3.610, 0.675, -0.099" rotation_euler="0.000, 0.000, -1.569"/>
+				<physics shape="bo_bd_table_d" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_table_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_table_c" old_prefab_name="" mobility="1">
+				<transform position="-3.054, 0.186, 0.373" rotation_euler="0.000, 0.000, 1.415"/>
+				<physics shape="bo_bd_table_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_table_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_table_trunk_a" old_prefab_name="" mobility="1">
+				<transform position="0.434, 2.743, 0.155" rotation_euler="0.000, 0.000, -0.036"/>
+				<physics shape="bo_bd_table_trunk_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_table_trunk_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_street_tent_a" old_prefab_name="" mobility="1">
+				<transform position="0.202, -0.027, -0.030" rotation_euler="0.000, 0.000, 3.090"/>
+				<physics shape="bo_aserai_street_tent_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="aserai_street_tent_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="crate_b" old_prefab_name="" mobility="1">
+				<transform position="-3.238, -0.716, 1.169" rotation_euler="0.000, 0.000, 1.359"/>
+				<physics shape="bo_crate_a"/>
+				<components>
+					<meta_mesh_component name="crate_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="crate_b" old_prefab_name="" mobility="1">
+				<transform position="-0.782, 2.759, 0.965" rotation_euler="0.000, 0.000, -0.041"/>
+				<physics shape="bo_crate_a"/>
+				<components>
+					<meta_mesh_component name="crate_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="crate_c" old_prefab_name="" mobility="1">
+				<transform position="3.636, 0.349, 0.698" rotation_euler="0.000, 0.000, -1.627"/>
+				<physics shape="bo_crate_c"/>
+				<components>
+					<meta_mesh_component name="crate_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_barrel_a" old_prefab_name="" mobility="1">
+				<transform position="-1.562, 1.642, 0.000" rotation_euler="0.000, 0.000, -0.037"/>
+				<physics shape="bo_bd_barrel_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_barrel_a" old_prefab_name="" mobility="1">
+				<transform position="3.372, 2.461, 0.000" rotation_euler="0.000, 0.000, -0.037"/>
+				<physics shape="bo_bd_barrel_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="crate_b" old_prefab_name="" mobility="1">
+				<transform position="-2.997, 0.905, 1.170" rotation_euler="0.001, 0.000, 1.383"/>
+				<physics shape="bo_crate_a"/>
+				<components>
+					<meta_mesh_component name="crate_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_pottery" old_prefab_name="" mobility="1">
+				<transform position="0.313, 2.765, 1.039" rotation_euler="0.000, 0.002, 2.518"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="merchandise_pottery"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

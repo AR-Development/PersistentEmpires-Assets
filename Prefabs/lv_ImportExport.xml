@@ -1,0 +1,700 @@
+<prefabs>
+	<game_entity name="lv_ImportExport" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_ImportExport">
+				<variables>
+					<variable name="XmlFile" value="importexport"/>
+					<variable name="Distance" value="6.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="bd_hay_cart_a" old_prefab_name="" mobility="1">
+				<transform position="-0.175, 1.239, 0.000" rotation_euler="0.000, 0.000, -1.523"/>
+				<physics shape="bo_bd_hay_cart_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_hay_cart_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_a" old_prefab_name="" mobility="1">
+				<transform position="0.041, 0.337, 1.092" rotation_euler="-1.156, -0.008, 0.000" scale="0.819, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_a" old_prefab_name="" mobility="1">
+				<transform position="0.041, 0.246, 1.432" rotation_euler="-1.340, -0.008, 0.000" scale="0.819, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_a" old_prefab_name="" mobility="1">
+				<transform position="0.041, 0.190, 1.796" rotation_euler="-1.448, -0.008, 0.000" scale="0.819, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_a" old_prefab_name="" mobility="1">
+				<transform position="0.040, 2.331, 1.432" rotation_euler="-1.340, -0.008, -3.110" scale="0.819, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_a" old_prefab_name="" mobility="1">
+				<transform position="0.043, 2.239, 1.092" rotation_euler="-1.156, -0.008, -3.110" scale="0.819, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_a" old_prefab_name="" mobility="1">
+				<transform position="1.522, 1.287, 1.058" rotation_euler="-1.539, 0.020, -1.547" scale="0.489, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_a" old_prefab_name="" mobility="1">
+				<transform position="1.522, 1.339, 1.795" rotation_euler="1.539, 0.023, 1.598" scale="-0.550, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_plank_a" old_prefab_name="" mobility="1">
+				<transform position="-1.347, 0.357, 1.530" rotation_euler="0.000, 0.000, 1.621" scale="0.253, 0.253, 0.253"/>
+				<physics shape="bo_module_wall_plank_a"/>
+				<components>
+					<meta_mesh_component name="module_wall_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_plank_a" old_prefab_name="" mobility="1">
+				<transform position="1.445, 0.335, 1.535" rotation_euler="0.000, 0.000, -1.717" scale="0.253, 0.253, 0.253"/>
+				<physics shape="bo_module_wall_plank_a"/>
+				<components>
+					<meta_mesh_component name="module_wall_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_f_column" old_prefab_name="" mobility="1">
+				<transform position="-1.336, 0.343, 2.894" rotation_euler="0.000, 1.546, 0.000" scale="0.454, 0.454, 0.560"/>
+				<physics shape="bo_wooden_platform_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="arab_awning_b2" old_prefab_name="" mobility="1">
+				<transform position="0.029, 0.262, 2.522" rotation_euler="0.151, 0.000, 0.000" scale="0.730, 0.585, 0.614"/>
+				<physics shape="bo_arab_awning_b2" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="arab_awning_b2"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_house_end_attick_a" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_module_european_house_end_attick_a">
+				<transform position="-1.329, 1.241, 3.224" rotation_euler="0.000, 0.000, 1.568" scale="0.138, 0.161, 0.098"/>
+				<physics shape="bo_module_european_house_end_attick_a"/>
+				<components>
+					<meta_mesh_component name="module_european_house_end_attick_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_house_end_attick_a" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_module_european_house_end_attick_a">
+				<transform position="1.454, 1.333, 3.270" rotation_euler="0.000, 0.000, -1.573" scale="0.144, 0.161, 0.098"/>
+				<physics shape="bo_module_european_house_end_attick_a"/>
+				<components>
+					<meta_mesh_component name="module_european_house_end_attick_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_f_column" old_prefab_name="" mobility="1">
+				<transform position="1.469, 2.287, 1.000" rotation_euler="0.000, 0.000, 0.000" scale="0.386, 0.386, 0.386"/>
+				<physics shape="bo_wooden_platform_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_f_column" old_prefab_name="" mobility="1">
+				<transform position="-1.322, 2.222, 0.861" rotation_euler="0.000, 0.000, 0.000" scale="0.386, 0.386, 0.386"/>
+				<physics shape="bo_wooden_platform_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_house_top_b" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_module_european_house_getty_a">
+				<transform position="1.009, 2.267, 2.296" rotation_euler="0.007, 0.172, -1.594" scale="0.114, 0.114, 0.114"/>
+				<physics shape="bo_module_european_house_top_a"/>
+				<components>
+					<meta_mesh_component name="module_european_house_top_b">
+						<mesh name="module_european_house_top_b.0" material="editor_gizmo" argument="1.000, 0.000, 0.000, 0.000" argument2="1.000, 0.500, 0.750, 0.000"/>
+						<mesh name="module_european_house_top_b.3" material="editor_gizmo" argument="1.000, 0.000, 0.000, 0.000" argument2="1.000, 0.500, 0.750, 0.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_house_top_b" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_module_european_house_getty_a">
+				<transform position="0.016, 2.223, 2.296" rotation_euler="0.007, 0.172, -1.528" scale="0.114, 0.114, 0.114"/>
+				<physics shape="bo_module_european_house_top_a"/>
+				<components>
+					<meta_mesh_component name="module_european_house_top_b">
+						<mesh name="module_european_house_top_b.0" material="editor_gizmo" argument="1.000, 0.000, 0.000, 0.000" argument2="1.000, 0.500, 0.750, 0.000"/>
+						<mesh name="module_european_house_top_b.3" material="editor_gizmo" argument="1.000, 0.000, 0.000, 0.000" argument2="1.000, 0.500, 0.750, 0.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_house_top_b" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_module_european_house_getty_a">
+				<transform position="-0.961, 2.175, 2.296" rotation_euler="0.007, 0.172, -1.546" scale="0.114, 0.114, 0.114"/>
+				<physics shape="bo_module_european_house_top_a"/>
+				<components>
+					<meta_mesh_component name="module_european_house_top_b">
+						<mesh name="module_european_house_top_b.0" material="editor_gizmo" argument="1.000, 0.000, 0.000, 0.000" argument2="1.000, 0.500, 0.750, 0.000"/>
+						<mesh name="module_european_house_top_b.3" material="editor_gizmo" argument="1.000, 0.000, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_house_top_b" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_module_european_house_getty_a">
+				<transform position="0.095, 0.373, 2.284" rotation_euler="0.007, 0.172, 1.598" scale="0.114, 0.114, 0.114"/>
+				<physics shape="bo_module_european_house_top_a"/>
+				<components>
+					<meta_mesh_component name="module_european_house_top_b">
+						<mesh name="module_european_house_top_b.0" material="editor_gizmo" argument="1.000, 0.000, 0.000, 0.000" argument2="1.000, 0.500, 0.750, 0.000"/>
+						<mesh name="module_european_house_top_b.3" material="editor_gizmo" argument="1.000, 0.000, 0.000, 0.000" argument2="1.000, 0.500, 0.750, 0.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_house_top_b" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_module_european_house_getty_a">
+				<transform position="-0.899, 0.344, 2.284" rotation_euler="0.007, 0.172, 1.533" scale="0.114, 0.114, 0.114"/>
+				<physics shape="bo_module_european_house_top_a"/>
+				<components>
+					<meta_mesh_component name="module_european_house_top_b">
+						<mesh name="module_european_house_top_b.0" material="editor_gizmo" argument="1.000, 0.000, 0.000, 0.000" argument2="1.000, 0.500, 0.750, 0.000"/>
+						<mesh name="module_european_house_top_b.3" material="editor_gizmo" argument="1.000, 0.000, 0.000, 0.000" argument2="1.000, 0.500, 0.750, 0.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_house_top_b" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_module_european_house_getty_a">
+				<transform position="1.072, 0.407, 2.284" rotation_euler="0.007, 0.172, 1.580" scale="0.114, 0.114, 0.114"/>
+				<physics shape="bo_module_european_house_top_a"/>
+				<components>
+					<meta_mesh_component name="module_european_house_top_b">
+						<mesh name="module_european_house_top_b.0" material="editor_gizmo" argument="1.000, 0.000, 0.000, 0.000" argument2="1.000, 0.500, 0.750, 0.000"/>
+						<mesh name="module_european_house_top_b.3" material="editor_gizmo" argument="1.000, 0.000, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_a" old_prefab_name="" mobility="1">
+				<transform position="0.039, 2.386, 1.796" rotation_euler="-1.448, -0.008, -3.110" scale="0.819, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_village_house_c" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_module_european_village_house_c">
+				<transform position="-0.097, 2.169, 2.415" rotation_euler="0.010, 0.112, -1.533" scale="0.292, 0.510, 0.134"/>
+				<physics shape="bo_module_european_village_house_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_european_village_house_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_a" old_prefab_name="" mobility="1">
+				<transform position="1.522, 1.339, 2.163" rotation_euler="-1.539, 0.023, -1.544" scale="0.554, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_a" old_prefab_name="" mobility="1">
+				<transform position="1.522, 1.339, 2.518" rotation_euler="1.539, 0.023, 1.598" scale="-0.550, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_a" old_prefab_name="" mobility="1">
+				<transform position="1.522, 1.339, 2.806" rotation_euler="-1.539, -0.023, -1.544" scale="-0.550, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="crate_b" old_prefab_name="" mobility="1">
+				<transform position="-2.374, -0.137, 0.000" rotation_euler="0.000, 0.000, -2.502"/>
+				<physics shape="bo_crate_a"/>
+				<components>
+					<meta_mesh_component name="crate_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="crate_b" old_prefab_name="" mobility="1">
+				<transform position="-3.260, -0.875, 0.000" rotation_euler="0.000, 0.000, -2.120"/>
+				<physics shape="bo_crate_a"/>
+				<components>
+					<meta_mesh_component name="crate_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="market_cabbage_crate" old_prefab_name="" mobility="1">
+				<transform position="-2.700, -0.697, 0.702" rotation_euler="0.000, 0.000, 1.363"/>
+				<children>
+					<game_entity name="foods_cabbage_a" old_prefab_name="" mobility="1">
+						<transform position="0.171, -0.017, 0.243" rotation_euler="0.248, 0.726, -0.404" scale="1.040, 1.040, 1.040"/>
+						<physics shape="bo_foods_cabbage_a"/>
+						<components>
+							<meta_mesh_component name="foods_cabbage_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_cabbage_a" old_prefab_name="" mobility="1">
+						<transform position="-0.034, 0.016, 0.216" rotation_euler="0.585, 0.000, -0.156" scale="0.945, 0.945, 0.945"/>
+						<physics shape="bo_foods_cabbage_a"/>
+						<components>
+							<meta_mesh_component name="foods_cabbage_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_cabbage_a" old_prefab_name="" mobility="1">
+						<transform position="-0.241, -0.154, 0.314" rotation_euler="-1.301, 0.291, 2.739" scale="0.831, 0.831, 0.831"/>
+						<physics shape="bo_foods_cabbage_a"/>
+						<components>
+							<meta_mesh_component name="foods_cabbage_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_cabbage_a" old_prefab_name="" mobility="1">
+						<transform position="-0.292, 0.191, 0.378" rotation_euler="-0.189, -2.880, 1.546" scale="0.831, 0.831, 0.831"/>
+						<physics shape="bo_foods_cabbage_a"/>
+						<components>
+							<meta_mesh_component name="foods_cabbage_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_cabbage_a" old_prefab_name="" mobility="1">
+						<transform position="-0.409, -0.049, 0.214" rotation_euler="-0.318, 1.341, -0.090" scale="0.831, 0.831, 0.831"/>
+						<physics shape="bo_foods_cabbage_a"/>
+						<components>
+							<meta_mesh_component name="foods_cabbage_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_cabbage_a" old_prefab_name="" mobility="1">
+						<transform position="-0.044, -0.228, 0.254" rotation_euler="-0.318, 1.341, -0.090" scale="0.953, 0.953, 0.953"/>
+						<physics shape="bo_foods_cabbage_a"/>
+						<components>
+							<meta_mesh_component name="foods_cabbage_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_cabbage_a" old_prefab_name="" mobility="1">
+						<transform position="-0.033, 0.138, 0.229" rotation_euler="-0.338, 1.657, 0.070" scale="0.953, 0.953, 0.953"/>
+						<physics shape="bo_foods_cabbage_a"/>
+						<components>
+							<meta_mesh_component name="foods_cabbage_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_cabbage_a" old_prefab_name="" mobility="1">
+						<transform position="-0.284, 0.022, 0.110" rotation_euler="-1.423, -0.706, -1.640" scale="1.055, 1.055, 1.055"/>
+						<physics shape="bo_foods_cabbage_a"/>
+						<components>
+							<meta_mesh_component name="foods_cabbage_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_cabbage_a" old_prefab_name="" mobility="1">
+						<transform position="-0.207, -0.204, 0.332" rotation_euler="-0.303, -3.129, 1.601" scale="1.055, 1.055, 1.055"/>
+						<physics shape="bo_foods_cabbage_a"/>
+						<components>
+							<meta_mesh_component name="foods_cabbage_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_cabbage_a" old_prefab_name="" mobility="1">
+						<transform position="-0.059, -0.003, 0.071" rotation_euler="-0.163, -1.323, 2.929" scale="1.055, 1.055, 1.055"/>
+						<physics shape="bo_foods_cabbage_a"/>
+						<components>
+							<meta_mesh_component name="foods_cabbage_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_cabbage_a" old_prefab_name="" mobility="1">
+						<transform position="0.184, -0.273, 0.078" rotation_euler="-0.031, -1.277, -2.886" scale="1.155, 1.155, 1.155"/>
+						<physics shape="bo_foods_cabbage_a"/>
+						<components>
+							<meta_mesh_component name="foods_cabbage_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_cabbage_a" old_prefab_name="" mobility="1">
+						<transform position="0.244, 0.175, 0.078" rotation_euler="0.095, -1.077, 2.325"/>
+						<physics shape="bo_foods_cabbage_a"/>
+						<components>
+							<meta_mesh_component name="foods_cabbage_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_b_empty" old_prefab_name="" mobility="1">
+						<transform position="0.020, -0.042, 0.015" rotation_euler="0.000, 0.000, 3.101" scale="1.000, 0.939, 0.611"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_b_empty"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="crate_c" old_prefab_name="" mobility="1">
+				<transform position="-1.046, -0.360, 0.000" rotation_euler="0.000, 0.000, -3.076"/>
+				<physics shape="bo_crate_c"/>
+				<components>
+					<meta_mesh_component name="crate_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="crate_b" old_prefab_name="" mobility="1">
+				<transform position="2.425, -0.063, 0.000" rotation_euler="0.000, 0.000, 2.502"/>
+				<physics shape="bo_crate_a"/>
+				<components>
+					<meta_mesh_component name="crate_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="crate_a" old_prefab_name="" mobility="1">
+				<transform position="3.196, -0.970, 0.000" rotation_euler="0.000, 0.000, -2.752"/>
+				<physics shape="bo_crate_a"/>
+				<components>
+					<meta_mesh_component name="crate_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="market_apple_crate" old_prefab_name="" mobility="1">
+				<transform position="2.476, -0.179, 0.702"/>
+				<physics shape="bo_market_apple_crate"/>
+				<components>
+					<meta_mesh_component name="market_apple_crate"/>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="3.151, -1.049, 0.733" rotation_euler="0.000, 0.000, -1.397"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_barrel_a" old_prefab_name="" mobility="1">
+				<transform position="2.285, 1.115, 0.000"/>
+				<physics shape="bo_bd_barrel_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_barrel_a" old_prefab_name="" mobility="1">
+				<transform position="2.233, 2.056, 0.000"/>
+				<physics shape="bo_bd_barrel_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="market_pitchforks" old_prefab_name="" mobility="1">
+				<transform position="3.478, 0.037, 0.000" rotation_euler="0.000, 0.000, -2.572"/>
+				<children>
+					<game_entity name="bd_barrel_b" old_prefab_name="" mobility="1">
+						<transform position="0.086, 0.002, -0.016" rotation_euler="0.000, 0.000, 0.817"/>
+						<physics shape="bo_bd_barrel_b" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_barrel_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_ironware_pitchfork" old_prefab_name="" mobility="1">
+						<transform position="-0.072, -0.193, -0.027" rotation_euler="0.168, 0.019, 1.167"/>
+						<physics shape="bo_merchandise_ironware_pitchfork"/>
+						<components>
+							<meta_mesh_component name="merchandise_ironware_pitchfork"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_ironware_pitchfork" old_prefab_name="" mobility="1">
+						<transform position="0.167, -0.023, -0.027" rotation_euler="0.082, 0.000, 1.707"/>
+						<physics shape="bo_merchandise_ironware_pitchfork"/>
+						<components>
+							<meta_mesh_component name="merchandise_ironware_pitchfork"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_ironware_pitchfork" old_prefab_name="" mobility="1">
+						<transform position="0.029, -0.197, -0.027" rotation_euler="0.210, 0.151, 2.066"/>
+						<physics shape="bo_merchandise_ironware_pitchfork"/>
+						<components>
+							<meta_mesh_component name="merchandise_ironware_pitchfork"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_ironware_pitchfork" old_prefab_name="" mobility="1">
+						<transform position="0.167, -0.193, -0.027" rotation_euler="0.122, 0.009, 1.865"/>
+						<physics shape="bo_merchandise_ironware_pitchfork"/>
+						<components>
+							<meta_mesh_component name="merchandise_ironware_pitchfork"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_ironware_pitchfork" old_prefab_name="" mobility="1">
+						<transform position="0.062, -0.193, -0.027" rotation_euler="0.122, 0.009, 1.457"/>
+						<physics shape="bo_merchandise_ironware_pitchfork"/>
+						<components>
+							<meta_mesh_component name="merchandise_ironware_pitchfork"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_ironware_pitchfork" old_prefab_name="" mobility="1">
+						<transform position="0.167, 0.093, -0.027" rotation_euler="0.122, 0.009, 1.865"/>
+						<physics shape="bo_merchandise_ironware_pitchfork"/>
+						<components>
+							<meta_mesh_component name="merchandise_ironware_pitchfork"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_ironware_pitchfork" old_prefab_name="" mobility="1">
+						<transform position="0.018, 0.093, -0.027" rotation_euler="0.154, 0.037, 2.455"/>
+						<physics shape="bo_merchandise_ironware_pitchfork"/>
+						<components>
+							<meta_mesh_component name="merchandise_ironware_pitchfork"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_ironware_pitchfork" old_prefab_name="" mobility="1">
+						<transform position="0.089, 0.012, -0.027" rotation_euler="0.154, 0.037, 2.455"/>
+						<physics shape="bo_merchandise_ironware_pitchfork"/>
+						<components>
+							<meta_mesh_component name="merchandise_ironware_pitchfork"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_ironware_pitchfork" old_prefab_name="" mobility="1">
+						<transform position="-0.001, 0.059, -0.027" rotation_euler="0.154, 0.037, 2.800"/>
+						<physics shape="bo_merchandise_ironware_pitchfork"/>
+						<components>
+							<meta_mesh_component name="merchandise_ironware_pitchfork"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_ironware_pitchfork" old_prefab_name="" mobility="1">
+						<transform position="0.040, -0.150, -0.027" rotation_euler="0.264, 0.077, -3.069"/>
+						<physics shape="bo_merchandise_ironware_pitchfork"/>
+						<components>
+							<meta_mesh_component name="merchandise_ironware_pitchfork"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_table_b" old_prefab_name="" mobility="1">
+				<transform position="0.290, -2.387, 0.000" rotation_euler="0.000, 0.000, -0.014"/>
+				<physics shape="bo_bd_table_b" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_table_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_axe_a" old_prefab_name="" mobility="1">
+				<transform position="-1.207, -2.649, 0.799" rotation_euler="0.000, 0.000, 0.320"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_axe_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_iron_b" old_prefab_name="" mobility="1">
+				<transform position="1.553, -2.026, 0.799" rotation_euler="0.000, 0.000, -0.549"/>
+				<components>
+					<meta_mesh_component name="merchandise_iron_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_iron_b" old_prefab_name="" mobility="1">
+				<transform position="1.519, -2.262, 0.799" rotation_euler="0.000, 0.000, -0.005"/>
+				<components>
+					<meta_mesh_component name="merchandise_iron_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_gold_b" old_prefab_name="" mobility="1">
+				<transform position="1.572, -2.520, 0.799"/>
+				<components>
+					<meta_mesh_component name="merchandise_gold_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="log_beech_e" old_prefab_name="" mobility="1">
+				<transform position="-2.957, -1.965, 0.000" rotation_euler="0.000, 0.000, -0.630"/>
+				<physics shape="bo_log_beech_e"/>
+				<components>
+					<meta_mesh_component name="log_beech_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="log_beech_e" old_prefab_name="" mobility="1">
+				<transform position="-2.630, -2.165, 0.000" rotation_euler="0.000, 0.000, -0.630"/>
+				<physics shape="bo_log_beech_e"/>
+				<components>
+					<meta_mesh_component name="log_beech_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="log_beech_e" old_prefab_name="" mobility="1">
+				<transform position="-2.303, -2.339, 0.000" rotation_euler="0.000, 0.000, -0.630"/>
+				<physics shape="bo_log_beech_e"/>
+				<components>
+					<meta_mesh_component name="log_beech_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="log_beech_e" old_prefab_name="" mobility="1">
+				<transform position="-2.819, -2.076, 0.285" rotation_euler="0.000, 0.000, -0.630"/>
+				<physics shape="bo_log_beech_e"/>
+				<components>
+					<meta_mesh_component name="log_beech_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="log_beech_e" old_prefab_name="" mobility="1">
+				<transform position="-2.495, -2.264, 0.290" rotation_euler="0.000, 0.000, -0.630"/>
+				<physics shape="bo_log_beech_e"/>
+				<components>
+					<meta_mesh_component name="log_beech_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="log_beech_e" old_prefab_name="" mobility="1">
+				<transform position="-2.686, -2.189, 0.573" rotation_euler="0.000, 0.000, -0.630"/>
+				<physics shape="bo_log_beech_e"/>
+				<components>
+					<meta_mesh_component name="log_beech_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_wooden_stick" old_prefab_name="" mobility="1">
+				<transform position="0.009, -2.273, 0.799" rotation_euler="0.000, 0.000, -1.830"/>
+				<physics shape="bo_merchandise_wooden_stick"/>
+				<components>
+					<meta_mesh_component name="merchandise_wooden_stick"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_wooden_stick" old_prefab_name="" mobility="1">
+				<transform position="-0.106, -2.537, 0.799" rotation_euler="0.000, 0.000, -1.830"/>
+				<physics shape="bo_merchandise_wooden_stick"/>
+				<components>
+					<meta_mesh_component name="merchandise_wooden_stick"/>
+				</components>
+			</game_entity>
+			<game_entity name="digging_axe" old_prefab_name="" mobility="1">
+				<transform position="1.274, -2.434, 0.812" rotation_euler="-0.182, -1.561, -1.001" scale="0.700, 0.700, 0.700"/>
+				<components>
+					<meta_mesh_component name="bd_pickaxe_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pickaxe_c" old_prefab_name="" mobility="1">
+				<transform position="1.039, -2.501, 0.678" rotation_euler="-1.562, 0.000, 0.650"/>
+				<physics shape="bo_bd_pickaxe_c"/>
+				<components>
+					<meta_mesh_component name="bd_pickaxe_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pickaxe_a" old_prefab_name="" mobility="1">
+				<transform position="1.030, -3.541, -0.024" rotation_euler="-0.020, -0.465, -1.521"/>
+				<physics shape="bo_bd_pickaxe_a"/>
+				<components>
+					<meta_mesh_component name="bd_pickaxe_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="shovel" old_prefab_name="" mobility="1">
+				<transform position="0.422, -3.367, 0.321" rotation_euler="-0.456, 0.000, 0.000" scale="1.200, 1.200, 1.000"/>
+				<components>
+					<meta_mesh_component name="peasent_shovel"/>
+				</components>
+			</game_entity>
+			<game_entity name="farmer_sickle" old_prefab_name="" mobility="1">
+				<transform position="1.660, -2.972, 0.821" rotation_euler="-1.560, -3.142, 1.957"/>
+				<components>
+					<meta_mesh_component name="peasent_sickle"/>
+				</components>
+			</game_entity>
+			<game_entity name="carry_hammer" old_prefab_name="" mobility="1">
+				<transform position="-0.681, -2.751, 0.818" rotation_euler="-0.036, 0.000, -0.340" scale="1.400, 0.900, 0.900"/>
+				<components>
+					<meta_mesh_component name="bd_hammer"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_shelf_heap_c2" old_prefab_name="" mobility="1">
+				<transform position="-0.915, 2.008, 2.215" rotation_euler="0.000, 0.000, 0.047" scale="0.373, 0.373, 0.373"/>
+				<physics shape="bo_bd_shelf_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_shelf_a"/>
+				</components>
+				<children>
+					<game_entity name="crate_a" old_prefab_name="" mobility="1">
+						<transform position="-0.438, -0.352, 0.077" rotation_euler="0.000, 0.000, 3.083"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_b_lid" old_prefab_name="" mobility="1">
+						<transform position="0.658, -0.386, 0.062" rotation_euler="0.000, 0.007, -0.122"/>
+						<physics shape="bo_crate_a_lid"/>
+						<components>
+							<meta_mesh_component name="crate_b_lid"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_b_lid" old_prefab_name="" mobility="1">
+						<transform position="0.754, -0.501, 0.134" rotation_euler="-0.002, -0.007, -2.923"/>
+						<physics shape="bo_crate_a_lid"/>
+						<components>
+							<meta_mesh_component name="crate_b_lid"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_b_lid" old_prefab_name="" mobility="1">
+						<transform position="0.192, -0.390, 0.590" rotation_euler="-0.035, 0.893, -0.028"/>
+						<physics shape="bo_crate_a_lid"/>
+						<components>
+							<meta_mesh_component name="crate_b_lid"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_shelf_heap_c1" old_prefab_name="" mobility="1">
+				<transform position="0.349, 2.004, 2.249" rotation_euler="0.000, 0.000, -0.034" scale="0.520, 0.520, 0.520"/>
+				<physics shape="bo_bd_shelf_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_shelf_a"/>
+				</components>
+				<children>
+					<game_entity name="crate_a" old_prefab_name="" mobility="1">
+						<transform position="-0.622, -0.382, 0.064" rotation_euler="0.000, 0.000, 0.075"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_a" old_prefab_name="" mobility="1">
+						<transform position="0.630, -0.356, 0.077" rotation_euler="0.000, 0.000, 3.083"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="shop_sign_base_c3" old_prefab_name="" mobility="1">
+				<transform position="1.499, 1.296, 2.894" rotation_euler="0.000, 0.000, 1.607" scale="0.547, 0.547, 0.547"/>
+				<physics shape="bo_shop_sign_base_c3"/>
+				<components>
+					<meta_mesh_component name="shop_sign_base_c3"/>
+				</components>
+			</game_entity>
+			<game_entity name="axe_iron" old_prefab_name="" mobility="1">
+				<transform position="2.298, 1.288, 2.670"/>
+				<components>
+					<meta_mesh_component name="axe_iron"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pickaxe_a" old_prefab_name="" mobility="1">
+				<transform position="2.469, 1.294, 2.549" rotation_euler="0.000, 0.000, -1.469" scale="0.438, 0.438, 0.438"/>
+				<physics shape="bo_bd_pickaxe_a"/>
+				<components>
+					<meta_mesh_component name="bd_pickaxe_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="farmer_sickle" old_prefab_name="" mobility="1">
+				<transform position="2.609, 1.299, 2.662" rotation_euler="0.000, 0.000, 0.000" scale="0.715, 0.715, 0.715"/>
+				<components>
+					<meta_mesh_component name="peasent_sickle"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pickaxe_a" old_prefab_name="" mobility="1">
+				<transform position="2.469, 1.359, 2.549" rotation_euler="0.000, 0.000, -1.469" scale="0.438, 0.438, 0.438"/>
+				<physics shape="bo_bd_pickaxe_a"/>
+				<components>
+					<meta_mesh_component name="bd_pickaxe_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="farmer_sickle" old_prefab_name="" mobility="1">
+				<transform position="2.609, 1.364, 2.662" rotation_euler="0.000, 0.000, 0.000" scale="0.715, 0.715, 0.715"/>
+				<components>
+					<meta_mesh_component name="peasent_sickle"/>
+				</components>
+			</game_entity>
+			<game_entity name="axe_iron" old_prefab_name="" mobility="1">
+				<transform position="2.298, 1.353, 2.670"/>
+				<components>
+					<meta_mesh_component name="axe_iron"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

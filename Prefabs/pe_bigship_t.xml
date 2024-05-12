@@ -1,0 +1,284 @@
+<prefabs>
+	<game_entity name="pe_bigship_t" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_BlocShip">
+				<variables>
+					<variable name="isPlayerUsing" value="false"/>
+					<variable name="Animation" value="act_sit_1"/>
+					<variable name="StrayDurationSeconds" value="7200"/>
+					<variable name="RidingSkillId" value=""/>
+					<variable name="RidingSkillRequired" value="0"/>
+					<variable name="RepairingSkillId" value=""/>
+					<variable name="RepairingSkillRequired" value="0"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*2,pe_wooden_stick*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="ParticleEffectOnDestroy" value=""/>
+					<variable name="SoundEffectOnDestroy" value=""/>
+					<variable name="ParticleEffectOnRepair" value=""/>
+					<variable name="SoundEffectOnRepair" value=""/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="AdvanceSpeed" value="5.000"/>
+					<variable name="RotationalSpeed" value="2.000"/>
+					<variable name="ElevationSpeed" value="5.000"/>
+					<variable name="CanAdvance" value="true"/>
+					<variable name="CanRotate" value="true"/>
+					<variable name="CanElevate" value="true"/>
+					<variable name="AlwaysAlignToTerritory" value="false"/>
+					<variable name="PilotStandingPointTag" value="sailor"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="icon_man" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="sailor"/>
+				</tags>
+				<transform position="0.071, -14.161, 9.777" rotation_euler="-0.151, 0.010, -0.041" scale="0.904, 0.868, 0.770"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="" mobility="1">
+				<transform position="0.175, -13.411, 9.760" rotation_euler="0.000, 0.000, 0.000" scale="1.121, 1.000, 1.040"/>
+				<children>
+					<game_entity name="ship_pinnace_deck" old_prefab_name="" mobility="1">
+						<transform position="-0.193, 15.422, -10.012" rotation_euler="0.000, 0.000, 0.000" scale="1.106, 1.150, 1.302"/>
+						<physics shape="bo_ship_pinnace_deck"/>
+						<components>
+							<meta_mesh_component name="ship_pinnace_deck"/>
+						</components>
+					</game_entity>
+					<game_entity name="ship_pinnace_hull" old_prefab_name="" mobility="1">
+						<transform position="-0.193, 15.422, -10.012" rotation_euler="0.000, 0.000, 0.000" scale="1.106, 1.150, 1.302"/>
+						<physics shape="bo_ship_pinnace_hull"/>
+						<components>
+							<meta_mesh_component name="ship_pinnace_hull"/>
+						</components>
+					</game_entity>
+					<game_entity name="ship_pinnace_sails" old_prefab_name="" mobility="1">
+						<transform position="-0.193, 15.422, -10.012" rotation_euler="0.000, 0.000, 0.000" scale="1.106, 1.150, 1.302"/>
+						<components>
+							<meta_mesh_component name="ship_pinnace_sails"/>
+						</components>
+					</game_entity>
+					<game_entity name="ship_pinnace_rigging" old_prefab_name="" mobility="1">
+						<transform position="-0.193, 15.422, -10.012" rotation_euler="0.000, 0.000, 0.000" scale="1.106, 1.150, 1.302"/>
+						<physics shape="bo_ship_pinnace_rigging"/>
+						<components>
+							<meta_mesh_component name="ship_pinnace_rigging"/>
+						</components>
+					</game_entity>
+					<game_entity name="ship_pinnace_interior" old_prefab_name="" mobility="1">
+						<transform position="-0.193, 15.422, -10.012" rotation_euler="0.000, 0.000, 0.000" scale="1.106, 1.150, 1.302"/>
+						<physics shape="bo_ship_pinnace_interior"/>
+						<components>
+							<meta_mesh_component name="ship_pinnace_interior"/>
+						</components>
+					</game_entity>
+					<game_entity name="ship_pinnace_aft" old_prefab_name="" mobility="1">
+						<transform position="-0.193, 15.422, -10.012" rotation_euler="0.000, 0.000, 0.000" scale="1.106, 1.150, 1.302"/>
+						<physics shape="bo_ship_pinnace_aft"/>
+						<components>
+							<meta_mesh_component name="ship_pinnace_aft"/>
+						</components>
+					</game_entity>
+					<game_entity name="civilian_ladder_5m" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="do_not_optimize"/>
+						</tags>
+						<transform position="5.171, 19.052, -9.510" rotation_euler="-0.195, -0.002, 1.562"/>
+						<physics shape="bo_civilian_ladder_5m">
+							<body_flags>
+								<body_flag name="ladder"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="civilian_ladder_5m"/>
+						</components>
+					</game_entity>
+					<game_entity name="civilian_ladder_5m" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="do_not_optimize"/>
+						</tags>
+						<transform position="-5.540, 19.052, -9.482" rotation_euler="-0.195, -0.002, -1.579"/>
+						<physics shape="bo_civilian_ladder_5m">
+							<body_flags>
+								<body_flag name="ladder"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="civilian_ladder_5m"/>
+						</components>
+					</game_entity>
+					<game_entity name="stairs_short_a" old_prefab_name="" mobility="1">
+						<transform position="3.171, 17.409, -6.281" rotation_euler="0.000, 0.000, 3.113" scale="0.543, 1.191, 1.101"/>
+						<physics shape="bo_stairs_short_a" override_material="wood">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="stairs_short_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="stairs_short_a" old_prefab_name="" mobility="1">
+						<transform position="3.131, 15.770, -4.998" rotation_euler="0.000, 0.000, 3.113" scale="0.543, 1.191, 1.101"/>
+						<physics shape="bo_stairs_short_a" override_material="wood">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="stairs_short_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="stairs_short_a" old_prefab_name="" mobility="1">
+						<transform position="-3.410, 17.409, -6.281" rotation_euler="0.000, 0.000, 3.113" scale="0.543, 1.191, 1.101"/>
+						<physics shape="bo_stairs_short_a" override_material="wood">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="stairs_short_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="stairs_short_a" old_prefab_name="" mobility="1">
+						<transform position="-3.449, 15.770, -4.998" rotation_euler="0.000, 0.000, 3.113" scale="0.543, 1.191, 1.101"/>
+						<physics shape="bo_stairs_short_a" override_material="wood">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="stairs_short_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="stairs_short_a" old_prefab_name="" mobility="1">
+						<transform position="-0.193, 20.091, -8.680" rotation_euler="0.000, 0.000, 3.113" scale="0.543, 1.191, 1.101"/>
+						<physics shape="bo_stairs_short_a" override_material="wood">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="stairs_short_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="stairs_short_a" old_prefab_name="" mobility="1">
+						<transform position="-0.234, 18.452, -7.398" rotation_euler="0.000, 0.000, 3.113" scale="0.543, 1.191, 1.101"/>
+						<physics shape="bo_stairs_short_a" override_material="wood">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="stairs_short_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="stairs_short_a" old_prefab_name="" mobility="1">
+						<transform position="-2.277, 1.658, -1.446" rotation_euler="0.000, 0.000, -3.055" scale="0.543, 1.191, 1.101"/>
+						<physics shape="bo_stairs_short_a" override_material="wood">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="stairs_short_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="stairs_short_a" old_prefab_name="" mobility="1">
+						<transform position="-2.424, 3.292, -2.729" non_orthogonal_rotation_mat="-0.997247, -0.074145, 0.000000, 0.085620, -0.996328, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.543, 1.191, 1.101"/>
+						<physics shape="bo_stairs_short_a" override_material="wood">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="stairs_short_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="stairs_short_a" old_prefab_name="" mobility="1">
+						<transform position="1.909, 1.703, -1.468" rotation_euler="0.000, 0.000, 2.974" scale="0.543, 1.191, 1.101"/>
+						<physics shape="bo_stairs_short_a" override_material="wood">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="stairs_short_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="stairs_short_a" old_prefab_name="" mobility="1">
+						<transform position="2.176, 3.321, -2.750" non_orthogonal_rotation_mat="-0.983594, 0.180397, 0.000000, -0.167250, -0.985915, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.543, 1.191, 1.101"/>
+						<physics shape="bo_stairs_short_a" override_material="wood">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="stairs_short_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_ladder_b" old_prefab_name="" mobility="1">
+						<transform position="-3.567, 21.296, -6.144" rotation_euler="-0.554, 0.000, -0.034"/>
+						<physics shape="bo_bd_ladder_b" override_material="wood">
+							<body_flags>
+								<body_flag name="ladder"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="bd_ladder_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_ladder_b" old_prefab_name="" mobility="1">
+						<transform position="3.235, 21.331, -6.144" rotation_euler="-0.554, 0.000, -0.034" scale="0.869, 1.000, 0.851"/>
+						<physics shape="bo_bd_ladder_b" override_material="wood">
+							<body_flags>
+								<body_flag name="ladder"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="bd_ladder_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+				<transform position="0.048, -13.672, 9.723" rotation_euler="0.000, 0.000, 0.000" scale="0.904, 0.870, 0.768"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

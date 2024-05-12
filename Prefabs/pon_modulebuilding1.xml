@@ -1,0 +1,343 @@
+<prefabs>
+	<game_entity name="pon_modulebuilding1" old_prefab_name="">
+		<transform position="-16.742, 53.852, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.200, 1.500, 1.000"/>
+		<physics shape="bo_empire_keep_b_arch_b"/>
+		<components>
+			<meta_mesh_component name="empire_keep_b_arch_b">
+				<mesh name="empire_keep_b_arch_b" material="stone_wall_11"/>
+				<mesh name="empire_keep_b_arch_b.lod1" material="stone_wall_11"/>
+				<mesh name="empire_keep_b_arch_b.lod2" material="stone_wall_11"/>
+				<mesh name="empire_keep_b_arch_b.lod3" material="stone_wall_11"/>
+				<mesh name="empire_keep_b_arch_b.lod4" material="stone_wall_11"/>
+				<mesh name="empire_keep_b_arch_b.lod6" material="stone_wall_11"/>
+			</meta_mesh_component>
+		</components>
+		<children>
+			<game_entity name="module_european_house_part_corner_270_degrees_rooftop" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_part_corner_270_degrees_rooftop">
+				<transform position="2.647, -1.749, 1.248" rotation_euler="0.000, 0.000, 3.141" scale="0.333, 0.267, 0.400"/>
+				<physics shape="bo_module_european_house_part_corner_270_degrees_rooftop"/>
+				<components>
+					<meta_mesh_component name="module_european_house_part_corner_270_degrees_rooftop"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_house_end_attick_b" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_end_attick_b">
+				<transform position="0.033, 0.182, 2.801" rotation_euler="0.000, 0.000, 0.000" scale="0.342, 0.273, 0.410"/>
+				<physics shape="bo_module_european_house_end_attick_a"/>
+				<components>
+					<meta_mesh_component name="module_european_house_end_attick_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_house_part_corner_270_degrees_rooftop" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_part_corner_270_degrees_rooftop">
+				<transform position="-2.493, -1.850, 1.248" rotation_euler="0.000, 0.000, 3.141" scale="-0.333, 0.267, 0.400"/>
+				<physics shape="bo_module_european_house_part_corner_270_degrees_rooftop"/>
+				<components>
+					<meta_mesh_component name="module_european_house_part_corner_270_degrees_rooftop"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_house_rooftop_end" old_prefab_name="">
+				<transform position="-3.438, -5.487, -0.705" rotation_euler="0.000, 0.000, 1.571" scale="0.267, 0.333, 0.400"/>
+				<physics shape="bo_module_european_house_rooftop_end"/>
+				<components>
+					<meta_mesh_component name="module_european_house_rooftop_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_house_rooftop_end" old_prefab_name="">
+				<transform position="-0.032, -5.487, -0.705" rotation_euler="0.000, 0.000, 1.571" scale="0.267, 0.375, 0.400"/>
+				<physics shape="bo_module_european_house_rooftop_end"/>
+				<components>
+					<meta_mesh_component name="module_european_house_rooftop_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_house_rooftop_end" old_prefab_name="">
+				<transform position="3.391, -5.487, -0.705" rotation_euler="0.000, 0.000, 1.571" scale="0.267, 0.333, 0.400"/>
+				<physics shape="bo_module_european_house_rooftop_end"/>
+				<components>
+					<meta_mesh_component name="module_european_house_rooftop_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_house_end_attick_b" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_end_attick_b">
+				<transform position="-4.948, -3.884, 2.801" rotation_euler="0.000, 0.000, 1.571" scale="0.273, 0.342, 0.410"/>
+				<physics shape="bo_module_european_house_end_attick_a"/>
+				<components>
+					<meta_mesh_component name="module_european_house_end_attick_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_house_end_attick_b" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_end_attick_b">
+				<transform position="5.117, -3.787, 2.801" rotation_euler="0.000, 0.000, -1.571" scale="0.273, 0.342, 0.410"/>
+				<physics shape="bo_module_european_house_end_attick_a"/>
+				<components>
+					<meta_mesh_component name="module_european_house_end_attick_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="-3.718, -5.668, -1.149" rotation_euler="0.000, 0.000, 1.571" scale="0.333, 0.500, 0.500"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="-1.268, -5.668, -1.149" rotation_euler="0.000, 0.000, 1.571" scale="0.333, 0.500, 0.500"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="1.199, -5.668, -1.149" rotation_euler="0.000, 0.000, 1.571" scale="0.333, 0.500, 0.500"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="3.637, -5.668, -1.149" rotation_euler="0.000, 0.000, 1.571" scale="0.333, 0.500, 0.500"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="4.750, -5.063, -1.149" rotation_euler="0.000, 0.000, 0.000" scale="0.417, 0.200, 0.500"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="2.303, -0.876, -1.149" rotation_euler="0.000, 0.000, 3.141" scale="0.417, 0.400, 0.500"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="3.637, -2.032, -1.149" rotation_euler="0.000, 0.000, 1.571" scale="0.333, 0.500, 0.500"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="1.507, 0.014, -1.149" rotation_euler="0.000, 0.000, 1.571" scale="0.333, 0.250, 0.500"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="0.627, 0.014, 0.548" rotation_euler="0.000, 0.000, 1.571" scale="0.333, 0.167, 0.200"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="-0.036, 0.014, 0.548" rotation_euler="0.000, 0.000, 1.571" scale="0.333, 0.167, 0.200"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="-0.645, 0.014, 0.548" rotation_euler="0.000, 0.000, 1.571" scale="0.333, 0.167, 0.200"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="-1.507, 0.014, -1.149" rotation_euler="0.000, 0.000, 1.571" scale="0.333, 0.250, 0.500"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="-2.218, -0.860, -1.149" rotation_euler="0.000, 0.000, 0.000" scale="0.417, 0.400, 0.500"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="-3.623, -2.052, -1.149" rotation_euler="0.000, 0.000, 1.571" scale="0.333, 0.500, 0.500"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="-4.765, -5.063, -1.149" rotation_euler="0.000, 0.000, 0.000" scale="0.417, 0.200, 0.500"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_b_arch_b" old_prefab_name="">
+				<transform position="-4.767, -3.846, -0.075" rotation_euler="0.000, 0.000, 1.571" scale="0.800, 1.250, 1.000"/>
+				<physics shape="bo_empire_keep_b_arch_b"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_arch_b">
+						<mesh name="empire_keep_b_arch_b" material="stone_wall_11"/>
+						<mesh name="empire_keep_b_arch_b.lod1" material="stone_wall_11"/>
+						<mesh name="empire_keep_b_arch_b.lod2" material="stone_wall_11"/>
+						<mesh name="empire_keep_b_arch_b.lod3" material="stone_wall_11"/>
+						<mesh name="empire_keep_b_arch_b.lod4" material="stone_wall_11"/>
+						<mesh name="empire_keep_b_arch_b.lod6" material="stone_wall_11"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_b_arch_b" old_prefab_name="">
+				<transform position="4.722, -3.846, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="0.800, 1.250, 1.000"/>
+				<physics shape="bo_empire_keep_b_arch_b"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_arch_b">
+						<mesh name="empire_keep_b_arch_b" material="stone_wall_11"/>
+						<mesh name="empire_keep_b_arch_b.lod1" material="stone_wall_11"/>
+						<mesh name="empire_keep_b_arch_b.lod2" material="stone_wall_11"/>
+						<mesh name="empire_keep_b_arch_b.lod3" material="stone_wall_11"/>
+						<mesh name="empire_keep_b_arch_b.lod4" material="stone_wall_11"/>
+						<mesh name="empire_keep_b_arch_b.lod6" material="stone_wall_11"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="4.750, -2.626, -1.149" rotation_euler="0.000, 0.000, 0.000" scale="0.417, 0.200, 0.500"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="-4.818, -2.626, -1.149" rotation_euler="0.000, 0.000, 0.000" scale="0.417, 0.200, 0.500"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="-4.743, -4.383, 0.494" rotation_euler="0.000, 0.000, 0.000" scale="0.417, 0.133, 0.200"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="-4.743, -3.844, 0.574" rotation_euler="0.000, 0.000, 0.000" scale="0.417, 0.133, 0.200"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="-4.743, -3.244, 0.494" rotation_euler="0.000, 0.000, 0.000" scale="0.417, 0.133, 0.200"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="4.729, -4.383, 0.494" rotation_euler="0.000, 0.000, 0.000" scale="0.417, 0.133, 0.200"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="4.729, -3.844, 0.574" rotation_euler="0.000, 0.000, 0.000" scale="0.417, 0.133, 0.200"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="4.729, -3.244, 0.494" rotation_euler="0.000, 0.000, 0.000" scale="0.417, 0.133, 0.200"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_stone_vlandia_c" old_prefab_name="" occlusion_body_name="bo_occ_module_wall_stone_vlandia_c">
+				<transform position="3.637, -2.003, -1.149" rotation_euler="0.000, 0.000, 1.571" scale="0.333, 0.500, 0.500"/>
+				<physics shape="bo_module_wall_stone_vlandia_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="module_wall_stone_vlandia_c"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

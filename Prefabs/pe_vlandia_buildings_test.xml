@@ -1,0 +1,53 @@
+<prefabs>
+	<game_entity name="pe_vlandia_windmill" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_windmill"/>
+		<components>
+			<meta_mesh_component name="battania_windmill">
+				<mesh name="battania_windmill.0" material="stone_wall_11"/>
+				<mesh name="battania_windmill.1" material="thatched_roof_b"/>
+				<mesh name="battania_windmill.2" material="thatched_roof_b_alpha"/>
+				<mesh name="battania_windmill.7" material="stone_wall_11"/>
+				<mesh name="battania_windmill.lod5.0" material="stone_wall_11"/>
+				<mesh name="battania_windmill.lod5.1" material="thatched_roof_b"/>
+				<mesh name="battania_windmill.lod6.0" material="stone_wall_11"/>
+				<mesh name="battania_windmill.lod6.1" material="thatched_roof_b"/>
+			</meta_mesh_component>
+		</components>
+		<children>
+			<game_entity name="sturgia_windmill_fan_a_open" old_prefab_name="" mobility="1">
+				<transform position="-3.420, -0.547, 13.998" rotation_euler="0.000, 3.040, -1.506" scale="0.975, 1.000, 0.974"/>
+				<physics shape="bo_sturgia_windmill_fan_a_open" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="sturgia_windmill_fan_a_open"/>
+				</components>
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable name="Event Path" value="event:/mission/ambient/detail/building/windmill"/>
+							<variable name="Play On Startup" value="true"/>
+							<variable name="Is Static" value="false"/>
+							<variable name="Override Sound" value="false"/>
+							<variable name="Overrided Max Distance" value="20.000000"/>
+							<variable name="Overrided Min Distance" value="1.000000"/>
+							<variable name="Sound Preset" value="Speakers"/>
+							<variable name="Is Master Sound" value="false"/>
+							<variable name="Is Master Supressor" value="false"/>
+							<variable name="Is Triggered" value="false"/>
+							<variable name="Trigger Shape" value="Sphere"/>
+						</variables>
+					</script>
+					<script name="WindMill">
+						<variables>
+							<variable name="rotationSpeed" value="100.000"/>
+							<variable name="waterSplashPhaseOffset" value="0.000"/>
+							<variable name="waterSplashIntervalMultiplier" value="1.000"/>
+							<variable name="isWaterMill" value="false"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

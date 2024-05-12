@@ -1,0 +1,38 @@
+<prefabs>
+	<game_entity name="pe_siege_tower_5m_spawner" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="prefab_cannot_be_broken" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="SiegeTowerSpawner">
+				<variables>
+					<variable name="wait_pos_ground" value="-0.999978, 0.006593, 0.000000, 0.000000, -0.006593, -0.999978, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.182000, 8.501000, 0.000000, 1.000000"/>
+					<variable name="SideTag" value=""/>
+					<variable name="TargetWallSegmentTag" value=""/>
+					<variable name="PathEntityName" value="Path"/>
+					<variable name="SoilNavMeshID1" value="-1"/>
+					<variable name="SoilNavMeshID2" value="-1"/>
+					<variable name="DitchNavMeshID1" value="-1"/>
+					<variable name="DitchNavMeshID2" value="-1"/>
+					<variable name="GroundToSoilNavMeshID1" value="-1"/>
+					<variable name="GroundToSoilNavMeshID2" value="-1"/>
+					<variable name="SoilGenericNavMeshID" value="-1"/>
+					<variable name="GroundGenericNavMeshID" value="-1"/>
+					<variable name="AddOnDeployTag" value=""/>
+					<variable name="RemoveOnDeployTag" value=""/>
+					<variable name="RampRotationDegree" value="80.000"/>
+					<variable name="BarrierLength" value="2.500"/>
+					<variable name="SpeedModifierFactor" value="1.000"/>
+					<variable name="EnableAutoGhostMovement" value="false"/>
+					<variable name="ai_barrier_l" value="-0.000356, -1.750000, -0.000000, 0.000000, 1.000000, -0.000204, 0.000000, 0.000000, 0.000000, 0.000000, 2.500000, 0.000000, 1.000000, 1.000000, 0.000000, 1.000000"/>
+					<variable name="ai_barrier_r" value="-0.000356, 1.750000, 0.000000, 0.000000, -1.000000, -0.000204, 0.000000, 0.000000, 0.000000, 0.000000, 2.500000, 0.000000, -1.000000, 1.000000, 0.000000, 1.000000"/>
+					<variable name="BarrierTagToRemove" value=""/>
+					<variable name="ToBeSpawnedOverrideName" value=""/>
+					<variable name="ToBeSpawnedOverrideNameForFireVersion" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+</prefabs>
+

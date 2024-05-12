@@ -1,0 +1,687 @@
+<prefabs>
+	<game_entity name="ss_cabbage_field" old_prefab_name="">
+		<transform position="990.797, 1190.918, 42.801" rotation_euler="0.000, 0.000, 1.072" scale="1.700, 1.600, 1.000"/>
+		<physics shape="bo_european_castle_l1_floor_a"/>
+		<components>
+			<meta_mesh_component name="european_castle_l1_floor_a">
+				<mesh name="european_castle_l1_floor_a.2" material="ground_forest_b"/>
+				<mesh name="european_castle_l1_floor_a.4" material="ground_soil_b"/>
+			</meta_mesh_component>
+		</components>
+		<children>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="2.261, -1.126, 0.113" non_orthogonal_rotation_mat="0.456371, -0.889790, 0.000000, 0.865402, 0.501079, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.617, 0.597, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="2.716, -0.022, 0.113" non_orthogonal_rotation_mat="-0.582715, -0.812677, 0.000000, 0.777268, -0.629169, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.612, 0.602, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="1.541, -1.195, 0.113" non_orthogonal_rotation_mat="0.984830, -0.173523, 0.000000, 0.154209, 0.988038, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.589, 0.624, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="0.760, -1.225, 0.113" non_orthogonal_rotation_mat="0.775161, -0.631764, 0.000000, 0.585344, 0.810785, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.602, 0.612, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="-0.057, -1.283, 0.113" non_orthogonal_rotation_mat="-0.676703, -0.736256, 0.000000, 0.693942, -0.720031, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.607, 0.606, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="-0.810, -1.275, 0.113" non_orthogonal_rotation_mat="0.379907, -0.925025, 0.000000, 0.907232, 0.420631, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.619, 0.594, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="-1.598, -1.283, 0.113" non_orthogonal_rotation_mat="0.974281, -0.225336, 0.000000, 0.200706, 0.979652, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.590, 0.623, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="-2.230, -0.907, 0.113" non_orthogonal_rotation_mat="0.974281, -0.225336, 0.000000, 0.200706, 0.979652, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.590, 0.623, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="2.091, 0.056, 0.113" non_orthogonal_rotation_mat="-0.977637, -0.210300, 0.000000, 0.187180, -0.982326, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.590, 0.624, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="1.471, 0.096, 0.113" non_orthogonal_rotation_mat="0.660360, -0.750949, 0.000000, 0.709684, 0.704520, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.608, 0.606, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="0.792, 0.017, 0.113" non_orthogonal_rotation_mat="-0.950084, -0.311995, 0.000000, 0.279312, -0.960200, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.592, 0.622, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="0.240, 0.211, 0.113" non_orthogonal_rotation_mat="-0.993760, 0.111535, 0.000000, -0.098932, -0.995094, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.589, 0.625, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="-0.390, 0.068, 0.113" non_orthogonal_rotation_mat="-0.612314, -0.790615, 0.000000, 0.752832, -0.658212, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.610, 0.603, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="-1.046, 0.285, 0.113" non_orthogonal_rotation_mat="0.156191, -0.987727, 0.000000, 0.984437, 0.175738, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.624, 0.589, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="-1.793, 0.161, 0.113" non_orthogonal_rotation_mat="-0.116078, -0.993240, 0.000000, 0.991409, -0.130799, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.624, 0.589, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="-2.632, 0.216, 0.113" non_orthogonal_rotation_mat="-0.919615, -0.392822, 0.000000, 0.353896, -0.935285, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.593, 0.620, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="2.415, 1.201, 0.113" non_orthogonal_rotation_mat="-0.264484, -0.964390, 0.000000, 0.955265, -0.295752, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.622, 0.591, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="1.638, 1.268, 0.113" non_orthogonal_rotation_mat="-0.970483, -0.241170, 0.000000, 0.214982, -0.976618, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.590, 0.623, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="0.927, 1.371, 0.113" non_orthogonal_rotation_mat="-0.964487, -0.264131, 0.000000, 0.235748, -0.971814, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.591, 0.623, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="0.161, 1.464, 0.113" non_orthogonal_rotation_mat="-0.143679, 0.989624, 0.000000, -0.986833, -0.161742, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.624, 0.589, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="-0.535, 1.421, 0.113" rotation_euler="0.000, 0.000, -0.072" scale="0.588, 0.625, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="-1.321, 1.580, 0.113" non_orthogonal_rotation_mat="0.380339, 0.924847, 0.000000, -0.907019, 0.421090, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.619, 0.594, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="-1.947, 1.456, 0.113" non_orthogonal_rotation_mat="-0.409977, 0.912096, 0.000000, -0.891761, -0.452507, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.618, 0.595, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_cabbage" old_prefab_name="" mobility="1">
+				<transform position="-2.592, 1.234, 0.113" non_orthogonal_rotation_mat="0.696962, -0.717108, 0.000000, 0.673613, 0.739084, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.606, 0.607, 1.000"/>
+				<physics shape="bo_foods_cabbage_a"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Gabbage"/>
+							<variable name="RespawnTime" value="1200"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_cabbage_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

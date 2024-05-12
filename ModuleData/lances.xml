@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+    <CraftedItem id="vlandian_knight_lance"
+               name="{=*}Vlandian Knight Lance"
+               crafting_template="Lance"
+               culture="Culture.vlandia"
+               value="1500">
+    <Pieces>
+      <Piece id="lance_blade_9"
+             Type="Blade"
+             scale_factor="100" />
+      <Piece id="jousting_lance_guard_long_x"
+             Type="Guard"
+             scale_factor="110" />
+      <Piece id="jousting_lance_handle_small_x"
+             Type="Handle"
+             scale_factor="100" />
+      <Piece id="jousting_lance_pommel_x"
+             Type="Pommel"
+             scale_factor="100" />
+    </Pieces>
+  </CraftedItem>
+
+    <CraftedItem id="vlandian_lance_colored1"
+               name="{=*}Vlandian Knight Lance"
+               crafting_template="Lance"
+               culture="Culture.vlandia"
+               value="1500">
+    <Pieces>
+      <Piece id="lance_blade_9"
+             Type="Blade"
+             scale_factor="100" />
+      <Piece id="jousting_lance_guard_long_colored_bluewhite"
+             Type="Guard"
+             scale_factor="110" />
+      <Piece id="jousting_lance_handle_small_x"
+             Type="Handle"
+             scale_factor="100" />
+      <Piece id="jousting_lance_pommel_x"
+             Type="Pommel"
+             scale_factor="100" />
+    </Pieces>
+  </CraftedItem>
+
+    <CraftedItem id="vlandian_lance_colored2"
+               name="{=*}Vlandian Knight Lance"
+               crafting_template="Lance"
+               culture="Culture.vlandia"
+               value="1500">
+    <Pieces>
+      <Piece id="lance_blade_9"
+             Type="Blade"
+             scale_factor="100" />
+      <Piece id="jousting_lance_guard_long_colored_blueyellow"
+             Type="Guard"
+             scale_factor="110" />
+      <Piece id="jousting_lance_handle_small_x"
+             Type="Handle"
+             scale_factor="100" />
+      <Piece id="jousting_lance_pommel_x"
+             Type="Pommel"
+             scale_factor="100" />
+    </Pieces>
+  </CraftedItem>
+
+    <CraftedItem id="vlandian_lance_colored3"
+               name="{=*}Vlandian Knight Lance"
+               crafting_template="Lance"
+               culture="Culture.vlandia"
+               value="1500">
+    <Pieces>
+      <Piece id="lance_blade_9"
+             Type="Blade"
+             scale_factor="100" />
+      <Piece id="jousting_lance_guard_long_colored_blackwhite"
+             Type="Guard"
+             scale_factor="110" />
+      <Piece id="jousting_lance_handle_small_x"
+             Type="Handle"
+             scale_factor="100" />
+      <Piece id="jousting_lance_pommel_x"
+             Type="Pommel"
+             scale_factor="100" />
+    </Pieces>
+  </CraftedItem>
+
+    <CraftedItem id="vlandian_lance_colored4"
+               name="{=*}Vlandian Knight Lance"
+               crafting_template="Lance"
+               culture="Culture.vlandia"
+               value="1500">
+    <Pieces>
+      <Piece id="lance_blade_9"
+             Type="Blade"
+             scale_factor="100" />
+      <Piece id="jousting_lance_guard_long_colored_blackred"
+             Type="Guard"
+             scale_factor="110" />
+      <Piece id="jousting_lance_handle_small_x"
+             Type="Handle"
+             scale_factor="100" />
+      <Piece id="jousting_lance_pommel_x"
+             Type="Pommel"
+             scale_factor="100" />
+    </Pieces>
+  </CraftedItem>
+
+    <CraftedItem id="vlandian_lance_colored5"
+               name="{=*}Vlandian Knight Lance"
+               crafting_template="Lance"
+               culture="Culture.vlandia"
+               value="1500">
+    <Pieces>
+      <Piece id="lance_blade_9"
+             Type="Blade"
+             scale_factor="100" />
+      <Piece id="jousting_lance_guard_long_colored_redyellow"
+             Type="Guard"
+             scale_factor="110" />
+      <Piece id="jousting_lance_handle_small_x"
+             Type="Handle"
+             scale_factor="100" />
+      <Piece id="jousting_lance_pommel_x"
+             Type="Pommel"
+             scale_factor="100" />
+    </Pieces>
+  </CraftedItem>
+
+    <CraftedItem id="vlandian_lance_colored6"
+               name="{=*}Vlandian Knight Lance"
+               crafting_template="Lance"
+               culture="Culture.vlandia"
+               value="1500">
+    <Pieces>
+      <Piece id="lance_blade_9"
+             Type="Blade"
+             scale_factor="100" />
+      <Piece id="jousting_lance_guard_long_colored_redwhite"
+             Type="Guard"
+             scale_factor="110" />
+      <Piece id="jousting_lance_handle_small_x"
+             Type="Handle"
+             scale_factor="100" />
+      <Piece id="jousting_lance_pommel_x"
+             Type="Pommel"
+             scale_factor="100" />
+    </Pieces>
+  </CraftedItem>
+
+    <CraftedItem id="vlandian_iron_lance"
+               name="{=*}Vlandian Iron Lance"
+               crafting_template="IronLance"
+               culture="Culture.vlandia"
+               value="5000">
+    <Pieces>
+      <Piece id="lance_iron_blade"
+             Type="Blade"
+             scale_factor="85" />
+      <Piece id="lance_iron_guard"
+             Type="Guard"
+             scale_factor="100" />
+      <Piece id="lance_iron_handle"
+             Type="Handle"
+             scale_factor="100" />
+      <Piece id="lance_iron_pommel"
+             Type="Pommel"
+             scale_factor="100" />
+    </Pieces>
+  </CraftedItem>
+
+    <CraftedItem id="tournament_lance_1"
+               name="{=*}Tournament Lance"
+               crafting_template="Lance"
+               culture="Culture.vlandia"
+               value="200">
+    <Pieces>
+      <Piece id="lance_blade_34"
+             Type="Blade"
+             scale_factor="100" />
+      <Piece id="jousting_lance_guard_long_x"
+             Type="Guard"
+             scale_factor="110" />
+      <Piece id="jousting_lance_handle_small_x"
+             Type="Handle"
+             scale_factor="100" />
+      <Piece id="jousting_lance_pommel_x"
+             Type="Pommel"
+             scale_factor="100" />
+    </Pieces>
+  </CraftedItem>
+
+    <CraftedItem id="tournament_lance_2"
+               name="{=*}Tournament Lance"
+               crafting_template="Lance"
+               culture="Culture.vlandia"
+               value="200">
+    <Pieces>
+      <Piece id="lance_blade_34"
+             Type="Blade"
+             scale_factor="100" />
+      <Piece id="jousting_lance_guard_long_colored_bluewhite"
+             Type="Guard"
+             scale_factor="110" />
+      <Piece id="jousting_lance_handle_small_x"
+             Type="Handle"
+             scale_factor="100" />
+      <Piece id="jousting_lance_pommel_x"
+             Type="Pommel"
+             scale_factor="100" />
+    </Pieces>
+  </CraftedItem>
+
+    <CraftedItem id="tournament_lance_3"
+               name="{=*}Tournament Lance"
+               crafting_template="Lance"
+               culture="Culture.vlandia"
+               value="200">
+    <Pieces>
+      <Piece id="lance_blade_34"
+             Type="Blade"
+             scale_factor="100" />
+      <Piece id="jousting_lance_guard_long_colored_blueyellow"
+             Type="Guard"
+             scale_factor="110" />
+      <Piece id="jousting_lance_handle_small_x"
+             Type="Handle"
+             scale_factor="100" />
+      <Piece id="jousting_lance_pommel_x"
+             Type="Pommel"
+             scale_factor="100" />
+    </Pieces>
+  </CraftedItem>
+
+    <CraftedItem id="tournament_lance_4"
+               name="{=*}Tournament Lance"
+               crafting_template="Lance"
+               culture="Culture.vlandia"
+               value="200">
+    <Pieces>
+      <Piece id="lance_blade_34"
+             Type="Blade"
+             scale_factor="100" />
+      <Piece id="jousting_lance_guard_long_colored_blackwhite"
+             Type="Guard"
+             scale_factor="110" />
+      <Piece id="jousting_lance_handle_small_x"
+             Type="Handle"
+             scale_factor="100" />
+      <Piece id="jousting_lance_pommel_x"
+             Type="Pommel"
+             scale_factor="100" />
+    </Pieces>
+  </CraftedItem>
+
+    <CraftedItem id="tournament_lance_5"
+               name="{=*}Tournament Lance"
+               crafting_template="Lance"
+               culture="Culture.vlandia"
+               value="200">
+    <Pieces>
+      <Piece id="lance_blade_34"
+             Type="Blade"
+             scale_factor="100" />
+      <Piece id="jousting_lance_guard_long_colored_blackred"
+             Type="Guard"
+             scale_factor="110" />
+      <Piece id="jousting_lance_handle_small_x"
+             Type="Handle"
+             scale_factor="100" />
+      <Piece id="jousting_lance_pommel_x"
+             Type="Pommel"
+             scale_factor="100" />
+    </Pieces>
+  </CraftedItem>
+
+    <CraftedItem id="tournament_lance_6"
+               name="{=*}Tournament Lance"
+               crafting_template="Lance"
+               culture="Culture.vlandia"
+               value="200">
+    <Pieces>
+      <Piece id="lance_blade_34"
+             Type="Blade"
+             scale_factor="100" />
+      <Piece id="jousting_lance_guard_long_colored_redyellow"
+             Type="Guard"
+             scale_factor="110" />
+      <Piece id="jousting_lance_handle_small_x"
+             Type="Handle"
+             scale_factor="100" />
+      <Piece id="jousting_lance_pommel_x"
+             Type="Pommel"
+             scale_factor="100" />
+    </Pieces>
+  </CraftedItem>
+
+    <CraftedItem id="tournament_lance_7"
+               name="{=*}Tournament Lance"
+               crafting_template="Lance"
+               culture="Culture.vlandia"
+               value="200">
+    <Pieces>
+      <Piece id="lance_blade_34"
+             Type="Blade"
+             scale_factor="100" />
+      <Piece id="jousting_lance_guard_long_colored_redwhite"
+             Type="Guard"
+             scale_factor="110" />
+      <Piece id="jousting_lance_handle_small_x"
+             Type="Handle"
+             scale_factor="100" />
+      <Piece id="jousting_lance_pommel_x"
+             Type="Pommel"
+             scale_factor="100" />
+    </Pieces>
+  </CraftedItem>
+
+</Items>

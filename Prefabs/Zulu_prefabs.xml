@@ -1,0 +1,915 @@
+<prefabs>
+	<game_entity name="pe_goldchest_broken" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_bd_basket_a" override_material="straw"/>
+		<components>
+			<meta_mesh_component name="bd_basket_a"/>
+		</components>
+		<children>
+			<game_entity name="bd_wood_heap_f" old_prefab_name="">
+				<transform position="-0.002, 2.114, 1.002" rotation_euler="-0.487, 1.151, -3.041" scale="0.357, 0.358, 0.263"/>
+				<physics shape="bo_bd_wood_heap_f"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_f" old_prefab_name="">
+				<transform position="0.051, 1.588, 0.722" rotation_euler="-0.487, 1.151, -3.041" scale="0.357, 0.358, 0.263"/>
+				<physics shape="bo_bd_wood_heap_f"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_f" old_prefab_name="">
+				<transform position="0.187, 1.489, 0.982" rotation_euler="0.319, -1.182, 0.178" scale="0.357, 0.358, 0.259"/>
+				<physics shape="bo_bd_wood_heap_f"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="pe_goldchest" old_prefab_name="">
+				<transform position="0.506, 2.341, 2.481" rotation_euler="1.053, 2.338, -2.103" scale="1.250, 1.250, 1.250"/>
+				<physics shape="bo_bd_pickaxe_a"/>
+				<components>
+					<meta_mesh_component name="bd_pickaxe_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_f" old_prefab_name="">
+				<transform position="0.238, 1.123, 0.799" rotation_euler="0.979, 0.870, -2.225" scale="0.357, 0.358, 0.302"/>
+				<physics shape="bo_bd_wood_heap_f"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_f" old_prefab_name="">
+				<transform position="0.127, 1.821, 1.093" rotation_euler="0.319, -1.182, 0.178" scale="0.357, 0.358, 0.259"/>
+				<physics shape="bo_bd_wood_heap_f"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_f" old_prefab_name="">
+				<transform position="0.106, 2.243, 1.347" rotation_euler="-1.120, -0.600, 1.227" scale="0.357, 0.358, 0.297"/>
+				<physics shape="bo_bd_wood_heap_f"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="pe_goldchest" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-0.059, 2.248, 1.151" rotation_euler="-1.120, -0.603, 1.227" scale="0.130, 0.211, 0.080"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_goldore,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="3600"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_goldchest" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-0.083, 1.981, 0.880" rotation_euler="-1.120, -0.603, 1.227" scale="0.130, 0.211, 0.080"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="pe_goldchest" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="0.408, 1.651, 1.626" rotation_euler="-1.120, 2.107, 1.227" scale="0.130, 0.211, 0.092"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="pe_goldchest" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="0.477, 1.349, 1.582" rotation_euler="-1.120, -1.722, 1.227" scale="0.130, 0.211, 0.092"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="pe_goldchest" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="0.223, 2.598, 1.913" rotation_euler="-1.120, -0.603, 1.227" scale="0.130, 0.211, 0.092"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="pe_goldchest" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="0.463, 0.121, 0.806" rotation_euler="-1.120, 2.701, 1.227" scale="0.130, 0.211, 0.092"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_f" old_prefab_name="">
+				<transform position="0.082, 1.235, 0.523" rotation_euler="0.979, 0.870, -2.225" scale="0.357, 0.358, 0.263"/>
+				<physics shape="bo_bd_wood_heap_f"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_f" old_prefab_name="">
+				<transform position="0.095, 1.150, 0.488" rotation_euler="-0.487, 1.151, -3.041" scale="0.357, 0.358, 0.263"/>
+				<physics shape="bo_bd_wood_heap_f"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="pe_goldchest" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="0.382, 0.005, 0.778" rotation_euler="-1.120, 2.701, 1.227" scale="0.130, 0.211, 0.092"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="pe_goldchest" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="0.446, 0.127, 0.769" rotation_euler="-1.120, 2.701, 1.227" scale="0.130, 0.211, 0.092"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_f" old_prefab_name="">
+				<transform position="0.127, 1.201, 0.607" rotation_euler="0.979, 0.870, -2.225" scale="0.357, 0.358, 0.263"/>
+				<physics shape="bo_bd_wood_heap_f"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_f" old_prefab_name="">
+				<transform position="-0.049, 2.293, 1.026" rotation_euler="-1.120, -0.600, 1.227" scale="0.357, 0.358, 0.263"/>
+				<physics shape="bo_bd_wood_heap_f"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_f" old_prefab_name="">
+				<transform position="0.052, 2.239, 1.233" rotation_euler="0.319, -1.182, 0.178" scale="0.357, 0.358, 0.259"/>
+				<physics shape="bo_bd_wood_heap_f"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_f" old_prefab_name="">
+				<transform position="0.222, 1.295, 0.917" rotation_euler="0.319, -1.182, 0.178" scale="0.357, 0.358, 0.259"/>
+				<physics shape="bo_bd_wood_heap_f"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_f"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_goldchest_fixed" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_merchandise_gold"/>
+		<components>
+			<meta_mesh_component name="merchandise_gold"/>
+		</components>
+		<children>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-0.988, 0.652, 0.083" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="anan"/>
+				</tags>
+				<transform position="-1.161, 0.123, 0.008" rotation_euler="0.000, 0.000, -3.129"/>
+				<physics shape="bo_bd_chest_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_chest_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-0.988, 0.652, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.938, 0.195, 0.000" rotation_euler="0.000, 0.000, 1.520" scale="0.104, 0.114, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_goldore,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="3600"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-0.829, 0.652, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.904, 0.284, 0.146" rotation_euler="0.000, 0.000, 1.520" scale="0.104, 0.114, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.904, 0.284, 0.260" rotation_euler="0.000, 0.000, 1.520" scale="0.104, 0.114, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.213, 0.652, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.397, 0.652, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.926, 0.443, 0.002" rotation_euler="0.000, 0.000, 1.520" scale="0.104, 0.114, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.918, 0.000, 0.000" rotation_euler="0.000, 0.000, 1.520" scale="0.104, 0.114, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.907, -0.159, 0.000" rotation_euler="0.000, 0.000, 1.520" scale="0.104, 0.114, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.623, 0.652, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_goldore,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="3600"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.825, 0.652, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-0.609, 0.652, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-0.988, 0.652, 0.083" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_goldore,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="3600"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.918, 0.000, 0.146" rotation_euler="0.000, 0.000, 1.520" scale="0.104, 0.114, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-2.025, 0.272, 0.260" rotation_euler="0.000, 0.000, 1.520" scale="0.104, 0.114, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-2.025, 0.272, -0.005" rotation_euler="0.000, 0.000, 1.520" scale="0.104, 0.114, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-2.025, 0.272, 0.108" rotation_euler="0.000, 0.000, 1.520" scale="0.104, 0.114, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.991, 0.500, 0.001" rotation_euler="-0.182, -0.111, 0.968" scale="0.104, 0.114, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.623, 0.726, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.623, 0.726, 0.120" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.481, 0.726, 0.120" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.481, 0.726, -0.044" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.786, -0.316, 0.000" rotation_euler="0.000, 0.000, -3.120" scale="0.104, 0.114, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.581, -0.311, 0.000" rotation_euler="0.000, 0.000, -3.120" scale="0.104, 0.114, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.581, -0.311, 0.089" rotation_euler="0.000, 0.000, -3.120" scale="0.104, 0.114, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.758, -0.315, 0.089" rotation_euler="0.000, 0.000, -3.120" scale="0.104, 0.114, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-0.461, 0.652, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-0.461, 0.480, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-0.461, 0.480, 0.077" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-0.361, 0.480, 0.077" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-0.361, 0.480, -0.057" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-0.361, 0.644, -0.057" rotation_euler="0.000, 0.000, 0.000" scale="0.104, 0.169, 0.074"/>
+				<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_a">
+						<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+						<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="">
+				<transform position="-1.353, -0.351, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.234, 0.138, 0.314"/>
+				<physics shape="bo_wooden_platform_fence_b"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_fence_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="">
+				<transform position="-1.085, 0.632, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.234, 0.138, 0.314"/>
+				<physics shape="bo_wooden_platform_fence_b"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_fence_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="">
+				<transform position="-2.345, 0.287, -0.131" rotation_euler="0.000, 0.395, 0.000"/>
+				<physics shape="bo_bd_pickaxe_a"/>
+				<components>
+					<meta_mesh_component name="bd_pickaxe_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="">
+				<transform position="-0.475, 0.218, 0.000" rotation_euler="0.000, 0.000, 1.545" scale="0.177, 0.138, 0.314"/>
+				<physics shape="bo_wooden_platform_fence_b"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_fence_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="">
+				<transform position="-1.883, 0.255, 0.000" rotation_euler="0.000, 0.000, 1.545" scale="0.177, 0.138, 0.314"/>
+				<physics shape="bo_wooden_platform_fence_b"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_fence_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="">
+				<transform position="-0.953, 0.612, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.234, 0.138, 0.314"/>
+				<physics shape="bo_wooden_platform_fence_b"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_fence_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="">
+				<transform position="-0.953, -0.351, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.234, 0.138, 0.314"/>
+				<physics shape="bo_wooden_platform_fence_b"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_fence_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="">
+				<transform position="-1.890, -0.013, 0.000" rotation_euler="0.000, 0.000, 1.545" scale="0.177, 0.138, 0.314"/>
+				<physics shape="bo_wooden_platform_fence_b"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_fence_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="">
+				<transform position="-1.117, -0.351, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.234, 0.138, 0.314"/>
+				<physics shape="bo_wooden_platform_fence_b"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_fence_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="">
+				<transform position="-1.409, 0.632, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.234, 0.138, 0.314"/>
+				<physics shape="bo_wooden_platform_fence_b"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_fence_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="">
+				<transform position="-0.953, 0.616, 0.135" rotation_euler="0.000, 0.000, 0.000" scale="0.234, 0.138, 0.314"/>
+				<physics shape="bo_wooden_platform_fence_b"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_fence_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="Chest_test" old_prefab_name="">
+				<transform position="-1.234, 0.632, 0.135" rotation_euler="0.000, 0.000, 0.000" scale="0.234, 0.138, 0.314"/>
+				<physics shape="bo_wooden_platform_fence_b"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_fence_b"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

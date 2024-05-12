@@ -1,0 +1,2093 @@
+<prefabs>
+	<game_entity name="PE_woodcutter_vlandia" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_UpgradeableBuildings">
+				<variables>
+					<variable name="CastleIndex" value="-1"/>
+					<variable name="BuildingName" value="Woodcutter"/>
+					<variable name="Tier0Tag" value="tier0"/>
+					<variable name="Tier1Tag" value="tier1"/>
+					<variable name="Tier2Tag" value="tier2"/>
+					<variable name="Tier3Tag" value="tier3"/>
+					<variable name="BuildingInteractiveTag" value="chest"/>
+					<variable name="Tier1RequiredEngineering" value="10"/>
+					<variable name="Tier2RequiredEngineering" value="20"/>
+					<variable name="Tier3RequiredEngineering" value="30"/>
+					<variable name="Tier1MaxHit" value="300"/>
+					<variable name="Tier2MaxHit" value="600"/>
+					<variable name="Tier3MaxHit" value="1200"/>
+					<variable name="Tier1UpgradeReceipts" value="pe_hardwood*10,pe_wooden_stick*20,pe_stone*5"/>
+					<variable name="Tier2UpgradeReceipts" value="pe_hardwood*30,pe_wooden_plank*40,pe_stone*50,pe_scroll*5,pe_clay*10"/>
+					<variable name="Tier3UpgradeReceipts" value="pe_hardwood*30,pe_wooden_plank*50,pe_stone*100,pe_book*5,pe_clay*50,pe_goldore*10"/>
+					<variable name="ParticleEffectOnUpgrade" value="dust_fall_a"/>
+					<variable name="SoundEffectOnUpgrade" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="BuildItem" value="pe_buildhammer"/>
+					<variable name="Tier1CraftingEngineering" value="10"/>
+					<variable name="Tier2CraftingEngineering" value="10"/>
+					<variable name="Tier3CraftingEngineering" value="10"/>
+					<variable name="MaxHitPoint" value="200.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="tier0" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier0"/>
+				</tags>
+				<transform position="-7.547, -12.985, 0.000"/>
+				<children>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-0.193, 7.554, -0.058" rotation_euler="0.000, 0.000, 3.121" scale="1.238, 1.112, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-5.885, 12.926, -0.061" rotation_euler="0.000, 0.000, 1.573" scale="1.356, 1.112, 1.166"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="5.253, 13.105, -0.064" rotation_euler="0.000, 0.000, -1.601" scale="1.364, 1.112, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-0.809, 18.195, -0.057" rotation_euler="0.000, 0.000, 0.025" scale="1.341, 1.112, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_e" old_prefab_name="" mobility="1">
+						<transform position="4.225, 17.633, -0.186" rotation_euler="0.000, 0.000, 0.647" scale="1.048, 1.048, 1.048"/>
+						<physics shape="bo_bd_wood_heap_e"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_e" old_prefab_name="" mobility="1">
+						<transform position="-4.426, 8.717, -0.069" rotation_euler="0.000, 0.000, -2.250" scale="1.048, 1.048, 1.048"/>
+						<physics shape="bo_bd_wood_heap_e"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="" mobility="1">
+						<transform position="-3.236, 13.088, -0.009" rotation_euler="0.000, 0.000, -1.242"/>
+						<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_d" old_prefab_name="" mobility="1">
+						<transform position="-4.987, 17.104, -0.069" rotation_euler="0.000, 0.000, 2.229"/>
+						<physics shape="bo_bd_wood_heap_d"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_d" old_prefab_name="" mobility="1">
+						<transform position="4.370, 8.377, -0.069" rotation_euler="0.000, 0.000, -0.997" scale="1.093, 1.093, 1.093"/>
+						<physics shape="bo_bd_wood_heap_d"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_l1_floor_a" old_prefab_name="" mobility="1">
+						<transform position="-0.343, 13.153, -0.186" rotation_euler="0.000, 0.000, 0.000" scale="2.260, 3.380, 1.163"/>
+						<physics shape="bo_european_castle_l1_floor_a"/>
+						<components>
+							<meta_mesh_component name="european_castle_l1_floor_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier1" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier1"/>
+				</tags>
+				<transform position="-7.444, -14.009, -0.186"/>
+				<children>
+					<game_entity name="tent_vlandia_b" old_prefab_name="" mobility="1">
+						<transform position="0.008, 13.520, 0.000" rotation_euler="0.000, 0.000, -1.540" scale="1.471, 1.471, 1.471"/>
+						<physics shape="bo_tent_vlandia_b"/>
+						<components>
+							<meta_mesh_component name="tent_vlandia_b"/>
+						</components>
+						<children>
+							<game_entity name="ambient_sound_emitter" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.051, 0.225" rotation_euler="0.000, 0.000, 0.000" scale="3.479, 1.000, 1.000"/>
+								<scripts>
+									<script name="AmbientSoundEmitter">
+										<variables>
+											<variable name="Event Path" value="event:/mission/ambient/area/interior/generic"/>
+											<variable name="Play On Startup" value="true"/>
+											<variable name="Is Static" value="false"/>
+											<variable name="Override Sound" value="false"/>
+											<variable name="Overrided Max Distance" value="20.000000"/>
+											<variable name="Overrided Min Distance" value="1.000000"/>
+											<variable name="Sound Preset" value="Speakers"/>
+											<variable name="Is Master Sound" value="false"/>
+											<variable name="Is Master Supressor" value="false"/>
+											<variable name="Is Triggered" value="true"/>
+											<variable name="Trigger Shape" value="Sphere"/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="bd_wood_heap_a" old_prefab_name="" mobility="1">
+						<transform position="-3.275, 11.023, 0.000" rotation_euler="0.000, 0.000, -0.897"/>
+						<physics shape="bo_bd_wood_heap_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_prop_merchantcarpenter_a" old_prefab_name="" mobility="1">
+						<transform position="2.378, 13.231, 0.000" rotation_euler="0.000, 0.000, -1.577"/>
+						<physics shape="bo_shop_prop_merchantcarpenter_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantcarpenter_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Carpenter Bench"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="woodcutter"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="bd_log_and_axe" old_prefab_name="" mobility="1">
+						<transform position="2.056, 16.329, 0.037" rotation_euler="0.000, 0.000, 2.461"/>
+						<physics shape="bo_bd_log_and_axe" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_log_and_axe"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_tree_high_group_d" old_prefab_name="" mobility="1">
+						<transform position="-4.578, 17.641, 0.000" rotation_euler="0.000, 0.000, -0.852"/>
+						<physics shape="bo_log_tree_high_group_d"/>
+						<components>
+							<meta_mesh_component name="log_tree_high_group_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_c" old_prefab_name="" mobility="1">
+						<transform position="0.080, 9.474, 0.000" rotation_euler="0.000, 0.000, 0.028"/>
+						<physics override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_wood_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_c" old_prefab_name="" mobility="1">
+						<transform position="-0.497, 17.399, 0.000" rotation_euler="0.000, 0.000, -0.168" scale="0.727, 0.727, 0.727"/>
+						<physics shape="bo_bd_wood_heap_c"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_c"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier2" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier2"/>
+				</tags>
+				<transform position="-7.962, -13.712, -0.186"/>
+				<children>
+					<game_entity name="sturgia_village_barn_b" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_sturgia_village_barn_b">
+						<transform position="-3.941, 13.676, 0.000" rotation_euler="0.000, 0.000, 3.136" scale="0.948, 0.735, 1.000"/>
+						<physics shape="bo_sturgia_village_barn_b"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="sturgia_village_barn_b">
+								<mesh name="sturgia_village_barn_b.1" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+								<mesh name="sturgia_village_barn_b.2" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.3" material="plank_b2" argument="2.700, 2.500, 3.600, 1.200" argument2="7.700, 1.800, 2.600, 3.000"/>
+								<mesh name="sturgia_village_barn_b.7" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod1.1" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+								<mesh name="sturgia_village_barn_b.lod1.3" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.lod1.7" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod2.1" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+								<mesh name="sturgia_village_barn_b.lod2.3" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.lod2.7" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod3.1" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+								<mesh name="sturgia_village_barn_b.lod3.3" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.lod3.7" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod4.1" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+								<mesh name="sturgia_village_barn_b.lod4.3" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.lod4.7" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod5.0" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.lod5.5" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod5.6" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_c" old_prefab_name="" mobility="1">
+						<transform position="4.908, 14.020, 0.000" rotation_euler="0.000, 0.000, 1.584"/>
+						<physics shape="bo_bd_wood_heap_c"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_a" old_prefab_name="" mobility="1">
+						<transform position="1.184, 16.782, 0.000" rotation_euler="0.000, 0.000, -0.025"/>
+						<physics shape="bo_bd_wood_heap_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_prop_merchantcarpenter_a" old_prefab_name="" mobility="1">
+						<transform position="1.486, 11.656, 0.000" rotation_euler="0.000, 0.000, 3.135"/>
+						<physics shape="bo_shop_prop_merchantcarpenter_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantcarpenter_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Carpenter Bench"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="woodcutter"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="bd_log_and_axe" old_prefab_name="" mobility="1">
+						<transform position="-1.425, 10.932, 0.000" rotation_euler="0.000, 0.000, 2.279"/>
+						<physics shape="bo_bd_log_and_axe" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_log_and_axe"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_tree_high_e" old_prefab_name="" mobility="1">
+						<transform position="-4.786, 11.217, 0.657" rotation_euler="-0.026, 0.477, 0.028"/>
+						<physics shape="bo_log_tree_high_e"/>
+						<components>
+							<meta_mesh_component name="log_tree_high_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="axe_i" old_prefab_name="" mobility="1">
+						<transform position="-4.912, 10.670, 3.104" rotation_euler="-0.068, -0.603, -1.566" scale="1.807, 1.807, 1.807"/>
+						<components>
+							<meta_mesh_component name="axe_i"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-4.862, 10.860, 2.640" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-4.852, 11.171, 3.103" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign__f" old_prefab_name="" mobility="1">
+						<transform position="-3.703, 10.904, 3.817" rotation_euler="0.000, 0.000, -1.632"/>
+						<physics shape="bo_shop_sign_base_b3"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-4.845, 11.299, 2.888" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-4.828, 11.456, 2.624" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-4.840, 11.150, 2.624" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-4.852, 10.987, 2.888" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_tree_high_e" old_prefab_name="" mobility="1">
+						<transform position="-4.387, 11.257, 0.000" rotation_euler="0.000, 0.000, -0.020"/>
+						<physics shape="bo_log_tree_high_e"/>
+						<components>
+							<meta_mesh_component name="log_tree_high_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_tree_high_e" old_prefab_name="" mobility="1">
+						<transform position="-4.738, 11.254, 0.000" rotation_euler="0.000, 0.000, -0.020"/>
+						<physics shape="bo_log_tree_high_e"/>
+						<components>
+							<meta_mesh_component name="log_tree_high_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_tree_high_e" old_prefab_name="" mobility="1">
+						<transform position="-5.099, 11.236, 0.000" rotation_euler="0.000, 0.000, -0.020"/>
+						<physics shape="bo_log_tree_high_e"/>
+						<components>
+							<meta_mesh_component name="log_tree_high_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_tree_high_e" old_prefab_name="" mobility="1">
+						<transform position="-4.546, 11.215, 0.314" rotation_euler="0.000, 0.000, -0.020"/>
+						<physics shape="bo_log_tree_high_e"/>
+						<components>
+							<meta_mesh_component name="log_tree_high_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_tree_high_e" old_prefab_name="" mobility="1">
+						<transform position="-4.915, 11.225, 0.347" rotation_euler="0.000, 0.000, -0.020"/>
+						<physics shape="bo_log_tree_high_e"/>
+						<components>
+							<meta_mesh_component name="log_tree_high_e"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier3" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier3"/>
+				</tags>
+				<transform position="-7.666, -13.551, -0.186"/>
+				<children>
+					<game_entity name="shop_prop_merchantcarpenter_e" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="e"/>
+						</tags>
+						<transform position="2.506, 9.858, 2.307" rotation_euler="0.000, 0.000, 3.139"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantcarpenter_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_tree_high_e" old_prefab_name="" mobility="1">
+						<transform position="-4.624, 10.303, 0.676" rotation_euler="-0.038, 0.680, 0.026"/>
+						<physics shape="bo_log_tree_high_e"/>
+						<components>
+							<meta_mesh_component name="log_tree_high_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_log_and_axe" old_prefab_name="" mobility="1">
+						<transform position="0.229, 15.811, 0.000" rotation_euler="0.000, 0.000, 2.597"/>
+						<physics shape="bo_bd_log_and_axe" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_log_and_axe"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_a" old_prefab_name="" mobility="1">
+						<transform position="-1.851, 15.906, 0.000" rotation_euler="0.000, 0.000, -0.025"/>
+						<physics shape="bo_bd_wood_heap_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_c" old_prefab_name="" mobility="1">
+						<transform position="0.009, 10.897, 0.000" rotation_euler="0.000, 0.000, 3.125"/>
+						<physics shape="bo_bd_wood_heap_c"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="axe_i" old_prefab_name="" mobility="1">
+						<transform position="1.000, 10.918, 0.810" rotation_euler="1.518, 0.000, -0.404"/>
+						<components>
+							<meta_mesh_component name="axe_i"/>
+						</components>
+					</game_entity>
+					<game_entity name="axe_i" old_prefab_name="" mobility="1">
+						<transform position="-4.904, 10.518, 3.100" rotation_euler="-0.068, -0.603, -1.566" scale="1.807, 1.807, 1.807"/>
+						<components>
+							<meta_mesh_component name="axe_i"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-4.837, 11.146, 2.884" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-4.820, 11.304, 2.621" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-4.832, 10.998, 2.621" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-4.854, 10.707, 2.637" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-4.844, 10.834, 2.884" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-4.844, 11.019, 3.100" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign__f" old_prefab_name="" mobility="1">
+						<transform position="-3.668, 10.843, 3.855" rotation_euler="0.000, 0.000, -1.632"/>
+						<physics shape="bo_shop_sign_base_b3"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_tree_high_e" old_prefab_name="" mobility="1">
+						<transform position="-4.054, 10.309, 0.000" rotation_euler="0.000, 0.000, 0.026"/>
+						<physics shape="bo_log_tree_high_e"/>
+						<components>
+							<meta_mesh_component name="log_tree_high_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_tree_high_e" old_prefab_name="" mobility="1">
+						<transform position="-4.484, 10.298, 0.000" rotation_euler="0.000, 0.000, 0.026"/>
+						<physics shape="bo_log_tree_high_e"/>
+						<components>
+							<meta_mesh_component name="log_tree_high_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_tree_high_e" old_prefab_name="" mobility="1">
+						<transform position="-4.903, 10.291, 0.000" rotation_euler="0.000, 0.000, 0.026"/>
+						<physics shape="bo_log_tree_high_e"/>
+						<components>
+							<meta_mesh_component name="log_tree_high_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_tree_high_e" old_prefab_name="" mobility="1">
+						<transform position="-4.750, 10.268, 0.299" rotation_euler="-0.051, 0.475, 0.026"/>
+						<physics shape="bo_log_tree_high_e"/>
+						<components>
+							<meta_mesh_component name="log_tree_high_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_tree_high_e" old_prefab_name="" mobility="1">
+						<transform position="-4.139, 10.318, 0.387" rotation_euler="-0.031, -0.620, 0.002"/>
+						<physics shape="bo_log_tree_high_e"/>
+						<components>
+							<meta_mesh_component name="log_tree_high_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_prop_merchantcarpenter_a" old_prefab_name="" mobility="1">
+						<transform position="2.192, 13.671, 0.000" rotation_euler="0.000, 0.000, -1.577"/>
+						<physics shape="bo_shop_prop_merchantcarpenter_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantcarpenter_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Carpenter Bench"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="woodcutter"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="vlandia_grandbazaar_shop_a" old_prefab_name="" mobility="1">
+						<transform position="0.306, 13.293, 0.000" rotation_euler="0.000, 0.000, -1.569"/>
+						<physics shape="bo_vlandia_grandbazaar_shop_a"/>
+						<components>
+							<meta_mesh_component name="vlandia_grandbazaar_shop_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_chest_sturgia_a" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="chest"/>
+				</tags>
+				<transform position="-15.500, 2.703, -0.186" rotation_euler="0.000, -0.002, 0.011"/>
+				<physics shape="bo_bd_chest_sturgia_a"/>
+				<components>
+					<meta_mesh_component name="bd_chest_sturgia_a"/>
+				</components>
+				<scripts>
+					<script name="PE_InventoryEntity">
+						<variables>
+							<variable name="InventoryName" value="Chest"/>
+							<variable name="InventoryId" value="avqartej"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="Slot" value="30"/>
+							<variable name="StackCount" value="10"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="PE_bakery_vlandia" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_UpgradeableBuildings">
+				<variables>
+					<variable name="CastleIndex" value="-1"/>
+					<variable name="BuildingName" value="Bakery"/>
+					<variable name="Tier0Tag" value="tier0"/>
+					<variable name="Tier1Tag" value="tier1"/>
+					<variable name="Tier2Tag" value="tier2"/>
+					<variable name="Tier3Tag" value="tier3"/>
+					<variable name="BuildingInteractiveTag" value="chest"/>
+					<variable name="Tier1RequiredEngineering" value="10"/>
+					<variable name="Tier2RequiredEngineering" value="20"/>
+					<variable name="Tier3RequiredEngineering" value="30"/>
+					<variable name="Tier1MaxHit" value="300"/>
+					<variable name="Tier2MaxHit" value="600"/>
+					<variable name="Tier3MaxHit" value="1200"/>
+					<variable name="Tier1UpgradeReceipts" value="pe_hardwood*10,pe_wooden_stick*20,pe_stone*5"/>
+					<variable name="Tier2UpgradeReceipts" value="pe_hardwood*30,pe_wooden_plank*40,pe_stone*50,pe_scroll*5,pe_clay*10"/>
+					<variable name="Tier3UpgradeReceipts" value="pe_hardwood*30,pe_wooden_plank*50,pe_stone*100,pe_book*5,pe_clay*50,pe_goldore*10"/>
+					<variable name="ParticleEffectOnUpgrade" value="dust_fall_a"/>
+					<variable name="SoundEffectOnUpgrade" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="BuildItem" value="pe_buildhammer"/>
+					<variable name="Tier1CraftingEngineering" value="10"/>
+					<variable name="Tier2CraftingEngineering" value="10"/>
+					<variable name="Tier3CraftingEngineering" value="10"/>
+					<variable name="MaxHitPoint" value="200.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="tier0" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier0"/>
+				</tags>
+				<transform position="-7.074, -12.985, 0.000"/>
+				<children>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-0.193, 7.554, -0.058" rotation_euler="0.000, 0.000, 3.121" scale="1.238, 1.112, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-5.885, 12.926, -0.061" rotation_euler="0.000, 0.000, 1.573" scale="1.356, 1.112, 1.166"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="5.253, 13.105, -0.064" rotation_euler="0.000, 0.000, -1.601" scale="1.364, 1.112, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-0.809, 18.195, -0.057" rotation_euler="0.000, 0.000, 0.025" scale="1.341, 1.112, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_e" old_prefab_name="" mobility="1">
+						<transform position="4.225, 17.633, -0.186" rotation_euler="0.000, 0.000, 0.647" scale="1.048, 1.048, 1.048"/>
+						<physics shape="bo_bd_wood_heap_e"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_e" old_prefab_name="" mobility="1">
+						<transform position="-4.426, 8.717, -0.069" rotation_euler="0.000, 0.000, -2.250" scale="1.048, 1.048, 1.048"/>
+						<physics shape="bo_bd_wood_heap_e"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="" mobility="1">
+						<transform position="-3.236, 13.088, -0.009" rotation_euler="0.000, 0.000, -1.242"/>
+						<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_d" old_prefab_name="" mobility="1">
+						<transform position="-4.987, 17.104, -0.069" rotation_euler="0.000, 0.000, 2.229"/>
+						<physics shape="bo_bd_wood_heap_d"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_d" old_prefab_name="" mobility="1">
+						<transform position="4.370, 8.377, -0.069" rotation_euler="0.000, 0.000, -0.997" scale="1.093, 1.093, 1.093"/>
+						<physics shape="bo_bd_wood_heap_d"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_l1_floor_a" old_prefab_name="" mobility="1">
+						<transform position="-0.343, 13.153, -0.186" rotation_euler="0.000, 0.000, 0.000" scale="2.260, 3.380, 1.163"/>
+						<physics shape="bo_european_castle_l1_floor_a"/>
+						<components>
+							<meta_mesh_component name="european_castle_l1_floor_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier1" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier1"/>
+				</tags>
+				<transform position="-6.553, -13.279, -0.186"/>
+				<children>
+					<game_entity name="tent_vlandia_b" old_prefab_name="" mobility="1">
+						<transform position="0.008, 13.520, 0.000" rotation_euler="0.000, 0.000, -1.540" scale="1.471, 1.471, 1.471"/>
+						<physics shape="bo_tent_vlandia_b"/>
+						<components>
+							<meta_mesh_component name="tent_vlandia_b"/>
+						</components>
+						<children>
+							<game_entity name="ambient_sound_emitter" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.051, 0.225" rotation_euler="0.000, 0.000, 0.000" scale="3.479, 1.000, 1.000"/>
+								<scripts>
+									<script name="AmbientSoundEmitter">
+										<variables>
+											<variable name="Event Path" value="event:/mission/ambient/area/interior/generic"/>
+											<variable name="Play On Startup" value="true"/>
+											<variable name="Is Static" value="false"/>
+											<variable name="Override Sound" value="false"/>
+											<variable name="Overrided Max Distance" value="20.000000"/>
+											<variable name="Overrided Min Distance" value="1.000000"/>
+											<variable name="Sound Preset" value="Speakers"/>
+											<variable name="Is Master Sound" value="false"/>
+											<variable name="Is Master Supressor" value="false"/>
+											<variable name="Is Triggered" value="true"/>
+											<variable name="Trigger Shape" value="Sphere"/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="mp_shop_prop_merchantbakery_a" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-0.210, 10.530, 0.000" rotation_euler="0.000, 0.000, 3.135"/>
+						<physics shape="bo_shop_prop_merchantbakery_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantbakery_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Oven"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="bakery"/>
+									<variable name="RelevantSkillId" value="Cooking"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="burned_wood_b" old_prefab_name="" mobility="1">
+								<transform position="1.393, 0.167, 0.200"/>
+								<components>
+									<meta_mesh_component name="burned_wood_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="prt_torch_fire" old_prefab_name="" mobility="1">
+								<transform position="1.398, -0.025, 0.123" rotation_euler="0.000, 0.000, 0.669"/>
+								<components>
+									<particle_system_instanced_component>
+										<effect base_effect="{39CDECB3-046B-4A8B-8E71-533BB7F6C882}">
+											<emitter_overrides>
+												<emitter guid="{91DE7F64-8F4D-4105-A197-22047F264CE8}">
+													<flags>
+														<flag name="loop_sprite" value="true"/>
+														<flag name="uses_sprite_animation" value="true"/>
+														<flag name="order_by_distance" value="false"/>
+													</flags>
+													<parameters>
+														<parameter name="skew_with_particle_velocity_coef" value="0.000"/>
+														<parameter name="emit_box_size" value="0.000, 0.000, 0.000"/>
+														<parameter name="quad_scale" value="0.235, 0.235"/>
+														<parameter name="texture_sprite_frame_rate" value="25.000"/>
+														<parameter name="fadeout_distance" value="0.005"/>
+														<parameter name="diffuse_multiplier" value="250.000"/>
+														<parameter name="particle_size_curve_op" value="add"/>
+														<parameter name="emission_rate" base="10.000" bias="0.000"/>
+														<parameter name="cone_emit_velocity" base="1.000" bias="0.000"/>
+														<parameter name="emit_velocity_z" base="0.000" bias="0.000"/>
+														<parameter name="emit_rotation_speed" base="0.000" bias="57.296"/>
+														<parameter name="wind_effect" base="1.000" bias="0.000"/>
+														<parameter name="particle_size" base="0.000" bias="0.000">
+															<curve name="particle_life" version="1" default="1.000" curve_multiplier="0.600">
+																<keys>
+																	<key time="0.000" value="1.000" tangent="0.007, 0.000"/>
+																	<key time="0.000" value="0.500" tangent="-0.007, 0.000"/>
+																</keys>
+															</curve>
+														</parameter>
+														<parameter name="material_guid" value="{E9D0AFB2-E3B2-4FBA-A017-D747B6C256F1}"/>
+														<parameter name="particle_color">
+															<color>
+																<keys>
+																	<key time="0.500" value="0.341, 0.235, 0.173"/>
+																	<key time="0.900" value="0.573, 0.573, 0.573"/>
+																</keys>
+															</color>
+															<alpha>
+																<keys>
+																	<key time="0.000" value="0.000"/>
+																	<key time="0.500" value="1.000"/>
+																	<key time="0.900" value="1.000"/>
+																	<key time="1.000" value="0.000"/>
+																</keys>
+															</alpha>
+														</parameter>
+													</parameters>
+												</emitter>
+											</emitter_overrides>
+										</effect>
+									</particle_system_instanced_component>
+								</components>
+								<children>
+									<game_entity name="torch_fire_sparks" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.000, 0.062"/>
+										<components>
+											<particle_system_instanced_component>
+												<effect base_effect="{39CDECB3-046B-4A8B-8E71-533BB7F6C882}">
+													<emitter_overrides>
+														<emitter guid="{91DE7F64-8F4D-4105-A197-22047F264CE8}">
+															<flags>
+																<flag name="local_emit_dir" value="false"/>
+																<flag name="skew_with_respect_to_particle_velocity" value="true"/>
+																<flag name="order_by_distance" value="false"/>
+															</flags>
+															<parameters>
+																<parameter name="skew_with_particle_velocity_coef" value="0.067"/>
+																<parameter name="emit_box_size" value="0.050, 0.050, 0.200"/>
+																<parameter name="gravity" value="0.000, 0.000, 0.500"/>
+																<parameter name="quad_scale" value="0.005, 0.005"/>
+																<parameter name="texture_sprite_count" value="1, 1"/>
+																<parameter name="texture_sprite_frame_count" value="1"/>
+																<parameter name="texture_sprite_frame_rate" value="1.000"/>
+																<parameter name="fadeout_distance" value="0.005"/>
+																<parameter name="diffuse_multiplier" value="1.000"/>
+																<parameter name="particle_size_curve_op" value="add"/>
+																<parameter name="billboard_type" value="turn_to_velocity_side"/>
+																<parameter name="initial_rotation" base="0.000" bias="0.000"/>
+																<parameter name="damping" base="0.713" bias="0.000"/>
+																<parameter name="angular_damping" base="0.000" bias="0.000"/>
+																<parameter name="cone_emit_velocity" base="1.000" bias="0.000"/>
+																<parameter name="emit_velocity_x" base="0.000" bias="0.500"/>
+																<parameter name="emit_velocity_y" base="0.000" bias="0.500"/>
+																<parameter name="emit_velocity_z" base="1.000" bias="0.500"/>
+																<parameter name="wind_effect" base="1.000" bias="0.000"/>
+																<parameter name="particle_size" base="0.000" bias="0.000">
+																	<curve name="particle_life" version="1" default="1.000" curve_multiplier="1.000">
+																		<keys>
+																			<key time="0.000" value="1.000" tangent="0.007, 0.000"/>
+																			<key time="0.000" value="0.300" tangent="-0.007, 0.000"/>
+																		</keys>
+																	</curve>
+																</parameter>
+																<parameter name="material_guid" value="{C783D465-AF3A-4652-BDD3-C171857CBBC0}"/>
+																<parameter name="particle_color">
+																	<color>
+																		<keys>
+																			<key time="0.500" value="0.694, 0.259, 0.122"/>
+																			<key time="0.900" value="0.765, 0.357, 0.122"/>
+																		</keys>
+																	</color>
+																	<alpha>
+																		<keys>
+																			<key time="0.000" value="0.000"/>
+																			<key time="0.500" value="1.000"/>
+																			<key time="0.900" value="0.196"/>
+																			<key time="1.000" value="0.000"/>
+																		</keys>
+																	</alpha>
+																</parameter>
+															</parameters>
+														</emitter>
+													</emitter_overrides>
+												</effect>
+											</particle_system_instanced_component>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="ashes_a" old_prefab_name="" mobility="1">
+								<transform position="1.351, -0.055, 0.216" rotation_euler="0.000, 0.000, 0.000" scale="0.575, 0.575, 0.546"/>
+								<components>
+									<meta_mesh_component name="ashes_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="a_spr_light" old_prefab_name="" mobility="1">
+								<transform position="1.359, -0.189, 0.502"/>
+								<components>
+									<light_component color="1.000, 0.608, 0.216" intensity="10.000" radius="3.000" flicker_interval="0.100" flicker_magnitude="0.900" local_frame_rot="3.000000, 0.000000, 0.000000, 0.000000, 3.000000, 0.000000, 0.000000, 0.000000, 3.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow="1" shadow_size_multiplier="1" shadow_radius="2.400"/>
+								</components>
+							</game_entity>
+							<game_entity name="burned_wood_f" old_prefab_name="" mobility="1">
+								<transform position="1.369, -0.197, 0.215" rotation_euler="0.000, 0.000, 1.224"/>
+								<components>
+									<meta_mesh_component name="burned_wood_f"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="mp_shop_prop_merchantflour_a" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="0.230, 16.210, 0.000" rotation_euler="0.000, 0.000, -0.038"/>
+						<physics shape="bo_shop_prop_merchantflour_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantflour_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Grinder"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="grinder"/>
+									<variable name="RelevantSkillId" value="Cooking"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="bd_mill_flour_sack_desk_b" old_prefab_name="" mobility="1">
+						<transform position="-5.449, 16.304, 0.000" rotation_euler="0.000, 0.000, 1.114"/>
+						<physics shape="bo_mill_flour_sack_desk_b" override_material="sand"/>
+						<components>
+							<meta_mesh_component name="mill_flour_sack_desk_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier2" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier2"/>
+				</tags>
+				<transform position="-6.985, -13.129, -0.186"/>
+				<children>
+					<game_entity name="sturgia_village_barn_b" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_sturgia_village_barn_b">
+						<transform position="-3.941, 13.676, 0.000" rotation_euler="0.000, 0.000, 3.136" scale="0.948, 0.735, 1.000"/>
+						<physics shape="bo_sturgia_village_barn_b"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="sturgia_village_barn_b">
+								<mesh name="sturgia_village_barn_b.1" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+								<mesh name="sturgia_village_barn_b.2" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.3" material="plank_b2" argument="2.700, 2.500, 3.600, 1.200" argument2="7.700, 1.800, 2.600, 3.000"/>
+								<mesh name="sturgia_village_barn_b.7" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod1.1" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+								<mesh name="sturgia_village_barn_b.lod1.3" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.lod1.7" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod2.1" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+								<mesh name="sturgia_village_barn_b.lod2.3" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.lod2.7" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod3.1" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+								<mesh name="sturgia_village_barn_b.lod3.3" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.lod3.7" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod4.1" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+								<mesh name="sturgia_village_barn_b.lod4.3" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.lod4.7" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod5.0" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.lod5.5" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod5.6" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign__f" old_prefab_name="" mobility="1">
+						<transform position="-3.739, 11.233, 3.148" rotation_euler="0.000, 0.000, -1.654"/>
+						<physics shape="bo_shop_sign_base_b3"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_merchantbakery" old_prefab_name="" mobility="1">
+						<transform position="-4.955, 11.330, 2.156" rotation_euler="0.000, 0.000, -1.609"/>
+						<components>
+							<meta_mesh_component name="shop_sign_merchantbakery"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_mill_flour_sack_desk_b" old_prefab_name="" mobility="1">
+						<transform position="-4.555, 16.241, 0.000" rotation_euler="0.000, 0.000, 1.604"/>
+						<physics shape="bo_mill_flour_sack_desk_b" override_material="sand"/>
+						<components>
+							<meta_mesh_component name="mill_flour_sack_desk_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="mp_shop_prop_merchantflour_a" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="2.116, 15.600, 0.000" rotation_euler="0.000, 0.000, -0.007"/>
+						<physics shape="bo_shop_prop_merchantflour_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantflour_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Grinder"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="grinder"/>
+									<variable name="RelevantSkillId" value="Cooking"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="mp_shop_prop_merchantbakery_a" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="1.624, 11.227, 0.000" rotation_euler="0.000, 0.001, 3.127"/>
+						<physics shape="bo_shop_prop_merchantbakery_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantbakery_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Oven"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="bakery"/>
+									<variable name="RelevantSkillId" value="Cooking"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="burned_wood_b" old_prefab_name="" mobility="1">
+								<transform position="1.393, 0.167, 0.200"/>
+								<components>
+									<meta_mesh_component name="burned_wood_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="prt_torch_fire" old_prefab_name="" mobility="1">
+								<transform position="1.398, -0.025, 0.123" rotation_euler="0.000, 0.000, 0.669"/>
+								<components>
+									<particle_system_instanced_component>
+										<effect base_effect="{39CDECB3-046B-4A8B-8E71-533BB7F6C882}">
+											<emitter_overrides>
+												<emitter guid="{91DE7F64-8F4D-4105-A197-22047F264CE8}">
+													<flags>
+														<flag name="loop_sprite" value="true"/>
+														<flag name="uses_sprite_animation" value="true"/>
+														<flag name="order_by_distance" value="false"/>
+													</flags>
+													<parameters>
+														<parameter name="skew_with_particle_velocity_coef" value="0.000"/>
+														<parameter name="emit_box_size" value="0.000, 0.000, 0.000"/>
+														<parameter name="quad_scale" value="0.235, 0.235"/>
+														<parameter name="texture_sprite_frame_rate" value="25.000"/>
+														<parameter name="fadeout_distance" value="0.005"/>
+														<parameter name="diffuse_multiplier" value="250.000"/>
+														<parameter name="particle_size_curve_op" value="add"/>
+														<parameter name="emission_rate" base="10.000" bias="0.000"/>
+														<parameter name="cone_emit_velocity" base="1.000" bias="0.000"/>
+														<parameter name="emit_velocity_z" base="0.000" bias="0.000"/>
+														<parameter name="emit_rotation_speed" base="0.000" bias="57.296"/>
+														<parameter name="wind_effect" base="1.000" bias="0.000"/>
+														<parameter name="particle_size" base="0.000" bias="0.000">
+															<curve name="particle_life" version="1" default="1.000" curve_multiplier="0.600">
+																<keys>
+																	<key time="0.000" value="1.000" tangent="0.007, 0.000"/>
+																	<key time="0.000" value="0.500" tangent="-0.007, 0.000"/>
+																</keys>
+															</curve>
+														</parameter>
+														<parameter name="material_guid" value="{E9D0AFB2-E3B2-4FBA-A017-D747B6C256F1}"/>
+														<parameter name="particle_color">
+															<color>
+																<keys>
+																	<key time="0.500" value="0.341, 0.235, 0.173"/>
+																	<key time="0.900" value="0.573, 0.573, 0.573"/>
+																</keys>
+															</color>
+															<alpha>
+																<keys>
+																	<key time="0.000" value="0.000"/>
+																	<key time="0.500" value="1.000"/>
+																	<key time="0.900" value="1.000"/>
+																	<key time="1.000" value="0.000"/>
+																</keys>
+															</alpha>
+														</parameter>
+													</parameters>
+												</emitter>
+											</emitter_overrides>
+										</effect>
+									</particle_system_instanced_component>
+								</components>
+								<children>
+									<game_entity name="torch_fire_sparks" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.000, 0.062"/>
+										<components>
+											<particle_system_instanced_component>
+												<effect base_effect="{39CDECB3-046B-4A8B-8E71-533BB7F6C882}">
+													<emitter_overrides>
+														<emitter guid="{91DE7F64-8F4D-4105-A197-22047F264CE8}">
+															<flags>
+																<flag name="local_emit_dir" value="false"/>
+																<flag name="skew_with_respect_to_particle_velocity" value="true"/>
+																<flag name="order_by_distance" value="false"/>
+															</flags>
+															<parameters>
+																<parameter name="skew_with_particle_velocity_coef" value="0.067"/>
+																<parameter name="emit_box_size" value="0.050, 0.050, 0.200"/>
+																<parameter name="gravity" value="0.000, 0.000, 0.500"/>
+																<parameter name="quad_scale" value="0.005, 0.005"/>
+																<parameter name="texture_sprite_count" value="1, 1"/>
+																<parameter name="texture_sprite_frame_count" value="1"/>
+																<parameter name="texture_sprite_frame_rate" value="1.000"/>
+																<parameter name="fadeout_distance" value="0.005"/>
+																<parameter name="diffuse_multiplier" value="1.000"/>
+																<parameter name="particle_size_curve_op" value="add"/>
+																<parameter name="billboard_type" value="turn_to_velocity_side"/>
+																<parameter name="initial_rotation" base="0.000" bias="0.000"/>
+																<parameter name="damping" base="0.713" bias="0.000"/>
+																<parameter name="angular_damping" base="0.000" bias="0.000"/>
+																<parameter name="cone_emit_velocity" base="1.000" bias="0.000"/>
+																<parameter name="emit_velocity_x" base="0.000" bias="0.500"/>
+																<parameter name="emit_velocity_y" base="0.000" bias="0.500"/>
+																<parameter name="emit_velocity_z" base="1.000" bias="0.500"/>
+																<parameter name="wind_effect" base="1.000" bias="0.000"/>
+																<parameter name="particle_size" base="0.000" bias="0.000">
+																	<curve name="particle_life" version="1" default="1.000" curve_multiplier="1.000">
+																		<keys>
+																			<key time="0.000" value="1.000" tangent="0.007, 0.000"/>
+																			<key time="0.000" value="0.300" tangent="-0.007, 0.000"/>
+																		</keys>
+																	</curve>
+																</parameter>
+																<parameter name="material_guid" value="{C783D465-AF3A-4652-BDD3-C171857CBBC0}"/>
+																<parameter name="particle_color">
+																	<color>
+																		<keys>
+																			<key time="0.500" value="0.694, 0.259, 0.122"/>
+																			<key time="0.900" value="0.765, 0.357, 0.122"/>
+																		</keys>
+																	</color>
+																	<alpha>
+																		<keys>
+																			<key time="0.000" value="0.000"/>
+																			<key time="0.500" value="1.000"/>
+																			<key time="0.900" value="0.196"/>
+																			<key time="1.000" value="0.000"/>
+																		</keys>
+																	</alpha>
+																</parameter>
+															</parameters>
+														</emitter>
+													</emitter_overrides>
+												</effect>
+											</particle_system_instanced_component>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="ashes_a" old_prefab_name="" mobility="1">
+								<transform position="1.351, -0.055, 0.216" rotation_euler="0.000, 0.000, 0.000" scale="0.575, 0.575, 0.546"/>
+								<components>
+									<meta_mesh_component name="ashes_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="a_spr_light" old_prefab_name="" mobility="1">
+								<transform position="1.359, -0.189, 0.502"/>
+								<components>
+									<light_component color="1.000, 0.608, 0.216" intensity="10.000" radius="3.000" flicker_interval="0.100" flicker_magnitude="0.900" local_frame_rot="3.000000, 0.000000, 0.000000, 0.000000, 3.000000, 0.000000, 0.000000, 0.000000, 3.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow="1" shadow_size_multiplier="1" shadow_radius="2.400"/>
+								</components>
+							</game_entity>
+							<game_entity name="burned_wood_f" old_prefab_name="" mobility="1">
+								<transform position="1.369, -0.197, 0.215" rotation_euler="0.000, 0.000, 1.224"/>
+								<components>
+									<meta_mesh_component name="burned_wood_f"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier3" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier3"/>
+				</tags>
+				<transform position="-7.309, -13.279, -0.186"/>
+				<children>
+					<game_entity name="shop_sign__f" old_prefab_name="" mobility="1">
+						<transform position="-3.815, 10.638, 3.839" rotation_euler="0.000, 0.000, -1.628"/>
+						<physics shape="bo_shop_sign_base_b3"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_merchantbakery" old_prefab_name="" mobility="1">
+						<transform position="-5.037, 10.652, 2.924" rotation_euler="0.000, 0.000, -1.583"/>
+						<components>
+							<meta_mesh_component name="shop_sign_merchantbakery"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_mill_flour_sack_desk_b" old_prefab_name="" mobility="1">
+						<transform position="-4.370, 16.302, 0.000" rotation_euler="0.000, 0.000, 1.554"/>
+						<physics shape="bo_mill_flour_sack_desk_b" override_material="sand"/>
+						<components>
+							<meta_mesh_component name="mill_flour_sack_desk_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="mp_shop_prop_merchantflour_a" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="0.986, 15.228, 0.000" rotation_euler="0.000, 0.000, -0.006"/>
+						<physics shape="bo_shop_prop_merchantflour_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantflour_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Grinder"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="grinder"/>
+									<variable name="RelevantSkillId" value="Cooking"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="mp_shop_prop_merchantbakery_a" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="0.214, 11.098, 0.074" rotation_euler="0.000, 0.000, 3.141"/>
+						<physics shape="bo_shop_prop_merchantbakery_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantbakery_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Oven"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="bakery"/>
+									<variable name="RelevantSkillId" value="Cooking"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="burned_wood_b" old_prefab_name="" mobility="1">
+								<transform position="1.393, 0.167, 0.200"/>
+								<components>
+									<meta_mesh_component name="burned_wood_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="prt_torch_fire" old_prefab_name="" mobility="1">
+								<transform position="1.398, -0.025, 0.123" rotation_euler="0.000, 0.000, 0.669"/>
+								<components>
+									<particle_system_instanced_component>
+										<effect base_effect="{39CDECB3-046B-4A8B-8E71-533BB7F6C882}">
+											<emitter_overrides>
+												<emitter guid="{91DE7F64-8F4D-4105-A197-22047F264CE8}">
+													<flags>
+														<flag name="loop_sprite" value="true"/>
+														<flag name="uses_sprite_animation" value="true"/>
+														<flag name="order_by_distance" value="false"/>
+													</flags>
+													<parameters>
+														<parameter name="skew_with_particle_velocity_coef" value="0.000"/>
+														<parameter name="emit_box_size" value="0.000, 0.000, 0.000"/>
+														<parameter name="quad_scale" value="0.235, 0.235"/>
+														<parameter name="texture_sprite_frame_rate" value="25.000"/>
+														<parameter name="fadeout_distance" value="0.005"/>
+														<parameter name="diffuse_multiplier" value="250.000"/>
+														<parameter name="particle_size_curve_op" value="add"/>
+														<parameter name="emission_rate" base="10.000" bias="0.000"/>
+														<parameter name="cone_emit_velocity" base="1.000" bias="0.000"/>
+														<parameter name="emit_velocity_z" base="0.000" bias="0.000"/>
+														<parameter name="emit_rotation_speed" base="0.000" bias="57.296"/>
+														<parameter name="wind_effect" base="1.000" bias="0.000"/>
+														<parameter name="particle_size" base="0.000" bias="0.000">
+															<curve name="particle_life" version="1" default="1.000" curve_multiplier="0.600">
+																<keys>
+																	<key time="0.000" value="1.000" tangent="0.007, 0.000"/>
+																	<key time="0.000" value="0.500" tangent="-0.007, 0.000"/>
+																</keys>
+															</curve>
+														</parameter>
+														<parameter name="material_guid" value="{E9D0AFB2-E3B2-4FBA-A017-D747B6C256F1}"/>
+														<parameter name="particle_color">
+															<color>
+																<keys>
+																	<key time="0.500" value="0.341, 0.235, 0.173"/>
+																	<key time="0.900" value="0.573, 0.573, 0.573"/>
+																</keys>
+															</color>
+															<alpha>
+																<keys>
+																	<key time="0.000" value="0.000"/>
+																	<key time="0.500" value="1.000"/>
+																	<key time="0.900" value="1.000"/>
+																	<key time="1.000" value="0.000"/>
+																</keys>
+															</alpha>
+														</parameter>
+													</parameters>
+												</emitter>
+											</emitter_overrides>
+										</effect>
+									</particle_system_instanced_component>
+								</components>
+								<children>
+									<game_entity name="torch_fire_sparks" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.000, 0.062"/>
+										<components>
+											<particle_system_instanced_component>
+												<effect base_effect="{39CDECB3-046B-4A8B-8E71-533BB7F6C882}">
+													<emitter_overrides>
+														<emitter guid="{91DE7F64-8F4D-4105-A197-22047F264CE8}">
+															<flags>
+																<flag name="local_emit_dir" value="false"/>
+																<flag name="skew_with_respect_to_particle_velocity" value="true"/>
+																<flag name="order_by_distance" value="false"/>
+															</flags>
+															<parameters>
+																<parameter name="skew_with_particle_velocity_coef" value="0.067"/>
+																<parameter name="emit_box_size" value="0.050, 0.050, 0.200"/>
+																<parameter name="gravity" value="0.000, 0.000, 0.500"/>
+																<parameter name="quad_scale" value="0.005, 0.005"/>
+																<parameter name="texture_sprite_count" value="1, 1"/>
+																<parameter name="texture_sprite_frame_count" value="1"/>
+																<parameter name="texture_sprite_frame_rate" value="1.000"/>
+																<parameter name="fadeout_distance" value="0.005"/>
+																<parameter name="diffuse_multiplier" value="1.000"/>
+																<parameter name="particle_size_curve_op" value="add"/>
+																<parameter name="billboard_type" value="turn_to_velocity_side"/>
+																<parameter name="initial_rotation" base="0.000" bias="0.000"/>
+																<parameter name="damping" base="0.713" bias="0.000"/>
+																<parameter name="angular_damping" base="0.000" bias="0.000"/>
+																<parameter name="cone_emit_velocity" base="1.000" bias="0.000"/>
+																<parameter name="emit_velocity_x" base="0.000" bias="0.500"/>
+																<parameter name="emit_velocity_y" base="0.000" bias="0.500"/>
+																<parameter name="emit_velocity_z" base="1.000" bias="0.500"/>
+																<parameter name="wind_effect" base="1.000" bias="0.000"/>
+																<parameter name="particle_size" base="0.000" bias="0.000">
+																	<curve name="particle_life" version="1" default="1.000" curve_multiplier="1.000">
+																		<keys>
+																			<key time="0.000" value="1.000" tangent="0.007, 0.000"/>
+																			<key time="0.000" value="0.300" tangent="-0.007, 0.000"/>
+																		</keys>
+																	</curve>
+																</parameter>
+																<parameter name="material_guid" value="{C783D465-AF3A-4652-BDD3-C171857CBBC0}"/>
+																<parameter name="particle_color">
+																	<color>
+																		<keys>
+																			<key time="0.500" value="0.694, 0.259, 0.122"/>
+																			<key time="0.900" value="0.765, 0.357, 0.122"/>
+																		</keys>
+																	</color>
+																	<alpha>
+																		<keys>
+																			<key time="0.000" value="0.000"/>
+																			<key time="0.500" value="1.000"/>
+																			<key time="0.900" value="0.196"/>
+																			<key time="1.000" value="0.000"/>
+																		</keys>
+																	</alpha>
+																</parameter>
+															</parameters>
+														</emitter>
+													</emitter_overrides>
+												</effect>
+											</particle_system_instanced_component>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="ashes_a" old_prefab_name="" mobility="1">
+								<transform position="1.351, -0.055, 0.216" rotation_euler="0.000, 0.000, 0.000" scale="0.575, 0.575, 0.546"/>
+								<components>
+									<meta_mesh_component name="ashes_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="a_spr_light" old_prefab_name="" mobility="1">
+								<transform position="1.359, -0.189, 0.502"/>
+								<components>
+									<light_component color="1.000, 0.608, 0.216" intensity="10.000" radius="3.000" flicker_interval="0.100" flicker_magnitude="0.900" local_frame_rot="3.000000, 0.000000, 0.000000, 0.000000, 3.000000, 0.000000, 0.000000, 0.000000, 3.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow="1" shadow_size_multiplier="1" shadow_radius="2.400"/>
+								</components>
+							</game_entity>
+							<game_entity name="burned_wood_f" old_prefab_name="" mobility="1">
+								<transform position="1.369, -0.197, 0.215" rotation_euler="0.000, 0.000, 1.224"/>
+								<components>
+									<meta_mesh_component name="burned_wood_f"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="vlandia_grandbazaar_shop_a" old_prefab_name="" mobility="1">
+						<transform position="0.285, 13.225, 0.000" rotation_euler="0.000, 0.000, -1.562"/>
+						<physics shape="bo_vlandia_grandbazaar_shop_a"/>
+						<components>
+							<meta_mesh_component name="vlandia_grandbazaar_shop_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_chest_sturgia_a" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="chest"/>
+				</tags>
+				<transform position="-15.565, 2.349, -0.179" rotation_euler="0.026, 0.001, 0.011"/>
+				<physics shape="bo_bd_chest_sturgia_a"/>
+				<components>
+					<meta_mesh_component name="bd_chest_sturgia_a"/>
+				</components>
+				<scripts>
+					<script name="PE_InventoryEntity">
+						<variables>
+							<variable name="InventoryName" value="Chest"/>
+							<variable name="InventoryId" value="js29x20v"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="Slot" value="30"/>
+							<variable name="StackCount" value="10"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="PE_forge_vlandia" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_UpgradeableBuildings">
+				<variables>
+					<variable name="CastleIndex" value="-1"/>
+					<variable name="BuildingName" value="Forge"/>
+					<variable name="Tier0Tag" value="tier0"/>
+					<variable name="Tier1Tag" value="tier1"/>
+					<variable name="Tier2Tag" value="tier2"/>
+					<variable name="Tier3Tag" value="tier3"/>
+					<variable name="BuildingInteractiveTag" value="chest"/>
+					<variable name="Tier1RequiredEngineering" value="10"/>
+					<variable name="Tier2RequiredEngineering" value="20"/>
+					<variable name="Tier3RequiredEngineering" value="30"/>
+					<variable name="Tier1MaxHit" value="300"/>
+					<variable name="Tier2MaxHit" value="600"/>
+					<variable name="Tier3MaxHit" value="1200"/>
+					<variable name="Tier1UpgradeReceipts" value="pe_hardwood*10,pe_wooden_stick*20,pe_stone*5"/>
+					<variable name="Tier2UpgradeReceipts" value="pe_hardwood*30,pe_wooden_plank*40,pe_stone*50,pe_scroll*5,pe_clay*10"/>
+					<variable name="Tier3UpgradeReceipts" value="pe_hardwood*30,pe_wooden_plank*50,pe_stone*100,pe_book*5,pe_clay*50,pe_goldore*10"/>
+					<variable name="ParticleEffectOnUpgrade" value="dust_fall_a"/>
+					<variable name="SoundEffectOnUpgrade" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="BuildItem" value="pe_buildhammer"/>
+					<variable name="Tier1CraftingEngineering" value="10"/>
+					<variable name="Tier2CraftingEngineering" value="10"/>
+					<variable name="Tier3CraftingEngineering" value="10"/>
+					<variable name="MaxHitPoint" value="200.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="tier0" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier0"/>
+				</tags>
+				<transform position="-1.953, -12.985, 0.000"/>
+				<children>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-0.193, 7.554, -0.058" rotation_euler="0.000, 0.000, 3.121" scale="1.238, 1.112, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-5.885, 12.926, -0.061" rotation_euler="0.000, 0.000, 1.573" scale="1.356, 1.112, 1.166"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="5.253, 13.105, -0.064" rotation_euler="0.000, 0.000, -1.601" scale="1.364, 1.112, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-0.809, 18.195, -0.057" rotation_euler="0.000, 0.000, 0.025" scale="1.341, 1.112, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_e" old_prefab_name="" mobility="1">
+						<transform position="4.225, 17.633, -0.186" rotation_euler="0.000, 0.000, 0.647" scale="1.048, 1.048, 1.048"/>
+						<physics shape="bo_bd_wood_heap_e"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_e" old_prefab_name="" mobility="1">
+						<transform position="-4.426, 8.717, -0.069" rotation_euler="0.000, 0.000, -2.250" scale="1.048, 1.048, 1.048"/>
+						<physics shape="bo_bd_wood_heap_e"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="" mobility="1">
+						<transform position="-3.236, 13.088, -0.009" rotation_euler="0.000, 0.000, -1.242"/>
+						<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_d" old_prefab_name="" mobility="1">
+						<transform position="-4.987, 17.104, -0.069" rotation_euler="0.000, 0.000, 2.229"/>
+						<physics shape="bo_bd_wood_heap_d"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_d" old_prefab_name="" mobility="1">
+						<transform position="4.370, 8.377, -0.069" rotation_euler="0.000, 0.000, -0.997" scale="1.093, 1.093, 1.093"/>
+						<physics shape="bo_bd_wood_heap_d"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_l1_floor_a" old_prefab_name="" mobility="1">
+						<transform position="-0.343, 13.153, -0.186" rotation_euler="0.000, 0.000, 0.000" scale="2.260, 3.380, 1.163"/>
+						<physics shape="bo_european_castle_l1_floor_a"/>
+						<components>
+							<meta_mesh_component name="european_castle_l1_floor_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier1" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier1"/>
+				</tags>
+				<transform position="-1.985, -13.279, -0.186"/>
+				<children>
+					<game_entity name="tent_vlandia_b" old_prefab_name="" mobility="1">
+						<transform position="0.008, 13.520, 0.000" rotation_euler="0.000, 0.000, -1.540" scale="1.471, 1.471, 1.471"/>
+						<physics shape="bo_tent_vlandia_b"/>
+						<components>
+							<meta_mesh_component name="tent_vlandia_b"/>
+						</components>
+						<children>
+							<game_entity name="ambient_sound_emitter" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.051, 0.225" rotation_euler="0.000, 0.000, 0.000" scale="3.479, 1.000, 1.000"/>
+								<scripts>
+									<script name="AmbientSoundEmitter">
+										<variables>
+											<variable name="Event Path" value="event:/mission/ambient/area/interior/generic"/>
+											<variable name="Play On Startup" value="true"/>
+											<variable name="Is Static" value="false"/>
+											<variable name="Override Sound" value="false"/>
+											<variable name="Overrided Max Distance" value="20.000000"/>
+											<variable name="Overrided Min Distance" value="1.000000"/>
+											<variable name="Sound Preset" value="Speakers"/>
+											<variable name="Is Master Sound" value="false"/>
+											<variable name="Is Master Supressor" value="false"/>
+											<variable name="Is Triggered" value="true"/>
+											<variable name="Trigger Shape" value="Sphere"/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="shop_prop_merchantsmithing_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="b"/>
+						</tags>
+						<transform position="-4.964, 10.767, 0.000" rotation_euler="0.000, 0.000, -0.955"/>
+						<physics shape="bo_shop_prop_merchantsmithing_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantsmithing_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_prop_merchantsmithing_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="b"/>
+						</tags>
+						<transform position="-5.222, 16.431, 0.000" rotation_euler="-0.080, -0.083, -2.159"/>
+						<physics shape="bo_shop_prop_merchantsmithing_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantsmithing_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="sp_blacksmith_with_smithing_machine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="0.667, 16.536, 0.000" rotation_euler="0.000, 0.000, 0.010"/>
+						<physics shape="bo_shop_pr_animated"/>
+						<skeleton skeleton_model="merchant_smithing_machine_skeleton">
+							<components>
+								<meta_mesh_component name="shop_prop_animated"/>
+							</components>
+						</skeleton>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Smithy"/>
+									<variable name="Animation" value="act_smithing_machine_anvil_start"/>
+									<variable name="CraftingRecieptTag" value="all_weapons"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="blacksmith_flame" old_prefab_name="" mobility="1">
+								<transform position="0.490, 0.329, 0.560" rotation_euler="0.000, 0.000, -1.593"/>
+								<components>
+									<particle_system_instanced_component>
+										<effect_ref base_effect="{A85B25C0-F07D-4A12-A077-9E2B931BEEC3}"/>
+									</particle_system_instanced_component>
+								</components>
+								<children>
+									<game_entity name="light" old_prefab_name="" mobility="1">
+										<transform position="0.000, -0.094, 0.416"/>
+										<components>
+											<light_component color="1.000, 0.596, 0.243" intensity="100.000" radius="10.000" flicker_interval="0.400" flicker_magnitude="0.600" local_frame_rot="10.000000, 0.000000, 0.000000, 0.000000, 10.000000, 0.000000, 0.000000, 0.000000, 10.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow_size_multiplier="1" shadow_radius="8.000"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="shop_prop_merchantarmory_a" old_prefab_name="" mobility="1">
+						<transform position="-0.457, 10.878, 0.000" rotation_euler="0.000, 0.000, -3.127"/>
+						<physics shape="bo_shop_prop_merchantarmory_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantarmory_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Armory"/>
+									<variable name="Animation" value="act_smithing_machine_anvil_start"/>
+									<variable name="CraftingRecieptTag" value="vlandiaarmors"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier2" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier2"/>
+				</tags>
+				<transform position="-1.954, -13.279, -0.186"/>
+				<children>
+					<game_entity name="sturgia_village_barn_b" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_sturgia_village_barn_b">
+						<transform position="-3.941, 13.676, 0.000" rotation_euler="0.000, 0.000, 3.136" scale="0.948, 0.735, 1.000"/>
+						<physics shape="bo_sturgia_village_barn_b"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="sturgia_village_barn_b">
+								<mesh name="sturgia_village_barn_b.1" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+								<mesh name="sturgia_village_barn_b.2" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.3" material="plank_b2" argument="2.700, 2.500, 3.600, 1.200" argument2="7.700, 1.800, 2.600, 3.000"/>
+								<mesh name="sturgia_village_barn_b.7" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod1.1" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+								<mesh name="sturgia_village_barn_b.lod1.3" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.lod1.7" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod2.1" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+								<mesh name="sturgia_village_barn_b.lod2.3" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.lod2.7" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod3.1" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+								<mesh name="sturgia_village_barn_b.lod3.3" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.lod3.7" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod4.1" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+								<mesh name="sturgia_village_barn_b.lod4.3" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.lod4.7" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod5.0" material="plank_b2"/>
+								<mesh name="sturgia_village_barn_b.lod5.5" material="thatched_roof_b"/>
+								<mesh name="sturgia_village_barn_b.lod5.6" material="puddle_decal_a" argument="0.530, 0.350, 0.000, 0.650" argument2="0.000, 0.000, 0.440, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign__f" old_prefab_name="" mobility="1">
+						<transform position="-3.755, 11.231, 3.602" rotation_euler="0.000, 0.000, -1.632"/>
+						<physics shape="bo_shop_sign_base_b3"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_merchantsmithing" old_prefab_name="" mobility="1">
+						<transform position="-4.955, 11.360, 2.689" rotation_euler="0.000, 0.000, -1.639"/>
+						<components>
+							<meta_mesh_component name="shop_sign_merchantsmithing"/>
+						</components>
+					</game_entity>
+					<game_entity name="sp_blacksmith_with_smithing_machine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="2.633, 16.280, 0.000" rotation_euler="0.000, 0.000, -0.044"/>
+						<physics shape="bo_shop_pr_animated"/>
+						<skeleton skeleton_model="merchant_smithing_machine_skeleton">
+							<components>
+								<meta_mesh_component name="shop_prop_animated"/>
+							</components>
+						</skeleton>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Smithy"/>
+									<variable name="Animation" value="act_smithing_machine_anvil_start"/>
+									<variable name="CraftingRecieptTag" value="all_weapons"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="blacksmith_flame" old_prefab_name="" mobility="1">
+								<transform position="0.490, 0.329, 0.560" rotation_euler="0.000, 0.000, -1.593"/>
+								<components>
+									<particle_system_instanced_component>
+										<effect_ref base_effect="{A85B25C0-F07D-4A12-A077-9E2B931BEEC3}"/>
+									</particle_system_instanced_component>
+								</components>
+								<children>
+									<game_entity name="light" old_prefab_name="" mobility="1">
+										<transform position="0.000, -0.094, 0.416"/>
+										<components>
+											<light_component color="1.000, 0.596, 0.243" intensity="100.000" radius="10.000" flicker_interval="0.400" flicker_magnitude="0.600" local_frame_rot="10.000000, 0.000000, 0.000000, 0.000000, 10.000000, 0.000000, 0.000000, 0.000000, 10.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow_size_multiplier="1" shadow_radius="8.000"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="shop_prop_merchantarmory_a" old_prefab_name="" mobility="1">
+						<transform position="1.996, 11.431, 0.000" rotation_euler="0.000, 0.000, -3.127"/>
+						<physics shape="bo_shop_prop_merchantarmory_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantarmory_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Armory"/>
+									<variable name="Animation" value="act_smithing_machine_anvil_start"/>
+									<variable name="CraftingRecieptTag" value="vlandiaarmors"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="shop_prop_merchantsmithing_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="b"/>
+						</tags>
+						<transform position="-4.490, 16.097, 0.000" rotation_euler="0.000, 0.000, -1.540"/>
+						<physics shape="bo_shop_prop_merchantsmithing_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantsmithing_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_prop_merchantsmithing_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="b"/>
+						</tags>
+						<transform position="-4.631, 11.042, 0.000" rotation_euler="0.000, 0.000, -1.453"/>
+						<physics shape="bo_shop_prop_merchantsmithing_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantsmithing_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier3" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier3"/>
+				</tags>
+				<transform position="-1.904, -13.279, -0.186"/>
+				<children>
+					<game_entity name="shop_prop_merchantsmithing_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="b"/>
+						</tags>
+						<transform position="-4.719, 10.304, 0.000" rotation_euler="0.000, 0.000, -1.569"/>
+						<physics shape="bo_shop_prop_merchantsmithing_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantsmithing_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign__f" old_prefab_name="" mobility="1">
+						<transform position="-4.119, 10.472, 3.988" rotation_euler="0.000, 0.000, -1.632"/>
+						<physics shape="bo_shop_sign_base_b3"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_merchantsmithing" old_prefab_name="" mobility="1">
+						<transform position="-5.319, 10.601, 3.075" rotation_euler="0.000, 0.000, -1.639"/>
+						<components>
+							<meta_mesh_component name="shop_sign_merchantsmithing"/>
+						</components>
+					</game_entity>
+					<game_entity name="sp_blacksmith_with_smithing_machine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="0.447, 15.695, 0.000" rotation_euler="0.000, 0.000, -0.039"/>
+						<physics shape="bo_shop_pr_animated"/>
+						<skeleton skeleton_model="merchant_smithing_machine_skeleton">
+							<components>
+								<meta_mesh_component name="shop_prop_animated"/>
+							</components>
+						</skeleton>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Smithy"/>
+									<variable name="Animation" value="act_smithing_machine_anvil_start"/>
+									<variable name="CraftingRecieptTag" value="all_weapons"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="blacksmith_flame" old_prefab_name="" mobility="1">
+								<transform position="0.467, 0.157, 0.560" rotation_euler="0.000, 0.000, -3.127"/>
+								<components>
+									<particle_system_instanced_component>
+										<effect_ref base_effect="{A85B25C0-F07D-4A12-A077-9E2B931BEEC3}"/>
+									</particle_system_instanced_component>
+								</components>
+								<children>
+									<game_entity name="light" old_prefab_name="" mobility="1">
+										<transform position="0.000, -0.094, 0.416"/>
+										<components>
+											<light_component color="1.000, 0.596, 0.243" intensity="100.000" radius="10.000" flicker_interval="0.400" flicker_magnitude="0.600" local_frame_rot="10.000000, 0.000000, 0.000000, 0.000000, 10.000000, 0.000000, 0.000000, 0.000000, 10.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow_size_multiplier="1" shadow_radius="8.000"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="shop_prop_merchantarmory_a" old_prefab_name="" mobility="1">
+						<transform position="0.136, 11.212, 0.000" rotation_euler="0.000, 0.000, 3.107"/>
+						<physics shape="bo_shop_prop_merchantarmory_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantarmory_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Armory"/>
+									<variable name="Animation" value="act_smithing_machine_anvil_start"/>
+									<variable name="CraftingRecieptTag" value="vlandiaarmors"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="shop_prop_merchantsmithing_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="b"/>
+						</tags>
+						<transform position="-4.656, 16.120, 0.000" rotation_euler="0.000, 0.003, 1.609"/>
+						<physics shape="bo_shop_prop_merchantsmithing_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantsmithing_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="vlandia_grandbazaar_shop_a" old_prefab_name="" mobility="1">
+						<transform position="-0.115, 13.016, 0.000" rotation_euler="0.000, 0.000, -1.580" scale="1.027, 1.000, 1.000"/>
+						<physics shape="bo_vlandia_grandbazaar_shop_a"/>
+						<components>
+							<meta_mesh_component name="vlandia_grandbazaar_shop_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_chest_sturgia_a" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="chest"/>
+				</tags>
+				<transform position="-9.899, 2.974, -0.198" rotation_euler="0.026, 0.002, 0.011"/>
+				<physics shape="bo_bd_chest_sturgia_a"/>
+				<components>
+					<meta_mesh_component name="bd_chest_sturgia_a"/>
+				</components>
+				<scripts>
+					<script name="PE_InventoryEntity">
+						<variables>
+							<variable name="InventoryName" value="Chest"/>
+							<variable name="InventoryId" value="3467qjd1c"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="Slot" value="30"/>
+							<variable name="StackCount" value="10"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_european_castle_wall_a_l3_broken" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="european_castle_wall_a_l3_broken" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_broken">
+				<physics shape="bo_european_castle_wall_a_l3_broken"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_l3_broken"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="merlon_1" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_wall_a_l3_01"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_a_l3_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-10.298, -1.297, 12.059"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_wall_a_l3_06"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_a_l3_06"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.572, -1.288, 12.254"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+						<physics shape="bo_european_castle_wall_a_l3_07"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_a_l3_07"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="8.368, -1.294, 12.197"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<strings>
+    <string id="str_multiplayer_official_game_type_name.PersistentEmpires" text="{=PEstr00}Persistent Empires" />
+    <string id="str_multiplayer_game_type.PersistentEmpires" text="{=PEstr0}Persistent Empires" />
+	<string id="str_multiplayer_official_game_type_description.PersistentEmpires" text="{=PEstr1}Jump straight into the drama in this so called Roleplay mod and get RDMed. The Loading screen may take a while the first time you join." />
+	<string id="str_multiplayer_official_game_type_explainer.PersistentEmpires" text="{=PEstr2}Jump straight into the drama in this so called Roleplay mod and get RDMed. The Loading screen may take a while the first time you join." />
+	<string id="str_multiplayer_official_game_type_objective_info.PersistentEmpires" text="{=PEstr3}Jump straight into the drama in this so called Roleplay mod and get RDMed. The Loading screen may take a while the first time you join." />
+
+</strings>

@@ -1,0 +1,17 @@
+<Market>
+	<Tier1Items>
+		
+	</Tier1Items>
+	<Tier2Items>
+		
+	</Tier2Items>
+	<Tier3Items>
+		PE_Rus_open_helm*17910*19701|PE_Vaegir_helm_open*17960*19756|PE_Rus_helm_icon*20180*22198|PE_Rus_helm_noble*20180*22198|PE_Rus_helm_noble_icon*20180*22198|PE_Rus_helm_regular*20180*22198|PE_Rus_helm_regular2*20180*22198|PE_Va_NorseLord*20180*22198|PE_Vaegir_helm*20205*22225|PE_Rus_armour*29175*32092|PE_Rus_armour1*29175*32092|PE_Rus_armour2*29175*32092
+	</Tier3Items>
+	<Tier4Items>
+		
+	</Tier4Items>
+	<CraftingBoxes>
+		pe_armor_crate_t1*1*1|pe_armor_crate_t2*2*2|pe_armor_crate_t3*3*3
+	</CraftingBoxes>
+</Market>

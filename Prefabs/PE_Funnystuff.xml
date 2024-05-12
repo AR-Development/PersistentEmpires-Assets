@@ -1,0 +1,513 @@
+<prefabs>
+	<game_entity name="PE_Heavy_bobs_Hot_Airballoon" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_BlocShip">
+				<variables>
+					<variable name="isPlayerUsing" value="false"/>
+					<variable name="Animation" value=""/>
+					<variable name="StrayDurationSeconds" value="7200"/>
+					<variable name="RidingSkillId" value=""/>
+					<variable name="RidingSkillRequired" value="0"/>
+					<variable name="RepairingSkillId" value=""/>
+					<variable name="RepairingSkillRequired" value="0"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*2,pe_wooden_stick*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="ParticleEffectOnDestroy" value=""/>
+					<variable name="SoundEffectOnDestroy" value=""/>
+					<variable name="ParticleEffectOnRepair" value=""/>
+					<variable name="SoundEffectOnRepair" value=""/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="AdvanceSpeed" value="5.000"/>
+					<variable name="RotationalSpeed" value="0.500"/>
+					<variable name="ElevationSpeed" value="5.000"/>
+					<variable name="CanAdvance" value="true"/>
+					<variable name="CanRotate" value="true"/>
+					<variable name="CanElevate" value="true"/>
+					<variable name="AlwaysAlignToTerritory" value="false"/>
+					<variable name="PilotStandingPointTag" value="baloon"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="fishnet_b" old_prefab_name="" mobility="1">
+				<transform position="-0.045, -0.141, 17.009" rotation_euler="0.000, 3.141, 3.141" scale="12.000, 12.000, 7.490"/>
+				<physics shape="bo_fishnet_b"/>
+				<components>
+					<meta_mesh_component name="fishnet_b">
+						<mesh name="fishnet_b.lod2" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod2.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod3.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod5.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b" material="sturgia_windmill_cloth_a" argument="1.000, 0.500, 1.000, 10.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_keep_door_a" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="door"/>
+				</tags>
+				<transform position="1.038, -2.475, 0.434" rotation_euler="0.000, 0.000, 0.000" scale="1.231, 1.756, 0.402"/>
+				<physics shape="bo_vlandia_keep_door_a"/>
+				<components>
+					<meta_mesh_component name="vlandia_keep_door_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="arabian_platform_wooden_c" old_prefab_name="" mobility="1">
+				<transform position="0.102, -0.299, 0.368" rotation_euler="0.000, 0.000, 0.000" scale="1.725, 1.279, 1.279"/>
+				<physics shape="bo_arabian_platform_wooden_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="arabian_platform_wooden_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_d" old_prefab_name="" mobility="1">
+				<transform position="-1.356, -2.356, 0.420" rotation_euler="0.000, 0.000, 0.000" scale="0.535, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_d"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_d" old_prefab_name="" mobility="1">
+				<transform position="0.118, 1.836, 0.420" rotation_euler="0.000, 0.000, 0.000" scale="1.684, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_d"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_d" old_prefab_name="" mobility="1">
+				<transform position="2.112, -0.366, 0.420" rotation_euler="0.000, 0.000, 1.578" scale="1.801, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_d"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_d" old_prefab_name="" mobility="1">
+				<transform position="-1.835, -0.264, 0.420" rotation_euler="0.000, 0.000, 1.605" scale="1.824, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_d"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="" mobility="1">
+				<transform position="2.079, -2.284, 3.970" rotation_euler="1.448, 2.846, -1.626" scale="1.081, 0.648, 1.081"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+			</game_entity>
+			<game_entity name="fishnet_b" old_prefab_name="" mobility="1">
+				<transform position="-0.023, -0.062, 18.359" rotation_euler="-0.012, 3.141, -3.129" scale="8.500, 8.500, 3.809"/>
+				<physics shape="bo_fishnet_b"/>
+				<components>
+					<meta_mesh_component name="fishnet_b">
+						<mesh name="fishnet_b.lod2" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod2.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod3.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod5.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b" material="sturgia_windmill_cloth_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="fishnet_b" old_prefab_name="" mobility="1">
+				<transform position="-0.019, 2.256, 17.569" rotation_euler="1.549, 2.555, -2.555" scale="6.001, 4.370, 3.560"/>
+				<physics shape="bo_fishnet_b"/>
+				<components>
+					<meta_mesh_component name="fishnet_b">
+						<mesh name="fishnet_b.lod2" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod2.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod3.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod5.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b" material="sturgia_windmill_cloth_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="" mobility="1">
+				<transform position="1.913, 1.597, 3.970" rotation_euler="1.448, 2.846, -0.401" scale="1.081, 0.711, 1.081"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="" mobility="1">
+				<transform position="-1.796, -2.052, 3.970" rotation_euler="1.474, -2.175, 1.662" scale="1.081, 0.711, 1.081"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="" mobility="1">
+				<transform position="-1.722, 1.582, 3.970" rotation_euler="1.448, 2.846, 1.574" scale="1.081, 0.711, 1.081"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_d" old_prefab_name="" mobility="1">
+				<transform position="1.692, -2.429, 0.420" rotation_euler="0.000, 0.000, 0.000" scale="0.586, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_d"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="pe_door_oc_1" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="0.858, -2.475, 0.434"/>
+				<scripts>
+					<script name="PE_RepairableDestructableComponent">
+						<variables>
+							<variable name="DestructionState" value=""/>
+							<variable name="ReferenceEntityTag" value="door"/>
+							<variable name="RepairItem" value="pe_buildhammer"/>
+							<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+							<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+							<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+							<variable name="DestroyedByStoneOnly" value="false"/>
+							<variable name="AlwaysEffectOnDestroy" value="false"/>
+							<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+							<variable name="RepairDamage" value="20"/>
+							<variable name="IsBroken" value="false"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_Gate">
+						<variables>
+							<variable name="Duration" value="1.000"/>
+							<variable name="Axis" value="0.000, 0.000, 1.000, -1.000"/>
+							<variable name="Angle" value="90.000"/>
+							<variable name="Delay" value="500.000"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="torch_outdoors_a_burning" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="not_affected_by_season" value="true"/>
+				</flags>
+				<transform position="0.163, -0.184, 0.429" rotation_euler="0.000, 0.000, 0.000" scale="1.168, 1.168, 1.531"/>
+				<physics shape="bo_torch_outdoors_a"/>
+				<components>
+					<meta_mesh_component name="torch_outdoors_a">
+						<mesh name="torch_outdoors_a.lod1" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod1.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod2" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod2.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a" material="lights_a_emissive" argument="1.000, 0.000, 0.000, 5.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod3" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod3.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod4" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod4.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod5.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="light" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.000, 0.000, 1.630" rotation_euler="0.000, 0.000, -0.777"/>
+						<components>
+							<light_component color="1.000, 0.596, 0.243" intensity="180.000" radius="9.000" flicker_interval="0.400" flicker_magnitude="2.000" local_frame_rot="9.000000, 0.000000, 0.000000, 0.000000, 9.000000, 0.000000, 0.000000, 0.000000, 9.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow="1" shadow_size_multiplier="1" shadow_radius="5.000"/>
+						</components>
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable name="alwaysBurn" value="false"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torch_aa" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.020, 0.015, 1.047" rotation_euler="0.000, 0.000, 0.646"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{4DF2A56D-207E-4A7D-BE16-C7321F819A38}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+					<game_entity name="torch_aa" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.020, 0.015, 0.363" rotation_euler="0.000, 0.000, 0.646"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{4DF2A56D-207E-4A7D-BE16-C7321F819A38}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+					<game_entity name="torch_aa" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.020, -0.197, 1.047" rotation_euler="0.000, 0.000, 0.646"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{4DF2A56D-207E-4A7D-BE16-C7321F819A38}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+					<game_entity name="torch_aa" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.020, 0.219, 1.047" rotation_euler="0.000, 0.000, 0.646"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{4DF2A56D-207E-4A7D-BE16-C7321F819A38}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+					<game_entity name="torch_aa" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.020, 0.219, 0.752" rotation_euler="0.000, 0.000, 0.646"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{4DF2A56D-207E-4A7D-BE16-C7321F819A38}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+					<game_entity name="torch_aa" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.020, -0.183, 0.752" rotation_euler="0.000, 0.000, 0.646"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{4DF2A56D-207E-4A7D-BE16-C7321F819A38}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="fishnet_b" old_prefab_name="" mobility="1">
+				<transform position="-0.026, -0.151, 9.600" rotation_euler="0.000, 3.141, 0.000" scale="8.000, 8.000, 3.200"/>
+				<physics shape="bo_fishnet_b"/>
+				<components>
+					<meta_mesh_component name="fishnet_b">
+						<mesh name="fishnet_b.lod2" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod2.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod3.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod5.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b" material="sturgia_windmill_cloth_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="fishnet_b" old_prefab_name="" mobility="1">
+				<transform position="-0.091, -0.151, 7.402" rotation_euler="0.000, 3.141, 0.000" scale="4.199, 4.232, 2.810"/>
+				<physics shape="bo_fishnet_b"/>
+				<components>
+					<meta_mesh_component name="fishnet_b">
+						<mesh name="fishnet_b.lod2" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod2.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod3.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod5.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b" material="sturgia_windmill_cloth_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="fishnet_b" old_prefab_name="" mobility="1">
+				<transform position="-0.091, -0.151, 6.644" rotation_euler="0.000, 3.141, 0.000" scale="2.930, 2.930, 2.776"/>
+				<physics shape="bo_fishnet_b"/>
+				<components>
+					<meta_mesh_component name="fishnet_b">
+						<mesh name="fishnet_b.lod2" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod2.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod3.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod5.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b" material="sturgia_windmill_cloth_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+				<transform position="2.443, -1.860, 0.376" rotation_euler="0.000, 0.000, 1.501" scale="0.758, 0.998, 0.792"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+				<transform position="2.488, -0.955, 0.376" rotation_euler="0.000, 0.000, 1.501" scale="0.758, 0.998, 0.792"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+				<transform position="2.477, 0.323, 0.376" rotation_euler="0.000, 0.000, 1.501" scale="0.758, 0.998, 0.792"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+				<transform position="2.431, 1.282, 0.376" rotation_euler="0.000, 0.000, 1.501" scale="0.758, 0.998, 0.792"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+				<transform position="1.497, -2.623, 0.376" rotation_euler="0.000, 0.000, -0.039" scale="0.747, 1.000, 0.792"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+				<transform position="-1.252, -2.608, 0.401" rotation_euler="0.000, 0.000, -0.039" scale="0.737, 1.000, 0.792"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+				<transform position="-1.917, -1.945, 0.428" rotation_euler="0.000, 0.000, -1.565" scale="0.764, 1.000, 0.792"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+				<transform position="-1.979, -0.843, 0.428" rotation_euler="0.000, 0.000, -1.565" scale="0.764, 1.000, 0.792"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+				<transform position="-2.049, 0.275, 0.421" rotation_euler="0.000, 0.000, -1.565" scale="0.764, 1.000, 0.792"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+				<transform position="-2.051, 1.338, 0.392" rotation_euler="0.000, 0.000, -1.565" scale="0.764, 1.000, 0.792"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+				<transform position="-1.414, 2.024, 0.428" rotation_euler="0.000, 0.000, -3.130" scale="0.761, 0.993, 0.806"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+				<transform position="-0.303, 1.999, 0.425" rotation_euler="0.000, 0.000, -3.130" scale="0.761, 0.993, 0.806"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+				<transform position="0.656, 1.909, 0.428" rotation_euler="0.000, 0.000, -3.130" scale="0.761, 0.993, 0.806"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+				<transform position="1.607, 1.971, 0.428" rotation_euler="0.000, 0.000, -3.130" scale="0.761, 0.993, 0.806"/>
+				<physics shape="bo_bd_sack_b" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_rope_c" old_prefab_name="" mobility="1">
+				<transform position="-0.935, 0.554, 0.434"/>
+				<components>
+					<meta_mesh_component name="bd_rope_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="fishnet_b" old_prefab_name="" mobility="1">
+				<transform position="-0.023, -0.055, 19.344" rotation_euler="-0.012, 3.141, -3.129" scale="5.754, 6.098, 2.877"/>
+				<physics shape="bo_fishnet_b"/>
+				<components>
+					<meta_mesh_component name="fishnet_b">
+						<mesh name="fishnet_b.lod2" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod2.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod3.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod5.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b" material="sturgia_windmill_cloth_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="fishnet_b" old_prefab_name="" mobility="1">
+				<transform position="-0.091, -0.151, 8.790" rotation_euler="0.000, 3.141, 0.000" scale="6.401, 6.343, 3.066"/>
+				<physics shape="bo_fishnet_b"/>
+				<components>
+					<meta_mesh_component name="fishnet_b">
+						<mesh name="fishnet_b.lod2" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod2.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod3.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b.lod5.3" material="sturgia_windmill_cloth_a"/>
+						<mesh name="fishnet_b" material="sturgia_windmill_cloth_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="adam_0" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="baloon"/>
+				</tags>
+				<transform position="0.114, 0.726, 0.434" rotation_euler="0.000, 0.000, -3.133"/>
+				<components>
+					<meta_mesh_component name="body_male_a"/>
+					<meta_mesh_component name="feet_male_a" _index_="1"/>
+					<meta_mesh_component name="head_male_a" _index_="2"/>
+					<meta_mesh_component name="hands_male_a" _index_="3"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

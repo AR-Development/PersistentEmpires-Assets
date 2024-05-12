@@ -1,0 +1,789 @@
+<prefabs>
+	<game_entity name="L3G_EURO_HOUSE_DESTROYED" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="bd_rope_sturgia_a" old_prefab_name="">
+				<transform position="7.723, 5.646, 3.751" rotation_euler="0.000, 0.000, -2.942"/>
+				<components>
+					<meta_mesh_component name="bd_rope_sturgia_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_rope_sturgia_a" old_prefab_name="">
+				<transform position="11.329, 0.576, -0.856" rotation_euler="-0.120, -2.484, 2.988"/>
+				<components>
+					<meta_mesh_component name="bd_rope_sturgia_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="">
+				<transform position="7.852, 0.268, 3.147" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.013, 1.000"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_rope_sturgia_a" old_prefab_name="">
+				<transform position="7.759, -4.837, 3.672" rotation_euler="0.000, 0.000, -2.942"/>
+				<components>
+					<meta_mesh_component name="bd_rope_sturgia_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_rope_c" old_prefab_name="">
+				<transform position="6.682, -6.563, -0.133"/>
+				<components>
+					<meta_mesh_component name="bd_rope_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_a" old_prefab_name="">
+				<transform position="-2.815, 7.241, 0.997" rotation_euler="1.202, 1.563, 0.021" scale="1.035, 0.827, 1.000"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="">
+				<transform position="-2.873, 8.887, -0.238" rotation_euler="0.000, 0.000, 1.584" scale="0.616, 0.616, 0.616"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_a" old_prefab_name="">
+				<transform position="-7.443, -2.932, 1.297" non_orthogonal_rotation_mat="-0.757521, -0.015665, -0.652623, -0.448562, -0.009276, 0.893704, -0.012050, 0.999927, 0.000000" scale="0.998, 0.773, 1.000"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="">
+				<transform position="-8.807, -3.024, -0.238" rotation_euler="0.000, 0.000, -3.130" scale="0.471, 0.616, 0.616"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_a" old_prefab_name="">
+				<transform position="-7.912, 3.158, 1.297" rotation_euler="0.989, 1.571, 1.587" scale="1.185, 0.827, 1.000"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="">
+				<transform position="-9.699, 3.066, -0.238" rotation_euler="0.000, 0.000, -3.126" scale="0.616, 0.616, 0.616"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="5.118, -4.730, 0.945" rotation_euler="0.001, 0.000, 3.141" scale="1.029, 0.523, 0.775"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-1.162, -4.998, 1.270" rotation_euler="0.000, 1.571, 1.576" scale="1.000, 1.304, 2.036"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="5.118, -4.730, 2.334" rotation_euler="0.001, 0.000, 3.141" scale="1.029, 0.523, 0.775"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="7.591, 4.156, 1.775" rotation_euler="0.002, 1.571, 1.578" scale="0.774, 0.695, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-6.168, 1.719, 1.775" rotation_euler="0.002, 1.571, 1.578" scale="0.774, 0.695, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-2.518, 5.669, 1.050" rotation_euler="0.001, 0.000, 0.000" scale="1.375, 0.523, 0.775"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="2.386, 5.564, 1.775" rotation_euler="0.002, 1.571, 1.579" scale="0.774, 0.635, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="7.640, -2.000, 0.361" rotation_euler="0.001, 1.571, 1.584" scale="0.279, 0.388, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-6.168, -0.811, 1.775" rotation_euler="0.002, 1.571, 1.578" scale="0.774, 0.695, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="7.623, -0.261, 0.361" rotation_euler="0.000, 1.571, 1.584" scale="0.279, 0.406, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="0.886, 5.564, 1.775" rotation_euler="0.002, 1.571, 1.579" scale="0.774, 0.635, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="7.591, 1.719, 1.775" rotation_euler="0.002, 1.571, 1.578" scale="0.774, 0.695, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-3.889, 5.564, 1.775" rotation_euler="0.002, 1.571, 1.579" scale="0.774, 0.635, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-1.579, 5.564, 1.775" rotation_euler="0.002, 1.571, 1.579" scale="0.774, 0.635, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="2.560, -4.998, 1.270" rotation_euler="0.000, 1.571, 1.576" scale="1.000, 1.304, 2.036"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="7.637, -1.089, 2.271" rotation_euler="0.002, 1.571, 1.584" scale="0.501, 0.415, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-6.168, 4.260, 1.775" rotation_euler="0.002, 1.571, 1.578" scale="0.774, 0.695, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-6.168, -3.092, 1.775" rotation_euler="0.002, 1.571, 1.578" scale="0.774, 0.695, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-4.989, -4.880, 1.775" rotation_euler="0.002, 1.571, 1.579" scale="0.774, 0.635, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-2.551, -4.880, 1.775" rotation_euler="0.002, 1.571, 1.579" scale="0.774, 0.635, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-2.624, 5.564, 1.775" rotation_euler="0.002, 1.571, 1.579" scale="0.774, 0.635, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-2.518, 5.669, 2.642" rotation_euler="0.001, 0.000, 0.000" scale="1.375, 0.523, 0.775"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="7.591, 2.899, 1.775" rotation_euler="0.002, 1.571, 1.578" scale="0.774, 0.695, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-6.152, -1.953, 2.271" rotation_euler="0.002, 1.571, 1.584" scale="0.501, 0.415, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-3.873, -4.880, 1.775" rotation_euler="0.002, 1.571, 1.579" scale="0.774, 0.635, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="7.591, -3.425, 1.775" rotation_euler="0.002, 1.571, 1.578" scale="0.774, 0.695, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="0.552, 5.630, -0.335" rotation_euler="0.000, 0.000, 0.000" scale="2.712, 1.304, 1.420"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="0.552, -4.776, 3.413" rotation_euler="0.000, 0.000, 0.000" scale="2.712, 1.304, 1.420"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="7.566, 0.407, 3.788" rotation_euler="0.000, 0.000, 1.574" scale="2.147, 1.304, 0.817"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="7.523, 0.420, -0.361" rotation_euler="0.000, 0.000, 1.574" scale="1.991, 1.304, 1.420"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-6.152, 0.410, 3.413" rotation_euler="0.000, 0.000, 1.574" scale="1.991, 1.304, 1.420"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-6.166, 0.407, 0.945" rotation_euler="0.001, 0.000, 1.579" scale="2.147, 0.523, 0.775"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-6.185, 5.384, 1.270" rotation_euler="0.000, 1.571, 1.575" scale="1.000, 1.304, 1.774"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="5.514, 0.341, 2.139" rotation_euler="0.700, 1.567, 1.576" scale="1.290, 1.260, 1.710"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="7.630, 0.407, 0.945" rotation_euler="0.001, 0.000, 1.579" scale="2.147, 0.523, 0.775"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-6.152, 0.410, -0.361" rotation_euler="0.000, 0.000, 1.574" scale="1.991, 1.304, 1.420"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="9.140, 0.345, 2.233" rotation_euler="0.667, -1.571, -1.570" scale="1.090, 1.300, 1.770"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="0.552, -4.776, 3.837" rotation_euler="0.000, 0.000, 0.000" scale="2.712, 1.304, 0.620"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="7.566, 0.407, 3.413" rotation_euler="0.000, 0.000, 1.574" scale="1.991, 1.304, 1.420"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="7.568, -5.001, 1.270" rotation_euler="0.000, 1.571, 1.576" scale="1.000, 1.304, 2.036"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="7.533, 5.381, 1.270" rotation_euler="0.000, 1.571, 1.575" scale="1.000, 1.304, 1.774"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-6.150, -4.998, 1.270" rotation_euler="0.000, 1.571, 1.576" scale="1.000, 1.304, 2.036"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="0.552, -4.745, -0.335" rotation_euler="0.000, 0.000, 0.000" scale="2.712, 1.304, 1.420"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-6.152, 0.410, 3.788" rotation_euler="0.000, 0.000, 1.574" scale="2.147, 1.304, 0.817"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-11.296, 0.344, -0.640" rotation_euler="0.519, 1.569, 1.576" scale="2.689, 1.304, 1.774"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="7.006, -6.577, 1.520" rotation_euler="-0.875, 1.572, 0.000" scale="1.255, 1.555, 0.559"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e">
+						<mesh name="wooden_platform_plank_e.0" material="plank_b" argument2="-2.539, 2.539, 0.000, 0.000"/>
+						<mesh name="wooden_platform_plank_e.1" material="plank_end" argument2="-2.539, 2.539, 0.000, 0.000"/>
+						<mesh name="wooden_platform_plank_e.lod3" material="plank_b" argument2="-2.539, 2.539, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="10.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="wooden_platform_heap_a" old_prefab_name="">
+				<transform position="-3.381, -3.822, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.233, 1.233, 1.233"/>
+				<physics shape="bo_wooden_platform_heap_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_straw_h" old_prefab_name="">
+				<transform position="2.627, -1.613, 0.048" rotation_euler="0.000, 0.000, -2.050"/>
+				<components>
+					<meta_mesh_component name="bd_straw_h"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="10.632, -2.424, 0.686" rotation_euler="-0.678, 2.491, -2.448" scale="1.367, 1.637, 1.205"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e">
+						<mesh name="wooden_platform_plank_e.0" material="plank_b" argument2="-2.539, 2.539, 0.000, 0.000"/>
+						<mesh name="wooden_platform_plank_e.1" material="plank_end" argument2="-2.539, 2.539, 0.000, 0.000"/>
+						<mesh name="wooden_platform_plank_e.lod3" material="plank_b" argument2="-2.539, 2.539, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="10.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="10.542, 0.523, 0.771" rotation_euler="0.665, -3.109, -1.623" scale="1.272, 0.523, 0.775"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="9.790, 0.405, 1.884" rotation_euler="0.666, -3.139, -1.575" scale="1.621, 0.523, 0.775"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_heap_a" old_prefab_name="">
+				<transform position="-3.562, -2.712, 0.000" rotation_euler="0.000, 0.000, 3.139" scale="1.233, 1.233, 1.233"/>
+				<physics shape="bo_wooden_platform_heap_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_straw_e" old_prefab_name="">
+				<transform position="5.743, 0.652, 0.000" rotation_euler="0.000, 0.000, 2.430"/>
+				<components>
+					<meta_mesh_component name="bd_straw_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="10.160, 1.719, 1.346" rotation_euler="0.715, -1.569, -1.574" scale="0.581, 0.695, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-0.686, -6.578, 1.518" rotation_euler="-0.875, 1.573, 0.000" scale="1.255, 1.555, 0.559"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e">
+						<mesh name="wooden_platform_plank_e.0" material="plank_b" argument2="-2.539, 2.539, 0.000, 0.000"/>
+						<mesh name="wooden_platform_plank_e.1" material="plank_end" argument2="-2.539, 2.539, 0.000, 0.000"/>
+						<mesh name="wooden_platform_plank_e.lod3" material="plank_b" argument2="-2.539, 2.539, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="10.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="bd_straw_e" old_prefab_name="">
+				<transform position="3.450, 0.361, 0.000"/>
+				<components>
+					<meta_mesh_component name="bd_straw_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_e" old_prefab_name="">
+				<transform position="-7.324, 0.448, -0.133"/>
+				<physics shape="bo_bd_wood_heap_e"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_straw_d" old_prefab_name="">
+				<transform position="4.463, -2.335, 0.200" rotation_euler="0.028, 0.000, 0.000"/>
+				<physics override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_straw_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="10.602, 3.495, 0.723" rotation_euler="-0.676, 0.656, -0.678" scale="1.255, 1.555, 1.205"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e">
+						<mesh name="wooden_platform_plank_e.0" material="plank_b" argument2="-2.539, 2.539, 0.000, 0.000"/>
+						<mesh name="wooden_platform_plank_e.1" material="plank_end" argument2="-2.539, 2.539, 0.000, 0.000"/>
+						<mesh name="wooden_platform_plank_e.lod3" material="plank_b" argument2="-2.539, 2.539, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="10.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="sturgia_castle_log_a" old_prefab_name="">
+				<transform position="-0.690, -5.164, 3.596" rotation_euler="-0.043, -1.570, -3.141" scale="1.000, 1.000, 2.622"/>
+				<physics shape="bo_sturgia_castle_log_a"/>
+				<components>
+					<meta_mesh_component name="sturgia_castle_log_a">
+						<mesh name="sturgia_castle_log_a.1" material="planks"/>
+						<mesh name="sturgia_castle_log_a.lod2.1" material="planks"/>
+						<mesh name="sturgia_castle_log_a.lod3.1" material="planks"/>
+						<mesh name="sturgia_castle_log_a.lod5.1" material="planks"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_d" old_prefab_name="">
+				<transform position="1.645, 4.624, 0.000" rotation_euler="0.000, 0.000, 1.588"/>
+				<physics shape="bo_bd_wood_heap_d"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_straw_h" old_prefab_name="">
+				<transform position="5.473, 0.088, 0.048" rotation_euler="0.000, 0.000, -1.611"/>
+				<components>
+					<meta_mesh_component name="bd_straw_h"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="3.074, -6.578, 1.518" rotation_euler="-0.875, 1.572, 0.000" scale="1.255, 1.555, 0.559"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e">
+						<mesh name="wooden_platform_plank_e.0" material="plank_b" argument2="-2.539, 2.539, 0.000, 0.000"/>
+						<mesh name="wooden_platform_plank_e.1" material="plank_end" argument2="-2.539, 2.539, 0.000, 0.000"/>
+						<mesh name="wooden_platform_plank_e.lod3" material="plank_b" argument2="-2.539, 2.539, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="10.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="bd_wood_heap_d" old_prefab_name="">
+				<transform position="-7.420, 7.890, -0.133" rotation_euler="0.000, 0.000, 2.123"/>
+				<physics shape="bo_bd_wood_heap_d"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_f" old_prefab_name="">
+				<transform position="-4.055, -6.152, -0.133" rotation_euler="0.000, 0.000, -2.083"/>
+				<physics shape="bo_bd_wood_heap_f"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-6.152, 2.997, 2.271" rotation_euler="0.002, 1.571, 1.584" scale="0.501, 0.415, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_e" old_prefab_name="">
+				<transform position="8.619, 4.754, -0.133" rotation_euler="0.000, 0.000, 0.941"/>
+				<physics shape="bo_bd_wood_heap_e"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="sturgia_castle_log_a" old_prefab_name="">
+				<transform position="-0.689, -7.538, 0.906" rotation_euler="-0.043, -1.570, -3.141" scale="1.000, 1.000, 2.622"/>
+				<physics shape="bo_sturgia_castle_log_a"/>
+				<components>
+					<meta_mesh_component name="sturgia_castle_log_a">
+						<mesh name="sturgia_castle_log_a.1" material="planks"/>
+						<mesh name="sturgia_castle_log_a.lod2.1" material="planks"/>
+						<mesh name="sturgia_castle_log_a.lod3.1" material="planks"/>
+						<mesh name="sturgia_castle_log_a.lod5.1" material="planks"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_floor_a" old_prefab_name="">
+				<transform position="0.747, 0.391, -0.133" rotation_euler="0.000, 0.000, 0.000" scale="1.037, 1.056, 1.000"/>
+				<physics shape="bo_module_european_floor_a"/>
+				<components>
+					<meta_mesh_component name="module_european_floor_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="sturgia_castle_log_a" old_prefab_name="">
+				<transform position="-0.688, -8.935, 0.310" rotation_euler="-0.043, -1.570, -3.141" scale="1.000, 1.000, 2.622"/>
+				<physics shape="bo_sturgia_castle_log_a"/>
+				<components>
+					<meta_mesh_component name="sturgia_castle_log_a">
+						<mesh name="sturgia_castle_log_a.1" material="planks"/>
+						<mesh name="sturgia_castle_log_a.lod2.1" material="planks"/>
+						<mesh name="sturgia_castle_log_a.lod3.1" material="planks"/>
+						<mesh name="sturgia_castle_log_a.lod5.1" material="planks"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_plank_b" old_prefab_name="">
+				<transform position="0.194, 0.325, -2.509" rotation_euler="-1.035, 0.000, 1.571" scale="1.000, 1.000, 1.263"/>
+				<physics shape="bo_module_wall_plank_b"/>
+				<components>
+					<meta_mesh_component name="module_wall_plank_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_straw_e" old_prefab_name="">
+				<transform position="2.209, -2.346, 0.000"/>
+				<components>
+					<meta_mesh_component name="bd_straw_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="6.208, -4.817, 1.775" rotation_euler="0.002, 1.571, 1.579" scale="0.774, 0.635, 0.854"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_house_end_attick_c" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_end_attick_c">
+				<transform position="-7.857, 0.338, 5.263" rotation_euler="-0.851, 0.020, 1.597" scale="0.742, 1.000, 0.517"/>
+				<physics shape="bo_module_european_house_end_attick_a"/>
+				<components>
+					<meta_mesh_component name="module_european_house_end_attick_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-1.509, 0.602, 2.335" rotation_euler="0.000, 0.396, 0.000" scale="2.712, 1.187, 1.420"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="sturgia_castle_log_a" old_prefab_name="">
+				<transform position="-0.689, -6.297, 2.101" rotation_euler="-0.043, -1.570, -3.141" scale="1.000, 1.000, 2.622"/>
+				<physics shape="bo_sturgia_castle_log_a"/>
+				<components>
+					<meta_mesh_component name="sturgia_castle_log_a">
+						<mesh name="sturgia_castle_log_a.1" material="planks"/>
+						<mesh name="sturgia_castle_log_a.lod2.1" material="planks"/>
+						<mesh name="sturgia_castle_log_a.lod3.1" material="planks"/>
+						<mesh name="sturgia_castle_log_a.lod5.1" material="planks"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_heap_a" old_prefab_name="">
+				<transform position="3.875, 0.791, 0.201" rotation_euler="-0.859, 0.000, 0.000"/>
+				<physics shape="bo_wooden_platform_heap_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_battania_castle_stone_heap_b" old_prefab_name="">
+				<transform position="0.486, 7.166, -0.609"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="ruinous_battania_castle_stone_heap_b">
+						<mesh name="ruinous_battania_castle_stone_heap_b.23" factor="4290824894"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_l1_heap_a" old_prefab_name="">
+				<transform position="-1.985, 1.186, 0.000" rotation_euler="0.000, 0.000, -0.965"/>
+				<physics shape="bo_european_castle_wall_a_damaged_l1_heap_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_l1_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="forest_ruinous_pine_c" old_prefab_name="">
+				<transform position="7.929, 1.158, 0.000"/>
+				<physics shape="bo_forest_ruinous_tree_c"/>
+				<components>
+					<meta_mesh_component name="forest_ruinous_pine_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_c" old_prefab_name="">
+				<transform position="-7.366, 4.737, 0.000" rotation_euler="0.000, 0.000, -0.997"/>
+				<physics shape="bo_bd_wood_heap_c"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_c" old_prefab_name="">
+				<transform position="7.800, -6.586, -0.117" rotation_euler="0.000, 0.000, 0.943"/>
+				<physics shape="bo_bd_wood_heap_c"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_c" old_prefab_name="">
+				<transform position="-0.271, -6.184, -0.117" rotation_euler="0.000, 0.000, -2.085"/>
+				<physics shape="bo_bd_wood_heap_c"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_keep_door_a_case" old_prefab_name="">
+				<transform position="0.556, -3.911, 0.000" rotation_euler="-1.564, -3.137, 3.142"/>
+				<physics shape="bo_vlandia_keep_door_a_case"/>
+				<components>
+					<meta_mesh_component name="vlandia_keep_door_a_case"/>
+				</components>
+				<children>
+					<game_entity name="vlandia_keep_door_a" old_prefab_name="">
+						<transform position="0.713, 0.000, 0.000"/>
+						<physics shape="bo_vlandia_keep_door_a"/>
+						<components>
+							<meta_mesh_component name="vlandia_keep_door_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="siege_fire_particle_b" old_prefab_name="">
+				<transform position="1.168, 4.758, 0.995"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{2A697910-47CA-4D47-A0B4-80E419234DCA}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="siege_fire_particle_b" old_prefab_name="">
+				<transform position="-3.775, -6.044, 0.514"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{2A697910-47CA-4D47-A0B4-80E419234DCA}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="prt_torch_fire" old_prefab_name="">
+				<transform position="7.577, -4.945, 4.003"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{21AB1988-A9A6-4339-B5D8-84A55DBF9571}"/>
+					</particle_system_instanced_component>
+				</components>
+				<children>
+					<game_entity name="prt_torch_light" old_prefab_name="">
+						<transform position="0.000, 0.000, 0.161" rotation_euler="0.000, 0.000, 0.619" scale="0.631, 0.631, 0.631"/>
+						<components>
+							<light_component flags="64" color="1.000, 0.682, 0.294" radius="5.000" flicker_interval="0.500" flicker_magnitude="1.000" local_frame_rot="5.000000, 0.000000, 0.000000, 0.000000, 5.000000, 0.000000, 0.000000, 0.000000, 5.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow="2" shadow_size_multiplier="1" shadow_radius="4.000"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

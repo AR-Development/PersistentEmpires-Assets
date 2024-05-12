@@ -1,0 +1,14 @@
+<prefabs>
+	<game_entity name="Star_Destroyer_Troll" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="stardestroyer" old_prefab_name="">
+				<transform position="3310.384, 366.166, 1201.692"/>
+				<components>
+					<meta_mesh_component name="stardestroyer"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

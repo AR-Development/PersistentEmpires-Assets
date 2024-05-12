@@ -1,0 +1,1634 @@
+<prefabs>
+	<game_entity name="Thalm_Classes" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_UpgradeableBuildings">
+				<variables>
+					<variable name="CastleIndex" value="0"/>
+					<variable name="BuildingName" value="Classes"/>
+					<variable name="Tier0Tag" value="tier0"/>
+					<variable name="Tier1Tag" value="tier1"/>
+					<variable name="Tier2Tag" value="tier2"/>
+					<variable name="Tier3Tag" value="tier3"/>
+					<variable name="BuildingInteractiveTag" value="chest"/>
+					<variable name="Tier1RequiredEngineering" value="10"/>
+					<variable name="Tier2RequiredEngineering" value="10"/>
+					<variable name="Tier3RequiredEngineering" value="10"/>
+					<variable name="Tier1MaxHit" value="200"/>
+					<variable name="Tier2MaxHit" value="300"/>
+					<variable name="Tier3MaxHit" value="400"/>
+					<variable name="Tier1UpgradeReceipts" value="pe_hardwood*1"/>
+					<variable name="Tier2UpgradeReceipts" value="pe_hardwood*1"/>
+					<variable name="Tier3UpgradeReceipts" value="pe_hardwood*1"/>
+					<variable name="ParticleEffectOnUpgrade" value="dust_fall_a"/>
+					<variable name="SoundEffectOnUpgrade" value="Duckie_Blackfyre"/>
+					<variable name="BuildItem" value="pe_buildhammer"/>
+					<variable name="Tier1CraftingEngineering" value="10"/>
+					<variable name="Tier2CraftingEngineering" value="15"/>
+					<variable name="Tier3CraftingEngineering" value="20"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="Thalm_Classes_tier0" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier0"/>
+				</tags>
+				<children>
+					<game_entity name="lv_civ_classes" old_prefab_name="" mobility="1">
+						<transform position="-1.907, -2.710, 0.010"/>
+						<children>
+							<game_entity name="tavern_vlandia_table_a" old_prefab_name="" mobility="1">
+								<transform position="0.215, -0.573, 0.371" rotation_euler="0.000, 0.000, 3.139"/>
+								<physics shape="bo_tavern_vlandia_table_a"/>
+								<components>
+									<meta_mesh_component name="tavern_vlandia_table_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="engineer" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<transform position="0.174, -0.460, 1.521" rotation_euler="0.000, 0.000, 2.107"/>
+								<physics shape="bo_bd_hammer_a" override_material="stone"/>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_craftsman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="100"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="bd_hammer" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.027, 0.026" rotation_euler="-0.044, 0.000, -1.603"/>
+										<components>
+											<meta_mesh_component name="bd_hammer"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merchandise_ironware_pitchfork" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<transform position="1.274, 0.435, 0.371" rotation_euler="0.301, 0.000, 0.000"/>
+								<physics shape="bo_merchandise_ironware_pitchfork"/>
+								<components>
+									<meta_mesh_component name="merchandise_ironware_pitchfork"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_serf"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="100"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="bd_wall_decoration_weapons_a" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<transform position="-0.767, 0.086, 1.242" rotation_euler="1.266, -0.986, -2.091"/>
+								<physics shape="bo_sturgia_shield_c"/>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_footman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="4500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="shield" old_prefab_name="" mobility="1">
+										<transform rotation_euler="0.000, 0.003, 0.000"/>
+										<components>
+											<meta_mesh_component name="sturgia_shield_a"/>
+										</components>
+									</game_entity>
+									<game_entity name="sword" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.686, 0.000" rotation_euler="1.571, -3.142, -3.142" scale="1.300, 1.300, 1.600"/>
+										<components>
+											<meta_mesh_component name="viking_sword_h"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="lv_archer_classes" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="2.747, -0.690, 0.002" rotation_euler="0.000, 0.000, 1.535"/>
+						<children>
+							<game_entity name="tavern_vlandia_table_a" old_prefab_name="" mobility="1">
+								<transform position="0.215, -0.573, 0.371" rotation_euler="0.000, 0.000, 3.139"/>
+								<physics shape="bo_tavern_vlandia_table_a"/>
+								<components>
+									<meta_mesh_component name="tavern_vlandia_table_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="shortbow_i" old_prefab_name="" mobility="1">
+								<transform position="0.354, 0.061, 1.511" rotation_euler="0.000, 0.000, -0.013"/>
+								<physics shape="bo_composite_shotbow_c"/>
+								<components>
+									<meta_mesh_component name="shortbow_i"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_huntsman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="1500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="crossbow_a" old_prefab_name="" mobility="1">
+								<transform position="0.145, -0.219, 1.555" rotation_euler="1.512, 0.674, -0.701"/>
+								<physics shape="bo_composite_crossbows"/>
+								<components>
+									<meta_mesh_component name="crossbow_a"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_crossbowmilitia"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="1500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="Thalm_Classes_tier1" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier1"/>
+				</tags>
+				<children>
+					<game_entity name="lv_commoner_classes" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="0.965, -2.802, 0.010"/>
+						<children>
+							<game_entity name="tavern_vlandia_table_a" old_prefab_name="" mobility="1">
+								<transform position="0.215, -0.573, 0.371" rotation_euler="0.000, 0.000, 3.139"/>
+								<physics shape="bo_tavern_vlandia_table_a"/>
+								<components>
+									<meta_mesh_component name="tavern_vlandia_table_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="traveller" old_prefab_name="" mobility="1">
+								<transform position="-0.949, 0.121, 0.481" rotation_euler="0.044, -0.057, 0.105" scale="0.150, 0.150, 0.366"/>
+								<physics shape="bo_wooden_platform_plank_f_column"/>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_traveller"/>
+											<variable name="CastleId" value="11"/>
+											<variable name="DinarCost" value="1250"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="carry_bostaff" old_prefab_name="" mobility="1">
+										<transform position="0.012, -0.047, 1.879" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.093"/>
+										<physics shape="bo_wooden_platform_plank_f_column"/>
+										<components>
+											<meta_mesh_component name="bd_pole_3m"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="doctor" old_prefab_name="" mobility="1">
+								<transform position="-0.758, -0.092, 1.539" rotation_euler="1.532, 2.482, -1.352"/>
+								<physics shape="bo_sword_f1"/>
+								<components>
+									<meta_mesh_component name="celtic_dagger_a_new"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_doctor"/>
+											<variable name="CastleId" value="11"/>
+											<variable name="DinarCost" value="1250"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="Militia_Cavalry" old_prefab_name="" mobility="1">
+								<transform position="0.896, 0.006, 1.522" rotation_euler="-1.472, 0.143, 0.205"/>
+								<physics shape="bo_heater_shield_d"/>
+								<components>
+									<meta_mesh_component name="heater_shield_d"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_militia_cavalry"/>
+											<variable name="CastleId" value="11"/>
+											<variable name="DinarCost" value="2500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="viking_sword_a" old_prefab_name="" mobility="1">
+										<transform position="0.467, -0.225, 0.062" rotation_euler="-1.462, 2.579, -2.721" scale="1.282, 1.282, 1.282"/>
+										<components>
+											<meta_mesh_component name="viking_sword_a"/>
+										</components>
+									</game_entity>
+									<game_entity name="spear_new_f_1-9m" old_prefab_name="" mobility="1">
+										<transform position="0.099, 0.018, 0.012" rotation_euler="0.897, 1.548, -2.149"/>
+										<components>
+											<meta_mesh_component name="spear_new_f_1-9m"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="Militia" old_prefab_name="" mobility="1">
+								<transform position="-0.017, 0.033, 1.584" rotation_euler="-1.472, 0.143, 0.205"/>
+								<physics shape="bo_heater_shield_d"/>
+								<components>
+									<meta_mesh_component name="heater_shield_d"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_militia"/>
+											<variable name="CastleId" value="11"/>
+											<variable name="DinarCost" value="1500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="viking_sword_a" old_prefab_name="" mobility="1">
+										<transform position="0.467, -0.225, 0.062" rotation_euler="-1.462, 2.579, -2.721" scale="1.282, 1.282, 1.282"/>
+										<components>
+											<meta_mesh_component name="viking_sword_a"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="lv_archer_classes" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="2.747, -0.690, 0.002" rotation_euler="0.000, 0.000, 1.535"/>
+						<children>
+							<game_entity name="tavern_vlandia_table_a" old_prefab_name="" mobility="1">
+								<transform position="0.215, -0.573, 0.371" rotation_euler="0.000, 0.000, 3.139"/>
+								<physics shape="bo_tavern_vlandia_table_a"/>
+								<components>
+									<meta_mesh_component name="tavern_vlandia_table_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="crossbow_d" old_prefab_name="" mobility="1">
+								<transform position="-0.347, -0.670, 1.561" rotation_euler="1.566, 1.641, 1.469"/>
+								<physics shape="bo_composite_crossbows"/>
+								<components>
+									<meta_mesh_component name="crossbow_d"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_crossbowman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="4000"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="shortbow_b" old_prefab_name="" mobility="1">
+								<transform position="0.740, 0.071, 1.512" rotation_euler="-0.003, 0.005, -0.018"/>
+								<physics shape="bo_composite_shotbow_a"/>
+								<components>
+									<meta_mesh_component name="shortbow_b"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_archer"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="4000"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="shortbow_i" old_prefab_name="" mobility="1">
+								<transform position="0.354, 0.061, 1.511" rotation_euler="0.000, 0.000, -0.013"/>
+								<physics shape="bo_composite_shotbow_c"/>
+								<components>
+									<meta_mesh_component name="shortbow_i"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_huntsman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="1500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="crossbow_a" old_prefab_name="" mobility="1">
+								<transform position="0.145, -0.219, 1.555" rotation_euler="1.512, 0.674, -0.701"/>
+								<physics shape="bo_composite_crossbows"/>
+								<components>
+									<meta_mesh_component name="crossbow_a"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_crossbowmilitia"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="1500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="lv_civ_classes" old_prefab_name="" mobility="1">
+						<transform position="-1.907, -2.710, 0.010"/>
+						<children>
+							<game_entity name="tavern_vlandia_table_a" old_prefab_name="" mobility="1">
+								<transform position="0.215, -0.573, 0.371" rotation_euler="0.000, 0.000, 3.139"/>
+								<physics shape="bo_tavern_vlandia_table_a"/>
+								<components>
+									<meta_mesh_component name="tavern_vlandia_table_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="engineer" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<transform position="0.174, -0.460, 1.521" rotation_euler="0.000, 0.000, 2.107"/>
+								<physics shape="bo_bd_hammer_a" override_material="stone"/>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_craftsman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="100"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="bd_hammer" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.027, 0.026" rotation_euler="-0.044, 0.000, -1.603"/>
+										<components>
+											<meta_mesh_component name="bd_hammer"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merchandise_ironware_pitchfork" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<transform position="1.274, 0.435, 0.371" rotation_euler="0.301, 0.000, 0.000"/>
+								<physics shape="bo_merchandise_ironware_pitchfork"/>
+								<components>
+									<meta_mesh_component name="merchandise_ironware_pitchfork"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_serf"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="100"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="bd_wall_decoration_weapons_a" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<transform position="-0.767, 0.086, 1.242" rotation_euler="1.266, -0.986, -2.091"/>
+								<physics shape="bo_sturgia_shield_c"/>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_footman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="4500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="shield" old_prefab_name="" mobility="1">
+										<transform rotation_euler="0.000, 0.003, 0.000"/>
+										<components>
+											<meta_mesh_component name="sturgia_shield_a"/>
+										</components>
+									</game_entity>
+									<game_entity name="sword" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.686, 0.000" rotation_euler="1.571, -3.142, -3.142" scale="1.300, 1.300, 1.600"/>
+										<components>
+											<meta_mesh_component name="viking_sword_h"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="Thalm_Classes_tier2" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier2"/>
+				</tags>
+				<children>
+					<game_entity name="lv_better_classes" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="2.886, 2.879, -0.003" rotation_euler="0.000, 0.000, 1.535"/>
+						<children>
+							<game_entity name="tavern_vlandia_table_a" old_prefab_name="" mobility="1">
+								<transform position="0.215, -0.573, 0.371" rotation_euler="0.000, 0.000, 3.139"/>
+								<physics shape="bo_tavern_vlandia_table_a"/>
+								<components>
+									<meta_mesh_component name="tavern_vlandia_table_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_wall_decoration_weapons_a" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<transform position="-0.767, 0.086, 1.242" rotation_euler="1.266, -0.986, -2.091"/>
+								<physics shape="bo_sturgia_shield_c"/>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_manatarms"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="8000"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="kite_shield_h" old_prefab_name="" mobility="1">
+										<transform position="0.151, 0.170, -0.098" rotation_euler="0.156, 0.074, 2.639"/>
+										<components>
+											<meta_mesh_component name="kite_shield_h"/>
+										</components>
+									</game_entity>
+									<game_entity name="sword" old_prefab_name="" mobility="1">
+										<transform position="0.002, 0.689, -0.014" rotation_euler="1.571, -0.002, 0.000" scale="1.300, 1.300, 1.600"/>
+										<components>
+											<meta_mesh_component name="viking_sword_h"/>
+										</components>
+									</game_entity>
+									<game_entity name="Spear_Prop" old_prefab_name="" mobility="1">
+										<transform position="-0.020, 0.030, -0.101" rotation_euler="0.689, 1.393, 1.076" scale="1.000, 1.000, 1.690"/>
+										<components>
+											<meta_mesh_component name="spear_handle_16"/>
+										</components>
+										<children>
+											<game_entity name="empty_object" old_prefab_name="" mobility="1">
+												<transform position="0.000, 0.002, 1.030" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.000, 0.592"/>
+												<components>
+													<meta_mesh_component name="spear_blade_1"/>
+												</components>
+											</game_entity>
+										</children>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="shield_khuzait_cavalary_a" old_prefab_name="" mobility="1">
+								<transform position="0.942, -0.005, 1.490" rotation_euler="-1.418, -0.082, -0.081"/>
+								<physics shape="bo_shield_khuzait_cavalary_a"/>
+								<components>
+									<meta_mesh_component name="shield_khuzait_cavalary_a"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_lancer"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="5000"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="spear_new_f_1-9m" old_prefab_name="" mobility="1">
+										<transform position="0.106, 0.100, 0.005" rotation_euler="1.352, -1.617, 1.221" scale="1.215, 1.215, 1.447"/>
+										<components>
+											<meta_mesh_component name="spear_new_f_1-9m"/>
+										</components>
+									</game_entity>
+									<game_entity name="sword" old_prefab_name="" mobility="1">
+										<transform position="0.378, -0.389, -0.018" rotation_euler="1.545, 0.109, -2.758" scale="1.300, 1.300, 1.600"/>
+										<components>
+											<meta_mesh_component name="viking_sword_h"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="heater_shield_a" old_prefab_name="" mobility="1">
+								<transform position="0.149, -0.003, 1.444" rotation_euler="-1.290, 0.006, 0.012" scale="0.859, 0.833, 0.859"/>
+								<physics shape="bo_heater_shield_a"/>
+								<components>
+									<meta_mesh_component name="heater_shield_a"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_sergeant"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="7500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="sword" old_prefab_name="" mobility="1">
+										<transform position="0.713, -0.448, 0.095" non_orthogonal_rotation_mat="-0.599431, -0.775854, 0.196807, 0.101873, 0.180206, 0.978339, -0.776087, 0.629990, -0.028310" scale="1.541, 1.515, 1.885"/>
+										<components>
+											<meta_mesh_component name="viking_sword_h"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="lv_archer_classes" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="2.747, -0.690, 0.002" rotation_euler="0.000, 0.000, 1.535"/>
+						<children>
+							<game_entity name="tavern_vlandia_table_a" old_prefab_name="" mobility="1">
+								<transform position="0.215, -0.573, 0.371" rotation_euler="0.000, 0.000, 3.139"/>
+								<physics shape="bo_tavern_vlandia_table_a"/>
+								<components>
+									<meta_mesh_component name="tavern_vlandia_table_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="crossbow_c" old_prefab_name="" mobility="1">
+								<transform position="-0.868, -0.154, 1.587" rotation_euler="1.541, 2.110, -2.130"/>
+								<physics shape="bo_composite_crossbows"/>
+								<components>
+									<meta_mesh_component name="crossbow_c"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_master_crossbowman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="7000"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="crossbow_d" old_prefab_name="" mobility="1">
+								<transform position="-0.347, -0.670, 1.561" rotation_euler="1.566, 1.641, 1.469"/>
+								<physics shape="bo_composite_crossbows"/>
+								<components>
+									<meta_mesh_component name="crossbow_d"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_crossbowman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="4000"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="shortbow_b" old_prefab_name="" mobility="1">
+								<transform position="0.740, 0.071, 1.512" rotation_euler="-0.003, 0.005, -0.018"/>
+								<physics shape="bo_composite_shotbow_a"/>
+								<components>
+									<meta_mesh_component name="shortbow_b"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_archer"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="4000"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="shortbow_i" old_prefab_name="" mobility="1">
+								<transform position="0.354, 0.061, 1.511" rotation_euler="0.000, 0.000, -0.013"/>
+								<physics shape="bo_composite_shotbow_c"/>
+								<components>
+									<meta_mesh_component name="shortbow_i"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_huntsman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="1500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="crossbow_a" old_prefab_name="" mobility="1">
+								<transform position="0.145, -0.219, 1.555" rotation_euler="1.512, 0.674, -0.701"/>
+								<physics shape="bo_composite_crossbows"/>
+								<components>
+									<meta_mesh_component name="crossbow_a"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_crossbowmilitia"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="1500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="longbow_a" old_prefab_name="" mobility="1">
+								<transform position="1.057, 0.081, 1.530" rotation_euler="-0.051, -0.025, -0.022"/>
+								<physics shape="bo_composite_longbow_a"/>
+								<components>
+									<meta_mesh_component name="longbow_a"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_master_archer"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="7000"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="lv_commoner_classes" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="0.965, -2.802, 0.010"/>
+						<children>
+							<game_entity name="tavern_vlandia_table_a" old_prefab_name="" mobility="1">
+								<transform position="0.215, -0.573, 0.371" rotation_euler="0.000, 0.000, 3.139"/>
+								<physics shape="bo_tavern_vlandia_table_a"/>
+								<components>
+									<meta_mesh_component name="tavern_vlandia_table_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="traveller" old_prefab_name="" mobility="1">
+								<transform position="-0.949, 0.121, 0.481" rotation_euler="0.044, -0.057, 0.105" scale="0.150, 0.150, 0.366"/>
+								<physics shape="bo_wooden_platform_plank_f_column"/>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_traveller"/>
+											<variable name="CastleId" value="11"/>
+											<variable name="DinarCost" value="1250"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="carry_bostaff" old_prefab_name="" mobility="1">
+										<transform position="0.012, -0.047, 1.879" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.093"/>
+										<physics shape="bo_wooden_platform_plank_f_column"/>
+										<components>
+											<meta_mesh_component name="bd_pole_3m"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="doctor" old_prefab_name="" mobility="1">
+								<transform position="-0.758, -0.092, 1.539" rotation_euler="1.532, 2.482, -1.352"/>
+								<physics shape="bo_sword_f1"/>
+								<components>
+									<meta_mesh_component name="celtic_dagger_a_new"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_doctor"/>
+											<variable name="CastleId" value="11"/>
+											<variable name="DinarCost" value="1250"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="Militia_Cavalry" old_prefab_name="" mobility="1">
+								<transform position="0.896, 0.006, 1.522" rotation_euler="-1.472, 0.143, 0.205"/>
+								<physics shape="bo_heater_shield_d"/>
+								<components>
+									<meta_mesh_component name="heater_shield_d"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_militia_cavalry"/>
+											<variable name="CastleId" value="11"/>
+											<variable name="DinarCost" value="2500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="viking_sword_a" old_prefab_name="" mobility="1">
+										<transform position="0.467, -0.225, 0.062" rotation_euler="-1.462, 2.579, -2.721" scale="1.282, 1.282, 1.282"/>
+										<components>
+											<meta_mesh_component name="viking_sword_a"/>
+										</components>
+									</game_entity>
+									<game_entity name="spear_new_f_1-9m" old_prefab_name="" mobility="1">
+										<transform position="0.099, 0.018, 0.012" rotation_euler="0.897, 1.548, -2.149"/>
+										<components>
+											<meta_mesh_component name="spear_new_f_1-9m"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="Militia" old_prefab_name="" mobility="1">
+								<transform position="-0.017, 0.033, 1.584" rotation_euler="-1.472, 0.143, 0.205"/>
+								<physics shape="bo_heater_shield_d"/>
+								<components>
+									<meta_mesh_component name="heater_shield_d"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_militia"/>
+											<variable name="CastleId" value="11"/>
+											<variable name="DinarCost" value="1500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="viking_sword_a" old_prefab_name="" mobility="1">
+										<transform position="0.467, -0.225, 0.062" rotation_euler="-1.462, 2.579, -2.721" scale="1.282, 1.282, 1.282"/>
+										<components>
+											<meta_mesh_component name="viking_sword_a"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="lv_civ_classes" old_prefab_name="" mobility="1">
+						<transform position="-1.907, -2.710, 0.010"/>
+						<children>
+							<game_entity name="tavern_vlandia_table_a" old_prefab_name="" mobility="1">
+								<transform position="0.215, -0.573, 0.371" rotation_euler="0.000, 0.000, 3.139"/>
+								<physics shape="bo_tavern_vlandia_table_a"/>
+								<components>
+									<meta_mesh_component name="tavern_vlandia_table_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="engineer" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<transform position="0.174, -0.460, 1.521" rotation_euler="0.000, 0.000, 2.107"/>
+								<physics shape="bo_bd_hammer_a" override_material="stone"/>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_craftsman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="100"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="bd_hammer" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.027, 0.026" rotation_euler="-0.044, 0.000, -1.603"/>
+										<components>
+											<meta_mesh_component name="bd_hammer"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merchandise_ironware_pitchfork" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<transform position="1.274, 0.435, 0.371" rotation_euler="0.301, 0.000, 0.000"/>
+								<physics shape="bo_merchandise_ironware_pitchfork"/>
+								<components>
+									<meta_mesh_component name="merchandise_ironware_pitchfork"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_serf"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="100"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="bd_wall_decoration_weapons_a" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<transform position="-0.767, 0.086, 1.242" rotation_euler="1.266, -0.986, -2.091"/>
+								<physics shape="bo_sturgia_shield_c"/>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_footman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="4500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="shield" old_prefab_name="" mobility="1">
+										<transform rotation_euler="0.000, 0.003, 0.000"/>
+										<components>
+											<meta_mesh_component name="sturgia_shield_a"/>
+										</components>
+									</game_entity>
+									<game_entity name="sword" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.686, 0.000" rotation_euler="1.571, -3.142, -3.142" scale="1.300, 1.300, 1.600"/>
+										<components>
+											<meta_mesh_component name="viking_sword_h"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="Thalm_Classes_tier3" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier3"/>
+				</tags>
+				<children>
+					<game_entity name="lv_better_classes" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="2.886, 2.879, -0.003" rotation_euler="0.000, 0.000, 1.535"/>
+						<children>
+							<game_entity name="tavern_vlandia_table_a" old_prefab_name="" mobility="1">
+								<transform position="0.215, -0.573, 0.371" rotation_euler="0.000, 0.000, 3.139"/>
+								<physics shape="bo_tavern_vlandia_table_a"/>
+								<components>
+									<meta_mesh_component name="tavern_vlandia_table_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_wall_decoration_weapons_a" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<transform position="-0.767, 0.086, 1.242" rotation_euler="1.266, -0.986, -2.091"/>
+								<physics shape="bo_sturgia_shield_c"/>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_manatarms"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="8000"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="kite_shield_h" old_prefab_name="" mobility="1">
+										<transform position="0.151, 0.170, -0.098" rotation_euler="0.156, 0.074, 2.639"/>
+										<components>
+											<meta_mesh_component name="kite_shield_h"/>
+										</components>
+									</game_entity>
+									<game_entity name="sword" old_prefab_name="" mobility="1">
+										<transform position="0.002, 0.689, -0.014" rotation_euler="1.571, -0.002, 0.000" scale="1.300, 1.300, 1.600"/>
+										<components>
+											<meta_mesh_component name="viking_sword_h"/>
+										</components>
+									</game_entity>
+									<game_entity name="Spear_Prop" old_prefab_name="" mobility="1">
+										<transform position="-0.020, 0.030, -0.101" rotation_euler="0.689, 1.393, 1.076" scale="1.000, 1.000, 1.690"/>
+										<components>
+											<meta_mesh_component name="spear_handle_16"/>
+										</components>
+										<children>
+											<game_entity name="empty_object" old_prefab_name="" mobility="1">
+												<transform position="0.000, 0.002, 1.030" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.000, 0.592"/>
+												<components>
+													<meta_mesh_component name="spear_blade_1"/>
+												</components>
+											</game_entity>
+										</children>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="shield_khuzait_cavalary_a" old_prefab_name="" mobility="1">
+								<transform position="0.942, -0.005, 1.490" rotation_euler="-1.418, -0.082, -0.081"/>
+								<physics shape="bo_shield_khuzait_cavalary_a"/>
+								<components>
+									<meta_mesh_component name="shield_khuzait_cavalary_a"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_lancer"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="5000"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="spear_new_f_1-9m" old_prefab_name="" mobility="1">
+										<transform position="0.106, 0.100, 0.005" rotation_euler="1.352, -1.617, 1.221" scale="1.215, 1.215, 1.447"/>
+										<components>
+											<meta_mesh_component name="spear_new_f_1-9m"/>
+										</components>
+									</game_entity>
+									<game_entity name="sword" old_prefab_name="" mobility="1">
+										<transform position="0.378, -0.389, -0.018" rotation_euler="1.545, 0.109, -2.758" scale="1.300, 1.300, 1.600"/>
+										<components>
+											<meta_mesh_component name="viking_sword_h"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="heater_shield_a" old_prefab_name="" mobility="1">
+								<transform position="0.149, -0.003, 1.444" rotation_euler="-1.290, 0.006, 0.012" scale="0.859, 0.833, 0.859"/>
+								<physics shape="bo_heater_shield_a"/>
+								<components>
+									<meta_mesh_component name="heater_shield_a"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_sergeant"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="7500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="sword" old_prefab_name="" mobility="1">
+										<transform position="0.713, -0.448, 0.095" non_orthogonal_rotation_mat="-0.599431, -0.775854, 0.196807, 0.101873, 0.180206, 0.978339, -0.776087, 0.629990, -0.028310" scale="1.541, 1.515, 1.885"/>
+										<components>
+											<meta_mesh_component name="viking_sword_h"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="lv_archer_classes" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="2.747, -0.690, 0.002" rotation_euler="0.000, 0.000, 1.535"/>
+						<children>
+							<game_entity name="tavern_vlandia_table_a" old_prefab_name="" mobility="1">
+								<transform position="0.215, -0.573, 0.371" rotation_euler="0.000, 0.000, 3.139"/>
+								<physics shape="bo_tavern_vlandia_table_a"/>
+								<components>
+									<meta_mesh_component name="tavern_vlandia_table_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="crossbow_c" old_prefab_name="" mobility="1">
+								<transform position="-0.868, -0.154, 1.587" rotation_euler="1.541, 2.110, -2.130"/>
+								<physics shape="bo_composite_crossbows"/>
+								<components>
+									<meta_mesh_component name="crossbow_c"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_master_crossbowman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="7000"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="crossbow_d" old_prefab_name="" mobility="1">
+								<transform position="-0.347, -0.670, 1.561" rotation_euler="1.566, 1.641, 1.469"/>
+								<physics shape="bo_composite_crossbows"/>
+								<components>
+									<meta_mesh_component name="crossbow_d"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_crossbowman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="4000"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="shortbow_b" old_prefab_name="" mobility="1">
+								<transform position="0.740, 0.071, 1.512" rotation_euler="-0.003, 0.005, -0.018"/>
+								<physics shape="bo_composite_shotbow_a"/>
+								<components>
+									<meta_mesh_component name="shortbow_b"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_archer"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="4000"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="shortbow_i" old_prefab_name="" mobility="1">
+								<transform position="0.354, 0.061, 1.511" rotation_euler="0.000, 0.000, -0.013"/>
+								<physics shape="bo_composite_shotbow_c"/>
+								<components>
+									<meta_mesh_component name="shortbow_i"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_huntsman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="1500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="crossbow_a" old_prefab_name="" mobility="1">
+								<transform position="0.145, -0.219, 1.555" rotation_euler="1.512, 0.674, -0.701"/>
+								<physics shape="bo_composite_crossbows"/>
+								<components>
+									<meta_mesh_component name="crossbow_a"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_crossbowmilitia"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="1500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="longbow_a" old_prefab_name="" mobility="1">
+								<transform position="1.057, 0.081, 1.530" rotation_euler="-0.051, -0.025, -0.022"/>
+								<physics shape="bo_composite_longbow_a"/>
+								<components>
+									<meta_mesh_component name="longbow_a"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_master_archer"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="7000"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="lv_commoner_classes" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="0.965, -2.802, 0.010"/>
+						<children>
+							<game_entity name="tavern_vlandia_table_a" old_prefab_name="" mobility="1">
+								<transform position="0.215, -0.573, 0.371" rotation_euler="0.000, 0.000, 3.139"/>
+								<physics shape="bo_tavern_vlandia_table_a"/>
+								<components>
+									<meta_mesh_component name="tavern_vlandia_table_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="traveller" old_prefab_name="" mobility="1">
+								<transform position="-0.949, 0.121, 0.481" rotation_euler="0.044, -0.057, 0.105" scale="0.150, 0.150, 0.366"/>
+								<physics shape="bo_wooden_platform_plank_f_column"/>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_traveller"/>
+											<variable name="CastleId" value="11"/>
+											<variable name="DinarCost" value="1250"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="carry_bostaff" old_prefab_name="" mobility="1">
+										<transform position="0.012, -0.047, 1.879" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.093"/>
+										<physics shape="bo_wooden_platform_plank_f_column"/>
+										<components>
+											<meta_mesh_component name="bd_pole_3m"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="doctor" old_prefab_name="" mobility="1">
+								<transform position="-0.758, -0.092, 1.539" rotation_euler="1.532, 2.482, -1.352"/>
+								<physics shape="bo_sword_f1"/>
+								<components>
+									<meta_mesh_component name="celtic_dagger_a_new"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_doctor"/>
+											<variable name="CastleId" value="11"/>
+											<variable name="DinarCost" value="1250"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="Militia_Cavalry" old_prefab_name="" mobility="1">
+								<transform position="0.896, 0.006, 1.522" rotation_euler="-1.472, 0.143, 0.205"/>
+								<physics shape="bo_heater_shield_d"/>
+								<components>
+									<meta_mesh_component name="heater_shield_d"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_militia_cavalry"/>
+											<variable name="CastleId" value="11"/>
+											<variable name="DinarCost" value="2500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="viking_sword_a" old_prefab_name="" mobility="1">
+										<transform position="0.467, -0.225, 0.062" rotation_euler="-1.462, 2.579, -2.721" scale="1.282, 1.282, 1.282"/>
+										<components>
+											<meta_mesh_component name="viking_sword_a"/>
+										</components>
+									</game_entity>
+									<game_entity name="spear_new_f_1-9m" old_prefab_name="" mobility="1">
+										<transform position="0.099, 0.018, 0.012" rotation_euler="0.897, 1.548, -2.149"/>
+										<components>
+											<meta_mesh_component name="spear_new_f_1-9m"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="Militia" old_prefab_name="" mobility="1">
+								<transform position="-0.017, 0.033, 1.584" rotation_euler="-1.472, 0.143, 0.205"/>
+								<physics shape="bo_heater_shield_d"/>
+								<components>
+									<meta_mesh_component name="heater_shield_d"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_militia"/>
+											<variable name="CastleId" value="11"/>
+											<variable name="DinarCost" value="1500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="viking_sword_a" old_prefab_name="" mobility="1">
+										<transform position="0.467, -0.225, 0.062" rotation_euler="-1.462, 2.579, -2.721" scale="1.282, 1.282, 1.282"/>
+										<components>
+											<meta_mesh_component name="viking_sword_a"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="lv_civ_classes" old_prefab_name="" mobility="1">
+						<transform position="-1.907, -2.710, 0.010"/>
+						<children>
+							<game_entity name="tavern_vlandia_table_a" old_prefab_name="" mobility="1">
+								<transform position="0.215, -0.573, 0.371" rotation_euler="0.000, 0.000, 3.139"/>
+								<physics shape="bo_tavern_vlandia_table_a"/>
+								<components>
+									<meta_mesh_component name="tavern_vlandia_table_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="engineer" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<transform position="-0.139, -0.399, 1.521" rotation_euler="0.000, 0.000, 2.107"/>
+								<physics shape="bo_bd_hammer_a" override_material="stone"/>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_craftsman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="100"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="bd_hammer" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.027, 0.026" rotation_euler="-0.044, 0.000, -1.603"/>
+										<components>
+											<meta_mesh_component name="bd_hammer"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merchandise_ironware_pitchfork" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<transform position="1.274, 0.435, 0.371" rotation_euler="0.301, 0.000, 0.000"/>
+								<physics shape="bo_merchandise_ironware_pitchfork"/>
+								<components>
+									<meta_mesh_component name="merchandise_ironware_pitchfork"/>
+								</components>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_serf"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="100"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="bd_wall_decoration_weapons_a" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<transform position="-0.767, 0.086, 1.242" rotation_euler="1.266, -0.986, -2.091"/>
+								<physics shape="bo_sturgia_shield_c"/>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="pe_footman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="4500"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="shield" old_prefab_name="" mobility="1">
+										<transform rotation_euler="0.000, 0.003, 0.000"/>
+										<components>
+											<meta_mesh_component name="sturgia_shield_a"/>
+										</components>
+									</game_entity>
+									<game_entity name="sword" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.686, 0.000" rotation_euler="1.571, -3.142, -3.142" scale="1.300, 1.300, 1.600"/>
+										<components>
+											<meta_mesh_component name="viking_sword_h"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="master_engineer" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<transform position="0.604, -0.497, 1.521" rotation_euler="0.000, 0.000, 2.107"/>
+								<physics shape="bo_bd_hammer_a" override_material="stone"/>
+								<scripts>
+									<script name="PE_ChangeClass">
+										<variables>
+											<variable name="ChangingDurationAsSeconds" value="10"/>
+											<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+											<variable name="ClassId" value="lv_master_craftsman"/>
+											<variable name="CastleId" value="4"/>
+											<variable name="DinarCost" value="100"/>
+											<variable name="JoinCastleFaction" value="true"/>
+											<variable name="FactionId" value="2"/>
+											<variable name="Mercenary" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="bd_hammer" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.027, 0.026" rotation_euler="-0.044, 0.000, -1.603"/>
+										<components>
+											<meta_mesh_component name="bd_hammer">
+												<mesh name="bd_hammer" material="closehelmgold"/>
+											</meta_mesh_component>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_chest_sturgia_a" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="chest"/>
+				</tags>
+				<transform position="-3.206, 0.052, 0.468" rotation_euler="0.000, 0.000, 3.141"/>
+				<physics shape="bo_bd_chest_sturgia_a"/>
+				<components>
+					<meta_mesh_component name="bd_chest_sturgia_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

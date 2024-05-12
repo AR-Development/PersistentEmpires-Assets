@@ -1,0 +1,2952 @@
+<prefabs>
+	<game_entity name="ss_ruin_mine" old_prefab_name="">
+		<transform position="681.229, 699.038, 9.960" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="terrain_desert_rock_big_b" old_prefab_name="">
+				<transform position="-44.899, -17.942, -9.960" rotation_euler="0.000, 0.000, 2.202"/>
+				<physics shape="bo_terrain_desert_rock_big_b"/>
+				<components>
+					<meta_mesh_component name="terrain_desert_rock_big_b">
+						<mesh name="terrain_desert_rock_big_b" material="rock_cliff_b_np"/>
+						<mesh name="terrain_desert_rock_big_b.lod6" material="rock_cliff_b_np"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_tower_a" old_prefab_name="" occlusion_body_name="bo_occ_ruinous_castle_tower_a">
+				<transform position="-21.715, -2.501, -10.743" rotation_euler="0.000, 0.000, -3.003" scale="0.732, 0.732, 0.732"/>
+				<physics shape="bo_ruinous_castle_tower_a"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="ruinous_castle_tower_a">
+						<mesh name="ruinous_castle_tower_a.3" material="stone_wall_14"/>
+						<mesh name="ruinous_castle_tower_a.lod5.3" material="stone_wall_14_np"/>
+						<mesh name="ruinous_castle_tower_a.lod6.3" material="stone_wall_14_np"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_cliff_d" old_prefab_name="">
+				<transform position="-47.087, -39.700, 2.158" rotation_euler="1.232, -0.149, -0.870"/>
+				<physics shape="bo_rock_cliff_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_d">
+						<mesh name="rock_cliff_d" material="rock_cliff_b_np" argument2="-20.631, 18.310, -1.160, -0.142"/>
+						<mesh name="rock_cliff_d.lod5" material="rock_cliff_b_np" argument2="-20.631, 18.310, -1.160, -0.142"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="10.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="terrain_desert_rock_big_c" old_prefab_name="">
+				<transform position="-52.822, -44.949, -9.998"/>
+				<physics shape="bo_terrain_desert_rock_big_c"/>
+				<components>
+					<meta_mesh_component name="terrain_desert_rock_big_c">
+						<mesh name="terrain_desert_rock_big_c" material="rock_cliff_b"/>
+						<mesh name="terrain_desert_rock_big_c.lod6" material="rock_cliff_b_np"/>
+						<mesh name="terrain_desert_rock_big_c.lod7" material="rock_cliff_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ss_cave1" old_prefab_name="">
+				<transform position="-22.288, -26.735, 3.663" rotation_euler="0.000, 0.000, -0.085"/>
+				<children>
+					<game_entity name="cave_interior_a" old_prefab_name="" occlusion_body_name="bo_occ_cave_interior_a">
+						<transform position="-13.505, -10.740, -8.608" rotation_euler="0.000, 0.000, -0.868" scale="0.731, 0.731, 0.731"/>
+						<physics shape="bo_cave_interior_a" override_material="stone"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="cave_interior_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="cave_corridor_a" old_prefab_name="" occlusion_body_name="bo_occ_cave_corridor_a">
+						<transform position="-8.106, 9.417, -8.625" rotation_euler="0.000, 0.000, 0.701" scale="0.726, 0.726, 0.726"/>
+						<physics shape="bo_cave_corridor_a" override_material="stone"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="cave_corridor_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="cave_corridor_c" old_prefab_name="" occlusion_body_name="bo_occ_cave_corridor_c">
+						<transform position="10.289, 8.008, -8.639" rotation_euler="0.000, 0.000, -0.909" scale="0.732, 0.732, 0.732"/>
+						<physics shape="bo_cave_corridor_c" override_material="stone"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="cave_corridor_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="cave_corridor_b" old_prefab_name="" occlusion_body_name="bo_occ_cave_corridor_b">
+						<transform position="15.099, -20.799, -13.532" rotation_euler="-0.013, 0.000, -2.537" scale="-0.730, 0.730, 0.730"/>
+						<physics shape="bo_cave_corridor_b" override_material="stone"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="cave_corridor_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="cave_corridor_c" old_prefab_name="" occlusion_body_name="bo_occ_cave_corridor_c">
+						<transform position="8.234, -10.572, -13.269" rotation_euler="0.000, 0.000, 0.684" scale="0.734, 0.734, 0.734"/>
+						<physics shape="bo_cave_corridor_c" override_material="stone"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="cave_corridor_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="cave_corner_a" old_prefab_name="" occlusion_body_name="bo_occ_cave_corner_a">
+						<transform position="0.226, -0.216, -8.560" rotation_euler="0.000, 0.000, 2.265" scale="0.734, 0.734, 0.734"/>
+						<physics shape="bo_cave_corner_a" override_material="stone"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="cave_corner_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="rock_cliff_c" old_prefab_name="">
+				<transform position="-42.256, -60.318, -10.776" rotation_euler="0.307, 0.000, -0.929"/>
+				<physics shape="bo_rock_cliff_c" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="terrain_rock_b2" old_prefab_name="">
+				<transform position="-58.397, -32.459, -9.492" rotation_euler="0.033, 0.023, -0.219"/>
+				<physics shape="bo_terrain_rock_b"/>
+				<components>
+					<meta_mesh_component name="terrain_rock_b2">
+						<mesh name="terrain_rock_b2" material="rock_cliff_b"/>
+						<mesh name="terrain_rock_b2.lod3" material="rock_cliff_b_np"/>
+						<mesh name="terrain_rock_b2.lod4" material="rock_cliff_b_np"/>
+						<mesh name="terrain_rock_b2.lod5" material="rock_cliff_b_np"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="terrain_rock_b2" old_prefab_name="">
+				<transform position="-45.079, -48.883, -2.902"/>
+				<physics shape="bo_terrain_rock_b"/>
+				<components>
+					<meta_mesh_component name="terrain_rock_b2">
+						<mesh name="terrain_rock_b2" material="rock_cliff_b"/>
+						<mesh name="terrain_rock_b2.lod3" material="rock_cliff_b_np"/>
+						<mesh name="terrain_rock_b2.lod4" material="rock_cliff_b_np"/>
+						<mesh name="terrain_rock_b2.lod5" material="rock_cliff_b_np"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_desert_cliff_a" old_prefab_name="">
+				<transform position="-18.422, -67.761, -9.960" rotation_euler="0.000, 0.000, 0.585" scale="0.833, 0.833, 0.833"/>
+				<physics shape="bo_rock_desert_cliff_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_desert_cliff_a">
+						<mesh name="rock_desert_cliff_a" material="rock_cliff_b_np"/>
+						<mesh name="rock_desert_cliff_a.lod5" material="rock_cliff_b_np"/>
+						<mesh name="rock_desert_cliff_a.lod6" material="rock_cliff_b_np"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="terrain_green_rock_big_c" old_prefab_name="">
+				<transform position="-6.146, -51.697, 0.159" rotation_euler="-0.079, 0.931, -0.969" scale="0.600, 0.700, 0.600"/>
+				<physics shape="bo_terrain_green_rock_big_c"/>
+				<components>
+					<meta_mesh_component name="terrain_green_rock_big_c">
+						<mesh name="terrain_green_rock_big_c" material="rock_cliff_b_np"/>
+						<mesh name="terrain_green_rock_big_c.lod6" material="terrain_rock_cliff_b"/>
+						<mesh name="terrain_green_rock_big_c.lod7" material="rock_cliff_b_np"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="terrain_green_rock_big_a" old_prefab_name="">
+				<transform position="12.367, -40.052, -9.960" rotation_euler="0.000, 0.000, -0.996" scale="-0.902, 0.902, 0.902"/>
+				<physics shape="bo_terrain_green_rock_big_a"/>
+				<components>
+					<meta_mesh_component name="terrain_green_rock_big_a">
+						<mesh name="terrain_green_rock_big_a" material="rock_cliff_b_np"/>
+						<mesh name="terrain_green_rock_big_a.lod6" material="rock_cliff_b_np"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="terrain_green_rock_big_c" old_prefab_name="">
+				<transform position="-1.230, -22.072, 4.547" rotation_euler="-1.043, -0.397, -1.373" scale="0.476, 0.476, 0.476"/>
+				<physics shape="bo_terrain_green_rock_big_c"/>
+				<components>
+					<meta_mesh_component name="terrain_green_rock_big_c">
+						<mesh name="terrain_green_rock_big_c" material="rock_cliff_b"/>
+						<mesh name="terrain_green_rock_big_c.lod6" material="rock_cliff_b_np"/>
+						<mesh name="terrain_green_rock_big_c.lod7" material="rock_cliff_b_np"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_cliff_d" old_prefab_name="">
+				<transform position="-5.878, -17.949, 9.059" rotation_euler="1.478, 0.234, 1.869" scale="0.706, 0.706, 0.706"/>
+				<physics shape="bo_rock_cliff_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_d">
+						<mesh name="rock_cliff_d" material="rock_cliff_b_np" argument2="-20.631, 18.310, -1.160, -0.142"/>
+						<mesh name="rock_cliff_d.lod5" material="rock_cliff_b_np" argument2="-20.631, 18.310, -1.160, -0.142"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="20.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="terrain_green_rock_big_a" old_prefab_name="">
+				<transform position="-12.544, -8.405, 1.371" rotation_euler="0.000, 0.000, 0.678" scale="0.281, 0.281, 0.281"/>
+				<physics shape="bo_terrain_green_rock_big_a"/>
+				<components>
+					<meta_mesh_component name="terrain_green_rock_big_a">
+						<mesh name="terrain_green_rock_big_a" material="rock_cliff_b_np"/>
+						<mesh name="terrain_green_rock_big_a.lod6" material="rock_cliff_b_np"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="sturgia_dungeon_door_a_empty_2" old_prefab_name="">
+				<transform position="-6.630, -16.540, -0.549" rotation_euler="0.000, 0.000, -1.070" scale="0.845, 0.845, 0.845"/>
+				<physics shape="bo_sturgia_dungeon_door_a_empty_2"/>
+				<components>
+					<meta_mesh_component name="sturgia_dungeon_door_a_empty_2"/>
+				</components>
+			</game_entity>
+			<game_entity name="ss_cave_gate" old_prefab_name="">
+				<transform position="-6.675, -16.603, 0.624" rotation_euler="0.000, 0.000, 0.470" scale="1.299, 1.299, 1.299"/>
+				<children>
+					<game_entity name="sturgia_dungeon_cell_door_closed" old_prefab_name="">
+						<transform position="0.083, -1.038, -0.805" rotation_euler="0.000, 0.000, 1.602" scale="0.729, 0.729, 0.729"/>
+						<physics shape="bo_sturgia_dungeon_cell_door_closed"/>
+						<components>
+							<meta_mesh_component name="sturgia_dungeon_cell_door_closed"/>
+						</components>
+					</game_entity>
+					<game_entity name="sturgia_dungeon_cell_door_closed" old_prefab_name="">
+						<transform position="-0.035, 1.002, -0.805" rotation_euler="0.000, 0.000, -1.532" scale="0.729, 0.729, 0.729"/>
+						<physics shape="bo_sturgia_dungeon_cell_door_closed"/>
+						<components>
+							<meta_mesh_component name="sturgia_dungeon_cell_door_closed"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="battania_grandbazaar_stone_fence_a" old_prefab_name="" occlusion_body_name="bo_occ_battania_grandbazaar_stone_fence_a">
+				<transform position="-6.825, -16.577, 3.345" rotation_euler="-0.008, 3.141, -1.074"/>
+				<physics shape="bo_battania_grandbazaar_stone_fence_a"/>
+				<components>
+					<meta_mesh_component name="battania_grandbazaar_stone_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_grandbazaar_stone_fence_a" old_prefab_name="" occlusion_body_name="bo_occ_battania_grandbazaar_stone_fence_a">
+				<transform position="-8.360, -13.684, 3.182" rotation_euler="0.000, 0.000, 2.067"/>
+				<physics shape="bo_battania_grandbazaar_stone_fence_a"/>
+				<components>
+					<meta_mesh_component name="battania_grandbazaar_stone_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_grandbazaar_stone_fence_a" old_prefab_name="" occlusion_body_name="bo_occ_battania_grandbazaar_stone_fence_a">
+				<transform position="-5.146, -19.613, 3.182" rotation_euler="0.000, 0.000, 2.067"/>
+				<physics shape="bo_battania_grandbazaar_stone_fence_a"/>
+				<components>
+					<meta_mesh_component name="battania_grandbazaar_stone_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="terrain_green_rock_big_a" old_prefab_name="">
+				<transform position="-17.143, -12.625, 7.925" rotation_euler="-0.637, 0.000, 0.678" scale="0.225, 0.225, 0.225"/>
+				<physics shape="bo_terrain_green_rock_big_a"/>
+				<components>
+					<meta_mesh_component name="terrain_green_rock_big_a">
+						<mesh name="terrain_green_rock_big_a" material="rock_cliff_b_np"/>
+						<mesh name="terrain_green_rock_big_a.lod6" material="rock_cliff_b_np"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="terrain_green_rock_big_a" old_prefab_name="">
+				<transform position="-22.641, -14.237, 7.120" rotation_euler="-1.037, -0.179, -0.319" scale="0.225, 0.225, 0.225"/>
+				<physics shape="bo_terrain_green_rock_big_a"/>
+				<components>
+					<meta_mesh_component name="terrain_green_rock_big_a">
+						<mesh name="terrain_green_rock_big_a" material="rock_cliff_b_np"/>
+						<mesh name="terrain_green_rock_big_a.lod6" material="rock_cliff_b_np"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_cliff_a" old_prefab_name="">
+				<transform position="-26.179, -15.192, 5.770" rotation_euler="0.033, 0.133, 0.825" scale="-0.302, 0.302, 0.302"/>
+				<physics shape="bo_rock_cliff_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="rock_cliff_a" old_prefab_name="">
+				<transform position="-31.824, -9.381, 2.141" rotation_euler="0.798, 0.000, -2.443" scale="0.308, 0.308, 0.308"/>
+				<physics shape="bo_rock_cliff_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="rock_cliff_a" old_prefab_name="">
+				<transform position="-38.479, -15.645, 1.912" rotation_euler="0.730, -0.355, -1.936" scale="-0.310, 0.310, 0.310"/>
+				<physics shape="bo_rock_cliff_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="terrain_rock_b2" old_prefab_name="">
+				<transform position="-54.586, -31.512, -4.285" rotation_euler="0.000, -0.072, 0.255"/>
+				<physics shape="bo_terrain_rock_b"/>
+				<components>
+					<meta_mesh_component name="terrain_rock_b2">
+						<mesh name="terrain_rock_b2" material="rock_cliff_b"/>
+						<mesh name="terrain_rock_b2.lod3" material="rock_cliff_b_np"/>
+						<mesh name="terrain_rock_b2.lod4" material="rock_cliff_b_np"/>
+						<mesh name="terrain_rock_b2.lod5" material="rock_cliff_b_np"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="cave_rock_wall_b" old_prefab_name="">
+				<transform position="-45.769, -42.779, -4.989" rotation_euler="0.000, 0.000, 2.287" scale="2.551, 2.551, 2.551"/>
+				<physics shape="bo_cave_rock_wall_b"/>
+				<components>
+					<meta_mesh_component name="cave_rock_wall_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ss_block_entry" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-10.938, -42.975, -8.219" rotation_euler="0.000, 0.000, 1.812"/>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value=""/>
+							<variable name="RespawnAsSeconds" value="600"/>
+							<variable name="ApplyPhysicsOnDestruction" value="false"/>
+							<variable name="PhysicMaterial" value="stone"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+							<variable name="MaxHitPoint" value="250.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cave_rock_b" old_prefab_name="" mobility="1">
+						<transform position="0.690, -0.426, 1.529" rotation_euler="-0.002, 0.840, -1.183" scale="1.582, 1.582, 1.582"/>
+						<physics shape="bo_cave_rock_b"/>
+						<components>
+							<meta_mesh_component name="cave_rock_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_b" old_prefab_name="" mobility="1">
+						<transform position="-0.065, 0.644, -1.376" rotation_euler="0.000, 0.000, -1.179" scale="1.582, 1.582, 1.582"/>
+						<physics shape="bo_cave_rock_b"/>
+						<components>
+							<meta_mesh_component name="cave_rock_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="cave_rock_b" old_prefab_name="" mobility="1">
+						<transform position="-0.528, 2.518, 2.274" rotation_euler="0.000, 2.033, -1.179" scale="1.582, 1.582, 1.582"/>
+						<physics shape="bo_cave_rock_b"/>
+						<components>
+							<meta_mesh_component name="cave_rock_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="terrain_green_rock_big_a" old_prefab_name="">
+				<transform position="-15.993, -11.813, 5.241" rotation_euler="0.000, 0.000, 1.183" scale="0.187, 0.187, 0.187"/>
+				<physics shape="bo_terrain_green_rock_big_a"/>
+				<components>
+					<meta_mesh_component name="terrain_green_rock_big_a">
+						<mesh name="terrain_green_rock_big_a" material="rock_cliff_b_np"/>
+						<mesh name="terrain_green_rock_big_a.lod6" material="rock_cliff_b_np"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="terrain_green_rock_big_a" old_prefab_name="">
+				<transform position="-17.684, -12.902, 4.154" rotation_euler="0.000, 0.000, -3.050" scale="0.187, 0.187, 0.187"/>
+				<physics shape="bo_terrain_green_rock_big_a"/>
+				<components>
+					<meta_mesh_component name="terrain_green_rock_big_a">
+						<mesh name="terrain_green_rock_big_a" material="rock_cliff_b_np"/>
+						<mesh name="terrain_green_rock_big_a.lod6" material="rock_cliff_b_np"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="cave_rock_b" old_prefab_name="">
+				<transform position="-14.597, -7.417, 1.852" rotation_euler="0.019, -0.049, 1.203" scale="1.383, 1.383, 1.383"/>
+				<physics shape="bo_cave_rock_b"/>
+				<components>
+					<meta_mesh_component name="cave_rock_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="cave_rock_b" old_prefab_name="">
+				<transform position="-14.999, -7.872, 3.045" rotation_euler="0.035, -0.039, 0.831" scale="1.383, 1.383, 1.383"/>
+				<physics shape="bo_cave_rock_b"/>
+				<components>
+					<meta_mesh_component name="cave_rock_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_grandbazaar_big_wall_a" old_prefab_name="" occlusion_body_name="bo_occ_battania_grandbazaar_big_wall_a">
+				<transform position="-26.748, -5.390, -0.413" rotation_euler="0.000, 0.000, 1.980" scale="0.405, 0.405, 0.405"/>
+				<physics shape="bo_battania_grandbazaar_big_wall_a"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="battania_grandbazaar_big_wall_a">
+						<mesh name="battania_grandbazaar_big_wall_a.3" material="stone_wall_14" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod4.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod5.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="18.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="battania_grandbazaar_big_wall_a" old_prefab_name="" occlusion_body_name="bo_occ_battania_grandbazaar_big_wall_a">
+				<transform position="-19.300, -8.590, -0.413" rotation_euler="0.000, 0.000, -2.823" scale="0.405, 0.405, 0.405"/>
+				<physics shape="bo_battania_grandbazaar_big_wall_a"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="battania_grandbazaar_big_wall_a">
+						<mesh name="battania_grandbazaar_big_wall_a.3" material="stone_wall_14" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod4.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod5.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="18.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="">
+				<transform position="-21.648, 7.423, -11.011" rotation_euler="0.107, -0.385, -1.333" scale="0.735, 0.735, 0.735"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_b" old_prefab_name="">
+				<transform position="-21.142, 5.208, -10.286" rotation_euler="0.575, 0.000, -1.963" scale="0.735, 0.735, 0.735"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="">
+				<transform position="-23.607, 6.704, -11.147" rotation_euler="0.033, -0.299, -1.132" scale="0.735, 0.735, 0.735"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_c" old_prefab_name="">
+				<transform position="-23.170, 5.122, -10.621" rotation_euler="0.000, 0.000, -1.561" scale="0.735, 0.735, 0.735"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_c" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="ss_broken_stairs" old_prefab_name="">
+				<transform position="-29.379, 3.923, -7.777" rotation_euler="0.000, 0.000, 0.329"/>
+				<children>
+					<game_entity name="european_castle_stairs_b_l2" old_prefab_name="">
+						<transform position="-1.492, -0.592, -1.585" rotation_euler="0.000, 0.000, 1.894" scale="-0.730, 0.730, 0.730"/>
+						<physics shape="bo_european_castle_stairs_b_l2">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="european_castle_stairs_b_l2"/>
+						</components>
+					</game_entity>
+					<game_entity name="sturgia_castle_stairs_c_l2" old_prefab_name="">
+						<transform position="3.256, -0.892, -2.798" rotation_euler="0.000, 0.000, 1.925" scale="0.729, 0.729, 0.729"/>
+						<physics shape="bo_sturgia_castle_stairs_c_l2">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="sturgia_castle_stairs_c_l2"/>
+						</components>
+					</game_entity>
+					<game_entity name="ruinous_battania_castle_wall_c" old_prefab_name="" occlusion_body_name="bo_occ_ruinous_battania_castle_wall_c">
+						<transform position="-0.584, -1.214, -4.236" rotation_euler="0.000, 0.000, -2.837" scale="0.500, 0.600, 0.500"/>
+						<physics shape="bo_ruinous_castle_wall_c"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="ruinous_battania_castle_wall_c">
+								<mesh name="ruinous_battania_castle_wall_c.23" material="stone_wall_14"/>
+								<mesh name="ruinous_battania_castle_wall_c.lod5.23" material="stone_wall_2a_noparallax"/>
+								<mesh name="ruinous_battania_castle_wall_c.lod6.23" material="stone_wall_2a_noparallax"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_stairs_b_l2" old_prefab_name="">
+						<transform position="-2.327, -2.751, -0.192" rotation_euler="0.000, 0.000, 1.894" scale="0.730, 0.730, 0.730"/>
+						<physics shape="bo_european_castle_stairs_b_l2">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="european_castle_stairs_b_l2"/>
+						</components>
+					</game_entity>
+					<game_entity name="ruinous_battania_castle_wall_c" old_prefab_name="" occlusion_body_name="bo_occ_ruinous_battania_castle_wall_c">
+						<transform position="-3.298, -2.067, -2.043" rotation_euler="0.000, 0.000, -2.837" scale="0.500, 0.600, 0.500"/>
+						<physics shape="bo_ruinous_castle_wall_c"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="ruinous_battania_castle_wall_c">
+								<mesh name="ruinous_battania_castle_wall_c.23" material="stone_wall_14"/>
+								<mesh name="ruinous_battania_castle_wall_c.lod5.23" material="stone_wall_2a_noparallax"/>
+								<mesh name="ruinous_battania_castle_wall_c.lod6.23" material="stone_wall_2a_noparallax"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="battania_stonewall_part_g" old_prefab_name="">
+				<transform position="-32.946, 5.458, -12.428" rotation_euler="0.000, 0.000, -2.143" scale="1.000, 1.000, 1.200"/>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="-10.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="-6.543, 3.543, -1.855" non_orthogonal_rotation_mat="0.959097, -0.283076, 0.000000, 0.281853, 0.954953, 0.092866, -0.037681, -0.127668, 0.991101"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d">
+								<mesh name="stone_pile_d" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_d.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="-4.633, 0.149, -2.371" non_orthogonal_rotation_mat="-0.970010, 0.241220, 0.029903, -0.169401, -0.533251, -0.828822, -0.200908, -0.883461, 0.423241" scale="1.000, 1.000, 1.027"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d">
+								<mesh name="stone_pile_d" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_d.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="0.594, -5.394, -0.207" rotation_euler="0.000, 0.000, 1.558"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d">
+								<mesh name="stone_pile_d" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_d.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="0.819, -4.189, -0.192" rotation_euler="0.000, 0.000, -2.115"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d">
+								<mesh name="stone_pile_d" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_d.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_e" old_prefab_name="">
+						<transform position="-3.291, -1.189, -2.224" non_orthogonal_rotation_mat="-0.817885, -0.574264, 0.035842, 0.575437, -0.808440, 0.123682, -0.060020, 0.173826, 0.982946"/>
+						<physics shape="bo_stone_pile_e"/>
+						<components>
+							<meta_mesh_component name="stone_pile_e">
+								<mesh name="stone_pile_e" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_e.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_e" old_prefab_name="">
+						<transform position="-2.649, -3.966, -0.113" non_orthogonal_rotation_mat="-0.905937, -0.407925, 0.113469, 0.435718, -0.855043, 0.281161, -0.024268, 0.417704, 0.908259" scale="1.003, 0.983, 1.024"/>
+						<physics shape="bo_stone_pile_e"/>
+						<components>
+							<meta_mesh_component name="stone_pile_e">
+								<mesh name="stone_pile_e" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_e.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_e" old_prefab_name="">
+						<transform position="-4.550, 1.319, -1.925" non_orthogonal_rotation_mat="0.951448, -0.269918, 0.147957, 0.171739, 0.907660, 0.382961, -0.314604, -0.448692, 0.836480" scale="1.005, 1.000, 1.018"/>
+						<physics shape="bo_stone_pile_e"/>
+						<components>
+							<meta_mesh_component name="stone_pile_e">
+								<mesh name="stone_pile_e" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_e.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_e" old_prefab_name="">
+						<transform position="0.137, -1.892, -1.258" non_orthogonal_rotation_mat="-0.738407, -0.275943, -0.615314, 0.347876, -0.937538, 0.002070, -0.701150, -0.258051, 0.664680" scale="0.930, 1.000, 1.095"/>
+						<physics shape="bo_stone_pile_e"/>
+						<components>
+							<meta_mesh_component name="stone_pile_e">
+								<mesh name="stone_pile_e" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_e.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_e" old_prefab_name="">
+						<transform position="1.102, -1.129, -0.347" non_orthogonal_rotation_mat="-0.656730, -0.378337, -0.652355, 0.536424, -0.843205, -0.035416, -0.639877, -0.444967, 0.626548" scale="0.918, 1.000, 1.108"/>
+						<physics shape="bo_stone_pile_e"/>
+						<components>
+							<meta_mesh_component name="stone_pile_e">
+								<mesh name="stone_pile_e" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_e.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_e" old_prefab_name="">
+						<transform position="-1.693, -1.165, -2.041" non_orthogonal_rotation_mat="-0.977900, -0.207763, 0.023380, 0.209388, -0.976090, 0.058358, 0.015371, 0.089039, 0.995910" scale="1.002, 1.090, 0.931"/>
+						<physics shape="bo_stone_pile_e"/>
+						<components>
+							<meta_mesh_component name="stone_pile_e">
+								<mesh name="stone_pile_e" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_e.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_e" old_prefab_name="">
+						<transform position="1.392, -3.026, 0.050" non_orthogonal_rotation_mat="-0.491352, -0.869952, -0.041905, 0.856625, -0.494122, 0.148449, -0.213077, 0.052674, 0.975614"/>
+						<physics shape="bo_stone_pile_e"/>
+						<components>
+							<meta_mesh_component name="stone_pile_e">
+								<mesh name="stone_pile_e" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_e.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_f" old_prefab_name="">
+						<transform position="-0.896, -4.066, -0.352" non_orthogonal_rotation_mat="0.898253, 0.414035, 0.147364, -0.391255, 0.911993, -0.123237, -0.261836, 0.074901, 0.962202" scale="1.146, 1.000, 0.887"/>
+						<physics shape="bo_stone_pile_f"/>
+						<components>
+							<meta_mesh_component name="stone_pile_f">
+								<mesh name="stone_pile_f" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_f.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_f" old_prefab_name="">
+						<transform position="1.745, -1.361, 0.071" non_orthogonal_rotation_mat="-0.514814, 0.802830, 0.300717, -0.614493, 0.031157, -0.788307, -0.688096, -0.632784, 0.355116" scale="1.017, 0.905, 1.119"/>
+						<physics shape="bo_stone_pile_f"/>
+						<components>
+							<meta_mesh_component name="stone_pile_f">
+								<mesh name="stone_pile_f" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_f.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_h" old_prefab_name="">
+						<transform position="-0.088, -4.557, -0.366" non_orthogonal_rotation_mat="0.852836, 0.513055, 0.097183, -0.458014, 0.840386, -0.289783, -0.316134, 0.278091, 0.907042" scale="1.002, 1.000, 1.012"/>
+						<physics shape="bo_stone_pile_h"/>
+						<components>
+							<meta_mesh_component name="stone_pile_h">
+								<mesh name="stone_pile_h" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_h.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_h" old_prefab_name="">
+						<transform position="0.660, -2.546, -0.431" non_orthogonal_rotation_mat="-0.612487, -0.790073, 0.025385, 0.762011, -0.577145, 0.293671, -0.299357, 0.274352, 0.913847" scale="1.000, 0.987, 1.022"/>
+						<physics shape="bo_stone_pile_h"/>
+						<components>
+							<meta_mesh_component name="stone_pile_h">
+								<mesh name="stone_pile_h" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_h.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_h" old_prefab_name="">
+						<transform position="-3.330, -0.169, -2.346" non_orthogonal_rotation_mat="0.995173, -0.097590, 0.010368, 0.096355, 0.993011, 0.068160, -0.024342, -0.095993, 0.995084" scale="1.000, 0.699, 1.002"/>
+						<physics shape="bo_stone_pile_h"/>
+						<components>
+							<meta_mesh_component name="stone_pile_h">
+								<mesh name="stone_pile_h" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_h.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_h" old_prefab_name="">
+						<transform position="-2.693, 1.339, -1.909" non_orthogonal_rotation_mat="-0.787530, -0.602690, -0.128693, 0.584563, -0.801868, 0.123667, -0.251637, 0.031379, 0.967313"/>
+						<physics shape="bo_stone_pile_h"/>
+						<components>
+							<meta_mesh_component name="stone_pile_h">
+								<mesh name="stone_pile_h" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_h.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_h" old_prefab_name="">
+						<transform position="-0.375, -2.222, -0.818" non_orthogonal_rotation_mat="-0.760745, -0.564456, 0.320400, 0.687365, -0.627653, 0.365487, -0.006662, 0.638220, 0.769825" scale="1.002, 0.975, 1.047"/>
+						<physics shape="bo_stone_pile_h"/>
+						<components>
+							<meta_mesh_component name="stone_pile_h">
+								<mesh name="stone_pile_h" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_h.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_j" old_prefab_name="">
+						<transform position="1.130, 0.617, 0.087" rotation_euler="-0.027, 1.220, 0.445" scale="1.329, 1.671, 1.671"/>
+						<physics shape="bo_stone_pile_j"/>
+						<components>
+							<meta_mesh_component name="stone_pile_j">
+								<mesh name="stone_pile_j" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_j.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_j" old_prefab_name="">
+						<transform position="-2.923, 3.807, 0.380" non_orthogonal_rotation_mat="0.980355, -0.197225, -0.002461, 0.137342, 0.695367, -0.705409, 0.163730, 0.803580, 0.572234" scale="1.000, 1.000, 1.033"/>
+						<physics shape="bo_stone_pile_j"/>
+						<components>
+							<meta_mesh_component name="stone_pile_j">
+								<mesh name="stone_pile_j" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_j.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_k" old_prefab_name="">
+						<transform position="-5.313, 3.555, -1.575" non_orthogonal_rotation_mat="0.993713, 0.083414, 0.074672, -0.094345, 0.990112, 0.103813, -0.093179, -0.157317, 0.983142"/>
+						<physics shape="bo_stone_pile_k"/>
+						<components>
+							<meta_mesh_component name="stone_pile_k">
+								<mesh name="stone_pile_k" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stone_pile_k.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2a2" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2a2">
+						<transform position="-1.376, 2.416, 0.685" non_orthogonal_rotation_mat="-0.973206, 0.229014, 0.020568, -0.229693, -0.947103, -0.224137, -0.044666, -0.312524, 0.948859" scale="1.019, 1.000, 0.994"/>
+						<physics shape="bo_stonewall_2a2" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2a2">
+								<mesh name="stonewall_2a2" material="stone_wall_14" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2a2.lod4" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2a2.lod5" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2a2.lod6" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b3" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2b3">
+						<transform position="-2.657, 0.641, -0.933" non_orthogonal_rotation_mat="-0.184286, -0.554115, 0.811785, -0.966811, 0.253445, -0.032279, -0.206919, -0.871037, -0.445509" scale="1.027, 1.000, 0.996"/>
+						<physics shape="bo_stonewall_2b3" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b3">
+								<mesh name="stonewall_2b3" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2b3.lod4" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2b3.lod5" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2b3.lod6" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b3" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2b3">
+						<transform position="1.199, 0.769, 0.745" rotation_euler="-0.688, 0.302, -0.546"/>
+						<physics shape="bo_stonewall_2b3" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b3">
+								<mesh name="stonewall_2b3" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2b3.lod4" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2b3.lod5" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2b3.lod6" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b3" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2b3">
+						<transform position="-1.658, -5.185, -0.175" non_orthogonal_rotation_mat="0.767448, 0.637483, 0.068106, -0.621605, 0.770258, -0.142513, -0.203649, 0.095262, 0.974398"/>
+						<physics shape="bo_stonewall_2b3" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b3">
+								<mesh name="stonewall_2b3" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2b3.lod4" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2b3.lod5" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2b3.lod6" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b3" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2b3">
+						<transform position="-1.655, 1.715, -0.190" rotation_euler="0.000, 0.000, -0.758"/>
+						<physics shape="bo_stonewall_2b3" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b3">
+								<mesh name="stonewall_2b3" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2b3.lod4" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2b3.lod5" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2b3.lod6" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2c" old_prefab_name="">
+						<transform position="-5.591, 2.007, 1.408" rotation_euler="0.000, 0.000, -2.489"/>
+						<physics shape="bo_stonewall_2c" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2c">
+								<mesh name="stonewall_2c" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2c.lod4" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2c.lod5" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+								<mesh name="stonewall_2c.lod6" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.007"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="battania_grandbazaar_big_wall_a" old_prefab_name="" occlusion_body_name="bo_occ_battania_grandbazaar_big_wall_a">
+				<transform position="-36.361, 7.431, -8.672" rotation_euler="0.000, 0.000, 2.210" scale="0.405, 0.405, 0.405"/>
+				<physics shape="bo_battania_grandbazaar_big_wall_a"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="battania_grandbazaar_big_wall_a">
+						<mesh name="battania_grandbazaar_big_wall_a.3" material="stone_wall_14" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod4.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod5.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="battania_grandbazaar_big_wall_a" old_prefab_name="" occlusion_body_name="bo_occ_battania_grandbazaar_big_wall_a">
+				<transform position="-32.788, 2.641, -8.672" rotation_euler="0.000, 0.000, 2.210" scale="0.405, 0.405, 0.405"/>
+				<physics shape="bo_battania_grandbazaar_big_wall_a"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="battania_grandbazaar_big_wall_a">
+						<mesh name="battania_grandbazaar_big_wall_a.3" material="stone_wall_14" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod4.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod5.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="">
+				<transform position="-31.093, 2.387, -6.062" rotation_euler="0.418, 0.415, 1.420" scale="0.735, 0.735, 0.735"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="">
+				<transform position="-27.542, 0.254, -6.323" rotation_euler="-0.651, 0.012, -0.890" scale="0.735, 0.735, 0.735"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+				<transform position="-28.329, -0.727, -5.640" rotation_euler="0.000, 0.000, 1.258" scale="0.409, 0.409, 0.409"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="">
+				<transform position="-28.826, -2.026, -5.003" rotation_euler="-0.025, -0.004, 2.472" scale="0.735, 0.735, 0.735"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="-28.001, -3.474, -4.590" rotation_euler="0.000, 0.000, 0.662" scale="0.712, 0.712, 0.712"/>
+				<physics shape="bo_empire_garden_wall_c_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-28.686, -2.568, -4.636" rotation_euler="0.000, 0.000, 2.232" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-29.700, -1.287, -4.636" rotation_euler="0.000, 0.000, 2.232" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="-30.366, -0.457, -4.590" rotation_euler="0.000, 0.000, 0.662" scale="0.712, 0.712, 0.712"/>
+				<physics shape="bo_empire_garden_wall_c_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="-32.839, 2.693, -4.590" rotation_euler="0.000, 0.000, 0.662" scale="0.712, 0.712, 0.712"/>
+				<physics shape="bo_empire_garden_wall_c_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-33.524, 3.600, -4.636" rotation_euler="0.000, 0.000, 2.232" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="-33.440, 3.484, -4.590" rotation_euler="0.000, 0.000, 0.662" scale="0.712, 0.712, 0.712"/>
+				<physics shape="bo_empire_garden_wall_c_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-34.125, 4.391, -4.636" rotation_euler="0.000, 0.000, 2.232" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-35.190, 5.767, -4.636" rotation_euler="0.000, 0.000, 2.227" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="-35.856, 6.638, -4.590" rotation_euler="0.000, 0.000, 0.662" scale="0.712, 0.712, 0.712"/>
+				<physics shape="bo_empire_garden_wall_c_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-36.523, 7.570, -4.636" rotation_euler="0.000, 0.000, 2.212" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-37.566, 8.963, -4.636" rotation_euler="0.000, 0.000, 2.225" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="-38.199, 9.840, -4.590" rotation_euler="0.000, 0.000, 0.662" scale="0.712, 0.712, 0.712"/>
+				<physics shape="bo_empire_garden_wall_c_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="sturgia_dungeon_cell_door_closed" old_prefab_name="">
+				<transform position="-34.955, -10.756, -4.974" rotation_euler="1.543, 2.267, 2.320"/>
+				<physics shape="bo_sturgia_dungeon_cell_door_closed"/>
+				<components>
+					<meta_mesh_component name="sturgia_dungeon_cell_door_closed"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_stone_floor_c" old_prefab_name="">
+				<transform position="-37.985, -12.632, -5.119" rotation_euler="0.000, 0.000, -0.908" scale="1.300, 1.200, 1.000"/>
+				<physics shape="bo_module_european_stone_floor_c"/>
+				<components>
+					<meta_mesh_component name="module_european_stone_floor_c">
+						<mesh name="module_european_stone_floor_c" material="stone_wall_14"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_stone_floor_c" old_prefab_name="">
+				<transform position="-32.803, -8.585, -5.119" rotation_euler="0.000, 0.000, -0.908" scale="1.300, 1.200, 1.000"/>
+				<physics shape="bo_module_european_stone_floor_c"/>
+				<components>
+					<meta_mesh_component name="module_european_stone_floor_c">
+						<mesh name="module_european_stone_floor_c" material="stone_wall_14"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_stone_floor_c" old_prefab_name="">
+				<transform position="-29.905, -6.164, -5.119" rotation_euler="0.000, 0.000, -0.908" scale="1.300, 1.200, 1.000"/>
+				<physics shape="bo_module_european_stone_floor_c"/>
+				<components>
+					<meta_mesh_component name="module_european_stone_floor_c">
+						<mesh name="module_european_stone_floor_c" material="stone_wall_14"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_stone_floor_c" old_prefab_name="">
+				<transform position="-33.518, -0.074, -5.119" rotation_euler="0.000, 0.000, -0.908" scale="1.300, 0.900, 1.000"/>
+				<physics shape="bo_module_european_stone_floor_c"/>
+				<components>
+					<meta_mesh_component name="module_european_stone_floor_c">
+						<mesh name="module_european_stone_floor_c" material="stone_wall_14"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="battania_grandbazaar_big_wall_a" old_prefab_name="" occlusion_body_name="bo_occ_battania_grandbazaar_big_wall_a">
+				<transform position="-41.110, -10.541, -8.672" rotation_euler="0.000, 0.000, 0.680" scale="0.405, 0.405, 0.405"/>
+				<physics shape="bo_battania_grandbazaar_big_wall_a"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="battania_grandbazaar_big_wall_a">
+						<mesh name="battania_grandbazaar_big_wall_a.3" material="stone_wall_14" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod4.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod5.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="battania_grandbazaar_big_wall_a" old_prefab_name="" occlusion_body_name="bo_occ_battania_grandbazaar_big_wall_a">
+				<transform position="-36.239, -6.602, -8.672" rotation_euler="0.000, 0.000, 0.680" scale="0.405, 0.405, 0.405"/>
+				<physics shape="bo_battania_grandbazaar_big_wall_a"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="battania_grandbazaar_big_wall_a">
+						<mesh name="battania_grandbazaar_big_wall_a.3" material="stone_wall_14" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod4.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod5.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="battania_grandbazaar_big_wall_a" old_prefab_name="" occlusion_body_name="bo_occ_battania_grandbazaar_big_wall_a">
+				<transform position="-32.964, -5.771, -8.672" rotation_euler="0.000, 0.000, 2.210" scale="0.405, 0.405, 0.405"/>
+				<physics shape="bo_battania_grandbazaar_big_wall_a"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="battania_grandbazaar_big_wall_a">
+						<mesh name="battania_grandbazaar_big_wall_a.3" material="stone_wall_14" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod4.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod5.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="battania_grandbazaar_big_wall_a" old_prefab_name="" occlusion_body_name="bo_occ_battania_grandbazaar_big_wall_a">
+				<transform position="-36.611, -0.864, -8.672" rotation_euler="0.000, 0.000, 2.210" scale="0.405, 0.405, 0.405"/>
+				<physics shape="bo_battania_grandbazaar_big_wall_a"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="battania_grandbazaar_big_wall_a">
+						<mesh name="battania_grandbazaar_big_wall_a.3" material="stone_wall_14" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod4.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod5.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="battania_grandbazaar_big_wall_a" old_prefab_name="" occlusion_body_name="bo_occ_battania_grandbazaar_big_wall_a">
+				<transform position="-40.494, 4.359, -8.672" rotation_euler="0.000, 0.000, 2.210" scale="0.405, 0.405, 0.405"/>
+				<physics shape="bo_battania_grandbazaar_big_wall_a"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="battania_grandbazaar_big_wall_a">
+						<mesh name="battania_grandbazaar_big_wall_a.3" material="stone_wall_14" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod4.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+						<mesh name="battania_grandbazaar_big_wall_a.lod5.3" material="stone_wall_14_np" argument2="-8.384, 8.255, -0.065, 0.005"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_stairs_b_l2" old_prefab_name="">
+				<transform position="-41.355, 7.813, -8.946" rotation_euler="0.000, 0.000, -2.482" scale="-1.000, 1.000, 1.000"/>
+				<physics shape="bo_european_castle_stairs_b_l2">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="european_castle_stairs_b_l2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_wall_a_l1" old_prefab_name="" occlusion_body_name="bo_occ_empire_castle_wall_a_l1">
+				<transform position="-44.227, 12.760, -16.603" rotation_euler="0.000, 0.000, -0.931" scale="1.300, 1.200, 1.200"/>
+				<physics shape="bo_empire_castle_wall_a_l1"/>
+				<components>
+					<meta_mesh_component name="empire_castle_wall_a_l1">
+						<mesh name="empire_castle_wall_a_l1.2" material="stone_wall_new_b"/>
+						<mesh name="empire_castle_wall_a_l1.4" material="stone_wall_14"/>
+						<mesh name="empire_castle_wall_a_l1.lod4.2" material="stone_wall_new_b"/>
+						<mesh name="empire_castle_wall_a_l1.lod4.4" material="stone_wall_14"/>
+						<mesh name="empire_castle_wall_a_l1.lod5.3" material="stone_wall_14"/>
+						<mesh name="empire_castle_wall_a_l1.lod6.3" material="stone_wall_14"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_wall_a_l1" old_prefab_name="" occlusion_body_name="bo_occ_empire_castle_wall_a_l1">
+				<transform position="-27.367, -10.573, -16.603" rotation_euler="0.000, 0.000, -0.961" scale="1.300, 1.200, 1.200"/>
+				<physics shape="bo_empire_castle_wall_a_l1"/>
+				<components>
+					<meta_mesh_component name="empire_castle_wall_a_l1">
+						<mesh name="empire_castle_wall_a_l1.2" material="stone_wall_new_b"/>
+						<mesh name="empire_castle_wall_a_l1.4" material="stone_wall_14"/>
+						<mesh name="empire_castle_wall_a_l1.lod4.2" material="stone_wall_new_b"/>
+						<mesh name="empire_castle_wall_a_l1.lod4.4" material="stone_wall_14"/>
+						<mesh name="empire_castle_wall_a_l1.lod5.3" material="stone_wall_14"/>
+						<mesh name="empire_castle_wall_a_l1.lod6.3" material="stone_wall_14"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="-40.802, -10.290, -4.590" rotation_euler="0.000, 0.000, 0.662" scale="0.712, 0.712, 0.712"/>
+				<physics shape="bo_empire_garden_wall_c_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-39.957, -9.663, -4.636" rotation_euler="0.000, 0.000, -2.471" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="-39.321, -9.133, -4.590" rotation_euler="0.000, 0.000, 0.662" scale="0.712, 0.712, 0.712"/>
+				<physics shape="bo_empire_garden_wall_c_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-38.476, -8.505, -4.636" rotation_euler="0.000, 0.000, -2.471" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-37.116, -7.426, -4.636" rotation_euler="0.000, 0.000, -2.471" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="-36.308, -6.800, -4.590" rotation_euler="0.000, 0.000, 0.662" scale="0.712, 0.712, 0.712"/>
+				<physics shape="bo_empire_garden_wall_c_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-35.463, -6.173, -4.636" rotation_euler="0.000, 0.000, -2.471" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-34.102, -5.094, -4.636" rotation_euler="0.000, 0.000, -2.471" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="-33.435, -4.559, -4.590" rotation_euler="0.000, 0.000, 0.662" scale="0.712, 0.712, 0.712"/>
+				<physics shape="bo_empire_garden_wall_c_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-34.056, -3.783, -4.636" rotation_euler="0.000, 0.000, 2.232" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="-34.775, -2.841, -4.590" rotation_euler="0.000, 0.000, 0.662" scale="0.712, 0.712, 0.712"/>
+				<physics shape="bo_empire_garden_wall_c_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-35.475, -1.960, -4.636" rotation_euler="0.000, 0.000, 2.232" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-36.539, -0.583, -4.636" rotation_euler="0.000, 0.000, 2.227" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="-37.269, 0.356, -4.590" rotation_euler="0.000, 0.000, 0.662" scale="0.712, 0.712, 0.712"/>
+				<physics shape="bo_empire_garden_wall_c_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-37.955, 1.263, -4.636" rotation_euler="0.000, 0.000, 2.232" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-39.020, 2.639, -4.636" rotation_euler="0.000, 0.000, 2.227" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="-39.713, 3.489, -4.590" rotation_euler="0.000, 0.000, 0.662" scale="0.712, 0.712, 0.712"/>
+				<physics shape="bo_empire_garden_wall_c_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-40.373, 4.427, -4.636" rotation_euler="0.000, 0.000, 2.252" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="-41.469, 5.779, -4.636" rotation_euler="0.000, 0.000, 2.252" scale="0.556, 0.556, 0.556"/>
+				<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_c_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="-42.152, 6.615, -4.590" rotation_euler="0.000, 0.000, 0.662" scale="0.712, 0.712, 0.712"/>
+				<physics shape="bo_empire_garden_wall_c_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_c_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_stairs_b_l2" old_prefab_name="">
+				<transform position="-39.417, 9.320, -8.950" rotation_euler="0.000, 0.000, -2.482"/>
+				<physics shape="bo_european_castle_stairs_b_l2">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="european_castle_stairs_b_l2"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_stonewall_part_i" old_prefab_name="">
+				<transform position="-44.868, 6.041, -14.098" rotation_euler="0.000, 0.000, 1.609"/>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="-10.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="stonewall_2a2" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2a2">
+						<transform position="2.255, -0.335, 0.542" rotation_euler="-0.039, 0.000, 2.697"/>
+						<physics shape="bo_stonewall_2a2" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2a2">
+								<mesh name="stonewall_2a2" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2a2.lod4" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2a2.lod5" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2a2.lod6" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="2.597, 0.809, -2.013" rotation_euler="0.445, 0.014, 2.959"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d">
+								<mesh name="stone_pile_d" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_d.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b1" old_prefab_name="" occlusion_body_name="bo_stonewall_2b1">
+						<transform position="0.656, 0.294, 1.912" rotation_euler="0.000, 0.000, -3.077"/>
+						<physics shape="bo_stonewall_2b1" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b1">
+								<mesh name="stonewall_2b1" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2b1.lod4" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2b1.lod5" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2b1.lod6" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_h" old_prefab_name="">
+						<transform position="4.516, 0.515, -1.303" rotation_euler="-0.471, -0.455, -0.386"/>
+						<physics shape="bo_stone_pile_h"/>
+						<components>
+							<meta_mesh_component name="stone_pile_h">
+								<mesh name="stone_pile_h" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_h.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_h" old_prefab_name="">
+						<transform position="0.804, 1.820, -2.329" rotation_euler="-0.465, -0.156, -0.202"/>
+						<physics shape="bo_stone_pile_h"/>
+						<components>
+							<meta_mesh_component name="stone_pile_h">
+								<mesh name="stone_pile_h" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_h.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_g" old_prefab_name="">
+						<transform position="-0.057, 0.099, 2.646" rotation_euler="0.000, 0.000, -2.778"/>
+						<physics shape="bo_stone_pile_g"/>
+						<components>
+							<meta_mesh_component name="stone_pile_g">
+								<mesh name="stone_pile_g" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_g.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2a3" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2a3">
+						<transform position="-3.617, -1.178, 1.151" rotation_euler="0.000, 0.000, -2.774"/>
+						<physics shape="bo_stonewall_2a2" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2a3">
+								<mesh name="stonewall_2a3" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2a3.lod4" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2a3.lod5" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2a3.lod6" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_h" old_prefab_name="">
+						<transform position="-3.192, 0.097, -1.751" rotation_euler="0.172, 0.000, -2.743"/>
+						<physics shape="bo_stone_pile_h"/>
+						<components>
+							<meta_mesh_component name="stone_pile_h">
+								<mesh name="stone_pile_h" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_h.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_g" old_prefab_name="">
+						<transform position="-1.796, 0.389, -2.123" rotation_euler="0.000, 0.000, -2.694"/>
+						<physics shape="bo_stone_pile_g"/>
+						<components>
+							<meta_mesh_component name="stone_pile_g">
+								<mesh name="stone_pile_g" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_g.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_h" old_prefab_name="">
+						<transform position="-1.913, 1.476, -2.383" rotation_euler="0.457, -0.002, 2.879"/>
+						<physics shape="bo_stone_pile_h"/>
+						<components>
+							<meta_mesh_component name="stone_pile_h">
+								<mesh name="stone_pile_h" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_h.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_a" old_prefab_name="">
+						<transform position="-3.515, -0.321, -1.586" rotation_euler="-0.285, -0.138, -0.057"/>
+						<physics shape="bo_stone_pile_a"/>
+						<components>
+							<meta_mesh_component name="stone_pile_a">
+								<mesh name="stone_pile_a" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_a.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_k" old_prefab_name="">
+						<transform position="-4.936, -0.922, -1.293" rotation_euler="0.205, -0.119, -2.295"/>
+						<physics shape="bo_stone_pile_k"/>
+						<components>
+							<meta_mesh_component name="stone_pile_k">
+								<mesh name="stone_pile_k" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_k.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_i" old_prefab_name="">
+						<transform position="-6.184, -0.603, -1.596" rotation_euler="0.669, 0.000, 3.113"/>
+						<physics shape="bo_stone_pile_i"/>
+						<components>
+							<meta_mesh_component name="stone_pile_i">
+								<mesh name="stone_pile_i" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_i.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_k" old_prefab_name="">
+						<transform position="-3.726, 1.085, -1.904" rotation_euler="0.478, 0.266, -3.064"/>
+						<physics shape="bo_stone_pile_k"/>
+						<components>
+							<meta_mesh_component name="stone_pile_k">
+								<mesh name="stone_pile_k" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_k.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_c" old_prefab_name="">
+						<transform position="-1.484, 2.662, -2.610" rotation_euler="0.378, 0.000, -3.028"/>
+						<physics shape="bo_stone_pile_c"/>
+						<components>
+							<meta_mesh_component name="stone_pile_c">
+								<mesh name="stone_pile_c" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_c.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_i" old_prefab_name="">
+						<transform position="-1.047, -0.073, 2.339" rotation_euler="0.842, -0.952, -1.246"/>
+						<physics shape="bo_stone_pile_i"/>
+						<components>
+							<meta_mesh_component name="stone_pile_i">
+								<mesh name="stone_pile_i" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_i.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_i" old_prefab_name="">
+						<transform position="-0.889, -0.148, 2.486" rotation_euler="-0.829, -2.209, 1.868"/>
+						<physics shape="bo_stone_pile_i"/>
+						<components>
+							<meta_mesh_component name="stone_pile_i">
+								<mesh name="stone_pile_i" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_i.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="-5.917, -0.415, -1.854" rotation_euler="0.000, 0.000, -2.122"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d">
+								<mesh name="stone_pile_d" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_d.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_c" old_prefab_name="">
+						<transform position="-7.634, -1.662, -1.488" rotation_euler="0.458, 0.000, 2.973"/>
+						<physics shape="bo_stone_pile_c"/>
+						<components>
+							<meta_mesh_component name="stone_pile_c">
+								<mesh name="stone_pile_c" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_c.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b4" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2b4">
+						<transform position="-0.343, -0.107, 2.067" rotation_euler="0.000, 0.000, 1.904"/>
+						<physics shape="bo_stonewall_2b4" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b4">
+								<mesh name="stonewall_2b4" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2b4.lod4" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2b4.lod5" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2b4.lod6" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="1.581, -0.111, 2.584" rotation_euler="-1.210, 1.368, 0.952"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d">
+								<mesh name="stone_pile_d" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_d.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="7.010, -1.371, -0.715" rotation_euler="0.324, 0.013, -2.570"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d">
+								<mesh name="stone_pile_d" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_d.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="5.954, -0.340, -1.340" rotation_euler="0.209, 0.000, 3.117"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d">
+								<mesh name="stone_pile_d" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_d.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="6.948, -1.173, -0.882" rotation_euler="0.209, 0.000, 3.117"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d">
+								<mesh name="stone_pile_d" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_d.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_j" old_prefab_name="">
+						<transform position="4.763, 0.310, -2.241" rotation_euler="0.130, 0.000, 2.950"/>
+						<physics shape="bo_stone_pile_j"/>
+						<components>
+							<meta_mesh_component name="stone_pile_j">
+								<mesh name="stone_pile_j" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_j.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2c" old_prefab_name="">
+						<transform position="5.414, -1.820, 0.702" rotation_euler="0.052, -0.007, 0.011"/>
+						<physics shape="bo_stonewall_2c" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2c">
+								<mesh name="stonewall_2c" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2c.lod4" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2c.lod5" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2c.lod6" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b1" old_prefab_name="" occlusion_body_name="bo_stonewall_2b1">
+						<transform position="5.851, -1.798, 0.056" rotation_euler="-0.036, -0.247, 2.986"/>
+						<physics shape="bo_stonewall_2b1" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b1">
+								<mesh name="stonewall_2b1" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2b1.lod4" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2b1.lod5" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2b1.lod6" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b3" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2b3">
+						<transform position="-7.234, -2.686, 0.332" rotation_euler="0.053, -0.327, 0.420"/>
+						<physics shape="bo_stonewall_2b3" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b3">
+								<mesh name="stonewall_2b3" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2b3.lod4" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2b3.lod5" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2b3.lod6" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="-4.906, -2.559, -0.688" rotation_euler="0.000, 0.000, 0.553"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d">
+								<mesh name="stone_pile_d" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_d.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b3" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2b3">
+						<transform position="7.552, -1.940, -0.286" rotation_euler="-0.157, -0.113, 3.068"/>
+						<physics shape="bo_stonewall_2b3" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b3">
+								<mesh name="stonewall_2b3" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2b3.lod4" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2b3.lod5" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2b3.lod6" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="-7.802, -2.365, -1.534" rotation_euler="0.000, 0.000, 2.662"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d">
+								<mesh name="stone_pile_d" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_d.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_c" old_prefab_name="">
+						<transform position="-2.490, -1.684, -0.451" rotation_euler="0.000, 0.000, 0.019"/>
+						<physics shape="bo_stone_pile_c"/>
+						<components>
+							<meta_mesh_component name="stone_pile_c">
+								<mesh name="stone_pile_c" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_c.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="4.134, 1.399, -2.350" rotation_euler="0.053, 0.000, 2.837"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d">
+								<mesh name="stone_pile_d" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_d.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="-6.670, -2.883, -0.371" rotation_euler="0.000, 0.000, 2.383"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d">
+								<mesh name="stone_pile_d" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stone_pile_d.lod2" material="stone_wall_2a_noparallax" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2a2" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2a2">
+						<transform position="2.248, -0.288, 1.667" rotation_euler="-0.037, 0.012, 3.005"/>
+						<physics shape="bo_stonewall_2a2" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2a2">
+								<mesh name="stonewall_2a2" material="stone_wall_14" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2a2.lod4" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2a2.lod5" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+								<mesh name="stonewall_2a2.lod6" material="stone_wall_2a" argument2="-3.552, 3.354, -0.099, -0.025"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="empire_castle_wall_a_l1_broken" old_prefab_name="" occlusion_body_name="bo_occ_empire_castle_wall_a_l1_broken">
+				<transform position="-38.759, 33.921, -16.685" rotation_euler="0.000, 0.000, -2.532" scale="1.400, 1.000, 1.200"/>
+				<physics shape="bo_empire_castle_wall_a_l1_broken"/>
+				<components>
+					<meta_mesh_component name="empire_castle_wall_a_l1_broken">
+						<mesh name="empire_castle_wall_a_l1_broken.2" material="stone_wall_new_b_np"/>
+						<mesh name="empire_castle_wall_a_l1_broken.4" material="stone_wall_14_np"/>
+						<mesh name="empire_castle_wall_a_l1_broken.lod4.1" material="stone_wall_new_b"/>
+						<mesh name="empire_castle_wall_a_l1_broken.lod4.3" material="stone_wall_14"/>
+						<mesh name="empire_castle_wall_a_l1_broken.lod6.2" material="stone_wall_14"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_stairs_b_l2" old_prefab_name="">
+				<transform position="-47.106, 24.414, -13.398" rotation_euler="0.000, 0.000, 0.616" scale="1.000, 1.300, 1.000"/>
+				<physics shape="bo_european_castle_stairs_b_l2">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="european_castle_stairs_b_l2"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_stonewall_part_k" old_prefab_name="">
+				<transform position="-44.957, 24.863, -11.918" rotation_euler="0.000, 0.000, -0.815" scale="0.730, 0.730, 0.730"/>
+				<children>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="1.245, 1.184, -0.383" rotation_euler="-0.080, 0.039, 1.067"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b4" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2b4">
+						<transform position="2.512, -0.696, 0.357" rotation_euler="-0.057, -0.068, -0.268"/>
+						<physics shape="bo_stonewall_2b4" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b4"/>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b3" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2b3">
+						<transform position="-0.546, -0.320, -0.078" rotation_euler="-0.081, -0.036, 0.192"/>
+						<physics shape="bo_stonewall_2b3" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b2" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2b2">
+						<transform position="0.754, -0.231, 0.797" rotation_euler="-0.074, -0.049, 0.021"/>
+						<physics shape="bo_stonewall_2b2" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b2"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_i" old_prefab_name="">
+						<transform position="2.277, 0.591, -0.220" rotation_euler="-0.085, -0.026, 0.309"/>
+						<physics shape="bo_stone_pile_i"/>
+						<components>
+							<meta_mesh_component name="stone_pile_i"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_h" old_prefab_name="">
+						<transform position="5.055, -1.063, -0.878" rotation_euler="-0.088, 0.010, 0.716"/>
+						<physics shape="bo_stone_pile_h"/>
+						<components>
+							<meta_mesh_component name="stone_pile_h"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_g" old_prefab_name="">
+						<transform position="-0.895, -0.823, 0.005" rotation_euler="-0.084, 0.027, 0.921"/>
+						<physics shape="bo_stone_pile_g"/>
+						<components>
+							<meta_mesh_component name="stone_pile_g"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="-2.060, -0.742, -0.041" rotation_euler="0.086, -0.021, -2.293"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2c" old_prefab_name="">
+						<transform position="1.665, -0.880, -0.355" rotation_euler="0.063, 0.062, 2.969" scale="1.000, 0.752, 1.000"/>
+						<physics shape="bo_stonewall_2c" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2c"/>
+						</components>
+					</game_entity>
+					<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+						<transform position="-1.074, 1.229, -1.017" rotation_euler="-0.445, 0.000, 0.393"/>
+						<physics shape="bo_ruinous_castle_stone_heap_b"/>
+						<components>
+							<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="0.132, 3.655, -0.790" rotation_euler="0.000, -0.285, -0.258"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_e" old_prefab_name="">
+						<transform position="3.628, 0.789, -0.581" rotation_euler="0.000, 0.000, 0.498"/>
+						<physics shape="bo_stone_pile_e"/>
+						<components>
+							<meta_mesh_component name="stone_pile_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="3.066, 0.458, -0.517" rotation_euler="0.000, 0.000, -3.102"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_e" old_prefab_name="">
+						<transform position="1.658, 1.920, -0.619" rotation_euler="0.000, 0.000, -1.540"/>
+						<physics shape="bo_stone_pile_e"/>
+						<components>
+							<meta_mesh_component name="stone_pile_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="0.939, 3.396, -0.757" rotation_euler="0.000, 0.000, 0.413"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="4.056, -0.268, -0.883" rotation_euler="0.000, 0.000, -1.746"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b3" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2b3">
+						<transform position="-1.362, 0.015, 1.375" rotation_euler="0.105, 0.085, -2.086" scale="-1.000, 1.000, 1.000"/>
+						<physics shape="bo_stonewall_2b3" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2c" old_prefab_name="">
+						<transform position="-0.618, -0.054, 1.748" rotation_euler="0.000, 0.000, 2.407"/>
+						<physics shape="bo_stonewall_2c" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2c"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+				<transform position="-42.337, 37.732, -14.983" rotation_euler="0.000, 0.000, 0.179"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_a" old_prefab_name="">
+				<transform position="-39.025, 37.475, -14.670" rotation_euler="0.000, 0.000, 0.217"/>
+				<physics shape="bo_ruinous_castle_stone_heap_a"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+				<transform position="-35.735, 40.794, -15.632" rotation_euler="-0.210, 0.000, 0.903"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_stonewall_part_j" old_prefab_name="">
+				<transform position="-28.420, 20.386, -15.175" rotation_euler="0.000, 0.000, -1.682" scale="0.732, 0.732, 0.732"/>
+				<children>
+					<game_entity name="stone_pile_e" old_prefab_name="">
+						<transform position="3.134, -2.514, -0.020" rotation_euler="0.045, -0.129, -2.847"/>
+						<physics shape="bo_stone_pile_e"/>
+						<components>
+							<meta_mesh_component name="stone_pile_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_i" old_prefab_name="">
+						<transform position="4.745, -2.010, -0.158" rotation_euler="0.237, 0.012, -0.232"/>
+						<physics shape="bo_stone_pile_i"/>
+						<components>
+							<meta_mesh_component name="stone_pile_i"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="-3.361, -2.615, 0.004" rotation_euler="0.000, 0.000, -0.713"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_e" old_prefab_name="">
+						<transform position="-3.456, -0.577, 0.009" rotation_euler="0.000, 0.000, -1.697"/>
+						<physics shape="bo_stone_pile_e"/>
+						<components>
+							<meta_mesh_component name="stone_pile_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="ruinous_castle_stone_heap_a" old_prefab_name="">
+						<transform position="-2.337, -2.447, 0.005" rotation_euler="0.000, 0.000, -1.410"/>
+						<physics shape="bo_ruinous_castle_stone_heap_a"/>
+						<components>
+							<meta_mesh_component name="ruinous_castle_stone_heap_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+						<transform position="-1.115, -0.141, -0.985" rotation_euler="0.000, 0.000, -2.304"/>
+						<physics shape="bo_ruinous_castle_stone_heap_b"/>
+						<components>
+							<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2c" old_prefab_name="">
+						<transform position="-1.694, -0.774, 0.372" rotation_euler="0.000, 0.000, 0.864"/>
+						<physics shape="bo_stonewall_2c" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2c"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_h" old_prefab_name="">
+						<transform position="0.420, -1.338, -0.002" rotation_euler="0.382, 0.025, -0.700"/>
+						<physics shape="bo_stone_pile_h"/>
+						<components>
+							<meta_mesh_component name="stone_pile_h"/>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b3" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2b3">
+						<transform position="0.619, -0.079, 2.284" rotation_euler="0.000, 0.000, -0.181"/>
+						<physics shape="bo_stonewall_2b3" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b3" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2b3">
+						<transform position="-0.550, -0.035, 0.928" rotation_euler="0.000, -0.219, 0.473"/>
+						<physics shape="bo_stonewall_2b3" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b3" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2b3">
+						<transform position="2.381, -0.539, 1.675" rotation_euler="-0.114, -0.150, 2.678"/>
+						<physics shape="bo_stonewall_2b3" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2c" old_prefab_name="">
+						<transform position="1.674, -0.300, 2.062" rotation_euler="0.009, -0.123, 1.764"/>
+						<physics shape="bo_stonewall_2c" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2c"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_i" old_prefab_name="">
+						<transform position="1.352, 0.006, 0.583" rotation_euler="0.065, -0.038, 0.901"/>
+						<physics shape="bo_stone_pile_i"/>
+						<components>
+							<meta_mesh_component name="stone_pile_i"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_i" old_prefab_name="">
+						<transform position="2.335, -0.679, 0.273" rotation_euler="0.065, 0.268, 0.901"/>
+						<physics shape="bo_stone_pile_i"/>
+						<components>
+							<meta_mesh_component name="stone_pile_i"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_h" old_prefab_name="">
+						<transform position="1.498, 0.296, 0.181" rotation_euler="-0.085, 0.019, 2.005"/>
+						<physics shape="bo_stone_pile_h"/>
+						<components>
+							<meta_mesh_component name="stone_pile_h"/>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b3" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2b3">
+						<transform position="1.413, -0.992, 0.210" rotation_euler="0.057, -0.050, 1.087"/>
+						<physics shape="bo_stonewall_2b3" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_h" old_prefab_name="">
+						<transform position="4.561, -0.035, -0.066" rotation_euler="0.256, 0.010, 1.918"/>
+						<physics shape="bo_stone_pile_h"/>
+						<components>
+							<meta_mesh_component name="stone_pile_h"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="2.662, 0.845, -0.031" rotation_euler="0.124, -0.072, 2.272"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_h" old_prefab_name="">
+						<transform position="2.682, -1.545, 0.140" rotation_euler="0.286, -0.016, 0.482"/>
+						<physics shape="bo_stone_pile_h"/>
+						<components>
+							<meta_mesh_component name="stone_pile_h"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_h" old_prefab_name="">
+						<transform position="0.274, 0.463, 0.050" rotation_euler="-0.019, -0.018, -0.558"/>
+						<physics shape="bo_stone_pile_h"/>
+						<components>
+							<meta_mesh_component name="stone_pile_h"/>
+						</components>
+					</game_entity>
+					<game_entity name="shrub_d" old_prefab_name="">
+						<transform position="0.209, -0.039, 0.175" rotation_euler="0.249, -0.213, -1.659"/>
+						<components>
+							<meta_mesh_component name="shrub_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="shrub_d" old_prefab_name="">
+						<transform position="2.694, -1.550, 0.059" rotation_euler="-0.030, -0.016, 0.900"/>
+						<components>
+							<meta_mesh_component name="shrub_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="shrub_d" old_prefab_name="">
+						<transform position="3.127, -0.453, 0.040" rotation_euler="0.322, 0.071, 2.620"/>
+						<components>
+							<meta_mesh_component name="shrub_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="shrub_c" old_prefab_name="">
+						<transform position="2.524, -0.967, -0.532" rotation_euler="0.000, 0.000, 0.322"/>
+						<physics shape="bo_shrub_b"/>
+						<components>
+							<meta_mesh_component name="shrub_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="stonewall_2b2" old_prefab_name="" occlusion_body_name="bo_occ_stonewall_2b2">
+						<transform position="2.644, -0.420, 1.135" rotation_euler="0.443, 0.142, -0.523"/>
+						<physics shape="bo_stonewall_2b2" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="stonewall_2b2"/>
+						</components>
+					</game_entity>
+					<game_entity name="shrub_d" old_prefab_name="">
+						<transform position="0.891, -0.841, -0.446" rotation_euler="0.240, 0.000, -2.766"/>
+						<components>
+							<meta_mesh_component name="shrub_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+						<transform position="2.141, -0.443, -0.382" rotation_euler="0.000, 0.000, -3.015" scale="1.000, 1.000, 0.739"/>
+						<physics shape="bo_ruinous_castle_stone_heap_b"/>
+						<components>
+							<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_a" old_prefab_name="">
+						<transform position="3.159, 1.779, -0.030" rotation_euler="0.000, 0.000, -2.751"/>
+						<physics shape="bo_stone_pile_a"/>
+						<components>
+							<meta_mesh_component name="stone_pile_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_f" old_prefab_name="">
+						<transform position="2.613, 0.595, 0.120" rotation_euler="0.000, 0.313, 1.195" scale="1.417, 1.417, 1.417"/>
+						<physics shape="bo_stone_pile_f"/>
+						<components>
+							<meta_mesh_component name="stone_pile_f"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_e" old_prefab_name="">
+						<transform position="0.417, -2.337, -0.317" rotation_euler="0.000, 0.000, -0.678"/>
+						<physics shape="bo_stone_pile_e"/>
+						<components>
+							<meta_mesh_component name="stone_pile_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_e" old_prefab_name="">
+						<transform position="1.146, 1.909, 0.007" rotation_euler="0.000, 0.000, -2.716"/>
+						<physics shape="bo_stone_pile_e"/>
+						<components>
+							<meta_mesh_component name="stone_pile_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="stone_pile_d" old_prefab_name="">
+						<transform position="1.193, -2.831, -0.010" rotation_euler="0.000, 0.000, 2.974"/>
+						<physics shape="bo_stone_pile_d"/>
+						<components>
+							<meta_mesh_component name="stone_pile_d"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_b" old_prefab_name="">
+				<transform position="-22.336, 24.908, -12.519" rotation_euler="0.575, 0.000, -0.498"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_wall_a_l3_broken" old_prefab_name="" occlusion_body_name="bo_occ_empire_castle_wall_a_l3_broken">
+				<transform position="-17.127, 26.325, -11.651" rotation_euler="0.000, 0.000, -1.891"/>
+				<physics shape="bo_empire_castle_wall_a_l3_broken"/>
+				<components>
+					<meta_mesh_component name="empire_castle_wall_a_l3_broken">
+						<mesh name="empire_castle_wall_a_l3_broken.0" material="empire_gatehouse_gate" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.1" material="pediment_set_1" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.2" material="stone_wall_14" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.3" material="stone_wall_14" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.4" material="rock_1_plain" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.5" material="dirty_a" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.6" material="castle_floor_a" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.7" material="castle_floor_a_nrm" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.8" material="wall_damaged_a" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod4.0" material="empire_gatehouse_gate" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod4.1" material="pediment_set_1" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod4.2" material="stone_wall_14" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod4.3" material="stone_wall_14" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod4.4" material="rock_1_plain" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod4.5" material="dirty_a" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod4.6" material="castle_floor_a" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod4.7" material="castle_floor_a_nrm" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod4.8" material="wall_damaged_a" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod5.0" material="empire_gatehouse_gate" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod5.1" material="pediment_set_1" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod5.2" material="stone_wall_14" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod5.3" material="stone_wall_14" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod5.4" material="rock_1_plain" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod5.5" material="dirty_a" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod5.6" material="castle_floor_a" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod5.7" material="castle_floor_a_nrm" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod5.8" material="wall_damaged_a" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod6.0" material="pediment_set_1" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod6.1" material="stone_wall_14" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod6.2" material="stone_wall_14" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod6.3" material="castle_floor_a" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod6.4" material="castle_floor_a_nrm" argument2="-12.243, 9.855, -1.194, 0.325"/>
+						<mesh name="empire_castle_wall_a_l3_broken.lod6.5" material="wall_damaged_a" argument2="-12.243, 9.855, -1.194, 0.325"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="-20.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="">
+				<transform position="-22.377, 28.145, -12.259" rotation_euler="0.003, -0.383, 0.090"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_b" old_prefab_name="">
+				<transform position="-22.926, 31.891, -12.899" rotation_euler="0.000, 0.000, 0.428"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_c" old_prefab_name="">
+				<transform position="-22.817, 30.153, -12.476" rotation_euler="-0.046, -0.516, 0.385"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_c" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_c" old_prefab_name="">
+				<transform position="-20.947, 33.241, -12.687" rotation_euler="0.000, 0.000, 0.938"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_c" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_b" old_prefab_name="">
+				<transform position="-20.075, 34.730, -12.837" rotation_euler="0.000, 0.000, 0.634"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_b" old_prefab_name="">
+				<transform position="-19.564, 33.275, -12.452"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="">
+				<transform position="-22.953, 34.047, -13.509" rotation_euler="-0.096, -0.409, 0.007"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_wall_a_l1" old_prefab_name="" occlusion_body_name="bo_occ_empire_castle_wall_a_l1">
+				<transform position="-15.627, 36.421, -16.750" rotation_euler="0.000, 0.000, 2.171" scale="1.300, 1.200, 1.200"/>
+				<physics shape="bo_empire_castle_wall_a_l1"/>
+				<components>
+					<meta_mesh_component name="empire_castle_wall_a_l1">
+						<mesh name="empire_castle_wall_a_l1.2" material="stone_wall_new_b"/>
+						<mesh name="empire_castle_wall_a_l1.4" material="stone_wall_14"/>
+						<mesh name="empire_castle_wall_a_l1.lod4.2" material="stone_wall_new_b"/>
+						<mesh name="empire_castle_wall_a_l1.lod4.4" material="stone_wall_14"/>
+						<mesh name="empire_castle_wall_a_l1.lod5.3" material="stone_wall_14"/>
+						<mesh name="empire_castle_wall_a_l1.lod6.3" material="stone_wall_14"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="">
+				<transform position="-25.107, 26.982, -13.776" rotation_euler="0.000, -0.692, 0.364"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_wall_a_l3" old_prefab_name="" occlusion_body_name="bo_occ_empire_castle_wall_a_l3">
+				<transform position="-14.913, 6.425, -11.671" rotation_euler="0.000, 0.000, -1.371"/>
+				<physics shape="bo_empire_castle_wall_a_l3"/>
+				<components>
+					<meta_mesh_component name="empire_castle_wall_a_l3">
+						<mesh name="empire_castle_wall_a_l3.2" material="stone_wall_14"/>
+						<mesh name="empire_castle_wall_a_l3.3" material="stone_wall_14"/>
+						<mesh name="empire_castle_wall_a_l3.lod4.1" material="stone_wall_14_np"/>
+						<mesh name="empire_castle_wall_a_l3.lod4.2" material="stone_wall_14_np"/>
+						<mesh name="empire_castle_wall_a_l3.lod5.1" material="stone_wall_14_np"/>
+						<mesh name="empire_castle_wall_a_l3.lod5.2" material="stone_wall_14_np"/>
+						<mesh name="empire_castle_wall_a_l3.lod6.1" material="stone_wall_14_np"/>
+						<mesh name="empire_castle_wall_a_l3.lod6.2" material="stone_wall_14_np"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="merlon_6" old_prefab_name="">
+						<transform position="-3.064, 0.000, 0.000"/>
+						<physics shape="bo_empire_castle_wall_a_l3_06"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_a_l3_06">
+								<mesh name="empire_castle_wall_a_l3_06.2" material="stone_wall_14"/>
+								<mesh name="empire_castle_wall_a_l3_06.lod4.1" material="stone_wall_14_np"/>
+								<mesh name="empire_castle_wall_a_l3_06.lod6.0" material="stone_wall_14_np"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_3" old_prefab_name="">
+						<physics shape="bo_empire_castle_wall_a_l3_03"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_a_l3_03">
+								<mesh name="empire_castle_wall_a_l3_03.1" material="stone_wall_14"/>
+								<mesh name="empire_castle_wall_a_l3_03.lod4.1" material="stone_wall_14_np"/>
+								<mesh name="empire_castle_wall_a_l3_03.lod6.0" material="stone_wall_14_np"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_2" old_prefab_name="">
+						<physics shape="bo_empire_castle_wall_a_l3_02"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_a_l3_02">
+								<mesh name="empire_castle_wall_a_l3_02.1" material="stone_wall_14"/>
+								<mesh name="empire_castle_wall_a_l3_02.lod4.1" material="stone_wall_14_np"/>
+								<mesh name="empire_castle_wall_a_l3_02.lod6.0" material="stone_wall_14_np"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_b" old_prefab_name="">
+				<transform position="-10.546, 22.794, -3.179" rotation_euler="0.565, -0.453, -2.123"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="">
+				<transform position="-10.458, 24.870, -4.272" rotation_euler="-0.124, -0.543, -0.676"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_b" old_prefab_name="">
+				<transform position="-14.386, 23.562, -3.089" rotation_euler="-0.306, -0.650, -0.913"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_b" old_prefab_name="">
+				<transform position="-14.267, 21.621, -1.968" rotation_euler="0.682, 0.210, 3.097"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="">
+				<transform position="-13.510, 20.107, -0.928" rotation_euler="-0.124, -0.543, -0.676"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="">
+				<transform position="-13.408, 17.963, -0.567" rotation_euler="-0.136, 0.002, -0.676"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_b" old_prefab_name="">
+				<transform position="-12.923, 28.130, -6.174" rotation_euler="-0.365, -0.591, 0.680"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="">
+				<transform position="-13.427, 24.704, -4.875" rotation_euler="-0.122, -0.916, -0.678"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="">
+				<transform position="-13.659, 26.988, -6.551" rotation_euler="-0.396, -0.658, 0.576"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="">
+				<transform position="-15.911, 26.988, -8.074" rotation_euler="0.077, -0.601, -0.121"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_a_damaged_heap_b" old_prefab_name="">
+				<transform position="-15.224, 29.115, -7.583" rotation_euler="-0.365, -0.591, -0.360"/>
+				<physics shape="bo_european_castle_wall_a_damaged_heap_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_a_damaged_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_wall_a_l3" old_prefab_name="" occlusion_body_name="bo_occ_empire_castle_wall_a_l3">
+				<transform position="-2.293, 40.778, -11.671" rotation_euler="0.000, 0.000, -2.576"/>
+				<physics shape="bo_empire_castle_wall_a_l3"/>
+				<components>
+					<meta_mesh_component name="empire_castle_wall_a_l3">
+						<mesh name="empire_castle_wall_a_l3.2" material="stone_wall_14"/>
+						<mesh name="empire_castle_wall_a_l3.3" material="stone_wall_14"/>
+						<mesh name="empire_castle_wall_a_l3.lod4.1" material="stone_wall_14_np"/>
+						<mesh name="empire_castle_wall_a_l3.lod4.2" material="stone_wall_14_np"/>
+						<mesh name="empire_castle_wall_a_l3.lod5.1" material="stone_wall_14_np"/>
+						<mesh name="empire_castle_wall_a_l3.lod5.2" material="stone_wall_14_np"/>
+						<mesh name="empire_castle_wall_a_l3.lod6.1" material="stone_wall_14_np"/>
+						<mesh name="empire_castle_wall_a_l3.lod6.2" material="stone_wall_14_np"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="merlon_6" old_prefab_name="">
+						<physics shape="bo_empire_castle_wall_a_l3_06"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_a_l3_06">
+								<mesh name="empire_castle_wall_a_l3_06.2" material="stone_wall_14"/>
+								<mesh name="empire_castle_wall_a_l3_06.lod4.1" material="stone_wall_14_np"/>
+								<mesh name="empire_castle_wall_a_l3_06.lod6.0" material="stone_wall_14_np"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_3" old_prefab_name="">
+						<physics shape="bo_empire_castle_wall_a_l3_03"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_a_l3_03">
+								<mesh name="empire_castle_wall_a_l3_03.1" material="stone_wall_14"/>
+								<mesh name="empire_castle_wall_a_l3_03.lod4.1" material="stone_wall_14_np"/>
+								<mesh name="empire_castle_wall_a_l3_03.lod6.0" material="stone_wall_14_np"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_2" old_prefab_name="">
+						<physics shape="bo_empire_castle_wall_a_l3_02"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_a_l3_02">
+								<mesh name="empire_castle_wall_a_l3_02.1" material="stone_wall_14"/>
+								<mesh name="empire_castle_wall_a_l3_02.lod4.1" material="stone_wall_14_np"/>
+								<mesh name="empire_castle_wall_a_l3_02.lod6.0" material="stone_wall_14_np"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="ruinous_battania_castle_wall_c" old_prefab_name="" occlusion_body_name="bo_occ_ruinous_battania_castle_wall_c">
+				<transform position="16.306, 52.324, -7.845" rotation_euler="0.000, 0.000, -2.552" scale="1.000, 0.800, 1.000"/>
+				<physics shape="bo_ruinous_castle_wall_c"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="ruinous_battania_castle_wall_c">
+						<mesh name="ruinous_battania_castle_wall_c.23" material="stone_wall_14"/>
+						<mesh name="ruinous_battania_castle_wall_c.lod5.23" material="stone_wall_2a_noparallax"/>
+						<mesh name="ruinous_battania_castle_wall_c.lod6.23" material="stone_wall_2a_noparallax"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_wall_a" old_prefab_name="">
+				<transform position="9.247, 47.646, -11.482" rotation_euler="0.000, 0.000, 0.589" scale="0.790, 0.820, 0.790"/>
+				<physics shape="bo_ruinous_castle_wall_a"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_wall_a">
+						<mesh name="ruinous_castle_wall_a.0" material="stone_wall_14"/>
+						<mesh name="ruinous_castle_wall_a.lod5.0" material="stone_wall_14_np"/>
+						<mesh name="ruinous_castle_wall_a.lod6.0" material="stone_wall_14_np"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_dungeon_a" old_prefab_name="" occlusion_body_name="bo_occ_ruinous_castle_dungeon_a">
+				<transform position="39.190, 11.985, 1.010" rotation_euler="0.000, 0.000, 0.477" scale="0.732, 0.732, 0.732"/>
+				<physics shape="bo_ruinous_castle_dungeon_a"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="ruinous_castle_dungeon_a"/>
+				</components>
+				<children>
+					<game_entity name="sound_reverb" old_prefab_name="">
+						<transform position="2.000, 1.000, -5.000" rotation_euler="0.000, 0.000, 0.000" scale="19.000, 11.500, 4.000"/>
+						<scripts>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/reverb/stone_corridor"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Box"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="ss_aspen3" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="39.123, 38.855, -0.663" rotation_euler="0.000, 0.000, -0.493" scale="2.172, 2.172, 2.172"/>
+				<physics shape="bo_tree_aspen_summer_11"/>
+				<components>
+					<meta_mesh_component name="tree_aspen_summer_11"/>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_hardwood,50,1,100|pe_wooden_stick,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="true"/>
+							<variable name="PhysicMaterial" value="wood"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wood_splinter_a"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_hatchet_1_t1"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="ss_aspen3" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="56.822, 36.744, -0.663" rotation_euler="0.000, 0.000, -1.153" scale="1.483, 1.483, 1.483"/>
+				<physics shape="bo_tree_aspen_summer_11"/>
+				<components>
+					<meta_mesh_component name="tree_aspen_summer_11"/>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_hardwood,50,1,100|pe_wooden_stick,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="true"/>
+							<variable name="PhysicMaterial" value="wood"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wood_splinter_a"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_hatchet_1_t1"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="ss_aspen1" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="46.649, 45.627, 0.013" rotation_euler="0.000, 0.000, 1.385" scale="0.733, 0.733, 0.733"/>
+				<physics shape="bo_tree_aspen_summer_4"/>
+				<components>
+					<meta_mesh_component name="tree_aspen_summer_4"/>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_hardwood,50,1,100|pe_wooden_stick,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="true"/>
+							<variable name="PhysicMaterial" value="wood"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wood_splinter_a"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_hatchet_1_t1"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="ss_aspen2" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="61.513, 23.743, 0.030" rotation_euler="0.000, 0.000, 0.697" scale="0.733, 0.733, 0.733"/>
+				<physics shape="bo_tree_aspen_summer_6"/>
+				<components>
+					<meta_mesh_component name="tree_aspen_summer_6"/>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_hardwood,50,1,100|pe_wooden_stick,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="true"/>
+							<variable name="PhysicMaterial" value="wood"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wood_splinter_a"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_hatchet_1_t1"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="ss_aspen1" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="77.693, -0.330, -10.418" rotation_euler="0.000, 0.000, -2.536" scale="0.733, 0.733, 0.733"/>
+				<physics shape="bo_tree_aspen_summer_4"/>
+				<components>
+					<meta_mesh_component name="tree_aspen_summer_4"/>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_hardwood,50,1,100|pe_wooden_stick,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="true"/>
+							<variable name="PhysicMaterial" value="wood"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wood_splinter_a"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_hatchet_1_t1"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="ss_aspen2" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="88.188, 13.416, -10.687" rotation_euler="0.000, 0.000, -0.687" scale="0.733, 0.733, 0.733"/>
+				<physics shape="bo_tree_aspen_summer_6"/>
+				<components>
+					<meta_mesh_component name="tree_aspen_summer_6"/>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_hardwood,50,1,100|pe_wooden_stick,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="true"/>
+							<variable name="PhysicMaterial" value="wood"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wood_splinter_a"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_hatchet_1_t1"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="ss_aspen3" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="34.368, -49.011, -4.752" rotation_euler="0.000, 0.000, -1.903" scale="2.172, 2.172, 2.172"/>
+				<physics shape="bo_tree_aspen_summer_11"/>
+				<components>
+					<meta_mesh_component name="tree_aspen_summer_11"/>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_hardwood,50,1,100|pe_wooden_stick,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="true"/>
+							<variable name="PhysicMaterial" value="wood"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wood_splinter_a"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_hatchet_1_t1"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="ss_aspen2" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="58.698, -65.193, -9.983" rotation_euler="0.000, 0.000, -0.688" scale="0.554, 0.554, 0.554"/>
+				<physics shape="bo_tree_aspen_summer_6"/>
+				<components>
+					<meta_mesh_component name="tree_aspen_summer_6"/>
+				</components>
+				<scripts>
+					<script name="PE_DestructibleWithItem">
+						<variables>
+							<variable name="ItemDrops" value="pe_hardwood,50,1,100|pe_wooden_stick,50,1,100"/>
+							<variable name="RespawnAsSeconds" value="1200"/>
+							<variable name="ApplyPhysicsOnDestruction" value="true"/>
+							<variable name="PhysicMaterial" value="wood"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wood_splinter_a"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkillLevel" value="10"/>
+							<variable name="RequiredItemId" value="PE_peasant_hatchet_1_t1"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="ruinous_castle_gate_house_a" old_prefab_name="" occlusion_body_name="bo_occ_ruinous_castle_gate_house_a">
+				<transform position="40.759, -54.195, -9.357" rotation_euler="-0.746, -0.438, 2.937" scale="0.732, 0.732, 0.732"/>
+				<physics shape="bo_ruinous_castle_gate_house_a"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_gate_house_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+				<transform position="61.393, -65.763, -9.960" rotation_euler="0.000, 0.000, -0.517" scale="0.339, 0.339, 0.339"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_small_wall_a" old_prefab_name="">
+				<transform position="59.276, -68.151, -9.851" rotation_euler="0.514, -0.120, 0.223" scale="0.403, 0.403, 0.403"/>
+				<physics shape="bo_ruinous_castle_small_wall_a"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_small_wall_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+				<transform position="59.084, -68.091, -9.960" rotation_euler="0.000, 0.000, -0.579" scale="0.339, 0.339, 0.339"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_a" old_prefab_name="">
+				<transform position="60.333, -68.493, -9.960" rotation_euler="0.000, 0.000, -1.449" scale="0.607, 0.607, 0.607"/>
+				<physics shape="bo_ruinous_castle_stone_heap_a"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_a" old_prefab_name="">
+				<transform position="60.337, -67.462, -9.960" rotation_euler="0.000, 0.000, -0.034" scale="0.607, 0.607, 0.607"/>
+				<physics shape="bo_ruinous_castle_stone_heap_a"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_a" old_prefab_name="">
+				<transform position="57.611, -67.747, -9.960" rotation_euler="0.000, 0.000, -1.449" scale="0.607, 0.607, 0.607"/>
+				<physics shape="bo_ruinous_castle_stone_heap_a"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+				<transform position="48.819, -66.767, -8.959" rotation_euler="0.000, 0.000, -0.579"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+				<transform position="50.590, -64.449, -8.959" rotation_euler="0.000, 0.000, 0.201" scale="0.781, 0.781, 0.781"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+				<transform position="50.063, -61.259, -6.433" rotation_euler="-0.637, 0.000, -1.524" scale="0.511, 0.511, 0.511"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+				<transform position="49.978, -58.628, -5.786" rotation_euler="-0.637, 0.000, -1.524" scale="0.339, 0.339, 0.339"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_a" old_prefab_name="">
+				<transform position="45.739, -66.562, -8.184" rotation_euler="-0.722, 0.000, -2.432"/>
+				<physics shape="bo_ruinous_castle_stone_heap_a"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+				<transform position="44.633, -62.417, -7.272" rotation_euler="0.000, 0.000, -1.352" scale="1.396, 1.396, 1.396"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_small_wall_b" old_prefab_name="">
+				<transform position="43.079, -71.428, -10.159" rotation_euler="0.000, 0.000, -1.446" scale="0.881, 0.881, 0.881"/>
+				<physics shape="bo_ruinous_castle_small_wall_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_small_wall_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_small_wall_b" old_prefab_name="">
+				<transform position="39.470, -67.085, -8.688" rotation_euler="0.000, 0.000, -3.023" scale="0.725, 0.725, 0.725"/>
+				<physics shape="bo_ruinous_castle_small_wall_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_small_wall_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+				<transform position="35.303, -64.233, -8.860" rotation_euler="0.000, 0.000, -0.804"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+				<transform position="39.138, -63.799, -8.860" rotation_euler="0.000, 0.000, -2.834"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_a" old_prefab_name="">
+				<transform position="27.586, -63.725, -8.665" rotation_euler="0.000, 0.000, -0.579" scale="0.607, 0.607, 0.607"/>
+				<physics shape="bo_ruinous_castle_stone_heap_a"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_small_wall_b" old_prefab_name="">
+				<transform position="25.035, -64.227, -8.933" rotation_euler="0.858, -0.448, 0.658" scale="0.582, 0.582, 0.582"/>
+				<physics shape="bo_ruinous_castle_small_wall_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_small_wall_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_a" old_prefab_name="">
+				<transform position="27.154, -63.421, -8.665" rotation_euler="-0.309, 0.386, 0.349" scale="0.607, 0.607, 0.607"/>
+				<physics shape="bo_ruinous_castle_stone_heap_a"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_a" old_prefab_name="">
+				<transform position="26.552, -63.399, -8.274" rotation_euler="-0.377, -0.325, -0.697" scale="0.443, 0.443, 0.443"/>
+				<physics shape="bo_ruinous_castle_stone_heap_a"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+				<transform position="41.345, -58.702, -7.282" rotation_euler="0.000, 0.000, -2.158" scale="0.399, 0.399, 0.399"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+				<transform position="40.755, -60.882, -7.282" rotation_euler="0.000, 0.000, 2.377" scale="0.577, 0.577, 0.577"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_stone_heap_b" old_prefab_name="">
+				<transform position="43.214, -57.327, -7.282" rotation_euler="0.000, 0.000, 0.727" scale="0.577, 0.577, 0.577"/>
+				<physics shape="bo_ruinous_castle_stone_heap_b"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_stone_heap_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable_bumpy" old_prefab_name="">
+				<transform position="57.668, -6.756, -0.070" rotation_euler="0.000, 0.000, -2.766" scale="0.730, 0.730, 0.730"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable_bumpy"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable_bumpy"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable_bumpy" old_prefab_name="">
+				<transform position="55.529, -1.341, -0.070" rotation_euler="0.000, 0.000, -2.766" scale="0.730, 0.730, 0.730"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable_bumpy"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable_bumpy"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable_bumpy" old_prefab_name="">
+				<transform position="52.266, -8.888, -0.070" rotation_euler="0.000, 0.000, -2.766" scale="0.730, 0.730, 0.730"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable_bumpy"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable_bumpy"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable_bumpy" old_prefab_name="">
+				<transform position="54.389, -14.339, -0.070" rotation_euler="0.000, 0.000, -2.766" scale="0.730, 0.730, 0.730"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable_bumpy"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable_bumpy"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable_bumpy" old_prefab_name="">
+				<transform position="49.081, -16.435, -0.070" rotation_euler="0.000, 0.000, -2.766" scale="0.730, 0.730, 0.730"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable_bumpy"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable_bumpy"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable_bumpy" old_prefab_name="">
+				<transform position="46.932, -10.995, -0.070" rotation_euler="0.000, 0.000, -2.766" scale="0.730, 0.730, 0.730"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable_bumpy"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable_bumpy"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable_bumpy" old_prefab_name="">
+				<transform position="42.260, -18.778, -0.070" rotation_euler="0.000, 0.000, -2.766" scale="0.730, 0.730, 0.730"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable_bumpy"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable_bumpy"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable_bumpy" old_prefab_name="">
+				<transform position="40.138, -13.327, -0.070" rotation_euler="0.000, 0.000, -2.766" scale="0.730, 0.730, 0.730"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable_bumpy"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable_bumpy"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_stairs_c_l3" old_prefab_name="">
+				<transform position="38.863, -12.203, 0.043" rotation_euler="0.000, 0.000, 0.445" scale="1.030, 0.730, 0.730"/>
+				<physics shape="bo_european_castle_stairs_c_l3">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="european_castle_stairs_c_l3"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_stairs_c_l3" old_prefab_name="">
+				<transform position="36.799, -13.187, 0.043" rotation_euler="0.000, 0.000, 0.445" scale="1.030, 0.730, 0.730"/>
+				<physics shape="bo_european_castle_stairs_c_l3">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="european_castle_stairs_c_l3"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable_bumpy" old_prefab_name="">
+				<transform position="34.804, -15.433, -0.070" rotation_euler="0.000, 0.000, -2.766" scale="0.730, 0.730, 0.730"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable_bumpy"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable_bumpy"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable_bumpy" old_prefab_name="">
+				<transform position="36.952, -20.874, -0.070" rotation_euler="0.000, 0.000, -2.766" scale="0.730, 0.730, 0.730"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable_bumpy"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable_bumpy"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable_bumpy" old_prefab_name="">
+				<transform position="31.638, -22.972, -0.070" rotation_euler="0.000, 0.000, -2.766" scale="0.730, 0.730, 0.730"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable_bumpy"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable_bumpy"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable_bumpy" old_prefab_name="">
+				<transform position="29.482, -17.513, -0.070" rotation_euler="0.000, 0.000, -2.766" scale="0.730, 0.730, 0.730"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable_bumpy"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable_bumpy"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable_bumpy" old_prefab_name="">
+				<transform position="27.346, -12.105, -0.070" rotation_euler="0.000, 0.000, -2.766" scale="0.730, 0.730, 0.730"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable_bumpy"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable_bumpy"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

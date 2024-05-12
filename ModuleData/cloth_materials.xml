@@ -1,0 +1,14 @@
+<base>
+	<materials>
+		<material name="cts_celtic_hawk">
+			<simulation stretching_stiffness="1.000" anchor_stiffness="1.000" bending_stiffness="1.000" shearing_stiffness_="0.870" damping="0.200" gravity="-0.500" linear_inertia="0.100" max_linear_velocity="1.000" linear_velocity_multiplier="1.000" wind="0.000" air_drag_multiplier="1.000"/>
+		</material>
+		<material name="cts_feather">
+			<simulation stretching_stiffness="0.900" anchor_stiffness="1.000" bending_stiffness="0.970" shearing_stiffness_="1.000" damping="0.900" gravity="0.010" linear_inertia="0.150" max_linear_velocity="0.450" linear_velocity_multiplier="1.000" wind="0.100" air_drag_multiplier="0.100"/>
+		</material>
+		<material name="cts_heavy_leather">
+			<simulation stretching_stiffness="0.800" anchor_stiffness="0.500" bending_stiffness="0.870" shearing_stiffness_="0.700" damping="0.820" gravity="15.710" linear_inertia="0.100" max_linear_velocity="-1.000" linear_velocity_multiplier="1.000" wind="0.200" air_drag_multiplier="0.050"/>
+		</material>
+	</materials>
+</base>
+

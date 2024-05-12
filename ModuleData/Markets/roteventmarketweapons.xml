@@ -1,0 +1,12 @@
+<Market>
+    <Tier1Items>
+    stark_sword*1*2|PE_sturgia_sword_3_t3*1*2|PE_large_franziskaa_axe_t3*1*2|PE_imperial_axe_t3*1*2|PE_battania_noble_sword_2_t5*1*2|stark_dagger*1*2|PE_simple_sparth_axe_t2*1*2|PE_battania_2hsword_1_t2*1*2|PE_bearded_axe_t3*1*2|PE_battania_2hsword_4_t4*1*2|PE_highland_spear_3_t3*1*2|PE_crossbow_f*1*2|PE_crossbow_c*1*2|PE_bolt_b*1*2|PE_bodkin_arrows_a*1*2|PE_noble_bow*1*2|spiked_shield*1*2|PE_noble_long_bow*1*2
+    </Tier1Items>
+    <Tier2Items>
+    </Tier2Items>
+    <Tier3Items></Tier3Items>
+    <Tier4Items></Tier4Items>
+    <CraftingBoxes>
+        pe_weapon_crate_t1*1*1
+    </CraftingBoxes>
+</Market>

@@ -1,0 +1,11 @@
+
+<Recipies>
+    <Tier1Craftings>
+2*PE_battania_civil_hood*1=pe_linen*3|2*PE_leather_cap*1=pe_linen*3|2*PE_pilgrim_hood*1=pe_linen*3|2*PE_aserai_civil_f_cape*1=pe_linen*3|2*bandit_cap*1=pe_linen*3|2*PE_thinhide_coif*1=pe_linen*3|2*ranger_hood*1=pe_linen*3|2*PE_female_hood*1=pe_linen*4|2*PE_battania_cloak*1=pe_linen*4|2*PE_wrapped_scarf*1=pe_linen*4|2*PE_battania_woodland_cloak*1=pe_linen*4|2*PE_layered_leather_tunic*1=pe_linen*5|2*PE_nordic_sloven_leather*1=pe_linen*5|2*PE_nordic_padded_cloth*1=pe_linen*5|2*ygritte_armor*1=pe_linen*5|2*dothraki_armor*1=pe_linen*5|2*wildling_light_armor*1=pe_linen*5|2*PE_ragged_boots*1=pe_linen*3|2*PE_steppe_leather_boots*1=pe_linen*3|2*PE_turndown_leather_boots*1=pe_linen*3|2*PE_leather_cavalier_boots*1=pe_linen*3|2*PE_empire_horseman_boots*1=pe_linen*3|2*dothraki_boots*1=pe_linen*3|2*PE_battania_woodland_boots*1=pe_linen*3|2*PE_sturgia_boots_d*1=pe_linen*3|2*PE_highland_gloves*1=pe_linen*2|2*PE_armwraps*1=pe_linen*2|2*PE_buttoned_leather_bracers*1=pe_linen*2|2*PE_padded_mitten*1=pe_linen*2|2*PE_padded_vambrace*1=pe_linen*2|2*dothraki_bracers*1=pe_linen*2
+    </Tier1Craftings>
+    <Tier2Craftings>
+2*thenn_helm2*1=pe_cloth*1,pe_iron_ingot*3|2*crude_helmet*1=pe_cloth*1,pe_iron_ingot*3|2*common_kettle*1=pe_cloth*1,pe_iron_ingot*3|2*arryn_archer_helmet*1=pe_cloth*1,pe_iron_ingot*3|2*thenn_helm3*1=pe_cloth*1,pe_iron_ingot*3|2*PE_wolf_shoulder*1=pe_cloth*1,pe_iron_ingot*4|2*dothraki_shoulders*1=pe_cloth*1,pe_iron_ingot*4|2*thenn_pauldrons*1=pe_cloth*1,pe_iron_ingot*4|2*PE_rough_fur_armor*1=pe_cloth*4,pe_iron_ingot*5|2*PE_patched_gambeson*1=pe_cloth*4,pe_iron_ingot*5|2*bandit_garb*1=pe_cloth*4,pe_iron_ingot*5|2*PE_buckled_wildsman_armor*1=pe_cloth*4,pe_iron_ingot*5|2*PE_banded_leather_over_mail*1=pe_cloth*4,pe_iron_ingot*5|2*wildling_medium_armor*1=pe_cloth*4,pe_iron_ingot*5|2*bone_tunic*1=pe_cloth*4,pe_iron_ingot*5|2*thenn_plate*1=pe_cloth*4,pe_iron_ingot*5|2*PE_northern_brass_bracers*1=pe_cloth*1,pe_iron_ingot*2
+    </Tier2Craftings>
+    <Tier3Craftings>
+    </Tier3Craftings>
+</Recipies>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<action_types>
+  <!-- Persistent Empires Actions -->
+  <action name="act_pe_villager_fishing" />
+  <action name="act_pe_farmer_bush_cutting" />
+  <action name="act_pe_farmer_bush_cutting_while_stand" />
+  <action name="act_pe_horse_grooming" />
+  <action name="act_pe_villager_leather_cleaning" />
+  <action name="act_pe_eating" />
+  <action name="act_pe_drinking" />
+  <action name="act_pe_use_smithing_machine_loop" />
+  <action name="act_pe_npc_villager_working_while_stand" />
+  <action name="act_pe_play_cornu_stand" />
+  <action name="act_pe_play_celtic_harp_stand" />
+  <action name="act_pe_play_vielle_stand" />
+  <action name="act_pe_dungeon_prisoner_sleep_cycle" />
+  <action name="act_pe_bandage" />
+  <action name="act_pe1_dungeon_prisoner_sleep_cycle" />
+</action_types>

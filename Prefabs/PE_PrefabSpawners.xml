@@ -1,0 +1,75 @@
+<prefabs>
+	<game_entity name="pe_cart_Spawner" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+		<components>
+			<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+		</components>
+		<scripts>
+			<script name="PE_PrefabSpawner">
+				<variables>
+					<variable name="SpawnPointTag" value="spawn_point"/>
+					<variable name="SpawningPrefabsXml" value="carts"/>
+					<variable name="SpawnOffset" value="0.000, 0.000, 0.000, 0.000"/>
+					<variable name="PrefabSpawnerName" value="Cart Spawner"/>
+					<variable name="SpawnerCategoryName" value="Carts"/>
+					<variable name="DespawnArea" value="5.000"/>
+					<variable name="MaxSpawnAmount" value="30"/>
+					<variable name="Distance" value="3.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="arrow_new_icon" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="spawn_point"/>
+				</tags>
+				<transform position="-3.990, -0.311, -0.146" rotation_euler="0.053, 0.012, 0.000"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_Siege_Spawner" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+		<components>
+			<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+		</components>
+		<scripts>
+			<script name="PE_PrefabSpawner">
+				<variables>
+					<variable name="SpawnPointTag" value="spawn_point"/>
+					<variable name="SpawningPrefabsXml" value="SiegeUnits"/>
+					<variable name="SpawnOffset" value="0.000, 0.000, 0.000, 0.000"/>
+					<variable name="PrefabSpawnerName" value="Siege Unit Deployer"/>
+					<variable name="SpawnerCategoryName" value="Siege Units"/>
+					<variable name="DespawnArea" value="5.000"/>
+					<variable name="MaxSpawnAmount" value="30"/>
+					<variable name="Distance" value="3.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="arrow_new_icon" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="spawn_point"/>
+				</tags>
+				<transform position="-5.250, -0.130, 0.000"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

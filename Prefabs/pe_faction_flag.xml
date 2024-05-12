@@ -1,0 +1,38 @@
+<prefabs>
+	<game_entity name="pe_faction_banner" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_banner_pole"/>
+		<components>
+			<cloth_simulator>
+				<meta_mesh_component name="empire_tier_3_banner"/>
+			</cloth_simulator>
+		</components>
+		<scripts>
+			<script name="PEFactionBanner">
+				<variables>
+					<variable name="FactionIndex" value="2"/>
+					<variable name="FactionName" value="Proud Merchants"/>
+					<variable name="BannerKey" value="3.153.116.1836.1836.783.789.1.0.-30.316.33.116.584.584.764.764.1.0.0"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="PE_ChangeClass">
+				<variables>
+					<variable name="ChangingDurationAsSeconds" value="10"/>
+					<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+					<variable name="ClassId" value="pe_mercenary"/>
+					<variable name="CastleId" value="-1"/>
+					<variable name="DinarCost" value="2000"/>
+					<variable name="JoinCastleFaction" value="false"/>
+					<variable name="FactionId" value="2"/>
+					<variable name="Mercenary" value="true"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+</prefabs>
+

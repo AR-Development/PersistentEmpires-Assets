@@ -1,0 +1,139 @@
+<prefabs>
+	<game_entity name="frnk scarecrow 1" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="-0.158, 0.128, 0.185" rotation_euler="0.000, 0.000, 0.000" scale="0.369, 0.186, 0.517"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="-0.158, -0.035, 1.339" rotation_euler="-1.568, 3.141, 3.141" scale="0.275, 0.267, 0.285"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_e" old_prefab_name="">
+				<transform position="-0.245, 0.110, 0.403" rotation_euler="-0.009, 0.000, -0.003" scale="0.546, 0.395, 0.415"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="foods_pumpkin_a" old_prefab_name="">
+				<transform position="-0.125, 0.130, 1.419"/>
+				<physics shape="bo_foods_pumpkin_a"/>
+				<components>
+					<meta_mesh_component name="foods_pumpkin_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="_decal_straw_ground" old_prefab_name="">
+				<transform position="-0.055, 0.130, 0.000"/>
+				<components>
+					<decal_component material="decal_straw_ground" argument="1.000, 1.000, 0.000, 0.000"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_straw_a" old_prefab_name="">
+				<transform position="-0.150, 0.097, -0.005" rotation_euler="0.000, 0.000, 0.000" scale="0.144, 0.159, 0.147"/>
+				<physics shape="bo_bd_straw_a" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_straw_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_5m" old_prefab_name="">
+				<transform position="-0.181, -0.587, 1.294" rotation_euler="0.106, 0.491, -1.805" scale="-0.038, 0.418, 0.473"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_5m"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_5m" old_prefab_name="">
+				<transform position="-0.100, -0.574, 1.331" rotation_euler="-0.477, -0.160, 2.374" scale="-0.018, 0.418, 0.473"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_5m"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_5m" old_prefab_name="">
+				<transform position="-0.155, -0.601, 1.323" rotation_euler="0.106, 0.222, -1.805" scale="-0.038, 0.418, 0.473"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_5m"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_5m" old_prefab_name="">
+				<transform position="-0.184, 0.884, 1.323" rotation_euler="0.106, 0.222, 1.774" scale="-0.038, 0.418, 0.473"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_5m"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_5m" old_prefab_name="">
+				<transform position="-0.223, 0.837, 1.331" rotation_euler="-0.477, -0.160, -0.330" scale="-0.018, 0.418, 0.473"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_5m"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_5m" old_prefab_name="">
+				<transform position="-0.154, 0.883, 1.294" rotation_euler="0.106, 0.491, 1.774" scale="-0.038, 0.418, 0.473"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_5m"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_e" old_prefab_name="">
+				<transform position="-0.245, 0.110, 0.403" rotation_euler="-0.009, 0.000, -0.003" scale="0.546, 0.395, 0.415"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="crow" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-0.133, 0.741, 1.359" rotation_euler="0.000, 0.000, 1.622"/>
+				<physics override_material="default"/>
+				<skeleton skeleton_model="bird_skeleton">
+					<components>
+						<meta_mesh_component name="crow_mesh"/>
+					</components>
+					<bones>
+						<bone frame="0.352564, -0.882533, 0.311182, 0.000000, -0.100147, 0.295041, 0.950222, 0.000000, -0.930414, -0.366177, 0.015638, 0.000000, -0.000000, 0.096099, 0.142053, 1.000000"/>
+						<bone frame="-0.258667, -0.059866, 0.964110, 0.000000, 0.678893, 0.698741, 0.225532, 0.000000, -0.687165, 0.712865, -0.140099, 0.000000, -0.000000, 0.018227, 0.038616, 1.000000" _index_="2"/>
+						<bone frame="0.673886, 0.291164, -0.679045, 0.000000, 0.725259, -0.085304, 0.683172, 0.000000, 0.140990, -0.952863, -0.268654, 0.000000, 0.048111, 0.000000, 0.000000, 1.000000" _index_="3"/>
+						<bone frame="-0.260904, -0.947503, -0.184844, 0.000000, -0.935494, 0.295416, -0.193857, 0.000000, 0.238286, 0.122342, -0.963459, 0.000000, -0.048007, 0.015167, 0.034035, 1.000000" _index_="4"/>
+						<bone frame="-0.999698, -0.000381, -0.024584, 0.000000, -0.000372, 1.000000, -0.000381, 0.000000, 0.024584, -0.000372, -0.999698, 0.000000, 0.000000, 0.000000, 0.044112, 1.000000" _index_="5"/>
+						<bone frame="-0.839961, -0.001387, 0.542645, 0.000000, 0.125280, 0.972486, 0.196408, 0.000000, -0.527987, 0.232958, -0.816676, 0.000000, 0.000000, 0.000000, 0.070889, 1.000000" _index_="6"/>
+						<bone frame="0.905903, -0.132325, 0.402280, 0.000000, 0.017888, 0.961038, 0.275838, 0.000000, -0.423107, -0.242687, 0.872974, 0.000000, 0.000000, -0.000000, 0.095645, 1.000000" _index_="7"/>
+						<bone frame="0.468737, 0.239266, 0.850316, 0.000000, -0.277190, 0.953836, -0.115594, 0.000000, -0.838720, -0.181516, 0.513420, 0.000000, 0.001110, 0.000633, 0.039837, 1.000000" _index_="8"/>
+						<bone frame="-0.503252, 0.038928, 0.863262, 0.000000, 0.026921, 0.999206, -0.029364, 0.000000, -0.863720, 0.008463, -0.503901, 0.000000, -0.024104, -0.000158, -0.004355, 1.000000" _index_="9"/>
+						<bone frame="0.028174, 0.366010, 0.930184, 0.000000, -0.695772, 0.675313, -0.244649, 0.000000, -0.717710, -0.640303, 0.273686, 0.000000, -0.019745, -0.000370, 0.044614, 1.000000" _index_="10"/>
+						<bone frame="-0.485901, 0.022751, -0.873718, 0.000000, 0.005900, 0.999724, 0.022751, 0.000000, 0.873994, 0.005900, -0.485901, 0.000000, -0.021754, -0.001190, -0.020680, 1.000000" _index_="11"/>
+						<bone frame="-0.145304, 0.002950, -0.989383, 0.000000, 0.000215, 0.999996, 0.002950, 0.000000, 0.989387, 0.000215, -0.145304, 0.000000, -0.025211, -0.000840, 0.024614, 1.000000" _index_="12"/>
+						<bone frame="-0.246221, 0.949593, 0.194030, 0.000000, -0.935754, -0.285056, 0.207623, 0.000000, 0.252467, -0.130443, 0.958773, 0.000000, 0.048007, 0.015167, 0.034035, 1.000000" _index_="13"/>
+						<bone frame="-0.999688, 0.000182, -0.024978, 0.000000, 0.000177, 1.000000, 0.000182, 0.000000, 0.024978, 0.000177, -0.999688, 0.000000, -0.000000, 0.000000, -0.044112, 1.000000" _index_="14"/>
+						<bone frame="-0.840188, -0.002200, 0.542291, 0.000000, 0.124864, 0.972338, 0.197400, 0.000000, -0.527725, 0.233566, -0.816673, 0.000000, -0.000000, 0.000000, -0.070889, 1.000000" _index_="15"/>
+						<bone frame="0.905506, -0.131207, 0.403539, 0.000000, 0.016335, 0.961068, 0.275827, 0.000000, -0.424019, -0.243171, 0.872396, 0.000000, 0.000000, 0.000000, -0.095644, 1.000000" _index_="16"/>
+						<bone frame="0.452409, 0.237950, 0.859480, 0.000000, -0.273626, 0.954300, -0.120171, 0.000000, -0.848796, -0.180810, 0.496843, 0.000000, -0.001110, -0.000634, -0.039838, 1.000000" _index_="17"/>
+						<bone frame="-0.770376, 0.001471, 0.637587, 0.000000, 0.003126, 0.999994, 0.001471, 0.000000, -0.637581, 0.003126, -0.770376, 0.000000, 0.024104, 0.000157, 0.004355, 1.000000" _index_="18"/>
+						<bone frame="-0.485902, 0.022751, -0.873717, 0.000000, 0.005900, 0.999724, 0.022751, 0.000000, 0.873994, 0.005900, -0.485902, 0.000000, 0.021754, 0.001190, 0.020680, 1.000000" _index_="20"/>
+						<bone frame="-0.145101, -0.000570, -0.989417, 0.000000, -0.000042, 1.000000, -0.000570, 0.000000, 0.989417, -0.000042, -0.145101, 0.000000, 0.025211, 0.000840, -0.024614, 1.000000" _index_="21"/>
+						<bone frame="0.451054, -0.278873, -0.847809, 0.000000, -0.776837, -0.590353, -0.219109, 0.000000, -0.439403, 0.757439, -0.482920, 0.000000, 0.053806, -0.034031, 0.026306, 1.000000" _index_="23"/>
+						<bone frame="0.974089, -0.014979, -0.225669, 0.000000, -0.044977, 0.965045, -0.258197, 0.000000, 0.221649, 0.261657, 0.939366, 0.000000, -0.002737, 0.079557, 0.005605, 1.000000" _index_="24"/>
+						<bone frame="0.951019, -0.156828, 0.266399, 0.000000, 0.237428, 0.922424, -0.304569, 0.000000, -0.197968, 0.352902, 0.914477, 0.000000, 0.005736, 0.008046, -0.045848, 1.000000" _index_="25"/>
+						<bone frame="0.170708, -0.057468, -0.983644, 0.000000, -0.683536, -0.725927, -0.076214, 0.000000, -0.709674, 0.685367, -0.163203, 0.000000, 0.053806, -0.034031, -0.026306, 1.000000" _index_="27"/>
+						<bone frame="0.973935, 0.041753, 0.222950, 0.000000, 0.045144, 0.927568, -0.370917, 0.000000, -0.222288, 0.371314, 0.901506, 0.000000, 0.002686, 0.079623, 0.004517, 1.000000" _index_="28"/>
+						<bone frame="0.963832, 0.016399, -0.266006, 0.000000, -0.029908, 0.998456, -0.046811, 0.000000, 0.264828, 0.053074, 0.962834, 0.000000, -0.005688, 0.009767, -0.045521, 1.000000" _index_="29"/>
+						<bone frame="0.989357, -0.002247, -0.145492, 0.000000, -0.002602, -0.999994, -0.002247, 0.000000, -0.145486, 0.002602, -0.989357, 0.000000, 0.000420, 0.006840, -0.024160, 1.000000" _index_="30"/>
+					</bones>
+				</skeleton>
+				<scripts>
+					<script name="Bird">
+						<variables>
+							<variable name="CanFly" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

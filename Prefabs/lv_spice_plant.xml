@@ -1,0 +1,34 @@
+<prefabs>
+	<game_entity name="lv_spice_plant" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_arabian_stone_b"/>
+		<components>
+			<meta_mesh_component name="mi_spice_a"/>
+		</components>
+		<scripts>
+			<script name="PE_ItemGathering">
+				<variables>
+					<variable name="Name" value="Spice Plant"/>
+					<variable name="RespawnTime" value="1200"/>
+					<variable name="ItemCount" value="1"/>
+					<variable name="AnimationDurationInSeconds" value="6"/>
+					<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+					<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+					<variable name="RequiredSkillId" value="Gathering"/>
+					<variable name="RequiredSkill" value="15"/>
+					<variable name="DropsItem" value="pe_mi_spice_b"/>
+					<variable name="DropCount" value="1"/>
+					<variable name="RotateWhenUsage" value="false"/>
+					<variable name="LookPointTag" value="lookpoint"/>
+					<variable name="IsDestroyed" value="false"/>
+					<variable name="Distance" value="3.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+</prefabs>
+

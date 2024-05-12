@@ -1,0 +1,2400 @@
+<prefabs>
+	<game_entity name="poncho_aseraihome_destroyed" old_prefab_name="">
+		<transform position="68.354, 20.697, 1.511" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<particle_system_instanced_component>
+				<effect base_effect="{39CDECB3-046B-4A8B-8E71-533BB7F6C882}">
+					<emitter_overrides>
+						<emitter guid="{91DE7F64-8F4D-4105-A197-22047F264CE8}">
+							<flags>
+								<flag name="spherical_normals" value="true"/>
+								<flag name="select_random_sprite" value="true"/>
+							</flags>
+							<parameters>
+								<parameter name="skew_with_particle_velocity_coef" value="0.000"/>
+								<parameter name="emit_box_size" value="0.000, 0.000, 0.000"/>
+								<parameter name="gravity" value="0.000, -16.000, 16.000"/>
+								<parameter name="quad_scale" value="0.500, 0.500"/>
+								<parameter name="texture_sprite_count" value="2, 2"/>
+								<parameter name="texture_sprite_frame_count" value="1"/>
+								<parameter name="texture_sprite_frame_rate" value="1.000"/>
+								<parameter name="diffuse_multiplier" value="1.000"/>
+								<parameter name="particle_size_curve_op" value="add"/>
+								<parameter name="damping" base="0.654" bias="0.000"/>
+								<parameter name="angular_damping" base="0.450" bias="0.000"/>
+								<parameter name="particle_life" base="5.000" bias="2.000"/>
+								<parameter name="emission_rate" base="1.000" bias="0.000"/>
+								<parameter name="cone_emit_velocity" base="1.000" bias="0.000">
+									<curve name="emitter_life" version="1" default="1.000" curve_multiplier="1.000">
+										<keys>
+											<key time="0.000" value="1.000" tangent="0.007, 0.000"/>
+											<key time="0.034" value="1.000" tangent="-0.007, 0.000"/>
+										</keys>
+									</curve>
+								</parameter>
+								<parameter name="emit_velocity_x" base="0.000" bias="1.000"/>
+								<parameter name="emit_velocity_y" base="0.000" bias="2.000"/>
+								<parameter name="emit_velocity_z" base="5.000" bias="1.000"/>
+								<parameter name="emit_rotation_speed" base="0.000" bias="28.648"/>
+								<parameter name="wind_effect" base="1.000" bias="0.000">
+									<curve name="particle_life" version="1" default="1.000" curve_multiplier="1.000">
+										<keys>
+											<key time="0.000" value="1.000" tangent="0.007, 0.000"/>
+											<key time="0.034" value="1.000" tangent="-0.007, 0.000"/>
+										</keys>
+									</curve>
+								</parameter>
+								<parameter name="particle_size" base="0.500" bias="0.500">
+									<curve name="particle_life" version="1" default="1.000" curve_multiplier="50.000">
+										<keys>
+											<key time="0.000" value="1.000" tangent="0.000, 0.000"/>
+											<key time="0.034" value="1.000" tangent="-0.007, 0.000"/>
+										</keys>
+									</curve>
+								</parameter>
+								<parameter name="material_guid" value="{489D29D2-AD3E-4070-A274-7DEE7235EC77}"/>
+								<parameter name="particle_color">
+									<color>
+										<keys>
+											<key time="0.100" value="0.320, 0.320, 0.320"/>
+											<key time="0.900" value="0.030, 0.030, 0.030"/>
+										</keys>
+									</color>
+									<alpha>
+										<keys>
+											<key time="0.000" value="0.000"/>
+											<key time="0.100" value="0.392"/>
+											<key time="0.700" value="0.078"/>
+											<key time="1.000" value="0.000"/>
+										</keys>
+									</alpha>
+								</parameter>
+							</parameters>
+						</emitter>
+					</emitter_overrides>
+				</effect>
+			</particle_system_instanced_component>
+		</components>
+		<children>
+			<game_entity name="module_wall_plank_a" old_prefab_name="">
+				<transform position="3.430, 0.802, -1.058" rotation_euler="-0.522, 0.126, 1.202"/>
+				<physics shape="bo_module_wall_plank_a"/>
+				<components>
+					<meta_mesh_component name="module_wall_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wall_adobe_stone_detail_a" old_prefab_name="">
+				<transform position="-7.595, -1.384, -1.450" rotation_euler="1.529, 3.141, -2.307"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="wall_adobe_stone_detail_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="-0.002, -7.037, 3.716" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.400, 0.150"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall"/>
+				</components>
+			</game_entity>
+			<game_entity name="wall_adobe_stone_detail_a" old_prefab_name="">
+				<transform position="-7.347, -2.792, -1.450" rotation_euler="1.529, 3.141, -1.496"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="wall_adobe_stone_detail_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wall_adobe_stone_detail_b" old_prefab_name="">
+				<transform position="-6.909, 5.938, -1.511" rotation_euler="1.495, 0.000, -1.934"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="wall_adobe_stone_detail_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_plank_a" old_prefab_name="">
+				<transform position="-3.612, 0.623, -1.058" rotation_euler="0.000, 0.160, -1.571"/>
+				<physics shape="bo_module_wall_plank_a"/>
+				<components>
+					<meta_mesh_component name="module_wall_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wall_adobe_stone_detail_b" old_prefab_name="">
+				<transform position="-7.060, -0.043, -1.511" rotation_euler="1.495, 0.000, 1.266"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="wall_adobe_stone_detail_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="wall_adobe_stone_detail_a" old_prefab_name="">
+				<transform position="-7.347, -2.792, -1.450" rotation_euler="1.529, 3.141, -1.496"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="wall_adobe_stone_detail_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="cave_desert_rock_small_b" old_prefab_name="">
+				<transform position="-1.989, -4.137, 0.107" rotation_euler="0.000, 0.000, -0.914"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_small_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_plank_a" old_prefab_name="">
+				<transform position="-3.438, 3.817, -1.058" rotation_euler="0.000, 0.000, -1.571"/>
+				<physics shape="bo_module_wall_plank_a"/>
+				<components>
+					<meta_mesh_component name="module_wall_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="arena_arabian_window_a" old_prefab_name="">
+				<transform position="-6.383, 2.848, 2.115" rotation_euler="0.000, -3.139, 1.585"/>
+				<physics shape="bo_arena_arabian_window_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="arena_arabian_window_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_plank_a" old_prefab_name="">
+				<transform position="-3.612, -2.514, -1.058" rotation_euler="0.000, 0.000, -1.571"/>
+				<physics shape="bo_module_wall_plank_a"/>
+				<components>
+					<meta_mesh_component name="module_wall_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="arena_arabian_window_a" old_prefab_name="">
+				<transform position="-4.110, 6.853, 2.817" rotation_euler="0.000, -3.139, 0.034"/>
+				<physics shape="bo_arena_arabian_window_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="arena_arabian_window_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wall_adobe_stone_detail_b" old_prefab_name="">
+				<transform position="-6.909, 5.938, -1.511" rotation_euler="1.495, 0.000, -1.934"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="wall_adobe_stone_detail_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="arena_arabian_wall_a" old_prefab_name="" occlusion_body_name="bo_occ_arena_arabian_wall_a">
+				<transform position="-5.840, 0.426, -0.915" rotation_euler="0.000, 0.000, -1.571"/>
+				<physics shape="bo_arena_arabian_wall_a"/>
+				<components>
+					<meta_mesh_component name="arena_arabian_wall_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_plank_a" old_prefab_name="">
+				<transform position="3.439, -1.924, -1.058" rotation_euler="-0.690, 0.000, 1.415"/>
+				<physics shape="bo_module_wall_plank_a"/>
+				<components>
+					<meta_mesh_component name="module_wall_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="cave_desert_rock_small_b" old_prefab_name="">
+				<transform position="-0.869, -2.865, 0.009" rotation_euler="0.000, 0.000, 0.200"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_small_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_wall_plank_a" old_prefab_name="">
+				<transform position="3.430, 3.817, -1.058" rotation_euler="-0.035, 0.078, 1.144"/>
+				<physics shape="bo_module_wall_plank_a"/>
+				<components>
+					<meta_mesh_component name="module_wall_plank_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="cave_desert_rock_small_b" old_prefab_name="">
+				<transform position="-2.788, -3.102, 0.029" rotation_euler="0.000, 0.000, -0.914"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_small_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="wall_adobe_stone_detail_a" old_prefab_name="">
+				<transform position="-7.595, -1.384, -1.450" rotation_euler="1.529, 3.141, -2.307"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="wall_adobe_stone_detail_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_dungeon_door_a_empty" old_prefab_name="">
+				<transform position="0.070, -6.837, 0.163" rotation_euler="0.000, 0.000, 1.573"/>
+				<physics shape="bo_aserai_dungeon_door_a_empty"/>
+				<components>
+					<meta_mesh_component name="aserai_dungeon_door_a_empty"/>
+				</components>
+			</game_entity>
+			<game_entity name="wall_adobe_stone_detail_b" old_prefab_name="">
+				<transform position="-7.060, -0.043, -1.511" rotation_euler="1.495, 0.000, 1.266"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="wall_adobe_stone_detail_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="arena_arabian_window_a" old_prefab_name="">
+				<transform position="-6.383, -1.433, 1.996" rotation_euler="0.000, 0.000, 1.518"/>
+				<physics shape="bo_arena_arabian_window_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="arena_arabian_window_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="arena_arabian_window_a" old_prefab_name="">
+				<transform position="4.450, -9.136, 2.553" rotation_euler="0.000, -3.139, -3.111"/>
+				<physics shape="bo_arena_arabian_window_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="arena_arabian_window_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="arena_arabian_window_a" old_prefab_name="">
+				<transform position="-4.110, 6.853, 2.817" rotation_euler="0.000, -3.139, 0.034"/>
+				<physics shape="bo_arena_arabian_window_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="arena_arabian_window_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_stairs_b_l1" old_prefab_name="">
+				<transform position="-0.213, -5.597, -3.783" rotation_euler="0.000, 0.000, -1.559"/>
+				<physics shape="bo_aserai_castle_stairs_b_l1">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="aserai_castle_stairs_b_l1"/>
+				</components>
+			</game_entity>
+			<game_entity name="cave_desert_rock_small_b" old_prefab_name="">
+				<transform position="-0.651, -3.939, 0.323" rotation_euler="0.000, 0.000, 0.200"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_small_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="2.789, -8.644, -1.361" rotation_euler="0.000, 0.000, -1.571" scale="2.200, 1.000, 1.050"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_stairs_b_l1" old_prefab_name="">
+				<transform position="-0.178, -7.867, -3.783" rotation_euler="0.000, 0.000, -1.559"/>
+				<physics shape="bo_aserai_castle_stairs_b_l1">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="aserai_castle_stairs_b_l1"/>
+				</components>
+			</game_entity>
+			<game_entity name="khuzait_grandbazaar_ground_a" old_prefab_name="" occlusion_body_name="bo_occ_khuzait_grandbazaar_ground_a">
+				<transform position="2.645, -6.732, -5.003" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.550, 1.000"/>
+				<physics shape="bo_khuzait_grandbazaar_ground_a"/>
+				<components>
+					<meta_mesh_component name="khuzait_grandbazaar_ground_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="arena_arabian_wall_a" old_prefab_name="" occlusion_body_name="bo_occ_arena_arabian_wall_a">
+				<transform position="-1.163, 6.012, -0.921" rotation_euler="0.000, 0.000, 0.017"/>
+				<physics shape="bo_arena_arabian_wall_a"/>
+				<components>
+					<meta_mesh_component name="arena_arabian_wall_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_wall_a_l3_broken" old_prefab_name="">
+				<transform position="5.258, -0.153, -1.511" rotation_euler="0.000, 0.000, 1.571" scale="0.730, 0.300, 0.550"/>
+				<physics shape="bo_aserai_castle_wall_a_l3_broken"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_wall_a_l3_broken"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="aserai_castle_wall_a_l3_broken" old_prefab_name="">
+				<transform position="-2.246, -5.236, -1.511" rotation_euler="0.000, 0.000, 0.000" scale="0.250, 0.200, 0.530"/>
+				<physics shape="bo_aserai_castle_wall_a_l3_broken"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_wall_a_l3_broken"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="arena_arabian_wall_a" old_prefab_name="" occlusion_body_name="bo_occ_arena_arabian_wall_a">
+				<transform position="-1.163, 6.012, 6.738" rotation_euler="0.000, 0.000, 0.017" scale="1.000, 1.000, 0.600"/>
+				<physics shape="bo_arena_arabian_wall_a"/>
+				<components>
+					<meta_mesh_component name="arena_arabian_wall_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="arena_arabian_wall_a" old_prefab_name="" occlusion_body_name="bo_occ_arena_arabian_wall_a">
+				<transform position="-5.840, 0.426, 6.648" rotation_euler="0.000, 0.000, -1.571" scale="1.000, 1.000, 0.600"/>
+				<physics shape="bo_arena_arabian_wall_a"/>
+				<components>
+					<meta_mesh_component name="arena_arabian_wall_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="fence_adobe_c" old_prefab_name="">
+				<transform position="5.026, 3.917, 4.804" rotation_euler="0.000, 0.000, 1.571" scale="1.200, 1.300, 1.300"/>
+				<physics shape="bo_fence_adobe_c" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="fence_adobe_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="fence_adobe_c" old_prefab_name="">
+				<transform position="4.972, 4.885, 7.085" rotation_euler="0.000, 0.000, 1.571" scale="0.800, 1.300, 1.100"/>
+				<physics shape="bo_fence_adobe_c" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="fence_adobe_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="fence_adobe_c" old_prefab_name="">
+				<transform position="4.889, 5.641, 8.868" rotation_euler="0.000, 0.000, 1.571" scale="0.500, 1.300, 0.700"/>
+				<physics shape="bo_fence_adobe_c" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="fence_adobe_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="2.780, -8.646, -1.361" rotation_euler="0.000, 0.000, -1.571" scale="2.200, 1.000, 1.050"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall"/>
+				</components>
+			</game_entity>
+			<game_entity name="fence_adobe_c" old_prefab_name="">
+				<transform position="-4.649, -5.195, 4.251" rotation_euler="0.000, 0.000, 3.141" scale="0.500, 0.900, 0.700"/>
+				<physics shape="bo_fence_adobe_c" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="fence_adobe_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="arabian_building_detail_f" old_prefab_name="">
+				<transform position="0.278, -7.107, 2.689" rotation_euler="0.000, 0.000, -1.569"/>
+				<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="arabian_building_detail_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="khuzait_grandbazaar_ground_a" old_prefab_name="" occlusion_body_name="bo_occ_khuzait_grandbazaar_ground_a">
+				<transform position="2.400, -6.750, 4.549" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.550, 0.001"/>
+				<physics shape="bo_khuzait_grandbazaar_ground_a"/>
+				<components>
+					<meta_mesh_component name="khuzait_grandbazaar_ground_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="arabian_building_detail_f" old_prefab_name="">
+				<transform position="5.291, -6.908, 2.689" rotation_euler="0.000, 0.000, -1.569"/>
+				<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="arabian_building_detail_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="arabian_building_detail_f" old_prefab_name="">
+				<transform position="2.713, -8.759, 2.689" rotation_euler="0.000, 0.000, 0.000" scale="1.400, 1.000, 1.000"/>
+				<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="arabian_building_detail_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="0.325, -8.646, 4.475" rotation_euler="0.000, 0.000, -1.571" scale="2.000, 0.150, 0.200"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="5.234, -8.649, 4.475" rotation_euler="0.000, 0.000, -1.571" scale="2.000, 0.150, 0.200"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="5.234, -5.167, 4.475" rotation_euler="0.000, 0.000, -1.571" scale="2.000, 0.150, 0.200"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="0.166, -5.222, 4.742" rotation_euler="0.000, 0.000, -1.571" scale="2.000, 0.150, 0.150"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall"/>
+				</components>
+			</game_entity>
+			<game_entity name="arabian_building_detail_f" old_prefab_name="">
+				<transform position="-5.373, 5.117, 9.017" rotation_euler="0.000, 0.085, -1.569"/>
+				<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="arabian_building_detail_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-3.542, -5.222, 2.064" rotation_euler="0.000, 0.000, -3.128"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="cave_desert_rock_wall_d" old_prefab_name="">
+				<transform position="-4.974, 1.569, 9.084" rotation_euler="-1.485, 1.547, 1.808"/>
+				<physics shape="bo_cave_desert_rock_wall_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_wall_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="arabian_building_detail_f" old_prefab_name="">
+				<transform position="-4.046, 6.584, 9.142" rotation_euler="0.085, 0.000, 0.006"/>
+				<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="arabian_building_detail_f"/>
+				</components>
+			</game_entity>
+			<game_entity name="cave_desert_rock_wall_e" old_prefab_name="">
+				<transform position="-4.773, 4.511, 9.545" rotation_euler="-1.461, -0.050, -0.082"/>
+				<physics shape="bo_cave_desert_rock_wall_e" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_wall_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-3.566, -0.096, 4.168" rotation_euler="0.000, 0.000, 1.565" scale="2.100, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battleground_fire_smoke_vertical_square" old_prefab_name="">
+				<transform position="-3.770, -0.041, 2.571"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{37D939EE-2EF9-43D9-9739-049E9B3F0458}"/>
+					</particle_system_instanced_component>
+				</components>
+				<children>
+					<game_entity name="flame_light" old_prefab_name="">
+						<transform position="0.007, 0.375, 0.755" rotation_euler="-0.241, 0.308, 0.927"/>
+						<components>
+							<light_component color="1.000, 0.408, 0.067" intensity="250.000" radius="15.000" flicker_interval="0.400" flicker_magnitude="1.000" local_frame_rot="15.000000, 0.000000, 0.000000, 0.000000, 15.000000, 0.000000, 0.000000, 0.000000, 15.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow_size_multiplier="1" shadow_radius="12.000"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="_barrier_08x04m" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="2.609, -9.137, 4.506" rotation_euler="0.000, 0.000, 0.000" scale="8.000, 1.000, 4.000"/>
+				<physics shape="bo_barrier">
+					<body_flags>
+						<body_flag name="barrier"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="barrier"/>
+				</components>
+			</game_entity>
+			<game_entity name="battleground_fire_smoke_vertical_square" old_prefab_name="">
+				<transform position="-3.772, -2.405, 4.352"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{37D939EE-2EF9-43D9-9739-049E9B3F0458}"/>
+					</particle_system_instanced_component>
+				</components>
+				<children>
+					<game_entity name="flame_light" old_prefab_name="">
+						<transform position="0.007, 0.375, 0.755" rotation_euler="-0.241, 0.308, 0.927"/>
+						<components>
+							<light_component color="1.000, 0.408, 0.067" intensity="250.000" radius="15.000" flicker_interval="0.400" flicker_magnitude="1.000" local_frame_rot="15.000000, 0.000000, 0.000000, 0.000000, 15.000000, 0.000000, 0.000000, 0.000000, 15.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow_size_multiplier="1" shadow_radius="12.000"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="_barrier_04x04m" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="-0.071, -7.234, 4.562" rotation_euler="0.000, 0.000, -1.613" scale="4.000, 1.000, 4.000"/>
+				<physics shape="bo_barrier">
+					<body_flags>
+						<body_flag name="barrier"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="barrier"/>
+				</components>
+			</game_entity>
+			<game_entity name="battleground_fire_smoke_vertical_square" old_prefab_name="">
+				<transform position="2.944, 1.339, 0.017"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{37D939EE-2EF9-43D9-9739-049E9B3F0458}"/>
+					</particle_system_instanced_component>
+				</components>
+				<children>
+					<game_entity name="flame_light" old_prefab_name="">
+						<transform position="0.007, 0.375, 0.755" rotation_euler="-0.241, 0.308, 0.927"/>
+						<components>
+							<light_component color="1.000, 0.408, 0.067" intensity="250.000" radius="15.000" flicker_interval="0.400" flicker_magnitude="1.000" local_frame_rot="15.000000, 0.000000, 0.000000, 0.000000, 15.000000, 0.000000, 0.000000, 0.000000, 15.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow_size_multiplier="1" shadow_radius="12.000"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="_barrier_12x04m" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="-0.490, -5.613, 4.723" rotation_euler="0.000, 0.000, 0.000" scale="12.000, 1.000, 4.000"/>
+				<physics shape="bo_barrier">
+					<body_flags>
+						<body_flag name="barrier"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="barrier"/>
+				</components>
+			</game_entity>
+			<game_entity name="battleground_fire_smoke_vertical_square" old_prefab_name="">
+				<transform position="1.857, 1.994, 1.903"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{37D939EE-2EF9-43D9-9739-049E9B3F0458}"/>
+					</particle_system_instanced_component>
+				</components>
+				<children>
+					<game_entity name="flame_light" old_prefab_name="">
+						<transform position="0.007, 0.375, 0.755" rotation_euler="-0.241, 0.308, 0.927"/>
+						<components>
+							<light_component color="1.000, 0.408, 0.067" intensity="250.000" radius="15.000" flicker_interval="0.400" flicker_magnitude="1.000" local_frame_rot="15.000000, 0.000000, 0.000000, 0.000000, 15.000000, 0.000000, 0.000000, 0.000000, 15.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow_size_multiplier="1" shadow_radius="12.000"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="_barrier_08x04m" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="5.833, -5.653, 4.557" rotation_euler="0.000, 0.000, 1.548" scale="8.000, 1.000, 4.000"/>
+				<physics shape="bo_barrier">
+					<body_flags>
+						<body_flag name="barrier"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="barrier"/>
+				</components>
+			</game_entity>
+			<game_entity name="battleground_fire_smoke_vertical_square" old_prefab_name="">
+				<transform position="2.531, -2.007, 0.000"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{37D939EE-2EF9-43D9-9739-049E9B3F0458}"/>
+					</particle_system_instanced_component>
+				</components>
+				<children>
+					<game_entity name="flame_light" old_prefab_name="">
+						<transform position="0.007, 0.375, 0.755" rotation_euler="-0.241, 0.308, 0.927"/>
+						<components>
+							<light_component color="1.000, 0.408, 0.067" intensity="250.000" radius="15.000" flicker_interval="0.400" flicker_magnitude="1.000" local_frame_rot="15.000000, 0.000000, 0.000000, 0.000000, 15.000000, 0.000000, 0.000000, 0.000000, 15.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow_size_multiplier="1" shadow_radius="12.000"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="_barrier_08x04m" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="5.839, 2.377, 4.488" rotation_euler="0.000, 0.000, 1.548" scale="8.000, 1.000, 4.000"/>
+				<physics shape="bo_barrier">
+					<body_flags>
+						<body_flag name="barrier"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="barrier"/>
+				</components>
+			</game_entity>
+			<game_entity name="battleground_fire_smoke_vertical" old_prefab_name="">
+				<transform position="-3.528, -2.743, 0.000"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{4107079C-E7CC-41BF-89F4-5FDDA5F7202A}"/>
+					</particle_system_instanced_component>
+				</components>
+				<children>
+					<game_entity name="fire_light" old_prefab_name="">
+						<transform position="-0.057, 0.057, 0.965"/>
+						<components>
+							<light_component color="1.000, 0.431, 0.102" intensity="400.000" radius="20.000" flicker_interval="0.400" flicker_magnitude="1.000" local_frame_rot="20.000000, 0.000000, 0.000000, 0.000000, 20.000000, 0.000000, 0.000000, 0.000000, 20.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow_size_multiplier="1" shadow_radius="0.100"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-0.415, -3.071, 2.722" rotation_euler="0.000, -0.518, -3.141" scale="2.100, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="_barrier_04x04m" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="-2.576, -5.435, 0.583" rotation_euler="0.000, 0.000, 0.000" scale="4.000, 1.000, 4.000"/>
+				<physics shape="bo_barrier">
+					<body_flags>
+						<body_flag name="barrier"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="barrier"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-2.538, -5.296, 0.667" rotation_euler="0.000, 0.000, -3.128"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="5.405, -1.378, 1.795" rotation_euler="0.000, 0.000, 1.565"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="_barrier_08x04m" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="5.704, -1.651, 0.441" rotation_euler="0.000, 0.000, 1.548" scale="8.000, 1.000, 4.000"/>
+				<physics shape="bo_barrier">
+					<body_flags>
+						<body_flag name="barrier"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="barrier"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="5.424, -0.806, 3.885" rotation_euler="0.000, 0.000, 1.565" scale="1.300, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-2.695, -5.288, 3.416" rotation_euler="0.000, 0.000, -3.128"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="5.436, -0.855, 2.807" rotation_euler="0.000, 0.000, 1.565" scale="1.200, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="5.435, -1.329, 0.645" rotation_euler="0.000, 0.000, 1.565"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="khuzait_castle_keep_l3_interior_door_close" old_prefab_name="">
+				<transform position="-0.050, -6.821, 0.160" rotation_euler="0.000, 0.000, 1.571" scale="1.300, 0.200, 1.200"/>
+				<physics shape="bo_khuzait_castle_keep_l3_interior_door_close"/>
+				<components>
+					<meta_mesh_component name="khuzait_castle_keep_l3_interior_door_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="cave_desert_rock_wall_a" old_prefab_name="">
+				<transform position="-2.507, 5.446, 9.218" rotation_euler="-1.477, -1.411, 1.932"/>
+				<physics shape="bo_cave_desert_rock_wall_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="cave_desert_rock_wall_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_aserai_l1" old_prefab_name="">
+				<transform position="-0.622, -4.248, 0.000" rotation_euler="0.000, 0.000, -0.149"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{7E61F02C-F403-4A95-99D6-87B99E5BD161}"/>
+					</particle_system_instanced_component>
+				</components>
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable name="Event Path" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="Play On Startup" value="true"/>
+							<variable name="Is Static" value="false"/>
+							<variable name="Override Sound" value="false"/>
+							<variable name="Overrided Max Distance" value="500.000000"/>
+							<variable name="Overrided Min Distance" value="2.000000"/>
+							<variable name="Sound Preset" value="Speakers"/>
+							<variable name="Is Master Sound" value="false"/>
+							<variable name="Is Master Supressor" value="false"/>
+							<variable name="Is Triggered" value="false"/>
+							<variable name="Trigger Shape" value="Sphere"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="aserai_l1_debris_0" old_prefab_name="">
+						<transform position="0.635, 0.019, -0.522" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_0">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_0"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_1" old_prefab_name="">
+						<transform position="-0.342, -0.010, -0.391" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_1">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_2" old_prefab_name="">
+						<transform position="-0.416, -0.012, 0.189" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_2">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_2"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_3" old_prefab_name="">
+						<transform position="0.189, 0.006, 0.280" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_3">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_3"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_4" old_prefab_name="">
+						<transform position="0.684, 0.021, 0.160" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_4">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_5" old_prefab_name="">
+						<transform position="0.000, 0.000, -1.039" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_5">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_5"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_6" old_prefab_name="">
+						<transform position="-0.390, -0.012, 0.721" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_6">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_6"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_7" old_prefab_name="">
+						<transform position="-1.172, -0.035, -0.471" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_7">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_7"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_8" old_prefab_name="">
+						<transform position="1.435, 0.043, -0.333" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_8">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_8"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_9" old_prefab_name="">
+						<transform position="0.400, 0.012, 0.592" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_9">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_9"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-0.680, -0.161, 3.319" rotation_euler="0.000, -0.388, -3.141" scale="2.100, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="-0.403, 3.900, 4.168" rotation_euler="0.000, 0.000, -3.141" scale="2.100, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_e" old_prefab_name="">
+				<transform position="1.671, 1.189, 2.534" rotation_euler="0.233, -0.284, 1.586" scale="2.100, 1.000, 1.000"/>
+				<physics shape="bo_wooden_platform_plank_e"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="debris_aserai_l1" old_prefab_name="">
+				<transform position="3.273, 3.357, 0.000" rotation_euler="0.000, 0.000, -0.324"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{7E61F02C-F403-4A95-99D6-87B99E5BD161}"/>
+					</particle_system_instanced_component>
+				</components>
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable name="Event Path" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="Play On Startup" value="true"/>
+							<variable name="Is Static" value="false"/>
+							<variable name="Override Sound" value="false"/>
+							<variable name="Overrided Max Distance" value="500.000000"/>
+							<variable name="Overrided Min Distance" value="2.000000"/>
+							<variable name="Sound Preset" value="Speakers"/>
+							<variable name="Is Master Sound" value="false"/>
+							<variable name="Is Master Supressor" value="false"/>
+							<variable name="Is Triggered" value="false"/>
+							<variable name="Trigger Shape" value="Sphere"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="aserai_l1_debris_0" old_prefab_name="">
+						<transform position="0.635, 0.019, -0.522" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_0">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_0"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_1" old_prefab_name="">
+						<transform position="-0.342, -0.010, -0.391" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_1">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_2" old_prefab_name="">
+						<transform position="-0.416, -0.012, 0.189" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_2">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_2"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_3" old_prefab_name="">
+						<transform position="0.189, 0.006, 0.280" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_3">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_3"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_4" old_prefab_name="">
+						<transform position="0.684, 0.021, 0.160" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_4">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_5" old_prefab_name="">
+						<transform position="0.000, 0.000, -1.039" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_5">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_5"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_6" old_prefab_name="">
+						<transform position="-0.390, -0.012, 0.721" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_6">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_6"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_7" old_prefab_name="">
+						<transform position="-1.172, -0.035, -0.471" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_7">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_7"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_8" old_prefab_name="">
+						<transform position="1.435, 0.043, -0.333" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_8">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_8"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_9" old_prefab_name="">
+						<transform position="0.400, 0.012, 0.592" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_9">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_9"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="debris_aserai_l1" old_prefab_name="">
+				<transform position="1.237, -5.878, 4.554" rotation_euler="1.477, 0.000, 0.380"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{7E61F02C-F403-4A95-99D6-87B99E5BD161}"/>
+					</particle_system_instanced_component>
+				</components>
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable name="Event Path" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="Play On Startup" value="true"/>
+							<variable name="Is Static" value="false"/>
+							<variable name="Override Sound" value="false"/>
+							<variable name="Overrided Max Distance" value="500.000000"/>
+							<variable name="Overrided Min Distance" value="2.000000"/>
+							<variable name="Sound Preset" value="Speakers"/>
+							<variable name="Is Master Sound" value="false"/>
+							<variable name="Is Master Supressor" value="false"/>
+							<variable name="Is Triggered" value="false"/>
+							<variable name="Trigger Shape" value="Sphere"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="aserai_l1_debris_0" old_prefab_name="">
+						<transform position="0.635, 0.019, -0.522" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_0">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_0"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_1" old_prefab_name="">
+						<transform position="-0.342, -0.010, -0.391" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_1">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_2" old_prefab_name="">
+						<transform position="-0.416, -0.012, 0.189" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_2">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_2"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_3" old_prefab_name="">
+						<transform position="0.189, 0.006, 0.280" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_3">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_3"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_4" old_prefab_name="">
+						<transform position="0.684, 0.021, 0.160" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_4">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_5" old_prefab_name="">
+						<transform position="0.000, 0.000, -1.039" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_5">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_5"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_6" old_prefab_name="">
+						<transform position="-0.390, -0.012, 0.721" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_6">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_6"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_7" old_prefab_name="">
+						<transform position="-1.172, -0.035, -0.471" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_7">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_7"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_8" old_prefab_name="">
+						<transform position="1.435, 0.043, -0.333" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_8">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_8"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l1_debris_9" old_prefab_name="">
+						<transform position="0.400, 0.012, 0.592" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l1_debris_9">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l1_debris_9"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="debris_aserai_l3" old_prefab_name="">
+				<transform position="2.735, 0.948, 0.000" rotation_euler="0.000, 0.000, 0.428"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{30267346-8213-4957-848A-7170222E9FC3}"/>
+					</particle_system_instanced_component>
+				</components>
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable name="Event Path" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="Play On Startup" value="true"/>
+							<variable name="Is Static" value="false"/>
+							<variable name="Override Sound" value="false"/>
+							<variable name="Overrided Max Distance" value="500.000000"/>
+							<variable name="Overrided Min Distance" value="2.000000"/>
+							<variable name="Sound Preset" value="Speakers"/>
+							<variable name="Is Master Sound" value="false"/>
+							<variable name="Is Master Supressor" value="false"/>
+							<variable name="Is Triggered" value="false"/>
+							<variable name="Trigger Shape" value="Sphere"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="aserai_l3_debris_0" old_prefab_name="">
+						<transform position="0.635, 0.019, -0.522" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_0">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_0"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_1" old_prefab_name="">
+						<transform position="-0.342, -0.010, -0.391" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_1">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_2" old_prefab_name="">
+						<transform position="-0.416, -0.012, 0.189" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_2">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_2"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_3" old_prefab_name="">
+						<transform position="0.189, 0.006, 0.280" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_3">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_3"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_4" old_prefab_name="">
+						<transform position="0.684, 0.021, 0.160" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_4">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_5" old_prefab_name="">
+						<transform position="0.000, 0.000, -1.039" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_5">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_5"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_6" old_prefab_name="">
+						<transform position="-0.390, -0.012, 0.721" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_6">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_6"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_7" old_prefab_name="">
+						<transform position="-1.172, -0.035, -0.471" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_7">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_7"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_8" old_prefab_name="">
+						<transform position="1.435, 0.043, -0.333" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_8">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_8"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_9" old_prefab_name="">
+						<transform position="0.400, 0.012, 0.592" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_9">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_9"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="debris_aserai_l3" old_prefab_name="">
+				<transform position="3.248, -5.737, 4.813" rotation_euler="-1.467, 0.000, -3.001"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{30267346-8213-4957-848A-7170222E9FC3}"/>
+					</particle_system_instanced_component>
+				</components>
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable name="Event Path" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="Play On Startup" value="true"/>
+							<variable name="Is Static" value="false"/>
+							<variable name="Override Sound" value="false"/>
+							<variable name="Overrided Max Distance" value="500.000000"/>
+							<variable name="Overrided Min Distance" value="2.000000"/>
+							<variable name="Sound Preset" value="Speakers"/>
+							<variable name="Is Master Sound" value="false"/>
+							<variable name="Is Master Supressor" value="false"/>
+							<variable name="Is Triggered" value="false"/>
+							<variable name="Trigger Shape" value="Sphere"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="aserai_l3_debris_0" old_prefab_name="">
+						<transform position="0.635, 0.019, -0.522" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_0">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_0"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_1" old_prefab_name="">
+						<transform position="-0.342, -0.010, -0.391" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_1">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_2" old_prefab_name="">
+						<transform position="-0.416, -0.012, 0.189" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_2">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_2"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_3" old_prefab_name="">
+						<transform position="0.189, 0.006, 0.280" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_3">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_3"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_4" old_prefab_name="">
+						<transform position="0.684, 0.021, 0.160" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_4">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_5" old_prefab_name="">
+						<transform position="0.000, 0.000, -1.039" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_5">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_5"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_6" old_prefab_name="">
+						<transform position="-0.390, -0.012, 0.721" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_6">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_6"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_7" old_prefab_name="">
+						<transform position="-1.172, -0.035, -0.471" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_7">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_7"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_8" old_prefab_name="">
+						<transform position="1.435, 0.043, -0.333" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_8">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_8"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_9" old_prefab_name="">
+						<transform position="0.400, 0.012, 0.592" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_9">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_9"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="debris_aserai_l3" old_prefab_name="">
+				<transform position="-4.657, 2.063, 0.000" rotation_euler="0.000, 0.000, 1.095"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{30267346-8213-4957-848A-7170222E9FC3}"/>
+					</particle_system_instanced_component>
+				</components>
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable name="Event Path" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="Play On Startup" value="true"/>
+							<variable name="Is Static" value="false"/>
+							<variable name="Override Sound" value="false"/>
+							<variable name="Overrided Max Distance" value="500.000000"/>
+							<variable name="Overrided Min Distance" value="2.000000"/>
+							<variable name="Sound Preset" value="Speakers"/>
+							<variable name="Is Master Sound" value="false"/>
+							<variable name="Is Master Supressor" value="false"/>
+							<variable name="Is Triggered" value="false"/>
+							<variable name="Trigger Shape" value="Sphere"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="aserai_l3_debris_0" old_prefab_name="">
+						<transform position="0.635, 0.019, -0.522" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_0">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_0"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_1" old_prefab_name="">
+						<transform position="-0.342, -0.010, -0.391" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_1">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_2" old_prefab_name="">
+						<transform position="-0.416, -0.012, 0.189" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_2">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_2"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_3" old_prefab_name="">
+						<transform position="0.189, 0.006, 0.280" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_3">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_3"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_4" old_prefab_name="">
+						<transform position="0.684, 0.021, 0.160" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_4">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_5" old_prefab_name="">
+						<transform position="0.000, 0.000, -1.039" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_5">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_5"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_6" old_prefab_name="">
+						<transform position="-0.390, -0.012, 0.721" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_6">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_6"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_7" old_prefab_name="">
+						<transform position="-1.172, -0.035, -0.471" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_7">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_7"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_8" old_prefab_name="">
+						<transform position="1.435, 0.043, -0.333" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_8">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_8"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_9" old_prefab_name="">
+						<transform position="0.400, 0.012, 0.592" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_9">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_9"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="debris_aserai_l3" old_prefab_name="">
+				<transform position="4.313, -3.283, 0.000" rotation_euler="0.000, 0.000, -1.622"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{30267346-8213-4957-848A-7170222E9FC3}"/>
+					</particle_system_instanced_component>
+				</components>
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable name="Event Path" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="Play On Startup" value="true"/>
+							<variable name="Is Static" value="false"/>
+							<variable name="Override Sound" value="false"/>
+							<variable name="Overrided Max Distance" value="500.000000"/>
+							<variable name="Overrided Min Distance" value="2.000000"/>
+							<variable name="Sound Preset" value="Speakers"/>
+							<variable name="Is Master Sound" value="false"/>
+							<variable name="Is Master Supressor" value="false"/>
+							<variable name="Is Triggered" value="false"/>
+							<variable name="Trigger Shape" value="Sphere"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="aserai_l3_debris_0" old_prefab_name="">
+						<transform position="0.635, 0.019, -0.522" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_0">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_0"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_1" old_prefab_name="">
+						<transform position="-0.342, -0.010, -0.391" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_1">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_2" old_prefab_name="">
+						<transform position="-0.416, -0.012, 0.189" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_2">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_2"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_3" old_prefab_name="">
+						<transform position="0.189, 0.006, 0.280" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_3">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_3"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_4" old_prefab_name="">
+						<transform position="0.684, 0.021, 0.160" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_4">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_5" old_prefab_name="">
+						<transform position="0.000, 0.000, -1.039" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_5">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_5"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_6" old_prefab_name="">
+						<transform position="-0.390, -0.012, 0.721" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_6">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_6"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_7" old_prefab_name="">
+						<transform position="-1.172, -0.035, -0.471" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_7">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_7"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_8" old_prefab_name="">
+						<transform position="1.435, 0.043, -0.333" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_8">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_8"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_9" old_prefab_name="">
+						<transform position="0.400, 0.012, 0.592" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_9">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_9"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="debris_aserai_l3" old_prefab_name="">
+				<transform position="-3.104, 5.029, 0.000" rotation_euler="0.000, 0.000, 0.223"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{30267346-8213-4957-848A-7170222E9FC3}"/>
+					</particle_system_instanced_component>
+				</components>
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable name="Event Path" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="Play On Startup" value="true"/>
+							<variable name="Is Static" value="false"/>
+							<variable name="Override Sound" value="false"/>
+							<variable name="Overrided Max Distance" value="500.000000"/>
+							<variable name="Overrided Min Distance" value="2.000000"/>
+							<variable name="Sound Preset" value="Speakers"/>
+							<variable name="Is Master Sound" value="false"/>
+							<variable name="Is Master Supressor" value="false"/>
+							<variable name="Is Triggered" value="false"/>
+							<variable name="Trigger Shape" value="Sphere"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="aserai_l3_debris_0" old_prefab_name="">
+						<transform position="0.635, 0.019, -0.522" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_0">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_0"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_1" old_prefab_name="">
+						<transform position="-0.342, -0.010, -0.391" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_1">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_2" old_prefab_name="">
+						<transform position="-0.416, -0.012, 0.189" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_2">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_2"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_3" old_prefab_name="">
+						<transform position="0.189, 0.006, 0.280" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_3">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_3"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_4" old_prefab_name="">
+						<transform position="0.684, 0.021, 0.160" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_4">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_5" old_prefab_name="">
+						<transform position="0.000, 0.000, -1.039" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_5">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_5"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_6" old_prefab_name="">
+						<transform position="-0.390, -0.012, 0.721" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_6">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_6"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_7" old_prefab_name="">
+						<transform position="-1.172, -0.035, -0.471" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_7">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_7"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_8" old_prefab_name="">
+						<transform position="1.435, 0.043, -0.333" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_8">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_8"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_9" old_prefab_name="">
+						<transform position="0.400, 0.012, 0.592" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_9">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_9"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="debris_aserai_l3" old_prefab_name="">
+				<transform position="4.476, -6.667, -0.003" rotation_euler="0.000, 0.000, -1.571"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{30267346-8213-4957-848A-7170222E9FC3}"/>
+					</particle_system_instanced_component>
+				</components>
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable name="Event Path" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="Play On Startup" value="true"/>
+							<variable name="Is Static" value="false"/>
+							<variable name="Override Sound" value="false"/>
+							<variable name="Overrided Max Distance" value="500.000000"/>
+							<variable name="Overrided Min Distance" value="2.000000"/>
+							<variable name="Sound Preset" value="Speakers"/>
+							<variable name="Is Master Sound" value="false"/>
+							<variable name="Is Master Supressor" value="false"/>
+							<variable name="Is Triggered" value="false"/>
+							<variable name="Trigger Shape" value="Sphere"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="aserai_l3_debris_0" old_prefab_name="">
+						<transform position="0.635, 0.019, -0.522" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_0">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_0"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_1" old_prefab_name="">
+						<transform position="-0.342, -0.010, -0.391" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_1">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_2" old_prefab_name="">
+						<transform position="-0.416, -0.012, 0.189" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_2">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_2"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_3" old_prefab_name="">
+						<transform position="0.189, 0.006, 0.280" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_3">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_3"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_4" old_prefab_name="">
+						<transform position="0.684, 0.021, 0.160" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_4">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_5" old_prefab_name="">
+						<transform position="0.000, 0.000, -1.039" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_5">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_5"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_6" old_prefab_name="">
+						<transform position="-0.390, -0.012, 0.721" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_6">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_6"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_7" old_prefab_name="">
+						<transform position="-1.172, -0.035, -0.471" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_7">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_7"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_8" old_prefab_name="">
+						<transform position="1.435, 0.043, -0.333" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_8">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_8"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_9" old_prefab_name="">
+						<transform position="0.400, 0.012, 0.592" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_9">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_9"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="debris_aserai_l3" old_prefab_name="">
+				<transform position="0.554, -5.357, -0.003" rotation_euler="0.000, 0.000, 1.590"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{30267346-8213-4957-848A-7170222E9FC3}"/>
+					</particle_system_instanced_component>
+				</components>
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable name="Event Path" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="Play On Startup" value="true"/>
+							<variable name="Is Static" value="false"/>
+							<variable name="Override Sound" value="false"/>
+							<variable name="Overrided Max Distance" value="500.000000"/>
+							<variable name="Overrided Min Distance" value="2.000000"/>
+							<variable name="Sound Preset" value="Speakers"/>
+							<variable name="Is Master Sound" value="false"/>
+							<variable name="Is Master Supressor" value="false"/>
+							<variable name="Is Triggered" value="false"/>
+							<variable name="Trigger Shape" value="Sphere"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="aserai_l3_debris_0" old_prefab_name="">
+						<transform position="0.635, 0.019, -0.522" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_0">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_0"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_1" old_prefab_name="">
+						<transform position="-0.342, -0.010, -0.391" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_1">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_2" old_prefab_name="">
+						<transform position="-0.416, -0.012, 0.189" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_2">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_2"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_3" old_prefab_name="">
+						<transform position="0.189, 0.006, 0.280" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_3">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_3"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_4" old_prefab_name="">
+						<transform position="0.684, 0.021, 0.160" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_4">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_5" old_prefab_name="">
+						<transform position="0.000, 0.000, -1.039" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_5">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_5"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_6" old_prefab_name="">
+						<transform position="-0.390, -0.012, 0.721" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_6">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_6"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_7" old_prefab_name="">
+						<transform position="-1.172, -0.035, -0.471" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_7">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_7"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_8" old_prefab_name="">
+						<transform position="1.435, 0.043, -0.333" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_8">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_8"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_9" old_prefab_name="">
+						<transform position="0.400, 0.012, 0.592" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_9">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_9"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="debris_aserai_l3" old_prefab_name="">
+				<transform position="3.688, -7.976, -0.003" rotation_euler="0.000, 0.000, 3.021"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{30267346-8213-4957-848A-7170222E9FC3}"/>
+					</particle_system_instanced_component>
+				</components>
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable name="Event Path" value="event:/mission/siege/merlon/stone_destroy"/>
+							<variable name="Play On Startup" value="true"/>
+							<variable name="Is Static" value="false"/>
+							<variable name="Override Sound" value="false"/>
+							<variable name="Overrided Max Distance" value="500.000000"/>
+							<variable name="Overrided Min Distance" value="2.000000"/>
+							<variable name="Sound Preset" value="Speakers"/>
+							<variable name="Is Master Sound" value="false"/>
+							<variable name="Is Master Supressor" value="false"/>
+							<variable name="Is Triggered" value="false"/>
+							<variable name="Trigger Shape" value="Sphere"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="aserai_l3_debris_0" old_prefab_name="">
+						<transform position="0.635, 0.019, -0.522" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_0">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_0"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_1" old_prefab_name="">
+						<transform position="-0.342, -0.010, -0.391" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_1">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_2" old_prefab_name="">
+						<transform position="-0.416, -0.012, 0.189" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_2">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_2"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_3" old_prefab_name="">
+						<transform position="0.189, 0.006, 0.280" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_3">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_3"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_4" old_prefab_name="">
+						<transform position="0.684, 0.021, 0.160" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_4">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_5" old_prefab_name="">
+						<transform position="0.000, 0.000, -1.039" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_5">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_5"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_6" old_prefab_name="">
+						<transform position="-0.390, -0.012, 0.721" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_6">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_6"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_7" old_prefab_name="">
+						<transform position="-1.172, -0.035, -0.471" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_7">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_7"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_8" old_prefab_name="">
+						<transform position="1.435, 0.043, -0.333" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_8">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_8"/>
+						</components>
+					</game_entity>
+					<game_entity name="aserai_l3_debris_9" old_prefab_name="">
+						<transform position="0.400, 0.012, 0.592" rotation_euler="0.000, 0.000, 0.030"/>
+						<physics shape="bo_aserai_l3_debris_9">
+							<body_flags>
+								<body_flag name="dynamic"/>
+								<body_flag name="dynamic_convex_hull"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="aserai_l3_debris_9"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="khuzait_grandbazaar_ground_a" old_prefab_name="" occlusion_body_name="bo_occ_khuzait_grandbazaar_ground_a">
+				<transform position="-0.208, 0.997, -5.000" rotation_euler="0.000, 0.000, 0.000" scale="1.300, 1.400, 1.000"/>
+				<physics shape="bo_khuzait_grandbazaar_ground_a"/>
+				<components>
+					<meta_mesh_component name="khuzait_grandbazaar_ground_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

@@ -1,0 +1,1997 @@
+<prefabs>
+	<game_entity name="B_Keep_Interior" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="bd_cloth_4" old_prefab_name="">
+				<transform position="-29.910, 13.053, 4.985" rotation_euler="0.000, 0.000, 0.000" scale="-1.000, 1.000, 1.000"/>
+				<physics shape="bo_bd_cloth_4"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_4">
+						<mesh name="bd_cloth_4" factor="4280287232"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_2" old_prefab_name="">
+				<transform position="-31.676, 13.118, 4.995"/>
+				<physics shape="bo_bd_cloth_2"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_2">
+						<mesh name="bd_cloth_2" factor="4280287232"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_2" old_prefab_name="">
+				<transform position="-30.290, 13.118, 4.995"/>
+				<physics shape="bo_bd_cloth_2"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_2">
+						<mesh name="bd_cloth_2" factor="4280287232"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="torch_chandelier_fire" old_prefab_name="">
+				<transform position="-32.290, 10.131, 11.856"/>
+				<physics shape="bo_torch_chandelier"/>
+				<components>
+					<meta_mesh_component name="torch_chandelier"/>
+				</components>
+				<children>
+					<game_entity name="torch_candle_b" old_prefab_name="">
+						<transform position="-0.937, -0.006, -1.531"/>
+						<components>
+							<meta_mesh_component name="torch_candle_b"/>
+						</components>
+						<children>
+							<game_entity name="candle_flame" old_prefab_name="">
+								<transform position="-0.004, -0.017, 0.449"/>
+								<components>
+									<light_component color="1.000, 0.683, 0.294" intensity="12.000" radius="4.000" flicker_interval="0.500" flicker_magnitude="0.500" local_frame_rot="4.000000, 0.000000, 0.000000, 0.000000, 4.000000, 0.000000, 0.000000, 0.000000, 4.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="billboard_candle_flame" relative_sprite_position="0.000, 0.000, -0.200" sprite_scale="0.100" shadow_size_multiplier="1" shadow_radius="1.600"/>
+								</components>
+								<scripts>
+									<script name="LightCycle">
+										<variables>
+											<variable name="alwaysBurn" value="false"/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="torch_candle_b" old_prefab_name="">
+						<transform position="0.965, -0.006, -1.531"/>
+						<components>
+							<meta_mesh_component name="torch_candle_b"/>
+						</components>
+						<children>
+							<game_entity name="candle_flame" old_prefab_name="">
+								<transform position="-0.004, -0.017, 0.449"/>
+								<components>
+									<light_component color="1.000, 0.683, 0.294" intensity="12.000" radius="2.000" flicker_interval="0.500" flicker_magnitude="0.500" local_frame_rot="2.000000, 0.000000, 0.000000, 0.000000, 2.000000, 0.000000, 0.000000, 0.000000, 2.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="billboard_candle_flame" relative_sprite_position="0.000, 0.000, -0.200" sprite_scale="0.100" shadow="1" shadow_size_multiplier="1" shadow_radius="2.000"/>
+								</components>
+								<scripts>
+									<script name="LightCycle">
+										<variables>
+											<variable name="alwaysBurn" value="false"/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="torch_candle_a" old_prefab_name="">
+						<transform position="0.012, -0.980, -1.538"/>
+						<components>
+							<meta_mesh_component name="torch_candle_c"/>
+						</components>
+						<children>
+							<game_entity name="candle_flame" old_prefab_name="">
+								<transform position="-0.004, -0.017, 0.356" rotation_euler="0.000, 0.000, -0.158"/>
+								<components>
+									<light_component color="1.000, 0.683, 0.294" intensity="12.000" radius="3.000" flicker_interval="0.500" flicker_magnitude="0.500" local_frame_rot="3.000000, 0.000000, 0.000000, 0.000000, 3.000000, 0.000000, 0.000000, 0.000000, 3.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="billboard_candle_flame" relative_sprite_position="0.000, 0.000, -0.200" sprite_scale="0.100" shadow_size_multiplier="1" shadow_radius="1.600"/>
+								</components>
+								<scripts>
+									<script name="LightCycle">
+										<variables>
+											<variable name="alwaysBurn" value="false"/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="torch_candle_c" old_prefab_name="">
+						<transform position="0.012, 0.927, -1.538"/>
+						<components>
+							<meta_mesh_component name="torch_candle_c"/>
+						</components>
+						<children>
+							<game_entity name="candle_flame" old_prefab_name="">
+								<transform position="-0.004, -0.017, 0.356"/>
+								<components>
+									<light_component color="1.000, 0.683, 0.294" intensity="12.000" radius="4.000" flicker_interval="0.500" flicker_magnitude="0.500" local_frame_rot="4.000000, 0.000000, 0.000000, 0.000000, 4.000000, 0.000000, 0.000000, 0.000000, 4.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="billboard_candle_flame" relative_sprite_position="0.000, 0.000, -0.200" sprite_scale="0.100" shadow_size_multiplier="1" shadow_radius="1.600"/>
+								</components>
+								<scripts>
+									<script name="LightCycle">
+										<variables>
+											<variable name="alwaysBurn" value="false"/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="torch_outdoors_a_burning" old_prefab_name="">
+				<flags>
+					<flag name="not_affected_by_season" value="true"/>
+				</flags>
+				<transform position="-29.871, 5.515, 4.690"/>
+				<physics shape="bo_torch_outdoors_a"/>
+				<components>
+					<meta_mesh_component name="torch_outdoors_a">
+						<mesh name="torch_outdoors_a.lod1" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod1.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod2" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod2.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod3" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod3.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod4" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod4.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod5.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="light" old_prefab_name="">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.000, 0.000, 1.630" rotation_euler="0.000, 0.000, -0.777"/>
+						<components>
+							<light_component color="1.000, 0.596, 0.243" intensity="180.000" radius="9.000" flicker_interval="0.400" flicker_magnitude="2.000" local_frame_rot="9.000000, 0.000000, 0.000000, 0.000000, 9.000000, 0.000000, 0.000000, 0.000000, 9.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow="1" shadow_size_multiplier="1" shadow_radius="5.000"/>
+						</components>
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable name="alwaysBurn" value="false"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torch_aa" old_prefab_name="">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.020, 0.015, 0.363" rotation_euler="0.000, 0.000, 0.646"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{4DF2A56D-207E-4A7D-BE16-C7321F819A38}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="prop_merchantweapons_shield_c" old_prefab_name="">
+				<tags>
+					<tag name="shop_prop"/>
+					<tag name="c"/>
+				</tags>
+				<transform position="-18.669, 7.753, 4.708" rotation_euler="0.000, 0.000, 3.057"/>
+				<physics shape="bo_shop_prop_merchantweapons_melee_c"/>
+				<components>
+					<meta_mesh_component name="shop_prop_merchantweapons_shield_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_carpet_khuzait_c" old_prefab_name="">
+				<transform position="-30.734, -0.342, 8.623" rotation_euler="0.000, 0.000, -1.391"/>
+				<components>
+					<meta_mesh_component name="bd_carpet_khuzait_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="mat_carpet_i" old_prefab_name="">
+				<transform position="-32.209, 8.214, 4.700" rotation_euler="0.000, 0.000, 1.580" scale="1.000, 0.700, 1.000"/>
+				<components>
+					<meta_mesh_component name="mat_carpet_i">
+						<mesh name="mat_carpet_i" factor="4289593344"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_carpet_khuzait_b" old_prefab_name="">
+				<transform position="-33.968, -0.444, 8.525" rotation_euler="0.000, 0.000, -1.520"/>
+				<components>
+					<meta_mesh_component name="bd_carpet_khuzait_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_carpet_khuzait_a" old_prefab_name="">
+				<transform position="-35.655, 9.838, 8.603"/>
+				<components>
+					<meta_mesh_component name="bd_carpet_khuzait_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, 3.469, 8.887" rotation_euler="0.000, 0.000, -1.575" scale="-1.000, 1.000, 1.000"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_d_interior_arch_ceiling" old_prefab_name="">
+				<transform position="-18.319, 1.578, 9.084" rotation_euler="0.000, 0.000, -0.036" scale="1.200, 1.300, 1.000"/>
+				<physics shape="bo_empire_keep_d_interior_arch_ceiling"/>
+				<components>
+					<meta_mesh_component name="empire_keep_d_interior_arch_ceiling">
+						<mesh name="empire_keep_d_interior_arch_ceiling.0" material="wall_castle_a"/>
+						<mesh name="empire_keep_d_interior_arch_ceiling.lod1" material="wall_castle_a"/>
+						<mesh name="empire_keep_d_interior_arch_ceiling.lod2" material="wall_castle_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.189, 2.800, 8.887" rotation_euler="0.000, 0.000, 1.567"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_grandbazaar_big_wall_b" old_prefab_name="">
+				<transform position="-18.147, 4.375, 13.885" rotation_euler="-0.196, -3.141, -3.141" scale="0.800, 1.000, 1.000"/>
+				<physics shape="bo_vlandia_grandbazaar_big_wall_b"/>
+				<components>
+					<meta_mesh_component name="vlandia_grandbazaar_big_wall_b">
+						<mesh name="vlandia_grandbazaar_big_wall_b" material="wall_castle_a"/>
+						<mesh name="vlandia_grandbazaar_big_wall_b.lod05" material="wall_castle_a"/>
+						<mesh name="vlandia_grandbazaar_big_wall_b.lod3" material="wall_castle_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_b_column_top" old_prefab_name="">
+				<transform position="-21.168, 4.795, 8.083"/>
+				<physics shape="bo_empire_keep_b_column_top"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_column_top"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, 4.147, 8.887" rotation_euler="0.000, 0.000, 1.567"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, 4.486, 0.502" rotation_euler="0.000, 0.000, 1.567"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="heater_shield_a" old_prefab_name="">
+				<transform position="-14.654, 2.417, 11.382" rotation_euler="-1.487, 0.000, -1.660"/>
+				<components>
+					<meta_mesh_component name="heater_shield_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="heater_shield_a" old_prefab_name="">
+				<transform position="-14.808, 0.532, 11.362" rotation_euler="-1.487, 0.000, -1.570"/>
+				<components>
+					<meta_mesh_component name="heater_shield_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="sturgia_shield_a" old_prefab_name="">
+				<transform position="-14.951, -0.637, 10.212" rotation_euler="0.000, 1.585, 0.000"/>
+				<components>
+					<meta_mesh_component name="sturgia_shield_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="sturgia_shield_a" old_prefab_name="">
+				<transform position="-14.982, 3.229, 10.297" rotation_euler="0.000, 1.585, 0.000"/>
+				<components>
+					<meta_mesh_component name="sturgia_shield_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="border_soft" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="walk_area_vertex"/>
+				</tags>
+				<transform position="539.856, -318.537, -21.232"/>
+				<components>
+					<meta_mesh_component name="soft_border_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_main_building_lords_platform" old_prefab_name="">
+				<transform position="-32.269, 11.887, 4.826" rotation_euler="0.000, 0.000, 0.009" scale="0.900, 0.900, 1.000"/>
+				<physics shape="bo_vlandia_arena_main_building_lords_platform" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_main_building_lords_platform"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_dungeon_entrance_a" old_prefab_name="">
+				<transform position="-35.614, 2.973, 4.706" rotation_euler="0.000, 0.000, 1.571" scale="1.200, 1.200, 1.200"/>
+				<physics shape="bo_vlandia_dungeon_entrance_a"/>
+				<components>
+					<meta_mesh_component name="vlandia_dungeon_entrance_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, 3.139, 0.502" rotation_euler="0.000, 0.000, 1.567"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, 3.808, 0.502" rotation_euler="0.000, 0.000, -1.575" scale="-1.000, 1.000, 1.000"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_d_interior_arch_a" old_prefab_name="">
+				<transform position="-15.100, 1.429, 8.593" rotation_euler="0.000, 0.000, 1.523" scale="1.200, 0.500, 1.000"/>
+				<physics shape="bo_empire_keep_d_interior_arch_a"/>
+				<components>
+					<meta_mesh_component name="empire_keep_d_interior_arch_a">
+						<mesh name="empire_keep_d_interior_arch_a" material="wall_castle_a"/>
+						<mesh name="empire_keep_d_interior_arch_a.lod1" material="wall_castle_a"/>
+						<mesh name="empire_keep_d_interior_arch_a.lod2" material="wall_castle_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.197, 0.413, 8.918" rotation_euler="0.000, 0.000, 1.567"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_rack_sturgia_a" old_prefab_name="">
+				<transform position="-16.979, 9.480, 4.685" rotation_euler="0.000, 0.000, 1.573"/>
+				<physics shape="bo_weapon_rack_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="weapon_rack_sturgia_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_rack_vlandia_a" old_prefab_name="">
+				<transform position="-19.950, 11.074, 4.697"/>
+				<physics shape="bo_weapon_rack_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="weapon_rack_vlandia_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_emblem_a" old_prefab_name="">
+				<transform position="-14.680, 1.380, 10.769" rotation_euler="0.000, 0.000, 1.560"/>
+				<physics shape="bo_empire_keep_a_emblem_a"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_emblem_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_grandbazaar_big_wall_b" old_prefab_name="">
+				<transform position="-19.382, -0.765, 14.652" rotation_euler="0.209, -3.141, -3.141"/>
+				<physics shape="bo_vlandia_grandbazaar_big_wall_b"/>
+				<components>
+					<meta_mesh_component name="vlandia_grandbazaar_big_wall_b">
+						<mesh name="vlandia_grandbazaar_big_wall_b" material="wall_castle_a"/>
+						<mesh name="vlandia_grandbazaar_big_wall_b.lod05" material="wall_castle_a"/>
+						<mesh name="vlandia_grandbazaar_big_wall_b.lod3" material="wall_castle_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="border_soft" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="walk_area_vertex"/>
+				</tags>
+				<transform position="-296.421, -289.830, 5.342"/>
+				<components>
+					<meta_mesh_component name="soft_border_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, 3.808, 4.718" rotation_euler="0.000, 0.000, -1.575" scale="-1.000, 1.000, 1.000"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, 4.486, 4.718" rotation_euler="0.000, 0.000, 1.567"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, 3.139, 4.718" rotation_euler="0.000, 0.000, 1.567"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, -1.283, 4.718" rotation_euler="0.000, 0.000, 1.567"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, 0.064, 4.718" rotation_euler="0.000, 0.000, 1.567"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, 0.064, 0.502" rotation_euler="0.000, 0.000, 1.567"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, -1.283, 0.502" rotation_euler="0.000, 0.000, 1.567"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, -0.614, 0.502" rotation_euler="0.000, 0.000, -1.575" scale="-1.000, 1.000, 1.000"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, -0.614, 4.718" rotation_euler="0.000, 0.000, -1.575" scale="-1.000, 1.000, 1.000"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_grandbazaar_big_wall_b" old_prefab_name="">
+				<transform position="-15.510, 1.006, 18.657" rotation_euler="0.000, -3.141, -1.571" scale="0.800, 1.000, 1.000"/>
+				<physics shape="bo_vlandia_grandbazaar_big_wall_b"/>
+				<components>
+					<meta_mesh_component name="vlandia_grandbazaar_big_wall_b">
+						<mesh name="vlandia_grandbazaar_big_wall_b" material="wall_castle_a"/>
+						<mesh name="vlandia_grandbazaar_big_wall_b.lod05" material="wall_castle_a"/>
+						<mesh name="vlandia_grandbazaar_big_wall_b.lod3" material="wall_castle_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, -0.614, 8.887" rotation_euler="0.000, 0.000, -1.575" scale="-1.000, 1.000, 1.000"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="torch_chandelier_fire" old_prefab_name="">
+				<transform position="-32.282, 2.918, 11.698"/>
+				<physics shape="bo_torch_chandelier"/>
+				<components>
+					<meta_mesh_component name="torch_chandelier"/>
+				</components>
+				<children>
+					<game_entity name="torch_candle_b" old_prefab_name="">
+						<transform position="-0.937, -0.006, -1.531"/>
+						<components>
+							<meta_mesh_component name="torch_candle_b"/>
+						</components>
+						<children>
+							<game_entity name="candle_flame" old_prefab_name="">
+								<transform position="-0.004, -0.017, 0.449"/>
+								<components>
+									<light_component color="1.000, 0.683, 0.294" intensity="12.000" radius="4.000" flicker_interval="0.500" flicker_magnitude="0.500" local_frame_rot="4.000000, 0.000000, 0.000000, 0.000000, 4.000000, 0.000000, 0.000000, 0.000000, 4.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="billboard_candle_flame" relative_sprite_position="0.000, 0.000, -0.200" sprite_scale="0.100" shadow_size_multiplier="1" shadow_radius="1.600"/>
+								</components>
+								<scripts>
+									<script name="LightCycle">
+										<variables>
+											<variable name="alwaysBurn" value="false"/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="torch_candle_b" old_prefab_name="">
+						<transform position="0.965, -0.006, -1.531"/>
+						<components>
+							<meta_mesh_component name="torch_candle_b"/>
+						</components>
+						<children>
+							<game_entity name="candle_flame" old_prefab_name="">
+								<transform position="-0.004, -0.017, 0.449"/>
+								<components>
+									<light_component color="1.000, 0.683, 0.294" intensity="12.000" radius="2.000" flicker_interval="0.500" flicker_magnitude="0.500" local_frame_rot="2.000000, 0.000000, 0.000000, 0.000000, 2.000000, 0.000000, 0.000000, 0.000000, 2.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="billboard_candle_flame" relative_sprite_position="0.000, 0.000, -0.200" sprite_scale="0.100" shadow="1" shadow_size_multiplier="1" shadow_radius="2.000"/>
+								</components>
+								<scripts>
+									<script name="LightCycle">
+										<variables>
+											<variable name="alwaysBurn" value="false"/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="torch_candle_a" old_prefab_name="">
+						<transform position="0.012, -0.980, -1.538"/>
+						<components>
+							<meta_mesh_component name="torch_candle_c"/>
+						</components>
+						<children>
+							<game_entity name="candle_flame" old_prefab_name="">
+								<transform position="-0.004, -0.017, 0.356" rotation_euler="0.000, 0.000, -0.158"/>
+								<components>
+									<light_component color="1.000, 0.683, 0.294" intensity="12.000" radius="3.000" flicker_interval="0.500" flicker_magnitude="0.500" local_frame_rot="3.000000, 0.000000, 0.000000, 0.000000, 3.000000, 0.000000, 0.000000, 0.000000, 3.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="billboard_candle_flame" relative_sprite_position="0.000, 0.000, -0.200" sprite_scale="0.100" shadow_size_multiplier="1" shadow_radius="1.600"/>
+								</components>
+								<scripts>
+									<script name="LightCycle">
+										<variables>
+											<variable name="alwaysBurn" value="false"/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="torch_candle_c" old_prefab_name="">
+						<transform position="0.012, 0.927, -1.538"/>
+						<components>
+							<meta_mesh_component name="torch_candle_c"/>
+						</components>
+						<children>
+							<game_entity name="candle_flame" old_prefab_name="">
+								<transform position="-0.004, -0.017, 0.356"/>
+								<components>
+									<light_component color="1.000, 0.683, 0.294" intensity="12.000" radius="4.000" flicker_interval="0.500" flicker_magnitude="0.500" local_frame_rot="4.000000, 0.000000, 0.000000, 0.000000, 4.000000, 0.000000, 0.000000, 0.000000, 4.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="billboard_candle_flame" relative_sprite_position="0.000, 0.000, -0.200" sprite_scale="0.100" shadow_size_multiplier="1" shadow_radius="1.600"/>
+								</components>
+								<scripts>
+									<script name="LightCycle">
+										<variables>
+											<variable name="alwaysBurn" value="false"/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="throne_empire" old_prefab_name="" mobility="1">
+				<transform position="-32.267, 12.573, 5.390"/>
+				<physics shape="bo_throne_empire" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="throne_empire"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="chair_sit_position_front" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="sp_throne"/>
+						</tags>
+						<transform position="0.027, -0.684, 0.398" rotation_euler="0.000, 0.000, 3.141" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="Chair">
+								<variables>
+									<variable name="ChairType" value="Chair"/>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="chair_use_point" old_prefab_name="" mobility="1">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform rotation_euler="0.000, 0.000, 0.031"/>
+								<scripts>
+									<script name="ChairUsePoint">
+										<variables>
+											<variable name="NearTable" value="false"/>
+											<variable name="NearTableLoopAction" value=""/>
+											<variable name="NearTablePairLoopAction" value=""/>
+											<variable name="Drink" value="false"/>
+											<variable name="DrinkLoopAction" value=""/>
+											<variable name="DrinkPairLoopAction" value=""/>
+											<variable name="DrinkRightHandItem" value=""/>
+											<variable name="DrinkLeftHandItem" value=""/>
+											<variable name="Eat" value="false"/>
+											<variable name="EatLoopAction" value=""/>
+											<variable name="EatPairLoopAction" value=""/>
+											<variable name="EatRightHandItem" value=""/>
+											<variable name="EatLeftHandItem" value=""/>
+											<variable name="ArriveAction" value="act_throne_sit_down_from_front1"/>
+											<variable name="LoopStartAction" value="act_throne_sit_idle1"/>
+											<variable name="PairLoopStartAction" value=""/>
+											<variable name="LeaveAction" value="act_throne_stand_up_to_front1"/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="RightHandItemBone" value="ItemR"/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="LeftHandItemBone" value="ItemL"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="KeepOldVisibility" value="false"/>
+											<variable name="AutoSheathWeapons" value="true"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="aserai_keep_interior_a_light_shaft_a" old_prefab_name="">
+				<transform position="-35.888, 10.187, 10.827" rotation_euler="-0.432, 0.010, -1.546" scale="0.566, 0.999, 0.510"/>
+				<components>
+					<meta_mesh_component name="aserai_keep_interior_a_light_shaft_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_table_vlandia_tavern_a" old_prefab_name="">
+				<transform position="-27.055, 3.741, 4.671" rotation_euler="0.000, 0.000, -0.031"/>
+				<children>
+					<game_entity name="bd_table_b" old_prefab_name="">
+						<transform position="0.169, 0.044, 0.000" rotation_euler="0.000, 0.000, 0.004"/>
+						<physics shape="bo_bd_table_b" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_table_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="kitchen_bottle_b" old_prefab_name="">
+						<transform position="0.032, -0.050, 0.799" rotation_euler="0.000, 0.000, 0.019"/>
+						<components>
+							<meta_mesh_component name="kitchen_bottle_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="kitchen_bottle_c" old_prefab_name="">
+						<transform position="0.393, -0.008, 0.799" rotation_euler="0.000, 0.000, 0.019"/>
+						<components>
+							<meta_mesh_component name="kitchen_bottle_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="kitchen_food_bread_a" old_prefab_name="">
+						<transform position="-1.013, 0.074, 0.799" rotation_euler="0.000, 0.000, 0.093"/>
+						<components>
+							<meta_mesh_component name="kitchen_food_bread_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="kitchen_food_bread_c_slice" old_prefab_name="">
+						<transform position="-0.620, 0.029, 0.799" rotation_euler="0.000, 0.000, 1.783" scale="0.777, 0.777, 0.777"/>
+						<components>
+							<meta_mesh_component name="kitchen_food_bread_c_slice"/>
+						</components>
+					</game_entity>
+					<game_entity name="kitchen_food_leek" old_prefab_name="">
+						<transform position="0.458, -0.429, 0.799" rotation_euler="0.000, 0.000, 0.352"/>
+						<components>
+							<meta_mesh_component name="kitchen_food_leek"/>
+						</components>
+					</game_entity>
+					<game_entity name="kitchen_garlic_c" old_prefab_name="">
+						<transform position="-0.084, 0.207, 0.799" rotation_euler="0.000, 0.000, 0.019"/>
+						<components>
+							<meta_mesh_component name="kitchen_garlic_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="kitchen_garlic_c" old_prefab_name="">
+						<transform position="0.981, -0.338, 0.799" rotation_euler="0.000, 0.000, 0.019"/>
+						<components>
+							<meta_mesh_component name="kitchen_garlic_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="kitchen_mug_b" old_prefab_name="">
+						<transform position="-1.356, 0.080, 0.799" rotation_euler="0.000, 0.000, 0.019"/>
+						<components>
+							<meta_mesh_component name="kitchen_mug_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="kitchen_mug_c" old_prefab_name="">
+						<transform position="-0.399, -0.310, 0.799" rotation_euler="0.000, 0.000, 0.019"/>
+						<components>
+							<meta_mesh_component name="kitchen_mug_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="kitchen_pie" old_prefab_name="">
+						<transform position="-0.738, -0.214, 0.799" rotation_euler="0.000, 0.000, 0.019"/>
+						<components>
+							<meta_mesh_component name="kitchen_pie"/>
+						</components>
+					</game_entity>
+					<game_entity name="kitchen_pie" old_prefab_name="">
+						<transform position="1.567, 0.002, 0.799" rotation_euler="0.000, 0.000, 0.019"/>
+						<components>
+							<meta_mesh_component name="kitchen_pie"/>
+						</components>
+					</game_entity>
+					<game_entity name="kitchen_plate_a" old_prefab_name="">
+						<transform position="1.187, 0.264, 0.799" rotation_euler="0.000, 0.000, 0.019"/>
+						<components>
+							<meta_mesh_component name="kitchen_plate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="kitchen_plate_sauce" old_prefab_name="">
+						<transform position="0.719, -0.354, 0.799" rotation_euler="0.000, 0.000, -0.458"/>
+						<components>
+							<meta_mesh_component name="kitchen_plate_sauce"/>
+						</components>
+					</game_entity>
+					<game_entity name="kitchen_plate_steak" old_prefab_name="">
+						<transform position="-0.387, 0.406, 0.799" rotation_euler="0.000, 0.000, 0.019"/>
+						<components>
+							<meta_mesh_component name="kitchen_plate_steak"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="european_castle_stairs_b_l3" old_prefab_name="">
+				<transform position="-21.154, 1.529, 0.737" rotation_euler="0.000, 0.000, 1.517"/>
+				<physics shape="bo_european_castle_stairs_b_l3">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="european_castle_stairs_b_l3"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="-21.055, -1.541, 2.871" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.531, 1.000"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="-15.633, -1.634, 2.871"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="local_envmap_prop" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="envmap_probe"/>
+				</tags>
+				<transform position="-14.669, 1.315, 6.999" rotation_euler="0.000, 0.000, 0.000" scale="7.700, 4.600, 9.900"/>
+				<scripts>
+					<script name="ReflectionCapturer">
+						<variables>
+							<variable name="IsGlobal" value="false"/>
+							<variable name="IsParallaxCorrected" value="true"/>
+							<variable name="AmbientMultiplier" value="1.000"/>
+							<variable name="AttenuationCoef" value="20.000"/>
+							<variable name="BoxOffset" value="0.000, 0.000, 0.000, 0.000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="flag_rope_cloth_02" old_prefab_name="">
+				<transform position="-32.576, 6.681, 8.746" rotation_euler="0.000, 0.000, 1.571" scale="0.520, 0.620, 0.420"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+				<children>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="0.000, 2.930, 0.284" rotation_euler="-0.015, -1.452, -1.564" scale="0.280, 0.357, 0.280"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4279972933"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="-0.003, 1.783, 0.221" rotation_euler="-0.016, -1.515, -1.571" scale="0.316, 0.316, 0.316"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4285013261"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="0.004, 0.709, 0.185" rotation_euler="-0.015, -1.547, -1.561" scale="0.280, 0.357, 0.280"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4279972933"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="-0.005, -0.466, 0.198" rotation_euler="-0.016, -1.580, -1.571" scale="0.248, 0.286, 0.248"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4285013261"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="0.005, -1.635, 0.221" rotation_euler="-0.015, -1.629, -1.564" scale="0.280, 0.357, 0.280"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4279972933"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="-0.005, -2.953, 0.295" rotation_euler="-0.016, -1.627, -1.571" scale="0.316, 0.316, 0.316"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4285013261"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="flag_5" old_prefab_name="">
+						<transform position="-0.003, -4.105, 0.419" rotation_euler="-0.014, -1.685, -1.581" scale="0.280, 0.357, 0.280"/>
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="flag_5">
+									<mesh name="flag_5" factor="4279972933"/>
+								</meta_mesh_component>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="torch_outdoors_a_burning" old_prefab_name="">
+				<flags>
+					<flag name="not_affected_by_season" value="true"/>
+				</flags>
+				<transform position="-34.936, 5.293, 4.714"/>
+				<physics shape="bo_torch_outdoors_a"/>
+				<components>
+					<meta_mesh_component name="torch_outdoors_a">
+						<mesh name="torch_outdoors_a.lod1" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod1.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod2" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod2.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod3" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod3.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod4" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod4.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod5.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="light" old_prefab_name="">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.000, 0.000, 1.630" rotation_euler="0.000, 0.000, -0.777"/>
+						<components>
+							<light_component color="1.000, 0.596, 0.243" intensity="180.000" radius="9.000" flicker_interval="0.400" flicker_magnitude="2.000" local_frame_rot="9.000000, 0.000000, 0.000000, 0.000000, 9.000000, 0.000000, 0.000000, 0.000000, 9.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow="1" shadow_size_multiplier="1" shadow_radius="5.000"/>
+						</components>
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable name="alwaysBurn" value="false"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torch_aa" old_prefab_name="">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.020, 0.015, 0.363" rotation_euler="0.000, 0.000, 0.646"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{4DF2A56D-207E-4A7D-BE16-C7321F819A38}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="torch_outdoors_a_burning" old_prefab_name="">
+				<flags>
+					<flag name="not_affected_by_season" value="true"/>
+				</flags>
+				<transform position="-34.742, 1.009, 4.711"/>
+				<physics shape="bo_torch_outdoors_a"/>
+				<components>
+					<meta_mesh_component name="torch_outdoors_a">
+						<mesh name="torch_outdoors_a.lod1" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod1.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod2" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod2.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod3" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod3.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod4" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod4.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod5.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="light" old_prefab_name="">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.000, 0.000, 1.630" rotation_euler="0.000, 0.000, -0.777"/>
+						<components>
+							<light_component color="1.000, 0.596, 0.243" intensity="180.000" radius="9.000" flicker_interval="0.400" flicker_magnitude="2.000" local_frame_rot="9.000000, 0.000000, 0.000000, 0.000000, 9.000000, 0.000000, 0.000000, 0.000000, 9.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow="1" shadow_size_multiplier="1" shadow_radius="5.000"/>
+						</components>
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable name="alwaysBurn" value="false"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torch_aa" old_prefab_name="">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.020, 0.015, 0.363" rotation_euler="0.000, 0.000, 0.646"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{4DF2A56D-207E-4A7D-BE16-C7321F819A38}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="torch_outdoors_a_burning" old_prefab_name="">
+				<flags>
+					<flag name="not_affected_by_season" value="true"/>
+				</flags>
+				<transform position="-22.395, 3.370, 4.693"/>
+				<physics shape="bo_torch_outdoors_a"/>
+				<components>
+					<meta_mesh_component name="torch_outdoors_a">
+						<mesh name="torch_outdoors_a.lod1" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod1.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod2" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod2.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod3" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod3.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod4" argument="0.580, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod4.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod5.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="light" old_prefab_name="">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.000, 0.000, 1.630" rotation_euler="0.000, 0.000, -0.777"/>
+						<components>
+							<light_component color="1.000, 0.596, 0.243" intensity="180.000" radius="9.000" flicker_interval="0.400" flicker_magnitude="2.000" local_frame_rot="9.000000, 0.000000, 0.000000, 0.000000, 9.000000, 0.000000, 0.000000, 0.000000, 9.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow="1" shadow_size_multiplier="1" shadow_radius="5.000"/>
+						</components>
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable name="alwaysBurn" value="false"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torch_aa" old_prefab_name="">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.020, 0.015, 0.363" rotation_euler="0.000, 0.000, 0.646"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{4DF2A56D-207E-4A7D-BE16-C7321F819A38}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="local_envmap_prop" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="envmap_probe"/>
+				</tags>
+				<transform position="-30.725, 2.087, 6.111" rotation_euler="0.000, 0.000, 0.000" scale="9.700, 4.500, 14.200"/>
+				<scripts>
+					<script name="ReflectionCapturer">
+						<variables>
+							<variable name="IsGlobal" value="false"/>
+							<variable name="IsParallaxCorrected" value="true"/>
+							<variable name="AmbientMultiplier" value="0.300"/>
+							<variable name="AttenuationCoef" value="50.000"/>
+							<variable name="BoxOffset" value="0.000, 0.000, 0.000, 0.000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="local_envmap_prop" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="envmap_probe"/>
+				</tags>
+				<transform position="-21.580, 9.310, 6.111" rotation_euler="0.000, 0.000, 0.000" scale="8.100, 3.400, 7.100"/>
+				<scripts>
+					<script name="ReflectionCapturer">
+						<variables>
+							<variable name="IsGlobal" value="false"/>
+							<variable name="IsParallaxCorrected" value="true"/>
+							<variable name="AmbientMultiplier" value="0.020"/>
+							<variable name="AttenuationCoef" value="80.000"/>
+							<variable name="BoxOffset" value="0.000, 0.000, 0.000, 0.000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="local_envmap_prop" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="envmap_probe"/>
+				</tags>
+				<transform position="-32.295, 10.587, 6.111" rotation_euler="0.000, 0.000, 0.000" scale="3.900, 5.500, 7.100"/>
+				<scripts>
+					<script name="ReflectionCapturer">
+						<variables>
+							<variable name="IsGlobal" value="false"/>
+							<variable name="IsParallaxCorrected" value="true"/>
+							<variable name="AmbientMultiplier" value="0.050"/>
+							<variable name="AttenuationCoef" value="50.000"/>
+							<variable name="BoxOffset" value="0.000, 0.000, 0.000, 0.000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="torch_wall_c" old_prefab_name="">
+				<flags>
+					<flag name="not_affected_by_season" value="true"/>
+				</flags>
+				<transform position="-29.011, 11.564, 7.530" rotation_euler="0.000, 0.000, -1.647"/>
+				<physics shape="bo_torch_wall_c"/>
+				<components>
+					<meta_mesh_component name="torch_wall_c"/>
+				</components>
+				<scripts>
+					<script name="LightCycle">
+						<variables>
+							<variable name="alwaysBurn" value="false"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="flame_loop" old_prefab_name="">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="-0.011, -1.156, 0.528"/>
+						<components>
+							<light_component flags="96" color="1.000, 0.596, 0.243" intensity="90.000" radius="9.000" flicker_interval="0.400" flicker_magnitude="1.000" local_frame_rot="9.000000, 0.000000, 0.000000, 0.000000, 9.000000, 0.000000, 0.000000, 0.000000, 9.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="prt_torchfire_loop" relative_sprite_position="0.000, 0.400, -0.500" sprite_color_scale="0.300" sprite_scale="0.600" shadow="1" shadow_size_multiplier="1" shadow_radius="4.000"/>
+						</components>
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable name="alwaysBurn" value="false"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torch_fire_sparks" old_prefab_name="">
+						<transform position="-0.013, -0.705, -0.038"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{8F145B5A-5469-461F-98B6-3CDCF53DFD9D}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="torch_wall_c" old_prefab_name="">
+				<flags>
+					<flag name="not_affected_by_season" value="true"/>
+				</flags>
+				<transform position="-35.660, 11.995, 7.457" rotation_euler="0.000, 0.000, 1.714"/>
+				<physics shape="bo_torch_wall_c"/>
+				<components>
+					<meta_mesh_component name="torch_wall_c"/>
+				</components>
+				<scripts>
+					<script name="LightCycle">
+						<variables>
+							<variable name="alwaysBurn" value="false"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="flame_loop" old_prefab_name="">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="-0.011, -1.156, 0.528"/>
+						<components>
+							<light_component flags="96" color="1.000, 0.596, 0.243" intensity="90.000" radius="9.000" flicker_interval="0.400" flicker_magnitude="1.000" local_frame_rot="9.000000, 0.000000, 0.000000, 0.000000, 9.000000, 0.000000, 0.000000, 0.000000, 9.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="prt_torchfire_loop" relative_sprite_position="0.000, 0.400, -0.500" sprite_color_scale="0.300" sprite_scale="0.600" shadow="1" shadow_size_multiplier="1" shadow_radius="4.000"/>
+						</components>
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable name="alwaysBurn" value="false"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torch_fire_sparks" old_prefab_name="">
+						<transform position="-0.013, -0.705, -0.038"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{8F145B5A-5469-461F-98B6-3CDCF53DFD9D}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="heater_shield_k" old_prefab_name="">
+				<transform position="-14.654, 3.513, 9.421" rotation_euler="-1.498, 3.073, 1.363"/>
+				<components>
+					<meta_mesh_component name="heater_shield_k"/>
+				</components>
+			</game_entity>
+			<game_entity name="heater_shield_k" old_prefab_name="">
+				<transform position="-14.820, -0.340, 9.523" rotation_euler="-1.498, 3.073, 1.625"/>
+				<components>
+					<meta_mesh_component name="heater_shield_k"/>
+				</components>
+			</game_entity>
+			<game_entity name="wall_carpet_b" old_prefab_name="">
+				<transform position="-26.029, 6.169, 9.829"/>
+				<components>
+					<meta_mesh_component name="wall_carpet_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="wall_carpet_d" old_prefab_name="">
+				<transform position="-25.689, -0.413, 9.263" rotation_euler="0.000, 0.000, -3.038"/>
+				<components>
+					<meta_mesh_component name="wall_carpet_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="torch_wall_c" old_prefab_name="">
+				<flags>
+					<flag name="not_affected_by_season" value="true"/>
+				</flags>
+				<transform position="-29.019, 7.636, 7.530" rotation_euler="0.000, 0.000, -1.670"/>
+				<physics shape="bo_torch_wall_c"/>
+				<components>
+					<meta_mesh_component name="torch_wall_c"/>
+				</components>
+				<scripts>
+					<script name="LightCycle">
+						<variables>
+							<variable name="alwaysBurn" value="false"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="flame_loop" old_prefab_name="">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="-0.011, -1.156, 0.528"/>
+						<components>
+							<light_component flags="96" color="1.000, 0.596, 0.243" intensity="90.000" radius="9.000" flicker_interval="0.400" flicker_magnitude="1.000" local_frame_rot="9.000000, 0.000000, 0.000000, 0.000000, 9.000000, 0.000000, 0.000000, 0.000000, 9.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="prt_torchfire_loop" relative_sprite_position="0.000, 0.400, -0.500" sprite_color_scale="0.300" sprite_scale="0.600" shadow="1" shadow_size_multiplier="1" shadow_radius="4.000"/>
+						</components>
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable name="alwaysBurn" value="false"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torch_fire_sparks" old_prefab_name="">
+						<transform position="-0.013, -0.705, -0.038"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{8F145B5A-5469-461F-98B6-3CDCF53DFD9D}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="wall_carpet_e" old_prefab_name="">
+				<transform position="-21.692, 2.710, 11.258" rotation_euler="0.000, 0.000, -1.529"/>
+				<components>
+					<meta_mesh_component name="wall_carpet_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="wall_carpet_c" old_prefab_name="">
+				<transform position="-29.003, 9.600, 8.778" rotation_euler="0.000, 0.000, -1.480"/>
+				<components>
+					<meta_mesh_component name="wall_carpet_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="border_soft" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="walk_area_vertex"/>
+				</tags>
+				<transform position="561.463, 530.785, -6.064"/>
+				<components>
+					<meta_mesh_component name="soft_border_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, 0.064, 8.887" rotation_euler="0.000, 0.000, 1.567"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_main_building_lords_platform" old_prefab_name="">
+				<transform position="-32.269, 12.110, 5.010" rotation_euler="0.000, 0.000, 0.009" scale="0.800, 0.900, 1.000"/>
+				<physics shape="bo_vlandia_arena_main_building_lords_platform" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_main_building_lords_platform"/>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_rack_aserai_a" old_prefab_name="">
+				<transform position="-25.670, 11.499, 4.720"/>
+				<physics shape="bo_weapon_rack_a"/>
+				<components>
+					<meta_mesh_component name="weapon_rack_aserai_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_rack_aserai_a" old_prefab_name="">
+				<transform position="-25.836, 8.109, 4.714"/>
+				<physics shape="bo_weapon_rack_a"/>
+				<components>
+					<meta_mesh_component name="weapon_rack_aserai_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_rack_sturgia_a" old_prefab_name="">
+				<transform position="-26.532, 9.702, 4.724" rotation_euler="0.000, 0.000, 1.516"/>
+				<physics shape="bo_weapon_rack_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="weapon_rack_sturgia_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_rack_vlandia_a" old_prefab_name="">
+				<transform position="-23.989, 11.473, 4.737"/>
+				<physics shape="bo_weapon_rack_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="weapon_rack_vlandia_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_rack_vlandia_a" old_prefab_name="">
+				<transform position="-17.786, 11.033, 4.709"/>
+				<physics shape="bo_weapon_rack_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="weapon_rack_vlandia_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_grandbazaar_big_wall_b" old_prefab_name="">
+				<transform position="-17.068, 5.253, 0.621"/>
+				<physics shape="bo_vlandia_grandbazaar_big_wall_b"/>
+				<components>
+					<meta_mesh_component name="vlandia_grandbazaar_big_wall_b">
+						<mesh name="vlandia_grandbazaar_big_wall_b" material="wall_castle_a"/>
+						<mesh name="vlandia_grandbazaar_big_wall_b.lod05" material="wall_castle_a"/>
+						<mesh name="vlandia_grandbazaar_big_wall_b.lod3" material="wall_castle_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_grandbazaar_big_wall_b" old_prefab_name="">
+				<transform position="-19.344, -2.269, 0.427"/>
+				<physics shape="bo_vlandia_grandbazaar_big_wall_b"/>
+				<components>
+					<meta_mesh_component name="vlandia_grandbazaar_big_wall_b">
+						<mesh name="vlandia_grandbazaar_big_wall_b" material="wall_castle_a"/>
+						<mesh name="vlandia_grandbazaar_big_wall_b.lod05" material="wall_castle_a"/>
+						<mesh name="vlandia_grandbazaar_big_wall_b.lod3" material="wall_castle_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_b_column_top" old_prefab_name="">
+				<transform position="-15.394, 4.678, 8.055"/>
+				<physics shape="bo_empire_keep_b_column_top"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_column_top"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_b_column_top" old_prefab_name="">
+				<transform position="-21.054, -1.533, 8.083"/>
+				<physics shape="bo_empire_keep_b_column_top"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_column_top"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_b_column_top" old_prefab_name="">
+				<transform position="-15.571, -1.625, 8.055"/>
+				<physics shape="bo_empire_keep_b_column_top"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_column_top"/>
+				</components>
+			</game_entity>
+			<game_entity name="B_Keep_empty_interior" old_prefab_name="">
+				<transform position="-22.600, 2.622, -3.078"/>
+				<children>
+					<game_entity name="european_castle_stairs_a_l3" old_prefab_name="">
+						<transform position="25.341, -0.469, -5.073" rotation_euler="0.000, 0.000, 3.132"/>
+						<physics shape="bo_european_castle_stairs_a_l3"/>
+						<components>
+							<meta_mesh_component name="european_castle_stairs_a_l3"/>
+						</components>
+						<children>
+							<game_entity name="european_castle_stairs_a_l3_bo" old_prefab_name="">
+								<physics shape="bo_2_european_castle_stairs_a_l3">
+									<body_flags>
+										<body_flag name="has_steps"/>
+									</body_flags>
+								</physics>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="european_castle_keep_a_l3_brattice" old_prefab_name="">
+						<transform position="14.798, -5.402, 27.929" rotation_euler="0.000, 0.000, 1.566"/>
+						<physics shape="bo_european_castle_keep_a_l3_brattice"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_a_l3_brattice"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_a_l3_brattice" old_prefab_name="">
+						<transform position="14.650, 2.557, 27.854" rotation_euler="0.000, 0.000, 1.566"/>
+						<physics shape="bo_european_castle_keep_a_l3_brattice"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_a_l3_brattice"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_a_l3_brattice" old_prefab_name="">
+						<transform position="14.718, -1.450, 27.883" rotation_euler="0.000, 0.000, 1.566"/>
+						<physics shape="bo_european_castle_keep_a_l3_brattice"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_a_l3_brattice"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_wall_gate_l3" old_prefab_name="">
+						<transform position="10.489, -1.617, 9.225" rotation_euler="0.000, 0.000, 1.529" scale="1.500, 1.000, 1.300"/>
+						<children>
+							<game_entity name="european_castle_wall_gate_l3" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_gate_l3">
+								<physics shape="bo_european_castle_wall_gate_l3"/>
+								<occlusion_body_flags>
+									<occlusion_body_flag name="two_sided"/>
+								</occlusion_body_flags>
+								<components>
+									<meta_mesh_component name="european_castle_wall_gate_l3"/>
+								</components>
+								<scripts>
+									<script name="WallSegment">
+										<variables>
+											<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+											<variable name="_properGroundInsideNavmeshID" value="-1"/>
+											<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+											<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+											<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+											<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+											<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+											<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+											<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+											<variable name="SideTag" value=""/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="sound" old_prefab_name="">
+								<children>
+									<game_entity name="sound_reverb" old_prefab_name="">
+										<transform position="0.100, -1.200, 13.800" rotation_euler="0.000, 0.000, 0.000" scale="4.100, 3.700, 2.300"/>
+										<scripts>
+											<script name="AmbientSoundEmitter">
+												<variables>
+													<variable name="Event Path" value="event:/mission/ambient/area/interior/generic"/>
+													<variable name="Play On Startup" value="true"/>
+													<variable name="Is Static" value="false"/>
+													<variable name="Override Sound" value="false"/>
+													<variable name="Overrided Max Distance" value="20.000000"/>
+													<variable name="Overrided Min Distance" value="1.000000"/>
+													<variable name="Sound Preset" value="Speakers"/>
+													<variable name="Is Master Sound" value="false"/>
+													<variable name="Is Master Supressor" value="false"/>
+													<variable name="Is Triggered" value="true"/>
+													<variable name="Trigger Shape" value="Box"/>
+												</variables>
+											</script>
+											<script name="AmbientSoundEmitter">
+												<variables>
+													<variable name="Event Path" value="event:/mission/ambient/reverb/stone_interior"/>
+													<variable name="Play On Startup" value="true"/>
+													<variable name="Is Static" value="false"/>
+													<variable name="Override Sound" value="false"/>
+													<variable name="Overrided Max Distance" value="20.000000"/>
+													<variable name="Overrided Min Distance" value="1.000000"/>
+													<variable name="Sound Preset" value="Speakers"/>
+													<variable name="Is Master Sound" value="false"/>
+													<variable name="Is Master Supressor" value="false"/>
+													<variable name="Is Triggered" value="true"/>
+													<variable name="Trigger Shape" value="Box"/>
+												</variables>
+											</script>
+										</scripts>
+									</game_entity>
+									<game_entity name="sound_reverb" old_prefab_name="">
+										<transform position="0.200, -1.000, 3.000" rotation_euler="0.000, 0.000, 0.000" scale="2.200, 3.500, 3.000"/>
+										<scripts>
+											<script name="AmbientSoundEmitter">
+												<variables>
+													<variable name="Event Path" value="event:/mission/ambient/reverb/gatehouse"/>
+													<variable name="Play On Startup" value="true"/>
+													<variable name="Is Static" value="false"/>
+													<variable name="Override Sound" value="false"/>
+													<variable name="Overrided Max Distance" value="20.000000"/>
+													<variable name="Overrided Min Distance" value="1.000000"/>
+													<variable name="Sound Preset" value="Speakers"/>
+													<variable name="Is Master Sound" value="false"/>
+													<variable name="Is Master Supressor" value="false"/>
+													<variable name="Is Triggered" value="true"/>
+													<variable name="Trigger Shape" value="Box"/>
+												</variables>
+											</script>
+										</scripts>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="european_castle_wall_a_l3" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3">
+						<transform position="12.056, -0.541, 24.992" rotation_euler="0.000, 0.000, -1.599"/>
+						<physics shape="bo_european_castle_wall_a_l3"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_a_l3"/>
+						</components>
+						<scripts>
+							<script name="WallSegment">
+								<variables>
+									<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+									<variable name="_properGroundInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+									<variable name="SideTag" value=""/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="european_castle_stairs_a_l3" old_prefab_name="">
+						<transform position="25.341, -3.061, -5.073" rotation_euler="0.000, 0.000, -0.010" scale="-1.000, 1.000, 1.000"/>
+						<physics shape="bo_european_castle_stairs_a_l3"/>
+						<components>
+							<meta_mesh_component name="european_castle_stairs_a_l3"/>
+						</components>
+						<children>
+							<game_entity name="european_castle_stairs_a_l3_bo" old_prefab_name="">
+								<physics shape="bo_2_european_castle_stairs_a_l3">
+									<body_flags>
+										<body_flag name="has_steps"/>
+									</body_flags>
+								</physics>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="empire_keep_a_door_top" old_prefab_name="">
+						<transform position="-14.919, -11.580, 57.791" rotation_euler="0.000, 0.000, 1.594"/>
+						<physics shape="bo_empire_keep_a_door_top"/>
+						<components>
+							<meta_mesh_component name="empire_keep_a_door_top"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_front_top" old_prefab_name="">
+						<transform position="-3.297, -1.855, 5.251" rotation_euler="0.000, 0.000, 1.594"/>
+						<physics shape="bo_european_castle_keep_front_top"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_front_top"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_front_top" old_prefab_name="">
+						<transform position="-3.297, -1.855, 5.251" rotation_euler="0.000, 0.000, 1.594" scale="-1.000, 1.000, 1.000"/>
+						<physics shape="bo_european_castle_keep_front_top"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_front_top"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_side" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_keep_side">
+						<transform position="-20.321, -10.115, 5.251" rotation_euler="0.000, 0.000, -3.119" scale="1.000, 2.300, 1.000"/>
+						<physics shape="bo_european_castle_keep_side"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_side"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_side" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_keep_side">
+						<transform position="-20.144, -18.160, 5.251" rotation_euler="0.000, 0.000, 0.023"/>
+						<physics shape="bo_european_castle_keep_side"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_side"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_side" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_keep_side">
+						<transform position="-20.876, 13.856, 5.251" rotation_euler="0.000, 0.000, 1.594"/>
+						<physics shape="bo_european_castle_keep_side"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_side"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_top" old_prefab_name="">
+						<transform position="-3.297, -1.855, 5.251" rotation_euler="0.000, 0.000, 1.594"/>
+						<physics shape="bo_european_castle_keep_top"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_top"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_side" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_keep_side">
+						<transform position="-3.686, 14.108, 5.251" rotation_euler="0.000, 0.000, -3.117" scale="2.713, 1.007, 1.000"/>
+						<physics shape="bo_european_castle_keep_side"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_side"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_front" old_prefab_name="">
+						<transform position="-3.297, -1.855, 5.251" rotation_euler="0.000, 0.000, 1.594"/>
+						<physics shape="bo_european_castle_keep_front"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_front"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_wall_a_l3_old" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_old">
+						<transform position="12.817, 2.435, 41.082" rotation_euler="0.000, 0.000, 1.571"/>
+						<physics shape="bo_european_castle_wall_a_l3_old"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_a_l3_old"/>
+						</components>
+					</game_entity>
+					<game_entity name="ambient_sound_emitter" old_prefab_name="">
+						<transform position="2.388, 3.236, 7.775" rotation_euler="0.000, 0.000, 1.571" scale="7.229, 10.207, 3.842"/>
+						<scripts>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/reverb/dungeon"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Box"/>
+								</variables>
+							</script>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/area/interior/dungeon"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="10000.000000"/>
+									<variable name="Overrided Min Distance" value="0.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Box"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="european_castle_keep_side" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_keep_side">
+						<transform position="-20.681, 5.482, 5.251" rotation_euler="0.000, 0.000, -3.119" scale="1.000, 2.300, 1.000"/>
+						<physics shape="bo_european_castle_keep_side"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_side"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_front_top" old_prefab_name="">
+						<transform position="-3.780, -14.096, 5.251" rotation_euler="0.000, 0.000, 1.594" scale="0.900, 0.800, 1.000"/>
+						<physics shape="bo_european_castle_keep_front_top"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_front_top"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_side" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_keep_side">
+						<transform position="-20.541, -0.597, 5.251" rotation_euler="0.000, 0.000, -3.119" scale="1.000, 2.300, 1.000"/>
+						<physics shape="bo_european_castle_keep_side"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_side"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_side" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_keep_side">
+						<transform position="-2.993, -17.846, 5.251" rotation_euler="0.000, 0.000, -3.117" scale="2.713, 1.007, 1.000"/>
+						<physics shape="bo_european_castle_keep_side"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_side"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_side" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_keep_side">
+						<transform position="-14.193, -18.038, 5.251" rotation_euler="0.000, 0.000, -3.134" scale="1.791, 1.006, 1.000"/>
+						<physics shape="bo_european_castle_keep_side"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_side"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_side" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_keep_side">
+						<transform position="-14.886, 13.916, 5.251" rotation_euler="0.000, 0.000, -3.134" scale="1.791, 1.006, 1.000"/>
+						<physics shape="bo_european_castle_keep_side"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_side"/>
+						</components>
+					</game_entity>
+					<game_entity name="module_european_stone_floor_a" old_prefab_name="">
+						<transform position="11.457, -1.533, 5.848" rotation_euler="0.000, 0.000, -0.008" scale="1.300, 1.300, 1.000"/>
+						<physics shape="bo_module_european_stone_floor_a"/>
+						<components>
+							<meta_mesh_component name="module_european_stone_floor_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_keep_a_l3_brattice_wood" old_prefab_name="">
+						<transform position="-10.695, 16.432, 32.524" rotation_euler="0.000, 0.000, -3.128"/>
+						<physics shape="bo_european_castle_keep_a_l3_brattice_wood"/>
+						<components>
+							<meta_mesh_component name="european_castle_keep_a_l3_brattice_wood"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="torch_chandelier_fire" old_prefab_name="">
+				<transform position="-25.180, 2.883, 11.787"/>
+				<physics shape="bo_torch_chandelier"/>
+				<components>
+					<meta_mesh_component name="torch_chandelier"/>
+				</components>
+				<children>
+					<game_entity name="torch_candle_b" old_prefab_name="">
+						<transform position="-0.937, -0.006, -1.531"/>
+						<components>
+							<meta_mesh_component name="torch_candle_b"/>
+						</components>
+						<children>
+							<game_entity name="candle_flame" old_prefab_name="">
+								<transform position="-0.004, -0.017, 0.449"/>
+								<components>
+									<light_component color="1.000, 0.683, 0.294" intensity="12.000" radius="4.000" flicker_interval="0.500" flicker_magnitude="0.500" local_frame_rot="4.000000, 0.000000, 0.000000, 0.000000, 4.000000, 0.000000, 0.000000, 0.000000, 4.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="billboard_candle_flame" relative_sprite_position="0.000, 0.000, -0.200" sprite_scale="0.100" shadow_size_multiplier="1" shadow_radius="1.600"/>
+								</components>
+								<scripts>
+									<script name="LightCycle">
+										<variables>
+											<variable name="alwaysBurn" value="false"/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="torch_candle_b" old_prefab_name="">
+						<transform position="0.965, -0.006, -1.531"/>
+						<components>
+							<meta_mesh_component name="torch_candle_b"/>
+						</components>
+						<children>
+							<game_entity name="candle_flame" old_prefab_name="">
+								<transform position="-0.004, -0.017, 0.449"/>
+								<components>
+									<light_component color="1.000, 0.683, 0.294" intensity="12.000" radius="2.000" flicker_interval="0.500" flicker_magnitude="0.500" local_frame_rot="2.000000, 0.000000, 0.000000, 0.000000, 2.000000, 0.000000, 0.000000, 0.000000, 2.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="billboard_candle_flame" relative_sprite_position="0.000, 0.000, -0.200" sprite_scale="0.100" shadow="1" shadow_size_multiplier="1" shadow_radius="2.000"/>
+								</components>
+								<scripts>
+									<script name="LightCycle">
+										<variables>
+											<variable name="alwaysBurn" value="false"/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="torch_candle_a" old_prefab_name="">
+						<transform position="0.012, -0.980, -1.538"/>
+						<components>
+							<meta_mesh_component name="torch_candle_c"/>
+						</components>
+						<children>
+							<game_entity name="candle_flame" old_prefab_name="">
+								<transform position="-0.004, -0.017, 0.356" rotation_euler="0.000, 0.000, -0.158"/>
+								<components>
+									<light_component color="1.000, 0.683, 0.294" intensity="12.000" radius="3.000" flicker_interval="0.500" flicker_magnitude="0.500" local_frame_rot="3.000000, 0.000000, 0.000000, 0.000000, 3.000000, 0.000000, 0.000000, 0.000000, 3.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="billboard_candle_flame" relative_sprite_position="0.000, 0.000, -0.200" sprite_scale="0.100" shadow_size_multiplier="1" shadow_radius="1.600"/>
+								</components>
+								<scripts>
+									<script name="LightCycle">
+										<variables>
+											<variable name="alwaysBurn" value="false"/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="torch_candle_c" old_prefab_name="">
+						<transform position="0.012, 0.927, -1.538"/>
+						<components>
+							<meta_mesh_component name="torch_candle_c"/>
+						</components>
+						<children>
+							<game_entity name="candle_flame" old_prefab_name="">
+								<transform position="-0.004, -0.017, 0.356"/>
+								<components>
+									<light_component color="1.000, 0.683, 0.294" intensity="12.000" radius="4.000" flicker_interval="0.500" flicker_magnitude="0.500" local_frame_rot="4.000000, 0.000000, 0.000000, 0.000000, 4.000000, 0.000000, 0.000000, 0.000000, 4.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="billboard_candle_flame" relative_sprite_position="0.000, 0.000, -0.200" sprite_scale="0.100" shadow_size_multiplier="1" shadow_radius="1.600"/>
+								</components>
+								<scripts>
+									<script name="LightCycle">
+										<variables>
+											<variable name="alwaysBurn" value="false"/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="-21.144, 4.668, 2.871"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_stone_floor_a" old_prefab_name="">
+				<transform position="-18.714, 1.089, 2.770" rotation_euler="0.000, 0.000, -0.008" scale="1.300, 1.300, 1.000"/>
+				<physics shape="bo_module_european_stone_floor_a"/>
+				<components>
+					<meta_mesh_component name="module_european_stone_floor_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="-15.402, 4.684, 2.871"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="shop_prop_merchantweapons_melee_c" old_prefab_name="">
+				<tags>
+					<tag name="shop_prop"/>
+					<tag name="c"/>
+				</tags>
+				<transform position="-22.432, 10.019, 4.711" rotation_euler="0.000, 0.000, -1.619"/>
+				<physics shape="bo_shop_prop_merchantweapons_melee_c"/>
+				<components>
+					<meta_mesh_component name="shop_prop_merchantweapons_melee_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_2" old_prefab_name="">
+				<transform position="-34.424, 13.121, 4.980"/>
+				<physics shape="bo_bd_cloth_2"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_2">
+						<mesh name="bd_cloth_2" factor="4280287232"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_2" old_prefab_name="">
+				<transform position="-33.060, 13.081, 4.992"/>
+				<physics shape="bo_bd_cloth_2"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_2">
+						<mesh name="bd_cloth_2" factor="4280287232"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-21.176, -1.283, 8.918" rotation_euler="0.000, 0.000, 1.567"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_4" old_prefab_name="">
+				<transform position="-34.730, 12.845, 4.985"/>
+				<physics shape="bo_bd_cloth_4"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_4">
+						<mesh name="bd_cloth_4" factor="4280287232"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_main_building_lords_platform" old_prefab_name="">
+				<transform position="-32.269, 11.641, 4.585" rotation_euler="0.000, 0.000, 0.009"/>
+				<physics shape="bo_vlandia_arena_main_building_lords_platform" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_main_building_lords_platform"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_chair_d_tavern_unsittable" old_prefab_name="">
+				<transform position="-26.927, 2.473, 4.654" rotation_euler="0.000, 0.000, -0.035"/>
+				<physics shape="bo_bd_chair_d" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_chair_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_chair_d_tavern_unsittable" old_prefab_name="">
+				<transform position="-26.784, 5.025, 4.692" rotation_euler="0.000, 0.000, -0.035"/>
+				<physics shape="bo_bd_chair_d" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_chair_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="torch_wall_c" old_prefab_name="">
+				<flags>
+					<flag name="not_affected_by_season" value="true"/>
+				</flags>
+				<transform position="-35.656, 7.892, 7.336" rotation_euler="0.000, 0.000, 1.491"/>
+				<physics shape="bo_torch_wall_c"/>
+				<components>
+					<meta_mesh_component name="torch_wall_c"/>
+				</components>
+				<scripts>
+					<script name="LightCycle">
+						<variables>
+							<variable name="alwaysBurn" value="false"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="flame_loop" old_prefab_name="">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="-0.011, -1.156, 0.528"/>
+						<components>
+							<light_component flags="96" color="1.000, 0.596, 0.243" intensity="90.000" radius="9.000" flicker_interval="0.400" flicker_magnitude="1.000" local_frame_rot="9.000000, 0.000000, 0.000000, 0.000000, 9.000000, 0.000000, 0.000000, 0.000000, 9.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="prt_torchfire_loop" relative_sprite_position="0.000, 0.400, -0.500" sprite_color_scale="0.300" sprite_scale="0.600" shadow="1" shadow_size_multiplier="1" shadow_radius="4.000"/>
+						</components>
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable name="alwaysBurn" value="false"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torch_fire_sparks" old_prefab_name="">
+						<transform position="-0.013, -0.705, -0.038"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{8F145B5A-5469-461F-98B6-3CDCF53DFD9D}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="-15.035, -1.145, 9.105" rotation_euler="-0.972, 0.019, -0.048"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="-14.827, 3.910, 9.044" rotation_euler="0.977, 0.019, -0.048"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-15.160, 4.272, 9.107" rotation_euler="0.003, -0.947, 1.568" scale="1.600, 1.000, 1.000"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_courtyard_a_wall_small" old_prefab_name="">
+				<transform position="-15.160, -1.614, 9.107" rotation_euler="-0.004, 1.007, 1.569" scale="1.600, 1.000, 1.000"/>
+				<physics shape="bo_aserai_courtyard_a_wall_small"/>
+				<components>
+					<meta_mesh_component name="aserai_courtyard_a_wall_small">
+						<mesh name="aserai_courtyard_a_wall_small" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

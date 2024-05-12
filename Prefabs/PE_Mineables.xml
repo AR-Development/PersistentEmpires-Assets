@@ -1,0 +1,251 @@
+<prefabs>
+	<game_entity name="pe_iron_node" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="no_shadow" value="true"/>
+		</visibility_masks>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+		<components>
+			<meta_mesh_component name="cave_desert_rock_a">
+				<mesh name="cave_desert_rock_a" material="siege_metal" factor="4281742902"/>
+				<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4281742902"/>
+				<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4281742902"/>
+				<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4281742902"/>
+			</meta_mesh_component>
+		</components>
+		<scripts>
+			<script name="PE_DestructibleWithItem">
+				<variables>
+					<variable name="ItemDrops" value="pe_ironore,50,1,100"/>
+					<variable name="RespawnAsSeconds" value="900"/>
+					<variable name="ApplyPhysicsOnDestruction" value="false"/>
+					<variable name="PhysicMaterial" value="stone"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+					<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+					<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+					<variable name="RequiredSkillId" value="Gathering"/>
+					<variable name="RequiredSkillLevel" value="10"/>
+					<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+					<variable name="MaxHitPoint" value="1000.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="pe_coal_node" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="no_shadow" value="true"/>
+		</visibility_masks>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+		<components>
+			<meta_mesh_component name="cave_desert_rock_a">
+				<mesh name="cave_desert_rock_a" material="rock" factor="4279440147"/>
+				<mesh name="cave_desert_rock_a.lod2" material="rock" factor="4279440147"/>
+				<mesh name="cave_desert_rock_a.lod4" material="rock" factor="4279440147"/>
+				<mesh name="cave_desert_rock_a.lod5" material="rock" factor="4279440147"/>
+			</meta_mesh_component>
+		</components>
+		<scripts>
+			<script name="PE_DestructibleWithItem">
+				<variables>
+					<variable name="ItemDrops" value="pe_charcoal,50,1,100"/>
+					<variable name="RespawnAsSeconds" value="1200"/>
+					<variable name="ApplyPhysicsOnDestruction" value="false"/>
+					<variable name="PhysicMaterial" value="stone"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+					<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+					<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+					<variable name="RequiredSkillId" value="Gathering"/>
+					<variable name="RequiredSkillLevel" value="10"/>
+					<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+					<variable name="MaxHitPoint" value="1500.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="pe_clay_node" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="no_shadow" value="true"/>
+		</visibility_masks>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+		<components>
+			<meta_mesh_component name="cave_desert_rock_a">
+				<mesh name="cave_desert_rock_a" material="terrain_ground_dirt" factor="4290953922"/>
+				<mesh name="cave_desert_rock_a.lod2" material="terrain_ground_dirt" factor="4290953922"/>
+				<mesh name="cave_desert_rock_a.lod4" material="terrain_ground_dirt" factor="4290953922"/>
+				<mesh name="cave_desert_rock_a.lod5" material="terrain_ground_dirt" factor="4290953922"/>
+			</meta_mesh_component>
+		</components>
+		<scripts>
+			<script name="PE_DestructibleWithItem">
+				<variables>
+					<variable name="ItemDrops" value="pe_clay,50,1,100"/>
+					<variable name="RespawnAsSeconds" value="1200"/>
+					<variable name="ApplyPhysicsOnDestruction" value="false"/>
+					<variable name="PhysicMaterial" value="stone"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+					<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+					<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+					<variable name="RequiredSkillId" value="Gathering"/>
+					<variable name="RequiredSkillLevel" value="10"/>
+					<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+					<variable name="MaxHitPoint" value="1000.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="pe_silver_node" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="no_shadow" value="true"/>
+		</visibility_masks>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+		<components>
+			<meta_mesh_component name="cave_desert_rock_a">
+				<mesh name="cave_desert_rock_a" material="siege_metal" factor="4284467954"/>
+				<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4284467954"/>
+				<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4284467954"/>
+				<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4284467954"/>
+			</meta_mesh_component>
+		</components>
+		<scripts>
+			<script name="PE_DestructibleWithItem">
+				<variables>
+					<variable name="ItemDrops" value="pe_silverore,50,1,100"/>
+					<variable name="RespawnAsSeconds" value="1200"/>
+					<variable name="ApplyPhysicsOnDestruction" value="false"/>
+					<variable name="PhysicMaterial" value="stone"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+					<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+					<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+					<variable name="RequiredSkillId" value="Gathering"/>
+					<variable name="RequiredSkillLevel" value="10"/>
+					<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+					<variable name="MaxHitPoint" value="1000.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="pe_salt_node" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+		<components>
+			<meta_mesh_component name="cave_desert_rock_a">
+				<mesh name="cave_desert_rock_a" material="outermesh_mountains_a_winter_mat" factor="4288453788" argument="1.000, 1.000, 0.000, 0.000"/>
+				<mesh name="cave_desert_rock_a.lod2" material="outermesh_mountains_a_winter_mat" factor="4288453788"/>
+				<mesh name="cave_desert_rock_a.lod4" material="outermesh_mountains_a_winter_mat" factor="4288453788"/>
+				<mesh name="cave_desert_rock_a.lod5" material="outermesh_mountains_a_winter_mat" factor="4288453788"/>
+			</meta_mesh_component>
+		</components>
+		<scripts>
+			<script name="PE_DestructibleWithItem">
+				<variables>
+					<variable name="AllowedClass" value="OneHandedAxe"/>
+					<variable name="ItemDrops" value="pe_salt,50,1,100"/>
+					<variable name="RespawnAsSeconds" value="15"/>
+					<variable name="ApplyPhysicsOnDestruction" value="false"/>
+					<variable name="PhysicMaterial" value="stone"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+					<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+					<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="pe_gold_node" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+		<components>
+			<meta_mesh_component name="cave_desert_rock_a">
+				<mesh name="cave_desert_rock_a" material="siege_metal" factor="4294959118"/>
+				<mesh name="cave_desert_rock_a.lod2" material="siege_metal" factor="4294959118"/>
+				<mesh name="cave_desert_rock_a.lod4" material="siege_metal" factor="4294959118"/>
+				<mesh name="cave_desert_rock_a.lod5" material="siege_metal" factor="4294959118"/>
+			</meta_mesh_component>
+		</components>
+		<scripts>
+			<script name="PE_DestructibleWithItem">
+				<variables>
+					<variable name="ItemDrops" value="pe_goldore,50,1,100"/>
+					<variable name="RespawnAsSeconds" value="3600"/>
+					<variable name="ApplyPhysicsOnDestruction" value="false"/>
+					<variable name="PhysicMaterial" value="stone"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+					<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+					<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+					<variable name="RequiredSkillId" value="Gathering"/>
+					<variable name="RequiredSkillLevel" value="10"/>
+					<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="pe_stone_node" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cave_desert_rock_a" override_material="stone"/>
+		<components>
+			<meta_mesh_component name="cave_desert_rock_a">
+				<mesh name="cave_desert_rock_a" material="stone_white_a"/>
+				<mesh name="cave_desert_rock_a.lod2" material="stone_white_a"/>
+				<mesh name="cave_desert_rock_a.lod4" material="stone_white_a"/>
+				<mesh name="cave_desert_rock_a.lod5" material="stone_white_a"/>
+			</meta_mesh_component>
+		</components>
+		<scripts>
+			<script name="PE_DestructibleWithItem">
+				<variables>
+					<variable name="ItemDrops" value="pe_stone,50,1,100"/>
+					<variable name="RespawnAsSeconds" value="1200"/>
+					<variable name="ApplyPhysicsOnDestruction" value="false"/>
+					<variable name="PhysicMaterial" value="stone"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_merlon_empire_l3"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/stone_destroy"/>
+					<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+					<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+					<variable name="RequiredSkillId" value="Gathering"/>
+					<variable name="RequiredSkillLevel" value="10"/>
+					<variable name="RequiredItemId" value="PE_peasant_pickaxe_1_t1"/>
+					<variable name="MaxHitPoint" value="250.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+</prefabs>
+

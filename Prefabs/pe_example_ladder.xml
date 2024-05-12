@@ -1,0 +1,68 @@
+<prefabs>
+	<game_entity name="pe_example_Ladder" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="crate_c" old_prefab_name="" mobility="1">
+				<transform position="-1.832, 0.242, 0.000" rotation_euler="0.000, 0.000, 3.133"/>
+				<physics shape="bo_crate_c"/>
+				<components>
+					<meta_mesh_component name="crate_c"/>
+				</components>
+				<scripts>
+					<script name="PE_LadderBuilder">
+						<variables>
+							<variable name="DestructionState" value=""/>
+							<variable name="LadderEntityTag" value="ladder_entity"/>
+							<variable name="RepairItem" value="pe_buildhammer"/>
+							<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+							<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+							<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+							<variable name="DestroyedByStoneOnly" value="false"/>
+							<variable name="AlwaysEffectOnDestroy" value="false"/>
+							<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+							<variable name="RepairDamage" value="25"/>
+							<variable name="MaxHitPoint" value="600.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="siege_ladder_8m_spawner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="prefab_cannot_be_broken" value="true"/>
+				</flags>
+				<transform position="0.113, 0.644, 0.000"/>
+				<scripts>
+					<script name="SiegeLadderSpawner">
+						<variables>
+							<variable name="fork_holder" value="-1.000000, 0.000593, 0.000000, 0.000000, -0.000593, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 1.887000, 4.955000, 9.746000, 1.000000"/>
+							<variable name="initial_wait_pos" value="1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.555000, -37.929001, 0.000000, 1.000000"/>
+							<variable name="use_push" value="-0.999954, 0.009593, 0.000000, 0.000000, -0.009593, -0.999954, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, -0.175000, 4.638000, 9.711000, 1.000000"/>
+							<variable name="stand_position_wall_push" value="0.000000, 0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 1.000000"/>
+							<variable name="distance_holder" value="1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000"/>
+							<variable name="stand_position_ground_wait" value="0.000000, 0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 1.000000"/>
+							<variable name="SideTag" value=""/>
+							<variable name="TargetWallSegmentTag" value=""/>
+							<variable name="OnWallNavMeshId" value="-1"/>
+							<variable name="AddOnDeployTag" value=""/>
+							<variable name="RemoveOnDeployTag" value=""/>
+							<variable name="UpperStateRotationDegree" value="-19.000"/>
+							<variable name="DownStateRotationDegree" value="90.000"/>
+							<variable name="TacticalPositionWidth" value="1.000"/>
+							<variable name="BarrierTagToRemove" value=""/>
+							<variable name="IndestructibleMerlonsTag" value=""/>
+							<variable name="ToBeSpawnedOverrideName" value=""/>
+							<variable name="ToBeSpawnedOverrideNameForFireVersion" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

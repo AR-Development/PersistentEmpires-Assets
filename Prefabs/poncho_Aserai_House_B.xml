@@ -1,0 +1,710 @@
+<prefabs>
+	<game_entity name="PONCHO_Aserai_House_B" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_UpgradeableBuildings">
+				<variables>
+					<variable name="CastleIndex" value="0"/>
+					<variable name="BuildingName" value="UNKNOWN"/>
+					<variable name="Tier0Tag" value="tier0"/>
+					<variable name="Tier1Tag" value="tier1"/>
+					<variable name="Tier2Tag" value=""/>
+					<variable name="Tier3Tag" value=""/>
+					<variable name="BuildingInteractiveTag" value=""/>
+					<variable name="Tier1RequiredEngineering" value="10"/>
+					<variable name="Tier2RequiredEngineering" value="10"/>
+					<variable name="Tier3RequiredEngineering" value="10"/>
+					<variable name="Tier1MaxHit" value="200"/>
+					<variable name="Tier2MaxHit" value="300"/>
+					<variable name="Tier3MaxHit" value="400"/>
+					<variable name="Tier1UpgradeReceipts" value=""/>
+					<variable name="Tier2UpgradeReceipts" value=""/>
+					<variable name="Tier3UpgradeReceipts" value=""/>
+					<variable name="ParticleEffectOnUpgrade" value=""/>
+					<variable name="SoundEffectOnUpgrade" value=""/>
+					<variable name="BuildItem" value="pe_buildhammer"/>
+					<variable name="Tier1CraftingEngineering" value="10"/>
+					<variable name="Tier2CraftingEngineering" value="15"/>
+					<variable name="Tier3CraftingEngineering" value="20"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="tier0" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier0"/>
+				</tags>
+				<children>
+					<game_entity name="poncho_aseraihome_t0" old_prefab_name="" mobility="1">
+						<transform position="2.108, -6.320, 6.557"/>
+						<physics shape="bo_bd_aserai_vaze_a"/>
+						<components>
+							<meta_mesh_component name="bd_aserai_vaze_a"/>
+						</components>
+						<children>
+							<game_entity name="aserai_dungeon_door_a_empty" old_prefab_name="" mobility="1">
+								<transform position="-1.901, 0.318, -4.385" rotation_euler="0.000, 0.000, 1.573"/>
+								<physics shape="bo_aserai_dungeon_door_a_empty"/>
+								<components>
+									<meta_mesh_component name="aserai_dungeon_door_a_empty"/>
+								</components>
+							</game_entity>
+							<game_entity name="khuzait_grandbazaar_ground_a" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_khuzait_grandbazaar_ground_a">
+								<transform position="0.674, 0.423, -9.328" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.550, 1.000"/>
+								<physics shape="bo_khuzait_grandbazaar_ground_a"/>
+								<components>
+									<meta_mesh_component name="khuzait_grandbazaar_ground_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_wall_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-5.583, 4.642, -5.606" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_module_wall_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_wall_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_ceiling_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-3.595, 7.026, -5.505"/>
+								<physics shape="bo_module_ceiling_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_ceiling_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_ceiling_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-0.329, 7.024, -5.542"/>
+								<physics shape="bo_module_ceiling_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_ceiling_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_ceiling_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-4.449, 4.944, -5.577"/>
+								<physics shape="bo_module_ceiling_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_ceiling_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_ceiling_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-0.614, 4.952, -5.582"/>
+								<physics shape="bo_module_ceiling_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_ceiling_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_ceiling_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-3.605, 10.352, -5.505"/>
+								<physics shape="bo_module_ceiling_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_ceiling_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_ceiling_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-0.340, 10.350, -5.542"/>
+								<physics shape="bo_module_ceiling_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_ceiling_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_wall_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-5.583, 7.779, -5.606" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_module_wall_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_wall_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_wall_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-5.409, 10.972, -5.606" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_module_wall_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_wall_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_wall_plank_a" old_prefab_name="" mobility="1">
+								<transform position="1.458, 10.972, -5.606" rotation_euler="0.000, 0.000, 1.562"/>
+								<physics shape="bo_module_wall_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_wall_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_wall_plank_a" old_prefab_name="" mobility="1">
+								<transform position="1.458, 7.958, -5.606" rotation_euler="0.000, 0.000, 1.562"/>
+								<physics shape="bo_module_wall_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_wall_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_wall_plank_a" old_prefab_name="" mobility="1">
+								<transform position="1.468, 5.232, -5.606" rotation_euler="0.000, 0.000, 1.562"/>
+								<physics shape="bo_module_wall_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_wall_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_ceiling_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-0.159, 0.745, -5.582" rotation_euler="0.000, 0.000, 0.000" scale="0.400, 0.800, 1.000"/>
+								<physics shape="bo_module_ceiling_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_ceiling_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_ceiling_plank_a" old_prefab_name="" mobility="1">
+								<transform position="1.922, 0.745, -5.582" rotation_euler="0.000, 0.000, 0.000" scale="0.150, 0.800, 1.000"/>
+								<physics shape="bo_module_ceiling_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_ceiling_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_ladder_b" old_prefab_name="" mobility="1">
+								<transform position="-9.828, 7.647, -5.829" rotation_euler="-0.245, 0.000, -1.639"/>
+								<physics shape="bo_bd_ladder_b" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="bd_ladder_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="wall_adobe_stone_detail_a" old_prefab_name="" mobility="1">
+								<transform position="-9.566, 5.771, -5.998" rotation_euler="1.529, 3.141, -2.307"/>
+								<physics override_material="stone"/>
+								<components>
+									<meta_mesh_component name="wall_adobe_stone_detail_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="wall_adobe_stone_detail_a" old_prefab_name="" mobility="1">
+								<transform position="-9.319, 4.363, -5.998" rotation_euler="1.529, 3.141, -1.496"/>
+								<physics override_material="stone"/>
+								<components>
+									<meta_mesh_component name="wall_adobe_stone_detail_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="wall_adobe_stone_detail_b" old_prefab_name="" mobility="1">
+								<transform position="-8.880, 13.094, -6.059" rotation_euler="1.495, 0.000, -1.934"/>
+								<physics override_material="stone"/>
+								<components>
+									<meta_mesh_component name="wall_adobe_stone_detail_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="wall_adobe_stone_detail_b" old_prefab_name="" mobility="1">
+								<transform position="-9.032, 7.112, -6.059" rotation_euler="1.495, 0.000, 1.266"/>
+								<physics override_material="stone"/>
+								<components>
+									<meta_mesh_component name="wall_adobe_stone_detail_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_hammer" old_prefab_name="" mobility="1">
+								<transform position="-0.089, 1.095, 0.022" rotation_euler="-0.023, 0.000, -0.548"/>
+								<components>
+									<meta_mesh_component name="bd_hammer"/>
+								</components>
+							</game_entity>
+							<game_entity name="fence_adobe_c" old_prefab_name="" mobility="1">
+								<transform position="-5.734, 1.635, 0.183" rotation_euler="0.000, 0.000, 3.141"/>
+								<physics shape="bo_fence_adobe_c" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="fence_adobe_c"/>
+								</components>
+							</game_entity>
+							<game_entity name="cave_desert_rock_small_b" old_prefab_name="" mobility="1">
+								<transform position="-3.960, 3.018, 0.006" rotation_euler="0.000, 0.000, -0.914"/>
+								<components>
+									<meta_mesh_component name="cave_desert_rock_small_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="arabian_building_detail_f" old_prefab_name="" mobility="1">
+								<transform position="3.372, 10.233, -0.814" rotation_euler="0.000, 0.000, 1.571"/>
+								<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arabian_building_detail_f"/>
+								</components>
+							</game_entity>
+							<game_entity name="arabian_building_detail_f" old_prefab_name="" mobility="1">
+								<transform position="3.227, 3.977, -0.783" rotation_euler="0.000, 0.000, 1.571"/>
+								<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arabian_building_detail_f"/>
+								</components>
+							</game_entity>
+							<game_entity name="arabian_building_detail_f" old_prefab_name="" mobility="1">
+								<transform position="-7.717, 6.868, -0.814" rotation_euler="0.000, 0.000, 1.571"/>
+								<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arabian_building_detail_f"/>
+								</components>
+							</game_entity>
+							<game_entity name="arabian_building_detail_f" old_prefab_name="" mobility="1">
+								<transform position="-7.665, 9.993, -0.814" rotation_euler="0.000, 0.000, 1.571"/>
+								<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arabian_building_detail_f"/>
+								</components>
+							</game_entity>
+							<game_entity name="arabian_building_detail_f" old_prefab_name="" mobility="1">
+								<transform position="-2.525, 13.329, -0.810"/>
+								<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arabian_building_detail_f"/>
+								</components>
+							</game_entity>
+							<game_entity name="arabian_building_detail_f" old_prefab_name="" mobility="1">
+								<transform position="0.572, 13.282, -0.810"/>
+								<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arabian_building_detail_f"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_aserai_seat_a_unsittable" old_prefab_name="" mobility="1">
+								<transform position="1.177, 1.073, 0.000" rotation_euler="0.000, 0.000, 0.844"/>
+								<physics shape="bo_bd_aserai_seat_a"/>
+								<components>
+									<meta_mesh_component name="bd_aserai_seat_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_aserai_seat_a_unsittable" old_prefab_name="" mobility="1">
+								<transform position="1.214, -0.427, 0.000" rotation_euler="0.000, 0.000, -0.427"/>
+								<physics shape="bo_bd_aserai_seat_a"/>
+								<components>
+									<meta_mesh_component name="bd_aserai_seat_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="arena_arabian_window_a" old_prefab_name="" mobility="1">
+								<transform position="-6.081, 14.009, -1.731" rotation_euler="0.000, -3.139, 0.034"/>
+								<physics shape="bo_arena_arabian_window_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arena_arabian_window_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="arena_arabian_window_a" old_prefab_name="" mobility="1">
+								<transform position="3.961, -0.067, -2.468" rotation_euler="0.000, -3.139, -1.464"/>
+								<physics shape="bo_arena_arabian_window_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arena_arabian_window_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="arena_arabian_window_a" old_prefab_name="" mobility="1">
+								<transform position="2.479, -1.980, -1.995" rotation_euler="0.000, -3.139, -3.111"/>
+								<physics shape="bo_arena_arabian_window_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arena_arabian_window_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="arena_arabian_window_a" old_prefab_name="" mobility="1">
+								<transform position="-3.361, 1.303, -2.286" rotation_euler="0.000, -3.139, -3.111"/>
+								<physics shape="bo_arena_arabian_window_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arena_arabian_window_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_castle_keep_a_l3_interior_window_a" old_prefab_name="" mobility="1">
+								<transform position="-6.195, 1.282, -4.419" rotation_euler="0.000, 0.000, 0.000" scale="0.350, 0.700, 0.600"/>
+								<physics shape="bo_empire_castle_keep_a_l3_interior_window_a"/>
+								<components>
+									<meta_mesh_component name="empire_castle_keep_a_l3_interior_window_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_wall_plank_a" old_prefab_name="" mobility="1">
+								<transform position="1.468, 5.232, -5.606" rotation_euler="0.000, 0.000, 1.562"/>
+								<physics shape="bo_module_wall_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_wall_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_wall_plank_a" old_prefab_name="" mobility="1">
+								<transform position="1.458, 10.972, -5.606" rotation_euler="0.000, 0.000, 1.562"/>
+								<physics shape="bo_module_wall_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_wall_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_ceiling_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-0.614, 4.952, -5.582"/>
+								<physics shape="bo_module_ceiling_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_ceiling_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_ceiling_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-0.329, 7.024, -5.542"/>
+								<physics shape="bo_module_ceiling_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_ceiling_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_wall_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-5.583, 4.642, -5.606" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_module_wall_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_wall_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_wall_plank_a" old_prefab_name="" mobility="1">
+								<transform position="1.458, 7.958, -5.606" rotation_euler="0.000, 0.000, 1.562"/>
+								<physics shape="bo_module_wall_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_wall_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="khuzait_grandbazaar_ground_a" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_khuzait_grandbazaar_ground_a">
+								<transform position="0.674, 0.423, -0.005" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.550, 0.001"/>
+								<physics shape="bo_khuzait_grandbazaar_ground_a"/>
+								<components>
+									<meta_mesh_component name="khuzait_grandbazaar_ground_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_ladder_b" old_prefab_name="" mobility="1">
+								<transform position="-9.026, 7.594, -3.068" rotation_euler="-0.245, 0.000, -1.639"/>
+								<physics shape="bo_bd_ladder_b" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="bd_ladder_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_wall_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-5.583, 7.779, -5.606" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_module_wall_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_wall_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="arabian_building_detail_f" old_prefab_name="" mobility="1">
+								<transform position="-7.810, 3.736, -0.783" rotation_euler="0.000, 0.000, 1.571"/>
+								<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arabian_building_detail_f"/>
+								</components>
+							</game_entity>
+							<game_entity name="arabian_building_detail_f" old_prefab_name="" mobility="1">
+								<transform position="-5.698, 13.375, -0.814"/>
+								<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arabian_building_detail_f"/>
+								</components>
+							</game_entity>
+							<game_entity name="wall_adobe_stone_detail_a" old_prefab_name="" mobility="1">
+								<transform position="-9.319, 4.363, -5.998" rotation_euler="1.529, 3.141, -1.496"/>
+								<physics override_material="stone"/>
+								<components>
+									<meta_mesh_component name="wall_adobe_stone_detail_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="wall_adobe_stone_detail_b" old_prefab_name="" mobility="1">
+								<transform position="-8.880, 13.094, -6.059" rotation_euler="1.495, 0.000, -1.934"/>
+								<physics override_material="stone"/>
+								<components>
+									<meta_mesh_component name="wall_adobe_stone_detail_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_street_tent_06" old_prefab_name="" mobility="1">
+								<transform position="0.480, -0.581, 0.000"/>
+								<physics shape="bo_empire_street_tent_04"/>
+								<components>
+									<meta_mesh_component name="empire_street_tent_06"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_ceiling_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-3.595, 7.026, -5.505"/>
+								<physics shape="bo_module_ceiling_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_ceiling_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_wall_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-5.409, 10.972, -5.606" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_module_wall_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_wall_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="arabian_building_detail_f" old_prefab_name="" mobility="1">
+								<transform position="3.321, 7.108, -0.814" rotation_euler="0.000, 0.000, 1.571"/>
+								<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arabian_building_detail_f"/>
+								</components>
+							</game_entity>
+							<game_entity name="wall_adobe_stone_detail_a" old_prefab_name="" mobility="1">
+								<transform position="-9.566, 5.771, -5.998" rotation_euler="1.529, 3.141, -2.307"/>
+								<physics override_material="stone"/>
+								<components>
+									<meta_mesh_component name="wall_adobe_stone_detail_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_ceiling_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-4.449, 4.944, -5.577"/>
+								<physics shape="bo_module_ceiling_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_ceiling_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_ceiling_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-0.159, 0.745, -5.582" rotation_euler="0.000, 0.000, 0.000" scale="0.400, 0.800, 1.000"/>
+								<physics shape="bo_module_ceiling_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_ceiling_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="aserai_castle_stairs_b_l1" old_prefab_name="" mobility="1">
+								<transform position="-2.184, 1.559, -8.331" rotation_euler="0.000, 0.000, -1.559"/>
+								<physics shape="bo_aserai_castle_stairs_b_l1">
+									<body_flags>
+										<body_flag name="has_steps"/>
+									</body_flags>
+								</physics>
+								<components>
+									<meta_mesh_component name="aserai_castle_stairs_b_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="cave_desert_rock_small_b" old_prefab_name="" mobility="1">
+								<transform position="-2.558, 2.900, 0.006" rotation_euler="0.000, 0.000, 0.200"/>
+								<components>
+									<meta_mesh_component name="cave_desert_rock_small_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="khuzait_grandbazaar_ground_a" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_khuzait_grandbazaar_ground_a">
+								<transform position="-2.180, 7.897, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.300, 1.400, 0.001"/>
+								<physics shape="bo_khuzait_grandbazaar_ground_a"/>
+								<components>
+									<meta_mesh_component name="khuzait_grandbazaar_ground_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+								<transform position="-1.973, 0.119, -0.832" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.400, 0.150"/>
+								<physics shape="bo_aserai_grandbazaar_wall"/>
+								<components>
+									<meta_mesh_component name="aserai_grandbazaar_wall"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_ceiling_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-3.605, 10.352, -5.505"/>
+								<physics shape="bo_module_ceiling_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_ceiling_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="wall_adobe_stone_detail_b" old_prefab_name="" mobility="1">
+								<transform position="-9.032, 7.112, -6.059" rotation_euler="1.495, 0.000, 1.266"/>
+								<physics override_material="stone"/>
+								<components>
+									<meta_mesh_component name="wall_adobe_stone_detail_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="arena_arabian_wall_a" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_arena_arabian_wall_a">
+								<transform position="-4.895, 1.825, -5.657" rotation_euler="0.000, 0.000, 0.000" scale="0.700, 1.000, 1.000"/>
+								<physics shape="bo_arena_arabian_wall_a"/>
+								<components>
+									<meta_mesh_component name="arena_arabian_wall_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_ceiling_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-0.340, 10.350, -5.542"/>
+								<physics shape="bo_module_ceiling_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_ceiling_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="module_ceiling_plank_a" old_prefab_name="" mobility="1">
+								<transform position="1.922, 0.745, -5.582" rotation_euler="0.000, 0.000, 0.000" scale="0.150, 0.800, 1.000"/>
+								<physics shape="bo_module_ceiling_plank_a"/>
+								<components>
+									<meta_mesh_component name="module_ceiling_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_flask_sturgia_c" old_prefab_name="" mobility="1">
+								<transform position="0.525, 1.356, -0.065" rotation_euler="-0.326, -0.344, -1.259"/>
+								<components>
+									<meta_mesh_component name="bd_flask_sturgia_c"/>
+								</components>
+							</game_entity>
+							<game_entity name="khuzait_castle_keep_l3_interior_door_close" old_prefab_name="" mobility="1">
+								<transform position="-1.893, 0.336, -4.388" rotation_euler="0.000, 0.000, 1.571" scale="1.300, 0.200, 1.200"/>
+								<physics shape="bo_khuzait_castle_keep_l3_interior_door_close"/>
+								<components>
+									<meta_mesh_component name="khuzait_castle_keep_l3_interior_door_close"/>
+								</components>
+							</game_entity>
+							<game_entity name="arena_arabian_window_a" old_prefab_name="" mobility="1">
+								<transform position="3.961, -0.067, -2.468" rotation_euler="0.000, -3.139, -1.464"/>
+								<physics shape="bo_arena_arabian_window_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arena_arabian_window_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="arena_arabian_window_a" old_prefab_name="" mobility="1">
+								<transform position="-8.354, 5.722, -2.552" rotation_euler="0.000, 0.000, 1.518"/>
+								<physics shape="bo_arena_arabian_window_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arena_arabian_window_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="arena_arabian_window_a" old_prefab_name="" mobility="1">
+								<transform position="-8.354, 10.003, -2.433" rotation_euler="0.000, -3.139, 1.585"/>
+								<physics shape="bo_arena_arabian_window_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arena_arabian_window_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+								<transform position="0.818, -1.489, -5.909" rotation_euler="0.000, 0.000, -1.571" scale="2.200, 1.000, 1.050"/>
+								<physics shape="bo_aserai_grandbazaar_wall"/>
+								<components>
+									<meta_mesh_component name="aserai_grandbazaar_wall"/>
+								</components>
+							</game_entity>
+							<game_entity name="aserai_castle_stairs_b_l1" old_prefab_name="" mobility="1">
+								<transform position="-2.149, -0.712, -8.331" rotation_euler="0.000, 0.000, -1.559"/>
+								<physics shape="bo_aserai_castle_stairs_b_l1">
+									<body_flags>
+										<body_flag name="has_steps"/>
+									</body_flags>
+								</physics>
+								<components>
+									<meta_mesh_component name="aserai_castle_stairs_b_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="arena_arabian_wall_a" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_arena_arabian_wall_a">
+								<transform position="-7.811, 7.582, -5.463" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_arena_arabian_wall_a"/>
+								<components>
+									<meta_mesh_component name="arena_arabian_wall_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="arena_arabian_wall_a" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_arena_arabian_wall_a">
+								<transform position="-3.135, 13.168, -5.469" rotation_euler="0.000, 0.000, 0.017"/>
+								<physics shape="bo_arena_arabian_wall_a"/>
+								<components>
+									<meta_mesh_component name="arena_arabian_wall_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="arena_arabian_wall_a" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_arena_arabian_wall_a">
+								<transform position="3.070, 11.582, -5.562" rotation_euler="0.000, 0.000, -1.571" scale="0.500, 1.000, 1.000"/>
+								<physics shape="bo_arena_arabian_wall_a"/>
+								<components>
+									<meta_mesh_component name="arena_arabian_wall_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="arena_arabian_wall_a" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_arena_arabian_wall_a">
+								<transform position="3.070, 4.006, -5.593" rotation_euler="0.000, 0.000, -1.571"/>
+								<physics shape="bo_arena_arabian_wall_a"/>
+								<components>
+									<meta_mesh_component name="arena_arabian_wall_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="khuzait_grandbazaar_ground_a" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_khuzait_grandbazaar_ground_a">
+								<transform position="-2.180, 8.152, -9.328" rotation_euler="0.000, 0.000, 0.000" scale="1.300, 1.400, 1.000"/>
+								<physics shape="bo_khuzait_grandbazaar_ground_a"/>
+								<components>
+									<meta_mesh_component name="khuzait_grandbazaar_ground_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+								<transform position="3.276, 1.990, -0.073" rotation_euler="0.000, 0.000, -1.571" scale="2.000, 0.150, 0.200"/>
+								<physics shape="bo_aserai_grandbazaar_wall"/>
+								<components>
+									<meta_mesh_component name="aserai_grandbazaar_wall"/>
+								</components>
+							</game_entity>
+							<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+								<transform position="3.276, -1.492, -0.073" rotation_euler="0.000, 0.000, -1.571" scale="2.000, 0.150, 0.200"/>
+								<physics shape="bo_aserai_grandbazaar_wall"/>
+								<components>
+									<meta_mesh_component name="aserai_grandbazaar_wall"/>
+								</components>
+							</game_entity>
+							<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+								<transform position="-1.634, -1.489, -0.073" rotation_euler="0.000, 0.000, -1.571" scale="2.000, 0.150, 0.200"/>
+								<physics shape="bo_aserai_grandbazaar_wall"/>
+								<components>
+									<meta_mesh_component name="aserai_grandbazaar_wall"/>
+								</components>
+							</game_entity>
+							<game_entity name="arabian_building_detail_f" old_prefab_name="" mobility="1">
+								<transform position="-1.680, 0.050, -1.859" rotation_euler="0.000, 0.000, -1.569"/>
+								<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arabian_building_detail_f"/>
+								</components>
+							</game_entity>
+							<game_entity name="arabian_building_detail_f" old_prefab_name="" mobility="1">
+								<transform position="3.333, 0.249, -1.859" rotation_euler="0.000, 0.000, -1.569"/>
+								<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arabian_building_detail_f"/>
+								</components>
+							</game_entity>
+							<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+								<transform position="-1.793, 1.935, 0.194" rotation_euler="0.000, 0.000, -1.571" scale="2.000, 0.150, 0.150"/>
+								<physics shape="bo_aserai_grandbazaar_wall"/>
+								<components>
+									<meta_mesh_component name="aserai_grandbazaar_wall"/>
+								</components>
+							</game_entity>
+							<game_entity name="arabian_building_detail_f" old_prefab_name="" mobility="1">
+								<transform position="0.754, -1.602, -1.859" rotation_euler="0.000, 0.000, 0.000" scale="1.400, 1.000, 1.000"/>
+								<physics shape="bo_arabian_building_detail_def" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="arabian_building_detail_f"/>
+								</components>
+							</game_entity>
+							<game_entity name="khuzait_grandbazaar_ground_a" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_khuzait_grandbazaar_ground_a">
+								<transform position="-2.180, 7.897, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.300, 1.400, 0.001"/>
+								<physics shape="bo_khuzait_grandbazaar_ground_a"/>
+								<components>
+									<meta_mesh_component name="khuzait_grandbazaar_ground_a"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="european_castle_wall_a_damaged_heap_a" old_prefab_name="" mobility="1">
+						<transform position="-0.051, 2.517, 6.196"/>
+						<physics shape="bo_european_castle_wall_a_damaged_heap_a" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_a_damaged_heap_a">
+								<mesh name="european_castle_wall_a_damaged_heap_a.5" material="cliff_sand"/>
+								<mesh name="european_castle_wall_a_damaged_heap_a.lod4.5" material="cliff_sand"/>
+								<mesh name="european_castle_wall_a_damaged_heap_a.lod5.5" material="cliff_sand"/>
+								<mesh name="european_castle_wall_a_damaged_heap_a.lod6.5" material="cliff_sand"/>
+								<mesh name="european_castle_wall_a_damaged_heap_a.lod7.5" material="cliff_sand"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier1" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier1"/>
+				</tags>
+				<children>
+					<game_entity name="arabian_house_new_b" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_arabian_house_new_b">
+						<transform position="-0.138, 0.510, -0.185"/>
+						<physics shape="bo_arabian_house_new_b"/>
+						<components>
+							<meta_mesh_component name="arabian_house_new_b"/>
+						</components>
+						<children>
+							<game_entity name="scene: arabian_house_new_b_interior_b" old_prefab_name="" mobility="1">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="1.926, 8.707, 0.000"/>
+								<components>
+									<meta_mesh_component name="pandora"/>
+								</components>
+							</game_entity>
+							<game_entity name="scene: arabian_house_new_b_interior_a" old_prefab_name="" mobility="1">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="-2.420, -7.446, 0.000"/>
+								<components>
+									<meta_mesh_component name="pandora"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

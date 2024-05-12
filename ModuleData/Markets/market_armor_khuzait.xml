@@ -1,0 +1,17 @@
+<Market>
+	<Tier1Items>
+		PE_nomad_cap*225*247|PE_decorated_nomad_cap*225*247|PE_eastern_cap*225*247|PE_fur_hat*225*247|PE_upturned_fur_cap*525*577|PE_fur_hood*525*577|PE_peaked_fur_hood*525*577|PE_nomad_padded_hood*525*577|PE_khuzait_crown*1430*1573|PE_plumed_fur_lined_helmet*1430*1573|PE_steppe_robe*475*522|PE_studded_leather_waistcoat*475*522|PE_khuzait_dress_b*475*522|PE_steppe_dress*475*522|PE_khuzait_belt_leather*850*935|PE_steppe_armor*1175*1292|PE_khuzait_dress*1175*1292|PE_khuzait_civil_coat*1175*1292|PE_khuzait_civil_coat_b*1175*1292|PE_reinforced_suede_armor*1175*1292|PE_studded_steppe_leather*1175*1292|PE_belted_leather_cuirass*1175*1292|PE_crude_leather_armor*1175*1292|PE_khuzait_fortified_armor*1175*1292|PE_khuzait_sturdy_armor*1175*1292|PE_studded_leather_over_aketon*1175*1292|PE_khuzait_curved_boots*225*247|PE_woven_leather_boots*225*247|PE_steppe_leather_boots*225*247|PE_leather_boots*225*247|PE_eastern_wrapped_armguards*225*247|PE_studded_leather_vambraces*475*522|PE_studded_vambraces*475*522|PE_a_brass_lamellar_shoulder_b*1460*1606|PE_a_leather_lamellar_armor_shoulder_a*550*605|PE_bolted_leather_strips*600*660|PE_steppe_leather_shoulders*600*660|PE_reinforced_suede_shoulders*600*660|PE_a_metal_lamellar_armor_shoulder_a*1510*1661|PE_a_brass_lamellar_shoulder_a*1510*1661
+	</Tier1Items>
+	<Tier2Items>
+		PE_nomad_helmet*2795*3074|PE_plumed_nomad_helmet*2795*3074|PE_steppe_helmet*2795*3074|PE_plumed_lamellar_helmet*2995*3294|PE_khuzait_battle_crown*2995*3294|PE_eastern_stitched_leather_coat*2000*2200|PE_leather_lamellar_armor*2050*2255|PE_khuzait_lamellar_strapped*4640*5104|PE_eastern_plated_leather_vest*4940*5434|PE_eastern_lamellar_armor*5900*6490|PE_eastern_leather_boots*650*715|PE_reinforced_suede_boots*1200*1320|PE_steppe_leather_vambraces*725*797|PE_eastern_plated_leather_vambraces*2620*2882|PE_leather_lamellar_shoulders*1025*1127|PE_a_khuzait_leather_shoulder_b_b*1150*1265|PE_brass_lamellar_shoulder*2445*2689|PE_eastern_studded_shoulders*1550*1705|PE_a_khuzait_leather_shoulder_b_a*1550*1705|PE_khuzait_leather_pauldron*1550*1705|PE_lamellar_shoulders*3380*3718
+	</Tier2Items>
+	<Tier3Items>
+		PE_spiked_helmet_with_facemask*8880*9768|PE_spiked_helmet*8880*9768|PE_eastern_vendel_helmet*8880*9768|PE_khuzait_noble_helmet_with_feathers*8880*9768|PE_khuzait_noble_helmet_with_fur*8880*9768|PE_khuzait_noble_helmet_with_neckguard*8880*9768|PE_brass_lamellar_over_mail*14865*16351|PE_eastern_plated_leather*14865*16351
+	</Tier3Items>
+	<Tier4Items>
+		
+	</Tier4Items>
+	<CraftingBoxes>
+		pe_armor_crate_t1*1*1|pe_armor_crate_t2*2*2|pe_armor_crate_t3*3*3
+	</CraftingBoxes>
+</Market>

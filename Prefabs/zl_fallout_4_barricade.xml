@@ -1,0 +1,296 @@
+<prefabs>
+	<game_entity name="fallout_4_barricade" old_prefab_name="">
+		<transform position="694.238, 237.570, 19.044" rotation_euler="0.000, -3.131, -0.203"/>
+		<physics shape="bo_module_european_stone_floor_d"/>
+		<components>
+			<meta_mesh_component name="module_european_stone_floor_d"/>
+		</components>
+		<children>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="-2.027, -3.085, -2.097" rotation_euler="0.008, -2.077, 0.031" scale="1.000, 1.591, 1.314"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_b" old_prefab_name="">
+				<transform position="-1.830, -1.428, -2.766" rotation_euler="1.065, -3.046, -1.596"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_b"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="-2.019, 2.218, -1.961" rotation_euler="0.008, -2.077, 0.031" scale="1.000, 1.591, 1.314"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_b" old_prefab_name="">
+				<transform position="-2.021, 3.994, -2.529" rotation_euler="1.040, -3.115, -1.513"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_b"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="-1.100, -5.902, -3.020" rotation_euler="0.008, -2.697, 0.031" scale="0.593, 1.591, 1.314"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="-0.166, -6.083, -3.048" rotation_euler="0.000, 3.131, -0.014"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="1.375, 5.439, -2.156" rotation_euler="0.000, 2.383, 0.011" scale="1.394, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_c" old_prefab_name="">
+				<transform position="0.076, 8.388, -0.571" rotation_euler="-0.021, 1.567, -3.103" scale="0.793, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_c"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_c" old_prefab_name="">
+				<transform position="2.501, 8.482, -0.579" rotation_euler="-0.021, 1.567, -3.103" scale="0.793, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_c"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_c" old_prefab_name="">
+				<transform position="-2.445, -0.612, -0.681" rotation_euler="0.011, 1.584, -1.576" scale="0.793, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_c"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="-0.317, 2.243, -3.051" rotation_euler="0.000, 3.131, -0.014"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_b" old_prefab_name="">
+				<transform position="-0.883, -2.894, -3.129" rotation_euler="1.553, -3.002, -1.693"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_b"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="-0.273, 5.460, -2.980" rotation_euler="0.000, 3.131, -0.014"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="-2.060, 5.422, -1.904" rotation_euler="0.008, -2.077, 0.031" scale="1.000, 1.591, 1.314"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="-1.947, -5.936, -2.123" rotation_euler="0.008, -2.077, 0.031" scale="1.000, 1.591, 1.314"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_c" old_prefab_name="">
+				<transform position="-2.471, -6.006, -0.754" rotation_euler="0.011, 1.584, -1.576" scale="0.793, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_c"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_stairs_c_l2" old_prefab_name="">
+				<transform position="4.705, 0.238, 3.376" rotation_euler="-0.011, 3.142, 1.567" scale="7.034, 1.921, 2.065"/>
+				<physics shape="bo_european_castle_stairs_c_l2">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="european_castle_stairs_c_l2"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="-1.205, 2.238, -2.850" rotation_euler="0.008, -2.697, 0.031" scale="0.593, 1.591, 1.314"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="-0.364, -0.457, -3.122" rotation_euler="0.000, 3.131, 0.067"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="2.271, 5.452, -0.307" rotation_euler="0.000, 1.656, 0.011" scale="1.375, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="-1.208, -0.490, -2.946" rotation_euler="0.008, -2.697, 0.031" scale="0.593, 1.591, 1.314"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_c" old_prefab_name="">
+				<transform position="-2.459, -3.548, -0.721" rotation_euler="0.011, 1.584, -1.576" scale="0.793, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_c"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_stone_floor_d" old_prefab_name="">
+				<transform position="2.650, -0.055, 2.698" rotation_euler="-0.003, -1.629, -0.009"/>
+				<physics shape="bo_module_european_stone_floor_d"/>
+				<components>
+					<meta_mesh_component name="module_european_stone_floor_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_stone_floor_d" old_prefab_name="">
+				<transform position="-2.737, -0.015, 2.716" rotation_euler="0.000, -1.559, -0.010"/>
+				<physics shape="bo_module_european_stone_floor_d"/>
+				<components>
+					<meta_mesh_component name="module_european_stone_floor_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_b" old_prefab_name="">
+				<transform position="-1.625, -4.525, -2.833" rotation_euler="1.040, -3.115, -1.513"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_b"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_b" old_prefab_name="">
+				<transform position="-0.857, -4.398, -3.133" rotation_euler="1.553, -3.002, -1.693"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_b"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_c" old_prefab_name="">
+				<transform position="-2.431, 2.322, -0.641" rotation_euler="0.011, 1.584, -1.576" scale="0.793, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_c"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_b" old_prefab_name="">
+				<transform position="-1.906, 1.500, -2.617" rotation_euler="1.040, -3.115, -1.513"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_b"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="-1.284, 5.453, -2.783" rotation_euler="0.008, -2.697, 0.031" scale="0.593, 1.591, 1.314"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_b" old_prefab_name="">
+				<transform position="-0.941, 0.352, -3.121" rotation_euler="1.553, -3.002, -1.693"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_b"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_c" old_prefab_name="">
+				<transform position="0.250, -8.578, -0.672" rotation_euler="-0.021, 1.567, 3.141" scale="0.793, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_c"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="-0.015, -3.014, -3.227" rotation_euler="0.000, 3.131, -0.014"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_c" old_prefab_name="">
+				<transform position="2.594, -8.578, -0.681" rotation_euler="-0.021, 1.567, 3.141" scale="0.793, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_c"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="-1.204, -3.033, -2.999" rotation_euler="0.008, -2.697, 0.031" scale="0.593, 1.591, 1.314"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_b" old_prefab_name="">
+				<transform position="-1.098, 4.076, -3.073" rotation_euler="1.549, -2.480, -2.151"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_b"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_c" old_prefab_name="">
+				<transform position="-2.402, 8.089, -0.562" rotation_euler="0.011, 1.584, -1.576" scale="0.793, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_c"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="-2.043, -0.513, -2.042" rotation_euler="0.008, -2.077, 0.031" scale="1.000, 1.591, 1.314"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_c" old_prefab_name="">
+				<transform position="-2.417, 5.160, -0.602" rotation_euler="0.011, 1.584, -1.576" scale="0.793, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_c"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="1.428, -6.078, -2.259" rotation_euler="0.000, 2.383, 0.011" scale="1.394, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="2.328, -6.068, -0.299" rotation_euler="0.000, 1.656, 0.011" scale="1.375, 1.000, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

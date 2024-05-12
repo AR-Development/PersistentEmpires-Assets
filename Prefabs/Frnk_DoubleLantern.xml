@@ -1,0 +1,224 @@
+<prefabs>
+	<game_entity name="Frnk_DoubleLantern" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="0.169, 0.032, 2.498" rotation_euler="1.571, 0.000, -1.494" scale="1.000, 0.504, 0.344"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="-0.003, 0.018, 1.012" rotation_euler="0.000, 3.142, 1.648" scale="0.636, 0.752, 1.000"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="-0.192, -0.005, 2.290" rotation_euler="1.034, 0.440, -1.915" scale="0.288, 0.260, 0.146"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m">
+						<mesh name="bd_pole_3m.14" material="siege_metal"/>
+						<mesh name="bd_pole_3m.lod3.14" material="siege_metal"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="0.171, 0.051, 2.313" rotation_euler="-0.083, -1.058, -3.019" scale="0.288, 0.260, 0.146"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m">
+						<mesh name="bd_pole_3m.14" material="siege_metal"/>
+						<mesh name="bd_pole_3m.lod3.14" material="siege_metal"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="0.169, 0.032, 2.498" rotation_euler="1.568, -1.571, 0.077" scale="1.000, 0.504, 0.344"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_chains_sturgia" old_prefab_name="">
+				<transform position="-0.765, -0.037, 2.460" rotation_euler="0.000, 0.000, 2.891" scale="1.000, 1.000, 0.377"/>
+				<components>
+					<meta_mesh_component name="bd_chains_sturgia"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_chains_sturgia" old_prefab_name="">
+				<transform position="0.716, 0.011, 2.460" rotation_euler="0.000, 0.000, 2.891" scale="1.000, 1.000, 0.377"/>
+				<components>
+					<meta_mesh_component name="bd_chains_sturgia"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="0.023, 0.050, -1.141" rotation_euler="0.000, 3.142, 1.648" scale="1.178, 1.313, 1.000"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="0.008, 0.026, 0.616" rotation_euler="0.000, 3.142, 1.648" scale="1.309, 1.319, 0.024"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="0.008, 0.031, 0.747" rotation_euler="0.000, 3.142, 1.648" scale="1.163, 1.121, 0.024"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m"/>
+				</components>
+			</game_entity>
+			<game_entity name="torch_outdoors_a" old_prefab_name="">
+				<transform position="0.724, 0.004, 1.890" rotation_euler="0.000, 0.000, -1.494" scale="0.302, 0.312, 0.245"/>
+				<physics shape="bo_torch_outdoors_a"/>
+				<components>
+					<meta_mesh_component name="torch_outdoors_a">
+						<mesh name="torch_outdoors_a.lod1" argument="0.550, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod1.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod2" argument="0.550, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod2.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a" argument="0.550, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod3" argument="0.550, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod3.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod4" argument="0.550, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod4.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod5.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="light" old_prefab_name="">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.000, 0.000, 1.630" rotation_euler="0.000, 0.000, -0.777"/>
+						<components>
+							<light_component color="1.000, 0.596, 0.243" intensity="60.000" radius="15.000" flicker_interval="0.400" flicker_magnitude="1.700" local_frame_rot="15.000000, 0.000000, 0.000000, 0.000000, 15.000000, 0.000000, 0.000000, 0.000000, 15.000000" hotspot_angle="31.400" falloff_angle="45.000" shadow="1" shadow_size_multiplier="1" shadow_radius="3.500"/>
+						</components>
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable name="alwaysBurn" value="false"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="-0.023, 0.020, 2.514" rotation_euler="0.654, 3.088, 1.379" scale="1.201, 0.924, 0.007"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m">
+						<mesh name="bd_pole_3m.14" material="siege_metal"/>
+						<mesh name="bd_pole_3m.lod3.14" material="siege_metal"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="0.037, 0.017, 2.489" rotation_euler="0.944, 0.075, -1.716" scale="0.964, 0.916, 0.008"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m">
+						<mesh name="bd_pole_3m.14" material="siege_metal"/>
+						<mesh name="bd_pole_3m.lod3.14" material="siege_metal"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="-0.756, -0.040, 2.498" rotation_euler="1.571, 0.000, -1.494" scale="1.192, 0.693, 0.017"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m">
+						<mesh name="bd_pole_3m.14" material="siege_metal"/>
+						<mesh name="bd_pole_3m.lod3.14" material="siege_metal"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="0.730, 0.075, 2.498" rotation_euler="1.571, 0.000, -1.494" scale="1.192, 0.693, 0.017"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m">
+						<mesh name="bd_pole_3m.14" material="siege_metal"/>
+						<mesh name="bd_pole_3m.lod3.14" material="siege_metal"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_house_bridge_e_roof" old_prefab_name="">
+				<transform position="-0.770, -0.041, 2.169" rotation_euler="0.000, 0.000, -1.494" scale="0.051, 0.050, 0.045"/>
+				<physics shape="bo_empire_house_bridge_e_roof" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_house_bridge_e_roof">
+						<mesh name="empire_house_bridge_e_roof.0" material="siege_metal"/>
+						<mesh name="empire_house_bridge_e_roof.lod3.0" material="siege_metal"/>
+						<mesh name="empire_house_bridge_e_roof.lod4.0" material="siege_metal"/>
+						<mesh name="empire_house_bridge_e_roof.lod5" material="siege_metal"/>
+						<mesh name="empire_house_bridge_e_roof.lod6" material="siege_metal"/>
+						<mesh name="empire_house_bridge_e_roof.lod7" material="siege_metal"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="torch_outdoors_a" old_prefab_name="">
+				<transform position="-0.771, -0.037, 1.890" rotation_euler="0.000, 0.000, -1.494" scale="0.302, 0.312, 0.245"/>
+				<physics shape="bo_torch_outdoors_a"/>
+				<components>
+					<meta_mesh_component name="torch_outdoors_a">
+						<mesh name="torch_outdoors_a.lod1" argument="0.550, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod1.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod2" argument="0.550, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod2.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a" argument="0.550, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod3" argument="0.550, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod3.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod4" argument="0.550, 0.500, 1.000, 75.000" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod4.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+						<mesh name="torch_outdoors_a.lod5.3" argument2="5.000, 5.000, 5.000, 5.000"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="light" old_prefab_name="">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="0.000, 0.000, 1.630" rotation_euler="0.000, 0.000, -0.777"/>
+						<components>
+							<light_component color="1.000, 0.596, 0.243" intensity="60.000" radius="15.000" flicker_interval="0.400" flicker_magnitude="2.000" local_frame_rot="15.000000, 0.000000, 0.000000, 0.000000, 15.000000, 0.000000, 0.000000, 0.000000, 15.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow="1" shadow_size_multiplier="1" shadow_radius="3.500"/>
+						</components>
+						<scripts>
+							<script name="LightCycle">
+								<variables>
+									<variable name="alwaysBurn" value="false"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="empire_house_bridge_e_roof" old_prefab_name="">
+				<transform position="0.725, 0.000, 2.169" rotation_euler="0.000, 0.000, -1.494" scale="0.051, 0.050, 0.045"/>
+				<physics shape="bo_empire_house_bridge_e_roof" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_house_bridge_e_roof">
+						<mesh name="empire_house_bridge_e_roof.0" material="siege_metal"/>
+						<mesh name="empire_house_bridge_e_roof.lod3.0" material="siege_metal"/>
+						<mesh name="empire_house_bridge_e_roof.lod4.0" material="siege_metal"/>
+						<mesh name="empire_house_bridge_e_roof.lod5" material="siege_metal"/>
+						<mesh name="empire_house_bridge_e_roof.lod6" material="siege_metal"/>
+						<mesh name="empire_house_bridge_e_roof.lod7" material="siege_metal"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

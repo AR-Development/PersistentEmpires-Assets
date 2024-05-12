@@ -1,0 +1,87 @@
+<prefabs>
+	<game_entity name="Frnk_LanternPost_aserai" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="-0.263, 0.021, -1.932" rotation_euler="0.000, 0.000, -0.629" scale="1.000, 1.000, 0.906"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m">
+						<mesh name="bd_pole_3m.14" material="planks_6"/>
+						<mesh name="bd_pole_3m.lod3.14" material="planks_6"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="-0.256, 0.031, 0.711" rotation_euler="0.000, 0.000, -0.629" scale="1.000, 1.000, 0.013"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m">
+						<mesh name="bd_pole_3m.14" material="siege_metal"/>
+						<mesh name="bd_pole_3m.lod3.14" material="siege_metal"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="-0.256, 0.031, 0.759" rotation_euler="0.000, 0.000, -0.629" scale="0.684, 0.774, 0.013"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m">
+						<mesh name="bd_pole_3m.14" material="siege_metal"/>
+						<mesh name="bd_pole_3m.lod3.14" material="siege_metal"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="-0.240, 0.038, 2.714" rotation_euler="0.000, 1.571, 0.000" scale="0.504, 0.484, 0.192"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m">
+						<mesh name="bd_pole_3m.14" material="planks_6"/>
+						<mesh name="bd_pole_3m.lod3.14" material="planks_6"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="-0.118, 0.036, 2.506" rotation_euler="-0.155, 0.926, -0.088" scale="0.137, 0.287, 0.091"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m">
+						<mesh name="bd_pole_3m.14" material="siege_metal"/>
+						<mesh name="bd_pole_3m.lod3.14" material="siege_metal"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="carry_chain" old_prefab_name="">
+				<transform position="0.288, 0.054, 2.621" rotation_euler="-1.549, 0.649, -0.809" scale="0.900, 0.456, 0.900"/>
+				<components>
+					<meta_mesh_component name="torture_tool_chain_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="hawk_cage_a" old_prefab_name="">
+				<transform position="0.336, 0.063, 2.245" rotation_euler="0.000, 0.000, 0.000" scale="0.405, 0.471, 0.339"/>
+				<physics override_material="wood"/>
+				<components>
+					<meta_mesh_component name="hawk_cage_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="candle_flame" old_prefab_name="">
+				<transform position="0.343, 0.073, 2.484"/>
+				<components>
+					<light_component color="1.000, 0.804, 0.482" intensity="17.800" radius="179.000" flicker_interval="0.500" flicker_magnitude="0.500" local_frame_rot="179.000000, 0.000000, 0.000000, 0.000000, 179.000000, 0.000000, 0.000000, 0.000000, 179.000000" hotspot_angle="30.000" falloff_angle="45.000" sprite_mesh_name="billboard_mesh" sprite_material_name="billboard_candle_flame" relative_sprite_position="0.000, 0.000, -0.200" sprite_color_scale="5.000" sprite_scale="0.100" shadow_size_multiplier="1" shadow_radius="1.600"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_pole_3m" old_prefab_name="">
+				<transform position="-0.240, 0.038, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.654, 0.484, 1.000"/>
+				<physics shape="bo_bd_pole_3m" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_pole_3m">
+						<mesh name="bd_pole_3m.14" material="planks_6"/>
+						<mesh name="bd_pole_3m.lod3.14" material="planks_6"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

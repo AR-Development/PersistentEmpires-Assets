@@ -1,0 +1,180 @@
+<prefabs>
+	<game_entity name="pe_door_tp_1" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_TeleportDoor">
+				<variables>
+					<variable name="LinkText" value="doortype1_1"/>
+					<variable name="CastleId" value="-1"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="PE_RepairableDestructableComponent">
+				<variables>
+					<variable name="DestructionState" value=""/>
+					<variable name="ReferenceEntityTag" value="door"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="IsBroken" value="false"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="battania_keep_door_a" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="door"/>
+				</tags>
+				<transform position="0.182, -0.817, 0.019" rotation_euler="0.000, 0.000, -1.571"/>
+				<physics shape="bo_battania_keep_door_a"/>
+				<components>
+					<meta_mesh_component name="battania_keep_door_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="arrow_new_icon" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="position"/>
+				</tags>
+				<transform position="-0.300, -0.220, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_door_tp_2" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_TeleportDoor">
+				<variables>
+					<variable name="LinkText" value="doortype2_1"/>
+					<variable name="CastleId" value="-1"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="PE_RepairableDestructableComponent">
+				<variables>
+					<variable name="DestructionState" value=""/>
+					<variable name="ReferenceEntityTag" value="door"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="IsBroken" value="false"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="vlandia_keep_door_a" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="door"/>
+				</tags>
+				<transform position="0.222, 0.493, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+				<physics shape="bo_vlandia_keep_door_a"/>
+				<components>
+					<meta_mesh_component name="vlandia_keep_door_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="arrow_new_icon" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="position"/>
+				</tags>
+				<transform position="-0.300, -0.220, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_door_tp_3" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_TeleportDoor">
+				<variables>
+					<variable name="LinkText" value="doortype3_1"/>
+					<variable name="CastleId" value="-1"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="PE_RepairableDestructableComponent">
+				<variables>
+					<variable name="DestructionState" value=""/>
+					<variable name="ReferenceEntityTag" value="door"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="IsBroken" value="false"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="vlandia_keep_door_b" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="door"/>
+				</tags>
+				<transform position="0.225, 0.836, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+				<physics shape="bo_vlandia_keep_door_b"/>
+				<components>
+					<meta_mesh_component name="vlandia_keep_door_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="arrow_new_icon" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="position"/>
+				</tags>
+				<transform position="-0.300, -0.220, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

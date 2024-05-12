@@ -1,0 +1,275 @@
+<prefabs>
+	<game_entity name="pe_olive_tree" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_olive_a"/>
+		<components>
+			<meta_mesh_component name="tree_olive_a">
+				<mesh name="tree_olive_a" material="blood_decal_a" argument="0.500, 0.500, 0.000, 0.500"/>
+				<mesh name="tree_olive_a.lod3" material="blood_decal_a" argument="0.500, 0.500, 0.000, 0.500"/>
+				<mesh name="tree_olive_a.lod5" material="blood_decal_a" argument="0.500, 0.500, 0.000, 0.500"/>
+			</meta_mesh_component>
+		</components>
+		<children>
+			<game_entity name="pe_olive_gather_point" old_prefab_name="" mobility="1">
+				<transform position="0.337, 0.318, 0.388" rotation_euler="0.000, 0.000, 0.000" scale="1.449, 1.449, 1.449"/>
+				<scripts>
+					<script name="PE_ItemGathering">
+						<variables>
+							<variable name="Name" value="Olive"/>
+							<variable name="RespawnTime" value="600"/>
+							<variable name="ItemCount" value="1"/>
+							<variable name="AnimationDurationInSeconds" value="6"/>
+							<variable name="Animation" value="act_pe_farmer_bush_cutting_while_stand"/>
+							<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+							<variable name="RequiredSkillId" value="Gathering"/>
+							<variable name="RequiredSkill" value="15"/>
+							<variable name="DropsItem" value="pe_foods_basket_olive_a"/>
+							<variable name="DropCount" value="1"/>
+							<variable name="RotateWhenUsage" value="false"/>
+							<variable name="LookPointTag" value="lookpoint"/>
+							<variable name="IsDestroyed" value="false"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="tree_olive_a" old_prefab_name="" mobility="1">
+						<transform position="-0.232, -0.219, -0.268" rotation_euler="0.000, 0.000, 0.000" scale="0.690, 0.690, 0.690"/>
+						<physics shape="bo_tree_olive_a"/>
+						<components>
+							<meta_mesh_component name="tree_olive_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_fishing_place" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_ItemGathering">
+				<variables>
+					<variable name="Name" value="Fish"/>
+					<variable name="RespawnTime" value="10"/>
+					<variable name="ItemCount" value="-1"/>
+					<variable name="AnimationDurationInSeconds" value="30"/>
+					<variable name="Animation" value="act_pe_villager_fishing"/>
+					<variable name="NeededItem" value="PE_fishing_rod"/>
+					<variable name="RequiredSkillId" value="Gathering"/>
+					<variable name="RequiredSkill" value="15"/>
+					<variable name="DropsItem" value="pe_fish"/>
+					<variable name="DropCount" value="1"/>
+					<variable name="RotateWhenUsage" value="true"/>
+					<variable name="LookPointTag" value="lookpoint"/>
+					<variable name="IsDestroyed" value="false"/>
+					<variable name="Distance" value="3.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="pe_fishing_area_test" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="lookpoint"/>
+				</tags>
+				<transform position="0.198, -1.934, 0.050"/>
+				<children>
+					<game_entity name="pe_fishingarea" old_prefab_name="" mobility="1">
+						<transform position="-0.149, 0.049, 2.201" rotation_euler="0.000, 0.000, 0.000" scale="11.431, 11.691, 7.041"/>
+						<physics shape="bo_pyhsics_test_cylinder">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<children>
+							<game_entity name="campaign_fishes" old_prefab_name="" mobility="1">
+								<transform position="0.028, 0.000, -0.375" rotation_euler="0.000, 0.000, 0.000" scale="0.088, 0.085, 0.142"/>
+								<children>
+									<game_entity name="flow_fish_a" old_prefab_name="" mobility="1">
+										<transform position="-0.198, 0.222, 0.458" rotation_euler="0.000, 0.000, -0.579" scale="0.579, 0.579, 0.579"/>
+										<components>
+											<meta_mesh_component name="flow_fish_a"/>
+										</components>
+									</game_entity>
+									<game_entity name="flow_fish_a" old_prefab_name="" mobility="1">
+										<transform position="-0.220, -0.268, 0.278" rotation_euler="0.000, 0.000, 0.683" scale="0.579, 0.579, 0.579"/>
+										<components>
+											<meta_mesh_component name="flow_fish_a"/>
+										</components>
+									</game_entity>
+									<game_entity name="flow_fish_a" old_prefab_name="" mobility="1">
+										<transform position="-0.695, -0.220, 0.443" rotation_euler="0.000, 0.000, -0.579" scale="0.366, 0.366, 0.366"/>
+										<components>
+											<meta_mesh_component name="flow_fish_a"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="apple" old_prefab_name="" mobility="1">
+				<transform position="0.040, -0.012, 0.000" rotation_euler="-0.001, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+				<physics shape="bo_foods_watermelon_a"/>
+				<components>
+					<meta_mesh_component name="foods_apple_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_grape_plant" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_grape_vineyard_stake">
+			<body_flags>
+				<body_flag name="only_collide_with_raycast"/>
+			</body_flags>
+		</physics>
+		<scripts>
+			<script name="PE_ItemGathering">
+				<variables>
+					<variable name="Name" value="Grape"/>
+					<variable name="RespawnTime" value="10"/>
+					<variable name="ItemCount" value="1"/>
+					<variable name="AnimationDurationInSeconds" value="6"/>
+					<variable name="Animation" value="act_pe_farmer_bush_cutting_while_stand"/>
+					<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+					<variable name="RequiredSkillId" value="Gathering"/>
+					<variable name="RequiredSkill" value="15"/>
+					<variable name="DropsItem" value="pe_hardwood"/>
+					<variable name="DropCount" value="1"/>
+					<variable name="RotateWhenUsage" value="false"/>
+					<variable name="LookPointTag" value="lookpoint"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="grape" old_prefab_name="" mobility="1">
+				<transform position="0.031, 0.228, 0.848" rotation_euler="0.000, 0.000, -0.579"/>
+				<components>
+					<meta_mesh_component name="grape"/>
+				</components>
+			</game_entity>
+			<game_entity name="grape_branch" old_prefab_name="" mobility="1">
+				<transform position="0.183, -0.017, -0.883" rotation_euler="0.000, 0.000, -1.824"/>
+				<components>
+					<meta_mesh_component name="grape_branch"/>
+				</components>
+			</game_entity>
+			<game_entity name="grape" old_prefab_name="" mobility="1">
+				<transform position="0.152, -0.251, 0.491" rotation_euler="0.000, 0.000, -0.579"/>
+				<components>
+					<meta_mesh_component name="grape"/>
+				</components>
+			</game_entity>
+			<game_entity name="grape" old_prefab_name="" mobility="1">
+				<transform position="0.150, -0.019, 1.353" rotation_euler="0.000, 0.000, 1.117"/>
+				<components>
+					<meta_mesh_component name="grape"/>
+				</components>
+			</game_entity>
+			<game_entity name="grape_branch" old_prefab_name="" mobility="1">
+				<transform position="0.113, 0.054, -0.883" rotation_euler="0.000, 0.000, -0.579"/>
+				<components>
+					<meta_mesh_component name="grape_branch"/>
+				</components>
+			</game_entity>
+			<game_entity name="grape" old_prefab_name="" mobility="1">
+				<transform position="-0.063, -0.217, 1.065" rotation_euler="0.000, 0.000, -1.728"/>
+				<components>
+					<meta_mesh_component name="grape"/>
+				</components>
+			</game_entity>
+			<game_entity name="grape" old_prefab_name="" mobility="1">
+				<transform position="0.352, -0.110, 0.677" rotation_euler="-0.187, -0.068, -0.493"/>
+				<components>
+					<meta_mesh_component name="grape"/>
+				</components>
+			</game_entity>
+			<game_entity name="grape" old_prefab_name="" mobility="1">
+				<transform position="0.218, -0.152, 1.700" rotation_euler="0.000, 0.000, -0.579"/>
+				<components>
+					<meta_mesh_component name="grape"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_flax" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_ItemGathering">
+				<variables>
+					<variable name="Name" value="Flax"/>
+					<variable name="RespawnTime" value="1200"/>
+					<variable name="ItemCount" value="1"/>
+					<variable name="AnimationDurationInSeconds" value="6"/>
+					<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+					<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+					<variable name="RequiredSkillId" value="Gathering"/>
+					<variable name="RequiredSkill" value="15"/>
+					<variable name="DropsItem" value="pe_merchandise_flax"/>
+					<variable name="DropCount" value="1"/>
+					<variable name="RotateWhenUsage" value="false"/>
+					<variable name="LookPointTag" value="lookpoint"/>
+					<variable name="IsDestroyed" value="false"/>
+					<variable name="Distance" value="3.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="wheat" old_prefab_name="" mobility="1">
+				<transform position="0.064, 0.059, -0.044" rotation_euler="0.000, 0.000, 0.000" scale="4.430, 4.595, 4.688"/>
+				<physics shape="bo_pyhsics_test_box" override_material="straw">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<children>
+					<game_entity name="wheats_b" old_prefab_name="" mobility="1">
+						<transform position="0.011, 0.002, -0.121" non_orthogonal_rotation_mat="0.702736, 0.711451, 0.000000, -0.743557, 0.668673, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.480, 0.482, 0.337"/>
+						<components>
+							<meta_mesh_component name="wheats_b">
+								<mesh name="wheats_b" material="wheat_group_spring_flax_4x"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="wheats_b" old_prefab_name="" mobility="1">
+						<transform position="-0.030, 0.017, -0.121" rotation_euler="0.000, 0.000, 0.000" scale="0.492, 0.470, 0.337"/>
+						<components>
+							<meta_mesh_component name="wheats_b">
+								<mesh name="wheats_b" material="wheat_group_spring_flax_4x"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="wheats_b" old_prefab_name="" mobility="1">
+						<transform position="-0.030, 0.017, -0.121" non_orthogonal_rotation_mat="0.791716, -0.610889, 0.000000, 0.646541, 0.762879, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.483, 0.479, 0.337"/>
+						<components>
+							<meta_mesh_component name="wheats_b">
+								<mesh name="wheats_b" material="wheat_group_spring_flax_4x"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

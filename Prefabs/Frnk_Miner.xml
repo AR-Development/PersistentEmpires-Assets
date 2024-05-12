@@ -1,0 +1,33 @@
+<prefabs>
+	<game_entity name="Miner" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_ChangeClass">
+				<variables>
+					<variable name="ChangingDurationAsSeconds" value="10"/>
+					<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+					<variable name="ClassId" value="rndm_miner"/>
+					<variable name="CastleId" value="0"/>
+					<variable name="DinarCost" value="0"/>
+					<variable name="JoinCastleFaction" value="true"/>
+					<variable name="FactionId" value="0"/>
+					<variable name="Mercenary" value="false"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="bd_pickaxe_a" old_prefab_name="" mobility="1">
+				<transform position="0.190, 0.105, 0.000" rotation_euler="0.000, 0.000, -1.473"/>
+				<physics shape="bo_bd_pickaxe_a"/>
+				<components>
+					<meta_mesh_component name="bd_pickaxe_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<prefabs>
+<game_entity name="southern_moccasins"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="aserai_female_costume_shoe" /> </components> </game_entity>
+<game_entity name="wrapped_shoes"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="wrapped_shoes" /> </components> </game_entity>
+<game_entity name="highland_leg_wrappings"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="battania_boot_a" /> </components> </game_entity>
+<game_entity name="rough_tied_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="bandit_3_boot" /> </components> </game_entity>
+<game_entity name="battania_leather_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="battania_leather_boots_a" /> </components> </game_entity>
+<game_entity name="battania_woodland_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="battania_woodland_boots" /> </components> </game_entity>
+<game_entity name="battania_fur_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="battania_fur_boot_a" /> </components> </game_entity>
+<game_entity name="highland_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="pict_armor_boot" /> </components> </game_entity>
+<game_entity name="wrapped_leather_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="bandit_leather_boots" /> </components> </game_entity>
+<game_entity name="belted_leather_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="bandit_11_boots" /> </components> </game_entity>
+<game_entity name="turndown_leather_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="sea_raider_leather_boot" /> </components> </game_entity>
+<game_entity name="battania_warlord_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="battania_warlord_boots" /> </components> </game_entity>
+<game_entity name="eastern_leather_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="plated_leather_armor_boot" /> </components> </game_entity>
+<game_entity name="khuzait_curved_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="khuzait_leather_boots" /> </components> </game_entity>
+<game_entity name="woven_leather_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> 
+<meta_mesh_component name="bandit_10_boots" /> </components> </game_entity>
+<game_entity name="steppe_leather_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="khuzait_leather_armor_foot" /> </components> </game_entity>
+<game_entity name="reinforced_suede_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="khuzait_suede_leather_foot" /> </components> </game_entity>
+<game_entity name="leather_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="boot_f" /> </components> </game_entity>
+<game_entity name="mail_chausses"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="mail_chausses_a" /> </components> </game_entity>
+<game_entity name="strapped_mail_chausses"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="mail_chausses_b" /> </components> </game_entity>
+<game_entity name="leather_cavalier_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="cav_boots" /> </components> </game_entity>
+<game_entity name="mail_cavalier_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> 
+<meta_mesh_component name="cav_boots_reinforced" /> </components> </game_entity>
+<game_entity name="sturgia_boots_a"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="sturgia_boots_a" /> </components> </game_entity>
+<game_entity name="sturgia_boots_b"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="sturgia_boots_b" /> </components> </game_entity>
+<game_entity name="sturgia_boots_c"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="sturgia_boots_c" /> </components> </game_entity>
+<game_entity name="sturgia_boots_d"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="sturgia_boots_d" /> </components> </game_entity>
+<game_entity name="northern_plated_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="sturgia_plate_boot" /> </components> </game_entity>
+<game_entity name="fine_town_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="casual_02_boots" /> </components> </game_entity>
+<game_entity name="folded_town_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="casual_01_boots" /> </components> </game_entity>
+<game_entity name="empire_horseman_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="empire_horseman_boots" /> </components> </game_entity>
+<game_entity name="strapped_leather_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="boot_g" /> </components> </game_entity>
+<game_entity name="plated_strip_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="empire_plated_boots" /> </components> </game_entity>
+<game_entity name="decorated_imperial_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="empire_plate_armor_boots" /> </components> </game_entity>
+<game_entity name="lamellar_plate_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="imperial_boots" /> </components> </game_entity>
+<game_entity name="ladys_shoe"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="woman_shoe_a" /> </components> </game_entity>
+<game_entity name="leather_shoes"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="boot_e" /> </components> </game_entity>
+<game_entity name="ragged_boots"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="sneak_costume_foot" /> </components> </game_entity>
+<game_entity name="strapped_shoes"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="strapped_shoes" /> </components> </game_entity>
+</prefabs>

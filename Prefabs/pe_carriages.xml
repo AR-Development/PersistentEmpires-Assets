@@ -1,0 +1,427 @@
+<prefabs>
+	<game_entity name="pe_carriage" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_Chair">
+				<variables>
+					<variable name="ChairType" value="Chair"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="arrow_new_icon" old_prefab_name="" mobility="1">
+				<transform position="-1.778, 0.308, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon">
+						<mesh name="arrow_new_icon" material="blood_decal_a" argument="0.500, 0.500, 0.000, 0.500"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="PE_AttachToAgent">
+						<variables>
+							<variable name="AttachableToHorse" value="true"/>
+							<variable name="AttachableHorseType" value="mule"/>
+							<variable name="StrayDurationSeconds" value="7200"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+							<variable name="MaxHitPoint" value="600.000"/>
+							<variable name="Distance" value="3.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="bd_cart_heap_k" old_prefab_name="" mobility="1">
+						<transform position="-0.054, -2.857, 0.000" rotation_euler="0.000, 0.000, -3.136"/>
+						<physics shape="bo_bd_hay_cart_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_hay_cart_a">
+								<mesh name="bd_hay_cart_a.1" material="plank_b2"/>
+								<mesh name="bd_hay_cart_a.2" material="plank_b2"/>
+								<mesh name="bd_hay_cart_a.3" material="plank_b2"/>
+								<mesh name="bd_hay_cart_a.4" material="plank_b2"/>
+								<mesh name="bd_hay_cart_a.lod1.1" material="plank_b2"/>
+								<mesh name="bd_hay_cart_a.lod1.2" material="plank_b2"/>
+								<mesh name="bd_hay_cart_a.lod1.3" material="plank_b2"/>
+								<mesh name="bd_hay_cart_a.lod1.4" material="plank_b2"/>
+								<mesh name="bd_hay_cart_a.lod2.1" material="plank_b2"/>
+								<mesh name="bd_hay_cart_a.lod2.2" material="plank_b2"/>
+								<mesh name="bd_hay_cart_a.lod2.3" material="plank_b2"/>
+								<mesh name="bd_hay_cart_a.lod2.4" material="plank_b2"/>
+								<mesh name="bd_hay_cart_a.lod3.1" material="plank_b2"/>
+								<mesh name="bd_hay_cart_a.lod3.2" material="plank_b2"/>
+								<mesh name="bd_hay_cart_a.lod3.3" material="plank_b2"/>
+								<mesh name="bd_hay_cart_a.lod3.4" material="plank_b2"/>
+								<mesh name="bd_hay_cart_a.lod4.1" material="plank_b2"/>
+							</meta_mesh_component>
+						</components>
+						<children>
+							<game_entity name="hung_fur_e" old_prefab_name="" mobility="1">
+								<transform position="0.000, 1.824, 1.458" rotation_euler="0.000, 0.000, 0.000" scale="1.694, 1.694, 1.694"/>
+								<components>
+									<meta_mesh_component name="hung_fur_e"/>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-0.083, -1.182, 0.779" rotation_euler="0.000, 0.000, 0.000" scale="0.403, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_plank_a"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_plank_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="wooden_platform_plank_a" old_prefab_name="" mobility="1">
+								<transform position="-0.083, -1.310, 0.690" rotation_euler="0.000, 0.000, 0.000" scale="0.403, 1.000, 1.000"/>
+								<physics shape="bo_wooden_platform_plank_a"/>
+								<components>
+									<meta_mesh_component name="wooden_platform_plank_a"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pe_chair_sit_position_front_left" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="alternative"/>
+				</tags>
+				<transform position="2.357, 0.574, 1.037" rotation_euler="-0.031, 0.000, 3.124" scale="0.750, 0.750, 1.000"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="PE_ChairUsePoint">
+						<variables>
+							<variable name="NearTable" value="false"/>
+							<variable name="NearTableLoopAction" value=""/>
+							<variable name="NearTablePairLoopAction" value=""/>
+							<variable name="Drink" value="false"/>
+							<variable name="DrinkLoopAction" value=""/>
+							<variable name="DrinkPairLoopAction" value=""/>
+							<variable name="DrinkRightHandItem" value=""/>
+							<variable name="DrinkLeftHandItem" value=""/>
+							<variable name="Eat" value="false"/>
+							<variable name="EatLoopAction" value=""/>
+							<variable name="EatPairLoopAction" value=""/>
+							<variable name="EatRightHandItem" value=""/>
+							<variable name="EatLeftHandItem" value=""/>
+							<variable name="ArriveAction" value="act_sit_down_from_front"/>
+							<variable name="LoopStartAction" value="act_sit_1"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value="act_stand_up_to_front"/>
+							<variable name="GroupId" value="1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_chair_sit_position_front_right" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="alternative"/>
+				</tags>
+				<transform position="0.409, 0.600, 1.035" rotation_euler="-0.031, 0.000, 3.124" scale="0.750, 0.750, 1.000"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="PE_ChairUsePoint">
+						<variables>
+							<variable name="NearTable" value="false"/>
+							<variable name="NearTableLoopAction" value=""/>
+							<variable name="NearTablePairLoopAction" value=""/>
+							<variable name="Drink" value="false"/>
+							<variable name="DrinkLoopAction" value=""/>
+							<variable name="DrinkPairLoopAction" value=""/>
+							<variable name="DrinkRightHandItem" value=""/>
+							<variable name="DrinkLeftHandItem" value=""/>
+							<variable name="Eat" value="false"/>
+							<variable name="EatLoopAction" value=""/>
+							<variable name="EatPairLoopAction" value=""/>
+							<variable name="EatRightHandItem" value=""/>
+							<variable name="EatLeftHandItem" value=""/>
+							<variable name="ArriveAction" value="act_sit_down_from_front"/>
+							<variable name="LoopStartAction" value="act_sit_1"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value="act_stand_up_to_front"/>
+							<variable name="GroupId" value="2"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_chair_sit_position_front" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="1.383, 0.583, 1.036" rotation_euler="-0.031, 0.000, 3.124" scale="0.750, 0.750, 1.000"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="PE_ChairUsePoint">
+						<variables>
+							<variable name="NearTable" value="false"/>
+							<variable name="NearTableLoopAction" value=""/>
+							<variable name="NearTablePairLoopAction" value=""/>
+							<variable name="Drink" value="false"/>
+							<variable name="DrinkLoopAction" value=""/>
+							<variable name="DrinkPairLoopAction" value=""/>
+							<variable name="DrinkRightHandItem" value=""/>
+							<variable name="DrinkLeftHandItem" value=""/>
+							<variable name="Eat" value="false"/>
+							<variable name="EatLoopAction" value=""/>
+							<variable name="EatPairLoopAction" value=""/>
+							<variable name="EatRightHandItem" value=""/>
+							<variable name="EatLeftHandItem" value=""/>
+							<variable name="ArriveAction" value="act_sit_down_from_front"/>
+							<variable name="LoopStartAction" value="act_sit_1"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value="act_stand_up_to_front"/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="3"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_chair_sit_position_front_left" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="alternative"/>
+				</tags>
+				<transform position="0.433, 0.052, 1.033" rotation_euler="0.018, 0.007, -0.022" scale="0.750, 0.750, 1.000"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="PE_ChairUsePoint">
+						<variables>
+							<variable name="NearTable" value="false"/>
+							<variable name="NearTableLoopAction" value=""/>
+							<variable name="NearTablePairLoopAction" value=""/>
+							<variable name="Drink" value="false"/>
+							<variable name="DrinkLoopAction" value=""/>
+							<variable name="DrinkPairLoopAction" value=""/>
+							<variable name="DrinkRightHandItem" value=""/>
+							<variable name="DrinkLeftHandItem" value=""/>
+							<variable name="Eat" value="false"/>
+							<variable name="EatLoopAction" value=""/>
+							<variable name="EatPairLoopAction" value=""/>
+							<variable name="EatRightHandItem" value=""/>
+							<variable name="EatLeftHandItem" value=""/>
+							<variable name="ArriveAction" value="act_sit_down_from_front"/>
+							<variable name="LoopStartAction" value="act_sit_1"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value="act_stand_up_to_front"/>
+							<variable name="GroupId" value="1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_chair_sit_position_front_right" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="alternative"/>
+				</tags>
+				<transform position="2.380, 0.017, 1.020" rotation_euler="0.018, 0.007, -0.022" scale="0.750, 0.750, 1.000"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="PE_ChairUsePoint">
+						<variables>
+							<variable name="NearTable" value="false"/>
+							<variable name="NearTableLoopAction" value=""/>
+							<variable name="NearTablePairLoopAction" value=""/>
+							<variable name="Drink" value="false"/>
+							<variable name="DrinkLoopAction" value=""/>
+							<variable name="DrinkPairLoopAction" value=""/>
+							<variable name="DrinkRightHandItem" value=""/>
+							<variable name="DrinkLeftHandItem" value=""/>
+							<variable name="Eat" value="false"/>
+							<variable name="EatLoopAction" value=""/>
+							<variable name="EatPairLoopAction" value=""/>
+							<variable name="EatRightHandItem" value=""/>
+							<variable name="EatLeftHandItem" value=""/>
+							<variable name="ArriveAction" value="act_sit_down_from_front"/>
+							<variable name="LoopStartAction" value="act_sit_1"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value="act_stand_up_to_front"/>
+							<variable name="GroupId" value="2"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_chair_sit_position_front" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="1.407, 0.038, 1.027" rotation_euler="0.018, 0.007, -0.022" scale="0.750, 0.750, 1.000"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="PE_ChairUsePoint">
+						<variables>
+							<variable name="NearTable" value="false"/>
+							<variable name="NearTableLoopAction" value=""/>
+							<variable name="NearTablePairLoopAction" value=""/>
+							<variable name="Drink" value="false"/>
+							<variable name="DrinkLoopAction" value=""/>
+							<variable name="DrinkPairLoopAction" value=""/>
+							<variable name="DrinkRightHandItem" value=""/>
+							<variable name="DrinkLeftHandItem" value=""/>
+							<variable name="Eat" value="false"/>
+							<variable name="EatLoopAction" value=""/>
+							<variable name="EatPairLoopAction" value=""/>
+							<variable name="EatRightHandItem" value=""/>
+							<variable name="EatLeftHandItem" value=""/>
+							<variable name="ArriveAction" value="act_sit_down_from_front"/>
+							<variable name="LoopStartAction" value="act_sit_1"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value="act_stand_up_to_front"/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="3"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_vlandia_bench_a" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="npc_wait"/>
+					<tag name="npc_common"/>
+				</tags>
+				<transform position="1.397, -0.503, 1.017" rotation_euler="-0.018, -0.007, 3.120"/>
+				<physics shape="bo_vlandia_bench_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="vlandia_bench_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="pe_vlandia_bench_a" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="npc_wait"/>
+					<tag name="npc_common"/>
+				</tags>
+				<transform position="1.390, 1.124, 1.053" rotation_euler="0.031, 0.000, -0.017"/>
+				<physics shape="bo_vlandia_bench_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="vlandia_bench_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

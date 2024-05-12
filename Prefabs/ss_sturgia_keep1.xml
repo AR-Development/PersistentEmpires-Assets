@@ -1,0 +1,2677 @@
+<prefabs>
+	<game_entity name="ss_sturgia_keep1" old_prefab_name="">
+		<transform position="1109.492, 1203.738, 60.750" rotation_euler="0.000, 0.000, 2.598"/>
+		<children>
+			<game_entity name="sturgia_castle_tower_round_a_l3" old_prefab_name="" occlusion_body_name="bo_occ_sturgia_castle_tower_round_a_l3">
+				<transform position="0.000, 0.000, 0.185"/>
+				<physics shape="bo_sturgia_castle_tower_round_a_l3"/>
+				<components>
+					<meta_mesh_component name="sturgia_castle_tower_round_a_l3"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="sturgia_castle_tower_round_stairs_a_l3" old_prefab_name="">
+						<physics shape="bo_sturgia_castle_tower_round_stairs_a_l3">
+							<body_flags>
+								<body_flag name="has_steps"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="sturgia_castle_tower_round_stairs_a_l3"/>
+						</components>
+					</game_entity>
+					<game_entity name="merlon_13" old_prefab_name="">
+						<physics shape="bo_sturgia_castle_tower_round_a_l3_13"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_tower_round_a_l3_13"/>
+						</components>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="3.505, -6.134, 23.019" rotation_euler="0.000, 0.000, 0.450"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_12" old_prefab_name="">
+						<physics shape="bo_sturgia_castle_tower_round_a_l3_12"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_tower_round_a_l3_12"/>
+						</components>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.977, -3.854, 23.070" rotation_euler="0.000, 0.000, 0.984"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_11" old_prefab_name="">
+						<physics shape="bo_sturgia_castle_tower_round_a_l3_11"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_tower_round_a_l3_11"/>
+						</components>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="7.127, -0.550, 23.045" rotation_euler="0.000, 0.000, 1.444"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_10" old_prefab_name="">
+						<physics shape="bo_sturgia_castle_tower_round_a_l3_10"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_tower_round_a_l3_10"/>
+						</components>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="6.648, 2.777, 23.068" rotation_euler="0.000, 0.000, 1.939"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_9" old_prefab_name="">
+						<physics shape="bo_sturgia_castle_tower_round_a_l3_09"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_tower_round_a_l3_09"/>
+						</components>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="4.634, 5.478, 23.024" rotation_euler="0.000, 0.000, 2.419"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_8" old_prefab_name="">
+						<physics shape="bo_sturgia_castle_tower_round_a_l3_08"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_tower_round_a_l3_08"/>
+						</components>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="1.647, 6.930, 23.050" rotation_euler="0.000, 0.000, 2.932"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_7" old_prefab_name="">
+						<physics shape="bo_sturgia_castle_tower_round_a_l3_07"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_tower_round_a_l3_07"/>
+						</components>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-1.706, 6.728, 23.053" rotation_euler="0.000, 0.000, -2.865"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_6" old_prefab_name="">
+						<physics shape="bo_sturgia_castle_tower_round_a_l3_06"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_tower_round_a_l3_06"/>
+						</components>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-4.668, 5.127, 23.047" rotation_euler="0.000, 0.000, -2.451"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_5" old_prefab_name="">
+						<physics shape="bo_sturgia_castle_tower_round_a_l3_05"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_tower_round_a_l3_05"/>
+						</components>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-6.482, 2.311, 23.045" rotation_euler="0.000, 0.000, -1.941"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_4" old_prefab_name="">
+						<physics shape="bo_sturgia_castle_tower_round_a_l3_04"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_tower_round_a_l3_04"/>
+						</components>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-6.817, -1.011, 23.089" rotation_euler="0.000, 0.000, -1.458"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_3" old_prefab_name="">
+						<physics shape="bo_sturgia_castle_tower_round_a_l3_03"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_tower_round_a_l3_03"/>
+						</components>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-5.632, -4.006, 23.041" rotation_euler="0.000, 0.000, -0.945"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_2" old_prefab_name="">
+						<physics shape="bo_sturgia_castle_tower_round_a_l3_02"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_tower_round_a_l3_02"/>
+						</components>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-3.097, -6.166, 23.065" rotation_euler="0.000, 0.000, -0.453"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_1" old_prefab_name="">
+						<physics shape="bo_sturgia_castle_tower_round_a_l3_01"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_tower_round_a_l3_01"/>
+						</components>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="0.182, -6.864, 23.078" rotation_euler="0.000, 0.000, 0.033"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="sound" old_prefab_name="">
+				<children>
+					<game_entity name="sound_reverb" old_prefab_name="">
+						<transform position="0.000, 0.000, 14.262" rotation_euler="0.000, 0.000, 0.000" scale="7.582, 1.000, 1.000"/>
+						<scripts>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/reverb/stone_interior"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Sphere"/>
+								</variables>
+							</script>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/area/interior/generic"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Sphere"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="sound_reverb" old_prefab_name="">
+						<transform position="0.000, 0.000, 6.837" rotation_euler="0.000, 0.000, 0.000" scale="7.582, 1.000, 1.000"/>
+						<scripts>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/reverb/stone_interior"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Sphere"/>
+								</variables>
+							</script>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/area/interior/generic"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Sphere"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="sturgia_castle_wall_c_l3" old_prefab_name="">
+				<transform position="7.586, 6.837, -11.161" rotation_euler="0.000, 0.000, 2.297" scale="-1.000, 1.000, 1.000"/>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="-22.500000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="sturgia_castle_wall_c_l3" old_prefab_name="" occlusion_body_name="bo_occ_sturgia_castle_wall_c_l3">
+						<physics shape="bo_sturgia_castle_wall_c_l3"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_wall_c_l3">
+								<mesh name="sturgia_castle_wall_c_l3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod2.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod2.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod2.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod2.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod2.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod4.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod4.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod4.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod4.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod4.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod5.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod5.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod5.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod5.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod6.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod6.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod6.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod6.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="WallSegment">
+								<variables>
+									<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+									<variable name="_properGroundInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+									<variable name="SideTag" value=""/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="merlon_1" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_c_l3_01"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_c_l3_01">
+										<mesh name="sturgia_castle_wall_c_l3_01.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod4.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod4.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod4.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod4.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod4.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod5.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod5.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod5.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod5.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod6.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod6.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod6.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod6.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-4.153, -1.385, 12.648"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_c_l3_02"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_c_l3_02">
+										<mesh name="sturgia_castle_wall_c_l3_02.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod4.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod4.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod4.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod4.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod4.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod5.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod5.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod5.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod5.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod6.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod6.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod6.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod6.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-1.144, -1.350, 13.094"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_c_l3_03"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_c_l3_03">
+										<mesh name="sturgia_castle_wall_c_l3_03.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod4.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod4.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod4.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod4.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod4.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod5.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod5.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod5.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod5.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod6.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod6.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod6.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod6.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="2.026, -1.377, 13.517"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_4" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_c_l3_04"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_c_l3_04">
+										<mesh name="sturgia_castle_wall_c_l3_04.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod4.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod4.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod4.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod4.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod4.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod5.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod5.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod5.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod5.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod6.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod6.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod6.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod6.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="5.096, -1.370, 13.938"/>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="sturgia_castle_wall_a_l3" old_prefab_name="">
+				<transform position="-4.997, 7.844, -11.159" rotation_euler="0.000, 0.000, -2.483"/>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="-38.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="sturgia_castle_wall_a_l3" old_prefab_name="" occlusion_body_name="bo_occ_sturgia_castle_wall_a_l3">
+						<physics shape="bo_sturgia_castle_wall_a_l3"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_wall_a_l3">
+								<mesh name="sturgia_castle_wall_a_l3.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod2.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod2.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod2.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod2.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod2.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod3.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod3.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod3.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod3.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod3.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod4.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod4.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod4.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod4.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod4.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod5.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod5.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod5.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod5.3" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod6.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod6.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod6.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+								<mesh name="sturgia_castle_wall_a_l3.lod6.3" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="WallSegment">
+								<variables>
+									<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+									<variable name="_properGroundInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+									<variable name="SideTag" value=""/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="merlon_6" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_a_l3_06"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_a_l3_06">
+										<mesh name="sturgia_castle_wall_a_l3_06.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.5" material="corner_dirt_decal" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod2.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod2.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod2.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod2.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod2.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod2.5" material="corner_dirt_decal" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod3.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod3.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod3.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod3.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod3.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod3.5" material="corner_dirt_decal" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod4.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod4.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod4.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod4.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod4.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod5.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod5.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod5.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod5.3" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod6.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod6.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod6.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_06.lod6.3" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="5.560, -1.341, 12.588"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_5" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_a_l3_05"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_a_l3_05">
+										<mesh name="sturgia_castle_wall_a_l3_05.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.5" material="corner_dirt_decal" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod2.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod2.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod2.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod2.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod2.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod2.5" material="corner_dirt_decal" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod3.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod3.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod3.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod3.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod3.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod3.5" material="corner_dirt_decal" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod4.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod4.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod4.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod4.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod4.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod5.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod5.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod5.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod5.3" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod6.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod6.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod6.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_05.lod6.3" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="2.490, -1.429, 12.620"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_4" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_a_l3_04"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_a_l3_04">
+										<mesh name="sturgia_castle_wall_a_l3_04.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.5" material="corner_dirt_decal" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod2.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod2.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod2.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod2.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod2.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod2.5" material="corner_dirt_decal" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod3.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod3.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod3.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod3.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod3.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod3.5" material="corner_dirt_decal" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod4.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod4.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod4.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod4.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod4.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod5.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod5.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod5.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod5.3" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod6.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod6.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod6.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_04.lod6.3" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-0.637, -1.461, 12.469"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_a_l3_03"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_a_l3_03">
+										<mesh name="sturgia_castle_wall_a_l3_03.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.5" material="corner_dirt_decal" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod2.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod2.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod2.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod2.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod2.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod2.5" material="corner_dirt_decal" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod3.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod3.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod3.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod3.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod3.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod3.5" material="corner_dirt_decal" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod4.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod4.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod4.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod4.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod4.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod5.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod5.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod5.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod5.3" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod6.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod6.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod6.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_03.lod6.3" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-3.772, -1.423, 12.572"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_a_l3_02"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_a_l3_02">
+										<mesh name="sturgia_castle_wall_a_l3_02.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.5" material="corner_dirt_decal" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod2.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod2.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod2.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod2.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod2.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod2.5" material="corner_dirt_decal" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod3.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod3.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod3.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod3.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod3.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod3.5" material="corner_dirt_decal" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod4.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod4.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod4.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod4.3" material="dirty_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod4.4" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod5.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod5.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod5.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod5.3" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod6.0" material="stone_wall_14" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod6.1" material="castle_floor_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod6.2" material="stone_wall_14_detail" argument2="-12.269, 9.759, -1.255, 0.366"/>
+										<mesh name="sturgia_castle_wall_a_l3_02.lod6.3" material="wall_damaged_a" argument2="-12.269, 9.759, -1.255, 0.366"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-7.020, -1.387, 12.571"/>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="sturgia_castle_wall_c_l3" old_prefab_name="">
+				<transform position="8.983, -4.607, -9.414" rotation_euler="0.000, 0.000, 1.075" scale="-1.000, 1.000, 1.000"/>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="-22.500000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="sturgia_castle_wall_c_l3" old_prefab_name="" occlusion_body_name="bo_occ_sturgia_castle_wall_c_l3">
+						<physics shape="bo_sturgia_castle_wall_c_l3"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_wall_c_l3">
+								<mesh name="sturgia_castle_wall_c_l3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod2.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod2.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod2.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod2.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod2.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod4.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod4.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod4.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod4.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod4.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod5.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod5.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod5.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod5.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod6.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod6.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod6.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod6.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="WallSegment">
+								<variables>
+									<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+									<variable name="_properGroundInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+									<variable name="SideTag" value=""/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="merlon_1" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_c_l3_01"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_c_l3_01">
+										<mesh name="sturgia_castle_wall_c_l3_01.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod4.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod4.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod4.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod4.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod4.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod5.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod5.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod5.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod5.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod6.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod6.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod6.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod6.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-4.153, -1.385, 12.648"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_c_l3_02"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_c_l3_02">
+										<mesh name="sturgia_castle_wall_c_l3_02.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod4.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod4.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod4.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod4.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod4.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod5.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod5.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod5.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod5.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod6.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod6.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod6.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod6.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-1.144, -1.350, 13.094"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_c_l3_03"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_c_l3_03">
+										<mesh name="sturgia_castle_wall_c_l3_03.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod4.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod4.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod4.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod4.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod4.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod5.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod5.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod5.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod5.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod6.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod6.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod6.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod6.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="2.026, -1.377, 13.517"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_4" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_c_l3_04"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_c_l3_04">
+										<mesh name="sturgia_castle_wall_c_l3_04.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod4.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod4.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod4.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod4.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod4.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod5.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod5.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod5.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod5.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod6.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod6.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod6.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod6.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="5.096, -1.370, 13.938"/>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="sturgia_castle_wall_c_l3" old_prefab_name="">
+				<transform position="-1.117, -9.727, -7.820" rotation_euler="0.000, 0.000, -0.158" scale="-1.000, 1.000, 1.000"/>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="-22.500000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="sturgia_castle_wall_c_l3" old_prefab_name="" occlusion_body_name="bo_occ_sturgia_castle_wall_c_l3">
+						<physics shape="bo_sturgia_castle_wall_c_l3"/>
+						<components>
+							<meta_mesh_component name="sturgia_castle_wall_c_l3">
+								<mesh name="sturgia_castle_wall_c_l3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod2.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod2.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod2.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod2.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod2.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod4.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod4.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod4.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod4.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod4.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod5.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod5.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod5.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod5.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod6.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod6.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod6.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+								<mesh name="sturgia_castle_wall_c_l3.lod6.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="WallSegment">
+								<variables>
+									<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+									<variable name="_properGroundInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+									<variable name="SideTag" value=""/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="merlon_1" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_c_l3_01"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_c_l3_01">
+										<mesh name="sturgia_castle_wall_c_l3_01.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod2.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod3.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod4.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod4.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod4.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod4.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod4.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod5.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod5.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod5.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod5.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod6.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod6.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod6.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_01.lod6.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-4.153, -1.385, 12.648"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_c_l3_02"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_c_l3_02">
+										<mesh name="sturgia_castle_wall_c_l3_02.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod2.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod3.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod4.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod4.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod4.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod4.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod4.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod5.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod5.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod5.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod5.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod6.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod6.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod6.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_02.lod6.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-1.144, -1.350, 13.094"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_c_l3_03"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_c_l3_03">
+										<mesh name="sturgia_castle_wall_c_l3_03.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod2.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod3.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod4.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod4.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod4.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod4.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod4.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod5.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod5.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod5.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod5.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod6.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod6.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod6.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_03.lod6.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="2.026, -1.377, 13.517"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_4" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_wall_c_l3_04"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_wall_c_l3_04">
+										<mesh name="sturgia_castle_wall_c_l3_04.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod2.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod3.5" material="corner_dirt_decal" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod4.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod4.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod4.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod4.3" material="dirty_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod4.4" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod5.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod5.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod5.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod5.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod6.0" material="stone_wall_14" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod6.1" material="castle_floor_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod6.2" material="stone_wall_14_detail" argument2="-6.407, 6.723, 0.158, 0.519"/>
+										<mesh name="sturgia_castle_wall_c_l3_04.lod6.3" material="wall_damaged_a" argument2="-6.407, 6.723, 0.158, 0.519"/>
+									</meta_mesh_component>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="5.096, -1.370, 13.938"/>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="sturgia_grandbazaar_big_wall_b" old_prefab_name="" occlusion_body_name="bo_occ_sturgia_grandbazaar_big_wall_b">
+				<transform position="-19.758, -1.725, -6.101" rotation_euler="0.000, 0.000, -0.680" scale="0.700, 0.600, 0.700"/>
+				<physics shape="bo_sturgia_grandbazaar_big_wall_b"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="sturgia_grandbazaar_big_wall_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_floor_c" old_prefab_name="">
+				<transform position="-16.476, 2.500, 5.296" rotation_euler="0.000, 0.000, 2.447"/>
+				<physics shape="bo_module_european_floor_c"/>
+				<components>
+					<meta_mesh_component name="module_european_floor_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="sturgia_grandbazaar_big_wall_b" old_prefab_name="" occlusion_body_name="bo_occ_sturgia_grandbazaar_big_wall_b">
+				<transform position="-9.494, -1.625, 6.029" rotation_euler="0.000, 0.000, 2.470" scale="0.600, 0.600, 0.600"/>
+				<physics shape="bo_sturgia_grandbazaar_big_wall_b"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="sturgia_grandbazaar_big_wall_b">
+						<mesh name="sturgia_grandbazaar_big_wall_b" argument2="-4.373, 4.373, 0.000, 0.000"/>
+						<mesh name="sturgia_grandbazaar_big_wall_b.lod1" argument2="-4.373, 4.373, 0.000, 0.000"/>
+						<mesh name="sturgia_grandbazaar_big_wall_b.lod2" argument2="-4.373, 4.373, 0.000, 0.000"/>
+						<mesh name="sturgia_grandbazaar_big_wall_b.lod3" argument2="-4.373, 4.373, 0.000, 0.000"/>
+						<mesh name="sturgia_grandbazaar_big_wall_b.lod4" argument2="-4.373, 4.373, 0.000, 0.000"/>
+						<mesh name="sturgia_grandbazaar_big_wall_b.lod5" argument2="-4.373, 4.373, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="sturgia_grandbazaar_big_wall_b" old_prefab_name="" occlusion_body_name="bo_occ_sturgia_grandbazaar_big_wall_b">
+				<transform position="-10.182, 1.263, 6.029" rotation_euler="0.000, 0.000, 0.895" scale="0.500, 0.600, 0.600"/>
+				<physics shape="bo_sturgia_grandbazaar_big_wall_b"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="sturgia_grandbazaar_big_wall_b">
+						<mesh name="sturgia_grandbazaar_big_wall_b" argument2="-4.373, 4.373, 0.000, 0.000"/>
+						<mesh name="sturgia_grandbazaar_big_wall_b.lod1" argument2="-4.373, 4.373, 0.000, 0.000"/>
+						<mesh name="sturgia_grandbazaar_big_wall_b.lod2" argument2="-4.373, 4.373, 0.000, 0.000"/>
+						<mesh name="sturgia_grandbazaar_big_wall_b.lod3" argument2="-4.373, 4.373, 0.000, 0.000"/>
+						<mesh name="sturgia_grandbazaar_big_wall_b.lod4" argument2="-4.373, 4.373, 0.000, 0.000"/>
+						<mesh name="sturgia_grandbazaar_big_wall_b.lod5" argument2="-4.373, 4.373, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="sturgia_castle_gatehouse_a_l3" old_prefab_name="">
+				<transform position="-15.656, 3.040, -6.277" rotation_euler="0.000, 0.000, -0.688"/>
+				<children>
+					<game_entity name="sturgia_castle_gatehouse_a_l3" old_prefab_name="" occlusion_body_name="bo_occ_sturgia_castle_gatehouse_a_l3">
+						<physics shape="bo_sturgia_castle_gatehouse_a_l3"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="sturgia_castle_gatehouse_a_l3"/>
+						</components>
+						<scripts>
+							<script name="WallSegment">
+								<variables>
+									<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+									<variable name="_properGroundInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+									<variable name="SideTag" value=""/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="merlon_21" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_21"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_21"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-10.307, -5.657, 18.525" rotation_euler="0.000, 0.000, -1.401"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_20" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_20"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_20"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-10.314, -1.879, 18.834" rotation_euler="0.000, 0.000, -1.533"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_19" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_19"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_19"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-10.364, 0.904, 18.820" rotation_euler="0.000, 0.000, -1.557"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_18" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_18"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_18"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-7.427, 4.423, 18.741" rotation_euler="0.000, 0.000, -3.136"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_17" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_17"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_17"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-1.471, 2.170, 18.677" rotation_euler="0.000, 0.000, 3.102"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_16" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_16"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_16"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="1.413, 2.172, 18.779" rotation_euler="0.000, 0.000, -3.139"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_14" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_14"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_14"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="10.278, 0.941, 18.786" rotation_euler="0.000, 0.000, 1.566"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_13" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_13"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_13"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="10.270, -1.853, 18.796" rotation_euler="0.000, 0.000, 1.566"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_12" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_12"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_12"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="10.082, -5.547, 18.532" rotation_euler="0.000, 0.000, 1.470"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_11" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_11"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_11"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="7.798, -7.585, 18.521" rotation_euler="0.000, 0.000, -0.093"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_10" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_10"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_10"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="3.184, -6.079, 18.809" rotation_euler="0.000, 0.000, 0.024"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_09" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_09"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_09"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="0.043, -6.032, 18.763" rotation_euler="0.000, 0.000, 0.021"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_08" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_08"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_08"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-3.024, -5.987, 18.820" rotation_euler="0.000, 0.000, -0.027"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_07" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_07"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_07"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-7.724, -7.492, 18.530" rotation_euler="0.000, 0.000, 0.030"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_06" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_06"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_06"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="12.540, -7.163, 12.513" rotation_euler="0.000, 0.000, 1.191"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_05" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_05"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_05"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="9.336, -10.066, 12.619" rotation_euler="0.000, 0.000, 0.264"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_04" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_04"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_04"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="5.349, -9.494, 12.598" rotation_euler="0.000, 0.000, -0.594"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_03" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_03"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_03"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-5.310, -9.594, 12.639" rotation_euler="0.000, 0.000, 0.624"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_02" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_02"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_02"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-9.424, -10.153, 12.641" rotation_euler="0.000, 0.000, -0.300"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_01" old_prefab_name="" mobility="1">
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_01"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_01"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-12.506, -7.198, 12.559" rotation_euler="0.000, 0.000, -1.170"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="sturgia_castle_gatehouse_stairs_a_l3" old_prefab_name="">
+								<physics shape="bo_sturgia_castle_gatehouse_stairs_a_l3">
+									<body_flags>
+										<body_flag name="has_steps"/>
+									</body_flags>
+								</physics>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_stairs_a_l3"/>
+								</components>
+							</game_entity>
+							<game_entity name="merlon_11" old_prefab_name="" mobility="1">
+								<transform position="16.106, 5.504, 0.000" rotation_euler="0.000, 0.000, -2.191"/>
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_11"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_11"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="7.798, -7.585, 18.521" rotation_euler="0.000, 0.000, -0.093"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_20" old_prefab_name="" mobility="1">
+								<transform position="-2.787, 0.373, -6.157" rotation_euler="0.000, 0.000, 0.013"/>
+								<physics shape="bo_sturgia_castle_gatehouse_a_l3_20"/>
+								<components>
+									<meta_mesh_component name="sturgia_castle_gatehouse_a_l3_20"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_sturgia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-10.314, -1.879, 18.834" rotation_euler="0.000, 0.000, -1.533"/>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="reverb_gatehouse" old_prefab_name="">
+						<transform position="0.000, -2.500, 4.500" rotation_euler="0.000, 0.000, 0.000" scale="3.000, 4.500, 6.700"/>
+						<scripts>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/reverb/gatehouse"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Box"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="reverb_stone_interior" old_prefab_name="">
+						<transform position="0.000, -0.800, 14.500" rotation_euler="0.000, 0.000, 0.000" scale="10.600, 5.800, 3.000"/>
+						<scripts>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/reverb/stone_interior"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Box"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="reverb_stone_interior" old_prefab_name="">
+						<transform position="8.000, -3.400, 6.100" rotation_euler="0.000, 0.000, 0.000" scale="5.000, 7.300, 5.200"/>
+						<scripts>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/reverb/stone_interior"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Box"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="reverb_stone_interior" old_prefab_name="">
+						<transform position="-8.000, -3.400, 6.100" rotation_euler="0.000, 0.000, 0.000" scale="5.000, 7.300, 5.200"/>
+						<scripts>
+							<script name="AmbientSoundEmitter">
+								<variables>
+									<variable name="Event Path" value="event:/mission/ambient/reverb/stone_interior"/>
+									<variable name="Play On Startup" value="true"/>
+									<variable name="Is Static" value="false"/>
+									<variable name="Override Sound" value="false"/>
+									<variable name="Overrided Max Distance" value="20.000000"/>
+									<variable name="Overrided Min Distance" value="1.000000"/>
+									<variable name="Sound Preset" value="Speakers"/>
+									<variable name="Is Master Sound" value="false"/>
+									<variable name="Is Master Supressor" value="false"/>
+									<variable name="Is Triggered" value="true"/>
+									<variable name="Trigger Shape" value="Box"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="sturgia_grandbazaar_big_wall_b" old_prefab_name="" occlusion_body_name="bo_occ_sturgia_grandbazaar_big_wall_b">
+				<transform position="-24.407, 8.913, 7.542" rotation_euler="0.032, 0.000, 0.895" scale="0.500, 0.300, 0.400"/>
+				<physics shape="bo_sturgia_grandbazaar_big_wall_b"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="sturgia_grandbazaar_big_wall_b">
+						<mesh name="sturgia_grandbazaar_big_wall_b" argument2="-4.373, 4.373, 0.000, 0.000"/>
+						<mesh name="sturgia_grandbazaar_big_wall_b.lod1" argument2="-4.373, 4.373, 0.000, 0.000"/>
+						<mesh name="sturgia_grandbazaar_big_wall_b.lod2" argument2="-4.373, 4.373, 0.000, 0.000"/>
+						<mesh name="sturgia_grandbazaar_big_wall_b.lod3" argument2="-4.373, 4.373, 0.000, 0.000"/>
+						<mesh name="sturgia_grandbazaar_big_wall_b.lod4" argument2="-4.373, 4.373, 0.000, 0.000"/>
+						<mesh name="sturgia_grandbazaar_big_wall_b.lod5" argument2="-4.373, 4.373, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="sturgia_castle_balcony_a" old_prefab_name="">
+				<transform position="7.279, 0.819, 11.571" rotation_euler="0.000, 0.000, 1.626"/>
+				<physics shape="bo_sturgia_castle_balcony_a"/>
+				<components>
+					<meta_mesh_component name="sturgia_castle_balcony_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

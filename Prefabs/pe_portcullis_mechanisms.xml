@@ -1,0 +1,736 @@
+<prefabs>
+	<game_entity name="pe_portcullis_mechanism" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.589, 0.589, 0.763"/>
+		<physics shape="bo_arabian_platform_wooden_c" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="arabian_platform_wooden_c"/>
+		</components>
+		<children>
+			<game_entity name="bd_cart_wheel_b" old_prefab_name="">
+				<transform position="-0.205, 1.579, 0.374" rotation_euler="0.000, 0.000, 0.000" scale="0.800, 0.800, 0.617"/>
+				<physics shape="bo_bd_cart_wheel_b"/>
+				<components>
+					<meta_mesh_component name="bd_cart_wheel_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_watermill_mill" old_prefab_name="">
+				<transform position="-0.199, 1.299, 0.906" rotation_euler="0.000, 0.000, -0.022" scale="0.416, 0.417, 0.321"/>
+				<physics shape="bo_battania_watermill_mill"/>
+				<components>
+					<meta_mesh_component name="battania_watermill_mill"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_watermill_mill" old_prefab_name="">
+				<transform position="-0.210, -1.238, 0.906" rotation_euler="0.000, 0.000, 3.120" scale="0.416, 0.417, 0.321"/>
+				<physics shape="bo_battania_watermill_mill"/>
+				<components>
+					<meta_mesh_component name="battania_watermill_mill"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cart_wheel_b" old_prefab_name="">
+				<transform position="-0.211, -1.546, 0.373" rotation_euler="0.000, 0.000, -3.142" scale="0.800, 0.800, 0.617"/>
+				<physics shape="bo_bd_cart_wheel_b"/>
+				<components>
+					<meta_mesh_component name="bd_cart_wheel_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="siegetower_a_handle" old_prefab_name="">
+				<transform position="-0.266, 1.734, 0.905" non_orthogonal_rotation_mat="-0.622782, -0.107925, 0.774916, 0.029128, -0.997211, -0.068719, 0.902462, -0.023416, 0.430132" scale="0.495, 0.587, 0.393"/>
+				<components>
+					<meta_mesh_component name="siegetower_a_handle"/>
+				</components>
+			</game_entity>
+			<game_entity name="siegetower_a_handle" old_prefab_name="">
+				<transform position="-0.153, -1.692, 0.902" non_orthogonal_rotation_mat="0.628228, 0.069510, 0.774918, 0.032060, 0.997121, -0.068719, -0.899326, 0.078745, 0.430130" scale="0.495, 0.587, 0.386"/>
+				<components>
+					<meta_mesh_component name="siegetower_a_handle"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="">
+				<transform position="-0.180, 0.277, 0.944" rotation_euler="1.571, 0.000, 0.000" scale="1.693, 1.307, 1.341"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="">
+				<transform position="-0.240, 1.333, 0.223" rotation_euler="0.000, 0.000, 0.000" scale="1.316, 1.209, 1.153"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="">
+				<transform position="-0.231, -1.320, 0.223" rotation_euler="0.000, 0.000, 0.000" scale="1.316, 1.209, 1.153"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_d" old_prefab_name="">
+				<transform position="0.814, 0.066, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="0.835, 1.209, 0.909"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_d"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="torture_tool_chain_d" old_prefab_name="">
+				<transform position="-0.343, 0.650, 1.196" rotation_euler="1.571, 0.000, 0.000" scale="1.698, 1.311, 2.327"/>
+				<physics shape="bo_composite_batteringram_c_roofplanks_l_1_destroyed_part3">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="torture_tool_chain_d">
+						<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="100.000000"/>
+							<variable name="Bend Center Ratio" value="0.610000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="torture_tool_chain_d" old_prefab_name="">
+				<transform position="-0.343, 0.444, 1.196" rotation_euler="1.571, 0.000, 0.000" scale="1.698, 1.311, 2.327"/>
+				<physics shape="bo_composite_batteringram_c_roofplanks_l_1_destroyed_part3">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="torture_tool_chain_d">
+						<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="100.000000"/>
+							<variable name="Bend Center Ratio" value="0.610000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="torture_tool_chain_d" old_prefab_name="">
+				<transform position="-0.343, -0.076, 1.196" rotation_euler="1.571, 0.000, 0.000" scale="1.698, 1.311, 2.327"/>
+				<physics shape="bo_composite_batteringram_c_roofplanks_l_1_destroyed_part3">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="torture_tool_chain_d">
+						<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="100.000000"/>
+							<variable name="Bend Center Ratio" value="0.610000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="torture_tool_chain_d" old_prefab_name="">
+				<transform position="-0.343, -0.304, 1.196" rotation_euler="1.571, 0.000, 0.000" scale="1.698, 1.311, 2.327"/>
+				<physics shape="bo_composite_batteringram_c_roofplanks_l_1_destroyed_part3">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="torture_tool_chain_d">
+						<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="100.000000"/>
+							<variable name="Bend Center Ratio" value="0.610000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_d" old_prefab_name="">
+				<transform position="-0.652, 0.066, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="0.848, 1.227, 0.520"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_d"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="torture_tool_chain_a" old_prefab_name="">
+				<transform position="1.118, 0.564, 3.378" non_orthogonal_rotation_mat="-0.000000, -1.000000, 0.000000, 0.990866, -0.000000, -0.134852, 0.222715, 0.000000, 0.974884" scale="1.699, 1.688, 1.657"/>
+				<components>
+					<meta_mesh_component name="torture_tool_chain_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="torture_tool_chain_a" old_prefab_name="">
+				<transform position="1.118, -0.621, 3.378" non_orthogonal_rotation_mat="-0.000000, -1.000000, 0.000000, 0.990866, -0.000000, -0.134852, 0.222715, 0.000000, 0.974884" scale="1.699, 1.688, 1.657"/>
+				<components>
+					<meta_mesh_component name="torture_tool_chain_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="torture_tool_chain_d" old_prefab_name="">
+				<transform position="-0.343, 0.289, 1.196" rotation_euler="1.571, 0.000, 0.000" scale="1.698, 1.311, 2.327"/>
+				<physics shape="bo_composite_batteringram_c_roofplanks_l_1_destroyed_part3">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="torture_tool_chain_d">
+						<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="100.000000"/>
+							<variable name="Bend Center Ratio" value="0.610000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="torture_tool_chain_d" old_prefab_name="">
+				<transform position="-0.343, -0.480, 1.196" rotation_euler="1.571, 0.000, 0.000" scale="1.698, 1.311, 2.327"/>
+				<physics shape="bo_composite_batteringram_c_roofplanks_l_1_destroyed_part3">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="torture_tool_chain_d">
+						<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+						<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-0.850, 0.906, 0.221, 0.003"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="100.000000"/>
+							<variable name="Bend Center Ratio" value="0.610000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_portcullis_set" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_LiftingDoor">
+				<variables>
+					<variable name="PortcullisTag" value="door"/>
+					<variable name="ElevationAnimation" value="act_pe_use_smithing_machine_loop"/>
+					<variable name="LowerAnimation" value="act_pe_use_smithing_machine_loop"/>
+					<variable name="ElevatorTag" value="elevate_standpoint"/>
+					<variable name="LowerTag" value="lower_standpoint"/>
+					<variable name="ElevationPointTag" value="elevate_point"/>
+					<variable name="ElevationSpeed" value="1.000"/>
+					<variable name="LowerSpeed" value="3.000"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="european_castle_gatehouse_portcullis_a" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="door"/>
+				</tags>
+				<transform position="-6.426, 0.190, 0.000"/>
+				<physics shape="bo_european_castle_gatehouse_portcullis_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="european_castle_gatehouse_portcullis_a"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_portcullis_mechanism1" old_prefab_name="" mobility="1">
+				<transform position="1.702, 0.007, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="0.589, 0.589, 0.763"/>
+				<physics shape="bo_arabian_platform_wooden_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="arabian_platform_wooden_c"/>
+				</components>
+				<children>
+					<game_entity name="bd_cart_wheel_b" old_prefab_name="" mobility="1">
+						<transform position="-0.205, 1.579, 0.374" rotation_euler="0.000, 0.000, 0.000" scale="0.800, 0.800, 0.617"/>
+						<physics shape="bo_bd_cart_wheel_b"/>
+						<components>
+							<meta_mesh_component name="bd_cart_wheel_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_watermill_mill" old_prefab_name="" mobility="1">
+						<transform position="-0.199, 1.299, 0.906" rotation_euler="0.000, 0.000, -0.022" scale="0.416, 0.417, 0.321"/>
+						<physics shape="bo_battania_watermill_mill"/>
+						<components>
+							<meta_mesh_component name="battania_watermill_mill"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_watermill_mill" old_prefab_name="" mobility="1">
+						<transform position="-0.210, -1.238, 0.906" rotation_euler="0.000, 0.000, 3.120" scale="0.416, 0.417, 0.321"/>
+						<physics shape="bo_battania_watermill_mill"/>
+						<components>
+							<meta_mesh_component name="battania_watermill_mill"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_cart_wheel_b" old_prefab_name="" mobility="1">
+						<transform position="-0.211, -1.546, 0.373" rotation_euler="0.000, 0.000, 3.141" scale="0.800, 0.800, 0.617"/>
+						<physics shape="bo_bd_cart_wheel_b"/>
+						<components>
+							<meta_mesh_component name="bd_cart_wheel_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="siegetower_a_handle" old_prefab_name="" mobility="1">
+						<transform position="-0.266, 1.734, 0.905" non_orthogonal_rotation_mat="-0.622782, -0.107925, 0.774916, 0.029128, -0.997211, -0.068719, 0.902462, -0.023416, 0.430132" scale="0.495, 0.587, 0.393"/>
+						<components>
+							<meta_mesh_component name="siegetower_a_handle"/>
+						</components>
+					</game_entity>
+					<game_entity name="siegetower_a_handle" old_prefab_name="" mobility="1">
+						<transform position="-0.153, -1.692, 0.902" non_orthogonal_rotation_mat="0.628228, 0.069510, 0.774918, 0.032060, 0.997121, -0.068719, -0.899326, 0.078745, 0.430130" scale="0.495, 0.587, 0.386"/>
+						<components>
+							<meta_mesh_component name="siegetower_a_handle"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-0.180, 0.277, 0.944" rotation_euler="1.571, -3.142, -3.142" scale="1.693, 1.307, 1.341"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-0.240, 1.333, 0.223" rotation_euler="0.000, 0.000, 0.000" scale="1.316, 1.209, 1.153"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-0.231, -1.320, 0.223" rotation_euler="0.000, 0.000, 0.000" scale="1.316, 1.209, 1.153"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_d" old_prefab_name="" mobility="1">
+						<transform position="0.814, 0.066, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="0.835, 1.209, 0.909"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_d"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="torture_tool_chain_d" old_prefab_name="" mobility="1">
+						<transform position="-0.202, 0.639, 1.129" non_orthogonal_rotation_mat="0.962733, -0.000013, 0.270455, -0.426521, -0.000087, 0.904478, 0.000012, -1.000000, -0.000054" scale="1.657, 1.362, 2.327"/>
+						<physics shape="bo_wooden_platform_2_plank_a">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="torture_tool_chain_d">
+								<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="mesh_bender">
+								<variables>
+									<variable name="Bend Amount" value="150.000000"/>
+									<variable name="Bend Center Ratio" value="0.450000"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torture_tool_chain_d" old_prefab_name="" mobility="1">
+						<transform position="-0.351, 0.639, 0.793" non_orthogonal_rotation_mat="-0.962733, -0.000405, -0.270455, 0.426521, 0.000087, -0.904478, 0.000395, -1.000000, 0.000054" scale="1.657, 1.362, 2.327"/>
+						<physics shape="bo_wooden_platform_2_plank_a">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="torture_tool_chain_d">
+								<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="mesh_bender">
+								<variables>
+									<variable name="Bend Amount" value="150.000000"/>
+									<variable name="Bend Center Ratio" value="0.450000"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torture_tool_chain_a" old_prefab_name="" mobility="1">
+						<transform position="1.118, 0.564, 3.378" non_orthogonal_rotation_mat="-0.000000, -1.000000, 0.000000, 0.990866, -0.000000, -0.134852, 0.222715, 0.000000, 0.974884" scale="1.699, 1.688, 1.657"/>
+						<components>
+							<meta_mesh_component name="torture_tool_chain_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="torture_tool_chain_a" old_prefab_name="" mobility="1">
+						<transform position="1.118, -0.621, 3.378" non_orthogonal_rotation_mat="-0.000000, -1.000000, 0.000000, 0.990866, -0.000000, -0.134852, 0.222715, 0.000000, 0.974884" scale="1.699, 1.688, 1.657"/>
+						<components>
+							<meta_mesh_component name="torture_tool_chain_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_d" old_prefab_name="" mobility="1">
+						<transform position="-0.652, 0.066, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="0.848, 1.227, 0.520"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_d"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="torture_tool_chain_d" old_prefab_name="" mobility="1">
+						<transform position="-0.202, 0.447, 1.129" non_orthogonal_rotation_mat="0.962733, -0.000013, 0.270455, -0.426521, -0.000087, 0.904478, 0.000012, -1.000000, -0.000054" scale="1.657, 1.362, 2.327"/>
+						<physics shape="bo_wooden_platform_2_plank_a">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="torture_tool_chain_d">
+								<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="mesh_bender">
+								<variables>
+									<variable name="Bend Amount" value="150.000000"/>
+									<variable name="Bend Center Ratio" value="0.450000"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torture_tool_chain_d" old_prefab_name="" mobility="1">
+						<transform position="-0.351, 0.447, 0.793" non_orthogonal_rotation_mat="-0.962733, -0.000405, -0.270455, 0.426521, 0.000087, -0.904478, 0.000395, -1.000000, 0.000054" scale="1.657, 1.362, 2.327"/>
+						<physics shape="bo_wooden_platform_2_plank_a">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="torture_tool_chain_d">
+								<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="mesh_bender">
+								<variables>
+									<variable name="Bend Amount" value="150.000000"/>
+									<variable name="Bend Center Ratio" value="0.450000"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torture_tool_chain_d" old_prefab_name="" mobility="1">
+						<transform position="-0.202, -0.448, 1.129" non_orthogonal_rotation_mat="0.962733, -0.000013, 0.270455, -0.426521, -0.000087, 0.904478, 0.000012, -1.000000, -0.000054" scale="1.657, 1.362, 2.327"/>
+						<physics shape="bo_wooden_platform_2_plank_a">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="torture_tool_chain_d">
+								<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="mesh_bender">
+								<variables>
+									<variable name="Bend Amount" value="150.000000"/>
+									<variable name="Bend Center Ratio" value="0.450000"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torture_tool_chain_d" old_prefab_name="" mobility="1">
+						<transform position="-0.351, -0.448, 0.793" non_orthogonal_rotation_mat="-0.962733, -0.000405, -0.270455, 0.426521, 0.000087, -0.904478, 0.000395, -1.000000, 0.000054" scale="1.657, 1.362, 2.327"/>
+						<physics shape="bo_wooden_platform_2_plank_a">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="torture_tool_chain_d">
+								<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="mesh_bender">
+								<variables>
+									<variable name="Bend Amount" value="150.000000"/>
+									<variable name="Bend Center Ratio" value="0.450000"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torture_tool_chain_d" old_prefab_name="" mobility="1">
+						<transform position="-0.202, -0.249, 1.129" non_orthogonal_rotation_mat="0.962733, -0.000013, 0.270455, -0.426521, -0.000087, 0.904478, 0.000012, -1.000000, -0.000054" scale="1.657, 1.362, 2.327"/>
+						<physics shape="bo_wooden_platform_2_plank_a">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="torture_tool_chain_d">
+								<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="mesh_bender">
+								<variables>
+									<variable name="Bend Amount" value="150.000000"/>
+									<variable name="Bend Center Ratio" value="0.450000"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torture_tool_chain_d" old_prefab_name="" mobility="1">
+						<transform position="-0.351, -0.249, 0.793" non_orthogonal_rotation_mat="-0.962733, -0.000405, -0.270455, 0.426521, 0.000087, -0.904478, 0.000395, -1.000000, 0.000054" scale="1.657, 1.362, 2.327"/>
+						<physics shape="bo_wooden_platform_2_plank_a">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="torture_tool_chain_d">
+								<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="mesh_bender">
+								<variables>
+									<variable name="Bend Amount" value="150.000000"/>
+									<variable name="Bend Center Ratio" value="0.450000"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torture_tool_chain_d" old_prefab_name="" mobility="1">
+						<transform position="-0.202, -0.043, 1.129" non_orthogonal_rotation_mat="0.962733, -0.000013, 0.270455, -0.426521, -0.000087, 0.904478, 0.000012, -1.000000, -0.000054" scale="1.657, 1.362, 2.327"/>
+						<physics shape="bo_wooden_platform_2_plank_a">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="torture_tool_chain_d">
+								<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="mesh_bender">
+								<variables>
+									<variable name="Bend Amount" value="150.000000"/>
+									<variable name="Bend Center Ratio" value="0.450000"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torture_tool_chain_d" old_prefab_name="" mobility="1">
+						<transform position="-0.351, -0.043, 0.793" non_orthogonal_rotation_mat="-0.962733, -0.000405, -0.270455, 0.426521, 0.000087, -0.904478, 0.000395, -1.000000, 0.000054" scale="1.657, 1.362, 2.327"/>
+						<physics shape="bo_wooden_platform_2_plank_a">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="torture_tool_chain_d">
+								<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="mesh_bender">
+								<variables>
+									<variable name="Bend Amount" value="150.000000"/>
+									<variable name="Bend Center Ratio" value="0.450000"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torture_tool_chain_d" old_prefab_name="" mobility="1">
+						<transform position="-0.202, 0.310, 1.129" non_orthogonal_rotation_mat="0.962733, -0.000013, 0.270455, -0.426521, -0.000087, 0.904478, 0.000012, -1.000000, -0.000054" scale="1.657, 1.362, 2.327"/>
+						<physics shape="bo_wooden_platform_2_plank_a">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="torture_tool_chain_d">
+								<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="mesh_bender">
+								<variables>
+									<variable name="Bend Amount" value="150.000000"/>
+									<variable name="Bend Center Ratio" value="0.450000"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="torture_tool_chain_d" old_prefab_name="" mobility="1">
+						<transform position="-0.351, 0.310, 0.793" non_orthogonal_rotation_mat="-0.962733, -0.000405, -0.270455, 0.426521, 0.000087, -0.904478, 0.000395, -1.000000, 0.000054" scale="1.657, 1.362, 2.327"/>
+						<physics shape="bo_wooden_platform_2_plank_a">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="torture_tool_chain_d">
+								<mesh name="torture_tool_chain_d.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod2.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod4.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+								<mesh name="torture_tool_chain_d.lod5.1" material="lights_b" argument2="-1.908, 1.908, -0.191, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="mesh_bender">
+								<variables>
+									<variable name="Bend Amount" value="150.000000"/>
+									<variable name="Bend Center Ratio" value="0.450000"/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="arrow_new_icon" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="lower_standpoint"/>
+				</tags>
+				<transform position="0.012, 0.248, 0.000" rotation_euler="0.000, 0.000, -1.566"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="arrow_new_icon" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="elevate_standpoint"/>
+				</tags>
+				<transform position="3.441, -0.087, 0.000" rotation_euler="0.000, 0.000, 1.537"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="elevatepoint" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="elevate_point"/>
+				</tags>
+				<transform position="-6.319, -0.051, 6.500"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

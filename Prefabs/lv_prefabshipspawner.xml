@@ -1,0 +1,39 @@
+<prefabs>
+	<game_entity name="lv_prefabshipspawner" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+		<components>
+			<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+		</components>
+		<scripts>
+			<script name="PE_PrefabSpawner">
+				<variables>
+					<variable name="SpawnPointTag" value="spawn_point"/>
+					<variable name="SpawningPrefabsXml" value="pe_testship1"/>
+					<variable name="SpawnOffset" value="0.000, 0.000, 0.000, 0.000"/>
+					<variable name="PrefabSpawnerName" value="Ship Deployer"/>
+					<variable name="SpawnerCategoryName" value="Ship Units"/>
+					<variable name="DespawnArea" value="500.000"/>
+					<variable name="MaxSpawnAmount" value="30"/>
+					<variable name="Distance" value="3.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="arrow_new_icon" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="spawn_point"/>
+				</tags>
+				<transform position="-2.865, 1.883, -3.181" rotation_euler="0.000, 0.000, 0.230"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

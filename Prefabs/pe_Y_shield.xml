@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<prefabs>
+<game_entity name="heavy_round_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="sturgia_shield_a" /> </components> </game_entity>
+<game_entity name="leather_round_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="sturgia_shield_b" /> </components> </game_entity>
+<game_entity name="strapped_round_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="sturgia_shield_c" /> </components> </game_entity>
+<game_entity name="sturgia_old_shield_a"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="sturgia_old_shield_a" /> </components> </game_entity>
+<game_entity name="sturgia_old_shield_b"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="sturgia_old_shield_b" /> </components> </game_entity>
+<game_entity name="sturgia_old_shield_c"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="sturgia_old_shield_c" /> </components> </game_entity>
+<game_entity name="oval_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="aserai_shields_b" /> </components> </game_entity>
+<game_entity name="desert_round_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> 
+<meta_mesh_component name="aserai_shields_c" /> </components> </game_entity>
+<game_entity name="bound_desert_round_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="aserai_shields_d" /> </components> </game_entity>
+<game_entity name="curved_round_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> 
+<meta_mesh_component name="aserai_shields_e" /> </components> </game_entity>
+<game_entity name="studded_round_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="aserai_shields_f" /> </components> </game_entity>
+<game_entity name="steel_round_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="aserai_shields_g" /> </components> </game_entity>
+<game_entity name="bound_adarga"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="aserai_shields_h" /> </components> </game_entity>
+<game_entity name="battania_targe_b"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="battania_targe_b" /> </components> </game_entity>
+<game_entity name="battania_shield_targe_a"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="battania_shield_targe_a" /> </components> </game_entity>
+<game_entity name="large_adarga"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="aserai_shields_i" /> </components> </game_entity>
+<game_entity name="battania_large_shield_a"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="battania_large_shield_a" /> </components> </game_entity>
+<game_entity name="battania_large_shield_b"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="battania_large_shield_b" /> </components> </game_entity>
+<game_entity name="battania_large_shield_c"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="battania_large_shield_c" /> </components> </game_entity>
+<game_entity name="old_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="kite_shield_a" /> </components> </game_entity>
+<game_entity name="worn_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="kite_shield_b" /> </components> </game_entity>
+<game_entity name="leather_bound_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="kite_shield_c" /> </components> </game_entity>
+<game_entity name="reinforced_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="kite_shield_d" /> </components> </game_entity>
+<game_entity name="stronger_reinforced_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="kite_shield_d" /> </components> </game_entity>
+<game_entity name="pavise_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="kite_shield_e" /> </components> </game_entity>
+<game_entity name="old_horsemans_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="kite_shield_f" /> </components> </game_entity>
+<game_entity name="worn_horsemans_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="kite_shield_g" /> </components> </game_entity>
+<game_entity name="bound_horsemans_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="kite_shield_h" /> </components> </game_entity>
+<game_entity name="reinforced_horsemans_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> 
+<components> <meta_mesh_component name="kite_shield_j" /> </components> </game_entity>
+<game_entity name="battered_horsemans_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="kite_shield_k" /> </components> </game_entity>
+<game_entity name="light_horsemans_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="kite_shield_l" /> </components> </game_entity>
+<game_entity name="heavy_horsemans_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="kite_shield_n" /> </components> </game_entity>
+<game_entity name="battered_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="kite_shield_o" /> </components> </game_entity>
+<game_entity name="reinforced_flat_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="kite_shield_p" /> </components> </game_entity>
+<game_entity name="studded_bound_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="kite_shield_r" /> </components> </game_entity>
+<game_entity name="fortified_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="kite_shield_s" /> </components> </game_entity>
+<game_entity name="horsemans_heater_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="heater_shield_b" /> </components> </game_entity>
+<game_entity name="small_heater_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> 
+<meta_mesh_component name="heater_shield_c" /> </components> </game_entity>
+<game_entity name="jousting_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="heater_shield_d" /> </components> </game_entity>
+<game_entity name="heater_shield_with_cutout"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="heater_shield_e" /> </components> </game_entity>
+<game_entity name="flat_heater_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="heater_shield_f" /> </components> </game_entity>
+<game_entity name="heavy_heater_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> 
+<meta_mesh_component name="heater_shield_g" /> </components> </game_entity>
+<game_entity name="small_flat_heater_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="heater_shield_h" /> </components> </game_entity>
+<game_entity name="wide_heater_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="heater_shield_i" /> </components> </game_entity>
+<game_entity name="bracketed_heater_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="heater_shield_j" /> </components> </game_entity>
+<game_entity name="tall_heater_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="heater_shield_k" /> </components> </game_entity>
+<game_entity name="adarga"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_aserai_cavalary_a" /> </components> </game_entity>
+<game_entity name="studded_adarga"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_aserai_cavalary_b" /> </components> </game_entity>
+<game_entity name="ornate_adarga"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_aserai_cavalary_c" /> </components> </game_entity>
+<game_entity name="desert_oval_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_aserai_infantary_a" /> </components> </game_entity>
+<game_entity name="southern_oval_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_aserai_infantary_b" /> </components> </game_entity>
+<game_entity name="emirs_oval_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_aserai_infantary_c" /> </components> </game_entity>
+<game_entity name="highland_scouts_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_battania_cavalary_a" /> </components> </game_entity>
+<game_entity name="highland_riders_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_battania_cavalary_b" /> </components> </game_entity>
+<game_entity name="tribal_steppe_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_khuzait_cavalary_a" /> </components> </game_entity>
+<game_entity name="decorated_steppe_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_khuzait_cavalary_b" /> </components> </game_entity>
+<game_entity name="noyans_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_khuzait_cavalary_c" /> </components> </game_entity>
+<game_entity name="steppe_guardian_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_khuzait_cavalary_d" /> </components> </game_entity>
+<game_entity name="eastern_wicker_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_khuzait_infantary_a" /> </components> </game_entity>
+<game_entity name="stronger_eastern_wicker_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_khuzait_infantary_a" /> </components> </game_entity>
+<game_entity name="footmans_wicker_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_khuzait_infantary_b" /> </components> </game_entity>
+<game_entity name="stronger_footmans_wicker_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_khuzait_infantary_b" /> </components> </game_entity>
+<game_entity name="northern_scouts_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_sturgia_cavalary_a" /> </components> </game_entity>
+<game_entity name="northern_horsemans_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_sturgia_cavalary_b" /> </components> </game_entity>
+<game_entity name="viking_round_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> 
+<meta_mesh_component name="shield_sturgia_infantary_a" /> </components> </game_entity>
+<game_entity name="northern_round_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_sturgia_infantary_b" /> </components> </game_entity>
+<game_entity name="western_riders_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_vlandia_cavalary_a" /> </components> </game_entity>
+<game_entity name="ironrim_riders_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_vlandia_cavalary_b" /> </components> </game_entity>
+<game_entity name="chivalric_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> <meta_mesh_component name="shield_vlandia_cavalary_c" /> </components> </game_entity>
+<game_entity name="western_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> 
+<meta_mesh_component name="shield_vlandia_infantary_a" /> </components> </game_entity>
+<game_entity name="ironrim_kite_shield"> <transform position="0.0, 0.0, 0.0" rotation="0.0, 0.0, 0.0, 0.0" scale="1.0, 1.0, 1.0"/> <components> 
+<meta_mesh_component name="shield_vlandia_infantary_b" /> </components> </game_entity>
+</prefabs>

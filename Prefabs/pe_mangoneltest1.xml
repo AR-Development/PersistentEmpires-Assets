@@ -1,0 +1,610 @@
+<prefabs>
+	<game_entity name="pe_mangoneltest1" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_mangonel_a_body" override_material="wood_nonstick"/>
+		<skeleton skeleton_model="mangonel_skeleton">
+			<components>
+				<meta_mesh_component name="mangonel_a_body"/>
+			</components>
+		</skeleton>
+		<scripts>
+			<script name="PE_Mangonel">
+				<variables>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="HitPoint" value="0.000"/>
+					<variable name="MaxHitPoint" value="400.000"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_siege_sturgia_wall_destruction"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/stone_destroy"/>
+					<variable name="MoverStandingPointTag" value="mover"/>
+					<variable name="MangonelBodySkeleton" value="mangonel_skeleton"/>
+					<variable name="MangonelBodyFire" value="mangonel_fire"/>
+					<variable name="MangonelBodyReload" value="mangonel_set_up"/>
+					<variable name="MangonelRopeFire" value="mangonel_holder_fire"/>
+					<variable name="MangonelRopeReload" value="mangonel_holder_set_up"/>
+					<variable name="MangonelAimAnimation" value="mangonel_a_anglearm_state"/>
+					<variable name="ProjectileBoneName" value="end_throwarm"/>
+					<variable name="IdleActionName" value="act_usage_mangonel_big_idle"/>
+					<variable name="ShootActionName" value="act_usage_mangonel_big_shoot"/>
+					<variable name="Reload1ActionName" value="act_usage_mangonel_big_reload"/>
+					<variable name="Reload2ActionName" value="act_usage_mangonel_reload_2"/>
+					<variable name="RotateLeftActionName" value="act_usage_mangonel_rotate_left"/>
+					<variable name="RotateRightActionName" value="act_usage_mangonel_rotate_right"/>
+					<variable name="LoadAmmoBeginActionName" value="act_usage_mangonel_big_load_ammo_begin"/>
+					<variable name="LoadAmmoEndActionName" value="act_usage_mangonel_big_load_ammo_end"/>
+					<variable name="Reload2IdleActionName" value="act_usage_mangonel_reload_2_idle"/>
+					<variable name="ProjectileSpeed" value="55.000"/>
+					<variable name="MissileItemID" value="pe_hardwood"/>
+					<variable name="Focus" value="Troops"/>
+					<variable name="startingAmmoCount" value="20"/>
+					<variable name="TopReleaseAngleRestriction" value="0.700"/>
+					<variable name="BottomReleaseAngleRestriction" value="0.100"/>
+					<variable name="VisualizeReleaseTrajectoryAngle" value="0.700"/>
+					<variable name="RemoveOnDeployTag" value=""/>
+					<variable name="AddOnDeployTag" value=""/>
+					<variable name="ForcedUse" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value=""/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value="mangonel_a_dnm"/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="projectile_leaving_position" old_prefab_name="" mobility="1">
+				<transform position="0.000, -0.400, 3.850"/>
+			</game_entity>
+			<game_entity name="use_rotate_r" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="left"/>
+					<tag name="rotate"/>
+					<tag name="can_pick_up_ammo"/>
+				</tags>
+				<transform position="-1.592, 2.948, 0.000" rotation_euler="0.000, 0.000, -1.585"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="use_rotate_l" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="right"/>
+					<tag name="rotate"/>
+					<tag name="can_pick_up_ammo"/>
+				</tags>
+				<transform position="1.580, 2.973, -0.099" rotation_euler="0.000, 0.000, 1.585"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="use_load" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="ammoload"/>
+				</tags>
+				<transform position="0.000, 3.904, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="PE_StandingPointWithWeaponRequirement">
+						<variables>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="use_reload_r" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="reload"/>
+					<tag name="can_pick_up_ammo"/>
+					<tag name="mover"/>
+				</tags>
+				<transform position="-0.657, 4.051, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="use_reload_fire_l" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="reload"/>
+					<tag name="Pilot"/>
+					<tag name="can_pick_up_ammo"/>
+				</tags>
+				<transform position="0.658, 4.009, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="mangonel_rope" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="rope"/>
+				</tags>
+				<skeleton skeleton_model="mangonel_a_rope_skeleton">
+					<components>
+						<meta_mesh_component name="mangonel_a_rope"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="angle_meter" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="vertical_adjuster"/>
+				</tags>
+				<skeleton skeleton_model="mangonel_a_aim_skeleton">
+					<components>
+						<meta_mesh_component name="mangonel_a_aimbar"/>
+					</components>
+				</skeleton>
+			</game_entity>
+			<game_entity name="targeting_volume" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="targeting_entity"/>
+				</tags>
+				<transform position="0.000, -0.410, 1.080" rotation_euler="0.000, 0.000, 0.000" scale="4.000, 4.000, 4.000"/>
+				<components>
+					<meta_mesh_component name="barrier_sphere">
+						<mesh name="barrier_sphere" material="ghost"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="projectile_boulder" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="projectile"/>
+					<tag name="boulder"/>
+					<tag name="pe_stone"/>
+					<tag name="pe_hardwood"/>
+				</tags>
+				<transform position="0.000, -0.420, 3.850" rotation_euler="0.163, 3.132, 2.220"/>
+				<components>
+					<meta_mesh_component name="projectile_rock"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="projectile_pot" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="projectile"/>
+					<tag name="pot"/>
+				</tags>
+				<transform position="0.000, -0.410, 3.850" rotation_euler="1.134, 0.000, 0.000"/>
+				<components>
+					<meta_mesh_component name="projectile_pot"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="projectile_grapeshot_fire" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="projectile"/>
+					<tag name="grapeshot_fire_stack"/>
+				</tags>
+				<transform position="0.000, -0.410, 3.850" rotation_euler="1.117, 0.000, 0.000"/>
+				<components>
+					<meta_mesh_component name="grapeshot_ready_fire"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="projectile_grapeshot" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="projectile"/>
+					<tag name="grapeshot_stack"/>
+				</tags>
+				<transform position="0.000, -0.410, 3.850" rotation_euler="1.117, 0.000, 0.000"/>
+				<components>
+					<meta_mesh_component name="grapeshot_ready"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_mangoneltest2" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_mangonel_b_body" override_material="wood_nonstick"/>
+		<skeleton skeleton_model="mangonel_b_skeleton">
+			<components>
+				<meta_mesh_component name="mangonel_b_body"/>
+			</components>
+		</skeleton>
+		<scripts>
+			<script name="PE_Mangonel">
+				<variables>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="HitPoint" value="0.000"/>
+					<variable name="MaxHitPoint" value="200.000"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_siege_sturgia_wall_destruction"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/stone_destroy"/>
+					<variable name="MoverStandingPointTag" value="mover"/>
+					<variable name="MangonelBodySkeleton" value="mangonel_b_skeleton"/>
+					<variable name="MangonelBodyFire" value="mangonel_b_fire"/>
+					<variable name="MangonelBodyReload" value="mangonel_b_set_up"/>
+					<variable name="MangonelRopeFire" value="mangonel_b_holder_fire"/>
+					<variable name="MangonelRopeReload" value="mangonel_b_holder_set_up"/>
+					<variable name="MangonelAimAnimation" value="mangonel_b_anglearm_state"/>
+					<variable name="ProjectileBoneName" value="bn_projectile_holder"/>
+					<variable name="IdleActionName" value="act_usage_mangonel_idle"/>
+					<variable name="ShootActionName" value="act_usage_mangonel_shoot"/>
+					<variable name="Reload1ActionName" value="act_usage_mangonel_reload"/>
+					<variable name="Reload2ActionName" value="act_usage_mangonel_reload_2"/>
+					<variable name="RotateLeftActionName" value="act_usage_mangonel_rotate_left"/>
+					<variable name="RotateRightActionName" value="act_usage_mangonel_rotate_right"/>
+					<variable name="LoadAmmoBeginActionName" value="act_usage_mangonel_load_ammo_begin"/>
+					<variable name="LoadAmmoEndActionName" value="act_usage_mangonel_load_ammo_end"/>
+					<variable name="Reload2IdleActionName" value="act_usage_mangonel_reload_2_idle"/>
+					<variable name="ProjectileSpeed" value="45.000"/>
+					<variable name="MissileItemID" value="pe_hardwood"/>
+					<variable name="Focus" value="Troops"/>
+					<variable name="startingAmmoCount" value="20"/>
+					<variable name="TopReleaseAngleRestriction" value="0.700"/>
+					<variable name="BottomReleaseAngleRestriction" value="0.100"/>
+					<variable name="VisualizeReleaseTrajectoryAngle" value="0.700"/>
+					<variable name="RemoveOnDeployTag" value=""/>
+					<variable name="AddOnDeployTag" value=""/>
+					<variable name="ForcedUse" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value=""/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value="mangonel_b_dnm"/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="angle_meter" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="vertical_adjuster"/>
+				</tags>
+				<skeleton skeleton_model="mangonel_b_aim_skeleton">
+					<components>
+						<meta_mesh_component name="mangonel_b_aimbar"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="projectile_boulder" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="projectile"/>
+					<tag name="boulder"/>
+					<tag name="pe_hardwood"/>
+				</tags>
+				<transform position="-0.002, -0.193, 2.502" rotation_euler="0.000, 0.000, -3.135"/>
+				<components>
+					<meta_mesh_component name="projectile_rock"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="use_reload_fire" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Pilot"/>
+					<tag name="reload"/>
+					<tag name="can_pick_up_ammo"/>
+				</tags>
+				<transform position="1.027, 2.367, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="use_reload" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="reload"/>
+					<tag name="can_pick_up_ammo"/>
+					<tag name="mover"/>
+				</tags>
+				<transform position="-1.099, 2.459, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="use_load" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="ammoload"/>
+				</tags>
+				<transform position="0.000, 2.456, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPointWithWeaponRequirement">
+						<variables>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="mangonel_rope" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="rope"/>
+				</tags>
+				<skeleton skeleton_model="mangonel_b_rope_skeleton">
+					<components>
+						<meta_mesh_component name="mangonel_b_rope"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="targeting_volume" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="targeting_entity"/>
+				</tags>
+				<transform position="0.008, -0.488, 0.957" rotation_euler="0.000, 0.000, 0.000" scale="4.000, 4.000, 4.000"/>
+				<components>
+					<meta_mesh_component name="barrier_sphere">
+						<mesh name="barrier_sphere" material="volume_box"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="projectile_leaving_position" old_prefab_name="" mobility="1">
+				<transform position="0.000, -0.150, 2.500"/>
+			</game_entity>
+			<game_entity name="projectile_pot" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="projectile"/>
+					<tag name="pot"/>
+				</tags>
+				<transform position="0.000, -0.190, 2.500" rotation_euler="1.117, 0.000, 0.000"/>
+				<components>
+					<meta_mesh_component name="projectile_pot"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="projectile_grapeshot_fire" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="projectile"/>
+					<tag name="grapeshot_fire_stack"/>
+				</tags>
+				<transform position="0.000, -0.190, 2.500" rotation_euler="1.117, 0.000, 0.000"/>
+				<components>
+					<meta_mesh_component name="grapeshot_ready_fire"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="projectile_grapeshot" old_prefab_name="" visible="false" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="projectile"/>
+					<tag name="grapeshot_stack"/>
+				</tags>
+				<transform position="0.000, -0.190, 2.500" rotation_euler="1.117, 0.000, 0.000"/>
+				<components>
+					<meta_mesh_component name="grapeshot_ready"/>
+				</components>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

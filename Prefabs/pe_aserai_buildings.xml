@@ -1,0 +1,3188 @@
+<prefabs>
+	<game_entity name="pe_aserai_woodcutter" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_UpgradeableBuildings">
+				<variables>
+					<variable name="CastleIndex" value="-1"/>
+					<variable name="BuildingName" value="Wood Cutter"/>
+					<variable name="Tier0Tag" value="tier0"/>
+					<variable name="Tier1Tag" value="tier1"/>
+					<variable name="Tier2Tag" value="tier2"/>
+					<variable name="Tier3Tag" value="tier3"/>
+					<variable name="BuildingInteractiveTag" value="chest"/>
+					<variable name="Tier1RequiredEngineering" value="10"/>
+					<variable name="Tier2RequiredEngineering" value="20"/>
+					<variable name="Tier3RequiredEngineering" value="30"/>
+					<variable name="Tier1MaxHit" value="300"/>
+					<variable name="Tier2MaxHit" value="600"/>
+					<variable name="Tier3MaxHit" value="1200"/>
+					<variable name="Tier1UpgradeReceipts" value="pe_hardwood*10,pe_wooden_stick*20,pe_stone*5"/>
+					<variable name="Tier2UpgradeReceipts" value="pe_hardwood*30,pe_wooden_plank*40,pe_stone*50,pe_scroll*5,pe_clay*10"/>
+					<variable name="Tier3UpgradeReceipts" value="pe_hardwood*30,pe_wooden_plank*50,pe_stone*100,pe_book*5,pe_clay*50,pe_goldore*10"/>
+					<variable name="ParticleEffectOnUpgrade" value="dust_fall_a"/>
+					<variable name="SoundEffectOnUpgrade" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="BuildItem" value="pe_buildhammer"/>
+					<variable name="Tier1CraftingEngineering" value="10"/>
+					<variable name="Tier2CraftingEngineering" value="10"/>
+					<variable name="Tier3CraftingEngineering" value="10"/>
+					<variable name="MaxHitPoint" value="200.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="tier1" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier1"/>
+				</tags>
+				<transform position="3.774, -0.897, 0.000"/>
+				<children>
+					<game_entity name="tent_aserai_a" old_prefab_name="" mobility="1">
+						<transform position="-1.051, 0.249, 0.000" rotation_euler="0.000, 0.000, -1.595" scale="0.898, 1.235, 1.385"/>
+						<physics shape="bo_tents_aserai_a"/>
+						<components>
+							<meta_mesh_component name="tents_aserai_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_c" old_prefab_name="" mobility="1">
+						<transform position="-1.644, 5.321, 0.000" rotation_euler="0.000, 0.000, -0.168" scale="0.727, 0.727, 0.727"/>
+						<physics shape="bo_bd_wood_heap_c"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_a" old_prefab_name="" mobility="1">
+						<transform position="-2.341, -3.573, 0.000" rotation_euler="0.000, 0.000, -0.897"/>
+						<physics shape="bo_bd_wood_heap_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_prop_merchantcarpenter_a" old_prefab_name="" mobility="1">
+						<transform position="2.870, -0.183, 0.000" rotation_euler="0.000, 0.000, -1.577"/>
+						<physics shape="bo_shop_prop_merchantcarpenter_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantcarpenter_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Carpenter Bench"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="woodcutter"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="bd_log_and_axe" old_prefab_name="" mobility="1">
+						<transform position="2.021, 3.568, 0.037" rotation_euler="0.000, 0.000, -3.021"/>
+						<physics shape="bo_bd_log_and_axe" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_log_and_axe"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_tree_high_group_d" old_prefab_name="" mobility="1">
+						<transform position="-5.861, 3.663, 0.000" rotation_euler="0.000, 0.000, 0.070"/>
+						<physics shape="bo_log_tree_high_group_d"/>
+						<components>
+							<meta_mesh_component name="log_tree_high_group_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_c" old_prefab_name="" mobility="1">
+						<transform position="1.357, -4.822, 0.000" rotation_euler="0.000, 0.000, 0.028"/>
+						<physics override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_wood_c"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier2" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier2"/>
+				</tags>
+				<transform position="4.608, -0.524, 0.000"/>
+				<children>
+					<game_entity name="aserai_village_barn_a" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_aserai_village_barn_a">
+						<transform position="-2.103, -0.273, 0.000" rotation_euler="0.000, 0.000, -1.589" scale="0.763, 0.949, 0.844"/>
+						<physics shape="bo_aserai_village_barn_a"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="aserai_village_barn_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-7.909, 2.960, 2.323" rotation_euler="0.000, -1.534, 0.059" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_a" old_prefab_name="" mobility="1">
+						<transform position="-4.944, -5.193, 0.000" rotation_euler="0.000, 0.000, -0.897"/>
+						<physics shape="bo_bd_wood_heap_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_prop_merchantcarpenter_a" old_prefab_name="" mobility="1">
+						<transform position="0.214, -1.031, 0.000" rotation_euler="0.000, 0.000, -1.577"/>
+						<physics shape="bo_shop_prop_merchantcarpenter_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantcarpenter_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Carpenter Bench"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="woodcutter"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="bd_log_and_axe" old_prefab_name="" mobility="1">
+						<transform position="-0.635, 2.720, 0.037" rotation_euler="0.000, 0.000, -3.021"/>
+						<physics shape="bo_bd_log_and_axe" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_log_and_axe"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_tree_high_group_d" old_prefab_name="" mobility="1">
+						<transform position="-8.441, -4.288, 0.000" rotation_euler="0.000, 0.000, 0.070"/>
+						<physics shape="bo_log_tree_high_group_d"/>
+						<components>
+							<meta_mesh_component name="log_tree_high_group_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_c" old_prefab_name="" mobility="1">
+						<transform position="0.055, -5.724, 0.000" rotation_euler="0.000, 0.000, 0.028"/>
+						<physics override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_wood_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_c" old_prefab_name="" mobility="1">
+						<transform position="-4.299, 4.473, 0.000" rotation_euler="0.000, 0.000, -0.168" scale="0.727, 0.727, 0.727"/>
+						<physics shape="bo_bd_wood_heap_c"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-7.893, 2.653, 2.324" rotation_euler="0.000, -1.534, 0.059" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-7.893, 2.675, 2.803" rotation_euler="0.000, -1.534, 0.059" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign__f" old_prefab_name="" mobility="1">
+						<transform position="-6.705, 2.518, 3.484" rotation_euler="-0.028, -0.002, -1.539"/>
+						<physics shape="bo_shop_sign_base_b3"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-7.904, 2.802, 2.587" rotation_euler="0.000, -1.534, 0.059" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-7.882, 2.491, 2.587" rotation_euler="0.000, -1.534, 0.059" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-7.887, 2.363, 2.340" rotation_euler="0.000, -1.534, 0.059" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="axe_i" old_prefab_name="" mobility="1">
+						<transform position="-7.906, 2.170, 2.804" rotation_euler="-0.096, -0.603, -1.473" scale="1.807, 1.807, 1.807"/>
+						<components>
+							<meta_mesh_component name="axe_i"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier3" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier3"/>
+				</tags>
+				<transform position="5.215, -0.335, 0.006"/>
+				<children>
+					<game_entity name="aserai_castle_barn_b_l3" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_aserai_castle_barn_b_l3">
+						<transform position="-1.601, -0.654, 0.044" rotation_euler="0.000, 0.000, -1.607" scale="0.731, 1.000, 0.940"/>
+						<physics shape="bo_aserai_castle_barn_b_l3"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="aserai_castle_barn_b_l3"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-7.194, 4.234, 3.473" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_a" old_prefab_name="" mobility="1">
+						<transform position="-4.173, -4.135, -0.006" rotation_euler="0.000, 0.000, -0.897"/>
+						<physics shape="bo_bd_wood_heap_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_prop_merchantcarpenter_a" old_prefab_name="" mobility="1">
+						<transform position="1.038, -0.745, -0.006" rotation_euler="0.000, 0.000, -1.577"/>
+						<physics shape="bo_shop_prop_merchantcarpenter_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantcarpenter_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Carpenter Bench"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="woodcutter"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="bd_log_and_axe" old_prefab_name="" mobility="1">
+						<transform position="0.189, 3.006, 0.031" rotation_euler="0.000, 0.000, -3.021"/>
+						<physics shape="bo_bd_log_and_axe" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_log_and_axe"/>
+						</components>
+					</game_entity>
+					<game_entity name="log_tree_high_group_d" old_prefab_name="" mobility="1">
+						<transform position="-7.466, -1.821, -0.006"/>
+						<physics shape="bo_log_tree_high_group_d"/>
+						<components>
+							<meta_mesh_component name="log_tree_high_group_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_c" old_prefab_name="" mobility="1">
+						<transform position="-0.475, -5.384, -0.006" rotation_euler="0.000, 0.000, 0.028"/>
+						<physics override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_wood_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_c" old_prefab_name="" mobility="1">
+						<transform position="-1.824, 4.759, -0.006" rotation_euler="0.000, 0.000, -0.168" scale="0.727, 0.727, 0.727"/>
+						<physics shape="bo_bd_wood_heap_c"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-7.206, 3.927, 3.473" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-7.218, 3.949, 3.952" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign__f" old_prefab_name="" mobility="1">
+						<transform position="-6.069, 3.682, 4.665" rotation_euler="0.000, 0.000, -1.632"/>
+						<physics shape="bo_shop_sign_base_b3"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-7.211, 4.076, 3.736" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-7.218, 3.764, 3.736" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="" mobility="1">
+						<transform position="-7.228, 3.637, 3.489" rotation_euler="0.000, -1.562, -0.034" scale="0.869, 0.979, 0.060"/>
+						<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+						<components>
+							<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="axe_i" old_prefab_name="" mobility="1">
+						<transform position="-7.278, 3.447, 3.952" rotation_euler="-0.068, -0.603, -1.566" scale="1.807, 1.807, 1.807"/>
+						<components>
+							<meta_mesh_component name="axe_i"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier0" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier0"/>
+				</tags>
+				<transform position="3.743, -15.284, 0.186" rotation_euler="0.000, 0.000, 0.000" scale="0.971, 1.101, 1.000"/>
+				<children>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-0.193, 6.811, -0.058" rotation_euler="0.000, 0.000, 3.123" scale="1.238, 1.264, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-5.885, 12.918, -0.061" rotation_euler="0.000, 0.000, 1.573" scale="1.541, 1.112, 1.166"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="5.253, 13.121, -0.064" rotation_euler="0.000, 0.000, -1.605" scale="1.550, 1.112, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-0.809, 18.907, -0.057" rotation_euler="0.000, 0.000, 0.022" scale="1.341, 1.264, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_e" old_prefab_name="" mobility="1">
+						<transform position="4.225, 18.268, -0.186" non_orthogonal_rotation_mat="0.758648, 0.651501, 0.000000, -0.553519, 0.832837, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.102, 1.141, 1.048"/>
+						<physics shape="bo_bd_wood_heap_e"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_e" old_prefab_name="" mobility="1">
+						<transform position="-4.426, 8.133, -0.069" non_orthogonal_rotation_mat="-0.579055, -0.815289, -0.000000, 0.736767, -0.676147, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.137, 1.107, 1.048"/>
+						<physics shape="bo_bd_wood_heap_e"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="" mobility="1">
+						<transform position="-3.236, 13.102, -0.009" non_orthogonal_rotation_mat="0.287476, -0.957788, 0.000000, 0.932339, 0.361584, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.123, 1.015, 1.000"/>
+						<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_d" old_prefab_name="" mobility="1">
+						<transform position="-4.987, 17.667, -0.069" non_orthogonal_rotation_mat="-0.562442, 0.826837, 0.000000, -0.751107, -0.660180, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.088, 1.053, 1.000"/>
+						<physics shape="bo_bd_wood_heap_d"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_d" old_prefab_name="" mobility="1">
+						<transform position="4.370, 7.747, -0.069" non_orthogonal_rotation_mat="0.494285, -0.869300, 0.000000, 0.805879, 0.592080, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.200, 1.139, 1.093"/>
+						<physics shape="bo_bd_wood_heap_d"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_l1_floor_a" old_prefab_name="" mobility="1">
+						<transform position="-0.343, 13.176, -0.186" rotation_euler="0.000, 0.000, 0.000" scale="2.260, 3.842, 1.163"/>
+						<physics shape="bo_european_castle_l1_floor_a"/>
+						<components>
+							<meta_mesh_component name="european_castle_l1_floor_a">
+								<mesh name="european_castle_l1_floor_a.2" material="sand_stone_a"/>
+								<mesh name="european_castle_l1_floor_a.lod3.2" material="sand_stone_a"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_chest_sturgia_a" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="chest"/>
+				</tags>
+				<transform position="-5.055, 5.697, -0.010" rotation_euler="0.000, 0.000, 0.011"/>
+				<physics shape="bo_bd_chest_sturgia_a"/>
+				<components>
+					<meta_mesh_component name="bd_chest_sturgia_a"/>
+				</components>
+				<scripts>
+					<script name="PE_InventoryEntity">
+						<variables>
+							<variable name="InventoryName" value="Chest"/>
+							<variable name="InventoryId" value="o3e9ti8u"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="Slot" value="30"/>
+							<variable name="StackCount" value="10"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_aserai_bakery" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_UpgradeableBuildings">
+				<variables>
+					<variable name="CastleIndex" value="-1"/>
+					<variable name="BuildingName" value="Bakery"/>
+					<variable name="Tier0Tag" value="tier0"/>
+					<variable name="Tier1Tag" value="tier1"/>
+					<variable name="Tier2Tag" value="tier2"/>
+					<variable name="Tier3Tag" value="tier3"/>
+					<variable name="BuildingInteractiveTag" value="chest"/>
+					<variable name="Tier1RequiredEngineering" value="10"/>
+					<variable name="Tier2RequiredEngineering" value="20"/>
+					<variable name="Tier3RequiredEngineering" value="30"/>
+					<variable name="Tier1MaxHit" value="300"/>
+					<variable name="Tier2MaxHit" value="600"/>
+					<variable name="Tier3MaxHit" value="1200"/>
+					<variable name="Tier1UpgradeReceipts" value="pe_hardwood*10,pe_wooden_stick*20,pe_stone*5"/>
+					<variable name="Tier2UpgradeReceipts" value="pe_hardwood*30,pe_wooden_plank*40,pe_stone*50,pe_scroll*5,pe_clay*10"/>
+					<variable name="Tier3UpgradeReceipts" value="pe_hardwood*30,pe_wooden_plank*50,pe_stone*100,pe_book*5,pe_clay*50,pe_goldore*10"/>
+					<variable name="ParticleEffectOnUpgrade" value="dust_fall_a"/>
+					<variable name="SoundEffectOnUpgrade" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="BuildItem" value="pe_buildhammer"/>
+					<variable name="Tier1CraftingEngineering" value="10"/>
+					<variable name="Tier2CraftingEngineering" value="10"/>
+					<variable name="Tier3CraftingEngineering" value="10"/>
+					<variable name="MaxHitPoint" value="200.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="tier1" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier1"/>
+				</tags>
+				<transform position="2.384, -0.738, 0.000"/>
+				<children>
+					<game_entity name="tent_aserai_a" old_prefab_name="" mobility="1">
+						<transform position="-1.051, 0.249, 0.000" rotation_euler="0.000, 0.000, -1.595" scale="0.898, 1.235, 1.385"/>
+						<physics shape="bo_tents_aserai_a"/>
+						<components>
+							<meta_mesh_component name="tents_aserai_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="mp_shop_prop_merchantbakery_a" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="0.056, -4.041, 0.000" rotation_euler="0.000, 0.000, 3.131"/>
+						<physics shape="bo_shop_prop_merchantbakery_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantbakery_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Oven"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="bakery"/>
+									<variable name="RelevantSkillId" value="Cooking"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="burned_wood_b" old_prefab_name="" mobility="1">
+								<transform position="1.393, 0.167, 0.200"/>
+								<components>
+									<meta_mesh_component name="burned_wood_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="prt_torch_fire" old_prefab_name="" mobility="1">
+								<transform position="1.398, -0.025, 0.123" rotation_euler="0.000, 0.000, 0.669"/>
+								<components>
+									<particle_system_instanced_component>
+										<effect base_effect="{39CDECB3-046B-4A8B-8E71-533BB7F6C882}">
+											<emitter_overrides>
+												<emitter guid="{91DE7F64-8F4D-4105-A197-22047F264CE8}">
+													<flags>
+														<flag name="loop_sprite" value="true"/>
+														<flag name="uses_sprite_animation" value="true"/>
+														<flag name="order_by_distance" value="false"/>
+													</flags>
+													<parameters>
+														<parameter name="skew_with_particle_velocity_coef" value="0.000"/>
+														<parameter name="emit_box_size" value="0.000, 0.000, 0.000"/>
+														<parameter name="quad_scale" value="0.235, 0.235"/>
+														<parameter name="texture_sprite_frame_rate" value="25.000"/>
+														<parameter name="fadeout_distance" value="0.005"/>
+														<parameter name="diffuse_multiplier" value="250.000"/>
+														<parameter name="particle_size_curve_op" value="add"/>
+														<parameter name="emission_rate" base="10.000" bias="0.000"/>
+														<parameter name="cone_emit_velocity" base="1.000" bias="0.000"/>
+														<parameter name="emit_velocity_z" base="0.000" bias="0.000"/>
+														<parameter name="emit_rotation_speed" base="0.000" bias="57.296"/>
+														<parameter name="wind_effect" base="1.000" bias="0.000"/>
+														<parameter name="particle_size" base="0.000" bias="0.000">
+															<curve name="particle_life" version="1" default="1.000" curve_multiplier="0.600">
+																<keys>
+																	<key time="0.000" value="1.000" tangent="0.007, 0.000"/>
+																	<key time="0.000" value="0.500" tangent="-0.007, 0.000"/>
+																</keys>
+															</curve>
+														</parameter>
+														<parameter name="material_guid" value="{E9D0AFB2-E3B2-4FBA-A017-D747B6C256F1}"/>
+														<parameter name="particle_color">
+															<color>
+																<keys>
+																	<key time="0.500" value="0.341, 0.235, 0.173"/>
+																	<key time="0.900" value="0.573, 0.573, 0.573"/>
+																</keys>
+															</color>
+															<alpha>
+																<keys>
+																	<key time="0.000" value="0.000"/>
+																	<key time="0.500" value="1.000"/>
+																	<key time="0.900" value="1.000"/>
+																	<key time="1.000" value="0.000"/>
+																</keys>
+															</alpha>
+														</parameter>
+													</parameters>
+												</emitter>
+											</emitter_overrides>
+										</effect>
+									</particle_system_instanced_component>
+								</components>
+								<children>
+									<game_entity name="torch_fire_sparks" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.000, 0.062"/>
+										<components>
+											<particle_system_instanced_component>
+												<effect base_effect="{39CDECB3-046B-4A8B-8E71-533BB7F6C882}">
+													<emitter_overrides>
+														<emitter guid="{91DE7F64-8F4D-4105-A197-22047F264CE8}">
+															<flags>
+																<flag name="local_emit_dir" value="false"/>
+																<flag name="skew_with_respect_to_particle_velocity" value="true"/>
+																<flag name="order_by_distance" value="false"/>
+															</flags>
+															<parameters>
+																<parameter name="skew_with_particle_velocity_coef" value="0.067"/>
+																<parameter name="emit_box_size" value="0.050, 0.050, 0.200"/>
+																<parameter name="gravity" value="0.000, 0.000, 0.500"/>
+																<parameter name="quad_scale" value="0.005, 0.005"/>
+																<parameter name="texture_sprite_count" value="1, 1"/>
+																<parameter name="texture_sprite_frame_count" value="1"/>
+																<parameter name="texture_sprite_frame_rate" value="1.000"/>
+																<parameter name="fadeout_distance" value="0.005"/>
+																<parameter name="diffuse_multiplier" value="1.000"/>
+																<parameter name="particle_size_curve_op" value="add"/>
+																<parameter name="billboard_type" value="turn_to_velocity_side"/>
+																<parameter name="initial_rotation" base="0.000" bias="0.000"/>
+																<parameter name="damping" base="0.713" bias="0.000"/>
+																<parameter name="angular_damping" base="0.000" bias="0.000"/>
+																<parameter name="cone_emit_velocity" base="1.000" bias="0.000"/>
+																<parameter name="emit_velocity_x" base="0.000" bias="0.500"/>
+																<parameter name="emit_velocity_y" base="0.000" bias="0.500"/>
+																<parameter name="emit_velocity_z" base="1.000" bias="0.500"/>
+																<parameter name="wind_effect" base="1.000" bias="0.000"/>
+																<parameter name="particle_size" base="0.000" bias="0.000">
+																	<curve name="particle_life" version="1" default="1.000" curve_multiplier="1.000">
+																		<keys>
+																			<key time="0.000" value="1.000" tangent="0.007, 0.000"/>
+																			<key time="0.000" value="0.300" tangent="-0.007, 0.000"/>
+																		</keys>
+																	</curve>
+																</parameter>
+																<parameter name="material_guid" value="{C783D465-AF3A-4652-BDD3-C171857CBBC0}"/>
+																<parameter name="particle_color">
+																	<color>
+																		<keys>
+																			<key time="0.500" value="0.694, 0.259, 0.122"/>
+																			<key time="0.900" value="0.765, 0.357, 0.122"/>
+																		</keys>
+																	</color>
+																	<alpha>
+																		<keys>
+																			<key time="0.000" value="0.000"/>
+																			<key time="0.500" value="1.000"/>
+																			<key time="0.900" value="0.196"/>
+																			<key time="1.000" value="0.000"/>
+																		</keys>
+																	</alpha>
+																</parameter>
+															</parameters>
+														</emitter>
+													</emitter_overrides>
+												</effect>
+											</particle_system_instanced_component>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="ashes_a" old_prefab_name="" mobility="1">
+								<transform position="1.351, -0.055, 0.216" rotation_euler="0.000, 0.000, 0.000" scale="0.575, 0.575, 0.546"/>
+								<components>
+									<meta_mesh_component name="ashes_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="a_spr_light" old_prefab_name="" mobility="1">
+								<transform position="1.359, -0.189, 0.502"/>
+								<components>
+									<light_component color="1.000, 0.608, 0.216" intensity="10.000" radius="3.000" flicker_interval="0.100" flicker_magnitude="0.900" local_frame_rot="3.000000, 0.000000, 0.000000, 0.000000, 3.000000, 0.000000, 0.000000, 0.000000, 3.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow="1" shadow_size_multiplier="1" shadow_radius="2.400"/>
+								</components>
+							</game_entity>
+							<game_entity name="burned_wood_f" old_prefab_name="" mobility="1">
+								<transform position="1.369, -0.197, 0.215" rotation_euler="0.000, 0.000, 1.224"/>
+								<components>
+									<meta_mesh_component name="burned_wood_f"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="mp_shop_prop_merchantflour_a" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="0.530, 4.485, 0.000" rotation_euler="0.000, 0.000, -0.042"/>
+						<physics shape="bo_shop_prop_merchantflour_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantflour_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Grinder"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="grinder"/>
+									<variable name="RelevantSkillId" value="Cooking"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="bd_mill_flour_sack_desk_b" old_prefab_name="" mobility="1">
+						<transform position="-4.983, 3.175, 0.000" rotation_euler="0.000, 0.000, 1.565"/>
+						<physics shape="bo_mill_flour_sack_desk_b" override_material="sand"/>
+						<components>
+							<meta_mesh_component name="mill_flour_sack_desk_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier2" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier2"/>
+				</tags>
+				<transform position="3.756, -0.282, 0.000"/>
+				<children>
+					<game_entity name="aserai_village_barn_a" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_aserai_village_barn_a">
+						<transform position="-2.299, 0.185, 0.000" rotation_euler="0.000, 0.000, -1.589" scale="0.714, 1.000, 0.765"/>
+						<physics shape="bo_aserai_village_barn_a"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="aserai_village_barn_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign__f" old_prefab_name="" mobility="1">
+						<transform position="-6.782, 2.093, 3.148" rotation_euler="0.000, 0.000, -1.510"/>
+						<physics shape="bo_shop_sign_base_b3"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_merchantbakery" old_prefab_name="" mobility="1">
+						<transform position="-7.999, 2.015, 2.156" rotation_euler="0.000, 0.000, -1.465"/>
+						<components>
+							<meta_mesh_component name="shop_sign_merchantbakery"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_mill_flour_sack_desk_b" old_prefab_name="" mobility="1">
+						<transform position="-7.829, 3.054, 0.000" rotation_euler="0.000, 0.000, 1.600"/>
+						<physics shape="bo_mill_flour_sack_desk_b" override_material="sand"/>
+						<components>
+							<meta_mesh_component name="mill_flour_sack_desk_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="mp_shop_prop_merchantflour_a" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-1.187, 4.383, 0.000" rotation_euler="0.000, 0.000, -0.011"/>
+						<physics shape="bo_shop_prop_merchantflour_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantflour_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Grinder"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="grinder"/>
+									<variable name="RelevantSkillId" value="Cooking"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="mp_shop_prop_merchantbakery_a" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-2.160, -4.563, 0.000" rotation_euler="0.000, 0.001, 3.123"/>
+						<physics shape="bo_shop_prop_merchantbakery_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantbakery_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Oven"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="bakery"/>
+									<variable name="RelevantSkillId" value="Cooking"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="burned_wood_b" old_prefab_name="" mobility="1">
+								<transform position="1.393, 0.167, 0.200"/>
+								<components>
+									<meta_mesh_component name="burned_wood_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="prt_torch_fire" old_prefab_name="" mobility="1">
+								<transform position="1.398, -0.025, 0.123" rotation_euler="0.000, 0.000, 0.669"/>
+								<components>
+									<particle_system_instanced_component>
+										<effect base_effect="{39CDECB3-046B-4A8B-8E71-533BB7F6C882}">
+											<emitter_overrides>
+												<emitter guid="{91DE7F64-8F4D-4105-A197-22047F264CE8}">
+													<flags>
+														<flag name="loop_sprite" value="true"/>
+														<flag name="uses_sprite_animation" value="true"/>
+														<flag name="order_by_distance" value="false"/>
+													</flags>
+													<parameters>
+														<parameter name="skew_with_particle_velocity_coef" value="0.000"/>
+														<parameter name="emit_box_size" value="0.000, 0.000, 0.000"/>
+														<parameter name="quad_scale" value="0.235, 0.235"/>
+														<parameter name="texture_sprite_frame_rate" value="25.000"/>
+														<parameter name="fadeout_distance" value="0.005"/>
+														<parameter name="diffuse_multiplier" value="250.000"/>
+														<parameter name="particle_size_curve_op" value="add"/>
+														<parameter name="emission_rate" base="10.000" bias="0.000"/>
+														<parameter name="cone_emit_velocity" base="1.000" bias="0.000"/>
+														<parameter name="emit_velocity_z" base="0.000" bias="0.000"/>
+														<parameter name="emit_rotation_speed" base="0.000" bias="57.296"/>
+														<parameter name="wind_effect" base="1.000" bias="0.000"/>
+														<parameter name="particle_size" base="0.000" bias="0.000">
+															<curve name="particle_life" version="1" default="1.000" curve_multiplier="0.600">
+																<keys>
+																	<key time="0.000" value="1.000" tangent="0.007, 0.000"/>
+																	<key time="0.000" value="0.500" tangent="-0.007, 0.000"/>
+																</keys>
+															</curve>
+														</parameter>
+														<parameter name="material_guid" value="{E9D0AFB2-E3B2-4FBA-A017-D747B6C256F1}"/>
+														<parameter name="particle_color">
+															<color>
+																<keys>
+																	<key time="0.500" value="0.341, 0.235, 0.173"/>
+																	<key time="0.900" value="0.573, 0.573, 0.573"/>
+																</keys>
+															</color>
+															<alpha>
+																<keys>
+																	<key time="0.000" value="0.000"/>
+																	<key time="0.500" value="1.000"/>
+																	<key time="0.900" value="1.000"/>
+																	<key time="1.000" value="0.000"/>
+																</keys>
+															</alpha>
+														</parameter>
+													</parameters>
+												</emitter>
+											</emitter_overrides>
+										</effect>
+									</particle_system_instanced_component>
+								</components>
+								<children>
+									<game_entity name="torch_fire_sparks" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.000, 0.062"/>
+										<components>
+											<particle_system_instanced_component>
+												<effect base_effect="{39CDECB3-046B-4A8B-8E71-533BB7F6C882}">
+													<emitter_overrides>
+														<emitter guid="{91DE7F64-8F4D-4105-A197-22047F264CE8}">
+															<flags>
+																<flag name="local_emit_dir" value="false"/>
+																<flag name="skew_with_respect_to_particle_velocity" value="true"/>
+																<flag name="order_by_distance" value="false"/>
+															</flags>
+															<parameters>
+																<parameter name="skew_with_particle_velocity_coef" value="0.067"/>
+																<parameter name="emit_box_size" value="0.050, 0.050, 0.200"/>
+																<parameter name="gravity" value="0.000, 0.000, 0.500"/>
+																<parameter name="quad_scale" value="0.005, 0.005"/>
+																<parameter name="texture_sprite_count" value="1, 1"/>
+																<parameter name="texture_sprite_frame_count" value="1"/>
+																<parameter name="texture_sprite_frame_rate" value="1.000"/>
+																<parameter name="fadeout_distance" value="0.005"/>
+																<parameter name="diffuse_multiplier" value="1.000"/>
+																<parameter name="particle_size_curve_op" value="add"/>
+																<parameter name="billboard_type" value="turn_to_velocity_side"/>
+																<parameter name="initial_rotation" base="0.000" bias="0.000"/>
+																<parameter name="damping" base="0.713" bias="0.000"/>
+																<parameter name="angular_damping" base="0.000" bias="0.000"/>
+																<parameter name="cone_emit_velocity" base="1.000" bias="0.000"/>
+																<parameter name="emit_velocity_x" base="0.000" bias="0.500"/>
+																<parameter name="emit_velocity_y" base="0.000" bias="0.500"/>
+																<parameter name="emit_velocity_z" base="1.000" bias="0.500"/>
+																<parameter name="wind_effect" base="1.000" bias="0.000"/>
+																<parameter name="particle_size" base="0.000" bias="0.000">
+																	<curve name="particle_life" version="1" default="1.000" curve_multiplier="1.000">
+																		<keys>
+																			<key time="0.000" value="1.000" tangent="0.007, 0.000"/>
+																			<key time="0.000" value="0.300" tangent="-0.007, 0.000"/>
+																		</keys>
+																	</curve>
+																</parameter>
+																<parameter name="material_guid" value="{C783D465-AF3A-4652-BDD3-C171857CBBC0}"/>
+																<parameter name="particle_color">
+																	<color>
+																		<keys>
+																			<key time="0.500" value="0.694, 0.259, 0.122"/>
+																			<key time="0.900" value="0.765, 0.357, 0.122"/>
+																		</keys>
+																	</color>
+																	<alpha>
+																		<keys>
+																			<key time="0.000" value="0.000"/>
+																			<key time="0.500" value="1.000"/>
+																			<key time="0.900" value="0.196"/>
+																			<key time="1.000" value="0.000"/>
+																		</keys>
+																	</alpha>
+																</parameter>
+															</parameters>
+														</emitter>
+													</emitter_overrides>
+												</effect>
+											</particle_system_instanced_component>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="ashes_a" old_prefab_name="" mobility="1">
+								<transform position="1.351, -0.055, 0.216" rotation_euler="0.000, 0.000, 0.000" scale="0.575, 0.575, 0.546"/>
+								<components>
+									<meta_mesh_component name="ashes_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="a_spr_light" old_prefab_name="" mobility="1">
+								<transform position="1.359, -0.189, 0.502"/>
+								<components>
+									<light_component color="1.000, 0.608, 0.216" intensity="10.000" radius="3.000" flicker_interval="0.100" flicker_magnitude="0.900" local_frame_rot="3.000000, 0.000000, 0.000000, 0.000000, 3.000000, 0.000000, 0.000000, 0.000000, 3.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow="1" shadow_size_multiplier="1" shadow_radius="2.400"/>
+								</components>
+							</game_entity>
+							<game_entity name="burned_wood_f" old_prefab_name="" mobility="1">
+								<transform position="1.369, -0.197, 0.215" rotation_euler="0.000, 0.000, 1.224"/>
+								<components>
+									<meta_mesh_component name="burned_wood_f"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier3" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier3"/>
+				</tags>
+				<transform position="3.257, 0.003, 0.006"/>
+				<children>
+					<game_entity name="aserai_castle_barn_b_l3" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_aserai_castle_barn_b_l3">
+						<transform position="-1.601, -0.654, 0.062" rotation_euler="0.000, 0.000, -1.607" scale="0.619, 1.000, 0.818"/>
+						<physics shape="bo_aserai_castle_barn_b_l3"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="aserai_castle_barn_b_l3"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_merchantbakery" old_prefab_name="" mobility="1">
+						<transform position="-7.514, -1.839, 3.253" rotation_euler="0.000, 0.000, -1.587"/>
+						<components>
+							<meta_mesh_component name="shop_sign_merchantbakery"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_mill_flour_sack_desk_b" old_prefab_name="" mobility="1">
+						<transform position="-7.072, 4.649, -0.006" rotation_euler="0.000, 0.000, 1.550"/>
+						<physics shape="bo_mill_flour_sack_desk_b" override_material="sand"/>
+						<components>
+							<meta_mesh_component name="mill_flour_sack_desk_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="mp_shop_prop_merchantflour_a" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-0.712, 3.891, -0.006" rotation_euler="0.000, 0.000, -0.022"/>
+						<physics shape="bo_shop_prop_merchantflour_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantflour_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Grinder"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="grinder"/>
+									<variable name="RelevantSkillId" value="Cooking"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="mp_shop_prop_merchantbakery_a" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-1.747, -5.487, 0.068" rotation_euler="0.000, 0.000, -3.113"/>
+						<physics shape="bo_shop_prop_merchantbakery_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantbakery_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Oven"/>
+									<variable name="Animation" value=""/>
+									<variable name="CraftingRecieptTag" value="bakery"/>
+									<variable name="RelevantSkillId" value="Cooking"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="burned_wood_b" old_prefab_name="" mobility="1">
+								<transform position="1.393, 0.167, 0.200"/>
+								<components>
+									<meta_mesh_component name="burned_wood_b"/>
+								</components>
+							</game_entity>
+							<game_entity name="prt_torch_fire" old_prefab_name="" mobility="1">
+								<transform position="1.398, -0.025, 0.123" rotation_euler="0.000, 0.000, 0.669"/>
+								<components>
+									<particle_system_instanced_component>
+										<effect base_effect="{39CDECB3-046B-4A8B-8E71-533BB7F6C882}">
+											<emitter_overrides>
+												<emitter guid="{91DE7F64-8F4D-4105-A197-22047F264CE8}">
+													<flags>
+														<flag name="loop_sprite" value="true"/>
+														<flag name="uses_sprite_animation" value="true"/>
+														<flag name="order_by_distance" value="false"/>
+													</flags>
+													<parameters>
+														<parameter name="skew_with_particle_velocity_coef" value="0.000"/>
+														<parameter name="emit_box_size" value="0.000, 0.000, 0.000"/>
+														<parameter name="quad_scale" value="0.235, 0.235"/>
+														<parameter name="texture_sprite_frame_rate" value="25.000"/>
+														<parameter name="fadeout_distance" value="0.005"/>
+														<parameter name="diffuse_multiplier" value="250.000"/>
+														<parameter name="particle_size_curve_op" value="add"/>
+														<parameter name="emission_rate" base="10.000" bias="0.000"/>
+														<parameter name="cone_emit_velocity" base="1.000" bias="0.000"/>
+														<parameter name="emit_velocity_z" base="0.000" bias="0.000"/>
+														<parameter name="emit_rotation_speed" base="0.000" bias="57.296"/>
+														<parameter name="wind_effect" base="1.000" bias="0.000"/>
+														<parameter name="particle_size" base="0.000" bias="0.000">
+															<curve name="particle_life" version="1" default="1.000" curve_multiplier="0.600">
+																<keys>
+																	<key time="0.000" value="1.000" tangent="0.007, 0.000"/>
+																	<key time="0.000" value="0.500" tangent="-0.007, 0.000"/>
+																</keys>
+															</curve>
+														</parameter>
+														<parameter name="material_guid" value="{E9D0AFB2-E3B2-4FBA-A017-D747B6C256F1}"/>
+														<parameter name="particle_color">
+															<color>
+																<keys>
+																	<key time="0.500" value="0.341, 0.235, 0.173"/>
+																	<key time="0.900" value="0.573, 0.573, 0.573"/>
+																</keys>
+															</color>
+															<alpha>
+																<keys>
+																	<key time="0.000" value="0.000"/>
+																	<key time="0.500" value="1.000"/>
+																	<key time="0.900" value="1.000"/>
+																	<key time="1.000" value="0.000"/>
+																</keys>
+															</alpha>
+														</parameter>
+													</parameters>
+												</emitter>
+											</emitter_overrides>
+										</effect>
+									</particle_system_instanced_component>
+								</components>
+								<children>
+									<game_entity name="torch_fire_sparks" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.000, 0.062"/>
+										<components>
+											<particle_system_instanced_component>
+												<effect base_effect="{39CDECB3-046B-4A8B-8E71-533BB7F6C882}">
+													<emitter_overrides>
+														<emitter guid="{91DE7F64-8F4D-4105-A197-22047F264CE8}">
+															<flags>
+																<flag name="local_emit_dir" value="false"/>
+																<flag name="skew_with_respect_to_particle_velocity" value="true"/>
+																<flag name="order_by_distance" value="false"/>
+															</flags>
+															<parameters>
+																<parameter name="skew_with_particle_velocity_coef" value="0.067"/>
+																<parameter name="emit_box_size" value="0.050, 0.050, 0.200"/>
+																<parameter name="gravity" value="0.000, 0.000, 0.500"/>
+																<parameter name="quad_scale" value="0.005, 0.005"/>
+																<parameter name="texture_sprite_count" value="1, 1"/>
+																<parameter name="texture_sprite_frame_count" value="1"/>
+																<parameter name="texture_sprite_frame_rate" value="1.000"/>
+																<parameter name="fadeout_distance" value="0.005"/>
+																<parameter name="diffuse_multiplier" value="1.000"/>
+																<parameter name="particle_size_curve_op" value="add"/>
+																<parameter name="billboard_type" value="turn_to_velocity_side"/>
+																<parameter name="initial_rotation" base="0.000" bias="0.000"/>
+																<parameter name="damping" base="0.713" bias="0.000"/>
+																<parameter name="angular_damping" base="0.000" bias="0.000"/>
+																<parameter name="cone_emit_velocity" base="1.000" bias="0.000"/>
+																<parameter name="emit_velocity_x" base="0.000" bias="0.500"/>
+																<parameter name="emit_velocity_y" base="0.000" bias="0.500"/>
+																<parameter name="emit_velocity_z" base="1.000" bias="0.500"/>
+																<parameter name="wind_effect" base="1.000" bias="0.000"/>
+																<parameter name="particle_size" base="0.000" bias="0.000">
+																	<curve name="particle_life" version="1" default="1.000" curve_multiplier="1.000">
+																		<keys>
+																			<key time="0.000" value="1.000" tangent="0.007, 0.000"/>
+																			<key time="0.000" value="0.300" tangent="-0.007, 0.000"/>
+																		</keys>
+																	</curve>
+																</parameter>
+																<parameter name="material_guid" value="{C783D465-AF3A-4652-BDD3-C171857CBBC0}"/>
+																<parameter name="particle_color">
+																	<color>
+																		<keys>
+																			<key time="0.500" value="0.694, 0.259, 0.122"/>
+																			<key time="0.900" value="0.765, 0.357, 0.122"/>
+																		</keys>
+																	</color>
+																	<alpha>
+																		<keys>
+																			<key time="0.000" value="0.000"/>
+																			<key time="0.500" value="1.000"/>
+																			<key time="0.900" value="0.196"/>
+																			<key time="1.000" value="0.000"/>
+																		</keys>
+																	</alpha>
+																</parameter>
+															</parameters>
+														</emitter>
+													</emitter_overrides>
+												</effect>
+											</particle_system_instanced_component>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="ashes_a" old_prefab_name="" mobility="1">
+								<transform position="1.351, -0.055, 0.216" rotation_euler="0.000, 0.000, 0.000" scale="0.575, 0.575, 0.546"/>
+								<components>
+									<meta_mesh_component name="ashes_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="a_spr_light" old_prefab_name="" mobility="1">
+								<transform position="1.359, -0.189, 0.502"/>
+								<components>
+									<light_component color="1.000, 0.608, 0.216" intensity="10.000" radius="3.000" flicker_interval="0.100" flicker_magnitude="0.900" local_frame_rot="3.000000, 0.000000, 0.000000, 0.000000, 3.000000, 0.000000, 0.000000, 0.000000, 3.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow="1" shadow_size_multiplier="1" shadow_radius="2.400"/>
+								</components>
+							</game_entity>
+							<game_entity name="burned_wood_f" old_prefab_name="" mobility="1">
+								<transform position="1.369, -0.197, 0.215" rotation_euler="0.000, 0.000, 1.224"/>
+								<components>
+									<meta_mesh_component name="burned_wood_f"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="shop_sign__f" old_prefab_name="" mobility="1">
+						<transform position="-6.292, -1.857, 4.168" rotation_euler="0.000, 0.000, -1.632"/>
+						<physics shape="bo_shop_sign_base_b3"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_b3"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier0" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier0"/>
+				</tags>
+				<transform position="2.642, -15.223, 0.186" rotation_euler="0.000, 0.000, 0.000" scale="0.971, 1.101, 1.000"/>
+				<children>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-0.193, 6.811, -0.058" rotation_euler="0.000, 0.000, 3.123" scale="1.238, 1.264, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-5.885, 12.918, -0.061" rotation_euler="0.000, 0.000, 1.573" scale="1.541, 1.112, 1.166"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="5.253, 13.121, -0.064" rotation_euler="0.000, 0.000, -1.605" scale="1.550, 1.112, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-0.809, 18.907, -0.057" rotation_euler="0.000, 0.000, 0.022" scale="1.341, 1.264, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_e" old_prefab_name="" mobility="1">
+						<transform position="4.225, 18.268, -0.186" non_orthogonal_rotation_mat="0.758648, 0.651501, 0.000000, -0.553519, 0.832837, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.102, 1.141, 1.048"/>
+						<physics shape="bo_bd_wood_heap_e"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_e" old_prefab_name="" mobility="1">
+						<transform position="-4.426, 8.133, -0.069" non_orthogonal_rotation_mat="-0.579055, -0.815289, -0.000000, 0.736767, -0.676147, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.137, 1.107, 1.048"/>
+						<physics shape="bo_bd_wood_heap_e"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="" mobility="1">
+						<transform position="-3.236, 13.102, -0.009" non_orthogonal_rotation_mat="0.287476, -0.957788, 0.000000, 0.932339, 0.361584, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.123, 1.015, 1.000"/>
+						<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_d" old_prefab_name="" mobility="1">
+						<transform position="-4.987, 17.667, -0.069" non_orthogonal_rotation_mat="-0.562442, 0.826837, 0.000000, -0.751107, -0.660180, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.088, 1.053, 1.000"/>
+						<physics shape="bo_bd_wood_heap_d"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_d" old_prefab_name="" mobility="1">
+						<transform position="4.370, 7.747, -0.069" non_orthogonal_rotation_mat="0.494285, -0.869300, 0.000000, 0.805879, 0.592080, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.200, 1.139, 1.093"/>
+						<physics shape="bo_bd_wood_heap_d"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_l1_floor_a" old_prefab_name="" mobility="1">
+						<transform position="-0.343, 13.176, -0.186" rotation_euler="0.000, 0.000, 0.000" scale="2.260, 3.842, 1.163"/>
+						<physics shape="bo_european_castle_l1_floor_a"/>
+						<components>
+							<meta_mesh_component name="european_castle_l1_floor_a">
+								<mesh name="european_castle_l1_floor_a.2" material="sand_stone_a"/>
+								<mesh name="european_castle_l1_floor_a.lod3.2" material="sand_stone_a"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_chest_sturgia_a" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="chest"/>
+				</tags>
+				<transform position="-5.141, -4.340, 0.000" rotation_euler="0.000, -0.002, 0.011"/>
+				<physics shape="bo_bd_chest_sturgia_a"/>
+				<components>
+					<meta_mesh_component name="bd_chest_sturgia_a"/>
+				</components>
+				<scripts>
+					<script name="PE_InventoryEntity">
+						<variables>
+							<variable name="InventoryName" value="Chest"/>
+							<variable name="InventoryId" value="recdkjw0"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="Slot" value="30"/>
+							<variable name="StackCount" value="10"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_aserai_forge" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_UpgradeableBuildings">
+				<variables>
+					<variable name="CastleIndex" value="-1"/>
+					<variable name="BuildingName" value="Forge"/>
+					<variable name="Tier0Tag" value="tier0"/>
+					<variable name="Tier1Tag" value="tier1"/>
+					<variable name="Tier2Tag" value="tier2"/>
+					<variable name="Tier3Tag" value="tier3"/>
+					<variable name="BuildingInteractiveTag" value="chest"/>
+					<variable name="Tier1RequiredEngineering" value="10"/>
+					<variable name="Tier2RequiredEngineering" value="20"/>
+					<variable name="Tier3RequiredEngineering" value="30"/>
+					<variable name="Tier1MaxHit" value="300"/>
+					<variable name="Tier2MaxHit" value="600"/>
+					<variable name="Tier3MaxHit" value="1200"/>
+					<variable name="Tier1UpgradeReceipts" value="pe_hardwood*10,pe_wooden_stick*20,pe_stone*5"/>
+					<variable name="Tier2UpgradeReceipts" value="pe_hardwood*30,pe_wooden_plank*40,pe_stone*50,pe_scroll*5,pe_clay*10"/>
+					<variable name="Tier3UpgradeReceipts" value="pe_hardwood*30,pe_wooden_plank*50,pe_stone*100,pe_book*5,pe_clay*50,pe_goldore*10"/>
+					<variable name="ParticleEffectOnUpgrade" value="dust_fall_a"/>
+					<variable name="SoundEffectOnUpgrade" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="BuildItem" value="pe_buildhammer"/>
+					<variable name="Tier1CraftingEngineering" value="10"/>
+					<variable name="Tier2CraftingEngineering" value="10"/>
+					<variable name="Tier3CraftingEngineering" value="10"/>
+					<variable name="MaxHitPoint" value="200.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="tier1" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier1"/>
+				</tags>
+				<transform position="2.292, -1.062, 0.000"/>
+				<children>
+					<game_entity name="tent_aserai_a" old_prefab_name="" mobility="1">
+						<transform position="-1.051, 0.249, 0.000" rotation_euler="0.000, 0.000, -1.595" scale="0.899, 1.196, 1.328"/>
+						<physics shape="bo_tents_aserai_a"/>
+						<components>
+							<meta_mesh_component name="tents_aserai_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_prop_merchantsmithing_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="b"/>
+						</tags>
+						<transform position="-5.029, -3.467, 0.000" rotation_euler="0.000, 0.000, -2.068"/>
+						<physics shape="bo_shop_prop_merchantsmithing_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantsmithing_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_prop_merchantsmithing_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="b"/>
+						</tags>
+						<transform position="-5.298, 3.974, 0.000" rotation_euler="0.000, 0.000, -1.340"/>
+						<physics shape="bo_shop_prop_merchantsmithing_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantsmithing_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="sp_blacksmith_with_smithing_machine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="0.903, 5.015, 0.000" rotation_euler="0.000, 0.000, 0.010"/>
+						<physics shape="bo_shop_pr_animated"/>
+						<skeleton skeleton_model="merchant_smithing_machine_skeleton">
+							<components>
+								<meta_mesh_component name="shop_prop_animated"/>
+							</components>
+						</skeleton>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Smithy"/>
+									<variable name="Animation" value="act_smithing_machine_anvil_start"/>
+									<variable name="CraftingRecieptTag" value="all_weapons"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="blacksmith_flame" old_prefab_name="" mobility="1">
+								<transform position="0.490, 0.329, 0.560" rotation_euler="0.000, 0.000, -1.593"/>
+								<components>
+									<particle_system_instanced_component>
+										<effect_ref base_effect="{A85B25C0-F07D-4A12-A077-9E2B931BEEC3}"/>
+									</particle_system_instanced_component>
+								</components>
+								<children>
+									<game_entity name="light" old_prefab_name="" mobility="1">
+										<transform position="0.000, -0.094, 0.416"/>
+										<components>
+											<light_component color="1.000, 0.596, 0.243" intensity="100.000" radius="10.000" flicker_interval="0.400" flicker_magnitude="0.600" local_frame_rot="10.000000, 0.000000, 0.000000, 0.000000, 10.000000, 0.000000, 0.000000, 0.000000, 10.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow_size_multiplier="1" shadow_radius="8.000"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="shop_prop_merchantarmory_a" old_prefab_name="" mobility="1">
+						<transform position="-0.691, -3.531, 0.000" rotation_euler="0.000, 0.000, -3.127"/>
+						<physics shape="bo_shop_prop_merchantarmory_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantarmory_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Armory"/>
+									<variable name="Animation" value="act_smithing_machine_anvil_start"/>
+									<variable name="CraftingRecieptTag" value="aserai_armors"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier2" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier2"/>
+				</tags>
+				<transform position="3.717, -0.524, 0.000"/>
+				<children>
+					<game_entity name="aserai_village_barn_a" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_aserai_village_barn_a">
+						<transform position="-2.975, -0.044, 0.000" rotation_euler="0.000, 0.000, -1.589" scale="0.701, 0.935, 0.712"/>
+						<physics shape="bo_aserai_village_barn_a"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="aserai_village_barn_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign__f" old_prefab_name="" mobility="1">
+						<transform position="-6.884, 2.339, 3.602" rotation_euler="0.000, 0.000, -1.632"/>
+						<physics shape="bo_shop_sign_base_b3"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_merchantsmithing" old_prefab_name="" mobility="1">
+						<transform position="-8.084, 2.468, 2.689" rotation_euler="0.000, 0.000, -1.639"/>
+						<components>
+							<meta_mesh_component name="shop_sign_merchantsmithing"/>
+						</components>
+					</game_entity>
+					<game_entity name="sp_blacksmith_with_smithing_machine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-1.690, 4.613, 0.000" rotation_euler="0.000, 0.000, -0.057"/>
+						<physics shape="bo_shop_pr_animated"/>
+						<skeleton skeleton_model="merchant_smithing_machine_skeleton">
+							<components>
+								<meta_mesh_component name="shop_prop_animated"/>
+							</components>
+						</skeleton>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Smithy"/>
+									<variable name="Animation" value="act_smithing_machine_anvil_start"/>
+									<variable name="CraftingRecieptTag" value="all_weapons"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="blacksmith_flame" old_prefab_name="" mobility="1">
+								<transform position="0.490, 0.329, 0.560" rotation_euler="0.000, 0.000, -1.593"/>
+								<components>
+									<particle_system_instanced_component>
+										<effect_ref base_effect="{A85B25C0-F07D-4A12-A077-9E2B931BEEC3}"/>
+									</particle_system_instanced_component>
+								</components>
+								<children>
+									<game_entity name="light" old_prefab_name="" mobility="1">
+										<transform position="0.000, -0.094, 0.416"/>
+										<components>
+											<light_component color="1.000, 0.596, 0.243" intensity="100.000" radius="10.000" flicker_interval="0.400" flicker_magnitude="0.600" local_frame_rot="10.000000, 0.000000, 0.000000, 0.000000, 10.000000, 0.000000, 0.000000, 0.000000, 10.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow_size_multiplier="1" shadow_radius="8.000"/>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="shop_prop_merchantarmory_a" old_prefab_name="" mobility="1">
+						<transform position="-3.077, -4.685, 0.000" rotation_euler="0.000, 0.000, -3.127"/>
+						<physics shape="bo_shop_prop_merchantarmory_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantarmory_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Armory"/>
+									<variable name="Animation" value="act_smithing_machine_anvil_start"/>
+									<variable name="CraftingRecieptTag" value="aserai_armors"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="shop_prop_merchantsmithing_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="b"/>
+						</tags>
+						<transform position="-8.163, 3.264, 0.000" rotation_euler="0.000, 0.000, -1.540"/>
+						<physics shape="bo_shop_prop_merchantsmithing_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantsmithing_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_prop_merchantsmithing_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="b"/>
+						</tags>
+						<transform position="-8.278, -3.956, 0.000" rotation_euler="0.000, 0.000, -1.453"/>
+						<physics shape="bo_shop_prop_merchantsmithing_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantsmithing_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier3" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="tier3"/>
+				</tags>
+				<transform position="2.481, -0.335, 0.006"/>
+				<children>
+					<game_entity name="aserai_castle_barn_b_l3" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_aserai_castle_barn_b_l3">
+						<transform position="-1.154, -1.064, 0.027" rotation_euler="0.000, 0.000, -1.607" scale="0.602, 0.923, 0.734"/>
+						<physics shape="bo_aserai_castle_barn_b_l3"/>
+						<occlusion_body_flags>
+							<occlusion_body_flag name="two_sided"/>
+						</occlusion_body_flags>
+						<components>
+							<meta_mesh_component name="aserai_castle_barn_b_l3"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign__f" old_prefab_name="" mobility="1">
+						<transform position="-5.356, -1.946, 3.977" rotation_euler="0.000, 0.000, -1.632"/>
+						<physics shape="bo_shop_sign_base_b3"/>
+						<components>
+							<meta_mesh_component name="shop_sign_base_b3"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_sign_merchantsmithing" old_prefab_name="" mobility="1">
+						<transform position="-6.556, -1.817, 3.064" rotation_euler="0.000, 0.000, -1.639"/>
+						<components>
+							<meta_mesh_component name="shop_sign_merchantsmithing"/>
+						</components>
+					</game_entity>
+					<game_entity name="sp_blacksmith_with_smithing_machine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform position="-0.029, 3.357, -0.006" rotation_euler="0.000, 0.000, -0.018"/>
+						<physics shape="bo_shop_pr_animated"/>
+						<skeleton skeleton_model="merchant_smithing_machine_skeleton">
+							<components>
+								<meta_mesh_component name="shop_prop_animated"/>
+							</components>
+						</skeleton>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Smithy"/>
+									<variable name="Animation" value="act_smithing_machine_anvil_start"/>
+									<variable name="CraftingRecieptTag" value="all_weapons"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="shop_prop_merchantarmory_a" old_prefab_name="" mobility="1">
+						<transform position="-1.853, -5.132, -0.006" rotation_euler="0.000, 0.000, -3.127"/>
+						<physics shape="bo_shop_prop_merchantarmory_a"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantarmory_a"/>
+						</components>
+						<scripts>
+							<script name="PE_CraftingStation">
+								<variables>
+									<variable name="StationName" value="Armory"/>
+									<variable name="Animation" value="act_smithing_machine_anvil_start"/>
+									<variable name="CraftingRecieptTag" value="aserai_armors"/>
+									<variable name="RelevantSkillId" value="Engineering"/>
+									<variable name="Distance" value="3.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="shop_prop_merchantsmithing_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="b"/>
+						</tags>
+						<transform position="-6.202, 3.681, -0.006" rotation_euler="0.000, 0.000, 1.521"/>
+						<physics shape="bo_shop_prop_merchantsmithing_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantsmithing_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_prop_merchantsmithing_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="shop_prop"/>
+							<tag name="b"/>
+						</tags>
+						<transform position="-6.341, -5.406, -0.006" rotation_euler="0.000, 0.000, -1.614"/>
+						<physics shape="bo_shop_prop_merchantsmithing_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantsmithing_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="blacksmith_flame" old_prefab_name="" mobility="1">
+						<transform position="0.365, 3.523, 0.554" rotation_euler="0.000, 0.000, 3.138"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{A85B25C0-F07D-4A12-A077-9E2B931BEEC3}"/>
+							</particle_system_instanced_component>
+						</components>
+						<children>
+							<game_entity name="light" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.094, 0.416"/>
+								<components>
+									<light_component color="1.000, 0.596, 0.243" intensity="100.000" radius="10.000" flicker_interval="0.400" flicker_magnitude="0.600" local_frame_rot="10.000000, 0.000000, 0.000000, 0.000000, 10.000000, 0.000000, 0.000000, 0.000000, 10.000000" hotspot_angle="30.000" falloff_angle="45.000" shadow_size_multiplier="1" shadow_radius="8.000"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="tier0" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="tier0"/>
+				</tags>
+				<transform position="1.683, -15.284, 0.186" rotation_euler="0.000, 0.000, 0.000" scale="0.971, 1.101, 1.000"/>
+				<children>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-0.193, 6.811, -0.058" rotation_euler="0.000, 0.000, 3.123" scale="1.238, 1.264, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-5.885, 12.918, -0.061" rotation_euler="0.000, 0.000, 1.573" scale="1.541, 1.112, 1.166"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="5.253, 13.121, -0.064" rotation_euler="0.000, 0.000, -1.605" scale="1.550, 1.112, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="fence_e" old_prefab_name="" mobility="1">
+						<transform position="-0.809, 18.907, -0.057" rotation_euler="0.000, 0.000, 0.022" scale="1.341, 1.264, 1.112"/>
+						<physics shape="bo_fence_e" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="fence_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_e" old_prefab_name="" mobility="1">
+						<transform position="4.225, 18.268, -0.186" non_orthogonal_rotation_mat="0.758648, 0.651501, 0.000000, -0.553519, 0.832837, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.102, 1.141, 1.048"/>
+						<physics shape="bo_bd_wood_heap_e"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_e" old_prefab_name="" mobility="1">
+						<transform position="-4.426, 8.133, -0.069" non_orthogonal_rotation_mat="-0.579055, -0.815289, -0.000000, 0.736767, -0.676147, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.137, 1.107, 1.048"/>
+						<physics shape="bo_bd_wood_heap_e"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_e"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_wall_a_damaged_heap_d" old_prefab_name="" mobility="1">
+						<transform position="-3.236, 13.102, -0.009" non_orthogonal_rotation_mat="0.287476, -0.957788, 0.000000, 0.932339, 0.361584, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.123, 1.015, 1.000"/>
+						<physics shape="bo_european_castle_wall_a_damaged_heap_d" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_a_damaged_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_d" old_prefab_name="" mobility="1">
+						<transform position="-4.987, 17.667, -0.069" non_orthogonal_rotation_mat="-0.562442, 0.826837, 0.000000, -0.751107, -0.660180, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.088, 1.053, 1.000"/>
+						<physics shape="bo_bd_wood_heap_d"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_wood_heap_d" old_prefab_name="" mobility="1">
+						<transform position="4.370, 7.747, -0.069" non_orthogonal_rotation_mat="0.494285, -0.869300, 0.000000, 0.805879, 0.592080, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.200, 1.139, 1.093"/>
+						<physics shape="bo_bd_wood_heap_d"/>
+						<components>
+							<meta_mesh_component name="bd_wood_heap_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="european_castle_l1_floor_a" old_prefab_name="" mobility="1">
+						<transform position="-0.343, 13.176, -0.186" rotation_euler="0.000, 0.000, 0.000" scale="2.260, 3.842, 1.163"/>
+						<physics shape="bo_european_castle_l1_floor_a"/>
+						<components>
+							<meta_mesh_component name="european_castle_l1_floor_a">
+								<mesh name="european_castle_l1_floor_a.2" material="sand_stone_a"/>
+								<mesh name="european_castle_l1_floor_a.lod3.2" material="sand_stone_a"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_chest_sturgia_a" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="chest"/>
+				</tags>
+				<transform position="-6.100, -4.401, 0.000" rotation_euler="0.000, -0.002, 0.011"/>
+				<physics shape="bo_bd_chest_sturgia_a"/>
+				<components>
+					<meta_mesh_component name="bd_chest_sturgia_a"/>
+				</components>
+				<scripts>
+					<script name="PE_InventoryEntity">
+						<variables>
+							<variable name="InventoryName" value="Chest"/>
+							<variable name="InventoryId" value="11da5wpc"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="Slot" value="30"/>
+							<variable name="StackCount" value="10"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_vlandia_t1_w_d" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_RepairableDestructableComponent">
+				<variables>
+					<variable name="DestructionState" value="pe_european_castle_wall_d_l2_broken"/>
+					<variable name="ReferenceEntityTag" value="31ananisikim"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_siege_sturgia_wall_destruction"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/stone_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="true"/>
+					<variable name="AlwaysEffectOnDestroy" value="false"/>
+					<variable name="RepairItemRecipies" value="pe_stone*1,pe_hardwood*1"/>
+					<variable name="RepairDamage" value="500"/>
+					<variable name="IsBroken" value="false"/>
+					<variable name="MaxHitPoint" value="2500.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="european_castle_wall_d_l2" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="31ananisikim"/>
+				</tags>
+				<transform position="0.778, -0.503, -2.311"/>
+				<children>
+					<game_entity name="european_castle_wall_d_l2" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_european_castle_wall_d_l2">
+						<physics shape="bo_european_castle_wall_d_l2"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_d_l2"/>
+						</components>
+						<scripts>
+							<script name="WallSegment">
+								<variables>
+									<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+									<variable name="_properGroundInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+									<variable name="SideTag" value=""/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="merlon_1" old_prefab_name="" mobility="1">
+								<physics shape="bo_european_castle_wall_d_l2_01"/>
+								<components>
+									<meta_mesh_component name="european_castle_wall_d_l2_01"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_vlandia_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-4.240, -1.685, 11.210"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+								<physics shape="bo_european_castle_wall_d_l2_02"/>
+								<components>
+									<meta_mesh_component name="european_castle_wall_d_l2_02"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_vlandia_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-1.000, -1.644, 11.121"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+								<physics shape="bo_european_castle_wall_d_l2_03"/>
+								<components>
+									<meta_mesh_component name="european_castle_wall_d_l2_03"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_vlandia_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="2.139, -1.609, 11.219"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_4" old_prefab_name="" mobility="1">
+								<physics shape="bo_european_castle_wall_d_l2_04"/>
+								<components>
+									<meta_mesh_component name="european_castle_wall_d_l2_04"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_vlandia_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="5.355, -1.558, 11.205"/>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_aserai_castle_wall_a_l2_broken" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="aserai_castle_wall_a_l2_broken" old_prefab_name="" occlusion_body_name="bo_occ_aserai_castle_wall_a_l2_broken">
+				<physics shape="bo_aserai_castle_wall_a_l2_broken"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_wall_a_l2_broken"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="merlon_1" old_prefab_name="" mobility="1">
+						<physics shape="bo_aserai_castle_wall_a_l2_01"/>
+						<components>
+							<meta_mesh_component name="aserai_castle_wall_a_l2_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-10.087, -1.475, 9.545" rotation_euler="0.000, 0.000, -0.002"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+						<physics shape="bo_aserai_castle_wall_a_l2_06"/>
+						<components>
+							<meta_mesh_component name="aserai_castle_wall_a_l2_06"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.605, -1.506, 9.552"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+						<physics shape="bo_aserai_castle_wall_a_l2_07"/>
+						<components>
+							<meta_mesh_component name="aserai_castle_wall_a_l2_07"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="8.713, -1.472, 9.529" rotation_euler="0.000, 0.000, -0.020"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_battania_castle_wall_a_l3_broken" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="battania_castle_wall_a_l3_broken" old_prefab_name="" occlusion_body_name="bo_occ_battania_castle_wall_a_l3_broken">
+				<physics shape="bo_battania_castle_wall_a_l3_broken"/>
+				<components>
+					<meta_mesh_component name="battania_castle_wall_a_l3_broken"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+						<physics shape="bo_battania_castle_wall_a_l3_07"/>
+						<components>
+							<meta_mesh_component name="battania_castle_wall_a_l3_07"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="8.585, -1.294, 12.489"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+						<physics shape="bo_battania_castle_wall_a_l3_06"/>
+						<components>
+							<meta_mesh_component name="battania_castle_wall_a_l3_06"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.572, -1.288, 12.491"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_1" old_prefab_name="" mobility="1">
+						<physics shape="bo_battania_castle_wall_a_l3_01"/>
+						<components>
+							<meta_mesh_component name="battania_castle_wall_a_l3_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-10.298, -1.297, 12.416"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_aserai_castle_wall_a_l1_broken" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="aserai_castle_wall_a_l1_broken" old_prefab_name="" occlusion_body_name="bo_occ_aserai_castle_wall_a_l1_broken">
+				<physics shape="bo_aserai_castle_wall_a_l1_broken"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_wall_a_l1_broken"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+						<physics shape="bo_aserai_castle_wall_a_l1_07"/>
+						<components>
+							<meta_mesh_component name="aserai_castle_wall_a_l1_07"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="8.818, -1.414, 6.945"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+						<physics shape="bo_aserai_castle_wall_a_l1_06"/>
+						<components>
+							<meta_mesh_component name="aserai_castle_wall_a_l1_06"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.739, -1.420, 6.893"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_1" old_prefab_name="" mobility="1">
+						<physics shape="bo_aserai_castle_wall_a_l1_01"/>
+						<components>
+							<meta_mesh_component name="aserai_castle_wall_a_l1_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-10.034, -1.347, 6.952"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_aserai_castle_wall_a_l3_broken" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="aserai_castle_wall_a_l3_broken" old_prefab_name="">
+				<physics shape="bo_aserai_castle_wall_a_l3_broken"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_wall_a_l3_broken"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_factionbanners_set" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="3.628, 9.745, -1.237" rotation_euler="-0.022, -0.028, 0.685"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="4"/>
+							<variable name="FactionName" value="Unqid"/>
+							<variable name="BannerKey" value="11.7.4.1836.1836.768.788.1.0.-30.411.148.148.130.130.764.564.1.0.0.222.148.148.130.130.764.964.1.0.0.425.148.148.330.330.764.764.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="4"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="4.950, 10.917, -1.257" rotation_euler="0.000, 0.000, 1.106"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="18"/>
+							<variable name="FactionName" value="Adram"/>
+							<variable name="BannerKey" value="29.91.117.1836.1836.768.788.1.0.-30.431.135.125.360.360.767.528.1.0.0.428.136.0.530.530.760.851.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="18"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="4.408, 13.536, -1.257" rotation_euler="0.000, 0.000, 1.679"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="3"/>
+							<variable name="FactionName" value="Qaraz"/>
+							<variable name="BannerKey" value="11.126.150.1836.1836.768.788.1.0.-30.411.143.116.330.330.764.764.1.0.0.222.143.116.598.598.764.764.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="3"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="3.801, 15.951, -1.257" rotation_euler="0.000, 0.000, 2.440"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="17"/>
+							<variable name="FactionName" value="Suruq"/>
+							<variable name="BannerKey" value="13.129.2.1617.1295.768.788.1.0.-1.208.127.149.360.360.764.784.1.0.0.427.128.128.430.330.764.564.1.0.180"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="17"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="2.015, 16.862, -1.257" rotation_euler="0.000, 0.000, 3.036"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="5"/>
+							<variable name="FactionName" value="Sarran"/>
+							<variable name="BannerKey" value="11.89.89.1836.1836.768.788.1.0.-30.446.128.116.680.680.764.764.1.0.0.309.128.116.480.480.564.764.1.0.320.309.127.116.480.480.964.764.1.0.150"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="5"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-12.207, 6.740, -1.227" rotation_euler="0.000, 0.000, -0.253"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="7"/>
+							<variable name="FactionName" value="Raganvaders"/>
+							<variable name="BannerKey" value="17.72.73.1836.1836.768.788.1.0.-30.332.33.72.494.384.785.604.1.0.0.111.33.72.362.362.771.957.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="7"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-14.044, 7.416, -1.257" rotation_euler="0.000, 0.000, -0.812"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="21"/>
+							<variable name="FactionName" value="Rolaners"/>
+							<variable name="BannerKey" value="20.143.146.1836.1836.783.789.1.0.-30.414.33.146.584.584.764.764.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_peasant"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="21"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-15.081, 9.490, -1.227" rotation_euler="0.000, 0.000, -1.310"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="8"/>
+							<variable name="FactionName" value="Kostoroving"/>
+							<variable name="BannerKey" value="16.154.139.1836.1836.768.788.1.0.-30.138.22.154.578.578.764.764.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="8"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-15.163, 12.249, -1.257" rotation_euler="0.000, 0.000, -1.995"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="22"/>
+							<variable name="FactionName" value="Krasners"/>
+							<variable name="BannerKey" value="20.142.150.1836.1836.783.789.1.0.-30.433.127.142.584.584.764.764.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="22"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-13.857, 13.938, -1.227" rotation_euler="0.000, 0.000, -2.500"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="6"/>
+							<variable name="FactionName" value="Ormidoving"/>
+							<variable name="BannerKey" value="11.12.116.1836.1836.768.788.1.0.-30.439.33.146.650.650.764.764.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="6"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="7.604, -11.552, -1.167" rotation_euler="0.000, 0.000, -3.103"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="12"/>
+							<variable name="FactionName" value="Penraic"/>
+							<variable name="BannerKey" value="16.129.116.1836.1836.768.788.1.0.-30.133.150.116.581.645.764.741.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="12"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="9.435, -11.600, -1.257" rotation_euler="0.000, 0.000, 2.480"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="15"/>
+							<variable name="FactionName" value="Gruffendoc"/>
+							<variable name="BannerKey" value="17.104.89.1836.1836.783.766.1.0.-30.459.127.134.443.443.764.791.1.0.0.200.127.134.-227.227.569.581.1.0.1.200.127.134.227.227.960.581.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="15"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="10.365, -13.705, -1.167" rotation_euler="0.000, 0.000, 2.292"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="2"/>
+							<variable name="FactionName" value="Town Guards"/>
+							<variable name="BannerKey" value="4.140.119.1536.1536.764.764.1.0.0.302.34.116.531.531.866.723.1.1.318.302.34.116.531.531.663.725.1.0.41.316.119.116.509.509.758.870.1.0.-1.326.34.116.298.298.758.870.1.0.-1"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="2"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="11.105, -15.742, -1.139" rotation_euler="-0.026, 0.000, 1.803"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="13"/>
+							<variable name="FactionName" value="Ergeon"/>
+							<variable name="BannerKey" value="17.120.116.1836.1836.768.788.1.0.-30.407.131.116.443.443.764.764.1.0.0.136.131.116.227.227.568.498.1.1.0.136.131.116.227.227.959.498.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="13"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="10.685, -18.265, -1.257" rotation_euler="0.000, 0.000, 1.123"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="16"/>
+							<variable name="FactionName" value="Maireas"/>
+							<variable name="BannerKey" value="17.18.120.1836.1836.768.788.1.0.-30.406.129.116.570.570.767.767.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="16"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="8.904, -19.415, -1.137" rotation_euler="0.000, 0.000, 0.232"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="14"/>
+							<variable name="FactionName" value="Uvain"/>
+							<variable name="BannerKey" value="9.2.150.1836.1836.768.788.1.0.-30.347.111.116.672.672.767.743.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="14"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-7.079, -21.729, -1.314" rotation_euler="0.000, 0.000, -0.519"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="11"/>
+							<variable name="FactionName" value="Serapides"/>
+							<variable name="BannerKey" value="15.116.127.1833.1833.777.791.1.0.-1.100.84.116.623.623.773.767.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="11"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-8.480, -20.351, -1.257" rotation_euler="0.000, 0.000, -0.812"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="19"/>
+							<variable name="FactionName" value="Alision"/>
+							<variable name="BannerKey" value="11.78.78.1836.1836.768.788.1.0.-30.323.143.149.580.580.764.764.1.0.0.201.143.149.280.310.764.784.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="19"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-9.722, -18.449, -1.398" rotation_euler="0.003, -0.025, -1.285"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="10"/>
+							<variable name="FactionName" value="Varros"/>
+							<variable name="BannerKey" value="11.83.83.1836.1836.768.788.1.0.-30.419.84.116.492.492.775.893.1.0.0.106.84.116.412.412.776.527.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="10"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-9.329, -15.774, -1.257" rotation_euler="0.000, 0.000, -1.995"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="20"/>
+							<variable name="FactionName" value="Syratos"/>
+							<variable name="BannerKey" value="17.8.4.1889.1731.764.538.1.0.0.443.143.149.580.580.632.764.1.0.0.443.143.149.580.580.895.762.1.1.0.423.143.149.202.202.763.686.1.1.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="20"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_tier_3_banner" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-7.490, -14.667, -1.450" rotation_euler="0.000, 0.000, -2.870"/>
+				<physics shape="bo_banner_pole"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="empire_tier_3_banner"/>
+					</cloth_simulator>
+				</components>
+				<scripts>
+					<script name="PEFactionBanner">
+						<variables>
+							<variable name="FactionIndex" value="9"/>
+							<variable name="FactionName" value="Argoros"/>
+							<variable name="BannerKey" value="11.6.4.1836.1836.768.788.1.0.-30.100.84.116.450.450.764.764.1.0.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="PE_ChangeClass">
+						<variables>
+							<variable name="ChangingDurationAsSeconds" value="10"/>
+							<variable name="Animation" value="act_main_story_become_king_crowd_06"/>
+							<variable name="ClassId" value="pe_mercenary"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="DinarCost" value="2000"/>
+							<variable name="JoinCastleFaction" value="false"/>
+							<variable name="FactionId" value="9"/>
+							<variable name="Mercenary" value="true"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

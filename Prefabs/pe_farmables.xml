@@ -1,0 +1,91 @@
+<prefabs>
+	<game_entity name="pe_wheat_yellow" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_ItemGathering">
+				<variables>
+					<variable name="Name" value="Wheat"/>
+					<variable name="RespawnTime" value="10"/>
+					<variable name="ItemCount" value="1"/>
+					<variable name="AnimationDurationInSeconds" value="6"/>
+					<variable name="Animation" value="act_pe_farmer_bush_cutting"/>
+					<variable name="NeededItem" value="PE_peasant_sickle_1_t1"/>
+					<variable name="RequiredSkillId" value="Gathering"/>
+					<variable name="RequiredSkill" value="15"/>
+					<variable name="DropsItem" value="pe_hardwood"/>
+					<variable name="DropCount" value="1"/>
+					<variable name="RotateWhenUsage" value="false"/>
+					<variable name="LookPointTag" value="lookpoint"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="wheat" old_prefab_name="" mobility="1">
+				<transform position="0.064, 0.059, -0.044" rotation_euler="0.000, 0.000, 0.000" scale="4.430, 4.595, 4.688"/>
+				<physics shape="bo_pyhsics_test_box" override_material="straw">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<children>
+					<game_entity name="wheats_b" old_prefab_name="" mobility="1">
+						<transform position="0.011, 0.002, -0.121" rotation_euler="0.000, 0.000, 0.815" scale="0.412, 0.412, 0.308"/>
+						<components>
+							<meta_mesh_component name="wheats_b">
+								<mesh name="wheats_b" material="wheats_a"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="wheats_b" old_prefab_name="" mobility="1">
+						<transform position="-0.030, 0.017, -0.121" rotation_euler="0.000, 0.000, 0.000" scale="0.412, 0.412, 0.308"/>
+						<components>
+							<meta_mesh_component name="wheats_b">
+								<mesh name="wheats_b" material="wheats_a"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="wheats_b" old_prefab_name="" mobility="1">
+						<transform position="-0.030, 0.017, -0.121" rotation_euler="0.000, 0.000, -0.680" scale="0.412, 0.412, 0.308"/>
+						<components>
+							<meta_mesh_component name="wheats_b">
+								<mesh name="wheats_b" material="wheats_a"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_wheat_green" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="wheats_b" old_prefab_name="">
+				<transform position="0.025, -0.023, 0.000" rotation_euler="0.000, 0.000, 0.815"/>
+				<components>
+					<meta_mesh_component name="wheats_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="wheats_b" old_prefab_name="">
+				<transform position="-0.080, 0.015, 0.000"/>
+				<components>
+					<meta_mesh_component name="wheats_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="-0.013, 0.015, 0.303" rotation_euler="0.000, 0.000, 0.000" scale="2.515, 2.515, 2.515"/>
+				<physics shape="bo_pyhsics_test_box" override_material="straw"/>
+			</game_entity>
+			<game_entity name="wheats_b" old_prefab_name="">
+				<transform position="-0.035, -0.002, 0.000" rotation_euler="0.000, 0.000, -0.757"/>
+				<components>
+					<meta_mesh_component name="wheats_b"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

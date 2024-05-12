@@ -1,0 +1,12 @@
+<Market>
+    <Tier1Items>
+    nightswatch_boots*1*2|nightswatch_armor2*1*2|nightswatch_hood*1*2|nw_cloak*1*2|reach_gauntlets*1*2|ranger_armor*1*2|ranger_shoulders*1*2|ranger_boots*1*2|ranger_hood*1*2|zombie_body1*1*2|zombie_head1*1*2|zombie_feet1*1*2|zombie_hands1*1*2|wight_armor1*1*2|wight_armor2*1*2|wight_armor3*1*2|wight_head1*1*2|wight_head2*1*2|wight_head3*1*2|wight_head4*1*2
+    </Tier1Items>
+    <Tier2Items>
+    </Tier2Items>
+    <Tier3Items></Tier3Items>
+    <Tier4Items></Tier4Items>
+    <CraftingBoxes>
+        pe_baby*1*1
+    </CraftingBoxes>
+</Market>

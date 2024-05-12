@@ -1,0 +1,396 @@
+<prefabs>
+	<game_entity name="Tham_Food_GenMarket" old_prefab_name="" occlusion_body_name="bo_occ_house_d">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_house_d"/>
+		<components>
+			<meta_mesh_component name="house_d"/>
+		</components>
+		<children>
+			<game_entity name="Tham_General_Market" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-4.751, -2.599, 0.294" rotation_euler="0.000, 0.000, -1.719" scale="-0.794, 0.794, 0.794"/>
+				<scripts>
+					<script name="PE_StockpileMarket">
+						<variables>
+							<variable name="XmlFile" value="generalmarketall"/>
+							<variable name="Distance" value="5.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="armor_merchant_shoe_a" old_prefab_name="" mobility="1">
+						<transform position="-0.163, 3.001, 0.933" rotation_euler="0.000, 0.000, -2.850"/>
+						<components>
+							<meta_mesh_component name="armor_merchant_shoe_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_hides_a" old_prefab_name="" mobility="1">
+						<transform position="0.696, 2.456, 0.934" rotation_euler="0.000, 0.000, 0.155"/>
+						<physics shape="bo_merchandise_hides_a"/>
+						<components>
+							<meta_mesh_component name="merchandise_hides_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_table_c" old_prefab_name="" mobility="1">
+						<transform position="-0.026, 2.916, 0.136" rotation_euler="0.000, 0.000, -0.117"/>
+						<physics shape="bo_bd_table_c" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_table_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_hides_b" old_prefab_name="" mobility="1">
+						<transform position="-0.988, 2.769, 0.934" rotation_euler="0.000, 0.000, -1.598"/>
+						<physics shape="bo_merchandise_hides_b"/>
+						<components>
+							<meta_mesh_component name="merchandise_hides_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="armor_merchant_shoe_b" old_prefab_name="" mobility="1">
+						<transform position="0.270, 3.054, 0.933" rotation_euler="0.000, 0.000, 2.739"/>
+						<components>
+							<meta_mesh_component name="armor_merchant_shoe_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_flax" old_prefab_name="" mobility="1">
+						<transform position="1.219, 3.252, 0.934" rotation_euler="-1.439, -0.060, -2.765"/>
+						<components>
+							<meta_mesh_component name="merchandise_flax"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_velvet" old_prefab_name="" mobility="1">
+						<transform position="-1.168, 1.480, 1.056" rotation_euler="0.000, 0.000, 2.985"/>
+						<physics shape="bo_merchandise_velvet"/>
+						<components>
+							<meta_mesh_component name="merchandise_velvet"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_linen" old_prefab_name="" mobility="1">
+						<transform position="-2.096, -0.910, 0.917" rotation_euler="0.000, 0.000, 1.452"/>
+						<components>
+							<meta_mesh_component name="merchandise_linen"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_linen" old_prefab_name="" mobility="1">
+						<transform position="-1.313, -1.046, 0.917" rotation_euler="0.000, 0.000, 1.658"/>
+						<components>
+							<meta_mesh_component name="merchandise_linen"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_cloth_b" old_prefab_name="" mobility="1">
+						<transform position="-1.210, 1.168, 0.917" rotation_euler="0.000, 0.000, 1.015"/>
+						<physics shape="bo_merchandise_cloth_b"/>
+						<components>
+							<meta_mesh_component name="merchandise_cloth_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_linen" old_prefab_name="" mobility="1">
+						<transform position="-1.638, -0.963, 0.917" rotation_euler="0.000, 0.000, 1.658"/>
+						<components>
+							<meta_mesh_component name="merchandise_linen"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_iron_b" old_prefab_name="" mobility="1">
+						<transform position="-1.105, -0.053, 0.917" rotation_euler="0.000, 0.000, 2.945"/>
+						<components>
+							<meta_mesh_component name="merchandise_iron_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_ironware_horseshoe" old_prefab_name="" mobility="1">
+						<transform position="-1.153, -0.412, 0.917" rotation_euler="-0.102, 0.000, 1.701"/>
+						<components>
+							<meta_mesh_component name="merchandise_ironware_horseshoe"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_cloth_a" old_prefab_name="" mobility="1">
+						<transform position="-1.181, 1.810, 0.917" rotation_euler="0.000, 0.000, 0.972"/>
+						<physics shape="bo_merchandise_cloth_a"/>
+						<components>
+							<meta_mesh_component name="merchandise_cloth_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_gold_b" old_prefab_name="" mobility="1">
+						<transform position="-1.033, 0.451, 0.917" rotation_euler="0.000, 0.000, 1.701"/>
+						<components>
+							<meta_mesh_component name="merchandise_gold_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_ironware_horseshoe" old_prefab_name="" mobility="1">
+						<transform position="-1.166, -0.470, 0.917" rotation_euler="-0.102, 0.000, 1.701"/>
+						<components>
+							<meta_mesh_component name="merchandise_ironware_horseshoe"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_ironware_horseshoe" old_prefab_name="" mobility="1">
+						<transform position="-1.139, -0.355, 0.917" rotation_euler="0.000, 0.000, 1.701"/>
+						<components>
+							<meta_mesh_component name="merchandise_ironware_horseshoe"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_ironware_horseshoe" old_prefab_name="" mobility="1">
+						<transform position="-1.185, -0.531, 0.917" rotation_euler="-0.102, 0.000, 1.701"/>
+						<components>
+							<meta_mesh_component name="merchandise_ironware_horseshoe"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_table_trunk_a" old_prefab_name="" mobility="1">
+						<transform position="-1.436, 0.406, 0.107" rotation_euler="0.000, 0.000, 1.416"/>
+						<physics shape="bo_bd_table_trunk_a" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_table_trunk_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="Tham_Food_Market" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="1.402, -2.441, 0.294" rotation_euler="0.000, 0.000, -1.719" scale="-0.794, 0.794, 0.794"/>
+				<scripts>
+					<script name="PE_StockpileMarket">
+						<variables>
+							<variable name="XmlFile" value="foodmarketall"/>
+							<variable name="Distance" value="5.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="merchandise_cheese_b_slice" old_prefab_name="" mobility="1">
+						<transform position="-1.350, -2.252, 0.941" rotation_euler="0.000, 0.000, 0.861"/>
+						<components>
+							<meta_mesh_component name="merchandise_cheese_b_slice"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_bread" old_prefab_name="" mobility="1">
+						<transform position="-1.498, -1.858, 0.940" rotation_euler="0.000, 0.000, -2.101" scale="0.609, 0.609, 0.609"/>
+						<components>
+							<meta_mesh_component name="merchandise_bread"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_cheese_b" old_prefab_name="" mobility="1">
+						<transform position="-2.226, -1.959, 0.941" rotation_euler="0.000, 0.000, 0.087"/>
+						<components>
+							<meta_mesh_component name="merchandise_cheese_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_cheese_b_slice" old_prefab_name="" mobility="1">
+						<transform position="-2.133, -2.241, 0.942" rotation_euler="0.000, 0.000, 2.580"/>
+						<components>
+							<meta_mesh_component name="merchandise_cheese_b_slice"/>
+						</components>
+					</game_entity>
+					<game_entity name="market_breadPile" old_prefab_name="" mobility="1">
+						<transform position="-0.336, -2.194, 0.942" rotation_euler="0.000, 0.000, 1.472"/>
+						<children>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="0.115, 0.246, 0.108" rotation_euler="0.000, 0.000, 1.476" scale="0.927, 0.927, 0.927"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="0.113, -0.541, 0.107" rotation_euler="0.000, 0.000, 1.664" scale="0.867, 0.867, 0.867"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="-0.092, 0.422, 0.108" rotation_euler="0.000, 0.000, 2.269"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="-0.116, 0.010, 0.107" rotation_euler="0.000, 0.000, 1.791" scale="1.022, 1.022, 1.022"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="-0.126, -0.360, 0.107" rotation_euler="0.000, 0.000, 2.393"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="0.231, 0.627, 0.064" rotation_euler="0.394, 0.317, 0.401"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="0.364, 0.194, 0.002" rotation_euler="0.000, 0.000, -1.236"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="0.172, -0.159, 0.065" rotation_euler="-0.279, -0.446, -2.532"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="0.329, -0.504, 0.002" rotation_euler="0.000, 0.000, 3.106"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="0.081, 0.716, 0.002" rotation_euler="0.000, 0.000, 3.106"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="0.082, 0.343, 0.002" rotation_euler="0.000, 0.000, 0.885"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="0.069, -0.026, 0.001" rotation_euler="0.000, 0.000, -0.498"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="0.099, -0.393, 0.001" rotation_euler="0.000, 0.000, -1.874"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="0.101, -0.706, 0.001" rotation_euler="0.000, 0.000, 3.018"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="-0.191, 0.497, 0.001" rotation_euler="0.000, 0.000, 1.515"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="-0.197, 0.123, 0.001" rotation_euler="0.000, 0.000, 0.313"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="-0.194, -0.240, 0.000" rotation_euler="0.000, 0.000, -0.552"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="-0.218, -0.581, 0.000" rotation_euler="0.000, 0.000, -1.255"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="kitchen_food_bread_a" old_prefab_name="" mobility="1">
+								<transform position="-0.166, -0.767, 0.074" rotation_euler="0.066, 0.400, -1.676" scale="0.927, 0.927, 0.927"/>
+								<components>
+									<meta_mesh_component name="kitchen_food_bread_a"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="market_flaxPile2" old_prefab_name="" mobility="1">
+						<transform position="-1.508, 0.466, 0.941" rotation_euler="0.000, 0.000, 3.064"/>
+						<children>
+							<game_entity name="foods_basket_cabbage" old_prefab_name="" mobility="1">
+								<transform position="0.393, 0.082, 0.000"/>
+								<physics shape="bo_foods_basket_cabbage"/>
+								<components>
+									<meta_mesh_component name="foods_basket_cabbage"/>
+								</components>
+							</game_entity>
+							<game_entity name="foods_orange_basket" old_prefab_name="" mobility="1">
+								<transform position="0.210, 1.212, 0.000"/>
+								<physics shape="bo_foods_orange_pile_a"/>
+								<components>
+									<meta_mesh_component name="foods_orange_basket"/>
+								</components>
+							</game_entity>
+							<game_entity name="foods_carrots_basket" old_prefab_name="" mobility="1">
+								<transform position="-0.188, -0.664, 0.000"/>
+								<physics shape="bo_foods_carrots_basket"/>
+								<components>
+									<meta_mesh_component name="foods_carrots_basket"/>
+								</components>
+							</game_entity>
+							<game_entity name="foods_basket_apple" old_prefab_name="" mobility="1">
+								<transform position="0.494, -0.888, 0.000"/>
+								<physics shape="bo_foods_basket_apple"/>
+								<components>
+									<meta_mesh_component name="foods_basket_apple"/>
+								</components>
+							</game_entity>
+							<game_entity name="foods_pumpkin_a" old_prefab_name="" mobility="1">
+								<transform position="-0.053, 0.730, 0.000"/>
+								<physics shape="bo_foods_pumpkin_a"/>
+								<components>
+									<meta_mesh_component name="foods_pumpkin_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="foods_cabbage_a" old_prefab_name="" mobility="1">
+								<transform position="-0.240, 1.174, 0.000"/>
+								<physics shape="bo_foods_cabbage_a"/>
+								<components>
+									<meta_mesh_component name="foods_cabbage_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="foods_cabbage_a" old_prefab_name="" mobility="1">
+								<transform position="0.567, 0.818, 0.000"/>
+								<physics shape="bo_foods_cabbage_a"/>
+								<components>
+									<meta_mesh_component name="foods_cabbage_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="foods_apple_a" old_prefab_name="" mobility="1">
+								<transform position="0.676, -0.532, 0.000" rotation_euler="0.000, 0.000, -1.515"/>
+								<components>
+									<meta_mesh_component name="foods_apple_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="foods_apple_a" old_prefab_name="" mobility="1">
+								<transform position="0.717, -0.659, 0.028" rotation_euler="-0.399, 0.846, -1.413"/>
+								<components>
+									<meta_mesh_component name="foods_apple_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="foods_carrots_b" old_prefab_name="" mobility="1">
+								<transform position="-0.320, -0.235, 0.000" rotation_euler="0.000, 0.000, 0.486"/>
+								<components>
+									<meta_mesh_component name="foods_carrots_b"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="bd_table_c" old_prefab_name="" mobility="1">
+						<transform position="-1.619, 0.382, 0.144" rotation_euler="0.000, 0.000, 1.427"/>
+						<physics shape="bo_bd_table_c" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_table_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_table_c" old_prefab_name="" mobility="1">
+						<transform position="-1.000, -2.097, 0.144" rotation_euler="0.000, 0.000, -0.135"/>
+						<physics shape="bo_bd_table_c" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_table_c"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

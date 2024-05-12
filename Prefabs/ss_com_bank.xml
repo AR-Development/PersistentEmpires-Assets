@@ -1,0 +1,2153 @@
+<prefabs>
+	<game_entity name="ss_com_bank" old_prefab_name="">
+		<transform position="377.406, 720.947, -0.025" rotation_euler="0.000, 0.000, 0.772"/>
+		<children>
+			<game_entity name="module_european_stone_floor_a" old_prefab_name="">
+				<transform position="2.049, 0.181, 0.000" rotation_euler="0.000, 0.000, -0.029"/>
+				<physics shape="bo_module_european_stone_floor_a"/>
+				<components>
+					<meta_mesh_component name="module_european_stone_floor_a">
+						<mesh name="module_european_stone_floor_a" material="empire_marble_floor_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_stone_floor_a" old_prefab_name="">
+				<transform position="-3.730, 0.311, 0.000" rotation_euler="0.000, 0.000, -0.029"/>
+				<physics shape="bo_module_european_stone_floor_a"/>
+				<components>
+					<meta_mesh_component name="module_european_stone_floor_a">
+						<mesh name="module_european_stone_floor_a" material="empire_marble_floor_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_stone_floor_a" old_prefab_name="">
+				<transform position="1.883, -5.489, 0.000" rotation_euler="0.000, 0.000, -0.029"/>
+				<physics shape="bo_module_european_stone_floor_a"/>
+				<components>
+					<meta_mesh_component name="module_european_stone_floor_a">
+						<mesh name="module_european_stone_floor_a" material="empire_marble_floor_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_stone_floor_a" old_prefab_name="">
+				<transform position="-3.888, -5.316, 0.000" rotation_euler="0.000, 0.000, -0.029"/>
+				<physics shape="bo_module_european_stone_floor_a"/>
+				<components>
+					<meta_mesh_component name="module_european_stone_floor_a">
+						<mesh name="module_european_stone_floor_a" material="empire_marble_floor_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_stone_floor_a" old_prefab_name="">
+				<transform position="2.205, 5.506, 0.000" rotation_euler="0.000, 0.000, -0.029"/>
+				<physics shape="bo_module_european_stone_floor_a"/>
+				<components>
+					<meta_mesh_component name="module_european_stone_floor_a">
+						<mesh name="module_european_stone_floor_a" material="empire_marble_floor_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_stone_floor_a" old_prefab_name="">
+				<transform position="-3.573, 5.659, 0.000" rotation_euler="0.000, 0.000, -0.029"/>
+				<physics shape="bo_module_european_stone_floor_a"/>
+				<components>
+					<meta_mesh_component name="module_european_stone_floor_a">
+						<mesh name="module_european_stone_floor_a" material="empire_marble_floor_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_arena_stand_wall_i" old_prefab_name="">
+				<transform position="-4.578, 0.231, -3.293" rotation_euler="0.000, 0.000, -1.599" scale="0.728, 0.728, 0.728"/>
+				<physics shape="bo_empire_arena_stand_wall_i" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="empire_arena_stand_wall_i"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_gatehouse_portcullis_a" old_prefab_name="">
+				<transform position="-6.894, -3.407, -0.370" rotation_euler="0.000, 0.000, -1.583" scale="0.396, 0.396, 0.396"/>
+				<physics shape="bo_european_castle_gatehouse_portcullis_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="european_castle_gatehouse_portcullis_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_gatehouse_portcullis_a" old_prefab_name="">
+				<transform position="-6.799, 4.069, -0.370" rotation_euler="0.000, 0.000, -1.608" scale="0.396, 0.396, 0.396"/>
+				<physics shape="bo_european_castle_gatehouse_portcullis_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="european_castle_gatehouse_portcullis_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_door_a" old_prefab_name="">
+				<transform position="-6.191, 0.290, 0.057" rotation_euler="0.000, 0.000, 1.522"/>
+				<physics shape="bo_empire_hippodrome_door_a"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_door_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_enterance_wall_corner" old_prefab_name="" occlusion_body_name="bo_occ_empire_hippodrome_enterance_wall_corner">
+				<transform position="-6.635, 1.636, 0.963" rotation_euler="0.000, 0.000, -0.067" scale="0.551, 0.551, 0.551"/>
+				<physics shape="bo_empire_hippodrome_enterance_wall_corner"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_enterance_wall_corner"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_enterance_wall_corner" old_prefab_name="" occlusion_body_name="bo_occ_empire_hippodrome_enterance_wall_corner">
+				<transform position="-5.928, 1.589, 0.963" rotation_euler="0.000, 0.000, -0.067" scale="0.551, 0.551, 0.551"/>
+				<physics shape="bo_empire_hippodrome_enterance_wall_corner"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_enterance_wall_corner"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_enterance_wall_corner" old_prefab_name="" occlusion_body_name="bo_occ_empire_hippodrome_enterance_wall_corner">
+				<transform position="-6.010, -1.034, 0.963" rotation_euler="0.000, 0.000, -0.067" scale="0.551, 0.551, 0.551"/>
+				<physics shape="bo_empire_hippodrome_enterance_wall_corner"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_enterance_wall_corner"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_enterance_wall_corner" old_prefab_name="" occlusion_body_name="bo_occ_empire_hippodrome_enterance_wall_corner">
+				<transform position="-6.632, -0.992, 0.963" rotation_euler="0.000, 0.000, -0.067" scale="0.551, 0.551, 0.551"/>
+				<physics shape="bo_empire_hippodrome_enterance_wall_corner"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_enterance_wall_corner"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_close" old_prefab_name="">
+				<transform position="-5.706, 0.234, 0.062" rotation_euler="0.000, 0.000, -1.616"/>
+				<physics shape="bo_empire_hippodrome_fence_door_close"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="tavern_empire_table_a" old_prefab_name="">
+				<transform position="-1.312, 3.187, 0.101" rotation_euler="0.000, 0.000, 1.525"/>
+				<physics shape="bo_tavern_empire_table_a"/>
+				<components>
+					<meta_mesh_component name="tavern_empire_table_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="tavern_empire_table_a" old_prefab_name="">
+				<transform position="-1.472, 0.009, 0.101" rotation_euler="0.000, 0.000, 1.525"/>
+				<physics shape="bo_tavern_empire_table_a"/>
+				<components>
+					<meta_mesh_component name="tavern_empire_table_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="tavern_empire_table_a" old_prefab_name="">
+				<transform position="-1.625, -3.154, 0.101" rotation_euler="0.000, 0.000, 1.525"/>
+				<physics shape="bo_tavern_empire_table_a"/>
+				<components>
+					<meta_mesh_component name="tavern_empire_table_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="tavern_empire_table_c" old_prefab_name="">
+				<transform position="-1.406, 5.571, 0.101" rotation_euler="0.000, 0.000, -1.636"/>
+				<physics shape="bo_tavern_empire_table_c"/>
+				<components>
+					<meta_mesh_component name="tavern_empire_table_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="tavern_empire_table_c" old_prefab_name="">
+				<transform position="-1.972, -5.482, 0.101" rotation_euler="0.000, 0.000, 3.101"/>
+				<physics shape="bo_tavern_empire_table_c"/>
+				<components>
+					<meta_mesh_component name="tavern_empire_table_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_close" old_prefab_name="">
+				<transform position="-3.712, -5.724, 0.101" rotation_euler="0.000, 0.000, 3.116"/>
+				<physics shape="bo_empire_hippodrome_fence_door_close"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_close" old_prefab_name="">
+				<transform position="-2.385, -5.403, 1.251" rotation_euler="0.000, 0.000, -2.440" scale="0.596, 0.596, 0.596"/>
+				<physics shape="bo_empire_hippodrome_fence_door_close"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_close" old_prefab_name="">
+				<transform position="-1.956, -4.498, 1.251" rotation_euler="0.000, 0.000, -1.605" scale="0.596, 0.596, 0.596"/>
+				<physics shape="bo_empire_hippodrome_fence_door_close"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_open" old_prefab_name="">
+				<transform position="-1.916, -3.388, 1.251" rotation_euler="0.000, 0.000, -1.611" scale="0.596, 0.596, 0.596"/>
+				<physics shape="bo_empire_hippodrome_fence_door_open"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_open"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_close" old_prefab_name="">
+				<transform position="-1.880, -2.275, 1.251" rotation_euler="0.000, 0.000, -1.605" scale="0.596, 0.596, 0.596"/>
+				<physics shape="bo_empire_hippodrome_fence_door_close"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_close" old_prefab_name="">
+				<transform position="-1.842, -1.168, 1.251" rotation_euler="0.000, 0.000, -1.605" scale="0.596, 0.596, 0.596"/>
+				<physics shape="bo_empire_hippodrome_fence_door_close"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_close" old_prefab_name="">
+				<transform position="-1.768, 1.035, 1.251" rotation_euler="0.000, 0.000, -1.605" scale="0.596, 0.596, 0.596"/>
+				<physics shape="bo_empire_hippodrome_fence_door_close"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_close" old_prefab_name="">
+				<transform position="-1.730, 2.150, 1.251" rotation_euler="0.000, 0.000, -1.605" scale="0.596, 0.596, 0.596"/>
+				<physics shape="bo_empire_hippodrome_fence_door_close"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_open" old_prefab_name="">
+				<transform position="-1.646, 3.267, 1.251" rotation_euler="0.000, 0.000, -1.611" scale="0.596, 0.596, 0.596"/>
+				<physics shape="bo_empire_hippodrome_fence_door_open"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_open"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_close" old_prefab_name="">
+				<transform position="-1.655, 4.368, 1.251" rotation_euler="0.000, 0.000, -1.605" scale="0.596, 0.596, 0.596"/>
+				<physics shape="bo_empire_hippodrome_fence_door_close"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_close" old_prefab_name="">
+				<transform position="-1.944, 5.330, 1.251" rotation_euler="0.000, 0.000, -0.965" scale="0.596, 0.596, 0.596"/>
+				<physics shape="bo_empire_hippodrome_fence_door_close"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_close" old_prefab_name="">
+				<transform position="-3.138, 5.744, 0.101" rotation_euler="0.000, 0.000, 3.116"/>
+				<physics shape="bo_empire_hippodrome_fence_door_close"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="tavern_empire_table_a" old_prefab_name="">
+				<transform position="-5.674, 5.993, 0.101" rotation_euler="0.000, 0.000, 3.102"/>
+				<physics shape="bo_tavern_empire_table_a"/>
+				<components>
+					<meta_mesh_component name="tavern_empire_table_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="tavern_empire_table_a" old_prefab_name="">
+				<transform position="-6.228, -5.699, 0.101" rotation_euler="0.000, 0.000, -0.013"/>
+				<physics shape="bo_tavern_empire_table_a"/>
+				<components>
+					<meta_mesh_component name="tavern_empire_table_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_close" old_prefab_name="">
+				<transform position="-5.180, -5.715, 1.274" rotation_euler="0.000, 0.000, 3.124" scale="0.596, 0.596, 0.596"/>
+				<physics shape="bo_empire_hippodrome_fence_door_close"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_close" old_prefab_name="">
+				<transform position="-6.284, -5.695, 1.274" rotation_euler="0.000, 0.000, 3.124" scale="0.596, 0.596, 0.596"/>
+				<physics shape="bo_empire_hippodrome_fence_door_close"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_close" old_prefab_name="">
+				<transform position="-4.629, 5.774, 1.274" rotation_euler="0.000, 0.000, 3.124" scale="0.596, 0.596, 0.596"/>
+				<physics shape="bo_empire_hippodrome_fence_door_close"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_close" old_prefab_name="">
+				<transform position="-5.748, 5.795, 1.274" rotation_euler="0.000, 0.000, 3.124" scale="0.596, 0.596, 0.596"/>
+				<physics shape="bo_empire_hippodrome_fence_door_close"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="chest_empire_b" old_prefab_name="">
+				<transform position="-5.351, -1.572, 0.101" rotation_euler="0.000, 0.000, 0.974" scale="2.762, 2.762, 2.762"/>
+				<physics shape="bo_chest_empire_b" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="chest_empire_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="chest_empire_b" old_prefab_name="">
+				<transform position="-8.612, -3.946, 0.101" rotation_euler="0.000, 0.000, 3.129" scale="2.762, 2.762, 2.762"/>
+				<physics shape="bo_chest_empire_b" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="chest_empire_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="chest_empire_b" old_prefab_name="">
+				<transform position="-12.021, -4.507, 0.101" rotation_euler="0.000, 0.000, 2.417" scale="2.762, 2.762, 2.762"/>
+				<physics shape="bo_chest_empire_b" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="chest_empire_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="chest_empire_b" old_prefab_name="">
+				<transform position="-9.960, -3.945, 0.101" rotation_euler="0.000, 0.000, 3.078" scale="2.762, 2.762, 2.762"/>
+				<physics shape="bo_chest_empire_b" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="chest_empire_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_gold_b" old_prefab_name="">
+				<transform position="-10.144, -3.973, 0.779" rotation_euler="0.000, 0.000, -0.780"/>
+				<components>
+					<meta_mesh_component name="merchandise_gold_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_gold_b" old_prefab_name="">
+				<transform position="-9.617, -3.852, 0.779" rotation_euler="0.000, 0.000, -0.780"/>
+				<components>
+					<meta_mesh_component name="merchandise_gold_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_gold_b" old_prefab_name="">
+				<transform position="-8.817, -3.921, 0.779" rotation_euler="0.000, 0.000, -1.535"/>
+				<components>
+					<meta_mesh_component name="merchandise_gold_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_chest_a" old_prefab_name="">
+				<transform position="-12.514, 4.335, -0.027" rotation_euler="0.000, 0.000, 1.559"/>
+				<physics shape="bo_bd_chest_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_chest_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_chest_c" old_prefab_name="">
+				<transform position="-9.511, 4.937, 0.061" rotation_euler="0.000, 0.000, -0.003"/>
+				<physics shape="bo_bd_chest_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_chest_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_chest_d" old_prefab_name="">
+				<transform position="-12.693, -2.685, -0.027" rotation_euler="0.000, 0.000, 1.508"/>
+				<physics shape="bo_bd_chest_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_chest_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="pe_loot" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-5.755, -2.353, 0.101" rotation_euler="0.000, 0.000, 0.017"/>
+				<scripts>
+					<script name="PE_InventoryEntity">
+						<variables>
+							<variable name="InventoryName" value="Loot"/>
+							<variable name="InventoryId" value="playerdeath"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="Slot" value="32"/>
+							<variable name="StackCount" value="10"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="pe_lootbag" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform rotation_euler="0.000, 0.000, 0.000" scale="0.497, 0.667, 0.431"/>
+						<physics shape="bo_bd_sack_b" override_material="straw">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pe_loot" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-5.282, -1.648, 0.779" rotation_euler="0.000, 0.000, 1.505"/>
+				<children>
+					<game_entity name="pe_lootbag" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform rotation_euler="0.000, 0.000, 0.000" scale="0.497, 0.667, 0.431"/>
+						<physics shape="bo_bd_sack_b" override_material="straw">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="bd_sack_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pe_moneybag" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-7.320, 4.981, 0.073" rotation_euler="0.000, 0.000, -0.780"/>
+				<children>
+					<game_entity name="pe_moneyb" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform rotation_euler="0.000, 0.000, 0.000" scale="0.350, 0.552, 0.350"/>
+						<physics shape="bo_bd_sack_b" override_material="straw">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="bd_sack_b">
+								<mesh name="bd_sack_b" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod2" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod3" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod4" factor="4294944540"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pe_moneybag" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-7.711, 4.968, 0.073" rotation_euler="0.000, 0.000, 0.735"/>
+				<children>
+					<game_entity name="pe_moneyb" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform rotation_euler="0.000, 0.000, 0.000" scale="0.350, 0.552, 0.350"/>
+						<physics shape="bo_bd_sack_b" override_material="straw">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="bd_sack_b">
+								<mesh name="bd_sack_b" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod2" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod3" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod4" factor="4294944540"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pe_moneybag" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-7.489, 4.738, 0.073" rotation_euler="0.000, 0.000, -0.198"/>
+				<children>
+					<game_entity name="pe_moneyb" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform rotation_euler="0.000, 0.000, 0.000" scale="0.350, 0.552, 0.350"/>
+						<physics shape="bo_bd_sack_b" override_material="straw">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="bd_sack_b">
+								<mesh name="bd_sack_b" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod2" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod3" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod4" factor="4294944540"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pe_moneybag" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-7.479, 4.896, 0.272" rotation_euler="-0.810, 0.000, -0.198"/>
+				<children>
+					<game_entity name="pe_moneyb" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform rotation_euler="0.000, 0.000, 0.000" scale="0.350, 0.552, 0.350"/>
+						<physics shape="bo_bd_sack_b" override_material="straw">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="bd_sack_b">
+								<mesh name="bd_sack_b" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod2" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod3" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod4" factor="4294944540"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pe_moneybag" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-8.008, 5.210, 0.087" rotation_euler="0.336, 0.446, 0.084"/>
+				<children>
+					<game_entity name="pe_moneyb" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform rotation_euler="0.000, 0.000, 0.000" scale="0.350, 0.552, 0.350"/>
+						<physics shape="bo_bd_sack_b" override_material="straw">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="bd_sack_b">
+								<mesh name="bd_sack_b" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod2" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod3" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod4" factor="4294944540"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pe_moneybag" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-7.797, 4.692, 0.073" rotation_euler="0.000, 0.000, 1.430"/>
+				<children>
+					<game_entity name="pe_moneyb" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform rotation_euler="0.000, 0.000, 0.000" scale="0.350, 0.552, 0.350"/>
+						<physics shape="bo_bd_sack_b" override_material="straw">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="bd_sack_b">
+								<mesh name="bd_sack_b" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod2" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod3" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod4" factor="4294944540"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pe_moneybag" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-8.077, 4.892, 0.073" rotation_euler="0.000, 0.000, 0.263"/>
+				<children>
+					<game_entity name="pe_moneyb" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform rotation_euler="0.000, 0.000, 0.000" scale="0.350, 0.552, 0.350"/>
+						<physics shape="bo_bd_sack_b" override_material="straw">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="bd_sack_b">
+								<mesh name="bd_sack_b" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod2" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod3" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod4" factor="4294944540"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pe_moneybag" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-7.861, 4.887, 0.248" rotation_euler="0.000, 0.482, 0.263"/>
+				<children>
+					<game_entity name="pe_moneyb" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<transform rotation_euler="0.000, 0.000, 0.000" scale="0.350, 0.552, 0.350"/>
+						<physics shape="bo_bd_sack_b" override_material="straw">
+							<body_flags>
+								<body_flag name="only_collide_with_raycast"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="bd_sack_b">
+								<mesh name="bd_sack_b" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod2" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod3" factor="4294944540"/>
+								<mesh name="bd_sack_b.lod4" factor="4294944540"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="lib_book_open_a" old_prefab_name="">
+				<transform position="-1.965, -3.378, 1.251" rotation_euler="0.000, 0.000, 1.643"/>
+				<components>
+					<meta_mesh_component name="lib_book_open_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_open_a" old_prefab_name="">
+				<transform position="-1.632, 3.272, 1.251" rotation_euler="0.000, 0.000, 1.323"/>
+				<components>
+					<meta_mesh_component name="lib_book_open_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_quill_pen" old_prefab_name="">
+				<transform position="-2.156, -3.498, 1.335" rotation_euler="-1.317, 0.000, -0.884"/>
+				<components>
+					<meta_mesh_component name="lib_quill_pen"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_quill_pen" old_prefab_name="">
+				<transform position="-1.886, 2.829, 1.291" rotation_euler="-1.199, 0.000, -0.884"/>
+				<components>
+					<meta_mesh_component name="lib_quill_pen"/>
+				</components>
+			</game_entity>
+			<game_entity name="pe_moneyb" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.416, -3.385, 1.202" rotation_euler="0.000, 0.000, 0.575" scale="0.350, 0.552, 0.350"/>
+				<physics shape="bo_bd_sack_b" override_material="straw">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="bd_sack_b">
+						<mesh name="bd_sack_b" factor="4294944540"/>
+						<mesh name="bd_sack_b.lod2" factor="4294944540"/>
+						<mesh name="bd_sack_b.lod3" factor="4294944540"/>
+						<mesh name="bd_sack_b.lod4" factor="4294944540"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="pe_moneyb" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.057, 3.314, 1.202" rotation_euler="0.000, 0.000, -0.780" scale="0.350, 0.552, 0.350"/>
+				<physics shape="bo_bd_sack_b" override_material="straw">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="bd_sack_b">
+						<mesh name="bd_sack_b" factor="4294944540"/>
+						<mesh name="bd_sack_b.lod2" factor="4294944540"/>
+						<mesh name="bd_sack_b.lod3" factor="4294944540"/>
+						<mesh name="bd_sack_b.lod4" factor="4294944540"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aquila" old_prefab_name="">
+				<transform position="8.406, -0.154, 7.350" rotation_euler="0.000, 0.000, 1.576" scale="0.172, 0.172, 0.172"/>
+				<physics shape="bo_aquila" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="aquila"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_d_interior_wall_art_e2" old_prefab_name="">
+				<transform position="4.309, -5.399, -4.587" rotation_euler="0.000, 0.000, -1.568"/>
+				<physics shape="bo_empire_keep_d_interior_wall_art_e1"/>
+				<components>
+					<meta_mesh_component name="empire_keep_d_interior_wall_art_e2"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_d_interior_wall_art_e2" old_prefab_name="">
+				<transform position="4.701, 5.178, -4.587" rotation_euler="0.000, 0.000, -1.595" scale="-1.000, 1.000, 1.000"/>
+				<physics shape="bo_empire_keep_d_interior_wall_art_e1"/>
+				<components>
+					<meta_mesh_component name="empire_keep_d_interior_wall_art_e2"/>
+				</components>
+			</game_entity>
+			<game_entity name="pe_bd_chair_empire_d_pillow_c" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="npc_wait"/>
+					<tag name="npc_common"/>
+				</tags>
+				<transform position="4.354, 5.235, 0.101" rotation_euler="0.000, 0.000, -1.596"/>
+				<physics shape="bo_bd_chair_empire_d_pillow_a" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="bd_chair_empire_d_pillow_c"/>
+				</components>
+				<scripts>
+					<script name="PE_Chair">
+						<variables>
+							<variable name="ChairType" value="Chair"/>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="pe_chair_sit_position_front_left" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.487, -0.544, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="PE_ChairUsePoint">
+								<variables>
+									<variable name="NearTable" value="false"/>
+									<variable name="NearTableLoopAction" value=""/>
+									<variable name="NearTablePairLoopAction" value=""/>
+									<variable name="Drink" value="false"/>
+									<variable name="DrinkLoopAction" value=""/>
+									<variable name="DrinkPairLoopAction" value=""/>
+									<variable name="DrinkRightHandItem" value=""/>
+									<variable name="DrinkLeftHandItem" value=""/>
+									<variable name="Eat" value="false"/>
+									<variable name="EatLoopAction" value=""/>
+									<variable name="EatPairLoopAction" value=""/>
+									<variable name="EatRightHandItem" value=""/>
+									<variable name="EatLeftHandItem" value=""/>
+									<variable name="ArriveAction" value="act_sit_down_from_front"/>
+									<variable name="LoopStartAction" value="act_sit_1"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value="act_stand_up_to_front"/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="RightHandItemBone" value="ItemR"/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="LeftHandItemBone" value="ItemL"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="pe_chair_sit_position_front_right" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="-0.309, -0.544, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="PE_ChairUsePoint">
+								<variables>
+									<variable name="NearTable" value="false"/>
+									<variable name="NearTableLoopAction" value=""/>
+									<variable name="NearTablePairLoopAction" value=""/>
+									<variable name="Drink" value="false"/>
+									<variable name="DrinkLoopAction" value=""/>
+									<variable name="DrinkPairLoopAction" value=""/>
+									<variable name="DrinkRightHandItem" value=""/>
+									<variable name="DrinkLeftHandItem" value=""/>
+									<variable name="Eat" value="false"/>
+									<variable name="EatLoopAction" value=""/>
+									<variable name="EatPairLoopAction" value=""/>
+									<variable name="EatRightHandItem" value=""/>
+									<variable name="EatLeftHandItem" value=""/>
+									<variable name="ArriveAction" value="act_sit_down_from_front"/>
+									<variable name="LoopStartAction" value="act_sit_1"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value="act_stand_up_to_front"/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="RightHandItemBone" value="ItemR"/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="LeftHandItemBone" value="ItemL"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pe_bd_chair_empire_d_pillow_c" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="npc_wait"/>
+					<tag name="npc_common"/>
+				</tags>
+				<transform position="4.061, -5.365, 0.101" rotation_euler="0.000, 0.000, -1.566"/>
+				<physics shape="bo_bd_chair_empire_d_pillow_a" override_material="fabric"/>
+				<components>
+					<meta_mesh_component name="bd_chair_empire_d_pillow_c"/>
+				</components>
+				<scripts>
+					<script name="PE_Chair">
+						<variables>
+							<variable name="ChairType" value="Chair"/>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="pe_chair_sit_position_front_left" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.487, -0.544, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="PE_ChairUsePoint">
+								<variables>
+									<variable name="NearTable" value="false"/>
+									<variable name="NearTableLoopAction" value=""/>
+									<variable name="NearTablePairLoopAction" value=""/>
+									<variable name="Drink" value="false"/>
+									<variable name="DrinkLoopAction" value=""/>
+									<variable name="DrinkPairLoopAction" value=""/>
+									<variable name="DrinkRightHandItem" value=""/>
+									<variable name="DrinkLeftHandItem" value=""/>
+									<variable name="Eat" value="false"/>
+									<variable name="EatLoopAction" value=""/>
+									<variable name="EatPairLoopAction" value=""/>
+									<variable name="EatRightHandItem" value=""/>
+									<variable name="EatLeftHandItem" value=""/>
+									<variable name="ArriveAction" value="act_sit_down_from_front"/>
+									<variable name="LoopStartAction" value="act_sit_1"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value="act_stand_up_to_front"/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="RightHandItemBone" value="ItemR"/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="LeftHandItemBone" value="ItemL"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="pe_chair_sit_position_front_right" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="-0.309, -0.544, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="PE_ChairUsePoint">
+								<variables>
+									<variable name="NearTable" value="false"/>
+									<variable name="NearTableLoopAction" value=""/>
+									<variable name="NearTablePairLoopAction" value=""/>
+									<variable name="Drink" value="false"/>
+									<variable name="DrinkLoopAction" value=""/>
+									<variable name="DrinkPairLoopAction" value=""/>
+									<variable name="DrinkRightHandItem" value=""/>
+									<variable name="DrinkLeftHandItem" value=""/>
+									<variable name="Eat" value="false"/>
+									<variable name="EatLoopAction" value=""/>
+									<variable name="EatPairLoopAction" value=""/>
+									<variable name="EatRightHandItem" value=""/>
+									<variable name="EatLeftHandItem" value=""/>
+									<variable name="ArriveAction" value="act_sit_down_from_front"/>
+									<variable name="LoopStartAction" value="act_sit_1"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value="act_stand_up_to_front"/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="RightHandItemBone" value="ItemR"/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="LeftHandItemBone" value="ItemL"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="empire_castle_keep_a_l3_interior_wall_art_d" old_prefab_name="">
+				<transform position="5.553, 5.058, -1.866" rotation_euler="0.000, 0.000, 1.548"/>
+				<physics shape="bo_empire_castle_keep_a_l3_interior_wall_art_d"/>
+				<components>
+					<meta_mesh_component name="empire_castle_keep_a_l3_interior_wall_art_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_keep_a_l3_interior_wall_art_d" old_prefab_name="">
+				<transform position="5.110, -5.605, -1.866" rotation_euler="0.000, 0.000, 1.548"/>
+				<physics shape="bo_empire_castle_keep_a_l3_interior_wall_art_d"/>
+				<components>
+					<meta_mesh_component name="empire_castle_keep_a_l3_interior_wall_art_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="3.423, -7.184, 5.910" rotation_euler="0.400, 0.006, -0.013" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-0.151, -7.096, 5.952" rotation_euler="0.400, 0.010, -0.021" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-3.720, -7.035, 5.983" rotation_euler="0.400, 0.010, -0.021" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-7.244, -6.974, 6.014" rotation_euler="0.400, 0.010, -0.021" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-10.806, -6.912, 6.046" rotation_euler="0.400, 0.010, -0.021" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="3.458, -3.725, 5.904" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-0.084, -3.689, 5.925" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-3.642, -3.652, 5.946" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-7.200, -3.615, 5.967" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-10.761, -3.579, 5.988" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_roof_part_c" old_prefab_name="">
+				<transform position="2.962, -5.454, 6.705" rotation_euler="0.000, 0.000, -1.574"/>
+				<physics shape="bo_empire_keep_a_roof_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_roof_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_roof_part_c" old_prefab_name="">
+				<transform position="-1.688, -5.424, 6.737" rotation_euler="0.000, 0.000, -1.589"/>
+				<physics shape="bo_empire_keep_a_roof_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_roof_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_roof_part_c" old_prefab_name="">
+				<transform position="-6.303, -5.341, 6.787" rotation_euler="0.000, 0.000, -1.597"/>
+				<physics shape="bo_empire_keep_a_roof_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_roof_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_roof_part_c" old_prefab_name="">
+				<transform position="-10.460, -5.234, 6.787" rotation_euler="0.000, 0.000, -1.597"/>
+				<physics shape="bo_empire_keep_a_roof_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_roof_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_roof_part_c" old_prefab_name="">
+				<transform position="3.285, 5.105, 6.705" rotation_euler="0.000, 0.000, -1.574"/>
+				<physics shape="bo_empire_keep_a_roof_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_roof_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_roof_part_c" old_prefab_name="">
+				<transform position="-1.366, 5.134, 6.737" rotation_euler="0.000, 0.000, -1.589"/>
+				<physics shape="bo_empire_keep_a_roof_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_roof_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-6.922, 3.585, 6.014" rotation_euler="0.400, 0.010, -0.021" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-10.439, 6.980, 5.988" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-3.398, 3.524, 5.983" rotation_euler="0.400, 0.010, -0.021" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-3.319, 6.907, 5.946" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="3.780, 6.833, 5.904" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="0.239, 6.870, 5.925" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-6.877, 6.943, 5.967" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_roof_part_c" old_prefab_name="">
+				<transform position="-5.981, 5.218, 6.787" rotation_euler="0.000, 0.000, -1.597"/>
+				<physics shape="bo_empire_keep_a_roof_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_roof_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-10.484, 3.646, 6.046" rotation_euler="0.400, 0.010, -0.021" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_roof_part_c" old_prefab_name="">
+				<transform position="-10.138, 5.325, 6.787" rotation_euler="0.000, 0.000, -1.597"/>
+				<physics shape="bo_empire_keep_a_roof_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_roof_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="0.172, 3.463, 5.952" rotation_euler="0.400, 0.010, -0.021" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="3.745, 3.375, 5.910" rotation_euler="0.400, 0.006, -0.013" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_roof_part_c" old_prefab_name="">
+				<transform position="3.064, -0.093, 6.705" rotation_euler="0.000, 0.000, -1.574"/>
+				<physics shape="bo_empire_keep_a_roof_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_roof_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="0.018, 1.672, 5.925" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_roof_part_c" old_prefab_name="">
+				<transform position="-11.635, 0.160, 6.830" rotation_euler="0.000, 0.000, -1.597"/>
+				<physics shape="bo_empire_keep_a_roof_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_roof_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-10.659, 1.782, 5.988" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-7.142, -1.613, 6.014" rotation_euler="0.400, 0.010, -0.021" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_roof_part_c" old_prefab_name="">
+				<transform position="-1.586, -0.064, 6.737" rotation_euler="0.000, 0.000, -1.589"/>
+				<physics shape="bo_empire_keep_a_roof_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_roof_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-0.049, -1.735, 5.952" rotation_euler="0.400, 0.010, -0.021" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-7.098, 1.745, 5.967" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-3.540, 1.709, 5.946" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="3.560, 1.635, 5.904" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="3.525, -1.823, 5.910" rotation_euler="0.400, 0.006, -0.013" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-10.704, -1.552, 6.046" rotation_euler="0.400, 0.010, -0.021" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-3.618, -1.674, 5.983" rotation_euler="0.400, 0.010, -0.021" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_roof_part_c" old_prefab_name="">
+				<transform position="-6.201, 0.020, 6.787" rotation_euler="0.000, 0.000, -1.597"/>
+				<physics shape="bo_empire_keep_a_roof_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_roof_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_gate" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_gate">
+				<transform position="4.908, -0.210, 0.511" rotation_euler="0.000, 0.000, 1.506" scale="1.000, 0.500, 1.000"/>
+				<physics shape="bo_empire_grandbazaar_gate"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_gate">
+						<mesh name="empire_grandbazaar_gate.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod3.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod5.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod6.6" material="roman_hippodrome_wall_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_ceiling_plank_b" old_prefab_name="">
+				<transform position="2.258, -4.192, -0.408" rotation_euler="0.000, 0.000, -1.597" scale="1.100, 1.000, 1.000"/>
+				<physics shape="bo_module_ceiling_plank_a"/>
+				<components>
+					<meta_mesh_component name="module_ceiling_plank_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_ceiling_plank_b" old_prefab_name="">
+				<transform position="2.481, 4.129, -0.408" rotation_euler="0.000, 0.000, -1.597" scale="1.100, 1.000, 1.000"/>
+				<physics shape="bo_module_ceiling_plank_a"/>
+				<components>
+					<meta_mesh_component name="module_ceiling_plank_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_ceiling_plank_b" old_prefab_name="">
+				<transform position="-2.173, 4.327, -0.363" rotation_euler="0.000, 0.000, -1.597" scale="-1.100, 1.000, 1.000"/>
+				<physics shape="bo_module_ceiling_plank_a"/>
+				<components>
+					<meta_mesh_component name="module_ceiling_plank_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_ceiling_plank_b" old_prefab_name="">
+				<transform position="-2.400, -4.160, -0.408" rotation_euler="0.000, 0.000, -1.597" scale="1.100, 1.000, 1.000"/>
+				<physics shape="bo_module_ceiling_plank_a"/>
+				<components>
+					<meta_mesh_component name="module_ceiling_plank_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_ceiling_plank_b" old_prefab_name="">
+				<transform position="-6.985, -4.038, -0.408" rotation_euler="0.000, 0.000, -1.597" scale="1.100, 1.000, 1.000"/>
+				<physics shape="bo_module_ceiling_plank_a"/>
+				<components>
+					<meta_mesh_component name="module_ceiling_plank_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_ceiling_plank_b" old_prefab_name="">
+				<transform position="-6.764, 4.256, -0.408" rotation_euler="0.000, 0.000, -1.597" scale="1.100, 1.000, 1.000"/>
+				<physics shape="bo_module_ceiling_plank_a"/>
+				<components>
+					<meta_mesh_component name="module_ceiling_plank_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_enterance_wall_b" old_prefab_name="" occlusion_body_name="bo_occ_empire_hippodrome_enterance_wall_b">
+				<transform position="-7.300, -6.699, 1.766" rotation_euler="0.000, 0.000, -1.594" scale="0.700, 1.000, 1.000"/>
+				<physics shape="bo_empire_hippodrome_enterance_wall_b"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_enterance_wall_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_enterance_wall_b" old_prefab_name="" occlusion_body_name="bo_occ_empire_hippodrome_enterance_wall_b">
+				<transform position="-6.983, 6.831, 1.766" rotation_euler="0.000, 0.000, -1.594" scale="0.700, 1.000, 1.000"/>
+				<physics shape="bo_empire_hippodrome_enterance_wall_b"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_enterance_wall_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_keep_a_l3_interior_wall_art_c" old_prefab_name="">
+				<transform position="-6.653, -6.862, -3.164" rotation_euler="0.000, 0.000, 1.586"/>
+				<physics shape="bo_empire_castle_keep_a_l3_interior_wall_art_c"/>
+				<components>
+					<meta_mesh_component name="empire_castle_keep_a_l3_interior_wall_art_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_keep_a_l3_interior_wall_art_c" old_prefab_name="">
+				<transform position="-6.335, 6.971, -3.164" rotation_euler="0.000, 0.000, 1.556"/>
+				<physics shape="bo_empire_castle_keep_a_l3_interior_wall_art_c"/>
+				<components>
+					<meta_mesh_component name="empire_castle_keep_a_l3_interior_wall_art_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_keep_a_l3_interior_window_a" old_prefab_name="">
+				<transform position="1.648, -8.274, 1.487" rotation_euler="0.000, 0.000, 3.108" scale="0.600, 0.600, 0.600"/>
+				<physics shape="bo_empire_castle_keep_a_l3_interior_window_a"/>
+				<components>
+					<meta_mesh_component name="empire_castle_keep_a_l3_interior_window_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_keep_a_l3_interior_window_a" old_prefab_name="">
+				<transform position="-4.440, -8.070, 1.487" rotation_euler="0.000, 0.000, 3.108" scale="0.600, 0.600, 0.600"/>
+				<physics shape="bo_empire_castle_keep_a_l3_interior_window_a"/>
+				<components>
+					<meta_mesh_component name="empire_castle_keep_a_l3_interior_window_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_keep_a_l3_interior_window_a" old_prefab_name="">
+				<transform position="-4.460, -8.660, 1.487" rotation_euler="0.000, 0.000, 3.108" scale="0.600, 0.600, 0.600"/>
+				<physics shape="bo_empire_castle_keep_a_l3_interior_window_a"/>
+				<components>
+					<meta_mesh_component name="empire_castle_keep_a_l3_interior_window_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_keep_a_l3_interior_window_a" old_prefab_name="">
+				<transform position="1.630, -8.785, 1.487" rotation_euler="0.000, 0.000, 3.108" scale="0.600, 0.600, 0.600"/>
+				<physics shape="bo_empire_castle_keep_a_l3_interior_window_a"/>
+				<components>
+					<meta_mesh_component name="empire_castle_keep_a_l3_interior_window_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_keep_a_l3_interior_window_a" old_prefab_name="">
+				<transform position="2.191, 7.956, 1.487" rotation_euler="0.000, 0.000, 3.108" scale="0.600, 0.600, 0.600"/>
+				<physics shape="bo_empire_castle_keep_a_l3_interior_window_a"/>
+				<components>
+					<meta_mesh_component name="empire_castle_keep_a_l3_interior_window_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_keep_a_l3_interior_window_a" old_prefab_name="">
+				<transform position="2.210, 8.510, 1.487" rotation_euler="0.000, 0.000, 3.108" scale="0.600, 0.600, 0.600"/>
+				<physics shape="bo_empire_castle_keep_a_l3_interior_window_a"/>
+				<components>
+					<meta_mesh_component name="empire_castle_keep_a_l3_interior_window_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_keep_a_l3_interior_window_a" old_prefab_name="">
+				<transform position="-3.899, 8.079, 1.487" rotation_euler="0.000, 0.000, 3.108" scale="0.600, 0.600, 0.600"/>
+				<physics shape="bo_empire_castle_keep_a_l3_interior_window_a"/>
+				<components>
+					<meta_mesh_component name="empire_castle_keep_a_l3_interior_window_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_keep_a_l3_interior_window_a" old_prefab_name="">
+				<transform position="-3.881, 8.612, 1.487" rotation_euler="0.000, 0.000, 3.108" scale="0.600, 0.600, 0.600"/>
+				<physics shape="bo_empire_castle_keep_a_l3_interior_window_a"/>
+				<components>
+					<meta_mesh_component name="empire_castle_keep_a_l3_interior_window_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_gate" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_gate">
+				<transform position="-13.728, -5.141, 0.579" rotation_euler="0.000, 0.000, -1.637"/>
+				<physics shape="bo_empire_grandbazaar_gate"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_gate">
+						<mesh name="empire_grandbazaar_gate.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod3.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod5.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod6.6" material="roman_hippodrome_wall_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_gate" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_gate">
+				<transform position="-13.754, 0.118, 0.511" rotation_euler="0.000, 0.000, -1.625" scale="1.000, 0.500, 1.000"/>
+				<physics shape="bo_empire_grandbazaar_gate"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_gate">
+						<mesh name="empire_grandbazaar_gate.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod3.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod5.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod6.6" material="roman_hippodrome_wall_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_gate" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_gate">
+				<transform position="-13.240, 5.406, 0.511" rotation_euler="0.000, 0.000, -1.589"/>
+				<physics shape="bo_empire_grandbazaar_gate"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_gate">
+						<mesh name="empire_grandbazaar_gate.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod3.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod5.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod6.6" material="roman_hippodrome_wall_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-12.178, -6.889, 6.058" rotation_euler="0.400, 0.010, -0.021" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-12.133, -3.564, 5.996" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_roof_part_c" old_prefab_name="">
+				<transform position="-11.849, -5.198, 6.787" rotation_euler="0.000, 0.000, -1.597"/>
+				<physics shape="bo_empire_keep_a_roof_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_roof_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-11.826, 6.994, 5.996" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-11.861, 3.670, 6.058" rotation_euler="0.400, 0.010, -0.021" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_roof_part_c" old_prefab_name="">
+				<transform position="-11.518, 5.351, 6.849" rotation_euler="0.000, 0.000, -1.599"/>
+				<physics shape="bo_empire_keep_a_roof_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_roof_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-12.083, -1.528, 6.058" rotation_euler="0.400, 0.010, -0.021" scale="0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_roof_part_c" old_prefab_name="">
+				<transform position="-7.953, 0.065, 6.830" rotation_euler="0.000, 0.000, -1.597"/>
+				<physics shape="bo_empire_keep_a_roof_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_roof_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="ruinous_castle_floor_b_tilable" old_prefab_name="">
+				<transform position="-12.058, 1.796, 5.996" rotation_euler="0.398, 0.006, 3.134" scale="-0.470, 0.470, 0.770"/>
+				<physics shape="bo_ruinous_castle_floor_b_tilable"/>
+				<components>
+					<meta_mesh_component name="ruinous_castle_floor_b_tilable">
+						<mesh name="ruinous_castle_floor_b_tilable" material="roman_roof"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_d_interior_wall_art_e1" old_prefab_name="">
+				<transform position="-13.967, 0.120, -4.637" rotation_euler="0.000, 0.000, -1.630"/>
+				<physics shape="bo_empire_keep_d_interior_wall_art_e1"/>
+				<components>
+					<meta_mesh_component name="empire_keep_d_interior_wall_art_e1"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_keep_a_l3_interior_wall_art_a" old_prefab_name="">
+				<transform position="-13.198, 5.404, -2.854" rotation_euler="0.000, 0.000, -1.631"/>
+				<physics shape="bo_empire_castle_keep_a_l3_interior_wall_art_a"/>
+				<components>
+					<meta_mesh_component name="empire_castle_keep_a_l3_interior_wall_art_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_keep_a_l3_interior_wall_art_a" old_prefab_name="">
+				<transform position="-13.837, -5.116, -2.854" rotation_euler="0.000, 0.000, -1.631"/>
+				<physics shape="bo_empire_castle_keep_a_l3_interior_wall_art_a"/>
+				<components>
+					<meta_mesh_component name="empire_castle_keep_a_l3_interior_wall_art_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_fence_door_open" old_prefab_name="">
+				<transform position="-1.780, -0.071, 1.251" rotation_euler="0.000, 0.000, -1.611" scale="0.596, 0.596, 0.596"/>
+				<physics shape="bo_empire_hippodrome_fence_door_open"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_fence_door_open"/>
+				</components>
+			</game_entity>
+			<game_entity name="pe_moneyb" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="-1.162, -0.135, 1.202" rotation_euler="0.000, 0.000, 0.575" scale="0.350, 0.552, 0.350"/>
+				<physics shape="bo_bd_sack_b" override_material="straw">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="bd_sack_b">
+						<mesh name="bd_sack_b" factor="4294944540"/>
+						<mesh name="bd_sack_b.lod2" factor="4294944540"/>
+						<mesh name="bd_sack_b.lod3" factor="4294944540"/>
+						<mesh name="bd_sack_b.lod4" factor="4294944540"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_open_a" old_prefab_name="">
+				<transform position="-1.787, -0.097, 1.251" rotation_euler="0.000, 0.000, 1.453"/>
+				<components>
+					<meta_mesh_component name="lib_book_open_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_quill_pen" old_prefab_name="">
+				<transform position="-1.954, -0.120, 1.396" rotation_euler="-1.497, -1.545, -1.745"/>
+				<components>
+					<meta_mesh_component name="lib_quill_pen"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_enterance_side_gate" old_prefab_name="">
+				<transform position="6.662, -0.178, 0.334" rotation_euler="0.000, 0.000, -1.583" scale="0.734, 0.734, 0.734"/>
+				<physics shape="bo_empire_hippodrome_enterance_side_gate"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_enterance_side_gate"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_hippodrome_door_b_open" old_prefab_name="">
+				<transform position="5.206, -0.200, 0.338" rotation_euler="0.000, 0.000, 1.561" scale="0.732, 0.732, 0.732"/>
+				<physics shape="bo_empire_hippodrome_door_b_open"/>
+				<components>
+					<meta_mesh_component name="empire_hippodrome_door_b_open"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_gate" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_gate">
+				<transform position="5.212, 5.091, 0.511" rotation_euler="0.000, 0.000, 1.544"/>
+				<physics shape="bo_empire_grandbazaar_gate"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_gate">
+						<mesh name="empire_grandbazaar_gate.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod3.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod5.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod6.6" material="roman_hippodrome_wall_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_gate" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_gate">
+				<transform position="4.772, -5.454, 0.511" rotation_euler="0.000, 0.000, 1.559"/>
+				<physics shape="bo_empire_grandbazaar_gate"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_gate">
+						<mesh name="empire_grandbazaar_gate.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod3.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod5.6" material="roman_hippodrome_wall_a"/>
+						<mesh name="empire_grandbazaar_gate.lod6.6" material="roman_hippodrome_wall_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_wall">
+				<transform position="2.235, 8.251, -0.417" rotation_euler="0.000, 0.000, -1.571"/>
+				<physics shape="bo_empire_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_wall">
+						<mesh name="empire_grandbazaar_wall.6" material="roman_hippodrome_wall_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_wall">
+				<transform position="-3.646, 8.363, -0.416" rotation_euler="0.000, 0.000, -1.593"/>
+				<physics shape="bo_empire_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_wall">
+						<mesh name="empire_grandbazaar_wall.6" material="roman_hippodrome_wall_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_wall">
+				<transform position="-9.326, 8.477, -0.411" rotation_euler="0.000, 0.000, -1.593"/>
+				<physics shape="bo_empire_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_wall">
+						<mesh name="empire_grandbazaar_wall.6" material="roman_hippodrome_wall_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_wall">
+				<transform position="-10.635, 8.495, -0.424" rotation_euler="0.000, 0.000, -1.592"/>
+				<physics shape="bo_empire_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_wall">
+						<mesh name="empire_grandbazaar_wall.6" material="roman_hippodrome_wall_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_wall">
+				<transform position="-11.294, -8.227, -0.327" rotation_euler="0.000, 0.000, -1.592"/>
+				<physics shape="bo_empire_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_wall">
+						<mesh name="empire_grandbazaar_wall.6" material="roman_hippodrome_wall_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_wall">
+				<transform position="1.573, -8.507, -0.347" rotation_euler="0.000, 0.000, -1.593"/>
+				<physics shape="bo_empire_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_wall">
+						<mesh name="empire_grandbazaar_wall.6" material="roman_hippodrome_wall_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_wall">
+				<transform position="-3.673, -8.393, -0.342" rotation_euler="0.000, 0.000, -1.593"/>
+				<physics shape="bo_empire_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_wall">
+						<mesh name="empire_grandbazaar_wall.6" material="roman_hippodrome_wall_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_wall">
+				<transform position="-8.159, -8.296, -0.332" rotation_euler="0.000, 0.000, -1.593"/>
+				<physics shape="bo_empire_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_wall">
+						<mesh name="empire_grandbazaar_wall.6" material="roman_hippodrome_wall_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_stone_floor_a" old_prefab_name="">
+				<transform position="6.500, 0.052, 0.000" rotation_euler="0.000, 0.000, -0.019" scale="0.647, 0.647, 0.647"/>
+				<physics shape="bo_module_european_stone_floor_a"/>
+				<components>
+					<meta_mesh_component name="module_european_stone_floor_a">
+						<mesh name="module_european_stone_floor_a" material="empire_marble_floor_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_wall_c" old_prefab_name="" occlusion_body_name="bo_empire_keep_a_wall_c">
+				<transform position="7.109, 2.112, -0.508" rotation_euler="0.000, 0.000, 1.534" scale="0.748, 0.748, 0.748"/>
+				<physics shape="bo_empire_keep_a_wall_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_wall_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="flora_tree_high_l_poplar" old_prefab_name="">
+				<transform position="6.473, 5.051, -1.163" rotation_euler="0.000, 0.000, 0.473" scale="0.124, 0.124, 0.124"/>
+				<physics shape="bo_tree_high_l_poplar" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="tree_high_l_poplar"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_stairs_c_l2" old_prefab_name="">
+				<transform position="9.081, 0.973, -1.037" rotation_euler="0.000, 0.000, 1.550" scale="1.000, 0.800, 0.700"/>
+				<physics shape="bo_empire_castle_stairs_c_l2">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="empire_castle_stairs_c_l2">
+						<mesh name="empire_castle_stairs_c_l2.0" material="stone_white_a"/>
+						<mesh name="empire_castle_stairs_c_l2.2" material="stone_wall_new_b"/>
+						<mesh name="empire_castle_stairs_c_l2.lod5.0" material="stone_white_a"/>
+						<mesh name="empire_castle_stairs_c_l2.lod5.2" material="stone_wall_new_b"/>
+						<mesh name="empire_castle_stairs_c_l2.lod3.0" material="stone_white_a"/>
+						<mesh name="empire_castle_stairs_c_l2.lod3.2" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_stairs_c_l2" old_prefab_name="">
+				<transform position="9.031, -1.381, -1.037" rotation_euler="0.000, 0.000, 1.560" scale="1.000, 0.800, 0.700"/>
+				<physics shape="bo_empire_castle_stairs_c_l2">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="empire_castle_stairs_c_l2">
+						<mesh name="empire_castle_stairs_c_l2.0" material="stone_white_a"/>
+						<mesh name="empire_castle_stairs_c_l2.2" material="stone_wall_new_b"/>
+						<mesh name="empire_castle_stairs_c_l2.lod5.0" material="stone_white_a"/>
+						<mesh name="empire_castle_stairs_c_l2.lod5.2" material="stone_wall_new_b"/>
+						<mesh name="empire_castle_stairs_c_l2.lod3.0" material="stone_white_a"/>
+						<mesh name="empire_castle_stairs_c_l2.lod3.2" material="stone_wall_new_b"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_a_wall_c" old_prefab_name="" occlusion_body_name="bo_empire_keep_a_wall_c">
+				<transform position="6.988, -2.366, -0.508" rotation_euler="0.000, 0.000, 1.567" scale="0.748, 0.748, 0.748"/>
+				<physics shape="bo_empire_keep_a_wall_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_a_wall_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="flora_tree_high_l_poplar" old_prefab_name="">
+				<transform position="5.893, -5.574, -1.115" rotation_euler="0.000, 0.000, -1.244" scale="0.125, 0.125, 0.125"/>
+				<physics shape="bo_tree_high_l_poplar" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="tree_high_l_poplar"/>
+				</components>
+			</game_entity>
+			<game_entity name="ss_bank_front" old_prefab_name="">
+				<transform position="16.248, -0.898, -1.073" rotation_euler="0.000, 0.000, -0.772"/>
+				<children>
+					<game_entity name="module_european_stone_floor_b" old_prefab_name="">
+						<transform position="-3.844, 4.700, -0.101" rotation_euler="0.000, 0.000, -0.824"/>
+						<physics shape="bo_module_european_stone_floor_b"/>
+						<components>
+							<meta_mesh_component name="module_european_stone_floor_b">
+								<mesh name="module_european_stone_floor_b" material="roman_hippodrome_floor"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="module_european_stone_floor_b" old_prefab_name="">
+						<transform position="0.029, 0.514, -0.101" rotation_euler="0.000, 0.000, -0.824"/>
+						<physics shape="bo_module_european_stone_floor_b"/>
+						<components>
+							<meta_mesh_component name="module_european_stone_floor_b">
+								<mesh name="module_european_stone_floor_b" material="roman_hippodrome_floor"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="module_european_stone_floor_b" old_prefab_name="">
+						<transform position="3.824, -3.588, -0.101" rotation_euler="0.000, 0.000, -0.824"/>
+						<physics shape="bo_module_european_stone_floor_b"/>
+						<components>
+							<meta_mesh_component name="module_european_stone_floor_b">
+								<mesh name="module_european_stone_floor_b" material="roman_hippodrome_floor"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="ss_com_pool" old_prefab_name="">
+						<transform position="0.320, 1.055, 0.570" rotation_euler="0.000, 0.000, 0.725"/>
+						<children>
+							<game_entity name="empire_keep_d_interior_wall_art_a2" old_prefab_name="">
+								<transform position="-0.077, -0.041, -0.433" rotation_euler="-1.568, -3.141, 0.028" scale="1.400, 1.000, 1.000"/>
+								<physics shape="bo_empire_keep_d_interior_wall_art_a1"/>
+								<components>
+									<meta_mesh_component name="empire_keep_d_interior_wall_art_a2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_keep_d_interior_wall_art_a1" old_prefab_name="">
+								<transform position="-0.068, -0.032, -0.427" rotation_euler="-1.571, 1.531, 1.556" scale="1.400, 1.000, 1.000"/>
+								<physics shape="bo_empire_keep_d_interior_wall_art_a1"/>
+								<components>
+									<meta_mesh_component name="empire_keep_d_interior_wall_art_a1"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+								<transform position="1.238, 2.203, -0.612" rotation_euler="0.000, 0.000, -1.548"/>
+								<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c_round2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_round2">
+								<transform position="1.315, 4.723, -0.594" rotation_euler="0.000, 0.000, -0.005"/>
+								<physics shape="bo_empire_garden_wall_c_round2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c_round2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c_round2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_round2">
+								<transform position="-1.645, 4.739, -0.594" rotation_euler="0.000, 0.000, -0.005" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_empire_garden_wall_c_round2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c_round2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+								<transform position="1.306, -0.810, -0.612" rotation_euler="0.000, 0.000, -1.548"/>
+								<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c_round2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_round2">
+								<transform position="1.480, -4.814, -0.594" rotation_euler="0.000, 0.000, 3.136" scale="-1.000, 1.000, 1.000"/>
+								<physics shape="bo_empire_garden_wall_c_round2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c_round2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c_round2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_round2">
+								<transform position="-1.436, -4.813, -0.594" rotation_euler="0.000, 0.000, 3.136"/>
+								<physics shape="bo_empire_garden_wall_c_round2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c_round2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+								<transform position="1.350, -2.754, -0.612" rotation_euler="0.000, 0.000, -1.548"/>
+								<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+								<transform position="-1.508, 2.141, -0.612" rotation_euler="0.000, 0.000, -1.548"/>
+								<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+								<transform position="-1.435, -1.075, -0.612" rotation_euler="0.000, 0.000, -1.548"/>
+								<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+								<transform position="-1.394, -2.890, -0.612" rotation_euler="0.000, 0.000, -1.548"/>
+								<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c2"/>
+								</components>
+							</game_entity>
+							<game_entity name="water" old_prefab_name="">
+								<transform position="-0.033, -0.035, 0.121" rotation_euler="0.000, 0.000, 0.020" scale="0.500, 1.050, 1.000"/>
+								<physics shape="bo_module_european_floor_b"/>
+								<components>
+									<meta_mesh_component name="module_european_floor_b">
+										<mesh name="module_european_floor_b" material="wat_puddle_dirty" argument="51.000, 0.100, 1.510, 0.000" argument2="0.990, 0.170, 0.000, 1.000"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+								<transform position="1.727, -2.746, -1.533" rotation_euler="0.000, 0.000, -1.548"/>
+								<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+								<transform position="1.658, 0.309, -1.533" rotation_euler="0.000, 0.000, -1.548"/>
+								<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+								<transform position="1.605, 2.655, -1.533" rotation_euler="0.000, 0.000, -1.548"/>
+								<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c_round2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_round2">
+								<transform position="1.631, 5.116, -1.519" rotation_euler="0.000, 0.000, -0.005" scale="1.200, 1.000, 1.000"/>
+								<physics shape="bo_empire_garden_wall_c_round2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c_round2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c_round2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_round2">
+								<transform position="-1.994, 5.112, -1.564" rotation_euler="0.000, 0.000, -0.005" scale="-1.200, 1.000, 1.000"/>
+								<physics shape="bo_empire_garden_wall_c_round2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c_round2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+								<transform position="-1.886, 2.636, -1.567" rotation_euler="0.000, 0.000, -1.548"/>
+								<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+								<transform position="-1.816, -0.481, -1.567" rotation_euler="0.000, 0.000, -1.548"/>
+								<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+								<transform position="-1.758, -3.045, -1.567" rotation_euler="0.000, 0.000, -1.548"/>
+								<physics shape="bo_empire_garden_wall_c2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c_round2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_round2">
+								<transform position="-1.856, -5.135, -1.542" rotation_euler="0.000, 0.000, 3.136" scale="1.200, 1.000, 1.000"/>
+								<physics shape="bo_empire_garden_wall_c_round2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c_round2"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c_round2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_round2">
+								<transform position="1.816, -5.160, -1.516" rotation_euler="0.000, 0.000, 3.136" scale="-1.200, 1.000, 1.000"/>
+								<physics shape="bo_empire_garden_wall_c_round2" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c_round2"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="empire_keep_b_relief_b" old_prefab_name="">
+						<transform position="-2.877, 1.948, 0.552" rotation_euler="0.000, 0.000, -0.823"/>
+						<physics shape="bo_empire_keep_b_relief_b"/>
+						<components>
+							<meta_mesh_component name="empire_keep_b_relief_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_b_relief_a" old_prefab_name="">
+						<transform position="-0.967, -0.106, 0.538" rotation_euler="0.000, 0.000, -0.828"/>
+						<physics shape="bo_empire_keep_b_relief_a"/>
+						<components>
+							<meta_mesh_component name="empire_keep_b_relief_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_b_relief_b" old_prefab_name="">
+						<transform position="1.053, -2.288, 0.562" rotation_euler="0.000, 0.000, -0.823"/>
+						<physics shape="bo_empire_keep_b_relief_b"/>
+						<components>
+							<meta_mesh_component name="empire_keep_b_relief_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_b_relief_b" old_prefab_name="">
+						<transform position="3.449, -0.027, 0.562" rotation_euler="0.000, 0.000, 2.322"/>
+						<physics shape="bo_empire_keep_b_relief_b"/>
+						<components>
+							<meta_mesh_component name="empire_keep_b_relief_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_b_relief_a" old_prefab_name="">
+						<transform position="1.428, 2.155, 0.538" rotation_euler="0.000, 0.000, 2.317"/>
+						<physics shape="bo_empire_keep_b_relief_a"/>
+						<components>
+							<meta_mesh_component name="empire_keep_b_relief_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_b_relief_b" old_prefab_name="">
+						<transform position="-0.482, 4.209, 0.552" rotation_euler="0.000, 0.000, 2.322"/>
+						<physics shape="bo_empire_keep_b_relief_b"/>
+						<components>
+							<meta_mesh_component name="empire_keep_b_relief_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_garden_sidewalk_c2" old_prefab_name="">
+						<transform position="-13.378, -0.337, 0.033" rotation_euler="0.000, 0.000, 0.753"/>
+						<physics shape="bo_empire_garden_sidewalk_c2" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="empire_garden_sidewalk_c2"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_garden_sidewalk_c2" old_prefab_name="">
+						<transform position="-11.284, -0.366, 0.033" rotation_euler="0.000, 0.000, 2.313"/>
+						<physics shape="bo_empire_garden_sidewalk_c2" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="empire_garden_sidewalk_c2"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_garden_sidewalk_c2" old_prefab_name="">
+						<transform position="-9.346, -2.480, 0.033" rotation_euler="0.000, 0.000, 2.313"/>
+						<physics shape="bo_empire_garden_sidewalk_c2" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="empire_garden_sidewalk_c2"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_garden_sidewalk_c2" old_prefab_name="">
+						<transform position="-3.950, -8.370, 0.033" rotation_euler="0.000, 0.000, 2.313"/>
+						<physics shape="bo_empire_garden_sidewalk_c2" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="empire_garden_sidewalk_c2"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_garden_sidewalk_c2" old_prefab_name="">
+						<transform position="-1.885, -10.623, 0.033" rotation_euler="0.000, 0.000, 2.313"/>
+						<physics shape="bo_empire_garden_sidewalk_c2" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="empire_garden_sidewalk_c2"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_garden_sidewalk_c2" old_prefab_name="">
+						<transform position="-2.046, -12.785, 0.033" rotation_euler="0.000, 0.000, -2.353"/>
+						<physics shape="bo_empire_garden_sidewalk_c2" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="empire_garden_sidewalk_c2"/>
+						</components>
+					</game_entity>
+					<game_entity name="grass_terrain_groupe_a" old_prefab_name="">
+						<transform position="-12.299, -1.252, -0.042" rotation_euler="0.000, 0.000, -2.379" scale="0.570, 0.570, 0.270"/>
+						<components>
+							<meta_mesh_component name="grass_terrain_groupe_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="grass_terrain_groupe_a" old_prefab_name="">
+						<transform position="-11.021, -2.590, -0.042" rotation_euler="0.000, 0.000, -2.379" scale="0.570, 0.570, 0.270"/>
+						<components>
+							<meta_mesh_component name="grass_terrain_groupe_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="grass_terrain_groupe_a" old_prefab_name="">
+						<transform position="-9.779, -3.890, -0.042" rotation_euler="0.000, 0.000, -2.379" scale="0.570, 0.570, 0.270"/>
+						<components>
+							<meta_mesh_component name="grass_terrain_groupe_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="grass_terrain_groupe_a" old_prefab_name="">
+						<transform position="-5.371, -8.795, -0.042" rotation_euler="0.000, 0.000, -2.379" scale="0.570, 0.570, 0.270"/>
+						<components>
+							<meta_mesh_component name="grass_terrain_groupe_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="grass_terrain_groupe_a" old_prefab_name="">
+						<transform position="-4.016, -10.104, -0.042" rotation_euler="0.000, 0.000, -0.869" scale="0.570, 0.570, 0.270"/>
+						<components>
+							<meta_mesh_component name="grass_terrain_groupe_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="grass_terrain_groupe_a" old_prefab_name="">
+						<transform position="-2.688, -11.676, -0.042" rotation_euler="0.000, 0.000, -0.819" scale="0.570, 0.570, 0.270"/>
+						<components>
+							<meta_mesh_component name="grass_terrain_groupe_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_statue_bust_a" old_prefab_name="">
+						<transform position="0.315, 0.947, 0.106" rotation_euler="0.000, 0.000, 2.340"/>
+						<physics shape="bo_empire_statue_bust_a" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="empire_statue_bust_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="empire_castle_keep_a_l3_interior_wall_art_a" old_prefab_name="">
+				<transform position="6.942, 1.466, 0.088" rotation_euler="0.000, 0.000, -0.009" scale="0.447, 0.447, 0.447"/>
+				<physics shape="bo_empire_castle_keep_a_l3_interior_wall_art_a"/>
+				<components>
+					<meta_mesh_component name="empire_castle_keep_a_l3_interior_wall_art_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_castle_keep_a_l3_interior_wall_art_a" old_prefab_name="">
+				<transform position="6.915, -1.682, 0.088" rotation_euler="0.000, 0.000, 3.111" scale="0.447, 0.447, 0.447"/>
+				<physics shape="bo_empire_castle_keep_a_l3_interior_wall_art_a"/>
+				<components>
+					<meta_mesh_component name="empire_castle_keep_a_l3_interior_wall_art_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

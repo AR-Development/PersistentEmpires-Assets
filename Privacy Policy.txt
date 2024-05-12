@@ -1,0 +1,46 @@
+PRIVACY POLICY
+ 
+General Information
+Avrasya Development Team built the Persistent Empires mod as a Free to play mod. This SERVICE is provided by Avrasya Development Team.
+This policy is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
+
+If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
+
+The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Persistent Empires unless otherwise defined in this Privacy Policy.
+
+Information Collection and Use
+For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to Discord ID , Steam ID , Epic  Games Player ID, or  ID of your Username if you are launching the game  from different Provider
+
+The game does use third party services that may collect information used to identify you. Such as Discord API.
+This privacy policy explains how user data collected and processed by the game mod using the Discord API is utilized. When Discord IDs belonging to users are collected and stored in the database, the following aspects are observed to ensure privacy and security:
+
+Collected Data and Purpose of Use:
+The game mod collects and stores Discord IDs of users to enable them to utilize specific features within the game mod.
+
+Data Security:
+User data, such as Discord IDs, is stored in the database with appropriate security measures in place. Adequate technical and administrative safeguards are implemented to ensure data security.
+
+Data Sharing:
+User data may be shared with third-party service providers or authorized personnel only such as in game admins and moderators or when necessary to fulfill the functions of the game mod. However, such data will never be shared with third parties for commercial purposes.
+
+Cookies:
+The game mod may use cookies to enhance the user experience. Cookies may be used to remember user preferences and provide a better user experience.
+
+Data Retention:
+User data, including Discord IDs, Steam ID is stored for as long as it is necessary for the purposes of the mod. Appropriate measures are taken to accommodate user requests for data removal or deletion.
+
+User Rights:
+Users have the right to obtain information about the collected personal data, make corrections, or request data deletion. Users should contact the Avrasia Development team to make such requests.
+
+Changes:
+The privacy policy may be updated and modified periodically. Therefore, it is recommended to regularly review this policy. Changes will be communicated to users by posting them on this page.
+
+Changes to This Privacy Policy
+We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.
+
+Contact Us
+If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at team.avrasia@gmail.com.
+
+
+We can't guarantee this policy on other servers that not hosted by Avrasia Dev Team.
+We can't guarantee this policy on other servers that not hosted by Avrasia Dev Team.

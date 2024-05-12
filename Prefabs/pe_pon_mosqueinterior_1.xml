@@ -1,0 +1,227 @@
+<prefabs>
+	<game_entity name="pe_pon_mosqueinterior" old_prefab_name="">
+		<transform position="39.062, 130.002, 17.546" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_aserai_castle_keep_a_l3_interior"/>
+		<components>
+			<meta_mesh_component name="aserai_castle_keep_a_l3_interior"/>
+		</components>
+		<children>
+			<game_entity name="aserai_castle_keep_a_l3_interior_top_floor_top" old_prefab_name="">
+				<transform position="-0.041, 0.026, -6.204"/>
+				<physics shape="bo_aserai_castle_keep_a_l3_interior_top_floor_top"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_keep_a_l3_interior_top_floor_top"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_keep_a_l3_interior_stair" old_prefab_name="">
+				<transform position="1.207, -0.343, -0.045"/>
+				<physics shape="bo_aserai_castle_keep_a_l3_interior_stair">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="aserai_castle_keep_a_l3_interior_stair"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_keep_a_l3_interior_side" old_prefab_name="">
+				<transform position="-0.057, 0.124, 0.018"/>
+				<physics shape="bo_aserai_castle_keep_a_l3_interior_side"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_keep_a_l3_interior_side"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_keep_a_l3_interior_side" old_prefab_name="">
+				<transform position="0.721, -0.011, -0.309" rotation_euler="0.000, 0.000, 0.000" scale="-1.000, 1.000, 1.000"/>
+				<physics shape="bo_aserai_castle_keep_a_l3_interior_side"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_keep_a_l3_interior_side"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_keep_a_l3_interior_stair" old_prefab_name="">
+				<transform position="-0.441, -0.581, -0.045" rotation_euler="0.000, 0.000, 0.000" scale="-1.000, 1.000, 1.000"/>
+				<physics shape="bo_aserai_castle_keep_a_l3_interior_stair">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="aserai_castle_keep_a_l3_interior_stair"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="7.572, 8.931, 18.005" rotation_euler="0.000, 0.000, -0.758" scale="1.000, 0.800, 1.000"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall"/>
+				</components>
+			</game_entity>
+			<game_entity name="_dark_light" old_prefab_name="" mobility="1">
+				<transform position="-0.068, -0.397, 27.095" rotation_euler="0.000, 0.000, 0.000" scale="25.000, 25.000, 15.000"/>
+				<components>
+					<meta_mesh_component name="negative_light_mesh">
+						<mesh name="negative_light_mesh" argument2="1.000, 0.000, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="ScenePropNegativeLight">
+						<variables>
+							<variable name="Flatness_X" value="0.000"/>
+							<variable name="Flatness_Y" value="0.000"/>
+							<variable name="Flatness_Z" value="0.000"/>
+							<variable name="Alpha" value="1.000"/>
+							<variable name="Is_Dark_Light" value="true"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="local_envmap_prop" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="envmap_probe"/>
+				</tags>
+				<transform position="0.039, -0.466, 12.784" rotation_euler="0.000, 0.000, 0.000" scale="35.000, 25.000, 15.000"/>
+				<scripts>
+					<script name="ReflectionCapturer">
+						<variables>
+							<variable name="IsGlobal" value="false"/>
+							<variable name="IsParallaxCorrected" value="false"/>
+							<variable name="AmbientMultiplier" value="3.000"/>
+							<variable name="AttenuationCoef" value="20.000"/>
+							<variable name="BoxOffset" value="0.000, 0.000, 0.000, 0.000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="9.124, 7.422, 18.005" rotation_euler="0.000, 0.000, -0.813" scale="1.000, 0.800, 1.000"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="7.438, 9.215, 20.892" rotation_euler="0.000, 1.571, -0.813" scale="1.000, 0.800, 1.000"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="-8.724, 8.087, 18.005" rotation_euler="0.000, 0.000, 0.810" scale="1.000, 0.800, 1.000"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="-7.211, 9.635, 18.005" rotation_euler="0.000, 0.000, 0.755" scale="1.000, 0.800, 1.000"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_grandbazaar_wall" old_prefab_name="" occlusion_body_name="bo_occ_aserai_grandbazaar_wall">
+				<transform position="-9.008, 7.954, 20.892" rotation_euler="0.000, 1.571, 0.754" scale="1.000, 0.800, 1.000"/>
+				<physics shape="bo_aserai_grandbazaar_wall"/>
+				<components>
+					<meta_mesh_component name="aserai_grandbazaar_wall"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_d_interior_top_door_a_close" old_prefab_name="">
+				<transform position="-9.529, 10.361, 16.686" rotation_euler="0.000, 0.000, 0.817"/>
+				<physics shape="bo_empire_keep_d_interior_top_door_a_close"/>
+				<components>
+					<meta_mesh_component name="empire_keep_d_interior_top_door_a_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_d_interior_top_door_a_close" old_prefab_name="">
+				<transform position="10.240, 10.133, 16.686" rotation_euler="0.000, 0.000, -0.802"/>
+				<physics shape="bo_empire_keep_d_interior_top_door_a_close"/>
+				<components>
+					<meta_mesh_component name="empire_keep_d_interior_top_door_a_close"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_keep_a_l3_interior_column_a" old_prefab_name="">
+				<transform position="-8.808, -3.020, 0.176"/>
+				<physics shape="bo_aserai_castle_keep_a_l3_interior_column_a"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_keep_a_l3_interior_column_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_keep_a_l3_interior_column_a" old_prefab_name="">
+				<transform position="-8.074, -4.483, 0.176" rotation_euler="0.000, 0.000, 0.648"/>
+				<physics shape="bo_aserai_castle_keep_a_l3_interior_column_a"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_keep_a_l3_interior_column_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_keep_a_l3_interior_column_a" old_prefab_name="">
+				<transform position="-1.887, 9.195, 0.176"/>
+				<physics shape="bo_aserai_castle_keep_a_l3_interior_column_a"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_keep_a_l3_interior_column_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_keep_a_l3_interior_column_a" old_prefab_name="">
+				<transform position="2.649, 8.960, 0.176"/>
+				<physics shape="bo_aserai_castle_keep_a_l3_interior_column_a"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_keep_a_l3_interior_column_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_keep_a_l3_interior_column_a" old_prefab_name="">
+				<transform position="-3.078, -9.617, 0.096"/>
+				<physics shape="bo_aserai_castle_keep_a_l3_interior_column_a"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_keep_a_l3_interior_column_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_keep_a_l3_interior_column_a" old_prefab_name="">
+				<transform position="-4.601, -8.963, 0.096" rotation_euler="0.000, 0.000, -0.819"/>
+				<physics shape="bo_aserai_castle_keep_a_l3_interior_column_a"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_keep_a_l3_interior_column_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_keep_a_l3_interior_column_a" old_prefab_name="">
+				<transform position="4.541, -8.914, 0.096" rotation_euler="0.000, 0.000, -0.794"/>
+				<physics shape="bo_aserai_castle_keep_a_l3_interior_column_a"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_keep_a_l3_interior_column_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_keep_a_l3_interior_column_a" old_prefab_name="">
+				<transform position="3.107, -9.496, 0.096"/>
+				<physics shape="bo_aserai_castle_keep_a_l3_interior_column_a"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_keep_a_l3_interior_column_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_keep_a_l3_interior_column_a" old_prefab_name="">
+				<transform position="8.907, -4.377, 0.176" rotation_euler="0.000, 0.000, 2.377"/>
+				<physics shape="bo_aserai_castle_keep_a_l3_interior_column_a"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_keep_a_l3_interior_column_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_keep_a_l3_interior_column_a" old_prefab_name="">
+				<transform position="9.501, -2.950, 0.176" rotation_euler="0.000, 0.000, -3.140"/>
+				<physics shape="bo_aserai_castle_keep_a_l3_interior_column_a"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_keep_a_l3_interior_column_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="aserai_castle_keep_a_l3_interior_column_a" old_prefab_name="">
+				<transform position="9.148, 2.492, 0.176"/>
+				<physics shape="bo_aserai_castle_keep_a_l3_interior_column_a"/>
+				<components>
+					<meta_mesh_component name="aserai_castle_keep_a_l3_interior_column_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

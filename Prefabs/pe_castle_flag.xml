@@ -1,0 +1,66 @@
+<prefabs>
+	<game_entity name="pe_castle_banner" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_banner_pole"/>
+		<components>
+			<cloth_simulator>
+				<meta_mesh_component name="empire_tier_3_banner"/>
+			</cloth_simulator>
+		</components>
+		<scripts>
+			<script name="PE_CastleBanner">
+				<variables>
+					<variable name="FactionIndex" value="2"/>
+					<variable name="CastleIndex" value="1"/>
+					<variable name="CastleName" value="Praven"/>
+					<variable name="CastleCaptureAnimation" value="act_main_story_become_king_crowd_06"/>
+					<variable name="CaptureDuration" value="60"/>
+					<variable name="CaptureItem" value="pe_banner"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="animated_flag_a" old_prefab_name="" mobility="1">
+				<transform position="-0.183, 2.689, 1.657" rotation_euler="0.000, 0.000, -2.864"/>
+				<components>
+					<meta_mesh_component name="flagpole_intro"/>
+				</components>
+			</game_entity>
+			<game_entity name="animated_flag_01" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="banner"/>
+				</tags>
+				<transform position="-3.509, 4.769, 9.755" rotation_euler="0.247, -0.093, -3.138" scale="2.480, 2.480, 2.480"/>
+				<components>
+					<meta_mesh_component name="intro_flag">
+						<mesh name="intro_flag" material="animated_flag" argument="0.650, 0.350, 0.245, 0.325"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="VertexAnimator">
+						<variables>
+							<variable name="Speed" value="20.000"/>
+							<variable name="BeginKey" value="0"/>
+							<variable name="EndKey" value="250"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="animated_flag_a" old_prefab_name="" mobility="1">
+				<transform position="-0.184, 2.634, 3.002" rotation_euler="0.000, 0.000, -2.864" scale="2.725, 2.725, 2.725"/>
+				<components>
+					<meta_mesh_component name="flagpole_intro"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

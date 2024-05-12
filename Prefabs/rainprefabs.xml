@@ -1,0 +1,770 @@
+<prefabs>
+	<game_entity name="Rain_european_castle_wall_d_l3_broken" old_prefab_name="">
+		<transform position="1354.040, 65.215, 31.949" rotation_euler="0.000, 0.000, 0.599"/>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="european_castle_wall_d_l3_broken" old_prefab_name="">
+				<physics shape="bo_european_castle_wall_d_l3_broken"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_d_l3_broken"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="Rain_Fix_european_castle_wall_d_l3_broken" old_prefab_name="">
+		<transform position="67.411, 906.435, 39.332" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="european_castle_wall_d_l3_broken" old_prefab_name="">
+				<physics shape="bo_european_castle_wall_d_l3_broken"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_d_l3_broken">
+						<mesh name="european_castle_wall_d_l3_broken.14" material="wall_castle_a" argument2="-7.090, 7.141, 0.025, -1.052"/>
+						<mesh name="european_castle_wall_d_l3_broken.16" material="castle_floor_a" argument2="-7.090, 7.141, 0.025, -1.052"/>
+						<mesh name="european_castle_wall_d_l3_broken.17" material="wall_castle_a_detail" argument2="-7.090, 7.141, 0.025, -1.052"/>
+						<mesh name="european_castle_wall_d_l3_broken.19" material="wall_damaged_a" argument2="-7.090, 7.141, 0.025, -1.052"/>
+						<mesh name="european_castle_wall_d_l3_broken.lod4.14" material="wall_castle_a" argument2="-7.090, 7.141, 0.025, -1.052"/>
+						<mesh name="european_castle_wall_d_l3_broken.lod4.16" material="castle_floor_a" argument2="-7.090, 7.141, 0.025, -1.052"/>
+						<mesh name="european_castle_wall_d_l3_broken.lod4.17" material="wall_castle_a_detail" argument2="-7.090, 7.141, 0.025, -1.052"/>
+						<mesh name="european_castle_wall_d_l3_broken.lod4.19" material="wall_damaged_a" argument2="-7.090, 7.141, 0.025, -1.052"/>
+						<mesh name="european_castle_wall_d_l3_broken.lod5.14" material="wall_castle_a" argument2="-7.090, 7.141, 0.025, -1.052"/>
+						<mesh name="european_castle_wall_d_l3_broken.lod5.16" material="castle_floor_a" argument2="-7.090, 7.141, 0.025, -1.052"/>
+						<mesh name="european_castle_wall_d_l3_broken.lod5.19" material="wall_damaged_a" argument2="-7.090, 7.141, 0.025, -1.052"/>
+						<mesh name="european_castle_wall_d_l3_broken.lod6.14" material="wall_castle_a" argument2="-7.090, 7.141, 0.025, -1.052"/>
+						<mesh name="european_castle_wall_d_l3_broken.lod6.16" material="castle_floor_a" argument2="-7.090, 7.141, 0.025, -1.052"/>
+						<mesh name="european_castle_wall_d_l3_broken.lod6.19" material="wall_damaged_a" argument2="-7.090, 7.141, 0.025, -1.052"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="cliff_soil_b" old_prefab_name="">
+				<transform position="-0.365, -4.755, 0.795" rotation_euler="0.391, 0.000, 0.105" scale="1.000, 1.000, 0.600"/>
+				<physics shape="bo_cliff_soil_b" override_material="default"/>
+				<components>
+					<meta_mesh_component name="cliff_soil_b">
+						<mesh name="cliff_soil_b" material="wall_damaged_a" argument2="-7.090, 7.141, 0.025, -1.052"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="cliff_soil_b" old_prefab_name="">
+				<transform position="-7.837, -5.396, 0.428" rotation_euler="0.496, 0.000, -0.820" scale="0.800, 0.900, 0.900"/>
+				<physics shape="bo_cliff_soil_b" override_material="default"/>
+				<components>
+					<meta_mesh_component name="cliff_soil_b">
+						<mesh name="cliff_soil_b" material="wall_damaged_a" argument2="-7.090, 7.141, 0.025, -1.857"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="-30.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="cliff_soil_b" old_prefab_name="">
+				<transform position="5.068, -4.379, 0.082" rotation_euler="0.299, -0.078, 1.025" scale="0.800, 0.900, 0.900"/>
+				<physics shape="bo_cliff_soil_b" override_material="default"/>
+				<components>
+					<meta_mesh_component name="cliff_soil_b">
+						<mesh name="cliff_soil_b" material="wall_damaged_a" argument2="-7.090, 7.141, 0.025, -1.857"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="-30.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="Rain_empire_castle_wall_d_l3_broken" old_prefab_name="">
+		<transform position="1202.651, 341.953, 32.070" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="empire_castle_wall_d_l3_broken" old_prefab_name="">
+				<physics shape="bo_empire_castle_wall_d_l3_broken"/>
+				<components>
+					<meta_mesh_component name="empire_castle_wall_d_l3_broken">
+						<mesh name="empire_castle_wall_d_l3_broken.0" material="wall_castle_a"/>
+						<mesh name="empire_castle_wall_d_l3_broken.1" material="castle_floor_a"/>
+						<mesh name="empire_castle_wall_d_l3_broken.2" material="rock_1"/>
+						<mesh name="empire_castle_wall_d_l3_broken.3" material="wall_castle_a"/>
+						<mesh name="empire_castle_wall_d_l3_broken.4" material="wall_castle_a"/>
+						<mesh name="empire_castle_wall_d_l3_broken.6" material="default_empty"/>
+						<mesh name="empire_castle_wall_d_l3_broken.lod4.0" material="wall_castle_a"/>
+						<mesh name="empire_castle_wall_d_l3_broken.lod4.1" material="castle_floor_a"/>
+						<mesh name="empire_castle_wall_d_l3_broken.lod4.2" material="rock_1"/>
+						<mesh name="empire_castle_wall_d_l3_broken.lod4.3" material="wall_castle_a"/>
+						<mesh name="empire_castle_wall_d_l3_broken.lod4.4" material="wall_castle_a"/>
+						<mesh name="empire_castle_wall_d_l3_broken.lod4.6" material="default_empty"/>
+						<mesh name="empire_castle_wall_d_l3_broken.lod4.7" material="wall_castle_a"/>
+						<mesh name="empire_castle_wall_d_l3_broken.lod5.0" material="wall_castle_a"/>
+						<mesh name="empire_castle_wall_d_l3_broken.lod5.2" material="wall_castle_a"/>
+						<mesh name="empire_castle_wall_d_l3_broken.lod5.3" material="wall_castle_a"/>
+						<mesh name="empire_castle_wall_d_l3_broken.lod6.0" material="wall_castle_a"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="Rain_Fix_empire_castle_wall_d_l2_broken" old_prefab_name="">
+		<transform position="1205.000, 368.000, 32.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="empire_castle_wall_d_l2_broken" old_prefab_name="">
+				<physics shape="bo_empire_castle_wall_d_l2_broken"/>
+				<components>
+					<meta_mesh_component name="empire_castle_wall_d_l2_broken">
+						<mesh name="empire_castle_wall_d_l2_broken.0" material="wall_castle_a"/>
+						<mesh name="empire_castle_wall_d_l2_broken.4" material="rock_1"/>
+						<mesh name="empire_castle_wall_d_l2_broken.6" material="default_empty"/>
+						<mesh name="empire_castle_wall_d_l2_broken.lod4.1" material="wall_castle_a"/>
+						<mesh name="empire_castle_wall_d_l2_broken.lod4.3" material="rock_1"/>
+						<mesh name="empire_castle_wall_d_l2_broken.lod4.6" material="default_empty"/>
+						<mesh name="empire_castle_wall_d_l2_broken.lod5.1" material="wall_castle_a"/>
+						<mesh name="empire_castle_wall_d_l2_broken.lod5.3" material="rock_1"/>
+						<mesh name="empire_castle_wall_d_l2_broken.lod6.1" material="rock_1"/>
+						<mesh name="empire_castle_wall_d_l2_broken.lod6.4" material="wall_castle_a"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="Rain_LADDER_european_castle_wall_d_l3_broken" old_prefab_name="">
+		<transform position="1303.292, 84.505, 37.930" rotation_euler="0.000, 0.000, 0.561" scale="1.000, 1.000, 1.000"/>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="european_castle_wall_d_l3_broken" old_prefab_name="">
+				<physics shape="bo_european_castle_wall_d_l3_broken"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_d_l3_broken"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="rock_cliff_far_grass_a" old_prefab_name="">
+				<transform position="-1.582, -8.668, -6.281" rotation_euler="0.043, -0.707, 1.317" scale="0.600, 0.900, 1.000"/>
+				<physics shape="bo_rock_cliff_far_grass_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_far_grass_a">
+						<mesh name="rock_cliff_far_grass_a.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+						<mesh name="rock_cliff_far_grass_a.lod5.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="0.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="rock_cliff_far_grass_a" old_prefab_name="">
+				<transform position="4.903, -5.161, -5.795" rotation_euler="0.017, -0.726, 2.306" scale="0.600, 1.300, 1.000"/>
+				<physics shape="bo_rock_cliff_far_grass_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_far_grass_a">
+						<mesh name="rock_cliff_far_grass_a.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+						<mesh name="rock_cliff_far_grass_a.lod5.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="0.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="rock_cliff_far_grass_a" old_prefab_name="">
+				<transform position="-5.858, -4.688, -6.281" rotation_euler="0.017, -0.783, 0.283" scale="0.600, 1.100, 1.000"/>
+				<physics shape="bo_rock_cliff_far_grass_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_far_grass_a">
+						<mesh name="rock_cliff_far_grass_a.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+						<mesh name="rock_cliff_far_grass_a.lod5.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="0.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="Rain_dover_european_castle_wall_d_l3_broken" old_prefab_name="">
+		<transform position="1198.715, 54.582, 44.501" rotation_euler="0.000, 0.000, 0.186"/>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="european_castle_wall_d_l3_broken" old_prefab_name="">
+				<physics shape="bo_european_castle_wall_d_l3_broken"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_d_l3_broken"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="rock_cliff_far_grass_a" old_prefab_name="">
+				<transform position="-0.244, -9.834, -4.849" rotation_euler="0.053, -0.640, 1.567" scale="0.600, 0.900, 0.600"/>
+				<physics shape="bo_rock_cliff_far_grass_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_far_grass_a">
+						<mesh name="rock_cliff_far_grass_a.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+						<mesh name="rock_cliff_far_grass_a.lod5.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="0.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="rock_cliff_far_grass_a" old_prefab_name="">
+				<transform position="-0.244, -9.834, -4.849" rotation_euler="0.053, -0.640, 1.567" scale="0.600, 0.900, 0.600"/>
+				<physics shape="bo_rock_cliff_far_grass_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_far_grass_a">
+						<mesh name="rock_cliff_far_grass_a.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+						<mesh name="rock_cliff_far_grass_a.lod5.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="0.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="rock_cliff_far_grass_a" old_prefab_name="">
+				<transform position="3.432, -7.487, -8.218" rotation_euler="0.930, -1.647, -3.089" scale="0.600, 0.900, 0.800"/>
+				<physics shape="bo_rock_cliff_far_grass_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_far_grass_a">
+						<mesh name="rock_cliff_far_grass_a.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+						<mesh name="rock_cliff_far_grass_a.lod5.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="0.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="rock_cliff_far_grass_a" old_prefab_name="">
+				<transform position="-4.592, -7.411, -7.858" rotation_euler="-0.929, -1.479, 0.072" scale="0.600, 0.900, 0.800"/>
+				<physics shape="bo_rock_cliff_far_grass_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_far_grass_a">
+						<mesh name="rock_cliff_far_grass_a.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+						<mesh name="rock_cliff_far_grass_a.lod5.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="0.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="rock_cliff_far_grass_a" old_prefab_name="">
+				<transform position="-3.967, -5.490, -6.459" rotation_euler="-0.929, -1.479, 0.072" scale="0.600, 0.900, 1.100"/>
+				<physics shape="bo_rock_cliff_far_grass_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_far_grass_a">
+						<mesh name="rock_cliff_far_grass_a.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+						<mesh name="rock_cliff_far_grass_a.lod5.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="0.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="rock_cliff_far_grass_a" old_prefab_name="">
+				<transform position="2.084, -3.634, -5.394" rotation_euler="0.929, -1.664, -3.068" scale="0.600, 0.900, 1.400"/>
+				<physics shape="bo_rock_cliff_far_grass_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_far_grass_a">
+						<mesh name="rock_cliff_far_grass_a.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+						<mesh name="rock_cliff_far_grass_a.lod5.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="0.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="Rain_l3fix_european_castle_wall_d_l3_broken" old_prefab_name="">
+		<transform position="40.767, 1077.173, 40.979" rotation_euler="0.000, 0.000, 0.186"/>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="rock_cliff_far_grass_a" old_prefab_name="">
+				<transform position="-0.161, -7.912, -3.420" rotation_euler="0.053, -0.640, 1.567" scale="0.600, 0.900, 0.600"/>
+				<physics shape="bo_rock_cliff_far_grass_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_far_grass_a">
+						<mesh name="rock_cliff_far_grass_a.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+						<mesh name="rock_cliff_far_grass_a.lod5.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="0.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="rock_cliff_far_grass_a" old_prefab_name="">
+				<transform position="-0.244, -9.834, -4.849" rotation_euler="0.053, -0.640, 1.567" scale="0.600, 0.900, 0.600"/>
+				<physics shape="bo_rock_cliff_far_grass_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_far_grass_a">
+						<mesh name="rock_cliff_far_grass_a.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+						<mesh name="rock_cliff_far_grass_a.lod5.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="0.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="rock_cliff_far_grass_a" old_prefab_name="">
+				<transform position="4.232, -7.638, -8.218" rotation_euler="0.930, -1.647, -3.089" scale="0.600, 0.900, 0.800"/>
+				<physics shape="bo_rock_cliff_far_grass_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_far_grass_a">
+						<mesh name="rock_cliff_far_grass_a.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+						<mesh name="rock_cliff_far_grass_a.lod5.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="0.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="rock_cliff_far_grass_a" old_prefab_name="">
+				<transform position="-4.592, -7.411, -7.858" rotation_euler="-0.929, -1.479, 0.072" scale="0.600, 0.900, 0.800"/>
+				<physics shape="bo_rock_cliff_far_grass_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_far_grass_a">
+						<mesh name="rock_cliff_far_grass_a.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+						<mesh name="rock_cliff_far_grass_a.lod5.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="0.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="rock_cliff_far_grass_a" old_prefab_name="">
+				<transform position="-3.967, -5.490, -6.459" rotation_euler="-0.929, -1.479, 0.072" scale="0.600, 0.900, 1.100"/>
+				<physics shape="bo_rock_cliff_far_grass_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_far_grass_a">
+						<mesh name="rock_cliff_far_grass_a.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+						<mesh name="rock_cliff_far_grass_a.lod5.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="0.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="rock_cliff_far_grass_a" old_prefab_name="">
+				<transform position="2.884, -3.785, -5.394" rotation_euler="0.929, -1.664, -3.068" scale="0.600, 0.900, 1.400"/>
+				<physics shape="bo_rock_cliff_far_grass_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_cliff_far_grass_a">
+						<mesh name="rock_cliff_far_grass_a.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+						<mesh name="rock_cliff_far_grass_a.lod5.5" material="wall_damaged_a" argument2="-15.347, 12.453, -1.447, 0.079"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="mesh_bender">
+						<variables>
+							<variable name="Bend Amount" value="0.000000"/>
+							<variable name="Bend Center Ratio" value="0.500000"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="pe_european_castle_wall_a_l3_broken" old_prefab_name="">
+				<transform position="1.673, -0.318, 0.000"/>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="european_castle_wall_a_l3_broken" old_prefab_name="" occlusion_body_name="bo_occ_european_castle_wall_a_l3_broken">
+						<physics shape="bo_european_castle_wall_a_l3_broken"/>
+						<components>
+							<meta_mesh_component name="european_castle_wall_a_l3_broken"/>
+						</components>
+						<scripts>
+							<script name="WallSegment">
+								<variables>
+									<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+									<variable name="_properGroundInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+									<variable name="SideTag" value=""/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="merlon_1" old_prefab_name="" mobility="1">
+								<physics shape="bo_european_castle_wall_a_l3_01"/>
+								<components>
+									<meta_mesh_component name="european_castle_wall_a_l3_01"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_vlandia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-10.298, -1.297, 12.059"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+								<physics shape="bo_european_castle_wall_a_l3_06"/>
+								<components>
+									<meta_mesh_component name="european_castle_wall_a_l3_06"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_vlandia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="5.572, -1.288, 12.254"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+								<physics shape="bo_european_castle_wall_a_l3_07"/>
+								<components>
+									<meta_mesh_component name="european_castle_wall_a_l3_07"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_vlandia_l3"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="8.368, -1.294, 12.197"/>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- multiplier:            Captain only: This number is multiplied with the BotsPerFormation setting to get the final amount of troops to spawn. -->
+<!-- cost:                  Skirmish only: The gold cost of this troop. -->
+<!-- armor:                 This armor value is applied to every body part, regardless of equipment. -->
+<!-- movement_speed:        Goes from 0.0 to 1.0. This will be multiplied with 'bipedal_speed_multiplier' (in native_parameters.xml).        Human only. -->
+<!-- combat_movement_speed: Goes from 0.0 to 1.0. This will be multiplied with 'movement_speed' during combat.    Human only. -->
+<!-- acceleration:          Goes from 0.0 to 1.0. This will be multiplied with 'bipedal_acceleration_multiplier'. Human only. -->
+<!-- hitpoints:             Goes from 1 to infinity. Default is 100. Human only. -->
+<MPClassDivisions>
+
+	  <!-- Rohan -->
+      <MPClassDivision id="event_theoden" hero="event_theoden" hitpoints="500" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+      <MPClassDivision id="event_rohan_officer" hero="event_rohan_officer" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+      <MPClassDivision id="event_rohan_archer" hero="event_rohan_archer" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+      <MPClassDivision id="event_rohan_skirmisher" hero="event_rohan_skirmisher" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+      <MPClassDivision id="event_rohan_infantry" hero="event_rohan_infantry" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+      <MPClassDivision id="event_galadhrim_warrior" hero="event_galadhrim_warrior" hitpoints="400" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+      <!-- Uruk -->
+      <MPClassDivision id="event_uruk_commander" hero="event_uruk_commander" hitpoints="500" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+      <MPClassDivision id="event_uruk_berserker" hero="event_uruk_berserker" hitpoints="400" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+      <MPClassDivision id="event_uruk_pikeman" hero="event_uruk_pikeman" hitpoints="300" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+      <MPClassDivision id="event_uruk_infantry" hero="event_uruk_infantry" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+      <MPClassDivision id="event_uruk_crossbow" hero="event_uruk_crossbow" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+      <!-- Special -->
+      <MPClassDivision id="event_aragorn" hero="event_aragorn" hitpoints="500" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+      <MPClassDivision id="event_legolas" hero="event_legolas" hitpoints="500" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+      <MPClassDivision id="event_gimli" hero="event_gimli" hitpoints="500" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+      <MPClassDivision id="event_gandalf" hero="event_gandalf" hitpoints="1000" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+  
+	  <!-- Persistent Empires -->
+	  
+	<MPClassDivision id="pe_tief" hero="pe_tief" hitpoints="200" troop="mp_light_infantry_vlandia_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+	  
+	  	  	        <MPClassDivision id="pe_brigand" hero="pe_brigand" hitpoints="200" troop="mp_light_infantry_vlandia_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+	  	        <MPClassDivision id="lv_raider" hero="lv_raider" hitpoints="200" troop="mp_light_infantry_vlandia_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+	  	  	        <MPClassDivision id="lv_master_craftsman" hero="lv_master_craftsman" hitpoints="200" troop="mp_light_infantry_vlandia_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+	  
+	  	        <MPClassDivision id="lv_Paladin" hero="lv_Paladin" hitpoints="200" troop="mp_light_infantry_vlandia_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+	  	        <MPClassDivision id="lv_crusader" hero="lv_crusader" hitpoints="200" troop="mp_light_infantry_vlandia_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+	  	        <MPClassDivision id="lv_surgeon" hero="lv_surgeon" hitpoints="200" troop="mp_light_infantry_vlandia_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+	  
+	        <MPClassDivision id="pe_crusader" hero="pe_crusader" hitpoints="200" troop="mp_light_infantry_vlandia_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+	  <MPClassDivision id="pe_priest" hero="pe_priest" hitpoints="200" troop="mp_light_infantry_vlandia_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+	        <MPClassDivision id="pe_sea_raider" hero="pe_sea_raider" hitpoints="200" troop="mp_light_infantry_vlandia_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+      <MPClassDivision id="pe_master_crossbowman" hero="pe_master_crossbowman" hitpoints="200" troop="mp_light_infantry_vlandia_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+      <MPClassDivision id="pe_militia_cavalry" hero="pe_militia_cavalry" hitpoints="200" troop="mp_light_infantry_vlandia_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+      <MPClassDivision id="pe_militia" hero="pe_militia" hitpoints="200" troop="mp_light_infantry_vlandia_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+      <MPClassDivision id="pe_master_archer" hero="pe_master_archer" hitpoints="200" troop="mp_light_infantry_vlandia_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+      <MPClassDivision id="pe_mercenary" hero="pe_mercenary" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+      <MPClassDivision id="pe_combattest2" hero="pe_combattest2" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+ 
+	  
+      <MPClassDivision id="pe_traveller" hero="pe_traveller" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+ 
+	  
+      <MPClassDivision id="pe_lancer" hero="pe_lancer" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+ 
+	  
+      <MPClassDivision id="pe_crossbowmilitia" hero="pe_crossbowmilitia" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+ 
+	  
+      <MPClassDivision id="pe_huntsman" hero="pe_huntsman" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+  
+ 
+       <MPClassDivision id="pe_serf" hero="pe_serf" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+	   <MPClassDivision id="pe_peasant" hero="pe_peasant" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.5" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+      <MPClassDivision id="pe_footman" hero="pe_footman" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+      <MPClassDivision id="pe_archer" hero="pe_archer" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+ 
+       <MPClassDivision id="pe_crossbowman" hero="pe_crossbowman" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+      <MPClassDivision id="pe_manatarms" hero="pe_manatarms" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>	  
+	  
+	  <MPClassDivision id="pe_sergeant" hero="pe_sergeant" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="1" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>	
+	  
+	        <MPClassDivision id="pe_doctor" hero="pe_doctor" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.9" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>	
+	  
+	<MPClassDivision id="pe_maester" hero="pe_maester" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.9" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>	
+
+      <MPClassDivision id="pe_surgeon" hero="pe_surgeon" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.9" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+	  
+	   <MPClassDivision id="pe_craftsman" hero="pe_craftsman" hitpoints="200" troop="mp_heavy_infantry_empire_troop" hero_idle_anim="act_empire_mp_recruit_idle" troop_idle_anim="act_idle_unarmed_1" multiplier="0.82" cost="100" icon="Special_JavelinThrower" melee_ai="30" ranged_ai="80" armor="0" movement_speed="0.89" combat_movement_speed="0.9" acceleration="1.9">
+            <Perks>
+                  <!-- First perks-->
+                  <Perk game_mode="Battle, NewBattle, ClassicBattle, Skirmish, Siege, TeamDeathmatch, Duel" name="{=p06HSYkq}Specialist" description="{=aZIG2v6p}You are one of the best among your troops, you throw more accurately.{newline} {newline}+50% Initial Ranged Accuracy{newline}+80% Faster Ranged Accuracy Increase" icon="PerkHeavierJavelins" perk_list="1">
+
+                  </Perk>
+                  <!-- Second perks-->
+                  <Perk game_mode="all" name="{=Yvk8a2tb}Footwork" description="{=9MSG1p0W}You have impeccable footwork, you aim less affected while moving.{newline} {newline}+80% accuracy when moving{newline}+5% Movement speed" icon="PerkFleetFooted" perk_list="2">
+                    
+                  </Perk>
+            </Perks>
+      </MPClassDivision>
+
+</MPClassDivisions>

@@ -1,0 +1,396 @@
+<prefabs>
+	<game_entity name="LV_Bridge_Upgradable" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_UpgradeableBuildings">
+				<variables>
+					<variable name="CastleIndex" value="0"/>
+					<variable name="BuildingName" value="Bridge"/>
+					<variable name="Tier0Tag" value="t0"/>
+					<variable name="Tier1Tag" value="t1"/>
+					<variable name="Tier2Tag" value="t2"/>
+					<variable name="Tier3Tag" value=""/>
+					<variable name="BuildingInteractiveTag" value="chest"/>
+					<variable name="Tier1RequiredEngineering" value="10"/>
+					<variable name="Tier2RequiredEngineering" value="10"/>
+					<variable name="Tier3RequiredEngineering" value="10"/>
+					<variable name="Tier1MaxHit" value="200"/>
+					<variable name="Tier2MaxHit" value="300"/>
+					<variable name="Tier3MaxHit" value="400"/>
+					<variable name="Tier1UpgradeReceipts" value="pe_hardwood*1"/>
+					<variable name="Tier2UpgradeReceipts" value="pe_hardwood*1"/>
+					<variable name="Tier3UpgradeReceipts" value="pe_hardwood*1"/>
+					<variable name="ParticleEffectOnUpgrade" value="dust_fall_a"/>
+					<variable name="SoundEffectOnUpgrade" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="BuildItem" value="pe_buildhammer"/>
+					<variable name="Tier1CraftingEngineering" value="10"/>
+					<variable name="Tier2CraftingEngineering" value="15"/>
+					<variable name="Tier3CraftingEngineering" value="20"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="T0_Dest" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="t0"/>
+				</tags>
+				<transform position="-0.293, 0.853, -0.006"/>
+				<scripts>
+					<script name="PE_RepairableDestructableComponent">
+						<variables>
+							<variable name="DestructionState" value=""/>
+							<variable name="ReferenceEntityTag" value="destructable_entity"/>
+							<variable name="RepairItem" value="pe_buildhammer"/>
+							<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="ParticleEffectOnRepair" value=""/>
+							<variable name="SoundEffectOnRepair" value=""/>
+							<variable name="DestroyedByStoneOnly" value="false"/>
+							<variable name="AlwaysEffectOnDestroy" value="false"/>
+							<variable name="RepairItemRecipies" value="pe_hardwood*2,pe_wooden_stick*1"/>
+							<variable name="RepairDamage" value="20"/>
+							<variable name="IsBroken" value="false"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="T0" old_prefab_name="" visible="false" mobility="1">
+						<transform position="0.293, -0.853, 0.006"/>
+						<children>
+							<game_entity name="Bridge" old_prefab_name="" mobility="1">
+								<transform position="-1.297, -0.097, -0.344" rotation_euler="0.000, 0.000, -0.364" scale="1.000, 2.419, 1.000"/>
+								<physics shape="bo_bd_village_bridge"/>
+								<components>
+									<meta_mesh_component name="bd_village_bridge"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="T1_Dest" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="t1"/>
+				</tags>
+				<transform position="-1.187, 0.588, -0.007"/>
+				<children>
+					<game_entity name="T1" old_prefab_name="" mobility="1">
+						<children>
+							<game_entity name="empire_bridge_b_part_c" old_prefab_name="" mobility="1">
+								<transform position="3.435, 9.572, -2.541" rotation_euler="0.000, 0.000, 1.222"/>
+								<physics shape="bo_empire_bridge_b_part_c"/>
+								<components>
+									<meta_mesh_component name="empire_bridge_b_part_c"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_bridge_b_part_a" old_prefab_name="" mobility="1">
+								<transform position="1.482, 4.186, -2.595" rotation_euler="0.000, 0.000, 1.222" scale="0.890, 1.000, 1.000"/>
+								<physics shape="bo_empire_bridge_b_part_a"/>
+								<components>
+									<meta_mesh_component name="empire_bridge_b_part_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_bridge_b_part_c" old_prefab_name="" mobility="1">
+								<transform position="-4.324, -11.843, -2.539" rotation_euler="0.000, 0.000, -1.922"/>
+								<physics shape="bo_empire_bridge_b_part_c"/>
+								<components>
+									<meta_mesh_component name="empire_bridge_b_part_c"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_bridge_b_part_a" old_prefab_name="" mobility="1">
+								<transform position="-0.471, -1.187, -2.595" rotation_euler="0.000, 0.000, 1.222" scale="0.850, 1.000, 1.000"/>
+								<physics shape="bo_empire_bridge_b_part_a"/>
+								<components>
+									<meta_mesh_component name="empire_bridge_b_part_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_bridge_b_part_a" old_prefab_name="" mobility="1">
+								<transform position="-2.395, -6.481, -2.595" rotation_euler="0.000, 0.000, 1.222" scale="0.850, 1.000, 1.000"/>
+								<physics shape="bo_empire_bridge_b_part_a"/>
+								<components>
+									<meta_mesh_component name="empire_bridge_b_part_a"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="T2_Dest" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="t2"/>
+				</tags>
+				<transform position="-0.315, -1.271, -0.009"/>
+				<children>
+					<game_entity name="T2" old_prefab_name="" mobility="1">
+						<children>
+							<game_entity name="empire_bridge_b_part_c" old_prefab_name="" mobility="1">
+								<transform position="2.487, 11.213, -2.537" rotation_euler="0.000, 0.000, 1.222"/>
+								<physics shape="bo_empire_bridge_b_part_c"/>
+								<components>
+									<meta_mesh_component name="empire_bridge_b_part_c"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_bridge_b_part_c" old_prefab_name="" mobility="1">
+								<transform position="-4.900, -9.166, -2.537" rotation_euler="0.000, 0.000, -1.922"/>
+								<physics shape="bo_empire_bridge_b_part_c"/>
+								<components>
+									<meta_mesh_component name="empire_bridge_b_part_c"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_bridge_b_part_a" old_prefab_name="" mobility="1">
+								<transform position="0.485, 5.711, -2.597" rotation_euler="0.000, 0.000, 1.222" scale="0.900, 1.000, 1.000"/>
+								<physics shape="bo_empire_bridge_b_part_a"/>
+								<components>
+									<meta_mesh_component name="empire_bridge_b_part_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_house_bridge_d" old_prefab_name="" mobility="1">
+								<transform position="0.823, 6.629, 1.888" rotation_euler="0.000, 0.000, -0.337"/>
+								<physics shape="bo_empire_house_bridge_d" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_house_bridge_d"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_house_bridge_d" old_prefab_name="" mobility="1">
+								<transform position="-3.090, -4.430, 1.890" rotation_euler="0.000, 0.000, -0.344"/>
+								<physics shape="bo_empire_house_bridge_d" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_house_bridge_d"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_bridge_b_part_a" old_prefab_name="" mobility="1">
+								<transform position="-3.042, -3.995, -2.597" rotation_euler="0.000, 0.000, 1.222" scale="0.830, 1.000, 1.000"/>
+								<physics shape="bo_empire_bridge_b_part_a"/>
+								<components>
+									<meta_mesh_component name="empire_bridge_b_part_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_bridge_b_part_a" old_prefab_name="" mobility="1">
+								<transform position="-1.213, 1.036, -2.597" rotation_euler="0.000, 0.000, 1.222" scale="0.800, 1.000, 1.000"/>
+								<physics shape="bo_empire_bridge_b_part_a"/>
+								<components>
+									<meta_mesh_component name="empire_bridge_b_part_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c1" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
+								<transform position="-2.362, 7.766, 3.706" rotation_euler="0.000, 0.000, 1.169" scale="1.153, 1.000, 1.590"/>
+								<physics shape="bo_empire_garden_wall_c1" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c1"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c1" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
+								<transform position="-6.276, -3.336, 3.683" rotation_euler="0.000, 0.000, 1.169" scale="1.148, 1.000, 1.588"/>
+								<physics shape="bo_empire_garden_wall_c1" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c1"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c1" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
+								<transform position="4.014, 5.418, 3.706" rotation_euler="0.000, 0.000, 1.169" scale="1.153, 1.000, 1.590"/>
+								<physics shape="bo_empire_garden_wall_c1" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c1"/>
+								</components>
+							</game_entity>
+							<game_entity name="empire_garden_wall_c1" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
+								<transform position="0.031, -5.690, 3.683" rotation_euler="0.000, 0.000, 1.203" scale="1.148, 1.000, 1.588"/>
+								<physics shape="bo_empire_garden_wall_c1" override_material="stone"/>
+								<components>
+									<meta_mesh_component name="empire_garden_wall_c1"/>
+								</components>
+							</game_entity>
+							<game_entity name="flag_rope_cloth" old_prefab_name="" mobility="1">
+								<transform position="-4.135, -6.029, 7.001" rotation_euler="0.000, 0.000, 1.219" scale="0.558, 0.558, 0.558"/>
+								<components>
+									<meta_mesh_component name="bd_cloth_hanging_rope"/>
+								</components>
+								<children>
+									<game_entity name="flag_4" old_prefab_name="" mobility="1">
+										<transform position="0.000, -4.536, 0.467" rotation_euler="0.000, -1.675, -1.571" scale="0.235, 0.235, 0.235"/>
+										<components>
+											<cloth_simulator>
+												<meta_mesh_component name="flag_4">
+													<mesh name="flag_4" factor="4285013518"/>
+												</meta_mesh_component>
+											</cloth_simulator>
+										</components>
+									</game_entity>
+									<game_entity name="flag_4" old_prefab_name="" mobility="1">
+										<transform position="0.000, -3.516, 0.376" rotation_euler="0.000, -1.675, -1.571" scale="0.235, 0.235, 0.235"/>
+										<components>
+											<cloth_simulator>
+												<meta_mesh_component name="flag_4">
+													<mesh name="flag_4" factor="4279972933"/>
+												</meta_mesh_component>
+											</cloth_simulator>
+										</components>
+									</game_entity>
+									<game_entity name="flag_4" old_prefab_name="" mobility="1">
+										<transform position="0.000, -2.188, 0.264" rotation_euler="0.000, -1.618, -1.571" scale="0.235, 0.235, 0.235"/>
+										<components>
+											<cloth_simulator>
+												<meta_mesh_component name="flag_4">
+													<mesh name="flag_4" factor="4285013518"/>
+												</meta_mesh_component>
+											</cloth_simulator>
+										</components>
+									</game_entity>
+									<game_entity name="flag_4" old_prefab_name="" mobility="1">
+										<transform position="0.000, -0.850, 0.221" rotation_euler="0.000, -1.578, -1.571" scale="0.235, 0.235, 0.235"/>
+										<components>
+											<cloth_simulator>
+												<meta_mesh_component name="flag_4">
+													<mesh name="flag_4" factor="4279972933"/>
+												</meta_mesh_component>
+											</cloth_simulator>
+										</components>
+									</game_entity>
+									<game_entity name="flag_4" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.512, 0.195" rotation_euler="0.000, -1.534, -1.571" scale="0.235, 0.235, 0.235"/>
+										<components>
+											<cloth_simulator>
+												<meta_mesh_component name="flag_4">
+													<mesh name="flag_4" factor="4285013518"/>
+												</meta_mesh_component>
+											</cloth_simulator>
+										</components>
+									</game_entity>
+									<game_entity name="flag_4" old_prefab_name="" mobility="1">
+										<transform position="0.000, 1.666, 0.234" rotation_euler="0.000, -1.505, -1.571" scale="0.235, 0.235, 0.235"/>
+										<components>
+											<cloth_simulator>
+												<meta_mesh_component name="flag_4">
+													<mesh name="flag_4" factor="4279972933"/>
+												</meta_mesh_component>
+											</cloth_simulator>
+										</components>
+									</game_entity>
+									<game_entity name="flag_4" old_prefab_name="" mobility="1">
+										<transform position="0.000, 2.749, 0.305" rotation_euler="0.000, -1.505, -1.571" scale="0.235, 0.235, 0.235"/>
+										<components>
+											<cloth_simulator>
+												<meta_mesh_component name="flag_4">
+													<mesh name="flag_4" factor="4285013518"/>
+												</meta_mesh_component>
+											</cloth_simulator>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="flag_rope_cloth" old_prefab_name="" mobility="1">
+								<transform position="0.871, 8.256, 6.998" rotation_euler="0.000, 0.000, 1.219" scale="0.558, 0.558, 0.558"/>
+								<components>
+									<meta_mesh_component name="bd_cloth_hanging_rope"/>
+								</components>
+								<children>
+									<game_entity name="flag_4" old_prefab_name="" mobility="1">
+										<transform position="0.000, -4.536, 0.467" rotation_euler="0.000, -1.675, -1.571" scale="0.235, 0.235, 0.235"/>
+										<components>
+											<cloth_simulator>
+												<meta_mesh_component name="flag_4">
+													<mesh name="flag_4" factor="4285013518"/>
+												</meta_mesh_component>
+											</cloth_simulator>
+										</components>
+									</game_entity>
+									<game_entity name="flag_4" old_prefab_name="" mobility="1">
+										<transform position="0.000, -3.516, 0.376" rotation_euler="0.000, -1.675, -1.571" scale="0.235, 0.235, 0.235"/>
+										<components>
+											<cloth_simulator>
+												<meta_mesh_component name="flag_4">
+													<mesh name="flag_4" factor="4279972933"/>
+												</meta_mesh_component>
+											</cloth_simulator>
+										</components>
+									</game_entity>
+									<game_entity name="flag_4" old_prefab_name="" mobility="1">
+										<transform position="0.000, -2.188, 0.264" rotation_euler="0.000, -1.618, -1.571" scale="0.235, 0.235, 0.235"/>
+										<components>
+											<cloth_simulator>
+												<meta_mesh_component name="flag_4">
+													<mesh name="flag_4" factor="4285013518"/>
+												</meta_mesh_component>
+											</cloth_simulator>
+										</components>
+									</game_entity>
+									<game_entity name="flag_4" old_prefab_name="" mobility="1">
+										<transform position="0.000, -0.850, 0.221" rotation_euler="0.000, -1.578, -1.571" scale="0.235, 0.235, 0.235"/>
+										<components>
+											<cloth_simulator>
+												<meta_mesh_component name="flag_4">
+													<mesh name="flag_4" factor="4279972933"/>
+												</meta_mesh_component>
+											</cloth_simulator>
+										</components>
+									</game_entity>
+									<game_entity name="flag_4" old_prefab_name="" mobility="1">
+										<transform position="0.000, 0.512, 0.195" rotation_euler="0.000, -1.534, -1.571" scale="0.235, 0.235, 0.235"/>
+										<components>
+											<cloth_simulator>
+												<meta_mesh_component name="flag_4">
+													<mesh name="flag_4" factor="4285013518"/>
+												</meta_mesh_component>
+											</cloth_simulator>
+										</components>
+									</game_entity>
+									<game_entity name="flag_4" old_prefab_name="" mobility="1">
+										<transform position="0.000, 1.666, 0.234" rotation_euler="0.000, -1.505, -1.571" scale="0.235, 0.235, 0.235"/>
+										<components>
+											<cloth_simulator>
+												<meta_mesh_component name="flag_4">
+													<mesh name="flag_4" factor="4279972933"/>
+												</meta_mesh_component>
+											</cloth_simulator>
+										</components>
+									</game_entity>
+									<game_entity name="flag_4" old_prefab_name="" mobility="1">
+										<transform position="0.000, 2.749, 0.305" rotation_euler="0.000, -1.505, -1.571" scale="0.235, 0.235, 0.235"/>
+										<components>
+											<cloth_simulator>
+												<meta_mesh_component name="flag_4">
+													<mesh name="flag_4" factor="4285013518"/>
+												</meta_mesh_component>
+											</cloth_simulator>
+										</components>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_chest_sturgia_a" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="chest"/>
+				</tags>
+				<transform position="-10.620, -13.574, -0.069" rotation_euler="0.000, 0.000, 1.105"/>
+				<physics shape="bo_bd_chest_sturgia_a"/>
+				<components>
+					<meta_mesh_component name="bd_chest_sturgia_a"/>
+				</components>
+				<scripts>
+					<script name="PE_InventoryEntity">
+						<variables>
+							<variable name="InventoryName" value="Chest"/>
+							<variable name="InventoryId" value="WDWSM5"/>
+							<variable name="CastleId" value="-1"/>
+							<variable name="Slot" value="30"/>
+							<variable name="StackCount" value="10"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

@@ -1,0 +1,81 @@
+<prefabs>
+	<game_entity name="pe_starwars" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_BlocShip">
+				<variables>
+					<variable name="isPlayerUsing" value="false"/>
+					<variable name="Animation" value="act_sit_1"/>
+					<variable name="StrayDurationSeconds" value="7200"/>
+					<variable name="RidingSkillId" value=""/>
+					<variable name="RidingSkillRequired" value="0"/>
+					<variable name="RepairingSkillId" value="Engineering"/>
+					<variable name="RepairingSkillRequired" value="0"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="20"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_game_ballista_weapon_destroy"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/generic/wood_destroy"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="MaxHitPoint" value="5000.000"/>
+					<variable name="AdvanceSpeed" value="20.000"/>
+					<variable name="RotationalSpeed" value="3.000"/>
+					<variable name="ElevationSpeed" value="20.000"/>
+					<variable name="CanAdvance" value="true"/>
+					<variable name="CanRotate" value="true"/>
+					<variable name="CanElevate" value="true"/>
+					<variable name="AlwaysAlignToTerritory" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="stardestroyer" old_prefab_name="" mobility="1" occlusion_body_name="bo_stardestroyer">
+				<transform position="-1.538, -7.313, 65.379" rotation_euler="0.000, 0.000, 0.000" scale="0.077, 0.077, 0.077"/>
+				<physics shape="bo_stardestroyer"/>
+				<occlusion_body_flags>
+					<occlusion_body_flag name="two_sided"/>
+				</occlusion_body_flags>
+				<components>
+					<meta_mesh_component name="stardestroyer"/>
+				</components>
+			</game_entity>
+			<game_entity name="icon_man" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Pilot"/>
+				</tags>
+				<transform position="-1.494, -20.091, 170.840" rotation_euler="0.000, 0.000, -0.030"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

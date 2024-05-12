@@ -1,0 +1,366 @@
+<prefabs>
+	<game_entity name="pe_battania_castle_gate_outer_l3_state4" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<tags>
+			<tag name="gate"/>
+			<tag name="state_4"/>
+			<tag name="reference"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_battania_castle_gate_outer_l3_state5" override_material="wood_nonstick"/>
+		<components>
+			<meta_mesh_component name="battania_castle_gate_outer_l3_state5"/>
+		</components>
+		<children>
+			<game_entity name="particles" old_prefab_name="" mobility="1">
+				<transform position="0.000, 0.000, 2.018"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{1C14B41A-97FA-41A8-B928-91C3EF356254}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pe_nativedoor_battania_castle_gate_outer_l3" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<tags>
+			<tag name="outer_gate"/>
+			<tag name="batteringram1"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PE_RepairableDestructableComponent">
+				<variables>
+					<variable name="DestructionState" value="pe_battania_castle_gate_outer_l3_state4"/>
+					<variable name="ReferenceEntityTag" value="gate"/>
+					<variable name="RepairItem" value="pe_buildhammer"/>
+					<variable name="RequiredEngineeringSkillForRepair" value="10"/>
+					<variable name="ParticleEffectOnDestroy" value="psys_siege_sturgia_wall_destruction"/>
+					<variable name="SoundEffectOnDestroy" value="event:/mission/siege/door/break"/>
+					<variable name="ParticleEffectOnRepair" value="dust_fall_a"/>
+					<variable name="SoundEffectOnRepair" value="event:/mission/combat/impact/metal_weapon/wood_shield"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="AlwaysEffectOnDestroy" value="false"/>
+					<variable name="RepairItemRecipies" value="pe_hardwood*1"/>
+					<variable name="RepairDamage" value="200"/>
+					<variable name="IsBroken" value="false"/>
+					<variable name="MaxHitPoint" value="2000.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="PE_NativeGate">
+				<variables>
+					<variable name="OpeningAnimationName" value="battania_castle_gate_outer_l3_opening"/>
+					<variable name="ClosingAnimationName" value="battania_castle_gate_outer_l3_closing"/>
+					<variable name="HitAnimationName" value="battania_castle_gate_outer_l3_hit"/>
+					<variable name="PlankHitAnimationName" value="battania_castle_gate_outer_l3_plank_hit"/>
+					<variable name="HitMeleeAnimationName" value="battania_castle_gate_outer_l3_hit_melee"/>
+					<variable name="DestroyAnimationName" value="battania_castle_gate_outer_l3_break"/>
+					<variable name="NavigationMeshId" value="411"/>
+					<variable name="NavigationMeshIdToDisableOnOpen" value="-1"/>
+					<variable name="LeftDoorBoneName" value="bn_middle_l"/>
+					<variable name="RightDoorBoneName" value="bn_middle_r"/>
+					<variable name="ExtraCollisionObjectTagRight" value="extra_collider_r"/>
+					<variable name="ExtraCollisionObjectTagLeft" value="extra_collider_l"/>
+					<variable name="ActivateExtraColliders" value="true"/>
+					<variable name="SideTag" value="middle"/>
+					<variable name="AutoOpen" value="false"/>
+					<variable name="CastleId" value="-1"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="open_inside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="open"/>
+				</tags>
+				<transform position="0.000, -1.500, 0.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="collider_agent_r" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="collider_agent_r"/>
+				</tags>
+				<physics shape="bo_battania_castle_gate_outer_l3_ab_r">
+					<body_flags>
+						<body_flag name="agent_only"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+			<game_entity name="clean" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="operational"/>
+					<tag name="state_0"/>
+					<tag name="gate"/>
+					<tag name="reference"/>
+				</tags>
+				<skeleton skeleton_model="battania_castle_gate_outer_l3_skeleton">
+					<components>
+						<meta_mesh_component name="battania_castle_gate_outer_l3_state1"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="collider_l" old_prefab_name="" visible="false" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_battania_castle_gate_outer_l3_state1_l" override_material="wood_nonstick"/>
+					</game_entity>
+					<game_entity name="collider_r" old_prefab_name="" visible="false" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_battania_castle_gate_outer_l3_state1_r" override_material="wood_nonstick"/>
+					</game_entity>
+					<game_entity name="extra_collider_l" old_prefab_name="" visible="false" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_l"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_l">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+					<game_entity name="extra_collider_r" old_prefab_name="" visible="false" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="extra_collider_r"/>
+							<tag name="0"/>
+						</tags>
+						<physics shape="bo_aserai_castle_gate_inner_l1_state1_r">
+							<body_flags>
+								<body_flag name="agent_only"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="close_inside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="close"/>
+					<tag name="outside"/>
+				</tags>
+				<transform position="0.000, -1.500, 0.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="close_outside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="close"/>
+					<tag name="outside"/>
+				</tags>
+				<transform position="0.000, 1.000, 0.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="middle_position" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="middle_pos"/>
+					<tag name="wait_pos"/>
+				</tags>
+				<transform position="0.000, -1.400, 0.000"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<scripts>
+					<script name="TacticalPosition">
+						<variables>
+							<variable name="_width" value="1.000"/>
+							<variable name="_slope" value="0.000"/>
+							<variable name="_isInsurmountable" value="false"/>
+							<variable name="_isOuterEdge" value="false"/>
+							<variable name="_tacticalPositionType" value="Regional"/>
+							<variable name="_tacticalRegionMembership" value="Forest"/>
+							<variable name="_tacticalPositionSide" value="BehaviorSideNotSet"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="gate_plank" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="plank"/>
+				</tags>
+				<skeleton skeleton_model="battania_castle_gate_outer_l3_plank_skeleton">
+					<components>
+						<meta_mesh_component name="battania_castle_gate_outer_l3_plank"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="SynchedMissionObject">
+						<variables>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="battering_ram_rest_point" old_prefab_name="" mobility="1">
+				<transform position="0.000, 6.250, 0.000"/>
+			</game_entity>
+			<game_entity name="collider_agent_l" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="collider_agent_l"/>
+				</tags>
+				<physics shape="bo_battania_castle_gate_outer_l3_ab_l">
+					<body_flags>
+						<body_flag name="agent_only"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+			<game_entity name="close_outside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="open"/>
+				</tags>
+				<transform position="0.000, 1.000, 0.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="close_inside" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="close"/>
+					<tag name="outside"/>
+				</tags>
+				<transform position="0.000, -1.500, 0.000"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

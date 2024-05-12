@@ -1,0 +1,797 @@
+<prefabs>
+	<game_entity name="plo_blowhemia_graveyard" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="wooden_platform_plank_f_column" old_prefab_name="">
+				<transform position="1.695, -6.665, -1.589" rotation_euler="0.000, 0.000, 0.000" scale="0.287, 0.287, 0.287"/>
+				<physics shape="bo_wooden_platform_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="shrub_d" old_prefab_name="">
+				<transform position="-0.049, -3.676, -1.589" rotation_euler="0.000, 0.000, -0.009" scale="0.630, 0.630, 0.630"/>
+				<components>
+					<meta_mesh_component name="shrub_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_f_column" old_prefab_name="">
+				<transform position="1.162, -6.665, -0.466" rotation_euler="0.000, 1.555, 0.000" scale="0.287, 0.287, 0.218"/>
+				<physics shape="bo_wooden_platform_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_f_column" old_prefab_name="">
+				<transform position="-0.421, -6.665, -0.491" rotation_euler="0.000, 1.555, 0.000" scale="0.287, 0.287, 0.218"/>
+				<physics shape="bo_wooden_platform_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_f_column" old_prefab_name="">
+				<transform position="0.103, -6.665, -1.589" rotation_euler="0.000, 0.000, 0.000" scale="0.287, 0.287, 0.287"/>
+				<physics shape="bo_wooden_platform_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_f_column" old_prefab_name="">
+				<transform position="3.176, -6.665, -1.589" rotation_euler="0.000, 0.000, 0.000" scale="0.287, 0.287, 0.287"/>
+				<physics shape="bo_wooden_platform_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_f_column" old_prefab_name="">
+				<transform position="2.651, -6.665, -1.169" rotation_euler="0.000, 1.555, 0.000" scale="0.287, 0.287, 0.218"/>
+				<physics shape="bo_wooden_platform_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.954, -6.104, -1.435" rotation_euler="0.000, 0.000, 1.571" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_d_interior_column_top_b" old_prefab_name="">
+				<transform position="3.196, -5.739, -1.589" rotation_euler="0.000, 0.000, 1.546" scale="0.471, 0.471, 0.471"/>
+				<physics shape="bo_empire_keep_d_interior_column_top_b"/>
+				<components>
+					<meta_mesh_component name="empire_keep_d_interior_column_top_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_d_interior_column_top_b" old_prefab_name="">
+				<transform position="1.672, -5.702, -1.589" rotation_euler="0.000, 0.000, 1.546" scale="0.471, 0.471, 0.471"/>
+				<physics shape="bo_empire_keep_d_interior_column_top_b"/>
+				<components>
+					<meta_mesh_component name="empire_keep_d_interior_column_top_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="roman_houses_c_part" old_prefab_name="">
+				<transform position="4.577, -5.367, -1.589"/>
+				<physics shape="bo_roman_houses_c_part" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="roman_houses_c_part"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_d_interior_column_top_b" old_prefab_name="">
+				<transform position="0.092, -5.663, -1.589" rotation_euler="0.000, 0.000, 1.541" scale="0.471, 0.471, 0.471"/>
+				<physics shape="bo_empire_keep_d_interior_column_top_b"/>
+				<components>
+					<meta_mesh_component name="empire_keep_d_interior_column_top_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="roman_houses_c_part" old_prefab_name="">
+				<transform position="0.114, -6.945, -1.589" rotation_euler="0.000, 0.000, -1.571"/>
+				<physics shape="bo_roman_houses_c_part" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="roman_houses_c_part"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.917, -6.136, -1.435" rotation_euler="0.000, 0.000, 3.136" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="roman_houses_c_part" old_prefab_name="">
+				<transform position="-1.341, -5.367, -1.589"/>
+				<physics shape="bo_roman_houses_c_part" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="roman_houses_c_part"/>
+				</components>
+			</game_entity>
+			<game_entity name="closed_desert_helmet" old_prefab_name="">
+				<transform position="1.664, -5.916, -2.922" rotation_euler="0.309, 0.000, 0.000"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="aserai_helmet_b"/>
+					</cloth_simulator>
+				</components>
+			</game_entity>
+			<game_entity name="desert_helmet_with_mail" old_prefab_name="">
+				<transform position="0.068, -6.165, -2.972" rotation_euler="0.070, 0.000, 0.000"/>
+				<components>
+					<cloth_simulator>
+						<meta_mesh_component name="aserai_helmet_l"/>
+					</cloth_simulator>
+				</components>
+			</game_entity>
+			<game_entity name="foods_watermelon_b" old_prefab_name="">
+				<transform position="3.181, -6.422, -1.470" rotation_euler="0.000, 0.000, -1.636" scale="0.642, 0.642, 0.642"/>
+				<physics shape="bo_foods_watermelon_a"/>
+				<components>
+					<meta_mesh_component name="foods_watermelon_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="shop_sign_base_a1" old_prefab_name="">
+				<transform position="4.780, -3.665, 0.102" rotation_euler="0.000, 0.000, 2.719"/>
+				<physics shape="bo_shop_sign_base_a1"/>
+				<components>
+					<meta_mesh_component name="shop_sign_base_a1"/>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_plank_f_column" old_prefab_name="">
+				<transform position="4.791, -3.647, -1.589" rotation_euler="0.000, 0.000, 0.005" scale="0.287, 0.287, 0.287"/>
+				<physics shape="bo_wooden_platform_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_f_column"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.597, -6.092, -1.435" rotation_euler="0.000, 0.000, 2.004" scale="0.007, 0.297, 0.177"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.574, -6.098, -1.435" rotation_euler="0.000, 0.000, 1.251" scale="0.007, 0.297, 0.177"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="editor_torus" old_prefab_name="">
+				<transform position="1.716, -6.100, -1.451" rotation_euler="0.000, 0.000, 0.000" scale="0.070, 0.072, 0.062"/>
+				<components>
+					<meta_mesh_component name="editor_torus">
+						<mesh name="editor_torus" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="-0.104, -5.935, -1.435" rotation_euler="0.000, 0.000, 1.571" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="-0.078, -5.940, -1.435" rotation_euler="0.000, 0.000, 2.161" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="-0.050, -5.935, -1.435" rotation_euler="0.000, 0.000, 1.571" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="0.013, -5.939, -1.435" rotation_euler="0.000, 0.000, 3.074" scale="0.005, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="-0.002, -5.940, -1.435" rotation_euler="0.000, 0.000, 1.986" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="0.033, -5.938, -1.435" rotation_euler="0.000, 0.000, 1.169" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="0.090, -5.940, -1.435" rotation_euler="0.000, 0.000, 1.914" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="0.115, -5.947, -1.435" rotation_euler="0.000, 0.000, 1.089" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.779, -6.096, -1.435" rotation_euler="0.000, 0.000, 1.571" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.435, -6.150, -1.436" rotation_euler="0.000, 0.000, 1.571" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="0.144, -5.942, -1.435" rotation_euler="0.000, 0.000, 1.944" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="0.168, -5.945, -1.435" rotation_euler="0.000, 0.000, 1.221" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="0.230, -5.952, -1.435" rotation_euler="0.000, 0.000, -0.946" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="0.233, -6.018, -1.435" rotation_euler="0.000, 0.000, 0.801" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="0.262, -5.986, -1.435" rotation_euler="0.000, 0.000, 1.528" scale="0.016, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.505, -3.426, 0.246" rotation_euler="-1.566, -2.108, -2.551" scale="0.012, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.621, -6.096, -1.435" rotation_euler="0.000, 0.000, 1.224" scale="0.007, 0.297, 0.177"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.646, -6.094, -1.435" rotation_euler="0.000, 0.000, 2.046" scale="0.007, 0.297, 0.177"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.362, -6.082, -1.435" rotation_euler="0.000, 0.000, 1.571" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.403, -6.076, -1.435" rotation_euler="0.000, 0.000, -0.946" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="3.227, -6.109, -1.435" rotation_euler="0.000, 0.000, 1.566" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="3.456, -6.278, -1.435" rotation_euler="0.000, 0.000, 1.805" scale="0.019, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.473, -6.062, -1.435" rotation_euler="0.000, 0.000, 1.566" scale="0.005, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="3.196, -6.072, -1.435" rotation_euler="0.000, 0.000, 3.136" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.922, -6.065, -1.435" rotation_euler="0.000, 0.000, 3.136" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.437, -6.073, -1.435" rotation_euler="0.000, 0.000, 1.571" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="editor_torus" old_prefab_name="">
+				<transform position="3.335, -6.059, -1.453" rotation_euler="0.000, 0.000, 0.000" scale="0.089, 0.091, 0.078"/>
+				<components>
+					<meta_mesh_component name="editor_torus">
+						<mesh name="editor_torus" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.497, -6.135, -1.435" rotation_euler="0.000, 0.000, -0.014" scale="0.006, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="3.032, -6.067, -1.435" rotation_euler="0.000, 0.000, 1.528" scale="0.016, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.808, -6.127, -1.435" rotation_euler="0.000, 0.000, -0.024" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.848, -6.096, -1.435" rotation_euler="0.000, 0.000, 1.571" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.498, -6.045, -1.435" rotation_euler="0.000, 0.000, -0.014" scale="0.006, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="roman_houses_c_part" old_prefab_name="">
+				<transform position="3.153, -6.945, -1.589" rotation_euler="0.000, 0.000, -1.571"/>
+				<physics shape="bo_roman_houses_c_part" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="roman_houses_c_part"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.495, -6.084, -1.435" rotation_euler="0.000, 0.000, -0.014" scale="0.006, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.451, -3.401, 0.201" rotation_euler="0.003, -1.573, -2.013" scale="0.010, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="3.406, -6.271, -1.435" rotation_euler="0.000, 0.000, 1.248" scale="0.019, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.396, -6.135, -1.435" rotation_euler="0.000, 0.000, 0.801" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="3.196, -6.141, -1.435" rotation_euler="0.000, 0.000, 3.136" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="2.942, -6.063, -1.435" rotation_euler="0.000, 0.000, 1.528" scale="0.016, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="3.204, -6.005, -1.435" rotation_euler="0.000, 0.000, -0.014" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_ironware_pitchfork" old_prefab_name="">
+				<transform position="3.203, -4.857, -1.415" rotation_euler="1.562, 0.000, -0.014" scale="0.453, 0.453, 0.453"/>
+				<physics shape="bo_merchandise_ironware_pitchfork"/>
+				<components>
+					<meta_mesh_component name="merchandise_ironware_pitchfork"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="3.442, -6.091, -1.435" rotation_euler="0.000, 0.000, 1.528" scale="0.019, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="3.166, -6.037, -1.435" rotation_euler="0.000, 0.000, 1.559" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="foods_watermelon_a" old_prefab_name="">
+				<transform position="0.131, -6.324, -1.367" rotation_euler="-1.522, 0.000, 0.760" scale="0.518, 0.518, 0.518"/>
+				<physics shape="bo_foods_watermelon_a"/>
+				<components>
+					<meta_mesh_component name="foods_watermelon_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="viking_sword_a" old_prefab_name="">
+				<transform position="0.147, -4.987, -1.437" rotation_euler="1.570, 0.000, -0.048"/>
+				<components>
+					<meta_mesh_component name="viking_sword_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="viking_sword_h" old_prefab_name="">
+				<transform position="1.725, -5.066, -1.437" rotation_euler="1.562, 0.000, -0.040"/>
+				<components>
+					<meta_mesh_component name="viking_sword_h"/>
+				</components>
+			</game_entity>
+			<game_entity name="viking_round_shield" old_prefab_name="">
+				<transform position="1.687, -5.499, -1.437" rotation_euler="0.000, 0.000, 0.000" scale="0.624, 0.624, 0.624"/>
+				<components>
+					<meta_mesh_component name="shield_sturgia_infantary_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="sturgia_shield_a" old_prefab_name="">
+				<transform position="0.117, -5.407, -1.437" rotation_euler="0.000, 0.000, -0.579" scale="0.552, 0.552, 0.552"/>
+				<components>
+					<meta_mesh_component name="sturgia_shield_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="3.115, -6.070, -1.435" rotation_euler="0.000, 0.000, 1.528" scale="0.016, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.525, -6.108, -1.435" rotation_euler="0.000, 0.000, 1.566" scale="0.005, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="3.077, -6.071, -1.435" rotation_euler="0.000, 0.000, 3.136" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="1.846, -6.173, -1.435" rotation_euler="0.000, 0.000, 1.571" scale="0.008, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="5.367, -3.819, 0.164" rotation_euler="0.354, 1.483, 1.410" scale="0.019, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.391, -3.387, 0.155" rotation_euler="0.012, 1.576, 1.123" scale="0.019, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="foods_watermelon_a" old_prefab_name="">
+				<transform position="1.737, -6.457, -1.335" rotation_euler="-1.522, 0.000, 0.760" scale="0.490, 0.490, 0.490"/>
+				<physics shape="bo_foods_watermelon_a"/>
+				<components>
+					<meta_mesh_component name="foods_watermelon_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.505, -3.427, 0.163" rotation_euler="-1.566, -2.108, -2.551" scale="0.012, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.349, -3.357, 0.246" rotation_euler="-1.566, -2.108, -2.551" scale="0.012, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.768, -3.547, 0.167" rotation_euler="-1.566, -2.108, -2.551" scale="0.012, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.349, -3.357, 0.167" rotation_euler="-1.566, -2.108, -2.551" scale="0.012, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.349, -3.357, 0.071" rotation_euler="-1.566, -2.108, -2.551" scale="0.012, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="shrub_d" old_prefab_name="">
+				<transform position="4.068, -3.538, -1.589" rotation_euler="0.000, 0.000, 0.034" scale="0.630, 0.630, 0.630"/>
+				<components>
+					<meta_mesh_component name="shrub_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="shrub_d" old_prefab_name="">
+				<transform position="-0.916, -3.705, -1.589" rotation_euler="0.000, 0.000, 0.034" scale="0.630, 0.630, 0.630"/>
+				<components>
+					<meta_mesh_component name="shrub_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.656, -3.498, 0.206" rotation_euler="-0.434, -1.574, -2.015" scale="0.012, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="shrub_d" old_prefab_name="">
+				<transform position="3.159, -3.568, -1.589" rotation_euler="0.000, 0.000, 0.034" scale="0.630, 0.630, 0.630"/>
+				<components>
+					<meta_mesh_component name="shrub_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="5.309, -3.796, 0.167" rotation_euler="-0.323, 1.586, 1.352" scale="0.019, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="5.250, -3.771, 0.177" rotation_euler="0.354, 1.483, 1.410" scale="0.019, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="5.195, -3.745, 0.171" rotation_euler="-0.242, 1.572, 1.264" scale="0.019, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.609, -3.476, 0.211" rotation_euler="0.411, -1.574, -2.012" scale="0.012, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.554, -3.458, 0.154" rotation_euler="0.012, 1.576, 1.171" scale="0.019, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.637, -3.490, 0.101" rotation_euler="0.038, -1.573, -2.013" scale="0.011, 0.322, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="5.137, -3.718, 0.164" rotation_euler="0.013, 1.574, 1.318" scale="0.019, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="5.082, -3.690, 0.165" rotation_euler="-1.566, -2.108, -2.551" scale="0.012, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="5.082, -3.690, 0.249" rotation_euler="-1.566, -2.108, -2.551" scale="0.012, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="5.083, -3.691, 0.080" rotation_euler="-1.566, -2.108, -2.551" scale="0.012, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.960, -3.637, 0.167" rotation_euler="0.012, 1.576, 1.171" scale="0.019, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.917, -3.615, 0.170" rotation_euler="0.485, 1.577, 1.168" scale="0.019, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.870, -3.599, 0.168" rotation_euler="0.012, 1.576, 1.171" scale="0.019, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.817, -3.576, 0.169" rotation_euler="0.012, 1.576, 1.171" scale="0.019, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.768, -3.546, 0.248" rotation_euler="-1.566, -2.108, -2.551" scale="0.012, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_stick_10m" old_prefab_name="">
+				<transform position="4.506, -3.430, 0.115" rotation_euler="-0.839, -1.575, -2.016" scale="0.014, 0.323, 0.192"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_stick_10m">
+						<mesh name="bd_cloth_stick_10m.1" material="weapon_fine_steel"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

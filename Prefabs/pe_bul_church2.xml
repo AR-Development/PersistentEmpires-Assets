@@ -1,0 +1,1475 @@
+<prefabs>
+	<game_entity name="pe_bul_church2" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="vlandia_arena_tower" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_vlandia_arena_tower">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="25.869, 0.513, 26.380" rotation_euler="0.000, 0.000, -0.827" scale="0.071, 0.071, 0.071"/>
+				<physics shape="bo_vlandia_arena_tower"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_tower">
+						<mesh name="vlandia_arena_tower.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.7" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod2.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod2.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod3.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod3.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod4.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod4.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod5.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod5.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod6.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod6.5" material="aquila"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value=""/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value="light_hit"/>
+							<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wooden_barricade_destruction"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.600"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_keep_b_relief_c" old_prefab_name="">
+				<transform position="25.233, -1.818, 8.992" rotation_euler="0.000, 0.000, 0.724" scale="2.339, 2.339, 2.339"/>
+				<physics shape="bo_empire_keep_b_relief_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_relief_c">
+						<mesh name="empire_keep_b_relief_c.0" factor="4285249952"/>
+						<mesh name="empire_keep_b_relief_c.1" factor="4285249952"/>
+						<mesh name="empire_keep_b_relief_c.lod3" factor="4285249952"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_d2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="0.221, 9.079, -0.233" rotation_euler="0.000, 0.000, -0.830"/>
+				<physics shape="bo_empire_garden_wall_d2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_d2">
+						<mesh name="empire_garden_wall_d2.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod1.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod2.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod4.1" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod5.1" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_battania_statue_boudica" old_prefab_name="">
+				<transform position="25.825, -0.113, 19.454" rotation_euler="0.000, 0.000, 0.800" scale="0.761, 0.761, 0.761"/>
+				<physics shape="bo_bd_battania_statue_boudica" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_battania_statue_boudica">
+						<mesh name="bd_battania_statue_boudica.0" factor="4288800956"/>
+						<mesh name="bd_battania_statue_boudica.1" factor="4288800956"/>
+						<mesh name="bd_battania_statue_boudica.2" factor="4288800956"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_battania_statue_female_medium" old_prefab_name="">
+				<transform position="24.474, -1.018, 20.367" rotation_euler="0.000, 0.000, 0.749" scale="0.881, 0.881, 0.881"/>
+				<physics shape="bo_bd_battania_statue_female_medium" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_battania_statue_female_medium">
+						<mesh name="bd_battania_statue_female_medium" factor="4288800956"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_aserai_plate_cupper" old_prefab_name="">
+				<transform position="18.784, -3.784, 2.232" rotation_euler="1.479, 3.141, -2.416" scale="2.622, 2.622, 2.622"/>
+				<components>
+					<meta_mesh_component name="bd_aserai_plate_cupper"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_tower" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_vlandia_arena_tower">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="27.123, 0.357, 19.173" rotation_euler="0.000, 0.000, -0.827" scale="0.142, 0.142, 0.142"/>
+				<physics shape="bo_vlandia_arena_tower"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_tower">
+						<mesh name="vlandia_arena_tower.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.7" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod2.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod2.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod3.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod3.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod4.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod4.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod5.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod5.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod6.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod6.5" material="aquila"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value=""/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value="light_hit"/>
+							<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wooden_barricade_destruction"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.600"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_garden_wall_d_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="8.006, 0.595, -0.044" rotation_euler="0.000, 0.000, -0.789"/>
+				<physics shape="bo_empire_garden_wall_d_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_d_end">
+						<mesh name="empire_garden_wall_d_end.2" material="empire_wall_brick"/>
+						<mesh name="empire_garden_wall_d_end.lod1.2" material="empire_wall_brick"/>
+						<mesh name="empire_garden_wall_d_end.lod2.2" material="empire_wall_brick"/>
+						<mesh name="empire_garden_wall_d_end.lod4.1" material="empire_wall_brick"/>
+						<mesh name="empire_garden_wall_d_end.lod5.1" material="empire_wall_brick"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_d_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="10.163, -1.692, -0.513" rotation_euler="0.000, 0.000, -0.789"/>
+				<physics shape="bo_empire_garden_wall_d_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_d_end">
+						<mesh name="empire_garden_wall_d_end.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d_end.lod1.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d_end.lod2.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d_end.lod4.1" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d_end.lod5.1" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="flagpole_b_ground_fold" old_prefab_name="">
+				<transform position="23.236, 0.414, 32.937" rotation_euler="0.000, 0.000, -2.449" scale="3.020, 3.020, 3.050"/>
+				<physics shape="bo_flagpole_b"/>
+				<components>
+					<meta_mesh_component name="flagpole_b">
+						<mesh name="flagpole_b" material="aquila"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="flag_stand" old_prefab_name="">
+						<transform position="0.000, 0.000, 1.725"/>
+						<physics shape="bo_flag_stand"/>
+						<components>
+							<meta_mesh_component name="flag_stand">
+								<mesh name="flag_stand.0" material="aquila"/>
+								<mesh name="flag_stand.1" material="aquila"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="flag_b_fold" old_prefab_name="">
+						<transform position="0.000, 0.079, 1.731"/>
+						<components>
+							<meta_mesh_component name="flag_b_kat">
+								<mesh name="flag_b_kat" material="aquila"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="empire_keep_b_interior_stair" old_prefab_name="">
+				<transform position="13.705, -0.297, -0.067" rotation_euler="0.000, 0.000, -0.878" scale="0.972, 0.972, 0.972"/>
+				<physics shape="bo_empire_keep_b_interior_stair"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_interior_stair"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_tower" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_vlandia_arena_tower">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="18.918, 0.837, 19.173" rotation_euler="0.000, 0.000, -0.827" scale="0.142, 0.142, 0.142"/>
+				<physics shape="bo_vlandia_arena_tower"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_tower">
+						<mesh name="vlandia_arena_tower.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.7" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod2.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod2.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod3.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod3.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod4.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod4.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod5.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod5.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod6.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod6.5" material="aquila"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value=""/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value="light_hit"/>
+							<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wooden_barricade_destruction"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.600"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="bd_battania_statue_female_medium" old_prefab_name="">
+				<transform position="27.378, -0.112, 5.699" rotation_euler="0.093, 0.000, 0.793" scale="0.615, 0.615, 0.615"/>
+				<physics shape="bo_bd_battania_statue_female_medium" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_battania_statue_female_medium">
+						<mesh name="bd_battania_statue_female_medium" factor="4288800956"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_gate" old_prefab_name="" occlusion_body_name="bo_occ_empire_grandbazaar_gate">
+				<transform position="25.224, -1.899, 1.712" rotation_euler="0.000, 0.000, 0.734" scale="0.859, 0.859, 0.859"/>
+				<physics shape="bo_empire_grandbazaar_gate"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_gate">
+						<mesh name="empire_grandbazaar_gate" material="stone_wall_12"/>
+						<mesh name="empire_grandbazaar_gate.6" material="stone_wall_12"/>
+						<mesh name="empire_grandbazaar_gate.11" material="roman_statue_chariot" factor="4283988064"/>
+						<mesh name="empire_grandbazaar_gate.lod3" material="stone_wall_12"/>
+						<mesh name="empire_grandbazaar_gate.lod3.6" material="stone_wall_12"/>
+						<mesh name="empire_grandbazaar_gate.lod3.11" material="roman_statue_chariot" factor="4283988064"/>
+						<mesh name="empire_grandbazaar_gate.lod5.6" material="stone_wall_12"/>
+						<mesh name="empire_grandbazaar_gate.lod5.11" material="roman_statue_chariot" factor="4283988064"/>
+						<mesh name="empire_grandbazaar_gate.lod6.6" material="stone_wall_12"/>
+						<mesh name="empire_grandbazaar_gate.lod6.11" material="roman_statue_chariot" factor="4283988064"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_b_relief_c" old_prefab_name="">
+				<transform position="20.675, -1.716, 11.395" rotation_euler="0.000, 0.000, -0.851" scale="3.066, 3.066, 3.066"/>
+				<physics shape="bo_empire_keep_b_relief_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_relief_c">
+						<mesh name="empire_keep_b_relief_c.0" factor="4285249952"/>
+						<mesh name="empire_keep_b_relief_c.1" factor="4285249952"/>
+						<mesh name="empire_keep_b_relief_c.lod3" factor="4285249952"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_grandbazaar_gate_door_a" old_prefab_name="">
+				<transform position="25.417, -2.099, 0.502" rotation_euler="0.000, 0.000, 0.735" scale="1.021, 1.021, 1.277"/>
+				<physics shape="bo_empire_grandbazaar_gate_door_a"/>
+				<components>
+					<meta_mesh_component name="empire_grandbazaar_gate_door_a"/>
+				</components>
+				<children>
+					<game_entity name="empire_grandbazaar_gate_door_b" old_prefab_name="">
+						<transform position="-1.507, 0.190, 0.000"/>
+						<physics shape="bo_empire_grandbazaar_gate_door_b"/>
+						<components>
+							<meta_mesh_component name="empire_grandbazaar_gate_door_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_grandbazaar_gate_door_b" old_prefab_name="">
+						<transform position="1.511, 0.194, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="-1.000, 1.000, 1.000"/>
+						<physics shape="bo_empire_grandbazaar_gate_door_b"/>
+						<components>
+							<meta_mesh_component name="empire_grandbazaar_gate_door_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="empire_keep_b_side_building_m" old_prefab_name="" occlusion_body_name="bo_occ_empire_keep_b_side_building_m">
+				<transform position="12.325, 17.737, 0.865" rotation_euler="0.000, 0.000, 2.321" scale="-1.220, 1.770, 1.220"/>
+				<physics shape="bo_empire_keep_b_side_building_m"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_side_building_m">
+						<mesh name="empire_keep_b_side_building_m.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_m.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_m.lod1.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_m.lod1.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_m.lod2.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_m.lod2.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_m.lod4.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_m.lod4.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_m.lod5.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_m.lod5.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_m.lod6.1" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_m.lod6.2" material="roof_tiles"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="empire_keep_a_door_a" old_prefab_name="">
+						<transform position="-5.859, -2.058, 0.000"/>
+						<physics shape="bo_empire_keep_a_door_a"/>
+						<components>
+							<meta_mesh_component name="empire_keep_a_door_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="vlandia_arena_tower" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_vlandia_arena_tower">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="23.485, 3.054, 26.394" rotation_euler="0.000, 0.000, -0.827" scale="0.071, 0.071, 0.071"/>
+				<physics shape="bo_vlandia_arena_tower"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_tower">
+						<mesh name="vlandia_arena_tower.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.7" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod2.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod2.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod3.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod3.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod4.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod4.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod5.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod5.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod6.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod6.5" material="aquila"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value=""/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value="light_hit"/>
+							<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wooden_barricade_destruction"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.600"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="vlandia_arena_tower" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_vlandia_arena_tower">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="22.718, -3.512, 19.173" rotation_euler="0.000, 0.000, -0.827" scale="0.142, 0.142, 0.142"/>
+				<physics shape="bo_vlandia_arena_tower"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_tower">
+						<mesh name="vlandia_arena_tower.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.7" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod2.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod2.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod3.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod3.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod4.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod4.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod5.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod5.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod6.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod6.5" material="aquila"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value=""/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value="light_hit"/>
+							<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wooden_barricade_destruction"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.600"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="vlandia_arena_tower" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_vlandia_arena_tower">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="23.277, 4.655, 19.173" rotation_euler="0.000, 0.000, -0.827" scale="0.142, 0.142, 0.142"/>
+				<physics shape="bo_vlandia_arena_tower"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_tower">
+						<mesh name="vlandia_arena_tower.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.7" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod2.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod2.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod3.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod3.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod4.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod4.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod5.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod5.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod6.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod6.5" material="aquila"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value=""/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value="light_hit"/>
+							<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wooden_barricade_destruction"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.600"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_keep_b_interior_stair" old_prefab_name="">
+				<transform position="25.444, -2.159, -0.030" rotation_euler="0.000, 0.000, 0.721" scale="0.972, 0.972, 0.972"/>
+				<physics shape="bo_empire_keep_b_interior_stair"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_interior_stair"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_tower" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_vlandia_arena_tower">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="20.564, 0.346, 26.394" rotation_euler="0.000, 0.000, -0.827" scale="0.071, 0.071, 0.071"/>
+				<physics shape="bo_vlandia_arena_tower"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_tower">
+						<mesh name="vlandia_arena_tower.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.7" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod2.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod2.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod3.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod3.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod4.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod4.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod5.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod5.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod6.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod6.5" material="aquila"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value=""/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value="light_hit"/>
+							<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wooden_barricade_destruction"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.600"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_keep_d_interior_wall_art_c1" old_prefab_name="">
+				<transform position="21.402, -2.256, -0.907" rotation_euler="0.000, 0.000, -0.878" scale="2.179, 2.179, 2.179"/>
+				<physics shape="bo_empire_keep_d_interior_wall_art_a1"/>
+				<components>
+					<meta_mesh_component name="empire_keep_d_interior_wall_art_c1">
+						<mesh name="empire_keep_d_interior_wall_art_c1.0" factor="4283465327"/>
+						<mesh name="empire_keep_d_interior_wall_art_c1.1" factor="4283465327"/>
+						<mesh name="empire_keep_d_interior_wall_art_c1.2" factor="4283465327"/>
+						<mesh name="empire_keep_d_interior_wall_art_c1.3" factor="4283465327"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_d_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="13.731, -5.119, 0.000" rotation_euler="0.000, 0.000, -0.789"/>
+				<physics shape="bo_empire_garden_wall_d_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_d_end">
+						<mesh name="empire_garden_wall_d_end.2" material="empire_wall_brick"/>
+						<mesh name="empire_garden_wall_d_end.lod1.2" material="empire_wall_brick"/>
+						<mesh name="empire_garden_wall_d_end.lod2.2" material="empire_wall_brick"/>
+						<mesh name="empire_garden_wall_d_end.lod4.1" material="empire_wall_brick"/>
+						<mesh name="empire_garden_wall_d_end.lod5.1" material="empire_wall_brick"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_tower" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_vlandia_arena_tower">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="27.045, 5.574, 5.753" rotation_euler="0.000, 0.000, -0.827" scale="0.224, 0.224, 0.224"/>
+				<physics shape="bo_vlandia_arena_tower"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_tower">
+						<mesh name="vlandia_arena_tower.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.7" material="roof_tiles"/>
+						<mesh name="vlandia_arena_tower.lod2.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod2.6" material="roof_tiles"/>
+						<mesh name="vlandia_arena_tower.lod3.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod3.6" material="roof_tiles"/>
+						<mesh name="vlandia_arena_tower.lod4.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod4.6" material="roof_tiles"/>
+						<mesh name="vlandia_arena_tower.lod5.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod5.6" material="roof_tiles"/>
+						<mesh name="vlandia_arena_tower.lod6.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod6.5" material="roof_tiles"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value=""/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value="light_hit"/>
+							<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wooden_barricade_destruction"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.600"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_garden_wall_d2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="14.938, -6.445, -0.233" rotation_euler="0.000, 0.000, -0.830"/>
+				<physics shape="bo_empire_garden_wall_d2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_d2">
+						<mesh name="empire_garden_wall_d2.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod1.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod2.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod4.1" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod5.1" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_d2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="17.061, -8.765, -0.233" rotation_euler="0.000, 0.000, -0.830"/>
+				<physics shape="bo_empire_garden_wall_d2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_d2">
+						<mesh name="empire_garden_wall_d2.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod1.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod2.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod4.1" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod5.1" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_d2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="8.932, -0.441, -0.707" rotation_euler="0.000, 0.000, -0.830"/>
+				<physics shape="bo_empire_garden_wall_d2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_d2">
+						<mesh name="empire_garden_wall_d2.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod1.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod2.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod4.1" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod5.1" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_d2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="6.707, 1.991, -0.233" rotation_euler="0.000, 0.000, -0.830"/>
+				<physics shape="bo_empire_garden_wall_d2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_d2">
+						<mesh name="empire_garden_wall_d2.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod1.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod2.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod4.1" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod5.1" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="crowd_woman_c" old_prefab_name="">
+				<tags>
+					<tag name="audience"/>
+				</tags>
+				<transform position="22.543, -1.169, 22.639" rotation_euler="0.177, 0.000, -0.836"/>
+				<components>
+					<meta_mesh_component name="crowd_woman_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_b_side_building_g" old_prefab_name="" occlusion_body_name="bo_occ_empire_keep_b_side_building_g">
+				<transform position="10.486, 9.665, -5.430" rotation_euler="0.000, 0.000, -0.816" scale="1.011, 0.959, 0.959"/>
+				<physics shape="bo_empire_keep_b_side_building_g"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_side_building_g">
+						<mesh name="empire_keep_b_side_building_g.1" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.8" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_g.10" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod1.1" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod1.8" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_g.lod1.10" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod2.1" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod2.8" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_g.lod2.10" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod4.1" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod4.8" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_g.lod4.10" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod5.1" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod5.8" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_g.lod5.10" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod6.4" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_g.lod6.6" material="roof_tiles"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="empire_keep_b_window_a" old_prefab_name="">
+						<transform position="-2.077, -5.084, 7.212"/>
+						<physics shape="bo_empire_keep_b_window_a"/>
+						<components>
+							<meta_mesh_component name="empire_keep_b_window_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_b_window_a" old_prefab_name="">
+						<transform position="2.006, -5.084, 7.212"/>
+						<physics shape="bo_empire_keep_b_window_a"/>
+						<components>
+							<meta_mesh_component name="empire_keep_b_window_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_b_window_a" old_prefab_name="">
+						<transform position="4.783, -2.294, 7.230" rotation_euler="0.000, 0.000, 1.571"/>
+						<physics shape="bo_empire_keep_b_window_a"/>
+						<components>
+							<meta_mesh_component name="empire_keep_b_window_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_b_window_a" old_prefab_name="">
+						<transform position="-4.793, -2.294, 7.230" rotation_euler="0.000, 0.000, -1.571"/>
+						<physics shape="bo_empire_keep_b_window_a"/>
+						<components>
+							<meta_mesh_component name="empire_keep_b_window_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_a_door_b" old_prefab_name="">
+						<transform position="1.973, -5.162, 0.000"/>
+						<physics shape="bo_empire_keep_a_door_b"/>
+						<components>
+							<meta_mesh_component name="empire_keep_a_door_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="empire_keep_b_side_building_e" old_prefab_name="" occlusion_body_name="bo_occ_empire_keep_b_side_building_e">
+				<transform position="21.919, 6.979, 0.133" rotation_euler="0.000, 0.000, 2.315" scale="-1.220, 1.414, 1.220"/>
+				<physics shape="bo_empire_keep_b_side_building_e"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_side_building_e">
+						<mesh name="empire_keep_b_side_building_e.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_e.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_e.lod1.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_e.lod1.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_e.lod2.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_e.lod2.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_e.lod4.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_e.lod4.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_e.lod5.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_e.lod5.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_e.lod6.1" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_e.lod6.2" material="roof_tiles"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="empire_keep_b_door_b" old_prefab_name="">
+						<transform position="-0.200, -2.415, 0.000"/>
+						<physics shape="bo_empire_keep_b_door_b"/>
+						<components>
+							<meta_mesh_component name="empire_keep_b_door_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_battania_statue_female_medium" old_prefab_name="">
+				<transform position="23.220, -3.884, 5.724" rotation_euler="0.093, 0.000, 0.850" scale="0.615, 0.615, 0.615"/>
+				<physics shape="bo_bd_battania_statue_female_medium" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_battania_statue_female_medium">
+						<mesh name="bd_battania_statue_female_medium" factor="4288800956"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_tower" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_vlandia_arena_tower">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="11.138, 3.291, 5.753" rotation_euler="0.000, 0.000, -0.827" scale="0.224, 0.224, 0.224"/>
+				<physics shape="bo_vlandia_arena_tower"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_tower">
+						<mesh name="vlandia_arena_tower.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.7" material="roof_tiles"/>
+						<mesh name="vlandia_arena_tower.lod2.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod2.6" material="roof_tiles"/>
+						<mesh name="vlandia_arena_tower.lod3.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod3.6" material="roof_tiles"/>
+						<mesh name="vlandia_arena_tower.lod4.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod4.6" material="roof_tiles"/>
+						<mesh name="vlandia_arena_tower.lod5.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod5.6" material="roof_tiles"/>
+						<mesh name="vlandia_arena_tower.lod6.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod6.5" material="roof_tiles"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value=""/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value="light_hit"/>
+							<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wooden_barricade_destruction"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.600"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="25.723, -1.734, 8.071" rotation_euler="0.000, -1.571, 0.713" scale="0.373, 0.373, 0.182"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column">
+						<mesh name="wooden_platform_2_plank_f_column.0" material="aquila" factor="4291087036"/>
+						<mesh name="wooden_platform_2_plank_f_column.1" material="aquila" factor="4291087036"/>
+						<mesh name="wooden_platform_2_plank_f_column.lod3" material="aquila" factor="4291087036"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_tower" old_prefab_name="" occlusion_body_name="bo_occ_vlandia_arena_tower">
+				<transform position="22.932, 0.185, 10.659" rotation_euler="0.000, 0.000, -0.826" scale="0.703, 0.799, 0.703"/>
+				<physics shape="bo_vlandia_arena_tower"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_tower">
+						<mesh name="vlandia_arena_tower.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.7" material="roman_statue_chariot" factor="4281426491" argument="1000.000, 0.000, 0.000, 41.000"/>
+						<mesh name="vlandia_arena_tower.lod2.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod2.6" material="roman_statue_chariot" factor="4281426491"/>
+						<mesh name="vlandia_arena_tower.lod3.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod3.6" material="roman_statue_chariot" factor="4281426491"/>
+						<mesh name="vlandia_arena_tower.lod4.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod4.6" material="roman_statue_chariot" factor="4281426491"/>
+						<mesh name="vlandia_arena_tower.lod5.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod5.6" material="roman_statue_chariot" factor="4281426491"/>
+						<mesh name="vlandia_arena_tower.lod6.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod6.5" material="roman_statue_chariot" factor="4281426491"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_battania_statue_female_medium" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="27.982, 5.642, 8.557" rotation_euler="0.093, 0.000, 1.549" scale="0.702, 0.702, 0.702"/>
+				<physics shape="bo_bd_battania_statue_female_medium" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_battania_statue_female_medium">
+						<mesh name="bd_battania_statue_female_medium" factor="4288800956"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value=""/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value="light_hit"/>
+							<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wooden_barricade_destruction"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.600"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_keep_b_relief_c" old_prefab_name="">
+				<transform position="25.571, 2.669, 11.395" rotation_euler="0.000, 0.000, 2.287" scale="3.066, 3.066, 3.066"/>
+				<physics shape="bo_empire_keep_b_relief_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_relief_c">
+						<mesh name="empire_keep_b_relief_c.0" factor="4285249952"/>
+						<mesh name="empire_keep_b_relief_c.1" factor="4285249952"/>
+						<mesh name="empire_keep_b_relief_c.lod3" factor="4285249952"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_b_relief_c" old_prefab_name="">
+				<transform position="25.233, -1.818, 11.395" rotation_euler="0.000, 0.000, 0.724" scale="3.066, 3.066, 3.066"/>
+				<physics shape="bo_empire_keep_b_relief_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_relief_c">
+						<mesh name="empire_keep_b_relief_c.0" factor="4285249952"/>
+						<mesh name="empire_keep_b_relief_c.1" factor="4285249952"/>
+						<mesh name="empire_keep_b_relief_c.lod3" factor="4285249952"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_b_relief_c" old_prefab_name="">
+				<transform position="25.233, -1.818, 7.055" rotation_euler="0.000, 0.000, 0.724" scale="3.066, 3.066, 3.066"/>
+				<physics shape="bo_empire_keep_b_relief_c"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_relief_c">
+						<mesh name="empire_keep_b_relief_c.0" factor="4285249952"/>
+						<mesh name="empire_keep_b_relief_c.1" factor="4285249952"/>
+						<mesh name="empire_keep_b_relief_c.lod3" factor="4285249952"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_battania_statue_female_medium" old_prefab_name="">
+				<transform position="18.855, -3.865, 0.070" rotation_euler="0.000, 0.000, 0.768" scale="1.058, 1.058, 1.058"/>
+				<physics shape="bo_bd_battania_statue_female_medium" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_battania_statue_female_medium">
+						<mesh name="bd_battania_statue_female_medium" factor="4290838481"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_statue_bust_place_b" old_prefab_name="">
+				<transform position="19.164, -4.180, -0.031" rotation_euler="0.000, 0.000, 0.760"/>
+				<physics shape="bo_empire_statue_bust_place_b" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_statue_bust_place_b">
+						<mesh name="empire_statue_bust_place_b.0" material="stone_wall_12"/>
+						<mesh name="empire_statue_bust_place_b.lod3.0" material="stone_wall_12"/>
+						<mesh name="empire_statue_bust_place_b.lod2.0" material="stone_wall_12"/>
+						<mesh name="empire_statue_bust_place_b.lod5.0" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_tower" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_vlandia_arena_tower">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="22.948, -2.195, 26.380" rotation_euler="0.000, 0.000, -0.827" scale="0.071, 0.071, 0.071"/>
+				<physics shape="bo_vlandia_arena_tower"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_tower">
+						<mesh name="vlandia_arena_tower.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.7" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod2.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod2.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod3.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod3.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod4.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod4.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod5.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod5.6" material="aquila"/>
+						<mesh name="vlandia_arena_tower.lod6.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod6.5" material="aquila"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value=""/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value="light_hit"/>
+							<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wooden_barricade_destruction"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.600"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="crowd_man_c" old_prefab_name="">
+				<tags>
+					<tag name="audience"/>
+				</tags>
+				<transform position="24.909, 0.342, 22.706" rotation_euler="0.000, 0.000, 0.400"/>
+				<components>
+					<meta_mesh_component name="crowd_man_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="crowd_man_b" old_prefab_name="">
+				<tags>
+					<tag name="audience"/>
+				</tags>
+				<transform position="24.180, -0.046, 22.710" rotation_euler="0.000, 0.000, 0.793" scale="0.989, 0.989, 0.989"/>
+				<components>
+					<meta_mesh_component name="crowd_man_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="crowd_woman_b" old_prefab_name="">
+				<tags>
+					<tag name="audience"/>
+				</tags>
+				<transform position="24.054, -0.865, 22.858" rotation_euler="0.000, 0.000, 0.315" scale="0.831, 0.831, 0.831"/>
+				<components>
+					<meta_mesh_component name="crowd_woman_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="crowd_woman_c" old_prefab_name="">
+				<tags>
+					<tag name="audience"/>
+				</tags>
+				<transform position="23.485, -1.122, 22.639" rotation_euler="0.177, 0.000, 0.641"/>
+				<components>
+					<meta_mesh_component name="crowd_woman_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_battania_statue_boudica" old_prefab_name="">
+				<transform position="23.342, -2.035, 19.513" rotation_euler="0.000, 0.000, 0.800" scale="0.761, 0.761, 0.761"/>
+				<physics shape="bo_bd_battania_statue_boudica" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_battania_statue_boudica">
+						<mesh name="bd_battania_statue_boudica.0" factor="4288800956"/>
+						<mesh name="bd_battania_statue_boudica.1" factor="4288800956"/>
+						<mesh name="bd_battania_statue_boudica.2" factor="4288800956"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_village_house_part_b" old_prefab_name="">
+				<transform position="3.508, 21.658, -0.247" rotation_euler="0.000, 0.000, -2.340" scale="1.312, 1.312, 1.312"/>
+				<physics shape="bo_empire_village_house_part_b"/>
+				<components>
+					<meta_mesh_component name="empire_village_house_part_b">
+						<mesh name="empire_village_house_part_b.lod5.3" material="roof_tiles"/>
+						<mesh name="empire_village_house_part_b.lod5.6" material="stone_wall_12"/>
+						<mesh name="empire_village_house_part_b.3" material="roof_tiles"/>
+						<mesh name="empire_village_house_part_b.6" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_b_side_building_g" old_prefab_name="" occlusion_body_name="bo_occ_empire_keep_b_side_building_g">
+				<transform position="4.692, 15.811, -5.430" rotation_euler="0.000, 0.000, -0.816" scale="0.959, 0.959, 0.959"/>
+				<physics shape="bo_empire_keep_b_side_building_g"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_side_building_g">
+						<mesh name="empire_keep_b_side_building_g.1" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.8" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_g.10" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod1.1" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod1.8" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_g.lod1.10" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod2.1" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod2.8" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_g.lod2.10" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod4.1" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod4.8" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_g.lod4.10" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod5.1" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod5.8" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_g.lod5.10" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_g.lod6.4" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_g.lod6.6" material="roof_tiles"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="empire_keep_b_window_a" old_prefab_name="">
+						<transform position="-2.077, -5.084, 7.212"/>
+						<physics shape="bo_empire_keep_b_window_a"/>
+						<components>
+							<meta_mesh_component name="empire_keep_b_window_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_b_window_a" old_prefab_name="">
+						<transform position="2.006, -5.084, 7.212"/>
+						<physics shape="bo_empire_keep_b_window_a"/>
+						<components>
+							<meta_mesh_component name="empire_keep_b_window_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_b_window_a" old_prefab_name="">
+						<transform position="4.783, -2.294, 7.230" rotation_euler="0.000, 0.000, 1.571"/>
+						<physics shape="bo_empire_keep_b_window_a"/>
+						<components>
+							<meta_mesh_component name="empire_keep_b_window_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_b_window_a" old_prefab_name="">
+						<transform position="-4.793, -2.294, 7.230" rotation_euler="0.000, 0.000, -1.571"/>
+						<physics shape="bo_empire_keep_b_window_a"/>
+						<components>
+							<meta_mesh_component name="empire_keep_b_window_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_a_door_b" old_prefab_name="">
+						<transform position="1.973, -5.162, 0.000"/>
+						<physics shape="bo_empire_keep_a_door_b"/>
+						<components>
+							<meta_mesh_component name="empire_keep_a_door_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_battania_statue_female_medium" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="17.218, -3.926, 8.854" rotation_euler="0.093, 0.000, 0.183" scale="0.701, 0.702, 0.702"/>
+				<physics shape="bo_bd_battania_statue_female_medium" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="bd_battania_statue_female_medium">
+						<mesh name="bd_battania_statue_female_medium" factor="4288800956"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value=""/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value="light_hit"/>
+							<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wooden_barricade_destruction"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.600"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_keep_d_interior_wall_art_c1" old_prefab_name="">
+				<transform position="25.938, 1.943, -0.896" rotation_euler="0.000, 0.000, 2.282" scale="2.179, 2.179, 2.179"/>
+				<physics shape="bo_empire_keep_d_interior_wall_art_a1"/>
+				<components>
+					<meta_mesh_component name="empire_keep_d_interior_wall_art_c1">
+						<mesh name="empire_keep_d_interior_wall_art_c1.0" factor="4283465327"/>
+						<mesh name="empire_keep_d_interior_wall_art_c1.1" factor="4283465327"/>
+						<mesh name="empire_keep_d_interior_wall_art_c1.2" factor="4283465327"/>
+						<mesh name="empire_keep_d_interior_wall_art_c1.3" factor="4283465327"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_d2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="4.503, 4.399, -0.233" rotation_euler="0.000, 0.000, -0.830"/>
+				<physics shape="bo_empire_garden_wall_d2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_d2">
+						<mesh name="empire_garden_wall_d2.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod1.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod2.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod4.1" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod5.1" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_garden_wall_d2" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a2">
+				<transform position="2.381, 6.719, -0.233" rotation_euler="0.000, 0.000, -0.830"/>
+				<physics shape="bo_empire_garden_wall_d2" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_d2">
+						<mesh name="empire_garden_wall_d2.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod1.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod2.2" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod4.1" material="stone_wall_12"/>
+						<mesh name="empire_garden_wall_d2.lod5.1" material="stone_wall_12"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_tower" old_prefab_name="" mobility="1" occlusion_body_name="bo_occ_vlandia_arena_tower">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="17.232, -3.183, 5.753" rotation_euler="0.000, 0.000, -0.827" scale="0.224, 0.224, 0.224"/>
+				<physics shape="bo_vlandia_arena_tower"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_tower">
+						<mesh name="vlandia_arena_tower.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.7" material="roof_tiles"/>
+						<mesh name="vlandia_arena_tower.lod2.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod2.6" material="roof_tiles"/>
+						<mesh name="vlandia_arena_tower.lod3.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod3.6" material="roof_tiles"/>
+						<mesh name="vlandia_arena_tower.lod4.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod4.6" material="roof_tiles"/>
+						<mesh name="vlandia_arena_tower.lod5.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod5.6" material="roof_tiles"/>
+						<mesh name="vlandia_arena_tower.lod6.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod6.5" material="roof_tiles"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value=""/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="100.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value="light_hit"/>
+							<variable name="HeavyHitParticlesThreshold" value="20.000"/>
+							<variable name="ParticleEffectOnDestroy" value="psys_game_wooden_barricade_destruction"/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/merlon/wood_destroy"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.600"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="empire_garden_wall_d_end" old_prefab_name="" occlusion_body_name="bo_occ_empire_garden_wall_a_end">
+				<transform position="-1.025, 10.431, 0.000" rotation_euler="0.000, 0.000, -0.789"/>
+				<physics shape="bo_empire_garden_wall_d_end"/>
+				<components>
+					<meta_mesh_component name="empire_garden_wall_d_end">
+						<mesh name="empire_garden_wall_d_end.2" material="empire_wall_brick"/>
+						<mesh name="empire_garden_wall_d_end.lod1.2" material="empire_wall_brick"/>
+						<mesh name="empire_garden_wall_d_end.lod2.2" material="empire_wall_brick"/>
+						<mesh name="empire_garden_wall_d_end.lod4.1" material="empire_wall_brick"/>
+						<mesh name="empire_garden_wall_d_end.lod5.1" material="empire_wall_brick"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="aquila" old_prefab_name="">
+				<transform position="23.341, 0.299, 36.910" rotation_euler="0.000, 0.000, 0.704" scale="0.218, 0.218, 0.218"/>
+				<physics shape="bo_aquila" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="aquila"/>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_arena_tower" old_prefab_name="" occlusion_body_name="bo_occ_vlandia_arena_tower">
+				<transform position="23.089, 0.330, 22.706" rotation_euler="0.000, 0.000, -0.826" scale="0.315, 0.359, 0.460"/>
+				<physics shape="bo_vlandia_arena_tower"/>
+				<components>
+					<meta_mesh_component name="vlandia_arena_tower">
+						<mesh name="vlandia_arena_tower.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.7" material="roman_statue_chariot" factor="4281426491" argument="1000.000, 0.000, 0.000, 41.000"/>
+						<mesh name="vlandia_arena_tower.lod2.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod2.6" material="roman_statue_chariot" factor="4281426491"/>
+						<mesh name="vlandia_arena_tower.lod3.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod3.6" material="roman_statue_chariot" factor="4281426491"/>
+						<mesh name="vlandia_arena_tower.lod4.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod4.6" material="roman_statue_chariot" factor="4281426491"/>
+						<mesh name="vlandia_arena_tower.lod5.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod5.6" material="roman_statue_chariot" factor="4281426491"/>
+						<mesh name="vlandia_arena_tower.lod6.0" material="stone_wall_12"/>
+						<mesh name="vlandia_arena_tower.lod6.5" material="roman_statue_chariot" factor="4281426491"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_b_side_building_m" old_prefab_name="" occlusion_body_name="bo_occ_empire_keep_b_side_building_m">
+				<transform position="7.029, 12.800, 0.865" rotation_euler="0.000, 0.000, -0.820" scale="1.220, 1.586, 1.220"/>
+				<physics shape="bo_empire_keep_b_side_building_m"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_side_building_m">
+						<mesh name="empire_keep_b_side_building_m.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_m.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_m.lod1.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_m.lod1.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_m.lod2.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_m.lod2.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_m.lod4.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_m.lod4.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_m.lod5.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_m.lod5.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_m.lod6.1" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_m.lod6.2" material="roof_tiles"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="empire_keep_a_door_a" old_prefab_name="">
+						<transform position="-5.859, -2.058, 0.000"/>
+						<physics shape="bo_empire_keep_a_door_a"/>
+						<components>
+							<meta_mesh_component name="empire_keep_a_door_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="empire_keep_d_interior_wall_art_c1" old_prefab_name="">
+				<transform position="25.084, -1.694, -2.531" rotation_euler="0.000, 0.000, 0.707" scale="3.551, 2.722, 2.722"/>
+				<physics shape="bo_empire_keep_d_interior_wall_art_a1"/>
+				<components>
+					<meta_mesh_component name="empire_keep_d_interior_wall_art_c1">
+						<mesh name="empire_keep_d_interior_wall_art_c1.0" factor="4288710270"/>
+						<mesh name="empire_keep_d_interior_wall_art_c1.1" factor="4288710270"/>
+						<mesh name="empire_keep_d_interior_wall_art_c1.2" factor="4288710270"/>
+						<mesh name="empire_keep_d_interior_wall_art_c1.3" factor="4288710270"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="25.374, -2.035, 6.665" rotation_euler="0.000, 0.000, 0.713" scale="0.373, 0.373, 0.373"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column">
+						<mesh name="wooden_platform_2_plank_f_column.0" material="aquila" factor="4291087036"/>
+						<mesh name="wooden_platform_2_plank_f_column.1" material="aquila" factor="4291087036"/>
+						<mesh name="wooden_platform_2_plank_f_column.lod3" material="aquila" factor="4291087036"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_keep_b_side_building_e" old_prefab_name="" occlusion_body_name="bo_occ_empire_keep_b_side_building_e">
+				<transform position="16.721, 2.193, 0.133" rotation_euler="0.000, 0.000, -0.827" scale="1.220, 1.529, 1.220"/>
+				<physics shape="bo_empire_keep_b_side_building_e"/>
+				<components>
+					<meta_mesh_component name="empire_keep_b_side_building_e">
+						<mesh name="empire_keep_b_side_building_e.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_e.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_e.lod1.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_e.lod1.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_e.lod2.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_e.lod2.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_e.lod4.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_e.lod4.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_e.lod5.5" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_e.lod5.6" material="roof_tiles"/>
+						<mesh name="empire_keep_b_side_building_e.lod6.1" material="stone_wall_12"/>
+						<mesh name="empire_keep_b_side_building_e.lod6.2" material="roof_tiles"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="empire_keep_b_door_b" old_prefab_name="">
+						<transform position="-0.200, -2.415, 0.000"/>
+						<physics shape="bo_empire_keep_b_door_b"/>
+						<components>
+							<meta_mesh_component name="empire_keep_b_door_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="empire_keep_d_corner_solo" old_prefab_name="" occlusion_body_name="bo_occ_empire_keep_d_corner_">
+				<transform position="23.037, 0.601, 1.380" rotation_euler="0.000, 0.000, -2.416" scale="0.976, 0.976, 0.976"/>
+				<physics shape="bo_empire_keep_d_corner_"/>
+				<components>
+					<meta_mesh_component name="empire_keep_d_corner_">
+						<mesh name="empire_keep_d_corner_.4" material="empire_wall_c"/>
+						<mesh name="empire_keep_d_corner_.7" material="stone_wall_12"/>
+						<mesh name="empire_keep_d_corner_.8" material="roof_tiles"/>
+						<mesh name="empire_keep_d_corner_.lod1.4" material="empire_wall_c"/>
+						<mesh name="empire_keep_d_corner_.lod1.7" material="stone_wall_12"/>
+						<mesh name="empire_keep_d_corner_.lod1.8" material="roof_tiles"/>
+						<mesh name="empire_keep_d_corner_.lod2.4" material="empire_wall_c"/>
+						<mesh name="empire_keep_d_corner_.lod2.7" material="stone_wall_12"/>
+						<mesh name="empire_keep_d_corner_.lod2.8" material="roof_tiles"/>
+						<mesh name="empire_keep_d_corner_.lod4.4" material="empire_wall_c"/>
+						<mesh name="empire_keep_d_corner_.lod4.7" material="stone_wall_12"/>
+						<mesh name="empire_keep_d_corner_.lod4.8" material="roof_tiles"/>
+						<mesh name="empire_keep_d_corner_.lod5.3" material="empire_wall_c"/>
+						<mesh name="empire_keep_d_corner_.lod5.6" material="stone_wall_12"/>
+						<mesh name="empire_keep_d_corner_.lod5.7" material="roof_tiles"/>
+						<mesh name="empire_keep_d_corner_.lod6.2" material="empire_wall_c"/>
+						<mesh name="empire_keep_d_corner_.lod6.3" material="stone_wall_12"/>
+						<mesh name="empire_keep_d_corner_.lod6.4" material="roof_tiles"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="empire_keep_d_facade_fake_window_b" old_prefab_name="">
+						<transform position="-3.441, -0.001, 9.243" rotation_euler="0.000, 0.000, -1.571"/>
+						<physics shape="bo_empire_keep_d_facade_fake_window_b"/>
+						<components>
+							<meta_mesh_component name="empire_keep_d_facade_fake_window_b">
+								<mesh name="empire_keep_d_facade_fake_window_b.lod1.1" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod1.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod1.3" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.1" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.3" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod2.1" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod2.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod2.3" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod3.1" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod3.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod3.3" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod5.1" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod5.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod5.3" material="roman_statue_chariot"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_d_facade_fake_window_b" old_prefab_name="">
+						<transform position="3.488, -0.001, 9.243" rotation_euler="0.000, 0.000, 1.571"/>
+						<physics shape="bo_empire_keep_d_facade_fake_window_b"/>
+						<components>
+							<meta_mesh_component name="empire_keep_d_facade_fake_window_b">
+								<mesh name="empire_keep_d_facade_fake_window_b.lod1.1" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod1.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod1.3" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.1" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.3" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod2.1" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod2.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod2.3" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod3.1" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod3.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod3.3" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod5.1" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod5.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod5.3" material="roman_statue_chariot"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_d_window_a" old_prefab_name="">
+						<transform position="-0.122, -3.247, 12.303"/>
+						<physics shape="bo_empire_keep_d_window_a"/>
+						<components>
+							<meta_mesh_component name="empire_keep_d_window_a">
+								<mesh name="empire_keep_d_window_a.4" material="roman_statue_chariot" factor="4283400021"/>
+								<mesh name="empire_keep_d_window_a.lod1.4" material="roman_statue_chariot" factor="4283400021"/>
+								<mesh name="empire_keep_d_window_a.lod2.4" material="roman_statue_chariot" factor="4283400021"/>
+								<mesh name="empire_keep_d_window_a.lod3.4" material="roman_statue_chariot" factor="4283400021"/>
+								<mesh name="empire_keep_d_window_a.lod5.4" material="roman_statue_chariot" factor="4283400021"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_d_window_a" old_prefab_name="">
+						<transform position="-3.261, 0.047, 12.303" rotation_euler="0.000, 0.000, -1.571"/>
+						<physics shape="bo_empire_keep_d_window_a"/>
+						<components>
+							<meta_mesh_component name="empire_keep_d_window_a">
+								<mesh name="empire_keep_d_window_a.4" material="roman_statue_chariot" factor="4283400021"/>
+								<mesh name="empire_keep_d_window_a.lod1.4" material="roman_statue_chariot" factor="4283400021"/>
+								<mesh name="empire_keep_d_window_a.lod2.4" material="roman_statue_chariot" factor="4283400021"/>
+								<mesh name="empire_keep_d_window_a.lod3.4" material="roman_statue_chariot" factor="4283400021"/>
+								<mesh name="empire_keep_d_window_a.lod5.4" material="roman_statue_chariot" factor="4283400021"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_d_window_a" old_prefab_name="">
+						<transform position="-0.005, 3.223, 12.303" rotation_euler="0.000, 0.000, 3.141"/>
+						<physics shape="bo_empire_keep_d_window_a"/>
+						<components>
+							<meta_mesh_component name="empire_keep_d_window_a">
+								<mesh name="empire_keep_d_window_a.4" material="roman_statue_chariot" factor="4283400021"/>
+								<mesh name="empire_keep_d_window_a.lod1.4" material="roman_statue_chariot" factor="4283400021"/>
+								<mesh name="empire_keep_d_window_a.lod2.4" material="roman_statue_chariot" factor="4283400021"/>
+								<mesh name="empire_keep_d_window_a.lod3.4" material="roman_statue_chariot" factor="4283400021"/>
+								<mesh name="empire_keep_d_window_a.lod5.4" material="roman_statue_chariot" factor="4283400021"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_d_window_a" old_prefab_name="">
+						<transform position="3.237, -0.071, 12.303" rotation_euler="0.000, 0.000, 1.571"/>
+						<physics shape="bo_empire_keep_d_window_a"/>
+						<components>
+							<meta_mesh_component name="empire_keep_d_window_a">
+								<mesh name="empire_keep_d_window_a.4" material="roman_statue_chariot" factor="4283400021"/>
+								<mesh name="empire_keep_d_window_a.lod1.4" material="roman_statue_chariot" factor="4283400021"/>
+								<mesh name="empire_keep_d_window_a.lod2.4" material="roman_statue_chariot" factor="4283400021"/>
+								<mesh name="empire_keep_d_window_a.lod3.4" material="roman_statue_chariot" factor="4283400021"/>
+								<mesh name="empire_keep_d_window_a.lod5.4" material="roman_statue_chariot" factor="4283400021"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_d_facade_fake_window_b" old_prefab_name="">
+						<transform position="0.023, -3.466, 9.243"/>
+						<physics shape="bo_empire_keep_d_facade_fake_window_b"/>
+						<components>
+							<meta_mesh_component name="empire_keep_d_facade_fake_window_b">
+								<mesh name="empire_keep_d_facade_fake_window_b.lod1.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod2.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod3.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod5.2" material="empire_wall_c"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="empire_keep_d_facade_fake_window_b" old_prefab_name="">
+						<transform position="0.023, 3.463, 9.243" rotation_euler="0.000, 0.000, 3.141"/>
+						<physics shape="bo_empire_keep_d_facade_fake_window_b"/>
+						<components>
+							<meta_mesh_component name="empire_keep_d_facade_fake_window_b">
+								<mesh name="empire_keep_d_facade_fake_window_b.lod1.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod1.3" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.3" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod2.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod2.3" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod3.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod3.3" material="roman_statue_chariot"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod5.2" material="empire_wall_c"/>
+								<mesh name="empire_keep_d_facade_fake_window_b.lod5.3" material="roman_statue_chariot"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+
